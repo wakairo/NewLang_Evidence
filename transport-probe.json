@@ -1,0 +1,8 @@
+{
+  "track": "P",
+  "issue": 1520,
+  "cohort": "p1517-c1157-local-20261118",
+  "purpose": "managed HTTPS normal-Git custody transport probe; no compiler execution",
+  "planned_archive_ref": "archive/p1517-c1157-local-20261118",
+  "synthetic": true
+}
