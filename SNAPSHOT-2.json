@@ -1,0 +1,22 @@
+{
+  "purpose": "Append final original ASan log and original storage pilot auth/restore/cleanup receipts; preserve snapshot1 bytes unchanged",
+  "snapshot1_commit": "eee78c7a1b8e037ffc62a8c7a138a8602ca3171e",
+  "compiler_base": "716a457d19c83ff2470a5be801f7108b37a6c7e7",
+  "compiler_head": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+  "compiler_tree": "f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6",
+  "natural_pr_ci": {
+    "FULL5": 44222785587,
+    "PARTIAL": 44222785617,
+    "run_attempt": 1,
+    "event": "pull_request",
+    "required": "6/6 SUCCESS; five1152/1152 and partial1151/1151, each18 p1507 tests run",
+    "checkout_merge": "80e9913503a978d3996ea529eeb243380e58b7bc",
+    "checkout_tree": "f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6"
+  },
+  "first_restore_receipt": "https://github.com/wakairo/NewLang_Compiler/issues/1507#issuecomment-6967625351",
+  "first_cleanup_receipt": "https://github.com/wakairo/NewLang_Compiler/issues/1507#issuecomment-6967649018",
+  "first_cleanup_reclaimed_bytes": 46268416,
+  "first_cleanup_reclaimed_inodes": 1377,
+  "historical_README_and_local_receipts": "snapshot1/pre-storage facts; later actual results recorded here and in linked Issue; no retroactive rewrite",
+  "status": "DRAFT HOLD; no self READY/merge/policy adoption; ProductGO624 PAUSED/H1 HOLD/audit locality UNMEASURED"
+}

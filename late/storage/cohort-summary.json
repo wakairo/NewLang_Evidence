@@ -1,0 +1,9 @@
+{
+  "payload_members": 243,
+  "payload_bytes": 8627366,
+  "tracked_members": 245,
+  "tracked_bytes": 8701400,
+  "max_member": 3208368,
+  "inventory_sha256": "a16724241a03355067bf7bff275c0dfa6c6e23f7d005b1ad92d43130073d8163",
+  "manifest_sha256": "01529167478311b830962b10714d6dcea8c436f050e534ab853af431cf8d0c8c"
+}

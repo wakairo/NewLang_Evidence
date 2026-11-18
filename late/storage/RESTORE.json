@@ -1,0 +1,10 @@
+{
+  "issue": "https://github.com/wakairo/NewLang_Compiler/issues/1507#issuecomment-6967625351",
+  "repo": "https://github.com/wakairo/NewLang_Evidence.git",
+  "ref": "archive/p1507-20261118",
+  "commit": "eee78c7a1b8e037ffc62a8c7a138a8602ca3171e",
+  "tree": "5fd4239c416125244f060d7543fea9e69b45299c",
+  "full_inventory_sha256": "a16724241a03355067bf7bff275c0dfa6c6e23f7d005b1ad92d43130073d8163",
+  "path": "MANIFEST.json",
+  "restore": "fresh HTTPS no-alternates all245 path/size/SHA/executable validated; original243 current bytes rechecked before unlink"
+}

@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "seconds": 0.7477270180006599,
+  "command": [
+    "git",
+    "clone",
+    "--depth=1",
+    "--single-branch",
+    "--no-tags",
+    "--no-local",
+    "--branch",
+    "archive/p1507-20261118",
+    "https://github.com/wakairo/NewLang_Evidence.git",
+    "/workspace/p1507-storage/restore-2"
+  ]
+}

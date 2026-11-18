@@ -1,0 +1,19 @@
+{
+  "state": "VERIFIED_OWNED_CLEANUP_PASS",
+  "duration_seconds": 0.020491813000262482,
+  "deleted_original_files": 243,
+  "deleted_original_logical_bytes": 8627366,
+  "deleted_clone_path_entries": 1120,
+  "before_free_bytes": 62759579648,
+  "after_free_bytes": 62805848064,
+  "actual_reclaimed_bytes": 46268416,
+  "before_free_inodes": 4185468,
+  "after_free_inodes": 4186845,
+  "actual_reclaimed_inodes": 1377,
+  "compiler_head_unchanged": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+  "original_root_remaining": [
+    "RESTORE.json"
+  ],
+  "retained_storage_receipts": "/workspace/p1507-storage",
+  "receipt_get_confirmed": 6967625351
+}

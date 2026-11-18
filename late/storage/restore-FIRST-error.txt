@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<stdin>", line 29, in <module>
+AssertionError
+
+The first clone succeeded. Head/tree/shallow/alternates and all 245 actual
+path/size/SHA/executable records matched the pre-push inventory. The failed
+assertion compared sorted Git path strings against pathlib's component-sorted
+inventory without sorting both sides. A separate exact dictionary/member
+comparison found zero path differences and zero member differences. This is
+an apparatus ordering error, not a changed inventory or repaired remote byte.
+The original first clone is retained. A second fresh HTTPS clone will verify
+the same immutable commit with both membership lists sorted consistently;
+clone timing will be persisted before assertions. No originals deleted.

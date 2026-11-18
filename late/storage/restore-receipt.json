@@ -1,0 +1,55 @@
+{
+  "state": "FULL_FRESH_REMOTE_RESTORE_PASS",
+  "commit": "eee78c7a1b8e037ffc62a8c7a138a8602ca3171e",
+  "tree": "5fd4239c416125244f060d7543fea9e69b45299c",
+  "ref": "archive/p1507-20261118",
+  "tracked_files": 245,
+  "tracked_bytes": 8701400,
+  "payload_files": 243,
+  "inventory_sha256": "a16724241a03355067bf7bff275c0dfa6c6e23f7d005b1ad92d43130073d8163",
+  "manifest_sha256": "01529167478311b830962b10714d6dcea8c436f050e534ab853af431cf8d0c8c",
+  "readme_sha256": "3d638d37b7b0c8fd06867c2cb52d12d2fa1202be045d894343e8e5ed484c50b9",
+  "clone_seconds": 0.7477270180006599,
+  "full_read_verify_seconds": 0.0841781950002769,
+  "source_originals_recompared": true,
+  "shallow": true,
+  "alternates": false,
+  "https_remote": true,
+  "resources": {
+    "stage": {
+      "du_bytes": 13205504,
+      "git_du_bytes": 4050944,
+      "index_bytes": 26542,
+      "packs": {},
+      "object_counts": "count: 119\nsize: 3380\nin-pack: 0\npacks: 0\nsize-pack: 0\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n",
+      "path_entries": 516
+    },
+    "first_restore": {
+      "du_bytes": 11997184,
+      "git_du_bytes": 2842624,
+      "index_bytes": 26542,
+      "packs": {
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.pack": 2640376,
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.rev": 516,
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.idx": 4320
+      },
+      "object_counts": "count: 0\nsize: 0\nin-pack: 116\npacks: 1\nsize-pack: 2582\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n",
+      "path_entries": 302
+    },
+    "restore": {
+      "du_bytes": 11997184,
+      "git_du_bytes": 2842624,
+      "index_bytes": 26542,
+      "packs": {
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.pack": 2640376,
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.rev": 516,
+        "pack-f7bbb840c6ffd0fcd922852403577f86e642fa68.idx": 4320
+      },
+      "object_counts": "count: 0\nsize: 0\nin-pack: 116\npacks: 1\nsize-pack: 2582\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n",
+      "path_entries": 302
+    }
+  },
+  "free_bytes": 62759591936,
+  "free_inodes": 4185471,
+  "deletion_yet": false
+}
