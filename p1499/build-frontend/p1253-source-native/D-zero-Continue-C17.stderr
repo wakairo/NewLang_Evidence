@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue.nl:112:27-112:28: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

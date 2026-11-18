@@ -1,0 +1,612 @@
+[
+  {
+    "label": "01-direct-helper-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/01-direct-helper.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/01-direct-helper.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/01-direct-helper.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/01-direct-helper.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-direct-helper-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/01-direct-helper-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/02-one-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/02-one-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/02-one-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/02-one-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-one-alias-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/02-one-alias-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/03-two-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/03-two-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/03-two-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/03-two-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-two-alias-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/03-two-alias-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/04-literal-discard.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/04-literal-discard.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/04-literal-discard.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/04-literal-discard.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-literal-discard-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/04-literal-discard-gcc-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/80-inline-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-helper-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/81-helper-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-helper-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/81-helper-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-helper-control-issued-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c250a_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/81-helper-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-helper-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c250a/run-dlc29a6p/81-helper-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c250a/sources/81-helper-control.nl"
+    ],
+    "status": 0
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 1,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 2,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 1,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "03-postheap-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 2,
+    "exit": 0,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 1,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O0",
+    "quota": 2,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 1,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "optimization": "-O2",
+    "quota": 2,
+    "exit": 0,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c",
+    "sanitizer": "none"
+  },
+  {
+    "source": "05-zero-heap-control.nl",
+    "optimization": "-O0",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "8a06cc635c9c4d72b9e503e5932c41131c4342c794679e8b5fa2f7ade3b1cc5f",
+    "sanitizer": "none"
+  },
+  {
+    "source": "05-zero-heap-control.nl",
+    "optimization": "-O2",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "8a06cc635c9c4d72b9e503e5932c41131c4342c794679e8b5fa2f7ade3b1cc5f",
+    "sanitizer": "none"
+  },
+  {
+    "source": "08-no-write-literal-entry-control.nl",
+    "optimization": "-O0",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "61e92320f194508435f06bef093144e16e3ebc4b7eac10166721374ee0f06b32",
+    "sanitizer": "none"
+  },
+  {
+    "source": "08-no-write-literal-entry-control.nl",
+    "optimization": "-O2",
+    "quota": 0,
+    "exit": 0,
+    "generated_sha256": "61e92320f194508435f06bef093144e16e3ebc4b7eac10166721374ee0f06b32",
+    "sanitizer": "none"
+  }
+]

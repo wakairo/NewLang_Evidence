@@ -1,0 +1,1 @@
+<v0-entry>:1:1-1:7: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

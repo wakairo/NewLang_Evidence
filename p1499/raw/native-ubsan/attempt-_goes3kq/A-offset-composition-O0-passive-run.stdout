@@ -1,0 +1,8 @@
+input=0 result=5
+input=14 result=19
+input=15 result=20
+input=16 result=20
+input=31 result=35
+input=32 result=32
+input=18446744073709551615 result=18446744073709551615
+caller=16

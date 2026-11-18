@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1188/sources/99-wrong-actual-type.nl:10:30-10:36: error(semantic)[P3-TYPE-MISMATCH]: argument semantic type does not match selected parameter

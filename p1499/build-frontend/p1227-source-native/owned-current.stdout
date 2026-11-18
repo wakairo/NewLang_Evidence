@@ -1,0 +1,49 @@
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/B-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=2 body_returns=0 selection=5 body_tail=5 old_private_helper_lane=1
+ROLES incoming=7 old=9 old_copy=10 current=11 sibling=12 index=0
+COMPLETE source_observation=1 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/B-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=2 body_returns=0 selection=5 body_tail=5 old_private_helper_lane=1
+ROLES incoming=7 old=9 old_copy=10 current=11 sibling=12 index=0
+COMPLETE source_observation=2 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/A-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=13 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=3 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/A-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=13 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=4 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/A-inverse-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=13 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=5 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/sources/A-inverse-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=13 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=6 loops=1 producer_valid=1 fragments=16
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+P1227 six genuine owned/current checks and foreign-owner/world refusal PASS

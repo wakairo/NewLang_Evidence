@@ -1,0 +1,146 @@
+Start testing: Nov 17 21:55 JST
+----------------------------------------------------------
+10/1131 Testing: p1499_A-offset-composition_owned.unit
+10/1131 Test: p1499_A-offset-composition_owned.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "composition" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_A-offset-composition_owned.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl CHECK=0 class=1
+actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_A-offset-composition_owned.unit" end time: Nov 17 21:55 JST
+"p1499_A-offset-composition_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/1131 Testing: p1499_B-repeat-advance_owned.unit
+11/1131 Test: p1499_B-repeat-advance_owned.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "composition" "/workspace/NewLang_Compiler/tests/p1499/B-repeat-advance.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_B-repeat-advance_owned.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+/workspace/NewLang_Compiler/tests/p1499/B-repeat-advance.nl CHECK=0 class=1
+actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_B-repeat-advance_owned.unit" end time: Nov 17 21:55 JST
+"p1499_B-repeat-advance_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/1131 Testing: p1499_current_result_tamper.unit
+13/1131 Test: p1499_current_result_tamper.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "attack" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_current_result_tamper.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl CHECK=0 class=1
+actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+second-call tamper 11 + foreign-child destruction rejected before C bytes
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_current_result_tamper.unit" end time: Nov 17 21:55 JST
+"p1499_current_result_tamper.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/1131 Testing: p1499_selected_oom.unit
+14/1131 Test: p1499_selected_oom.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "oom" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_selected_oom.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+OOM case=1 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=2 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=3 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=4 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=5 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=6 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+OOM case=7 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_selected_oom.unit" end time: Nov 17 21:55 JST
+"p1499_selected_oom.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/1131 Testing: p1499_named_no_clobber.unit
+15/1131 Test: p1499_named_no_clobber.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "named" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl" "/workspace/NewLang_Compiler/build-p1499-asan/p1499-named-output.c"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_named_no_clobber.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+error(cli)[V0-C-FILE]: cannot safely write named C17 output
+note: /workspace/NewLang_Compiler/build-p1499-asan/p1499-named-output.c
+OOM case=8 named_status=1 actual_hits=1 no_clobber=1
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_named_no_clobber.unit" end time: Nov 17 21:55 JST
+"p1499_named_no_clobber.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/1131 Testing: p1499_N-changed-formal.unit
+16/1131 Test: p1499_N-changed-formal.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "changed-negative" "/workspace/NewLang_Compiler/tests/p1499/N-changed-formal.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_N-changed-formal.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+changed usize formal: earlier local-loan coverage rejection status=2 code=LOCAL-LOAN-PROFILE
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_N-changed-formal.unit" end time: Nov 17 21:55 JST
+"p1499_N-changed-formal.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/1131 Testing: p1499_N-overflow-consumer.unit
+17/1131 Test: p1499_N-overflow-consumer.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "negative" "/workspace/NewLang_Compiler/tests/p1499/N-overflow-consumer.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_N-overflow-consumer.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+/workspace/NewLang_Compiler/tests/p1499/N-overflow-consumer.nl rejection status=3 code=USIZE-ADDITION-PRECISION
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_N-overflow-consumer.unit" end time: Nov 17 21:55 JST
+"p1499_N-overflow-consumer.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/1131 Testing: p1499_N-wrong-formal.unit
+18/1131 Test: p1499_N-wrong-formal.unit
+Command: "/workspace/NewLang_Compiler/build-p1499-asan/p1499_probe" "negative" "/workspace/NewLang_Compiler/tests/p1499/N-wrong-formal.nl"
+Directory: /workspace/NewLang_Compiler/build-p1499-asan
+"p1499_N-wrong-formal.unit" start time: Nov 17 21:55 JST
+Output:
+----------------------------------------------------------
+/workspace/NewLang_Compiler/tests/p1499/N-wrong-formal.nl rejection status=3 code=USIZE-ADDITION-PRECISION
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"p1499_N-wrong-formal.unit" end time: Nov 17 21:55 JST
+"p1499_N-wrong-formal.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 17 21:55 JST

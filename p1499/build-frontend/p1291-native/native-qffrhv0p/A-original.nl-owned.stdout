@@ -1,0 +1,26 @@
+CHECK=0 owned=1
+EDGE match=3 arm=0 variant=1 actual-tail=2 parent-result=1 distinct-world=1
+EDGE match=3 arm=1 variant=2 actual-tail=13 parent-result=1 distinct-world=1
+EDGE match=30 arm=0 variant=1 actual-tail=19 parent-result=13 distinct-world=1
+EDGE match=30 arm=1 variant=2 actual-tail=72 parent-result=13 distinct-world=1
+EDGE match=56 arm=0 variant=1 actual-tail=45 parent-result=44 distinct-world=1
+EDGE match=56 arm=1 variant=2 actual-tail=65 parent-result=44 distinct-world=1
+BIND observed_byte 26
+BIND source_copy 27
+BIND displaced 32
+BIND old_selected 33
+BIND old_copy 34
+BIND current_byte 35
+BIND sibling_byte 36
+BIND arm_copy 23
+BIND completed 1
+BIND result_copy 2
+BIND continuation_copy 3
+OWNED-PASS matches=3 same-H/T-caller=1 old=53 current=173 sibling=197 field=0 closed-loan=1 refusals=11
+DESTROY-REFUSAL 0 A-unrestored B-live=1
+DESTROY-REFUSAL 1 A-unrestored B-live=1
+DESTROY-REFUSAL 2 A-unrestored B-live=1
+DESTROY-REFUSAL 3 A-unrestored B-live=1
+DESTROY-REFUSAL 4 A-unrestored B-live=1
+DESTROY-REFUSAL 5 A-unrestored B-live=1
+CANONICAL-DESTROY-PASS controls=6

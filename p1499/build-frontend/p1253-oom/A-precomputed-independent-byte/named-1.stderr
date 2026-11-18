@@ -1,0 +1,2 @@
+error(cli)[V0-C-FILE]: cannot safely write named C17 output
+note: /tmp/p1217-named-vw5bzZ/out.c

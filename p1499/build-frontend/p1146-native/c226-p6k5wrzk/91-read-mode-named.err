@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1146/sources/91-read-mode.nl:16:33-16:34: error(unsupported)[LOCAL-LOAN-PROFILE]: loan operand must be a simple local or bounded local@field

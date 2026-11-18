@@ -1,0 +1,58 @@
+[
+  {
+    "label": "A-two-inputs-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-two-inputs-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-two-inputs-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-two-inputs-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-passive-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-passive-O2"
+    ],
+    "exit_status": 0
+  }
+]

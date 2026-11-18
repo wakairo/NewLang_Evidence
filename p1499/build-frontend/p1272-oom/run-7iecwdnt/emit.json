@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/workspace/NewLang_Compiler/build-frontend/p1272_oom",
+    "/workspace/NewLang_Compiler/tests/p1272/sources/P-template-copy.nl",
+    "emit"
+  ],
+  "status": 0
+}

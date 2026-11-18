@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1133/bounds/02-zero-bound.nl:11:28-11:29: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

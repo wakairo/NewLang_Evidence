@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1326/N-typed-store.nl:18:30-18:40: error(semantic)[P3-TYPE-MISMATCH]: new value type differs from fixed field type

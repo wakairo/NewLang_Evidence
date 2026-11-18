@@ -1,0 +1,162 @@
+[
+  {
+    "label": "A-current-copy-call-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-raw-O0"
+    ],
+    "C_SHA256": "02e6c400994d76d922c910668b9b22acdedf51212df817e483c4e4b6aba35725",
+    "passive": false,
+    "numeric_identity_observed": false
+  },
+  {
+    "label": "A-current-copy-call-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-raw-O2"
+    ],
+    "C_SHA256": "02e6c400994d76d922c910668b9b22acdedf51212df817e483c4e4b6aba35725",
+    "passive": false,
+    "numeric_identity_observed": false
+  },
+  {
+    "label": "A-current-copy-call-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1368_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1368/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-passive-O0"
+    ],
+    "C_SHA256": "02e6c400994d76d922c910668b9b22acdedf51212df817e483c4e4b6aba35725",
+    "passive": true,
+    "numeric_identity_observed": true
+  },
+  {
+    "label": "A-current-copy-call-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1368_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1368/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-passive-O2"
+    ],
+    "C_SHA256": "02e6c400994d76d922c910668b9b22acdedf51212df817e483c4e4b6aba35725",
+    "passive": true,
+    "numeric_identity_observed": true
+  },
+  {
+    "label": "B-field-zero-alias-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-raw-O0"
+    ],
+    "C_SHA256": "471603edd3c90fa5dcb982288414f48dbb00131a41b6d3b7da98c22fd56593e1",
+    "passive": false,
+    "numeric_identity_observed": false
+  },
+  {
+    "label": "B-field-zero-alias-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-raw-O2"
+    ],
+    "C_SHA256": "471603edd3c90fa5dcb982288414f48dbb00131a41b6d3b7da98c22fd56593e1",
+    "passive": false,
+    "numeric_identity_observed": false
+  },
+  {
+    "label": "B-field-zero-alias-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1368_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1368/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-passive-O0"
+    ],
+    "C_SHA256": "471603edd3c90fa5dcb982288414f48dbb00131a41b6d3b7da98c22fd56593e1",
+    "passive": true,
+    "numeric_identity_observed": true
+  },
+  {
+    "label": "B-field-zero-alias-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1368_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1368/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-passive-O2"
+    ],
+    "C_SHA256": "471603edd3c90fa5dcb982288414f48dbb00131a41b6d3b7da98c22fd56593e1",
+    "passive": true,
+    "numeric_identity_observed": true
+  }
+]

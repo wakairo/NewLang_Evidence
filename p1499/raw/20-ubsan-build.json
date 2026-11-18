@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/cmake", "--build", "build-p1499-ubsan", "--target", "newlangc", "p1492_probe", "p1499_probe", "--parallel", "4"], "exit": 0}

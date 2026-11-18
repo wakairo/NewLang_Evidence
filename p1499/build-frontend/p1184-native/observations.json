@@ -1,0 +1,1190 @@
+[
+  {
+    "label": "01-helper-loop-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/01-helper-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/01-helper-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/01-helper-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/01-helper-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-helper-loop-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/01-helper-loop-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/02-helper-alias-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/02-helper-alias-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/02-helper-alias-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/02-helper-alias-loop.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-helper-alias-loop-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/02-helper-alias-loop-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/03-one-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/03-one-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/03-one-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/03-one-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-one-edge-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/03-one-edge-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/04-zero-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/04-zero-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/04-zero-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/04-zero-edge.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/04-zero-edge-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/05-same-bits.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/05-same-bits.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/05-same-bits.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/05-same-bits.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-same-bits-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/05-same-bits-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/06-after-main-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-owned-trace",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184_safety",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/06-after-main-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/06-after-main-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/06-after-main-alias.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O0-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O0-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O0-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O0-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O0-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O0-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O2-plain-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O2-plain-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O2-plain"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O2-observe-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-helper-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "06-after-main-alias-gcc-O2-observe-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/06-after-main-alias-gcc-O2-observe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "90-wrong-result-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/90-wrong-result.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-wrong-result-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/90-wrong-result.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-wrong-result-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/90-wrong-result-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/90-wrong-result.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-wrong-actual-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/91-wrong-actual.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-wrong-actual-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/91-wrong-actual.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-wrong-actual-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/91-wrong-actual-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/91-wrong-actual.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-arm-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/92-arm-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-arm-type-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/92-arm-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-arm-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/92-arm-type-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/92-arm-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-helper-effect-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/93-helper-effect.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-helper-effect-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/93-helper-effect.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-helper-effect-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/93-helper-effect-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/93-helper-effect.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "94-wrong-phase-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/94-wrong-phase.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "94-wrong-phase-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/94-wrong-phase.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "94-wrong-phase-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/94-wrong-phase-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/94-wrong-phase.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "95-unrelated-incoming-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/95-unrelated-incoming.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "95-unrelated-incoming-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/95-unrelated-incoming.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "95-unrelated-incoming-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/95-unrelated-incoming-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/95-unrelated-incoming.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "96-loan-escape-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/96-loan-escape.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "96-loan-escape-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/96-loan-escape.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "96-loan-escape-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/96-loan-escape-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/96-loan-escape.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "97-formal-arity-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/97-formal-arity.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "97-formal-arity-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/97-formal-arity.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "97-formal-arity-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/97-formal-arity-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/97-formal-arity.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "98-second-selection-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/98-second-selection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "98-second-selection-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/98-second-selection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "98-second-selection-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/98-second-selection-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/98-second-selection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "99-literal-helper-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/99-literal-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "99-literal-helper-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/99-literal-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "99-literal-helper-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/99-literal-helper-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/99-literal-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "100-extra-helper-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/100-extra-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "100-extra-helper-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/100-extra-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "100-extra-helper-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/100-extra-helper-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/100-extra-helper.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "101-zero-step-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/101-zero-step.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "101-zero-step-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/101-zero-step.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "101-zero-step-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/101-zero-step-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/101-zero-step.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "80-inline-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-inline-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/80-inline-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/80-inline-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-pure-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/81-pure-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-pure-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/81-pure-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-pure-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1184-native/81-pure-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1184/sources/81-pure-control.nl"
+    ],
+    "status": 0
+  }
+]

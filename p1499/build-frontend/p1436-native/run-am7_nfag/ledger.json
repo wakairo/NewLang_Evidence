@@ -1,0 +1,308 @@
+[
+  {
+    "label": "emit-control",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/control.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1435/C-mixed-payload.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "e42422d7c0a85fc051ab1e0b4281f127cd5b6561ccfe7add0c1e25a738c9a896"
+  },
+  {
+    "label": "emit-some",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1435/P-some-bool.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "bda86b39bc88d6f7276232bb96ad47dfd78ae2bec2ff9b247f70e6aa2c3f65fd"
+  },
+  {
+    "label": "emit-none",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/none.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1435/P-none-bool-copy.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "ab0d50e4368d3945d7614d649d54e203e6d1c3677b4cbf74399536f88af95711"
+  },
+  {
+    "label": "N-wrong-domain.nl",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/N-wrong-domain.nl.sentinel",
+      "/workspace/NewLang_Compiler/tests/p1435/N-wrong-domain.nl"
+    ],
+    "exit": 3,
+    "named_no_clobber": true
+  },
+  {
+    "label": "N-active-loan-end.nl",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/N-active-loan-end.nl.sentinel",
+      "/workspace/NewLang_Compiler/tests/p1435/N-active-loan-end.nl"
+    ],
+    "exit": 3,
+    "named_no_clobber": true
+  },
+  {
+    "label": "raw-0-some-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-some-O0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-some-O0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-some-O2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-some-O2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/none.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-none-O0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-none-O0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/none.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-none-O2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/raw-0-none-O2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DP1436_FAIL_AT=0",
+      "-DP1436_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1436/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-none-fail0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address,undefined",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DP1436_FAIL_AT=0",
+      "-DP1436_CASE_NONE=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/none.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1436/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-none-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-none-fail0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-none-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail1-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DP1436_FAIL_AT=1",
+      "-DP1436_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1436/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail1"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail1",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail1"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1436/passive.h\"",
+      "-DP1436_FAIL_AT=2",
+      "-DP1436_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1436/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1436-native/run-am7_nfag/passive-some-fail2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  }
+]

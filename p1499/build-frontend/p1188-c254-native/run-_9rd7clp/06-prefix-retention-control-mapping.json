@@ -1,0 +1,78 @@
+{
+  "roles": {
+    "loop": 25,
+    "phase": 7,
+    "result": 7,
+    "base": 1,
+    "index": 0,
+    "helper": 10,
+    "prefix": {
+      "2": {
+        "name": "snap",
+        "kind": "field",
+        "source": 1,
+        "index": 0
+      },
+      "3": {
+        "name": "held",
+        "kind": "copy",
+        "source": 2,
+        "index": 0
+      },
+      "4": {
+        "name": "peer_snap",
+        "kind": "field",
+        "source": 1,
+        "index": 1
+      },
+      "5": {
+        "name": "peer_held",
+        "kind": "copy",
+        "source": 4,
+        "index": 0
+      },
+      "6": {
+        "name": "same_bits",
+        "kind": "literal",
+        "source": 0,
+        "index": 0
+      }
+    },
+    "locals": {
+      "9": {
+        "name": "incoming",
+        "quantity": 0
+      },
+      "11": {
+        "name": "old",
+        "quantity": 0
+      },
+      "12": {
+        "name": "old_copy",
+        "quantity": 0
+      },
+      "13": {
+        "name": "during",
+        "quantity": 0
+      },
+      "14": {
+        "name": "beside",
+        "quantity": 0
+      }
+    },
+    "uses": []
+  },
+  "mapping": {
+    "start": 2038,
+    "stop": 3513,
+    "body": "for (;;) {\n        const size_t nl_loop_phase_25 = nl_loop_carry_25;\n        NL_CURRENT_PHASE(nl_loop_phase_25, &nl_local_1.f0, &nl_local_1.f1);\n        if (nl_loop_phase_25 < (size_t)UINTMAX_C(4)) {\n            (void)nl_loop_phase_25;\n            const uint8_t nl_local_9 = nl_fn_10(nl_loop_phase_25);\n            (void)nl_local_9;\n            NL_CURRENT_LOCAL(9, nl_local_9);\n            uint8_t nl_loan_result_1;\n            {\n                uint8_t *const nl_local_10 = &nl_local_1.f0;\n                (void)nl_local_10;\n                const uint8_t nl_replace_old_10 = *nl_local_10;\n                *nl_local_10 = nl_local_9;\n                nl_loan_result_1 = nl_replace_old_10;\n            }\n            (void)nl_loan_result_1;\n            const uint8_t nl_local_11 = nl_loan_result_1;\n            (void)nl_local_11;\n            NL_CURRENT_LOCAL(11, nl_local_11);\n            const uint8_t nl_local_12 = nl_local_11;\n            (void)nl_local_12;\n            NL_CURRENT_LOCAL(12, nl_local_12);\n            (void)nl_local_12;\n            const uint8_t nl_local_13 = nl_local_1.f0;\n            (void)nl_local_13;\n            NL_CURRENT_LOCAL(13, nl_local_13);\n            const uint8_t nl_local_14 = nl_local_1.f1;\n            (void)nl_local_14;\n            NL_CURRENT_LOCAL(14, nl_local_14);\n            (void)nl_local_13;\n            (void)nl_local_14;\n            nl_loop_carry_25 = nl_loop_phase_25 + (size_t)UINTMAX_C(1);\n            continue;\n        }\n        ",
+    "prefix_values": {
+      "2": 72,
+      "3": 72,
+      "4": 198,
+      "5": 198,
+      "6": 72
+    },
+    "direct_discards": []
+  }
+}

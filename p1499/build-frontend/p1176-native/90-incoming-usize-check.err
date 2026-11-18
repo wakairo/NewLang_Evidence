@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1176/sources/90-incoming-usize.nl:7:61-7:69: error(semantic)[P3-TYPE-MISMATCH]: new value type differs from fixed field type

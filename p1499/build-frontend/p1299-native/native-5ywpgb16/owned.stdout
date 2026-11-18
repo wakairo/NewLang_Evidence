@@ -1,0 +1,23 @@
+BIND sample 27
+BIND displaced 32
+BIND displaced 33
+BIND archived_copy 34
+BIND collected 24
+BIND archived 2
+BIND forwarded 3
+BIND retired 7
+BIND receipt 8
+BIND previous 9
+BIND caller_old 10
+BIND caller_current 11
+BIND caller_sibling 12
+CALL role=inside function=10 old=67 current=149 sibling=193 same-original=1 field=0 closed-loan=1 actual-formal=1
+CALL role=postmatch function=12 old=103 current=runtime-u8 sibling=227 same-original=1 field=0 closed-loan=1 actual-formal=1
+PREFIX-PASS original-before-H-to-real-call-entry=1
+OWNED-PASS two-source-callers=1 public-refusals=14
+CANONICAL-DESTROY fault=0 unrestored-A B-live=1
+CANONICAL-DESTROY fault=1 unrestored-A B-live=1
+CANONICAL-DESTROY fault=2 unrestored-A B-live=1
+CANONICAL-DESTROY fault=3 unrestored-A B-live=1
+CANONICAL-DESTROY fault=4 unrestored-A B-live=1
+CANONICAL-DESTROY fault=5 unrestored-A B-live=1

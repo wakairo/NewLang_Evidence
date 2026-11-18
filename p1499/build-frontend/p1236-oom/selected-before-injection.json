@@ -1,0 +1,2324 @@
+[
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 12,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 13,
+    "function": "register_function_unit",
+    "pc": "0x4b6c03",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 14,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 37,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 44,
+    "function": "owned",
+    "pc": "0x4baf6b",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 46,
+    "function": "nl_recursive_option",
+    "pc": "0x4bb1f8",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 49,
+    "function": "nl_recursive_complete",
+    "pc": "0x4bb6e8",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 76,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 136,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 171,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5e49",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 172,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5edd",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 175,
+    "function": "nl_source_create",
+    "pc": "0x4eb683",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 176,
+    "function": "finish_source",
+    "pc": "0x4eb57e",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 177,
+    "function": "finish_source",
+    "pc": "0x4eb5a0",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 178,
+    "function": "nl_parser_create",
+    "pc": "0x4ea72a",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 179,
+    "function": "nl_syntax_tree_create",
+    "pc": "0x4eae6f",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 180,
+    "function": "nl_syntax_node_create",
+    "pc": "0x4eaeca",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 594,
+    "function": "check_definition",
+    "pc": "0x4b563a",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 595,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 596,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 597,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 598,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 645,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 657,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 661,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 662,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 706,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 707,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 757,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 762,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 763,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 764,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 816,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 817,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1084,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1185,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1375,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1402,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1403,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1480,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1557,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1558,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1636,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1637,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1872,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 1961,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2003,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2014,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2057,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2058,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2059,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2102,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2326,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "registration",
+    "point": 2375,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3225,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 24,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 26,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 32,
+    "function": "check_fragment",
+    "pc": "0x4b2f22",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 33,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 34,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 35,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 36,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 38,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 40,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 41,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 51,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 86,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 98,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 102,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 103,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 147,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 148,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 198,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 203,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 204,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 205,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 257,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 258,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 525,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 626,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 843,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 844,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 921,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 998,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 999,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1077,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1078,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1313,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1402,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1444,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1455,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1498,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1499,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1500,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1543,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1707,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1770,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 1819,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 2525,
+    "function": "retain_current_break",
+    "pc": "0x485d70",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 2595,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "actual",
+    "point": 3123,
+    "function": "current_signature_seal",
+    "pc": "0x499105",
+    "full_stage_reached": 3123,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 1,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 2,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 3,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 4,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 5,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 6,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 7,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 8,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 9,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 10,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "emit",
+    "point": 11,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 1,
+    "function": "emit_c17_to",
+    "pc": "0x419c83",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6789,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6790,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6791,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6792,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6793,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6794,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6795,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6796,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6797,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6798,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl",
+    "stage": "named",
+    "point": 6799,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 6799,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/A-bound-old-u8"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 12,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 13,
+    "function": "register_function_unit",
+    "pc": "0x4b6c03",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 14,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 37,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 44,
+    "function": "owned",
+    "pc": "0x4baf6b",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 46,
+    "function": "nl_recursive_option",
+    "pc": "0x4bb1f8",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 49,
+    "function": "nl_recursive_complete",
+    "pc": "0x4bb6e8",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 76,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 136,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 171,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5e49",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 172,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5edd",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 175,
+    "function": "nl_source_create",
+    "pc": "0x4eb683",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 176,
+    "function": "finish_source",
+    "pc": "0x4eb57e",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 177,
+    "function": "finish_source",
+    "pc": "0x4eb5a0",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 178,
+    "function": "nl_parser_create",
+    "pc": "0x4ea72a",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 179,
+    "function": "nl_syntax_tree_create",
+    "pc": "0x4eae6f",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 180,
+    "function": "nl_syntax_node_create",
+    "pc": "0x4eaeca",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 588,
+    "function": "check_definition",
+    "pc": "0x4b563a",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 589,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 590,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 591,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 592,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 639,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 651,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 655,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 656,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 700,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 701,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 751,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 756,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 757,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 758,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 810,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 811,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1078,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1179,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1369,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1396,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1397,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1474,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1551,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1552,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1630,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1631,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1866,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1955,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 1997,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2008,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2051,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2052,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2053,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2096,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2320,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "registration",
+    "point": 2369,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3207,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 24,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 26,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 32,
+    "function": "check_fragment",
+    "pc": "0x4b2f22",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 33,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 34,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 35,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 36,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 38,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 40,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 41,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 51,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 86,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 98,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 102,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 103,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 147,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 148,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 198,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 203,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 204,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 205,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 257,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 258,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 525,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 626,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 843,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 844,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 921,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 998,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 999,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1077,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1078,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1313,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1402,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1444,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1455,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1498,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1499,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1500,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1543,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1707,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1770,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 1819,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 2513,
+    "function": "retain_current_break",
+    "pc": "0x485d70",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 2583,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "actual",
+    "point": 3109,
+    "function": "current_signature_seal",
+    "pc": "0x499105",
+    "full_stage_reached": 3109,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 1,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 2,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 3,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 4,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 5,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 6,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 7,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 8,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 9,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 10,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "emit",
+    "point": 11,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 1,
+    "function": "emit_c17_to",
+    "pc": "0x419c83",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6751,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6752,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6753,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6754,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6755,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6756,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6757,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6758,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6759,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6760,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl",
+    "stage": "named",
+    "point": 6761,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 6761,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1236-oom/B-direct-break-operand"
+  }
+]

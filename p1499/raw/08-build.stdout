@@ -1,0 +1,11 @@
+[  0%] Built target newlang_source
+[ 12%] Built target newlang_diagnostic
+[ 12%] Built target newlang_lexer
+[ 25%] Built target newlang_syntax
+[ 25%] Built target newlang_parser
+[ 37%] Built target newlang_checked
+[ 87%] Built target newlang_semantic
+[ 87%] Built target newlang_checked_c_node
+[ 87%] Building C object CMakeFiles/p1499_probe.dir/tests/p1499/probe.c.o
+[100%] Linking C executable p1499_probe
+[100%] Built target p1499_probe

@@ -1,0 +1,409 @@
+[
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1227_c283_observe",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-postH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-postH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-postH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-old-material-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-preH.nl",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-postH.nl"
+    ],
+    "label": "owned-current",
+    "status": 0,
+    "stdout_sha256": "1afe91d31ff23dd6ee3e0bccf84326c27adbf6d4b645fbf446f0563b49f9269d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl"
+    ],
+    "label": "A-alias-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl"
+    ],
+    "label": "A-alias-preH-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl"
+    ],
+    "label": "A-alias-postH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl"
+    ],
+    "label": "A-alias-postH-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-preH.nl"
+    ],
+    "label": "A-different-tail-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-different-tail-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-preH.nl"
+    ],
+    "label": "A-different-tail-preH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e60cd82f9e51705d003b16ac5d2f29e6b0c8e2d9c6cf24e8f8ddf36a6ee5e530"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-preH.nl"
+    ],
+    "label": "A-unrelated-alias-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-unrelated-alias-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-preH.nl"
+    ],
+    "label": "A-unrelated-alias-preH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "f234c7adf719eb697ec694c6128afb9cfd459b0213651bc4b13138681db910d1"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-preH.nl"
+    ],
+    "label": "A-equal-bits-tail-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-equal-bits-tail-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-preH.nl"
+    ],
+    "label": "A-equal-bits-tail-preH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "af456cdc557db47745f7d2b22a513d6694205009071aa41a9879473feeaebe38"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-postH.nl"
+    ],
+    "label": "A-different-tail-postH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-different-tail-postH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-postH.nl"
+    ],
+    "label": "A-different-tail-postH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "d355144bc6762c3fdb666e6cdb2a4c047300f1e752c9619b4096b97c36fc347e"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-postH.nl"
+    ],
+    "label": "A-unrelated-alias-postH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-unrelated-alias-postH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-postH.nl"
+    ],
+    "label": "A-unrelated-alias-postH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a8e14c91aa00b7e24a3a8258aa84bc716ccd2a5262d368b2ee12eb10dbac39f8"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-postH.nl"
+    ],
+    "label": "A-equal-bits-tail-postH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-equal-bits-tail-postH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-postH.nl"
+    ],
+    "label": "A-equal-bits-tail-postH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a6770c56aadc15530a63d70f4da10a39c476e74eeea33733efdf632b9c1ef029"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-old-material-preH.nl"
+    ],
+    "label": "A-old-material-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-old-material-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-old-material-preH.nl"
+    ],
+    "label": "A-old-material-preH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e13407d25db7f50de76781a9a6eaa8d58ebbb3cd47ba0680d50775e80ed28160"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-preH.nl"
+    ],
+    "label": "A-explicit-final-preH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-explicit-final-preH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-preH.nl"
+    ],
+    "label": "A-explicit-final-preH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "15aa1de1b6408e69b33396f5d1a36357d45b5a327f82453b350f235ae0345e09"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-postH.nl"
+    ],
+    "label": "A-explicit-final-postH-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-explicit-final-postH.c",
+      "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-postH.nl"
+    ],
+    "label": "A-explicit-final-postH-C17",
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "0c9fe10592c770c78b22033b4d5f70c85ed671eba08ababf8b88e99574a497f6"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O0.o"
+    ],
+    "label": "A-alias-preH-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O0.o"
+    ],
+    "label": "A-alias-postH-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O0.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/matrix-O0"
+    ],
+    "label": "O0-link",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/matrix-O0"
+    ],
+    "label": "O0-native",
+    "status": 0,
+    "stdout_sha256": "ce622ac979b859c2791daedd04d27c50551c5a4db254fee639e33952302fed43",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O2.o"
+    ],
+    "label": "A-alias-preH-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O2.o"
+    ],
+    "label": "A-alias-postH-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-preH-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/A-alias-postH-O2.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/matrix-O2"
+    ],
+    "label": "O2-link",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1227-c283-source-native/matrix-O2"
+    ],
+    "label": "O2-native",
+    "status": 0,
+    "stdout_sha256": "ce622ac979b859c2791daedd04d27c50551c5a4db254fee639e33952302fed43",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

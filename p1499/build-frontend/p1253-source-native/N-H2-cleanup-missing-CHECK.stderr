@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1253/sources/N-H2-cleanup-missing.nl:57:33-96:18: error(semantic)[P5-SCOPE-OBLIGATION]: non-Discardable local remains available at block exit

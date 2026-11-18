@@ -1,0 +1,1124 @@
+[
+  {
+    "label": "01-field-before-after-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/01-field-before-after.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/01-field-before-after.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/01-field-before-after.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/01-field-before-after.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/02-field-deep-quantity.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/02-field-deep-quantity.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/02-field-deep-quantity.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/02-field-deep-quantity.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/03-literal-shadow.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/03-literal-shadow.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/03-literal-shadow.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/03-literal-shadow.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/04-zero-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/04-zero-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/04-zero-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/04-zero-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/05-one-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/05-one-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/05-one-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/05-one-edge.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/06-prefix-retention-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/06-prefix-retention-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/06-prefix-retention-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-owned-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_c254_probe",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/06-prefix-retention-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "90-third-prefix-copy-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/90-third-prefix-copy.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "90-third-prefix-copy-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/90-third-prefix-copy.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "90-third-prefix-copy-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/90-third-prefix-copy-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/90-third-prefix-copy.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "91-call-root-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/91-call-root.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "91-call-root-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/91-call-root.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "91-call-root-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/91-call-root-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/91-call-root.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "92-outer-quantity-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/92-outer-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "92-outer-quantity-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/92-outer-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "92-outer-quantity-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/92-outer-quantity-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/92-outer-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "93-ending-loan-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/93-ending-loan.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "93-ending-loan-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/93-ending-loan.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "93-ending-loan-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/93-ending-loan-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/93-ending-loan.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "94-source-order-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/94-source-order.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "94-source-order-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/94-source-order.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "94-source-order-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/94-source-order-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/94-source-order.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "95-shadow-quantity-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/95-shadow-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "95-shadow-quantity-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/95-shadow-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "95-shadow-quantity-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/95-shadow-quantity-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/95-shadow-quantity.nl"
+    ],
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "label": "80-helper-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/80-helper-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-helper-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/80-helper-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-helper-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/80-helper-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/80-helper-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "81-inline-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/81-inline-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "81-inline-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/81-inline-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "81-inline-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/81-inline-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/c254/sources/81-inline-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-field-before-after-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/01-field-before-after-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-field-deep-quantity-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/02-field-deep-quantity-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-literal-shadow-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/03-literal-shadow-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-zero-edge-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/04-zero-edge-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-one-edge-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/05-one-edge-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "06-prefix-retention-control-gcc-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-c254-native/run-rnssclae/06-prefix-retention-control-gcc-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  }
+]

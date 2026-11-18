@@ -1,0 +1,3 @@
+physical quota=0 frees=0 copies=0 byte=43
+physical quota=1 frees=1 copies=0 byte=43
+physical quota=2 frees=2 copies=3 byte=43

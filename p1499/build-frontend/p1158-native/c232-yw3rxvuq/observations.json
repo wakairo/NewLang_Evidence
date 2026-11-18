@@ -1,0 +1,807 @@
+[
+  {
+    "label": "01-add-return-left-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/01-add-return-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158_safety",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/01-add-return-left.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/01-add-return-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/01-add-return-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={2,7,12,17}",
+      "-DC232_RESULT=17",
+      "-DC232_COMPARE=18",
+      "-DC232_TRUTH=1",
+      "-DC232_ARM=0",
+      "-DC232_INDEX=0",
+      "-DC232_UPDATED=204",
+      "-DC232_RETURN_ARM=0",
+      "-DC232_EARLY=1",
+      "-DC232_FIELD0=83",
+      "-DC232_FIELD1=151",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={2,7,12,17}",
+      "-DC232_RESULT=17",
+      "-DC232_COMPARE=18",
+      "-DC232_TRUTH=1",
+      "-DC232_ARM=0",
+      "-DC232_INDEX=0",
+      "-DC232_UPDATED=204",
+      "-DC232_RETURN_ARM=0",
+      "-DC232_EARLY=1",
+      "-DC232_FIELD0=83",
+      "-DC232_FIELD1=151",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-return-left-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/01-add-return-left-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/02-zero-normal-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158_safety",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/02-zero-normal-right.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/02-zero-normal-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/02-zero-normal-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={16}",
+      "-DC232_RESULT=16",
+      "-DC232_COMPARE=16",
+      "-DC232_TRUTH=0",
+      "-DC232_ARM=1",
+      "-DC232_INDEX=1",
+      "-DC232_UPDATED=182",
+      "-DC232_RETURN_ARM=0",
+      "-DC232_EARLY=0",
+      "-DC232_FIELD0=37",
+      "-DC232_FIELD1=109",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={16}",
+      "-DC232_RESULT=16",
+      "-DC232_COMPARE=16",
+      "-DC232_TRUTH=0",
+      "-DC232_ARM=1",
+      "-DC232_INDEX=1",
+      "-DC232_UPDATED=182",
+      "-DC232_RETURN_ARM=0",
+      "-DC232_EARLY=0",
+      "-DC232_FIELD0=37",
+      "-DC232_FIELD1=109",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-normal-right-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/02-zero-normal-right-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/03-sub-return-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158_safety",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/03-sub-return-right.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/03-sub-return-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/03-sub-return-right.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={27,20,13,6}",
+      "-DC232_RESULT=6",
+      "-DC232_COMPARE=8",
+      "-DC232_TRUTH=0",
+      "-DC232_ARM=1",
+      "-DC232_INDEX=1",
+      "-DC232_UPDATED=211",
+      "-DC232_RETURN_ARM=1",
+      "-DC232_EARLY=1",
+      "-DC232_FIELD0=174",
+      "-DC232_FIELD1=61",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={27,20,13,6}",
+      "-DC232_RESULT=6",
+      "-DC232_COMPARE=8",
+      "-DC232_TRUTH=0",
+      "-DC232_ARM=1",
+      "-DC232_INDEX=1",
+      "-DC232_UPDATED=211",
+      "-DC232_RETURN_ARM=1",
+      "-DC232_EARLY=1",
+      "-DC232_FIELD0=174",
+      "-DC232_FIELD1=61",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-return-right-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/03-sub-return-right-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/04-one-normal-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158_safety",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/04-one-normal-left.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/04-one-normal-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/04-one-normal-left.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={9,13}",
+      "-DC232_RESULT=13",
+      "-DC232_COMPARE=13",
+      "-DC232_TRUTH=1",
+      "-DC232_ARM=0",
+      "-DC232_INDEX=0",
+      "-DC232_UPDATED=129",
+      "-DC232_RETURN_ARM=1",
+      "-DC232_EARLY=0",
+      "-DC232_FIELD0=94",
+      "-DC232_FIELD1=206",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1158/observe.h\"",
+      "-DC232_TRACE={9,13}",
+      "-DC232_RESULT=13",
+      "-DC232_COMPARE=13",
+      "-DC232_TRUTH=1",
+      "-DC232_ARM=0",
+      "-DC232_INDEX=0",
+      "-DC232_UPDATED=129",
+      "-DC232_RETURN_ARM=1",
+      "-DC232_EARLY=0",
+      "-DC232_FIELD0=94",
+      "-DC232_FIELD1=206",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-normal-left-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/04-one-normal-left-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-return-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/80-known-return-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-return-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/80-known-return-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-return-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/80-known-return-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/80-known-return-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-two-normal-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/81-two-normal-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-two-normal-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/81-two-normal-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-two-normal-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/81-two-normal-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/81-two-normal-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "82-extra-return-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/82-extra-return-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "82-extra-return-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/82-extra-return-control.nl"
+    ],
+    "status": 4
+  },
+  {
+    "label": "82-extra-return-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/82-extra-return-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/82-extra-return-control.nl"
+    ],
+    "status": 4
+  },
+  {
+    "label": "90-overflow-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/90-overflow-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/91-read-mode-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/92-ending-reference-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1158-native/c232-yw3rxvuq/93-incoming-type-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1158/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  }
+]

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1133/sources/93-wrong-type.nl:11:28-11:29: error(semantic)[USIZE-ADDITION-TYPE]: + requires two exact core usize operands

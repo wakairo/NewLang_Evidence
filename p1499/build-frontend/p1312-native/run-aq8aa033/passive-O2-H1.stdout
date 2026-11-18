@@ -1,0 +1,2 @@
+PASSIVE H1 outcome=83 terminal-old=117 current=83 sibling=167 phases=3 backedges=2 same-T=1 frees=1
+ALLOCATOR world=1 attempts=2 successes=1 frees=1 PASS

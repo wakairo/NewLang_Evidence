@@ -1,0 +1,62 @@
+[
+  {
+    "name": "01-static-infinite-check",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "name": "01-static-infinite-emit",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "name": "01-static-infinite-gcc-O0",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "name": "01-static-infinite-gcc-O2",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "name": "02-zero-bound-check",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/02-zero-bound.nl:11:28-11:29: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "02-zero-bound-emit",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/02-zero-bound.nl:11:28-11:29: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "03-unsafe-add-first-break-check",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/03-unsafe-add-first-break.nl:11:28-11:29: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "03-unsafe-add-first-break-emit",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/03-unsafe-add-first-break.nl:11:28-11:29: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "04-unsafe-sub-first-break-check",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/04-unsafe-sub-first-break.nl:13:28-13:29: error(precision)[USIZE-SUBTRACTION-PRECISION]: subtraction needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "04-unsafe-sub-first-break-emit",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/04-unsafe-sub-first-break.nl:13:28-13:29: error(precision)[USIZE-SUBTRACTION-PRECISION]: subtraction needs known dependency-free quantity operands in this profile\n"
+  },
+  {
+    "name": "05-ending-loan-check",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/05-ending-loan.nl:11:22-11:68: error(semantic)[P8-EXIT-DEPENDENCY]: surviving state depends on the ending loan scope\n"
+  },
+  {
+    "name": "05-ending-loan-emit",
+    "status": 3,
+    "stderr": "/workspace/NewLang_Compiler/tests/p1133/bounds/05-ending-loan.nl:11:22-11:68: error(semantic)[P8-EXIT-DEPENDENCY]: surviving state depends on the ending loan scope\n"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "roles": {
+    "loop": 16,
+    "phase": 4,
+    "result": 4,
+    "index": 0,
+    "helper": 7,
+    "locals": {
+      "actual": {
+        "symbol": 5,
+        "quantity": 1
+      },
+      "incoming": {
+        "symbol": 8,
+        "quantity": 0
+      },
+      "old": {
+        "symbol": 10,
+        "quantity": 0
+      },
+      "old_copy": {
+        "symbol": 11,
+        "quantity": 0
+      },
+      "during": {
+        "symbol": 12,
+        "quantity": 0
+      },
+      "beside": {
+        "symbol": 13,
+        "quantity": 0
+      }
+    },
+    "discards": [
+      {
+        "node": 3,
+        "symbol": 4,
+        "phase": 1
+      }
+    ]
+  },
+  "mapping": {
+    "bad_phase_reads": 0,
+    "body": "for (;;) {\n        const size_t nl_loop_phase_16 = nl_loop_carry_16;\n        NL_CURRENT_PHASE(nl_loop_phase_16, &nl_local_3.f0, &nl_local_3.f1);\n        if (nl_loop_phase_16 < (size_t)UINTMAX_C(4)) {\n            (void)nl_loop_phase_16;\n            const size_t nl_local_5 = nl_loop_phase_16;\n            (void)nl_local_5;\n            NL_CURRENT_LOCAL(5, nl_local_5);\n            const uint8_t nl_local_8 = nl_fn_11(nl_local_5);\n            (void)nl_local_8;\n            NL_CURRENT_LOCAL(8, nl_local_8);\n            uint8_t nl_loan_result_1;\n            {\n                uint8_t *const nl_local_9 = &nl_local_3.f0;\n                (void)nl_local_9;\n                const uint8_t nl_replace_old_13 = *nl_local_9;\n                *nl_local_9 = nl_local_8;\n                nl_loan_result_1 = nl_replace_old_13;\n            }\n            (void)nl_loan_result_1;\n            const uint8_t nl_local_10 = nl_loan_result_1;\n            (void)nl_local_10;\n            NL_CURRENT_LOCAL(10, nl_local_10);\n            const uint8_t nl_local_11 = nl_local_10;\n            (void)nl_local_11;\n            NL_CURRENT_LOCAL(11, nl_local_11);\n            (void)nl_local_11;\n            const uint8_t nl_local_12 = nl_local_3.f0;\n            (void)nl_local_12;\n            NL_CURRENT_LOCAL(12, nl_local_12);\n            const uint8_t nl_local_13 = nl_local_3.f1;\n            (void)nl_local_13;\n            NL_CURRENT_LOCAL(13, nl_local_13);\n            (void)nl_local_12;\n            (void)nl_local_13;\n            nl_loop_carry_16 = nl_loop_phase_16 + (size_t)UINTMAX_C(1);\n            continue;\n        }\n        ",
+    "carriers": {
+      "nl_loop_phase_16": 1,
+      "nl_local_5": 1
+    },
+    "start": 1753,
+    "stop": 3349
+  }
+}

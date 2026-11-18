@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1117/sources/04-wrong-operand.nl:6:18-6:36: error(semantic)[USIZE-EQUALITY-TYPE]: == requires two exact core usize operands

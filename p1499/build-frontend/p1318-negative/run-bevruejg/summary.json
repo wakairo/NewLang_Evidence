@@ -1,0 +1,8 @@
+{
+  "CLI_oom": 8,
+  "flush_failure": 2,
+  "source_negative": 2,
+  "named_bytes_inode_mtime": true,
+  "temp_residue": false,
+  "retries_byte_identical": true
+}

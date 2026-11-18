@@ -1,0 +1,1304 @@
+[
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/01-init-one.nl"
+    ],
+    "label": "01-init-one-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/01-init-one.nl"
+    ],
+    "label": "01-init-one-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/01-init-one.nl"
+    ],
+    "label": "01-init-one-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/01-init-one.nl"
+    ],
+    "label": "01-init-one-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O0-raw"
+    ],
+    "label": "01-init-one-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O0-raw"
+    ],
+    "label": "01-init-one-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O0-passive"
+    ],
+    "label": "01-init-one-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O0-passive"
+    ],
+    "label": "01-init-one-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O2-raw"
+    ],
+    "label": "01-init-one-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O2-raw"
+    ],
+    "label": "01-init-one-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O2-passive"
+    ],
+    "label": "01-init-one-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/01-init-one-gcc-O2-passive"
+    ],
+    "label": "01-init-one-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/02-actual-one.nl"
+    ],
+    "label": "02-actual-one-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/02-actual-one.nl"
+    ],
+    "label": "02-actual-one-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/02-actual-one.nl"
+    ],
+    "label": "02-actual-one-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/02-actual-one.nl"
+    ],
+    "label": "02-actual-one-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O0-raw"
+    ],
+    "label": "02-actual-one-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O0-raw"
+    ],
+    "label": "02-actual-one-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O0-passive"
+    ],
+    "label": "02-actual-one-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O0-passive"
+    ],
+    "label": "02-actual-one-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O2-raw"
+    ],
+    "label": "02-actual-one-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O2-raw"
+    ],
+    "label": "02-actual-one-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O2-passive"
+    ],
+    "label": "02-actual-one-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/02-actual-one-gcc-O2-passive"
+    ],
+    "label": "02-actual-one-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/03-formal-one.nl"
+    ],
+    "label": "03-formal-one-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/03-formal-one.nl"
+    ],
+    "label": "03-formal-one-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/03-formal-one.nl"
+    ],
+    "label": "03-formal-one-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/03-formal-one.nl"
+    ],
+    "label": "03-formal-one-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O0-raw"
+    ],
+    "label": "03-formal-one-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O0-raw"
+    ],
+    "label": "03-formal-one-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O0-passive"
+    ],
+    "label": "03-formal-one-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O0-passive"
+    ],
+    "label": "03-formal-one-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O2-raw"
+    ],
+    "label": "03-formal-one-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O2-raw"
+    ],
+    "label": "03-formal-one-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O2-passive"
+    ],
+    "label": "03-formal-one-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/03-formal-one-gcc-O2-passive"
+    ],
+    "label": "03-formal-one-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/04-all-one.nl"
+    ],
+    "label": "04-all-one-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/04-all-one.nl"
+    ],
+    "label": "04-all-one-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/04-all-one.nl"
+    ],
+    "label": "04-all-one-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/04-all-one.nl"
+    ],
+    "label": "04-all-one-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O0-raw"
+    ],
+    "label": "04-all-one-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O0-raw"
+    ],
+    "label": "04-all-one-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O0-passive"
+    ],
+    "label": "04-all-one-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O0-passive"
+    ],
+    "label": "04-all-one-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O2-raw"
+    ],
+    "label": "04-all-one-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O2-raw"
+    ],
+    "label": "04-all-one-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O2-passive"
+    ],
+    "label": "04-all-one-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/04-all-one-gcc-O2-passive"
+    ],
+    "label": "04-all-one-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/05-all-two.nl"
+    ],
+    "label": "05-all-two-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/05-all-two.nl"
+    ],
+    "label": "05-all-two-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/05-all-two.nl"
+    ],
+    "label": "05-all-two-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/05-all-two.nl"
+    ],
+    "label": "05-all-two-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O0-raw"
+    ],
+    "label": "05-all-two-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O0-raw"
+    ],
+    "label": "05-all-two-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O0-passive"
+    ],
+    "label": "05-all-two-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O0-passive"
+    ],
+    "label": "05-all-two-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O2-raw"
+    ],
+    "label": "05-all-two-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O2-raw"
+    ],
+    "label": "05-all-two-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O2-passive"
+    ],
+    "label": "05-all-two-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/05-all-two-gcc-O2-passive"
+    ],
+    "label": "05-all-two-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/06-eq-two.nl"
+    ],
+    "label": "06-eq-two-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/06-eq-two.nl"
+    ],
+    "label": "06-eq-two-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/06-eq-two.nl"
+    ],
+    "label": "06-eq-two-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188_safety",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/06-eq-two.nl"
+    ],
+    "label": "06-eq-two-owned",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O0-raw"
+    ],
+    "label": "06-eq-two-gcc-O0-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O0-raw"
+    ],
+    "label": "06-eq-two-gcc-O0-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O0-passive"
+    ],
+    "label": "06-eq-two-gcc-O0-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O0-passive"
+    ],
+    "label": "06-eq-two-gcc-O0-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O2-raw"
+    ],
+    "label": "06-eq-two-gcc-O2-raw-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O2-raw"
+    ],
+    "label": "06-eq-two-gcc-O2-raw-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O2-passive"
+    ],
+    "label": "06-eq-two-gcc-O2-passive-build",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/06-eq-two-gcc-O2-passive"
+    ],
+    "label": "06-eq-two-gcc-O2-passive-native",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/80-direct-control.nl"
+    ],
+    "label": "80-direct-control-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/80-direct-control.nl"
+    ],
+    "label": "80-direct-control-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/80-direct-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/80-direct-control.nl"
+    ],
+    "label": "80-direct-control-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/81-result-control.nl"
+    ],
+    "label": "81-result-control-check",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/81-result-control.nl"
+    ],
+    "label": "81-result-control-emit",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/81-result-control-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/81-result-control.nl"
+    ],
+    "label": "81-result-control-named",
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/90-foreign-actual-literal.nl"
+    ],
+    "label": "90-foreign-actual-literal-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/90-foreign-actual-literal.nl"
+    ],
+    "label": "90-foreign-actual-literal-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/90-foreign-actual-literal-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/90-foreign-actual-literal.nl"
+    ],
+    "label": "90-foreign-actual-literal-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/91-foreign-actual-outer.nl"
+    ],
+    "label": "91-foreign-actual-outer-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/91-foreign-actual-outer.nl"
+    ],
+    "label": "91-foreign-actual-outer-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/91-foreign-actual-outer-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/91-foreign-actual-outer.nl"
+    ],
+    "label": "91-foreign-actual-outer-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/92-foreign-formal-literal.nl"
+    ],
+    "label": "92-foreign-formal-literal-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/92-foreign-formal-literal.nl"
+    ],
+    "label": "92-foreign-formal-literal-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/92-foreign-formal-literal-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/92-foreign-formal-literal.nl"
+    ],
+    "label": "92-foreign-formal-literal-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/93-actual-arithmetic.nl"
+    ],
+    "label": "93-actual-arithmetic-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/93-actual-arithmetic.nl"
+    ],
+    "label": "93-actual-arithmetic-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/93-actual-arithmetic-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/93-actual-arithmetic.nl"
+    ],
+    "label": "93-actual-arithmetic-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/94-formal-arithmetic.nl"
+    ],
+    "label": "94-formal-arithmetic-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/94-formal-arithmetic.nl"
+    ],
+    "label": "94-formal-arithmetic-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/94-formal-arithmetic-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/94-formal-arithmetic.nl"
+    ],
+    "label": "94-formal-arithmetic-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/95-init-arithmetic.nl"
+    ],
+    "label": "95-init-arithmetic-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/95-init-arithmetic.nl"
+    ],
+    "label": "95-init-arithmetic-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/95-init-arithmetic-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/95-init-arithmetic.nl"
+    ],
+    "label": "95-init-arithmetic-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/96-init-chain-three.nl"
+    ],
+    "label": "96-init-chain-three-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/96-init-chain-three.nl"
+    ],
+    "label": "96-init-chain-three-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/96-init-chain-three-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/96-init-chain-three.nl"
+    ],
+    "label": "96-init-chain-three-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/97-actual-chain-three.nl"
+    ],
+    "label": "97-actual-chain-three-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/97-actual-chain-three.nl"
+    ],
+    "label": "97-actual-chain-three-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/97-actual-chain-three-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/97-actual-chain-three.nl"
+    ],
+    "label": "97-actual-chain-three-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/98-formal-chain-three.nl"
+    ],
+    "label": "98-formal-chain-three-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/98-formal-chain-three.nl"
+    ],
+    "label": "98-formal-chain-three-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/98-formal-chain-three-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/98-formal-chain-three.nl"
+    ],
+    "label": "98-formal-chain-three-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/99-wrong-actual-type.nl"
+    ],
+    "label": "99-wrong-actual-type-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/99-wrong-actual-type.nl"
+    ],
+    "label": "99-wrong-actual-type-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/99-wrong-actual-type-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/99-wrong-actual-type.nl"
+    ],
+    "label": "99-wrong-actual-type-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/100-wrong-formal-type.nl"
+    ],
+    "label": "100-wrong-formal-type-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/100-wrong-formal-type.nl"
+    ],
+    "label": "100-wrong-formal-type-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/100-wrong-formal-type-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/100-wrong-formal-type.nl"
+    ],
+    "label": "100-wrong-formal-type-named",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/101-rhs-alias.nl"
+    ],
+    "label": "101-rhs-alias-check",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/101-rhs-alias.nl"
+    ],
+    "label": "101-rhs-alias-emit",
+    "status": 3,
+    "expected": 3
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1188-native/run-uz4ot0cl/101-rhs-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1188/sources/101-rhs-alias.nl"
+    ],
+    "label": "101-rhs-alias-named",
+    "status": 3,
+    "expected": 3
+  }
+]

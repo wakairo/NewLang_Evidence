@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1123/sources/12-no-nearest-target.nl:2:5-2:24: error(semantic)[P14-CONTROL-CONTEXT]: continue/break requires an active lexical loop target

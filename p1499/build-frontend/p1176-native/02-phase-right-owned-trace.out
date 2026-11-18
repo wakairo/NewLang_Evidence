@@ -1,0 +1,9 @@
+C243 public-owned=YES private-current=0 index=1 phase=2 root=1 child=3
+C243 entry-function=10 loop=10 incoming=0 sibling=158 ghost-fresh=YES break-write=NO
+C243 LOCAL name=incoming symbol=3
+C243 LOCAL name=old symbol=5
+C243 LOCAL name=old_copy symbol=6
+C243 LOCAL name=during symbol=7
+C243 LOCAL name=beside symbol=8
+C243 tamper=40 foreign-A-destroy/B-survive=PASS
+C243 unrestored display-count/foreign-table canonical-destroy=14 PASS

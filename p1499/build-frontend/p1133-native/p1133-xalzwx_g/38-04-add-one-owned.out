@@ -1,0 +1,35 @@
+C222 REGISTER=0
+C222 INVOKE=0
+C222 PRIVATE=0 stuttering=1 base=1 field=0 old-id=15 incoming=171 phase=8,3 limit=11
+C222 Unknown quantity has no public known-number receipt PASS
+C222 guarded operation/operand/source/arm/dependency refusals PASS
+C222 genuine public Copy GET/current0 parameters=4,5 Change old=1 post=12 same-root=1
+C222 missing-edge/count/root/wrong-target/stale-current refusals PASS
+C222 REGISTER=0
+C222 INVOKE=0
+C222 canonical A destruction / B survives PASS; altered graph never emitted/native
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 REGISTER=0
+C222 INVOKE=0
+C222 whole IF/body foreign array and short/long cardinality canonical cleanup PASS

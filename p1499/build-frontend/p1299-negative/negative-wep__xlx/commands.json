@@ -1,0 +1,56 @@
+[
+  {
+    "label": "N-callee-read-write.nl-check",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1299/N-callee-read-write.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-callee-read-write.nl-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1299/N-callee-read-write.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-callee-read-write.nl-named",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-negative/negative-wep__xlx/N-callee-read-write.nl.preserved.c",
+      "/workspace/NewLang_Compiler/tests/p1299/N-callee-read-write.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-head.nl-check",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1299/N-unclosed-head.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-head.nl-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1299/N-unclosed-head.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-head.nl-named",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-negative/negative-wep__xlx/N-unclosed-head.nl.preserved.c",
+      "/workspace/NewLang_Compiler/tests/p1299/N-unclosed-head.nl"
+    ],
+    "status": 3
+  }
+]

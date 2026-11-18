@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1236/sources/N-helper-static-type.nl:94:29-94:44: error(semantic)[P13-IF-RESULT]: normal if arms require the same single result type

@@ -1,0 +1,818 @@
+[
+  {
+    "label": "01-many-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "01-many-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/01-many-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "02-zero-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/02-zero-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "03-one-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/03-one-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/04-second-field-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "05-return-helper-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/05-return-helper-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "80-phase-control-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1203-native/80-phase-control-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  }
+]

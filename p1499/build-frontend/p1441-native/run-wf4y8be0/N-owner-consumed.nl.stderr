@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1441/N-owner-consumed.nl:82:43-82:54: error(semantic)[P3-USE-AFTER-CONSUME]: use of consumed semantic binding

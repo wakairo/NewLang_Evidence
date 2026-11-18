@@ -1,0 +1,21 @@
+[
+  {
+    "label": "emit-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1295/P-surviving-state.nl",
+      "emit",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "emit-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1295/P-surviving-state.nl",
+      "emit"
+    ],
+    "status": 0
+  }
+]

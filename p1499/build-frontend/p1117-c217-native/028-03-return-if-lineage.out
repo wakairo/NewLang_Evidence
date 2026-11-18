@@ -1,0 +1,7 @@
+P1117-C217 genuine private=1 call=1 outer=1
+P1117-C217 shape=return-if local=5 foreign=10 fresh_copies=1
+P1117-C217 call-only private=0 call=0 outer=0
+P1117-C217 endpoints-only private=0 call=0 outer=0
+P1117-C217 coherent private=0 call=0 outer=0 phase=repair
+P1117-C217 restored private=1 call=1 outer=1
+P1117-C217 altered graphs were not emitted or executed

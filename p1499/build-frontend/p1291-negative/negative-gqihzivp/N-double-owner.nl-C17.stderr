@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1291/sources/N-double-owner.nl:48:32-48:48: error(semantic)[P3-USE-AFTER-CONSUME]: use of consumed semantic binding

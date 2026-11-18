@@ -1,0 +1,142 @@
+{
+  "01-helper-loop": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "02-helper-alias-loop": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "03-one-edge": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "04-zero-edge": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "05-same-bits": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "06-after-main-alias": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "90-wrong-result": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "91-wrong-actual": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "92-arm-type": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "93-helper-effect": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "94-wrong-phase": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "95-unrelated-incoming": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "96-loan-escape": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "97-formal-arity": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "98-second-selection": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "99-literal-helper": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "100-extra-helper": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "101-zero-step": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "80-inline-control": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 0
+  },
+  "81-pure-control": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 0
+  }
+}

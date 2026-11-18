@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1295/N-undeclared-post-field.nl:101:36-101:51: error(semantic)[FIELD-UNKNOWN-FIELD]: field is not declared by the selected nominal

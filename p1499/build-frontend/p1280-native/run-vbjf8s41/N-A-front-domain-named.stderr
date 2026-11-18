@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1280/sources/N-A-front-domain.nl:72:54-72:100: error(semantic)[ALLOCATED-DOMAIN-MISMATCH]: pointer requires matching readable live domain

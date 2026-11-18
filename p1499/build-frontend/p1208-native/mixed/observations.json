@@ -1,0 +1,252 @@
+[
+  {
+    "label": "01-left-normal-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O0-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O0-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O0-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O0-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O2-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O2-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O2-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-left-normal-O2-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/01-left-normal-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O0-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O0-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O0-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O0-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O2-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O2-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O2-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-right-final-return-O2-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/mixed/04-right-final-return-O2-passive"
+    ],
+    "status": 0
+  }
+]

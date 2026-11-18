@@ -1,0 +1,11 @@
+C247 Copy-declarations=5 restored-tamper=48 view-no-clobber=PASS
+C245 public-owned=YES private-current=0 index=0 phase=4 root=3 child=4
+C245 entry-function=10 loop=16 incoming=0 sibling=240 ghost-fresh=YES break-write=NO
+C245 LOCAL name=actual symbol=5
+C245 LOCAL name=incoming symbol=8
+C245 LOCAL name=old symbol=10
+C245 LOCAL name=old_copy symbol=11
+C245 LOCAL name=during symbol=12
+C245 LOCAL name=beside symbol=13
+C245 tamper=57 foreign-A-destroy/B-survive=PASS
+C245 unrestored display-count/foreign-table canonical-destroy=22 PASS

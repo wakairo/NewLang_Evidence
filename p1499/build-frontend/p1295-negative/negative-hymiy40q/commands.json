@@ -1,0 +1,56 @@
+[
+  {
+    "label": "N-undeclared-post-field.nl-check",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1295/N-undeclared-post-field.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-undeclared-post-field.nl-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1295/N-undeclared-post-field.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-undeclared-post-field.nl-named",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1295-negative/negative-hymiy40q/N-undeclared-post-field.nl.preserved.c",
+      "/workspace/NewLang_Compiler/tests/p1295/N-undeclared-post-field.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-front.nl-check",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1295/N-unclosed-front.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-front.nl-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1295/N-unclosed-front.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-unclosed-front.nl-named",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1295-negative/negative-hymiy40q/N-unclosed-front.nl.preserved.c",
+      "/workspace/NewLang_Compiler/tests/p1295/N-unclosed-front.nl"
+    ],
+    "status": 3
+  }
+]

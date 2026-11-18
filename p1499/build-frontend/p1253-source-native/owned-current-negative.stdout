@@ -1,0 +1,74 @@
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=67 field=1 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/C-same-precomputation-literal-terminal.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=43 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/L-adopted-literal-calibration.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=43 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 0 0
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue-entry-at-bound.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/E-one-Continue.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/F-equal-bits-distinct-package.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/G-Copy-quantity-argument.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=67 field=1 closed_loan=1 source_break=13
+PREFIX 5 6
+ROLES 9 11 12 13 14 CALLER 7 8 9 10
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+NEGATIVE 17 genuine foreign-source/world/edge/result/loan/field/incarnation/shallow/whole-arm controls PASS; A destroyed/B survives
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=181 field=0 closed_loan=1 source_break=13
+PREFIX 3 4
+ROLES 7 9 10 11 12 CALLER 5 6 7 8
+SOURCE /workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl CHECK=0 owned=1
+P1253 PREFIX NEGATIVE 36 PASS; allocation/target/current/loan and canonical A-destroy/B-live
+P1253 genuine CHECK-owned/current, prefix Copy/actual old and host refusal PASS

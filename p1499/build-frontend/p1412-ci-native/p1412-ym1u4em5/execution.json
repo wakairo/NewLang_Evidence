@@ -1,0 +1,321 @@
+{
+  "sources": {
+    "S": {
+      "path": "/workspace/NewLang_Compiler/tests/p1408/S-v1-same-original-two-paths.nl",
+      "sha256": "52160257c3527cabf8a321211fa876e77075002e1d4d04236e0236871f549852",
+      "C_sha256": "3345cb69b635e1943136ce49bffb8f59c1cfb7e9f2cf62c8e6495fa42ed7b992"
+    },
+    "T": {
+      "path": "/workspace/NewLang_Compiler/tests/p1412/T-v1-true-arm.nl",
+      "sha256": "b7f82ca575af042156fd1567b8501a2528446d711a984d399f7cbdadf6ecb244",
+      "C_sha256": "cb7c8ad0bd97a7fb694e467d466438f195ce728101a7201452bad0ca13c20db0"
+    }
+  },
+  "sanitizer": "none",
+  "commands": [
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/newlangc",
+        "--emit-c17-to",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/S.c",
+        "/workspace/NewLang_Compiler/tests/p1408/S-v1-same-original-two-paths.nl"
+      ],
+      "kind": "cli",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/newlangc",
+        "--emit-c17-to",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/T.c",
+        "/workspace/NewLang_Compiler/tests/p1412/T-v1-true-arm.nl"
+      ],
+      "kind": "cli",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O0",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/S.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-1-S-H2"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-1-S-H2",
+      "sha256": "c6432bc22b9ad0981d52b7e7e5349340cef87dc6cd331d95d75be2ecef6188b4"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-1-S-H2"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O0",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/T.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-2-T-H2"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-2-T-H2",
+      "sha256": "a8568826619e127c392a9b5d518044dd6fd148ae6394e1b2f666607b1bb530de"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-2-T-H2"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=2",
+        "-DTEST_BRANCH=1",
+        "-Dmain=nl_generated_main",
+        "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1412/passive.h\"",
+        "-c",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/S.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-3-S-H2.o"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=2",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-3-S-H2.o",
+        "/workspace/NewLang_Compiler/tests/p1412/passive_driver.c",
+        "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-3-S-H2"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-3-S-H2",
+      "sha256": "a5d12132b5bf917d8d56b7dee78a631a23efbd73c051f189f3d76efab516940f"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-3-S-H2"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=2",
+        "-DTEST_BRANCH=0",
+        "-Dmain=nl_generated_main",
+        "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1412/passive.h\"",
+        "-c",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/T.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-4-T-H2.o"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=2",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-4-T-H2.o",
+        "/workspace/NewLang_Compiler/tests/p1412/passive_driver.c",
+        "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-4-T-H2"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-4-T-H2",
+      "sha256": "d359c72a9cbfb5f845360dfe4916648add0d0d4baf36a68913605dad5a06ab41"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-4-T-H2"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=0",
+        "-DTEST_BRANCH=1",
+        "-Dmain=nl_generated_main",
+        "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1412/passive.h\"",
+        "-c",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/S.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-5-S-H0.o"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=0",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-5-S-H0.o",
+        "/workspace/NewLang_Compiler/tests/p1412/passive_driver.c",
+        "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-5-S-H0"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-5-S-H0",
+      "sha256": "336f8ee2817a4287ef398ac40534683082f1c83830cd6991c4cf4bba4bc04596"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-5-S-H0"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=1",
+        "-DTEST_BRANCH=1",
+        "-Dmain=nl_generated_main",
+        "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1412/passive.h\"",
+        "-c",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/S.c",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-6-S-H1.o"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "cmd": [
+        "/usr/bin/gcc",
+        "-std=c17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-O2",
+        "-DTEST_WORLD=1",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-6-S-H1.o",
+        "/workspace/NewLang_Compiler/tests/p1412/passive_driver.c",
+        "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free",
+        "-o",
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-6-S-H1"
+      ],
+      "kind": "compile",
+      "state": "completed",
+      "exit": 0
+    },
+    {
+      "ELF": "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-6-S-H1",
+      "sha256": "4acece4b0af06c0367f2df604240669efb90b39b745f8cd3d54014e179e72a7c"
+    },
+    {
+      "cmd": [
+        "/workspace/NewLang_Compiler/build-frontend/p1412-ci-native/p1412-ym1u4em5/case-6-S-H1"
+      ],
+      "kind": "guest",
+      "state": "completed",
+      "exit": 0
+    }
+  ],
+  "cli": 2,
+  "guest": 6,
+  "expectation": "raw S/T H2; passive S/T H2 real false/true arm, same original B, initial None Copy; common S prefix H0/H1 cleanup0/1, IF NOT_REACHED",
+  "result": "PASS"
+}

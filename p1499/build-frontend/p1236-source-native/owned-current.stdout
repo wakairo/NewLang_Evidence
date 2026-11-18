@@ -1,0 +1,27 @@
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/B-direct-break-operand.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=7
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/C-other-index.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=37 field=1 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/D-post-H.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=7
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/E-equal-old-current.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=157 sibling=223 field=0 closed_loan=1 source_break=7
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1236/sources/A-bound-old-u8.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=239 sibling=223 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+NEGATIVE 17 genuine foreign-source/world/edge/result/loan/field/incarnation/shallow/whole-arm controls PASS; A destroyed/B survives
+P1236 genuine source CHECK/owned typed terminal transfer and foreign-issuer refusal PASS

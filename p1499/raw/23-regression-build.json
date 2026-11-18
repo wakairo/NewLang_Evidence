@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/cmake", "--build", "build-frontend", "--parallel", "4"], "exit": 0}

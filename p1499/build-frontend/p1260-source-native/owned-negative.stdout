@@ -1,0 +1,55 @@
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl CHECK=0 owned=1
+POST call=28 field=1 actual-old=2 incoming=27 root=1 incarnation=1 closed=1 validators=0
+BIND state 1
+BIND selected 3
+BIND saved_level 4
+BIND displaced 5
+BIND audit_copy 6
+BIND former_history 11
+BIND applied 12
+BIND history 13
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/B-second-field-restore-known-return.nl CHECK=0 owned=1
+POST call=28 field=0 actual-old=2 incoming=27 root=1 incarnation=1 closed=1 validators=0
+POST call=35 field=1 actual-old=19 incoming=34 root=1 incarnation=1 closed=1 validators=0
+BIND session 1
+BIND target 3
+BIND saved_target 4
+BIND displaced 5
+BIND audit_copy 6
+BIND former_history 11
+BIND replaced_policy 16
+BIND replaced_policy_copy 17
+BIND applied 18
+BIND history 19
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl CHECK=0 owned=1
+POST call=28 field=1 actual-old=2 incoming=27 root=1 incarnation=1 closed=1 validators=0
+BIND state 1
+BIND selected 3
+BIND saved_level 4
+BIND displaced 5
+BIND audit_copy 6
+BIND former_history 11
+BIND applied 12
+BIND history 13
+POST call=28 field=1 actual-old=2 incoming=27 root=1 incarnation=1 closed=1 validators=0
+BIND state 1
+BIND selected 3
+BIND saved_level 4
+BIND displaced 5
+BIND audit_copy 6
+BIND former_history 11
+BIND applied 12
+BIND history 13
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl CHECK=0 owned=1
+POST call=28 field=1 actual-old=2 incoming=27 root=1 incarnation=1 closed=1 validators=0
+BIND state 1
+BIND selected 3
+BIND saved_level 4
+BIND displaced 5
+BIND audit_copy 6
+BIND former_history 11
+BIND applied 12
+BIND history 13
+P1260 REJECT 30 observations 47; A destroyed unrestored/B survives; genuine owned/current/typed Copy PASS

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1133/sources/97-equality-insufficient.nl:13:28-13:29: error(precision)[USIZE-SUBTRACTION-PRECISION]: subtraction needs known dependency-free quantity operands in this profile

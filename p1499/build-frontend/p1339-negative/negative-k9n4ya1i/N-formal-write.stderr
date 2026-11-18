@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1339/N-formal-write.nl:3:32-3:40: error(unsupported)[LOCAL-LOAN-PROFILE]: requires a supported current lexical root or fixed field

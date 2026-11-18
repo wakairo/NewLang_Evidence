@@ -1,0 +1,6 @@
+P1260 live-original H=0 attempts=1 free=0 writes=5 final=[197,88] old=88 PASS
+P1260 live-original H=0 attempts=1 free=0 writes=5 final=[219,151] old=219 PASS
+P1260 live-original H=1 attempts=2 free=1 writes=5 final=[197,88] old=88 PASS
+P1260 live-original H=1 attempts=2 free=1 writes=5 final=[219,151] old=219 PASS
+P1260 live-original H=2 attempts=2 free=2 writes=5 final=[197,88] old=88 PASS
+P1260 live-original H=2 attempts=2 free=2 writes=5 final=[219,151] old=219 PASS

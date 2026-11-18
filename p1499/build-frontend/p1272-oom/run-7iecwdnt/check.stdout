@@ -1,0 +1,299 @@
+BIND sampled_quota 17
+BIND retained_quota 18
+BIND pending_quota 19
+READ {"root":5,"child":10,"incarnation":8,"field":1,"Domain":1,"scope":2,"old":9,"copy":25,"byte":181,"readonly":true,"loan_closed":true,"sealed":true}
+CENSUS phase=check total=1141 sites=35
+SITE check first=1 pc=0x47b02c
+SITE check first=2 pc=0x47b0cd
+SITE check first=3 pc=0x47ac8f
+SITE check first=24 pc=0x47b85a
+SITE check first=26 pc=0x47ad10
+SITE check first=30 pc=0x4e5c9d
+SITE check first=31 pc=0x4ec88c
+SITE check first=32 pc=0x4ec8d4
+SITE check first=33 pc=0x51a534
+SITE check first=34 pc=0x4998c8
+SITE check first=36 pc=0x515e0e
+SITE check first=39 pc=0x47ac24
+SITE check first=40 pc=0x4f1113
+SITE check first=81 pc=0x4d4cac
+SITE check first=85 pc=0x4ecadf
+SITE check first=86 pc=0x4ecbb4
+SITE check first=124 pc=0x50b824
+SITE check first=125 pc=0x50b8ce
+SITE check first=131 pc=0x494568
+SITE check first=175 pc=0x50a941
+SITE check first=180 pc=0x509d66
+SITE check first=181 pc=0x509d84
+SITE check first=182 pc=0x4f3b1e
+SITE check first=212 pc=0x47b550
+SITE check first=231 pc=0x509798
+SITE check first=232 pc=0x5098f8
+SITE check first=522 pc=0x5086bb
+SITE check first=673 pc=0x515f41
+SITE check first=674 pc=0x515f73
+SITE check first=753 pc=0x516065
+SITE check first=832 pc=0x516af3
+SITE check first=833 pc=0x516b3d
+SITE check first=913 pc=0x4ecc3c
+SITE check first=914 pc=0x4eccb2
+SITE check first=1135 pc=0x4ed2cf
+OOM check ordinal=1 reached=1 status=4
+OOM check ordinal=2 reached=2 status=4
+OOM check ordinal=3 reached=3 status=4
+OOM check ordinal=4 reached=4 status=4
+OOM check ordinal=5 reached=5 status=4
+OOM check ordinal=6 reached=6 status=4
+OOM check ordinal=7 reached=7 status=4
+OOM check ordinal=8 reached=8 status=4
+OOM check ordinal=9 reached=9 status=4
+OOM check ordinal=10 reached=10 status=4
+OOM check ordinal=11 reached=11 status=4
+OOM check ordinal=12 reached=12 status=4
+OOM check ordinal=13 reached=13 status=4
+OOM check ordinal=14 reached=14 status=4
+OOM check ordinal=15 reached=15 status=4
+OOM check ordinal=16 reached=16 status=4
+OOM check ordinal=17 reached=17 status=4
+OOM check ordinal=18 reached=18 status=4
+OOM check ordinal=19 reached=19 status=4
+OOM check ordinal=20 reached=20 status=4
+OOM check ordinal=21 reached=21 status=4
+OOM check ordinal=22 reached=22 status=4
+OOM check ordinal=23 reached=23 status=4
+OOM check ordinal=24 reached=24 status=4
+OOM check ordinal=25 reached=25 status=4
+OOM check ordinal=26 reached=26 status=4
+OOM check ordinal=27 reached=27 status=4
+OOM check ordinal=28 reached=28 status=4
+OOM check ordinal=29 reached=29 status=4
+OOM check ordinal=30 reached=30 status=4
+OOM check ordinal=31 reached=31 status=4
+OOM check ordinal=32 reached=32 status=4
+OOM check ordinal=33 reached=33 status=4
+OOM check ordinal=34 reached=34 status=4
+OOM check ordinal=35 reached=35 status=4
+OOM check ordinal=36 reached=36 status=4
+OOM check ordinal=37 reached=37 status=4
+OOM check ordinal=38 reached=38 status=4
+OOM check ordinal=39 reached=39 status=4
+OOM check ordinal=40 reached=40 status=4
+OOM check ordinal=41 reached=41 status=4
+OOM check ordinal=42 reached=42 status=4
+OOM check ordinal=43 reached=43 status=4
+OOM check ordinal=44 reached=44 status=4
+OOM check ordinal=45 reached=45 status=4
+OOM check ordinal=46 reached=46 status=4
+OOM check ordinal=47 reached=47 status=4
+OOM check ordinal=48 reached=48 status=4
+OOM check ordinal=49 reached=49 status=4
+OOM check ordinal=50 reached=50 status=4
+OOM check ordinal=51 reached=51 status=4
+OOM check ordinal=52 reached=52 status=4
+OOM check ordinal=53 reached=53 status=4
+OOM check ordinal=54 reached=54 status=4
+OOM check ordinal=55 reached=55 status=4
+OOM check ordinal=56 reached=56 status=4
+OOM check ordinal=57 reached=57 status=4
+OOM check ordinal=58 reached=58 status=4
+OOM check ordinal=59 reached=59 status=4
+OOM check ordinal=60 reached=60 status=4
+OOM check ordinal=61 reached=61 status=4
+OOM check ordinal=62 reached=62 status=4
+OOM check ordinal=63 reached=63 status=4
+OOM check ordinal=64 reached=64 status=4
+OOM check ordinal=72 reached=72 status=4
+OOM check ordinal=81 reached=81 status=4
+OOM check ordinal=85 reached=85 status=4
+OOM check ordinal=86 reached=86 status=4
+OOM check ordinal=90 reached=90 status=4
+OOM check ordinal=99 reached=99 status=4
+OOM check ordinal=108 reached=108 status=4
+OOM check ordinal=117 reached=117 status=4
+OOM check ordinal=124 reached=124 status=4
+OOM check ordinal=125 reached=125 status=4
+OOM check ordinal=126 reached=126 status=4
+OOM check ordinal=131 reached=131 status=4
+OOM check ordinal=135 reached=135 status=4
+OOM check ordinal=144 reached=144 status=4
+OOM check ordinal=153 reached=153 status=4
+OOM check ordinal=162 reached=162 status=4
+OOM check ordinal=171 reached=171 status=4
+OOM check ordinal=175 reached=175 status=4
+OOM check ordinal=180 reached=181 status=4
+OOM check ordinal=181 reached=181 status=4
+OOM check ordinal=182 reached=182 status=4
+OOM check ordinal=189 reached=189 status=4
+OOM check ordinal=198 reached=198 status=4
+OOM check ordinal=207 reached=207 status=4
+OOM check ordinal=212 reached=212 status=4
+OOM check ordinal=216 reached=216 status=4
+OOM check ordinal=225 reached=225 status=4
+OOM check ordinal=231 reached=231 status=4
+OOM check ordinal=232 reached=232 status=4
+OOM check ordinal=234 reached=234 status=4
+OOM check ordinal=243 reached=243 status=4
+OOM check ordinal=252 reached=252 status=4
+OOM check ordinal=261 reached=261 status=4
+OOM check ordinal=270 reached=270 status=4
+OOM check ordinal=279 reached=279 status=4
+OOM check ordinal=288 reached=288 status=4
+OOM check ordinal=297 reached=297 status=4
+OOM check ordinal=306 reached=306 status=4
+OOM check ordinal=315 reached=315 status=4
+OOM check ordinal=324 reached=324 status=4
+OOM check ordinal=333 reached=333 status=4
+OOM check ordinal=342 reached=343 status=4
+OOM check ordinal=351 reached=351 status=4
+OOM check ordinal=360 reached=360 status=4
+OOM check ordinal=369 reached=369 status=4
+OOM check ordinal=378 reached=378 status=4
+OOM check ordinal=387 reached=387 status=4
+OOM check ordinal=396 reached=396 status=4
+OOM check ordinal=405 reached=405 status=4
+OOM check ordinal=414 reached=414 status=4
+OOM check ordinal=423 reached=423 status=4
+OOM check ordinal=432 reached=432 status=4
+OOM check ordinal=441 reached=441 status=4
+OOM check ordinal=450 reached=450 status=4
+OOM check ordinal=459 reached=459 status=4
+OOM check ordinal=468 reached=468 status=4
+OOM check ordinal=477 reached=477 status=4
+OOM check ordinal=486 reached=487 status=4
+OOM check ordinal=495 reached=495 status=4
+OOM check ordinal=504 reached=505 status=4
+OOM check ordinal=513 reached=513 status=4
+OOM check ordinal=522 reached=522 status=4
+OOM check ordinal=531 reached=531 status=4
+OOM check ordinal=540 reached=540 status=4
+OOM check ordinal=549 reached=549 status=4
+OOM check ordinal=558 reached=558 status=4
+OOM check ordinal=567 reached=567 status=4
+OOM check ordinal=576 reached=576 status=4
+OOM check ordinal=585 reached=585 status=4
+OOM check ordinal=594 reached=594 status=4
+OOM check ordinal=603 reached=603 status=4
+OOM check ordinal=612 reached=612 status=4
+OOM check ordinal=621 reached=621 status=4
+OOM check ordinal=630 reached=630 status=4
+OOM check ordinal=639 reached=639 status=4
+OOM check ordinal=648 reached=648 status=4
+OOM check ordinal=657 reached=657 status=4
+OOM check ordinal=666 reached=666 status=4
+OOM check ordinal=673 reached=673 status=4
+OOM check ordinal=674 reached=674 status=4
+OOM check ordinal=675 reached=675 status=4
+OOM check ordinal=684 reached=684 status=4
+OOM check ordinal=693 reached=693 status=4
+OOM check ordinal=702 reached=702 status=4
+OOM check ordinal=711 reached=711 status=4
+OOM check ordinal=720 reached=720 status=4
+OOM check ordinal=729 reached=729 status=4
+OOM check ordinal=738 reached=738 status=4
+OOM check ordinal=747 reached=747 status=4
+OOM check ordinal=753 reached=753 status=4
+OOM check ordinal=756 reached=756 status=4
+OOM check ordinal=765 reached=765 status=4
+OOM check ordinal=774 reached=774 status=4
+OOM check ordinal=783 reached=783 status=4
+OOM check ordinal=792 reached=792 status=4
+OOM check ordinal=801 reached=801 status=4
+OOM check ordinal=810 reached=810 status=4
+OOM check ordinal=819 reached=819 status=4
+OOM check ordinal=828 reached=828 status=4
+OOM check ordinal=832 reached=832 status=4
+OOM check ordinal=833 reached=833 status=4
+OOM check ordinal=837 reached=837 status=4
+OOM check ordinal=846 reached=846 status=4
+OOM check ordinal=855 reached=855 status=4
+OOM check ordinal=864 reached=864 status=4
+OOM check ordinal=873 reached=873 status=4
+OOM check ordinal=882 reached=882 status=4
+OOM check ordinal=891 reached=891 status=4
+OOM check ordinal=900 reached=900 status=4
+OOM check ordinal=909 reached=909 status=4
+OOM check ordinal=913 reached=913 status=4
+OOM check ordinal=914 reached=914 status=4
+OOM check ordinal=918 reached=918 status=4
+OOM check ordinal=927 reached=927 status=4
+OOM check ordinal=936 reached=936 status=4
+OOM check ordinal=945 reached=945 status=4
+OOM check ordinal=954 reached=954 status=4
+OOM check ordinal=963 reached=963 status=4
+OOM check ordinal=972 reached=972 status=4
+OOM check ordinal=981 reached=981 status=4
+OOM check ordinal=990 reached=990 status=4
+OOM check ordinal=999 reached=999 status=4
+OOM check ordinal=1008 reached=1008 status=4
+OOM check ordinal=1017 reached=1017 status=4
+OOM check ordinal=1026 reached=1026 status=4
+OOM check ordinal=1035 reached=1035 status=4
+OOM check ordinal=1044 reached=1044 status=4
+OOM check ordinal=1053 reached=1053 status=4
+OOM check ordinal=1062 reached=1062 status=4
+OOM check ordinal=1071 reached=1071 status=4
+OOM check ordinal=1078 reached=1078 status=4
+OOM check ordinal=1079 reached=1079 status=4
+OOM check ordinal=1080 reached=1080 status=4
+OOM check ordinal=1081 reached=1081 status=4
+OOM check ordinal=1082 reached=1082 status=4
+OOM check ordinal=1083 reached=1083 status=4
+OOM check ordinal=1084 reached=1084 status=4
+OOM check ordinal=1085 reached=1085 status=4
+OOM check ordinal=1086 reached=1086 status=4
+OOM check ordinal=1087 reached=1087 status=4
+OOM check ordinal=1088 reached=1088 status=4
+OOM check ordinal=1089 reached=1089 status=4
+OOM check ordinal=1090 reached=1090 status=4
+OOM check ordinal=1091 reached=1091 status=4
+OOM check ordinal=1092 reached=1092 status=4
+OOM check ordinal=1093 reached=1093 status=4
+OOM check ordinal=1094 reached=1094 status=4
+OOM check ordinal=1095 reached=1095 status=4
+OOM check ordinal=1096 reached=1096 status=4
+OOM check ordinal=1097 reached=1097 status=4
+OOM check ordinal=1098 reached=1098 status=4
+OOM check ordinal=1099 reached=1099 status=4
+OOM check ordinal=1100 reached=1100 status=4
+OOM check ordinal=1101 reached=1101 status=4
+OOM check ordinal=1102 reached=1102 status=4
+OOM check ordinal=1103 reached=1103 status=4
+OOM check ordinal=1104 reached=1104 status=4
+OOM check ordinal=1105 reached=1105 status=4
+OOM check ordinal=1106 reached=1106 status=4
+OOM check ordinal=1107 reached=1107 status=4
+OOM check ordinal=1108 reached=1108 status=4
+OOM check ordinal=1109 reached=1109 status=4
+OOM check ordinal=1110 reached=1110 status=4
+OOM check ordinal=1111 reached=1111 status=4
+OOM check ordinal=1112 reached=1112 status=4
+OOM check ordinal=1113 reached=1113 status=4
+OOM check ordinal=1114 reached=1114 status=4
+OOM check ordinal=1115 reached=1115 status=4
+OOM check ordinal=1116 reached=1116 status=4
+OOM check ordinal=1117 reached=1117 status=4
+OOM check ordinal=1118 reached=1118 status=4
+OOM check ordinal=1119 reached=1119 status=4
+OOM check ordinal=1120 reached=1120 status=4
+OOM check ordinal=1121 reached=1121 status=4
+OOM check ordinal=1122 reached=1122 status=4
+OOM check ordinal=1123 reached=1123 status=4
+OOM check ordinal=1124 reached=1124 status=4
+OOM check ordinal=1125 reached=1125 status=4
+OOM check ordinal=1126 reached=1126 status=4
+OOM check ordinal=1127 reached=1127 status=4
+OOM check ordinal=1128 reached=1128 status=4
+OOM check ordinal=1129 reached=1129 status=4
+OOM check ordinal=1130 reached=1130 status=4
+OOM check ordinal=1131 reached=1131 status=4
+OOM check ordinal=1132 reached=1132 status=4
+OOM check ordinal=1133 reached=1133 status=4
+OOM check ordinal=1134 reached=1134 status=4
+OOM check ordinal=1135 reached=1135 status=4
+OOM check ordinal=1136 reached=1136 status=4
+OOM check ordinal=1137 reached=1137 status=4
+OOM check ordinal=1138 reached=1138 status=4
+OOM check ordinal=1139 reached=1139 status=4
+OOM check ordinal=1140 reached=1140 status=4
+OOM check ordinal=1141 reached=1141 status=4
+OOM-FINAL phase=check total=1141 selected=258 rollback-retry=258

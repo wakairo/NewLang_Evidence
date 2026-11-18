@@ -1,0 +1,784 @@
+[
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1253_owned",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/C-same-precomputation-literal-terminal.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/L-adopted-literal-calibration.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue-entry-at-bound.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/E-one-Continue.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/F-equal-bits-distinct-package.nl",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/G-Copy-quantity-argument.nl"
+    ],
+    "label": "owned-current-negative",
+    "status": 0,
+    "stdout_sha256": "aa7f4e656c9a114d2f1ccb1fb53d173bb6fe391db8c62df9befc1eb378c4cf10",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl"
+    ],
+    "label": "A-precomputed-independent-byte-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl"
+    ],
+    "label": "A-precomputed-independent-byte-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl"
+    ],
+    "label": "B-other-field-other-policy-arm-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl"
+    ],
+    "label": "B-other-field-other-policy-arm-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/C-same-precomputation-literal-terminal.nl"
+    ],
+    "label": "C-same-precomputation-literal-terminal-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/C-same-precomputation-literal-terminal.nl"
+    ],
+    "label": "C-same-precomputation-literal-terminal-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue.nl"
+    ],
+    "label": "D-zero-Continue-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "0a54b0089bca1b2a6c8e1c43533a0c7d658466b1be4f5777ee4e0d324131ab86"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue.nl"
+    ],
+    "label": "D-zero-Continue-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "0a54b0089bca1b2a6c8e1c43533a0c7d658466b1be4f5777ee4e0d324131ab86"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/E-one-Continue.nl"
+    ],
+    "label": "E-one-Continue-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/E-one-Continue.nl"
+    ],
+    "label": "E-one-Continue-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/F-equal-bits-distinct-package.nl"
+    ],
+    "label": "F-equal-bits-distinct-package-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/F-equal-bits-distinct-package.nl"
+    ],
+    "label": "F-equal-bits-distinct-package-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/G-Copy-quantity-argument.nl"
+    ],
+    "label": "G-Copy-quantity-argument-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/G-Copy-quantity-argument.nl"
+    ],
+    "label": "G-Copy-quantity-argument-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/L-adopted-literal-calibration.nl"
+    ],
+    "label": "L-adopted-literal-calibration-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/L-adopted-literal-calibration.nl"
+    ],
+    "label": "L-adopted-literal-calibration-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-H1-cleanup-missing.nl"
+    ],
+    "label": "N-H1-cleanup-missing-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "4d6ccf9580172568ead11b4c2c1c5e230665fb488e25d192ac909ab93d22b7d7"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-H1-cleanup-missing.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-H1-cleanup-missing.nl"
+    ],
+    "label": "N-H1-cleanup-missing-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "4d6ccf9580172568ead11b4c2c1c5e230665fb488e25d192ac909ab93d22b7d7"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-H2-cleanup-missing.nl"
+    ],
+    "label": "N-H2-cleanup-missing-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c8f0b1ff4ced7620946deb0a4c9a1d064edecd9e71f1898b0cbb504922af75d6"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-H2-cleanup-missing.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-H2-cleanup-missing.nl"
+    ],
+    "label": "N-H2-cleanup-missing-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c8f0b1ff4ced7620946deb0a4c9a1d064edecd9e71f1898b0cbb504922af75d6"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-current-as-old.nl"
+    ],
+    "label": "N-current-as-old-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e497202d091e7ad5fd6d35384dbcc1e8afedaa4eedd4de7ab5be0b9629c93773"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-current-as-old.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-current-as-old.nl"
+    ],
+    "label": "N-current-as-old-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e497202d091e7ad5fd6d35384dbcc1e8afedaa4eedd4de7ab5be0b9629c93773"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-terminal-foreign-original.nl"
+    ],
+    "label": "N-terminal-foreign-original-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "53315d521afddc17a26690f449b3a5662d280b3c50f809c31dd639e56da5b904"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-terminal-foreign-original.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-terminal-foreign-original.nl"
+    ],
+    "label": "N-terminal-foreign-original-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "53315d521afddc17a26690f449b3a5662d280b3c50f809c31dd639e56da5b904"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-terminal-other-field.nl"
+    ],
+    "label": "N-terminal-other-field-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a10390656797c33f0d702c59156d9e7b6595cfb9f71391d3698b58748d2af45e"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-terminal-other-field.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-terminal-other-field.nl"
+    ],
+    "label": "N-terminal-other-field-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a10390656797c33f0d702c59156d9e7b6595cfb9f71391d3698b58748d2af45e"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-usize-as-new.nl"
+    ],
+    "label": "N-usize-as-new-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "134676e5c7bd9985c761ca802a15fd86705b515b28a4684a8b765f2a52c80364"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/N-usize-as-new.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/N-usize-as-new.nl"
+    ],
+    "label": "N-usize-as-new-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "134676e5c7bd9985c761ca802a15fd86705b515b28a4684a8b765f2a52c80364"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/U-prefix-IF-postlude.nl"
+    ],
+    "label": "U-prefix-IF-postlude-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c2c767830aae51704535d1eb70c4034064e9fdc133f1a4035765750bcb0debbe"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/U-prefix-IF-postlude.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/U-prefix-IF-postlude.nl"
+    ],
+    "label": "U-prefix-IF-postlude-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c2c767830aae51704535d1eb70c4034064e9fdc133f1a4035765750bcb0debbe"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/U-prefix-mixed-RETURN.nl"
+    ],
+    "label": "U-prefix-mixed-RETURN-CHECK",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "44bb74786953d693c18126ad3b2ab01253d08fde8828ea769f4938690f3a0620"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/U-prefix-mixed-RETURN.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/U-prefix-mixed-RETURN.nl"
+    ],
+    "label": "U-prefix-mixed-RETURN-C17",
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "44bb74786953d693c18126ad3b2ab01253d08fde8828ea769f4938690f3a0620"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue-entry-at-bound.nl"
+    ],
+    "label": "D-zero-Continue-entry-at-bound-CHECK",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound.c",
+      "/workspace/NewLang_Compiler/tests/p1253/sources/D-zero-Continue-entry-at-bound.nl"
+    ],
+    "label": "D-zero-Continue-entry-at-bound-C17",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O0.o"
+    ],
+    "label": "A-precomputed-independent-byte-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O0.o"
+    ],
+    "label": "B-other-field-other-policy-arm-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O0.o"
+    ],
+    "label": "C-same-precomputation-literal-terminal-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O0.o"
+    ],
+    "label": "L-adopted-literal-calibration-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O0.o"
+    ],
+    "label": "D-zero-Continue-entry-at-bound-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O0.o"
+    ],
+    "label": "E-one-Continue-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O0.o"
+    ],
+    "label": "F-equal-bits-distinct-package-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O0.o"
+    ],
+    "label": "G-Copy-quantity-argument-O0-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O0.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/matrix-O0"
+    ],
+    "label": "O0-link",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/matrix-O0"
+    ],
+    "label": "O0-native",
+    "status": 0,
+    "stdout_sha256": "2936009d126ed839fd23bf89b38f20466acc504d0a6c8a4b492f2c9d233d494b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O2.o"
+    ],
+    "label": "A-precomputed-independent-byte-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O2.o"
+    ],
+    "label": "B-other-field-other-policy-arm-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O2.o"
+    ],
+    "label": "C-same-precomputation-literal-terminal-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O2.o"
+    ],
+    "label": "L-adopted-literal-calibration-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O2.o"
+    ],
+    "label": "D-zero-Continue-entry-at-bound-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O2.o"
+    ],
+    "label": "E-one-Continue-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O2.o"
+    ],
+    "label": "F-equal-bits-distinct-package-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O2.o"
+    ],
+    "label": "G-Copy-quantity-argument-O2-build",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/A-precomputed-independent-byte-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/B-other-field-other-policy-arm-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/C-same-precomputation-literal-terminal-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/L-adopted-literal-calibration-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/D-zero-Continue-entry-at-bound-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/E-one-Continue-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/F-equal-bits-distinct-package-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/G-Copy-quantity-argument-O2.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/matrix-O2"
+    ],
+    "label": "O2-link",
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1253-source-native/matrix-O2"
+    ],
+    "label": "O2-native",
+    "status": 0,
+    "stdout_sha256": "2936009d126ed839fd23bf89b38f20466acc504d0a6c8a4b492f2c9d233d494b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

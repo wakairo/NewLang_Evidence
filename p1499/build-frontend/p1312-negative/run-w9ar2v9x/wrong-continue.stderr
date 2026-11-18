@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1312/wrong-continue.nl:96:13-96:29: error(semantic)[P14-CONTINUE-TYPE]: continue value must have the exact parameter static type

@@ -1,0 +1,8 @@
+C238 public-owned=YES private-current=0 index=0 phase=2 root=1 child=2
+C238 entry-function=10 loop=10 incoming=121 sibling=173 ghost-fresh=YES break-write=NO
+C238 LOCAL name=old symbol=4
+C238 LOCAL name=old_copy symbol=5
+C238 LOCAL name=during symbol=6
+C238 LOCAL name=beside symbol=7
+C238 tamper=20 foreign-A-destroy/B-survive=PASS
+C238 unrestored display-count/foreign-table canonical-destroy=9 PASS

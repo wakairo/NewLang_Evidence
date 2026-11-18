@@ -1,0 +1,614 @@
+[
+  {
+    "label": "01-return-alias-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/01-return-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/01-return-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "b4adf0d4bfac8e0fc9b095b827d84cbc4b46a811ed96d140734e2a2a01cc0605",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/01-return-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-lineage",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117_c217_lineage",
+      "repair",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/01-return-alias.nl",
+      "return-alias"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "9879d1fdc374cf709c6a6d981633ee62175a7ce9e6f65e5398f10eab937cbc9e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-raw-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-raw-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-raw-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-raw-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-passive-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-passive-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-passive-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "01-return-alias-gcc-passive-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/01-return-alias-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/02-tail-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/02-tail-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e6bc24c4b86999d00a47dee63a627595982e25f35534fa31e99a0c3aebd4812f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-named.c",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/02-tail-alias.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-lineage",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117_c217_lineage",
+      "repair",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/02-tail-alias.nl",
+      "tail-alias"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "012e9462494e5393a0919d7dbf06d7a00313adb96e7401f1e903acd4ae2e0e38",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-raw-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-raw-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-raw-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-raw-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-passive-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-passive-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-passive-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "02-tail-alias-gcc-passive-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/02-tail-alias-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/03-return-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/03-return-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "2e98eb1833716735bdbf5d7c40ab4e800852f888e550050fae1a06fff51709d6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-named.c",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/03-return-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-lineage",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117_c217_lineage",
+      "repair",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/03-return-if.nl",
+      "return-if"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "86e3cb153f850099c1711495c4da2dd14bd88734fe9f707f4cdd56215e14f62b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-raw-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-raw-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-raw-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-raw-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-passive-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-passive-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-passive-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "03-return-if-gcc-passive-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/03-return-if-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/04-tail-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/04-tail-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "8c4ff44a3db69557680153da58c6396fdf862f4084b7261b267688cf09ff190d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-named.c",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/04-tail-if.nl"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-lineage",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117_c217_lineage",
+      "repair",
+      "/workspace/NewLang_Compiler/tests/p1117/c217/sources/04-tail-if.nl",
+      "tail-if"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "b09355f78e6668dde6f7d78785f92cfbb06af3cf637feb746669bd97da56c045",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-raw-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-raw-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-raw-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-raw-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-raw-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-raw-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-passive-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-passive-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-passive-O0"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-passive-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "04-tail-if-gcc-passive-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1117-c217-native/04-tail-if-gcc-passive-O2"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "dfeda3abe4171736080ce29fa6860e7605b27531bae8af9c8bf49eac00549b6f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

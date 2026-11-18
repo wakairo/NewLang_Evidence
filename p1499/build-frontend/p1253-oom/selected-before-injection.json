@@ -1,0 +1,2558 @@
+[
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 12,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 13,
+    "function": "register_function_unit",
+    "pc": "0x4b6c03",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 14,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 39,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 46,
+    "function": "owned",
+    "pc": "0x4baf6b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 48,
+    "function": "nl_recursive_option",
+    "pc": "0x4bb1f8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 51,
+    "function": "nl_recursive_complete",
+    "pc": "0x4bb6e8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 76,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 85,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 217,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5e49",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 218,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5edd",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 219,
+    "function": "nl_source_create",
+    "pc": "0x4eb683",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 220,
+    "function": "finish_source",
+    "pc": "0x4eb57e",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 221,
+    "function": "finish_source",
+    "pc": "0x4eb5a0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 222,
+    "function": "nl_parser_create",
+    "pc": "0x4ea72a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 223,
+    "function": "nl_syntax_tree_create",
+    "pc": "0x4eae6f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 224,
+    "function": "nl_syntax_node_create",
+    "pc": "0x4eaeca",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 669,
+    "function": "check_definition",
+    "pc": "0x4b563a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 670,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 671,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 672,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 673,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 700,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 714,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 718,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 719,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 862,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 913,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 914,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 964,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 969,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 970,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 971,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1025,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1026,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1299,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1402,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1596,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1623,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1624,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1703,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1782,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1783,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1863,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 1864,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2114,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2159,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2160,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2161,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2276,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2375,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2422,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2775,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "registration",
+    "point": 2829,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 24,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 26,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 34,
+    "function": "check_fragment",
+    "pc": "0x4b2f22",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 35,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 36,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 37,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 38,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 40,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 42,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 43,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 53,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 88,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 102,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 106,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 107,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 153,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 154,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 204,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 209,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 210,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 211,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 265,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 266,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 539,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 642,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 863,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 864,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 943,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1022,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1023,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1103,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1104,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1354,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1399,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1400,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1401,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1446,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1506,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1507,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1508,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1519,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1618,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1665,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1953,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1954,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 1955,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2021,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2075,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2851,
+    "function": "retain_current_break",
+    "pc": "0x485d70",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2925,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2926,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2927,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 2981,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3032,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3092,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3148,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3208,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3260,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "actual",
+    "point": 3508,
+    "function": "current_signature_seal",
+    "pc": "0x499105",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 1,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 2,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 3,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 4,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 5,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 6,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 7,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 8,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 9,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 10,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "emit",
+    "point": 11,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 1,
+    "function": "emit_c17_to",
+    "pc": "0x419c83",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7723,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7724,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7725,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7726,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7727,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7728,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7729,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7730,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7731,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7732,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/A-precomputed-independent-byte.nl",
+    "stage": "named",
+    "point": 7733,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/A-precomputed-independent-byte"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 12,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 13,
+    "function": "register_function_unit",
+    "pc": "0x4b6c03",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 14,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 39,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 46,
+    "function": "owned",
+    "pc": "0x4baf6b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 48,
+    "function": "nl_recursive_option",
+    "pc": "0x4bb1f8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 51,
+    "function": "nl_recursive_complete",
+    "pc": "0x4bb6e8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 76,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 85,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 217,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5e49",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 218,
+    "function": "nl_body_create_span",
+    "pc": "0x4d5edd",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 219,
+    "function": "nl_source_create",
+    "pc": "0x4eb683",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 220,
+    "function": "finish_source",
+    "pc": "0x4eb57e",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 221,
+    "function": "finish_source",
+    "pc": "0x4eb5a0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 222,
+    "function": "nl_parser_create",
+    "pc": "0x4ea72a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 223,
+    "function": "nl_syntax_tree_create",
+    "pc": "0x4eae6f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 224,
+    "function": "nl_syntax_node_create",
+    "pc": "0x4eaeca",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 669,
+    "function": "check_definition",
+    "pc": "0x4b563a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 670,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 671,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 672,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 673,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 700,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 714,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 718,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 719,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 862,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 913,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 914,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 964,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 969,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 970,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 971,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1025,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1026,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1299,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1402,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1596,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1623,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1624,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1703,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1782,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1783,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1863,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 1864,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2114,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2159,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2160,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2161,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2276,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2375,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2422,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2775,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "registration",
+    "point": 2829,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3754,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1,
+    "function": "nl_sem_clone",
+    "pc": "0x45aefc",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2,
+    "function": "nl_sem_clone",
+    "pc": "0x45af9d",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3,
+    "function": "copy_name",
+    "pc": "0x45ab5f",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 24,
+    "function": "nl_sem_clone",
+    "pc": "0x45b72a",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 26,
+    "function": "copy_array",
+    "pc": "0x45abe0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 34,
+    "function": "check_fragment",
+    "pc": "0x4b2f22",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 35,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b85f3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 36,
+    "function": "nl_h_custody_attach",
+    "pc": "0x4b863b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 37,
+    "function": "nl_checked_add",
+    "pc": "0x4e2da7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 38,
+    "function": "run_body",
+    "pc": "0x4767e4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 40,
+    "function": "nl_control_target_create",
+    "pc": "0x4de681",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 42,
+    "function": "source_name_copy",
+    "pc": "0x4728ec",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 43,
+    "function": "append_storage",
+    "pc": "0x45aaf4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 53,
+    "function": "string_copy",
+    "pc": "0x4bc310",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 88,
+    "function": "nl_sem_clone",
+    "pc": "0x45b420",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 102,
+    "function": "allocated_match",
+    "pc": "0x4a3f81",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 106,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8846",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 107,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b891b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 153,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4097",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 154,
+    "function": "nl_raw_apply",
+    "pc": "0x4d4141",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 204,
+    "function": "replace_range",
+    "pc": "0x4d31b4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 209,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 210,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 211,
+    "function": "nl_captured_closure_create",
+    "pc": "0x4bea1a",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 265,
+    "function": "nl_raw_clone",
+    "pc": "0x4d200b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 266,
+    "function": "nl_raw_clone",
+    "pc": "0x4d216b",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 539,
+    "function": "nl_sum_attach",
+    "pc": "0x4d0f2e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 642,
+    "function": "function_match",
+    "pc": "0x4a5d27",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 863,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7b4",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 864,
+    "function": "nl_control_state_create",
+    "pc": "0x4de7e6",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 943,
+    "function": "nl_control_state_fork",
+    "pc": "0x4de8d8",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1022,
+    "function": "append",
+    "pc": "0x4df366",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1023,
+    "function": "append",
+    "pc": "0x4df3b0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1103,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b89a3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1104,
+    "function": "nl_h_custody_reserve",
+    "pc": "0x4b8a19",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1354,
+    "function": "nl_if_field_prepare",
+    "pc": "0x44ba1f",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1399,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x441173",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1400,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4411e7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1401,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x4412d7",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1446,
+    "function": "source_if",
+    "pc": "0x47caf1",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1506,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1507,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1508,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1519,
+    "function": "source_current_loop",
+    "pc": "0x49c168",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1618,
+    "function": "nl_control_state_capture",
+    "pc": "0x4de9e3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1665,
+    "function": "source_current_loop",
+    "pc": "0x49c5f0",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1953,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1954,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 1955,
+    "function": "seal_nodes",
+    "pc": "0x4b8e8e",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2021,
+    "function": "nl_if_field_event",
+    "pc": "0x44bdc3",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2075,
+    "function": "nl_copy_state_anchor",
+    "pc": "0x44125d",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2851,
+    "function": "retain_current_break",
+    "pc": "0x485d70",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2925,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2926,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2927,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 2981,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3032,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3092,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3148,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3208,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3260,
+    "function": "linear_seal_graph",
+    "pc": "0x4862eb",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "actual",
+    "point": 3508,
+    "function": "current_signature_seal",
+    "pc": "0x499105",
+    "full_stage_reached": 3508,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 1,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 2,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 3,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 4,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 5,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 6,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 7,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 8,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 9,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 10,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "emit",
+    "point": 11,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 11,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 1,
+    "function": "emit_c17_to",
+    "pc": "0x419c83",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7723,
+    "function": "nl_checked_c_node",
+    "pc": "0x43c73a",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7724,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7725,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7726,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7727,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7728,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7729,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7730,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25d9",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7731,
+    "function": "nl_raw_validate",
+    "pc": "0x4d25f7",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7732,
+    "function": "producer_call",
+    "pc": "0x436c7b",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  },
+  {
+    "source": "/workspace/NewLang_Compiler/tests/p1253/sources/B-other-field-other-policy-arm.nl",
+    "stage": "named",
+    "point": 7733,
+    "function": "owner_call",
+    "pc": "0x43988a",
+    "full_stage_reached": 7733,
+    "raw": "/workspace/NewLang_Compiler/build-frontend/p1253-oom/B-other-field-other-policy-arm"
+  }
+]

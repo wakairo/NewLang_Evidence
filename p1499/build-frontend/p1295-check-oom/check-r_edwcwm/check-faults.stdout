@@ -1,0 +1,136 @@
+CENSUS phase=check total=1822 sites=45
+SITE first=1 pc=0x47a4b1
+SITE first=2 pc=0x47a552
+SITE first=3 pc=0x47a114
+SITE first=24 pc=0x47acdf
+SITE first=26 pc=0x47a195
+SITE first=32 pc=0x4e5122
+SITE first=33 pc=0x4ebd11
+SITE first=34 pc=0x4ebd59
+SITE first=35 pc=0x5199b9
+SITE first=36 pc=0x498d4d
+SITE first=38 pc=0x515293
+SITE first=40 pc=0x4939ed
+SITE first=41 pc=0x47a0a9
+SITE first=52 pc=0x4f0598
+SITE first=87 pc=0x47a9d5
+SITE first=99 pc=0x4d4131
+SITE first=104 pc=0x4ebf64
+SITE first=105 pc=0x4ec039
+SITE first=149 pc=0x50aca9
+SITE first=150 pc=0x50ad53
+SITE first=200 pc=0x509dc6
+SITE first=205 pc=0x5091eb
+SITE first=206 pc=0x509209
+SITE first=207 pc=0x4f2fa3
+SITE first=259 pc=0x508c1d
+SITE first=260 pc=0x508d7d
+SITE first=528 pc=0x507b40
+SITE first=630 pc=0x4d6b30
+SITE first=761 pc=0x45a695
+SITE first=839 pc=0x458cca
+SITE first=840 pc=0x458d3e
+SITE first=841 pc=0x458db4
+SITE first=842 pc=0x458e2e
+SITE first=926 pc=0x45ad8e
+SITE first=1004 pc=0x4599a6
+SITE first=1090 pc=0x4ec0c1
+SITE first=1091 pc=0x4ec137
+SITE first=1174 pc=0x45c4b8
+SITE first=1184 pc=0x45bba6
+SITE first=1312 pc=0x5153c6
+SITE first=1313 pc=0x5153f8
+SITE first=1391 pc=0x5154ea
+SITE first=1469 pc=0x515f78
+SITE first=1470 pc=0x515fc2
+SITE first=1813 pc=0x4ec754
+OOM ordinal=1 status=4 reached=1
+OOM ordinal=2 status=4 reached=2
+OOM ordinal=3 status=4 reached=3
+OOM ordinal=4 status=4 reached=4
+OOM ordinal=5 status=4 reached=5
+OOM ordinal=6 status=4 reached=6
+OOM ordinal=7 status=4 reached=7
+OOM ordinal=8 status=4 reached=8
+OOM ordinal=24 status=4 reached=24
+OOM ordinal=26 status=4 reached=26
+OOM ordinal=32 status=4 reached=32
+OOM ordinal=33 status=4 reached=33
+OOM ordinal=34 status=4 reached=34
+OOM ordinal=35 status=4 reached=35
+OOM ordinal=36 status=4 reached=36
+OOM ordinal=38 status=4 reached=38
+OOM ordinal=40 status=4 reached=40
+OOM ordinal=41 status=4 reached=41
+OOM ordinal=52 status=4 reached=52
+OOM ordinal=57 status=4 reached=57
+OOM ordinal=87 status=4 reached=87
+OOM ordinal=99 status=4 reached=99
+OOM ordinal=104 status=4 reached=104
+OOM ordinal=105 status=4 reached=105
+OOM ordinal=114 status=4 reached=114
+OOM ordinal=149 status=4 reached=149
+OOM ordinal=150 status=4 reached=150
+OOM ordinal=171 status=4 reached=171
+OOM ordinal=200 status=4 reached=200
+OOM ordinal=205 status=4 reached=206
+OOM ordinal=206 status=4 reached=206
+OOM ordinal=207 status=4 reached=207
+OOM ordinal=228 status=4 reached=228
+OOM ordinal=259 status=4 reached=259
+OOM ordinal=260 status=4 reached=260
+OOM ordinal=285 status=4 reached=285
+OOM ordinal=342 status=4 reached=342
+OOM ordinal=399 status=4 reached=399
+OOM ordinal=456 status=4 reached=456
+OOM ordinal=513 status=4 reached=513
+OOM ordinal=528 status=4 reached=528
+OOM ordinal=570 status=4 reached=570
+OOM ordinal=627 status=4 reached=627
+OOM ordinal=630 status=4 reached=630
+OOM ordinal=684 status=4 reached=684
+OOM ordinal=741 status=4 reached=741
+OOM ordinal=761 status=4 reached=761
+OOM ordinal=798 status=4 reached=798
+OOM ordinal=839 status=4 reached=839
+OOM ordinal=840 status=4 reached=840
+OOM ordinal=841 status=4 reached=841
+OOM ordinal=842 status=4 reached=842
+OOM ordinal=855 status=4 reached=855
+OOM ordinal=912 status=4 reached=912
+OOM ordinal=926 status=4 reached=926
+OOM ordinal=969 status=4 reached=969
+OOM ordinal=1004 status=4 reached=1004
+OOM ordinal=1026 status=4 reached=1026
+OOM ordinal=1083 status=4 reached=1083
+OOM ordinal=1090 status=4 reached=1090
+OOM ordinal=1091 status=4 reached=1091
+OOM ordinal=1140 status=4 reached=1140
+OOM ordinal=1174 status=4 reached=1174
+OOM ordinal=1184 status=4 reached=1184
+OOM ordinal=1197 status=4 reached=1197
+OOM ordinal=1254 status=4 reached=1254
+OOM ordinal=1311 status=4 reached=1311
+OOM ordinal=1312 status=4 reached=1312
+OOM ordinal=1313 status=4 reached=1313
+OOM ordinal=1368 status=4 reached=1368
+OOM ordinal=1391 status=4 reached=1391
+OOM ordinal=1425 status=4 reached=1425
+OOM ordinal=1469 status=4 reached=1469
+OOM ordinal=1470 status=4 reached=1470
+OOM ordinal=1482 status=4 reached=1482
+OOM ordinal=1539 status=4 reached=1539
+OOM ordinal=1596 status=4 reached=1596
+OOM ordinal=1653 status=4 reached=1653
+OOM ordinal=1710 status=4 reached=1710
+OOM ordinal=1767 status=4 reached=1767
+OOM ordinal=1813 status=4 reached=1813
+OOM ordinal=1815 status=4 reached=1815
+OOM ordinal=1816 status=4 reached=1816
+OOM ordinal=1817 status=4 reached=1817
+OOM ordinal=1818 status=4 reached=1818
+OOM ordinal=1819 status=4 reached=1819
+OOM ordinal=1820 status=4 reached=1820
+OOM ordinal=1821 status=4 reached=1821
+OOM ordinal=1822 status=4 reached=1822
+CHECK-OOM-PASS total=1822 selected=89 retry-owned=1

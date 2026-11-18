@@ -1,0 +1,7 @@
+C250a MAP loop=10 phase=2 result=2 index=0 helper=2
+C250a LOCAL symbol=4 name=incoming quantity=0
+C250a LOCAL symbol=6 name=old quantity=0
+C250a LOCAL symbol=7 name=old_copy quantity=0
+C250a LOCAL symbol=8 name=during quantity=0
+C250a LOCAL symbol=9 name=beside quantity=0
+C250a OWNED current=YES source-statements=0

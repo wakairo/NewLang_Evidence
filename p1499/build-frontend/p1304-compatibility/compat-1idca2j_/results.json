@@ -1,0 +1,27 @@
+[
+  {
+    "source": "tests/p1280/sources/A-linked-same-arm.nl",
+    "status": 0,
+    "C_bytes_identical": true
+  },
+  {
+    "source": "tests/p1280/sources/B-known-back-isolation.nl",
+    "status": 0,
+    "C_bytes_identical": true
+  },
+  {
+    "source": "tests/p1291/sources/A-original.nl",
+    "status": 0,
+    "C_bytes_identical": true
+  },
+  {
+    "source": "tests/p1291/sources/B-index-value-control.nl",
+    "status": 0,
+    "C_bytes_identical": true
+  },
+  {
+    "source": "tests/p1295/P-surviving-state.nl",
+    "status": 0,
+    "C_bytes_identical": true
+  }
+]

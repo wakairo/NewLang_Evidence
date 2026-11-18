@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1169/sources/101-wrong-carry-type.nl:13:4-13:20: error(semantic)[P14-CONTINUE-TYPE]: continue value must have the exact parameter static type

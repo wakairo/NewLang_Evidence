@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1343/A-caller-live.nl:27:20-27:34: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking

@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "before_injected_execution": true,
+  "binary_sha256": "b1559ee0c31b5475d196a9c331a5ab95f08aee0f2464f964174969ced4e594a7",
+  "source_sha256": "46ce1c5f373a7f5431e420457ef55a382b927e9e5d46e4287ef0a222268dcafb",
+  "selector_sha256": "8bb16f93609b255abd28a94f703271edc3d42a9d76fb0dfade84f6438a295c9d",
+  "census_sha256": "bf22de83d12fa45e9f398e0e1e00cabccaa6ac774b69faf36d9641caf2767975",
+  "stages": {
+    "registration": {
+      "full_reached": 1474,
+      "selected": 4,
+      "return_windows_inclusive": [],
+      "points_sha256": "53be7ffe1b5965e3887f4fa8e1ed2625ddc008328a609f18937614a21e5a10a3"
+    },
+    "actual": {
+      "full_reached": 1511,
+      "selected": 101,
+      "return_windows_inclusive": [
+        [
+          1101,
+          1196
+        ]
+      ],
+      "points_sha256": "758a40529567e8df9f5008a0e9224ad5249f3cd43eaefce7512072e0f0bb8c85"
+    },
+    "named": {
+      "full_reached": 3132,
+      "selected": 9,
+      "return_windows_inclusive": [
+        [
+          2722,
+          2817
+        ]
+      ],
+      "points_sha256": "a813849f82944644791356b63855a42e546480a2568ab84553b128637901011e"
+    }
+  },
+  "selected_total": 114,
+  "owned_return_array": 1101,
+  "owned_first_graph": 1197,
+  "owned_signature": 1511,
+  "unique_complete_actual_trace_offset_in_named": 1621,
+  "oracle": "Exact OOM/rollback/no publication/retry; named bytes/inode/mtime/temp no-clobber; original host assertions unchanged"
+}

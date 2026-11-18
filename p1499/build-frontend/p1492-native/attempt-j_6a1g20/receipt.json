@@ -1,0 +1,415 @@
+[
+  {
+    "label": "Q-next-occupancy-emit",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy.c",
+      "/workspace/NewLang_Compiler/tests/p1492/Q-next-occupancy.nl"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O0-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O0-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O0-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O0-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O0-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O0-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O0-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O0-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e5abdea7334afd67f25d0b68c2a77490df8f943eda68e97e751a669c2a1cc235",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O2-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O2-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O2-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O2-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O2-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O2-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "Q-next-occupancy-O2-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/Q-next-occupancy-O2-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e5abdea7334afd67f25d0b68c2a77490df8f943eda68e97e751a669c2a1cc235",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-emit",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance.c",
+      "/workspace/NewLang_Compiler/tests/p1492/B-batch-advance.nl"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O0-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O0-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O0-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O0-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O0-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O0-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O0-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O0-passive",
+      "0",
+      "7",
+      "8",
+      "9",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e9c530724d1af3302478c8452dc9730f06e6d9d2620922c91593bc6c34cb4b37",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O2-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O2-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O2-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O2-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O2-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O2-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-batch-advance-O2-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/B-batch-advance-O2-passive",
+      "0",
+      "7",
+      "8",
+      "9",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e9c530724d1af3302478c8452dc9730f06e6d9d2620922c91593bc6c34cb4b37",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-emit",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound.c",
+      "/workspace/NewLang_Compiler/tests/p1492/M-max-bound.nl"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O0-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O0-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O0-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O0-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O0-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O0-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O0-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O0-passive",
+      "0",
+      "18446744073709551614",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "48a85280538605d26f6ad91e13e5c5fbae1d59a80627aa0b65b8715bd7525eaa",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O2-raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O2-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O2-raw-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O2-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O2-passive-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O2-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "M-max-bound-O2-passive-run",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1492-native/attempt-j_6a1g20/M-max-bound-O2-passive",
+      "0",
+      "18446744073709551614",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "48a85280538605d26f6ad91e13e5c5fbae1d59a80627aa0b65b8715bd7525eaa",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "roles": {
+    "loop": 16,
+    "phase": 4,
+    "result": 4,
+    "base": 3,
+    "index": 0,
+    "helper": 10,
+    "prefix": {},
+    "locals": {
+      "5": {
+        "name": "actual",
+        "quantity": 1
+      },
+      "10": {
+        "name": "incoming",
+        "quantity": 0
+      },
+      "12": {
+        "name": "old",
+        "quantity": 0
+      },
+      "13": {
+        "name": "old_copy",
+        "quantity": 0
+      },
+      "14": {
+        "name": "during",
+        "quantity": 0
+      },
+      "15": {
+        "name": "beside",
+        "quantity": 0
+      }
+    },
+    "uses": []
+  },
+  "normal_arm": 1,
+  "final_return": 0,
+  "body_returns": 1
+}

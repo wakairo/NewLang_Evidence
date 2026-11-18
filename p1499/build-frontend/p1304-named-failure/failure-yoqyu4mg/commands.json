@@ -1,0 +1,98 @@
+[
+  {
+    "name": "N-secondary-value-not-ref.nl-CHECK",
+    "exit": 3
+  },
+  {
+    "name": "N-secondary-value-not-ref.nl-named",
+    "exit": 3
+  },
+  {
+    "name": "N-primary-ref-escape.nl-CHECK",
+    "exit": 3
+  },
+  {
+    "name": "N-primary-ref-escape.nl-named",
+    "exit": 3
+  },
+  {
+    "name": "baseline",
+    "exit": 0
+  },
+  {
+    "name": "census",
+    "exit": 0
+  },
+  {
+    "name": "oom-1",
+    "exit": 0
+  },
+  {
+    "name": "oom-2",
+    "exit": 0
+  },
+  {
+    "name": "oom-3",
+    "exit": 0
+  },
+  {
+    "name": "oom-4",
+    "exit": 0
+  },
+  {
+    "name": "oom-5",
+    "exit": 0
+  },
+  {
+    "name": "oom-6",
+    "exit": 0
+  },
+  {
+    "name": "oom-7",
+    "exit": 0
+  },
+  {
+    "name": "oom-8",
+    "exit": 0
+  },
+  {
+    "name": "oom-1136",
+    "exit": 0
+  },
+  {
+    "name": "oom-2266",
+    "exit": 0
+  },
+  {
+    "name": "oom-2267",
+    "exit": 0
+  },
+  {
+    "name": "oom-2268",
+    "exit": 0
+  },
+  {
+    "name": "oom-2269",
+    "exit": 0
+  },
+  {
+    "name": "oom-2270",
+    "exit": 0
+  },
+  {
+    "name": "oom-2271",
+    "exit": 0
+  },
+  {
+    "name": "oom-2272",
+    "exit": 0
+  },
+  {
+    "name": "oom-2273",
+    "exit": 0
+  },
+  {
+    "name": "healthy-retry",
+    "exit": 0
+  }
+]

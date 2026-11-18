@@ -1,0 +1,3 @@
+90-wrong-result-type rejection/named-no-clobber PASS
+91-all-H-overflow rejection/named-no-clobber PASS
+92-insufficient-guard rejection/named-no-clobber PASS

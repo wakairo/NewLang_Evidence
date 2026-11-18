@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1169/sources/100-zero-step.nl:13:20-13:21: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

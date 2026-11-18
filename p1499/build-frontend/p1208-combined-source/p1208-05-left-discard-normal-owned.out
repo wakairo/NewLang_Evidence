@@ -1,0 +1,18 @@
+C256 HELPER formal=6 selection=8 normal=1 returns=1
+C256 GUARD operand=5 left_symbol=7
+C256 LITERAL arm=0 value=47
+C256 LITERAL arm=1 value=173
+C254 MAP loop=16 phase=4 result=4 base=3 index=0 helper=10
+C254 LOCAL symbol=5 name=actual quantity=1
+C254 LOCAL symbol=11 name=incoming quantity=0
+C254 LOCAL symbol=13 name=old quantity=0
+C254 LOCAL symbol=14 name=old_copy quantity=0
+C254 LOCAL symbol=15 name=during quantity=0
+C254 LOCAL symbol=16 name=beside quantity=0
+C254 OWNED public-body=YES private-current=YES canonical-root=YES
+C263 PLAN normal_arm=1 final_return=0 body_returns=1
+C263 HELPER_BIND symbol=7 name=sample initializer=2
+C263 HELPER_BIND symbol=8 name=answer initializer=8
+C263 HELPER_BIND symbol=9 name=relay initializer=13
+C263 DISCARD symbol=9
+C263 HELPER_BIND symbol=10 name=final_copy initializer=18

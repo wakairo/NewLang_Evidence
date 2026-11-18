@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1272/sources/N-no-T.nl:58:30-58:48: error(unsupported)[HEAP-LINK-FIELD-PROFILE]: projection selects only H's committed recursive link

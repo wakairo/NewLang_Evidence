@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1169/sources/99-literal-carry.nl:4:13-15:3: error(precision)[P14-LOOP-PRECISION]: cyclic identity/dependency or memory correlation is not representable

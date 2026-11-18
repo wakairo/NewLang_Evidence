@@ -1,0 +1,13 @@
+C250a MAP loop=19 phase=5 result=5 index=1 helper=12
+C250a LOCAL symbol=6 name=actual_one quantity=1
+C250a LOCAL symbol=7 name=actual_two quantity=1
+C250a DISCARD node=9 symbol=6 phase=0
+C250a DISCARD node=11 symbol=7 phase=0
+C250a LOCAL symbol=13 name=incoming quantity=0
+C250a LOCAL symbol=15 name=old quantity=0
+C250a LOCAL symbol=16 name=old_copy quantity=0
+C250a LOCAL symbol=17 name=during quantity=0
+C250a LOCAL symbol=18 name=beside quantity=0
+C250a DISCARD node=39 symbol=6 phase=0
+C250a DISCARD node=41 symbol=7 phase=0
+C250a OWNED current=YES source-statements=4

@@ -1,0 +1,751 @@
+[  0%] Built target newlang_source
+[  1%] Built target newlang_diagnostic
+[  2%] Built target newlang_syntax
+[  2%] Built target newlang_lexer
+[  2%] Built target diagnostic_test
+[  2%] Built target source_test
+[  3%] Built target newlang_checked
+[  3%] Built target newlang_parser
+[  3%] Built target newlang_parser_p534
+[  4%] Built target lexer_test
+[  4%] Built target lexical_frontend_test
+[  5%] Built target parser_test
+[  5%] Built target syntax_frontend_test
+[  9%] Built target newlang_semantic
+[  9%] Built target newlang_checked_c_node
+[  9%] Linking C executable p930_oom
+[  9%] Linking C executable p1393_probe
+[  9%] Linking C executable p930_observe
+[  9%] Linking C executable p728_public_probe
+[  9%] Built target p930_oom
+[ 10%] Built target p728_public_probe
+[ 10%] Building C object CMakeFiles/p722_gate_test.dir/tests/p722/gate_test.c.o
+[ 10%] Built target p1393_probe
+[ 10%] Built target p930_observe
+[ 10%] Linking C executable p722_public_probe
+[ 11%] Linking C executable p718_public_probe
+[ 11%] Building C object CMakeFiles/p713_gate_test.dir/tests/p713/gate_test.c.o
+[ 11%] Built target p718_public_probe
+[ 11%] Built target p722_public_probe
+[ 11%] Linking C executable p713_public_probe
+[ 11%] Building C object CMakeFiles/p706_gate_test.dir/tests/p706/gate_test.c.o
+[ 11%] Built target p713_public_probe
+[ 11%] Linking C executable p706_public_probe
+[ 11%] Built target p706_public_probe
+[ 11%] Building C object CMakeFiles/p701_gate_test.dir/tests/p701/gate_test.c.o
+[ 11%] Linking C executable p706_gate_test
+[ 12%] Linking C executable p713_gate_test
+[ 12%] Linking C executable p722_gate_test
+[ 12%] Linking C executable p701_gate_test
+[ 12%] Built target p706_gate_test
+[ 12%] Built target p713_gate_test
+[ 12%] Building C object CMakeFiles/newlangc_p534.dir/src/main.c.o
+[ 12%] Linking C executable p701_public_probe
+[ 12%] Built target p722_gate_test
+[ 12%] Linking C executable p572_public_probe
+[ 13%] Built target p701_public_probe
+[ 13%] Built target p701_gate_test
+[ 13%] Linking C executable p572_fault_test
+[ 13%] Linking C executable p791_one_probe
+[ 13%] Built target p572_public_probe
+[ 13%] Built target p791_one_probe
+[ 14%] Linking C executable p791_two_probe
+[ 14%] Built target p572_fault_test
+[ 15%] Building C object CMakeFiles/p791_issuer_oom.dir/tests/p514/gate_test.c.o
+[ 15%] Linking C executable p791_parser_oom
+[ 15%] Built target p791_two_probe
+[ 15%] Built target p791_parser_oom
+[ 15%] Linking C executable p534_public_probe
+[ 15%] Building C object CMakeFiles/p534_semantic_gate.dir/tests/p514/gate_test.c.o
+[ 15%] Built target p534_public_probe
+[ 16%] Linking C executable p534_fault_test
+[ 16%] Built target p534_fault_test
+[ 16%] Linking C executable p541_public_probe
+[ 16%] Built target p541_public_probe
+[ 17%] Linking C executable p541_fault_test
+[ 17%] Built target p541_fault_test
+[ 17%] Building C object CMakeFiles/p636_index_gate.dir/tests/p636/index_gate.c.o
+[ 17%] Linking C executable newlangc_p534
+[ 17%] Built target newlangc_p534
+[ 17%] Building C object CMakeFiles/p634_ended_root_gate.dir/tests/p634/ended_root_gate.c.o
+[ 17%] Linking C executable p791_issuer_oom
+[ 17%] Built target p791_issuer_oom
+[ 17%] Building C object CMakeFiles/p633_derivation_gate.dir/tests/p633/derivation_gate.c.o
+[ 17%] Linking C executable p534_semantic_gate
+[ 17%] Built target p534_semantic_gate
+[ 17%] Building C object CMakeFiles/p633_local_gate.dir/tests/p633/local_gate.c.o
+[ 17%] Linking C executable p636_index_gate
+[ 17%] Built target p636_index_gate
+[ 18%] Building C object CMakeFiles/p651_gate.dir/tests/p651/gate.c.o
+[ 18%] Linking C executable p634_ended_root_gate
+[ 18%] Built target p634_ended_root_gate
+[ 18%] Linking C executable p633_public_probe
+[ 18%] Built target p633_public_probe
+[ 18%] Building C object CMakeFiles/p633_origin_gate.dir/tests/p633/origin_gate.c.o
+[ 18%] Linking C executable p633_derivation_gate
+[ 18%] Built target p633_derivation_gate
+[ 19%] Linking C executable p628_public_probe
+[ 19%] Built target p628_public_probe
+[ 19%] Linking C executable p626_public_probe
+[ 19%] Linking C executable p651_gate
+[ 19%] Built target p626_public_probe
+[ 19%] Linking C executable p633_local_gate
+[ 19%] Building C object CMakeFiles/p626_comparison_gate.dir/tests/p626/comparison_gate.c.o
+[ 19%] Built target p651_gate
+[ 19%] Linking C executable p605_public_probe
+[ 19%] Built target p633_local_gate
+[ 19%] Linking C executable p603_public_probe
+[ 20%] Built target p605_public_probe
+[ 20%] Building C object CMakeFiles/p603_gate_probe.dir/tests/p603/gate_probe.c.o
+[ 20%] Built target p603_public_probe
+[ 20%] Building C object CMakeFiles/p603_comparison_test.dir/p1117-current/p603_current.c.o
+[ 21%] Linking C executable p633_origin_gate
+[ 21%] Linking C executable p603_comparison_test
+[ 21%] Built target p633_origin_gate
+[ 21%] Built target p603_comparison_test
+[ 21%] Linking C executable p504_public_probe
+[ 21%] Building C object CMakeFiles/p504_gate_probe.dir/tests/p504/gate_probe.c.o
+[ 21%] Built target p504_public_probe
+[ 21%] Building C object CMakeFiles/p504_equality_test.dir/p1117-current/p504_current.c.o
+[ 21%] Linking C executable p504_equality_test
+[ 21%] Built target p504_equality_test
+[ 22%] Linking C executable p508_public_probe
+[ 22%] Built target p508_public_probe
+[ 22%] Building C object CMakeFiles/p508_gate_test.dir/tests/p508/gate_test.c.o
+[ 22%] Linking C executable p603_gate_probe
+[ 22%] Linking C executable p626_comparison_gate
+[ 22%] Built target p603_gate_probe
+[ 22%] Built target p626_comparison_gate
+[ 22%] Linking C executable p514_public_probe
+[ 22%] Linking C executable r675_public_probe
+[ 22%] Built target p514_public_probe
+[ 22%] Linking C executable p671_public_probe
+[ 22%] Built target r675_public_probe
+[ 22%] Linking C executable p671_fragment_probe
+[ 22%] Built target p671_public_probe
+[ 22%] Building C object CMakeFiles/p694_fault_test.dir/tests/p694/fault_test.c.o
+[ 22%] Built target p671_fragment_probe
+[ 22%] Linking C executable p688_public_probe
+[ 23%] Linking C executable p504_gate_probe
+[ 23%] Built target p688_public_probe
+[ 23%] Building C object CMakeFiles/p688_gate_test.dir/tests/p688/gate_test.c.o
+[ 23%] Built target p504_gate_probe
+[ 23%] Linking C executable p685_public_probe
+[ 23%] Built target p685_public_probe
+[ 23%] Building C object CMakeFiles/p685_gate_test.dir/tests/p685/gate_test.c.o
+[ 23%] Linking C executable p508_gate_test
+[ 23%] Built target p508_gate_test
+[ 24%] Linking C executable p679_public_probe
+[ 24%] Built target p679_public_probe
+[ 24%] Building C object CMakeFiles/p514_gate_test.dir/tests/p514/gate_test.c.o
+[ 24%] Linking C executable p694_fault_test
+[ 24%] Built target p694_fault_test
+[ 24%] Linking C executable p517_public_probe
+[ 25%] Linking C executable p688_gate_test
+[ 26%] Built target p517_public_probe
+[ 26%] Building C object CMakeFiles/p517_gate_test.dir/tests/p517/gate_test.c.o
+[ 26%] Built target p688_gate_test
+[ 26%] Building C object CMakeFiles/p521_owned_probe.dir/tests/p521/owned_probe.c.o
+[ 26%] Linking C executable p685_gate_test
+[ 26%] Built target p685_gate_test
+[ 26%] Building C object CMakeFiles/p521_call_gate.dir/tests/p521/call_gate.c.o
+[ 26%] Linking C executable p514_gate_test
+[ 26%] Built target p514_gate_test
+[ 26%] Linking C executable semantic_test
+[ 26%] Linking C executable p521_owned_probe
+[ 26%] Built target semantic_test
+[ 26%] Linking C executable semantic_frontend_test
+[ 26%] Linking C executable p517_gate_test
+[ 26%] Built target p521_owned_probe
+[ 26%] Built target p517_gate_test
+[ 26%] Built target semantic_frontend_test
+[ 27%] Linking C executable raw_storage_test
+[ 27%] Linking C executable raw_storage_cycle_test
+[ 27%] Linking C executable source_slice_test
+[ 27%] Built target raw_storage_test
+[ 27%] Built target source_slice_test
+[ 27%] Built target raw_storage_cycle_test
+[ 27%] Linking C executable sum_slice_test
+[ 28%] Linking C executable source_slice_frontend_test
+[ 28%] Linking C executable sum_frontend_test
+[ 28%] Linking C executable p521_call_gate
+[ 28%] Built target sum_frontend_test
+[ 28%] Built target source_slice_frontend_test
+[ 28%] Built target sum_slice_test
+[ 28%] Built target p521_call_gate
+[ 29%] Linking C executable function_body_frontend_test
+[ 29%] Linking C executable ref_join_frontend_test
+[ 29%] Linking C executable function_body_test
+[ 29%] Linking C executable ref_join_test
+[ 29%] Built target ref_join_frontend_test
+[ 29%] Built target ref_join_test
+[ 29%] Built target function_body_frontend_test
+[ 29%] Built target function_body_test
+[ 29%] Linking C executable return_test
+[ 29%] Linking C executable function_source_test
+[ 29%] Linking C executable control_test
+[ 30%] Linking C executable structural_name_test
+[ 30%] Built target function_source_test
+[ 31%] Built target return_test
+[ 31%] Built target control_test
+[ 31%] Built target structural_name_test
+[ 31%] Linking C executable loop_test
+[ 31%] Linking C executable p1088_provenance_test
+[ 31%] Linking C executable p1088_oom_probe
+[ 32%] Linking C executable p1088_break_add_oom
+[ 32%] Built target p1088_provenance_test
+[ 32%] Built target loop_test
+[ 32%] Built target p1088_break_add_oom
+[ 32%] Built target p1088_oom_probe
+[ 32%] Linking C executable if_test
+[ 33%] Linking C executable unit_name_test
+[ 33%] Linking C executable argument_compatibility_test
+[ 33%] Linking C executable local_root_test
+[ 33%] Built target if_test
+[ 33%] Built target unit_name_test
+[ 33%] Built target argument_compatibility_test
+[ 34%] Linking C executable p866_public
+[ 34%] Built target local_root_test
+[ 34%] Linking C executable p866_integrity
+[ 34%] Linking C executable p866_oom
+[ 35%] Building C object CMakeFiles/p878_guard.dir/tests/p878/guard.c.o
+[ 35%] Built target p866_public
+[ 36%] Linking C executable p817_public
+[ 36%] Built target p866_oom
+[ 36%] Built target p866_integrity
+[ 36%] Linking C executable p817_oom
+[ 36%] Linking C executable p817_integrity
+[ 36%] Built target p817_public
+[ 36%] Linking C executable p785_public
+[ 36%] Built target p817_oom
+[ 36%] Built target p817_integrity
+[ 36%] Linking C executable p785_integrity
+[ 36%] Linking C executable p785_oom
+[ 36%] Built target p785_public
+[ 36%] Linking C executable p965_ownership
+[ 36%] Built target p785_oom
+[ 36%] Built target p785_integrity
+[ 36%] Linking C executable p965_oom
+[ 36%] Building C object CMakeFiles/p965_output.dir/tests/p965/output.c.o
+[ 36%] Built target p965_ownership
+[ 36%] Built target p965_oom
+[ 36%] Linking C executable p965_c89_guard
+[ 36%] Linking C executable p965_c89_observer
+[ 36%] Built target p965_c89_observer
+[ 37%] Built target p965_c89_guard
+[ 38%] Linking C executable p974_entry_auth
+[ 38%] Linking C executable p965_c89_entry_source
+[ 38%] Built target p965_c89_entry_source
+[ 38%] Built target p974_entry_auth
+[ 38%] Linking C executable p982_probe
+[ 38%] Building C object CMakeFiles/p974_driver.dir/tests/p974/driver.c.o
+[ 38%] Built target p982_probe
+[ 38%] Linking C executable p982_oom
+[ 38%] Built target p982_oom
+[ 38%] Linking C executable p990_probe
+[ 39%] Built target p990_probe
+[ 39%] Linking C executable p990_oom
+[ 39%] Built target p990_oom
+[ 39%] Building C object CMakeFiles/p1107_probe.dir/tests/p1107/probe.c.o
+[ 39%] Linking C executable p878_guard
+[ 39%] Built target p878_guard
+[ 39%] Building C object CMakeFiles/p1107_oom.dir/tests/p1107/probe.c.o
+[ 40%] Linking C executable p965_output
+[ 40%] Built target p965_output
+[ 40%] Building C object CMakeFiles/p1117_probe.dir/tests/p1117/probe.c.o
+[ 40%] Linking C executable p974_driver
+[ 40%] Built target p974_driver
+[ 40%] Building C object CMakeFiles/p1117_lineage.dir/tests/p1117/lineage_v2.c.o
+[ 40%] Linking C executable p1107_probe
+[ 41%] Linking C executable p1107_oom
+[ 41%] Built target p1107_probe
+[ 41%] Building C object CMakeFiles/p1117_safety.dir/tests/p1117/safety_v3.c.o
+[ 41%] Built target p1107_oom
+[ 41%] Building C object CMakeFiles/p1117_oom.dir/tests/p1117/safety_oom_v2.c.o
+[ 41%] Linking C executable p1117_probe
+[ 41%] Built target p1117_probe
+[ 41%] Building C object CMakeFiles/p1117_c217_lineage.dir/tests/p1117/c217/probe.c.o
+[ 42%] Linking C executable p1117_lineage
+[ 42%] Built target p1117_lineage
+[ 42%] Building C object CMakeFiles/p1123_safety.dir/tests/p1123/safety.c.o
+[ 42%] Linking C executable p1117_safety
+[ 42%] Linking C executable p1117_oom
+[ 42%] Built target p1117_safety
+[ 42%] Built target p1117_oom
+[ 43%] Building C object CMakeFiles/p1123_oom.dir/tests/p1123/safety.c.o
+[ 43%] Building C object CMakeFiles/p1133_safety.dir/tests/p1133/safety.c.o
+[ 43%] Linking C executable p1117_c217_lineage
+[ 43%] Built target p1117_c217_lineage
+[ 43%] Building C object CMakeFiles/p1133_oom.dir/tests/p1133/safety.c.o
+[ 43%] Linking C executable p1123_safety
+[ 43%] Built target p1123_safety
+[ 43%] Building C object CMakeFiles/p1139_safety.dir/tests/p1139/safety.c.o
+[ 44%] Linking C executable p1133_safety
+[ 44%] Linking C executable p1123_oom
+[ 44%] Built target p1133_safety
+[ 44%] Building C object CMakeFiles/p1139_oom.dir/tests/p1139/safety.c.o
+[ 44%] Built target p1123_oom
+[ 44%] Building C object CMakeFiles/p1146_safety.dir/tests/p1146/safety.c.o
+[ 44%] Linking C executable p1133_oom
+[ 44%] Built target p1133_oom
+[ 44%] Building C object CMakeFiles/p1146_oom.dir/tests/p1146/safety.c.o
+[ 44%] Linking C executable p1139_safety
+[ 44%] Built target p1139_safety
+[ 44%] Building C object CMakeFiles/p1176_safety.dir/tests/p1176/safety.c.o
+[ 44%] Linking C executable p1139_oom
+[ 44%] Linking C executable p1146_safety
+[ 44%] Built target p1139_oom
+[ 44%] Built target p1146_safety
+[ 44%] Building C object CMakeFiles/p1176_oom.dir/tests/p1176/safety.c.o
+[ 45%] Linking C executable p1176_census
+[ 45%] Built target p1176_census
+[ 46%] Linking C executable p1146_oom
+[ 46%] Building C object CMakeFiles/p1184_safety.dir/tests/p1184/safety.c.o
+[ 46%] Built target p1146_oom
+[ 46%] Building C object CMakeFiles/p1184_oom.dir/tests/p1184/safety.c.o
+[ 46%] Linking C executable p1176_safety
+[ 46%] Built target p1176_safety
+[ 47%] Linking C executable p1184_census
+[ 47%] Built target p1184_census
+[ 47%] Building C object CMakeFiles/p1184_signature.dir/tests/p1184/c246a/signature_driver.c.o
+[ 47%] Linking C executable p1176_oom
+[ 47%] Built target p1176_oom
+[ 47%] Building C object CMakeFiles/p1188_safety.dir/tests/p1188/safety-v2.c.o
+[ 47%] Linking C executable p1184_safety
+[ 47%] Linking C executable p1184_oom
+[ 47%] Built target p1184_safety
+[ 47%] Building C object CMakeFiles/p1188_oom.dir/tests/p1184/safety.c.o
+[ 47%] Built target p1184_oom
+[ 47%] Linking C executable p1188_census
+[ 48%] Built target p1188_census
+[ 48%] Building C object CMakeFiles/p1188_c250a_probe.dir/tests/p1188/c250a/probe.c.o
+[ 49%] Linking C executable p1184_signature
+[ 49%] Built target p1184_signature
+[ 49%] Building C object CMakeFiles/p1188_c254_probe.dir/tests/p1188/c254/probe.c.o
+[ 49%] Linking C executable p1188_safety
+[ 49%] Linking C executable p1188_oom
+[ 49%] Built target p1188_safety
+[ 49%] Linking C executable p1188_c250a_probe
+[ 49%] Building C object CMakeFiles/p1188_c254_capture.dir/tests/p1188/c254/capture.c.o
+[ 49%] Built target p1188_oom
+[ 49%] Linking C executable p1203_safety
+[ 49%] Built target p1188_c250a_probe
+[ 49%] Building C object CMakeFiles/p1193_roles.dir/tests/p1193/production/roles.c.o
+[ 50%] Built target p1203_safety
+[ 50%] Linking C executable p1193_challenges
+[ 50%] Built target p1193_challenges
+[ 50%] Linking C executable p1193_census
+[ 51%] Built target p1193_census
+[ 51%] Building C object CMakeFiles/p1193_observe.dir/tests/p1193/production/observe.c.o
+[ 51%] Linking C executable p1188_c254_probe
+[ 51%] Built target p1188_c254_probe
+[ 51%] Building C object CMakeFiles/p1193_oom.dir/tests/p1184/safety.c.o
+[ 51%] Linking C executable p1188_c254_capture
+[ 51%] Linking C executable p1193_roles
+[ 51%] Built target p1188_c254_capture
+[ 51%] Built target p1193_roles
+[ 51%] Linking C executable p1193_signature_auth
+[ 51%] Linking C executable p1193_signature_oom
+[ 51%] Built target p1193_signature_auth
+[ 51%] Built target p1193_signature_oom
+[ 51%] Linking C executable p1193_observe
+[ 51%] Building C object CMakeFiles/p1169_safety.dir/tests/p1169/safety.c.o
+[ 51%] Building C object CMakeFiles/p1169_oom.dir/tests/p1169/safety.c.o
+[ 51%] Built target p1193_observe
+[ 52%] Building C object CMakeFiles/p1158_safety.dir/tests/p1158/safety.c.o
+[ 53%] Linking C executable p1193_oom
+[ 53%] Built target p1193_oom
+[ 53%] Building C object CMakeFiles/p1152_safety.dir/tests/p1152/safety.c.o
+[ 53%] Linking C executable p1169_oom
+[ 53%] Linking C executable p1169_safety
+[ 53%] Built target p1169_oom
+[ 53%] Building C object CMakeFiles/p1152_oom.dir/tests/p1152/safety.c.o
+[ 53%] Linking C executable p1158_safety
+[ 53%] Built target p1169_safety
+[ 53%] Building C object CMakeFiles/p1098_probe.dir/tests/p1098/probe.c.o
+[ 53%] Built target p1158_safety
+[ 53%] Building C object CMakeFiles/p1098_oom.dir/tests/p1098/probe.c.o
+[ 53%] Linking C executable p1152_safety
+[ 53%] Built target p1152_safety
+[ 53%] Linking C executable p1092_observe
+[ 53%] Built target p1092_observe
+[ 53%] Linking C executable p1092_oom
+[ 54%] Built target p1092_oom
+[ 54%] Linking C executable p961_oom
+[ 54%] Built target p961_oom
+[ 54%] Building C object CMakeFiles/p961_output.dir/tests/p961/output.c.o
+[ 54%] Linking C executable p1152_oom
+[ 54%] Linking C executable p1098_probe
+[ 54%] Built target p1152_oom
+[ 54%] Linking C executable p961_original
+[ 54%] Built target p1098_probe
+[ 55%] Linking C executable p961_origin
+[ 55%] Linking C executable p1098_oom
+[ 55%] Built target p961_original
+[ 55%] Linking C executable p953_integrity
+[ 55%] Built target p961_origin
+[ 55%] Built target p1098_oom
+[ 56%] Linking C executable p945_integrity
+[ 57%] Linking C executable p778_probe
+[ 57%] Built target p953_integrity
+[ 57%] Linking C executable p778_gate_test
+[ 57%] Built target p945_integrity
+[ 57%] Built target p778_probe
+[ 57%] Linking C executable p774_probe
+[ 58%] Linking C executable p774_gate_test
+[ 58%] Built target p778_gate_test
+[ 58%] Built target p774_probe
+[ 58%] Built target p774_gate_test
+[ 58%] Building C object CMakeFiles/p774_driver_oom.dir/tests/p774/driver_oom.c.o
+[ 58%] Linking C executable p761_metadata_test
+[ 58%] Linking C executable p761_probe
+[ 58%] Built target p761_probe
+[ 58%] Built target p761_metadata_test
+[ 58%] Linking C executable p961_output
+[ 58%] Linking C executable p761_gate_test
+[ 58%] Linking C executable p761_oom_test
+[ 58%] Built target p761_gate_test
+[ 59%] Built target p761_oom_test
+[ 58%] Built target p961_output
+[ 59%] Linking C executable p752_unit_test
+[ 59%] Linking C executable avs_test
+[ 59%] Building C object CMakeFiles/p752_driver_test.dir/tests/p752/driver_test.c.o
+[ 59%] Built target avs_test
+[ 59%] Built target p752_unit_test
+[ 59%] Linking C executable p497_literal_test
+[ 59%] Linking C executable u8_literal_test
+[ 59%] Built target u8_literal_test
+[ 60%] Built target p497_literal_test
+[ 60%] Linking C executable p497_public_probe
+[ 60%] Linking C executable fixed_field_test
+[ 60%] Built target fixed_field_test
+[ 60%] Built target p497_public_probe
+[ 60%] Linking C executable recursive_type_test
+[ 60%] Linking C executable heap_link_test
+[ 60%] Built target recursive_type_test
+[ 60%] Built target heap_link_test
+[ 60%] Linking C executable heap_link_support_test
+[ 60%] Linking C executable heap_link_checked_probe
+[ 61%] Built target heap_link_support_test
+[ 61%] Built target heap_link_checked_probe
+[ 61%] Linking C executable heap_link_backend_test
+[ 61%] Linking C executable allocated_backend_test
+[ 61%] Built target heap_link_backend_test
+[ 61%] Built target allocated_backend_test
+[ 61%] Linking C executable allocated_checked_probe
+[ 61%] Linking C executable handoff_backend_test
+[ 61%] Built target allocated_checked_probe
+[ 61%] Built target handoff_backend_test
+[ 61%] Linking C executable handoff_checked_probe
+[ 61%] Linking C executable p738_gate_test
+[ 61%] Built target p738_gate_test
+[ 62%] Built target handoff_checked_probe
+[ 63%] Linking C executable p733_history_test
+[ 63%] Linking C executable p733_gate_test
+[ 63%] Linking C executable p774_driver_oom
+[ 63%] Built target p733_gate_test
+[ 63%] Built target p733_history_test
+[ 63%] Built target p774_driver_oom
+[ 64%] Linking C executable p752_driver_test
+[ 64%] Linking C executable p733_public_probe
+[ 64%] Building C object CMakeFiles/p733_driver_test.dir/tests/p733/driver_test.c.o
+[ 64%] Linking C executable live_return_backend_test
+[ 64%] Built target p752_driver_test
+[ 64%] Built target p733_public_probe
+[ 64%] Built target live_return_backend_test
+[ 64%] Linking C executable live_tail_return_test
+[ 64%] Linking C executable packet_fork_test
+[ 64%] Linking C executable packet_retention_test
+[ 64%] Built target live_tail_return_test
+[ 64%] Linking C executable custody_source_test
+[ 64%] Built target packet_fork_test
+[ 64%] Built target packet_retention_test
+[ 64%] Linking C executable custody_checked_probe
+[ 64%] Linking C executable custody_definition_test
+[ 64%] Built target custody_source_test
+[ 64%] Built target custody_checked_probe
+[ 65%] Built target custody_definition_test
+[ 66%] Linking C executable two_heap_backend_test
+[ 66%] Linking C executable typed_owner_test
+[ 66%] Linking C executable two_heap_checked_probe
+[ 66%] Built target two_heap_checked_probe
+[ 66%] Built target typed_owner_test
+[ 67%] Built target two_heap_backend_test
+[ 67%] Linking C executable two_heap_test
+[ 68%] Linking C executable captured_closure_test
+[ 68%] Linking C executable five_checked_probe
+[ 68%] Built target two_heap_test
+[ 68%] Built target captured_closure_test
+[ 68%] Built target five_checked_probe
+[ 68%] Linking C executable five_backend_test
+[ 68%] Linking C executable allocated_join_test
+[ 68%] Linking C executable allocated_node_test
+[ 69%] Built target five_backend_test
+[ 69%] Built target allocated_join_test
+[ 70%] Built target allocated_node_test
+[ 70%] Linking C executable p466_public_probe
+[ 70%] Linking C executable p471_public_probe
+[ 70%] Linking C executable p490_public_probe
+[ 70%] Built target p490_public_probe
+[ 70%] Built target p471_public_probe
+[ 70%] Built target p466_public_probe
+[ 70%] Linking C executable node_link_test
+[ 70%] Linking C executable node_initial_test
+[ 70%] Linking C executable node_join_native_test
+[ 70%] Built target node_join_native_test
+[ 70%] Built target node_link_test
+[ 71%] Built target node_initial_test
+[ 71%] Linking C executable node_join_native_probe
+[ 71%] Linking C executable node_checked_probe
+[ 71%] Linking C executable checked_c_node_test
+[ 71%] Built target node_join_native_probe
+[ 71%] Built target checked_c_node_test
+[ 71%] Built target node_checked_probe
+[ 72%] Linking C executable node_join_proof_test
+[ 72%] Linking C executable node_join_test
+[ 72%] Building C object CMakeFiles/nested_u8_checked_probe.dir/tests/integration/nested_u8_checked_probe.c.o
+[ 72%] Built target node_join_proof_test
+[ 72%] Built target node_join_test
+[ 72%] Building C object CMakeFiles/u8_call_checked_probe.dir/tests/integration/u8_call_checked_probe.c.o
+[ 72%] Linking C executable p589_public_probe
+[ 72%] Built target p589_public_probe
+[ 72%] Linking C executable p733_driver_test
+[ 73%] Building C object CMakeFiles/p589_gate_test.dir/tests/p589/gate_test.c.o
+[ 73%] Built target p733_driver_test
+[ 73%] Linking C executable p589_parser_oom_test
+[ 73%] Built target p589_parser_oom_test
+[ 74%] Linking C executable p596_public_probe
+[ 74%] Built target p596_public_probe
+[ 74%] Building C object CMakeFiles/p596_gate_test.dir/tests/p596/gate_test.c.o
+[ 74%] Linking C executable u8_call_checked_probe
+[ 74%] Linking C executable nested_u8_checked_probe
+[ 74%] Built target u8_call_checked_probe
+[ 74%] Linking C executable p596_parser_oom_test
+[ 74%] Built target nested_u8_checked_probe
+[ 74%] Building C object CMakeFiles/p596_proof_core_test.dir/tests/p596/proof_core_test.c.o
+[ 74%] Built target p596_parser_oom_test
+[ 74%] Building C object CMakeFiles/p1335_two_calls.dir/tests/p1335/owned.c.o
+[ 74%] Linking C executable p589_gate_test
+[ 74%] Built target p589_gate_test
+[ 74%] Building C object CMakeFiles/p1339_readonly.dir/tests/p1339/owned.c.o
+[ 74%] Linking C executable p596_proof_core_test
+[ 74%] Built target p596_proof_core_test
+[ 74%] Building C object CMakeFiles/p1343_frame.dir/tests/p1343/owned.c.o
+[ 75%] Linking C executable p596_gate_test
+[ 75%] Built target p596_gate_test
+[ 75%] Building C object CMakeFiles/p1347_reuse.dir/tests/p1347/owned.c.o
+[ 75%] Linking C executable p1335_two_calls
+[ 75%] Built target p1335_two_calls
+[ 75%] Building C object CMakeFiles/p1351_wrapper.dir/tests/p1351/owned.c.o
+[ 76%] Linking C executable p1339_readonly
+[ 76%] Built target p1339_readonly
+[ 77%] Building C object CMakeFiles/p1355_wrapper.dir/tests/p1355/owned.c.o
+[ 77%] Linking C executable p1343_frame
+[ 77%] Built target p1343_frame
+[ 77%] Building C object CMakeFiles/p1359_wrapper.dir/tests/p1359/owned.c.o
+[ 77%] Linking C executable p1347_reuse
+[ 77%] Built target p1347_reuse
+[ 77%] Building C object CMakeFiles/p1364_wrapper.dir/tests/p1364/owned.c.o
+[ 77%] Linking C executable p1351_wrapper
+[ 77%] Built target p1351_wrapper
+[ 77%] Building C object CMakeFiles/p1368_owned.dir/tests/p1368/owned.c.o
+[ 77%] Linking C executable p1355_wrapper
+[ 77%] Built target p1355_wrapper
+[ 77%] Building C object CMakeFiles/p1372_owned.dir/tests/p1372/owned.c.o
+[ 77%] Linking C executable p1359_wrapper
+[ 77%] Built target p1359_wrapper
+[ 77%] Building C object CMakeFiles/p1375_owned.dir/tests/p1375/owned.c.o
+[ 77%] Linking C executable p1364_wrapper
+[ 77%] Built target p1364_wrapper
+[ 77%] Built target newlangc
+[ 77%] Built target p1492_probe
+[ 78%] Built target p1499_probe
+[ 78%] Building C object CMakeFiles/p1208_roles.dir/tests/p1208/roles.c.o
+[ 79%] Linking C executable p1368_owned
+[ 79%] Built target p1368_owned
+[ 79%] Linking C executable p1208_safety
+[ 79%] Built target p1208_safety
+[ 79%] Building C object CMakeFiles/p1208_oom.dir/tests/p1208/c266/oom_host.c.o
+[ 79%] Linking C executable p1372_owned
+[ 79%] Built target p1372_owned
+[ 79%] Building C object CMakeFiles/p1217_observe.dir/tests/p1217/observe.c.o
+[ 79%] Linking C executable p1375_owned
+[ 79%] Built target p1375_owned
+[ 79%] Linking C executable p1217_safety
+[ 79%] Built target p1217_safety
+[ 79%] Building C object CMakeFiles/p1217_oom.dir/tests/p1217/oom.c.o
+[ 80%] Linking C executable p1208_roles
+[ 80%] Built target p1208_roles
+[ 80%] Building C object CMakeFiles/p1217_resource_status.dir/tests/p1217/c274/resource_status.c.o
+[ 80%] Linking C executable p1208_oom
+[ 80%] Linking C executable p1217_observe
+[ 80%] Built target p1208_oom
+[ 80%] Building C object CMakeFiles/p1227_observe.dir/tests/p1227/observe.c.o
+[ 80%] Built target p1217_observe
+[ 80%] Linking C executable p1227_safety
+[ 80%] Built target p1227_safety
+[ 80%] Building C object CMakeFiles/p1227_oom.dir/tests/p1227/oom.c.o
+[ 80%] Linking C executable p1217_oom
+[ 80%] Built target p1217_oom
+[ 80%] Building C object CMakeFiles/p1227_c283_observe.dir/tests/p1227/c283/observe.c.o
+[ 81%] Linking C executable p1217_resource_status
+[ 81%] Built target p1217_resource_status
+[ 82%] Linking C executable p1227_c283_return_safety
+[ 82%] Built target p1227_c283_return_safety
+[ 82%] Building C object CMakeFiles/p1236_owned.dir/tests/p1236/owned.c.o
+[ 82%] Linking C executable p1227_observe
+[ 82%] Built target p1227_observe
+[ 83%] Building C object CMakeFiles/p1236_oom.dir/tests/p1236/oom.c.o
+[ 83%] Linking C executable p1227_oom
+[ 83%] Built target p1227_oom
+[ 83%] Linking C executable p1217_c275_live_return_backend_current
+[ 83%] Built target p1217_c275_live_return_backend_current
+[ 83%] Linking C executable p1217_c275_p733_current
+[ 83%] Linking C executable p1227_c283_observe
+[ 83%] Built target p1217_c275_p733_current
+[ 83%] Built target p1227_c283_observe
+[ 83%] Linking C executable p1217_c276_p733_current
+[ 83%] Building C object CMakeFiles/p1248_owned.dir/tests/p1248/owned.c.o
+[ 84%] Built target p1217_c276_p733_current
+[ 84%] Building C object CMakeFiles/p1248_oom.dir/tests/p1248/oom.c.o
+[ 84%] Linking C executable p1236_owned
+[ 84%] Built target p1236_owned
+[ 84%] Building C object CMakeFiles/p1253_owned.dir/tests/p1253/owned.c.o
+[ 84%] Linking C executable p1236_oom
+[ 84%] Built target p1236_oom
+[ 84%] Building C object CMakeFiles/p1253_oom.dir/tests/p1253/oom.c.o
+[ 85%] Linking C executable p1248_owned
+[ 85%] Linking C executable p1248_oom
+[ 85%] Built target p1248_owned
+[ 85%] Building C object CMakeFiles/p1260_owned.dir/tests/p1260/owned.c.o
+[ 85%] Built target p1248_oom
+[ 85%] Building C object CMakeFiles/p1260_oom.dir/tests/p1260/oom.c.o
+[ 85%] Linking C executable p1253_owned
+[ 85%] Built target p1253_owned
+[ 86%] Building C object CMakeFiles/p1272_owned.dir/tests/p1272/owned.c.o
+[ 86%] Linking C executable p1253_oom
+[ 86%] Built target p1253_oom
+[ 86%] Building C object CMakeFiles/p1272_oom.dir/tests/p1272/oom.c.o
+[ 87%] Linking C executable p1260_oom
+[ 87%] Linking C executable p1260_owned
+[ 87%] Built target p1260_oom
+[ 87%] Built target p1260_owned
+[ 87%] Building C object CMakeFiles/p1280_owned.dir/tests/p1280/owned.c.o
+[ 87%] Building C object CMakeFiles/p1272_cli_oom.dir/tests/p1272/cli_oom.c.o
+[ 87%] Linking C executable p1272_owned
+[ 87%] Built target p1272_owned
+[ 87%] Building C object CMakeFiles/p1280_oom.dir/tests/p1280/oom.c.o
+[ 87%] Linking C executable p1272_oom
+[ 87%] Built target p1272_oom
+[ 87%] Building C object CMakeFiles/p1280_cli_oom.dir/tests/p1280/cli_oom.c.o
+[ 87%] Linking C executable p1272_cli_oom
+[ 87%] Built target p1272_cli_oom
+[ 88%] Linking C executable p1280_owned
+[ 88%] Building C object CMakeFiles/p1291_owned.dir/tests/p1291/owned.c.o
+[ 88%] Built target p1280_owned
+[ 88%] Building C object CMakeFiles/p1291_emit_owned.dir/tests/p1291/owned.c.o
+[ 88%] Linking C executable p1280_oom
+[ 88%] Built target p1280_oom
+[ 88%] Building C object CMakeFiles/p1291_check_oom.dir/tests/p1291/check_oom.c.o
+[ 88%] Linking C executable p1280_cli_oom
+[ 88%] Built target p1280_cli_oom
+[ 88%] Building C object CMakeFiles/p1291_oom.dir/tests/p1291/oom.c.o
+[ 88%] Linking C executable p1291_owned
+[ 88%] Built target p1291_owned
+[ 88%] Building C object CMakeFiles/p1295_prefix.dir/tests/p1295/prefix.c.o
+[ 88%] Linking C executable p1291_emit_owned
+[ 88%] Built target p1291_emit_owned
+[ 88%] Building C object CMakeFiles/p1295_emit_current.dir/tests/p1295/prefix.c.o
+[ 88%] Linking C executable p1291_check_oom
+[ 88%] Built target p1291_check_oom
+[ 88%] Building C object CMakeFiles/p1299_owned.dir/tests/p1299/owned.c.o
+[ 89%] Linking C executable p1291_oom
+[ 89%] Built target p1291_oom
+[ 90%] Building C object CMakeFiles/p1299_emit_owned.dir/tests/p1299/owned.c.o
+[ 90%] Linking C executable p1295_prefix
+[ 90%] Built target p1295_prefix
+[ 90%] Linking C executable p1304_owned
+[ 90%] Linking C executable p1295_emit_current
+[ 90%] Built target p1304_owned
+[ 90%] Building C object CMakeFiles/p1304_driver.dir/tests/p1304/driver.c.o
+[ 90%] Built target p1295_emit_current
+[ 90%] Building C object CMakeFiles/p1304_cli_oom.dir/tests/p1304/cli_oom.c.o
+[ 90%] Linking C executable p1299_owned
+[ 90%] Built target p1299_owned
+[ 90%] Linking C executable p1312_consumer
+[ 90%] Linking C executable p1299_emit_owned
+[ 90%] Built target p1312_consumer
+[ 90%] Building C object CMakeFiles/p1318_owned.dir/tests/p1318/owned.c.o
+[ 90%] Built target p1299_emit_owned
+[ 90%] Building C object CMakeFiles/p1318_cli_oom.dir/tests/p1318/cli_oom.c.o
+[ 90%] Linking C executable p1304_cli_oom
+[ 91%] Linking C executable p1304_driver
+[ 91%] Built target p1304_cli_oom
+[ 91%] Building C object CMakeFiles/p1323_owned.dir/tests/p1323/owned.c.o
+[ 91%] Built target p1304_driver
+[ 91%] Building C object CMakeFiles/p1323_cli_oom.dir/tests/p1323/cli_oom.c.o
+[ 91%] Linking C executable p1318_owned
+[ 92%] Linking C executable p1318_cli_oom
+[ 92%] Built target p1318_owned
+[ 92%] Building C object CMakeFiles/p1326_owned.dir/tests/p1326/owned.c.o
+[ 92%] Built target p1318_cli_oom
+[ 93%] Building C object CMakeFiles/p1326_cli_oom.dir/tests/p1326/cli_oom.c.o
+[ 93%] Linking C executable p1323_cli_oom
+[ 93%] Linking C executable p1323_owned
+[ 93%] Built target p1323_cli_oom
+[ 93%] Built target p1323_owned
+[ 93%] Building C object CMakeFiles/p1329_current_copy.dir/tests/p1329/owned.c.o
+[ 93%] Building C object CMakeFiles/p1332_consumer.dir/tests/p1332/consumer.c.o
+[ 93%] Linking C executable p1326_owned
+[ 93%] Linking C executable p1326_cli_oom
+[ 93%] Built target p1326_owned
+[ 93%] Built target p1326_cli_oom
+[ 93%] Building C object CMakeFiles/p1332_cli_oom.dir/tests/p1332/cli_oom.c.o
+[ 94%] Linking C executable p1387_owned
+[ 94%] Built target p1387_owned
+[ 94%] Linking C executable p1393_owned
+[ 94%] Built target p1393_owned
+[ 94%] Linking C executable p1408_owned
+[ 94%] Built target p1408_owned
+[ 94%] Linking C executable p1412_seal
+[ 94%] Built target p1412_seal
+[ 94%] Linking C executable p1412_emitter
+[ 95%] Built target p1412_emitter
+[ 95%] Linking C executable p1420_check
+[ 95%] Built target p1420_check
+[ 96%] Linking C executable p1426_qualified
+[ 96%] Built target p1426_qualified
+[ 96%] Linking C executable p1435_probe
+[ 96%] Built target p1435_probe
+[ 96%] Linking C executable p1436_probe
+[ 96%] Linking C executable p1332_consumer
+[ 96%] Built target p1436_probe
+[ 97%] Linking C executable p1441_probe
+[ 97%] Built target p1332_consumer
+[ 97%] Built target p1441_probe
+[ 97%] Linking C executable p1446_probe
+[ 97%] Linking C executable p1329_current_copy
+[ 97%] Linking C executable p1451_probe
+[ 98%] Linking C executable p1332_cli_oom
+[ 98%] Built target p1329_current_copy
+[ 98%] Built target p1446_probe
+[ 98%] Linking C executable p1455_probe
+[ 98%] Linking C executable p1455_c996_fragments
+[ 98%] Built target p1332_cli_oom
+[ 98%] Built target p1451_probe
+[ 98%] Linking C executable p1463_probe
+[ 98%] Linking C executable p1471_probe
+[ 99%] Built target p1455_probe
+[ 99%] Built target p1455_c996_fragments
+[100%] Linking C executable p1472_probe
+[100%] Linking C executable p1481_probe
+[100%] Built target p1471_probe
+[100%] Built target p1463_probe
+[100%] Building C object CMakeFiles/p718_gate_test.dir/tests/p718/gate_test.c.o
+[100%] Building C object CMakeFiles/p728_gate_test.dir/tests/p728/gate_test.c.o
+[100%] Built target p1472_probe
+[100%] Built target p1481_probe
+[100%] Linking C executable p728_gate_test
+[100%] Linking C executable p718_gate_test
+[100%] Built target p728_gate_test
+[100%] Built target p718_gate_test

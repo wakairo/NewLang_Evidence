@@ -1,0 +1,8 @@
+REGISTER=0
+CHECK=0
+OWNED root_custody=1 has_H=1 H_origin=1
+PRODUCER source=1630 issued=1
+LOOP node=19 public_break_source=0 private_current_status=0 changing=1 scalar=1 root=1 child=3 field=1 initial=0 limit=4 step=1
+HELPER source_result_lineage=1 pure_current_contents=1 normal_arm=2 returns=0
+ROLES incoming=7 old=9 old_copy=10 current=11 sibling=12 index=1
+COMPLETE fragments=16 loops=1 producers=1

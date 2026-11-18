@@ -1,0 +1,162 @@
+[
+  {
+    "label": "A-updated-caller-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller-raw-O0"
+    ],
+    "C_SHA256": "1a08f0e0f2d871d616f63b66a41db13f9ab480528dee6bcdaf3f3eda2572ed3a",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-updated-caller-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller-raw-O2"
+    ],
+    "C_SHA256": "1a08f0e0f2d871d616f63b66a41db13f9ab480528dee6bcdaf3f3eda2572ed3a",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-updated-caller-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1347_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1347/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller-passive-O0"
+    ],
+    "C_SHA256": "1a08f0e0f2d871d616f63b66a41db13f9ab480528dee6bcdaf3f3eda2572ed3a",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-updated-caller-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1347_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1347/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/A-updated-caller-passive-O2"
+    ],
+    "C_SHA256": "1a08f0e0f2d871d616f63b66a41db13f9ab480528dee6bcdaf3f3eda2572ed3a",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reverse-field-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field-raw-O0"
+    ],
+    "C_SHA256": "53063b4fd1e7d6d535cb47e72684750f51bc7593ceb8f77ba1ecea05558fec42",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reverse-field-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field-raw-O2"
+    ],
+    "C_SHA256": "53063b4fd1e7d6d535cb47e72684750f51bc7593ceb8f77ba1ecea05558fec42",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reverse-field-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1347_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1347/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field-passive-O0"
+    ],
+    "C_SHA256": "53063b4fd1e7d6d535cb47e72684750f51bc7593ceb8f77ba1ecea05558fec42",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reverse-field-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1347_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1347/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1347-native/native-ja1dp16e/B-reverse-field-passive-O2"
+    ],
+    "C_SHA256": "53063b4fd1e7d6d535cb47e72684750f51bc7593ceb8f77ba1ecea05558fec42",
+    "passive": true,
+    "sanitizer": "none"
+  }
+]

@@ -1,0 +1,1684 @@
+[
+  {
+    "name": "01-add-three-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/01-add-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/01-add-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "a0fb547a3d086ce89d72eb64818811329bdb70e3826e8203b3b3e1ae95f3b8b0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/01-add-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "27edefc7878986848bc7790307c5675cfc807ebb7f4f2dbd47431cdd365bb11e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/01-add-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(2),(size_t)UINTMAX_C(5),(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(2),(size_t)UINTMAX_C(5),(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-add-three-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/01-add-three-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/02-sub-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/02-sub-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "86d351fdca704d6ff7638411a49cd4a006ca4924db907a1188e0f315c27a13cc",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/02-sub-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "ea9c08374aacc234a9d18858139fa501fe1fd044e3643335e322e64fdf5fdccf",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/02-sub-three.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(14),(size_t)UINTMAX_C(10),(size_t)UINTMAX_C(6),(size_t)UINTMAX_C(2)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(14),(size_t)UINTMAX_C(10),(size_t)UINTMAX_C(6),(size_t)UINTMAX_C(2)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-sub-three-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/02-sub-three-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/03-add-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/03-add-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "3f05654ed10d65989e83f964b7834ed6b877368dcd9205a0a8bd751b97e332cd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/03-add-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "a77b7a04abac6f51adabf7a3c0741a7a7ee52b58263e993702d6a756ec03f653",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/03-add-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=0",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=0",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "03-add-zero-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/03-add-zero-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/04-add-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/04-add-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "50837b5d73976d362134ba59984e37ae8736b2809172e52600aa47d272fe06d9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/04-add-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "a2020843a6001d67706b80044193ce23ede3d19f8a5434b1fae4bc9d9c19e10c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/04-add-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=1",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=1",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-add-one-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/04-add-one-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/05-sub-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/05-sub-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "fc5729349209fbdfe4f2c24467e2a7b2b7500cfe076da56b8ef23ca6e6526d70",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/05-sub-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "0ceaaf64f999ca771ed24764af190e18d17f0cfd96f0f456f44a2cfce5e2f971",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/05-sub-zero.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(3)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=0",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(3)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=0",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-sub-zero-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/05-sub-zero-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/06-sub-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/06-sub-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "0640c9e5324f4ab408152c38c020fb9e7efb686affd123411471b28c247cfa35",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/06-sub-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "c2df18f4109c2bfd5a5ba326021da34d3269dcb08c3e99a4a3ea4f003eaaeba6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/06-sub-one.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(3)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=1",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(3)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=1",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "06-sub-one-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/06-sub-one-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/07-add-target-boundary.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/07-add-target-boundary.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "510c1547ae29670ae852c27c17a6833655e937d3bda3fd13a6d39c37531cc499",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/07-add-target-boundary.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "9899266ed054f40cfdeaf59dba66c98d5a18cdbad2667e15136bacd1633c67bb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/07-add-target-boundary.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(18446744073709551613),(size_t)UINTMAX_C(18446744073709551614),(size_t)UINTMAX_C(18446744073709551615)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=2",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(18446744073709551613),(size_t)UINTMAX_C(18446744073709551614),(size_t)UINTMAX_C(18446744073709551615)}",
+      "-DP1133_SELECTED=0",
+      "-DP1133_INDEX=0",
+      "-DP1133_OLD=60",
+      "-DP1133_NEXT=171",
+      "-DP1133_F0=60",
+      "-DP1133_F1=219",
+      "-DP1133_ENTRY0=60",
+      "-DP1133_ENTRY1=219",
+      "-DP1133_Q0=97",
+      "-DP1133_Q1=148",
+      "-DP1133_CONTINUES=2",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "07-add-target-boundary-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/07-add-target-boundary-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/08-sub-varied.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133_safety",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/08-sub-varied.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "04ea6f67d27c6027467adbd205a3656dc891b4ebb9f3b0217f90f8af1ae34bc3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/08-sub-varied.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e0f5b302e4ad25dafb77d870e5b7f5274fb6fcd01f8240bc953d2e446ec8c7cc",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-named.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/08-sub-varied.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(17),(size_t)UINTMAX_C(12),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(2)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1133/observe.h\"",
+      "-DP1133_TRACE={(size_t)UINTMAX_C(17),(size_t)UINTMAX_C(12),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(2)}",
+      "-DP1133_SELECTED=1",
+      "-DP1133_INDEX=1",
+      "-DP1133_OLD=201",
+      "-DP1133_NEXT=137",
+      "-DP1133_F0=47",
+      "-DP1133_F1=201",
+      "-DP1133_ENTRY0=47",
+      "-DP1133_ENTRY1=201",
+      "-DP1133_Q0=68",
+      "-DP1133_Q1=152",
+      "-DP1133_CONTINUES=3",
+      "-DP1133_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "08-sub-varied-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/08-sub-varied-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "9e16fda28fdc9fbe9d4662f78678b3f11b588f6a95d2a62702ae0e8145f690ef",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "90-overflow-all-H-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/90-overflow-all-H.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "049a2482c59549dc2b359ae3029e198b7fab316a3d877a5db93bfa7a8c615ca2"
+  },
+  {
+    "name": "90-overflow-all-H-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/90-overflow-all-H.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/90-overflow-all-H.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "049a2482c59549dc2b359ae3029e198b7fab316a3d877a5db93bfa7a8c615ca2"
+  },
+  {
+    "name": "91-underflow-all-H-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/91-underflow-all-H.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "16c98aabff8679bbe9a4a1a1b410a1469bdb9417ec9fe87b83122dc1066431f5"
+  },
+  {
+    "name": "91-underflow-all-H-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/91-underflow-all-H.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/91-underflow-all-H.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "16c98aabff8679bbe9a4a1a1b410a1469bdb9417ec9fe87b83122dc1066431f5"
+  },
+  {
+    "name": "92-wrong-guard-arm-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/92-wrong-guard-arm.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "931f6b383c37fefda7904d18fb8a0208d282adf4c0c04091e029c666678ab0f8"
+  },
+  {
+    "name": "92-wrong-guard-arm-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/92-wrong-guard-arm.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/92-wrong-guard-arm.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "931f6b383c37fefda7904d18fb8a0208d282adf4c0c04091e029c666678ab0f8"
+  },
+  {
+    "name": "93-wrong-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/93-wrong-type.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "fe885e8d63a1c9435bd9b61a4636f4f5733fd2f5c27436b6432b17afbbf4baad"
+  },
+  {
+    "name": "93-wrong-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/93-wrong-type.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/93-wrong-type.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "fe885e8d63a1c9435bd9b61a4636f4f5733fd2f5c27436b6432b17afbbf4baad"
+  },
+  {
+    "name": "94-arity-zero-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/94-arity-zero.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "931c9763d3228e092007cdfc0fc1ade52e4dc735d15706254e0a9359feb972e1"
+  },
+  {
+    "name": "94-arity-zero-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/94-arity-zero.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/94-arity-zero.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "931c9763d3228e092007cdfc0fc1ade52e4dc735d15706254e0a9359feb972e1"
+  },
+  {
+    "name": "95-arity-two-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/95-arity-two.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e9df9686ea6d5ade8d9ffb84ce8b30772d7e1f59a7d155a3be6a34f5185129c4"
+  },
+  {
+    "name": "95-arity-two-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/95-arity-two.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/95-arity-two.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e9df9686ea6d5ade8d9ffb84ce8b30772d7e1f59a7d155a3be6a34f5185129c4"
+  },
+  {
+    "name": "96-foreign-operand-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/96-foreign-operand.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c1a131abd5db8dbf1980780b8468c4468d536d9d1e2895d0e9d756db96a527d3"
+  },
+  {
+    "name": "96-foreign-operand-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/96-foreign-operand.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/96-foreign-operand.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c1a131abd5db8dbf1980780b8468c4468d536d9d1e2895d0e9d756db96a527d3"
+  },
+  {
+    "name": "97-equality-insufficient-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/97-equality-insufficient.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "9d66d871c6ea14470c1930b0926ba9e054888c5be0f7a5298812952535b920bf"
+  },
+  {
+    "name": "97-equality-insufficient-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/97-equality-insufficient.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/97-equality-insufficient.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "9d66d871c6ea14470c1930b0926ba9e054888c5be0f7a5298812952535b920bf"
+  },
+  {
+    "name": "98-unguarded-result-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/98-unguarded-result.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "1fd45dc872eafd94bdda7740997d9e6822c6826ccc16c88a59fdae44bb045742"
+  },
+  {
+    "name": "98-unguarded-result-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/98-unguarded-result.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/98-unguarded-result.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "1fd45dc872eafd94bdda7740997d9e6822c6826ccc16c88a59fdae44bb045742"
+  },
+  {
+    "name": "99-iteration-reference-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/99-iteration-reference.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "bd0e659ef687cd60d534f24dd1e6c7421562c6a54bfc5aefcbf0b40278449bd3"
+  },
+  {
+    "name": "99-iteration-reference-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1133-native/p1133-8i4rh0_y/99-iteration-reference.c",
+      "/workspace/NewLang_Compiler/tests/p1133/sources/99-iteration-reference.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "bd0e659ef687cd60d534f24dd1e6c7421562c6a54bfc5aefcbf0b40278449bd3"
+  },
+  {
+    "name": "03-zero-less-control-unchanged-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/03-zero-less-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "8b1ae0b923092b858ed0a8847fca00ca6e6ccdf902b0d8d1abc2bbd69490ec8f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-zero-equality-control-unchanged-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/04-zero-equality-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "cee047fd0f3d4f1137175b6a5259cf70b15a6b2ed48ba682c6716c23ded747e5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

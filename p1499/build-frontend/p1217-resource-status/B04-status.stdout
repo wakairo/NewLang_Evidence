@@ -1,0 +1,9 @@
+C274 public-bool scratch-OOM=0 calls=2 root-same=1
+P1217 SITE stage=public-bool ordinal=1 kind=m pc=0x4d2101
+P1217 SITE stage=public-bool ordinal=2 kind=m pc=0x4d211f
+C274 emit ordinal=2 status=2 out-null=1 length=98765 root-same=1 calls=3
+P1217 SITE stage=emit ordinal=1 kind=m pc=0x43c262
+P1217 SITE stage=emit ordinal=2 kind=m pc=0x4d2101
+P1217 SITE stage=emit ordinal=3 kind=m pc=0x4d211f
+C274 logical-invalid producer status=1 out-null=1 length=98765 root-same=1
+C274 rollback/retry/canonical-destroy PASS

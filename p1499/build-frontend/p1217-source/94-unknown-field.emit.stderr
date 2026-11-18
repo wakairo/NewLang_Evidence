@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1217/sources/94-unknown-field.nl:80:23-80:39: error(semantic)[FIELD-UNKNOWN-FIELD]: field is not declared by the selected nominal

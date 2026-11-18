@@ -1,0 +1,58 @@
+[
+  {
+    "label": "D-nonidentity-old-copy-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "D-nonidentity-old-copy-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "D-nonidentity-old-copy-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "D-nonidentity-old-copy-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-passive-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "E-index-zero-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "E-index-zero-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "E-index-zero-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "E-index-zero-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-passive-O2"
+    ],
+    "status": 0
+  }
+]

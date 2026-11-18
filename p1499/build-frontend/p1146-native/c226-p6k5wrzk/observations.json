@@ -1,0 +1,767 @@
+[
+  {
+    "label": "01-add-many-first-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/01-add-many-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146_safety",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/01-add-many-first.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/01-add-many-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/01-add-many-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={1,5,9,13}",
+      "-DC226_RESULT=13",
+      "-DC226_TAG=119",
+      "-DC226_WRITE_INDEX=0",
+      "-DC226_FIELD0=72",
+      "-DC226_FIELD1=203",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={1,5,9,13}",
+      "-DC226_RESULT=13",
+      "-DC226_TAG=119",
+      "-DC226_WRITE_INDEX=0",
+      "-DC226_FIELD0=72",
+      "-DC226_FIELD1=203",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-first-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/01-add-many-first-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/02-add-zero-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146_safety",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/02-add-zero-second.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/02-add-zero-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/02-add-zero-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={10}",
+      "-DC226_RESULT=10",
+      "-DC226_TAG=231",
+      "-DC226_WRITE_INDEX=1",
+      "-DC226_FIELD0=57",
+      "-DC226_FIELD1=83",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={10}",
+      "-DC226_RESULT=10",
+      "-DC226_TAG=231",
+      "-DC226_WRITE_INDEX=1",
+      "-DC226_FIELD0=57",
+      "-DC226_FIELD1=83",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-second-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/02-add-zero-second-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/03-sub-many-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146_safety",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/03-sub-many-second.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/03-sub-many-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/03-sub-many-second.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={22,16,10,4}",
+      "-DC226_RESULT=4",
+      "-DC226_TAG=41",
+      "-DC226_WRITE_INDEX=1",
+      "-DC226_FIELD0=91",
+      "-DC226_FIELD1=156",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={22,16,10,4}",
+      "-DC226_RESULT=4",
+      "-DC226_TAG=41",
+      "-DC226_WRITE_INDEX=1",
+      "-DC226_FIELD0=91",
+      "-DC226_FIELD1=156",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-many-second-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/03-sub-many-second-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/04-add-one-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146_safety",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/04-add-one-first.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/04-add-one-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/04-add-one-first.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={8,12}",
+      "-DC226_RESULT=12",
+      "-DC226_TAG=214",
+      "-DC226_WRITE_INDEX=0",
+      "-DC226_FIELD0=17",
+      "-DC226_FIELD1=65",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1146/observe.h\"",
+      "-DC226_TRACE={8,12}",
+      "-DC226_RESULT=12",
+      "-DC226_TAG=214",
+      "-DC226_WRITE_INDEX=0",
+      "-DC226_FIELD0=17",
+      "-DC226_FIELD1=65",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-one-first-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/04-add-one-first-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-scalar-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/80-scalar-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-scalar-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/80-scalar-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-scalar-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/80-scalar-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/80-scalar-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-literal-write-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/81-literal-write-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-literal-write-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/81-literal-write-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-literal-write-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/81-literal-write-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/81-literal-write-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "82-late-original-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/82-late-original-control.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "82-late-original-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/82-late-original-control.nl"
+    ],
+    "status": 4
+  },
+  {
+    "label": "82-late-original-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/82-late-original-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/82-late-original-control.nl"
+    ],
+    "status": 4
+  },
+  {
+    "label": "90-overflow-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/90-overflow-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/91-read-mode-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/92-ending-reference-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1146-native/c226-p6k5wrzk/93-incoming-type-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1146/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  }
+]

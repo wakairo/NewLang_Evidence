@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1299/N-unclosed-head.nl:52:25-60:18: error(semantic)[P5-SCOPE-OBLIGATION]: non-Discardable local remains available at block exit

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1208/sources/92-helper-continue.nl:4:35-4:54: error(semantic)[P14-CONTROL-CONTEXT]: continue/break requires an active lexical loop target

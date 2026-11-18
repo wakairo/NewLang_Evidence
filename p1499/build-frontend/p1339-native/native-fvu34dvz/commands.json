@@ -1,0 +1,162 @@
+[
+  {
+    "label": "A-input67-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67-raw-O0"
+    ],
+    "C_SHA256": "f40d3e067663cd6dae2419d8bdc61716596cc772379e51c33cd55367e0eda515",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-input67-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67-raw-O2"
+    ],
+    "C_SHA256": "f40d3e067663cd6dae2419d8bdc61716596cc772379e51c33cd55367e0eda515",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-input67-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1339_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1339/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67-passive-O0"
+    ],
+    "C_SHA256": "f40d3e067663cd6dae2419d8bdc61716596cc772379e51c33cd55367e0eda515",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-input67-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1339_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1339/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/A-input67-passive-O2"
+    ],
+    "C_SHA256": "f40d3e067663cd6dae2419d8bdc61716596cc772379e51c33cd55367e0eda515",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-input109-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109-raw-O0"
+    ],
+    "C_SHA256": "d380cd7c5d01a52b391129f2c1df8d23aeeae4ead19c520ae6f655d1efd8190a",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-input109-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109-raw-O2"
+    ],
+    "C_SHA256": "d380cd7c5d01a52b391129f2c1df8d23aeeae4ead19c520ae6f655d1efd8190a",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-input109-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1339_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1339/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109-passive-O0"
+    ],
+    "C_SHA256": "d380cd7c5d01a52b391129f2c1df8d23aeeae4ead19c520ae6f655d1efd8190a",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-input109-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1339_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1339/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1339-native/native-fvu34dvz/B-input109-passive-O2"
+    ],
+    "C_SHA256": "d380cd7c5d01a52b391129f2c1df8d23aeeae4ead19c520ae6f655d1efd8190a",
+    "passive": true,
+    "sanitizer": "none"
+  }
+]

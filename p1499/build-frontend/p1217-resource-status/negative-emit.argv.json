@@ -1,0 +1,1 @@
+["/workspace/NewLang_Compiler/build-frontend/newlangc", "--emit-c17-to", "/workspace/NewLang_Compiler/build-frontend/p1217-resource-status/negative.c", "/workspace/NewLang_Compiler/tests/p1217/c274/90-wrong-domain-h-only.nl"]

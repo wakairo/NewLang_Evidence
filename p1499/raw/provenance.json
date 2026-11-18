@@ -1,0 +1,30 @@
+{
+  "base": "7ea4dc1a2d72e4274433572b7bff3c1dacfd7434",
+  "head": "cd37be844a2ea4b1b41cdd7332927ff72f314d4a",
+  "tree": "18961738c15972f9590004bb5648ad9eea7f8244",
+  "production_attempts": 40,
+  "production_attempt_limit": 40,
+  "new_scope_native_executions": 16,
+  "native_limit": 32,
+  "selected_new_oom_injections": 16,
+  "oom_limit": 16,
+  "natural_required_pairs": 1,
+  "required_pairs_limit": 2,
+  "counting": "Nested new-scope native runner emitter/host compiler commands counted individually; wrapper orchestration not double-counted. Registered unit/regression CTest invocations counted once, constituent tests and retained P1492/native/OOM regression tracked separately. Toolchain setup and Git/archive/storage operations are operational, not compiler attempts. No reset.",
+  "first_provenance": "Inherited binary in clean pinned checkout; no separately rebuilt/attested baseline. FIRST raw observed, pinned-source single-call limitation statically checked. Native baseline NOT_REACHED.",
+  "first_harness_red": "07 initial suite parser RED and no-op dead-place mutation; 09 scoped changed formal rejected earlier LOCAL-LOAN-PROFILE; 11 wrong enum expectation. 07 exact CTest process exit not captured because final shell cat masked it; failures remain explicit in stdout. No false PASS claim.",
+  "local_status": "Selected GCC/ASan+LSan/UBSan PASS; retained GCC 1098/1124 PASS, 26 RED (24 inherited output directory collisions, 2 precommit Git HEAD mismatches). Local attempts exhausted; no rerun. Same-head CI pending; review pending.",
+  "independence": "No F/R agents launched or isolated R1494/F original imported. B1491 public final advice read/disclosed. Retained main CTests run as ordinary regression.",
+  "pr": "https://github.com/wakairo/NewLang_Compiler/pull/1501",
+  "required_runs": {
+    "FULL5": 44088775838,
+    "NO_LLVM_PARTIAL": 44088775792,
+    "EARLY_NON_REQUIRED": 44088776258
+  },
+  "storage_inventory": {
+    "A": "All implementation/tests/oracles in pushed origin/p1499-usize-call-composition at HEAD; no local-only history or Git bundle prerequisite.",
+    "B": "Own FIRST/RED, all raw compiler/native/CTest outputs, ELF/config snapshots, original v1 and forward sources. Included below.",
+    "C": "Only CMakeFiles objects/driver cache and static .a libraries omitted as fully regenerable; symlinks not followed.",
+    "D": "Active source Git repository, .venv tools and single verified pinned SDK retained. No independent F/R or old evidence/Git/LFS directory included or deleted."
+  }
+}

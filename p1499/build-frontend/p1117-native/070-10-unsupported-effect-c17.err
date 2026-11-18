@@ -1,0 +1,2 @@
+error(cli)[V1-BACKEND-UNSUPPORTED]: accepted program uses a construct outside the V0/V1 Checked-C spine
+note: /workspace/NewLang_Compiler/tests/p1117/sources/10-unsupported-effect.nl

@@ -1,0 +1,153 @@
+Internal ctest changing into directory: /workspace/NewLang_Compiler/build-p1499-asan
+UpdateCTestConfiguration  from :/workspace/NewLang_Compiler/build-p1499-asan/DartConfiguration.tcl
+Parse Config file:/workspace/NewLang_Compiler/build-p1499-asan/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/NewLang_Compiler/build-p1499-asan/DartConfiguration.tcl
+Parse Config file:/workspace/NewLang_Compiler/build-p1499-asan/DartConfiguration.tcl
+Test project /workspace/NewLang_Compiler/build-p1499-asan
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 10
+    Start 10: p1499_A-offset-composition_owned.unit
+
+10: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "composition" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+10: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+10: Environment variables: 
+10:  PYTHONDONTWRITEBYTECODE=1
+10:  PYTHONHASHSEED=0
+10:  LC_ALL=C
+10:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+10:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+10: Test timeout computed to be: 90
+10: /workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl CHECK=0 class=1
+10: actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+10: two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+1/8 Test #10: p1499_A-offset-composition_owned.unit ...   Passed    0.02 sec
+test 11
+    Start 11: p1499_B-repeat-advance_owned.unit
+
+11: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "composition" "/workspace/NewLang_Compiler/tests/p1499/B-repeat-advance.nl"
+11: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+11: Environment variables: 
+11:  PYTHONDONTWRITEBYTECODE=1
+11:  PYTHONHASHSEED=0
+11:  LC_ALL=C
+11:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+11:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+11: Test timeout computed to be: 90
+11: /workspace/NewLang_Compiler/tests/p1499/B-repeat-advance.nl CHECK=0 class=1
+11: actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+11: two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+2/8 Test #11: p1499_B-repeat-advance_owned.unit .......   Passed    0.03 sec
+test 13
+    Start 13: p1499_current_result_tamper.unit
+
+13: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "attack" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+13: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+13: Environment variables: 
+13:  PYTHONDONTWRITEBYTECODE=1
+13:  PYTHONHASHSEED=0
+13:  LC_ALL=C
+13:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+13:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+13: Test timeout computed to be: 90
+13: /workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl CHECK=0 class=1
+13: actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+13: two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+13: second-call tamper 11 + foreign-child destruction rejected before C bytes
+3/8 Test #13: p1499_current_result_tamper.unit ........   Passed    0.03 sec
+test 14
+    Start 14: p1499_selected_oom.unit
+
+14: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "oom" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl"
+14: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+14: Environment variables: 
+14:  PYTHONDONTWRITEBYTECODE=1
+14:  PYTHONHASHSEED=0
+14:  LC_ALL=C
+14:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+14:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+14: Test timeout computed to be: 90
+14: OOM case=1 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=2 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=3 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=4 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=5 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=6 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+14: OOM case=7 actual_hits=1 status=4 out_NULL=1 context_unchanged=1
+4/8 Test #14: p1499_selected_oom.unit .................   Passed    0.04 sec
+test 15
+    Start 15: p1499_named_no_clobber.unit
+
+15: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "named" "/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl" "/workspace/NewLang_Compiler/build-p1499-asan/p1499-named-output.c"
+15: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+15: Environment variables: 
+15:  PYTHONDONTWRITEBYTECODE=1
+15:  PYTHONHASHSEED=0
+15:  LC_ALL=C
+15:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+15:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+15: Test timeout computed to be: 90
+15: error(cli)[V0-C-FILE]: cannot safely write named C17 output
+15: note: /workspace/NewLang_Compiler/build-p1499-asan/p1499-named-output.c
+15: OOM case=8 named_status=1 actual_hits=1 no_clobber=1
+5/8 Test #15: p1499_named_no_clobber.unit .............   Passed    0.02 sec
+test 16
+    Start 16: p1499_N-changed-formal.unit
+
+16: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "changed-negative" "/workspace/NewLang_Compiler/tests/p1499/N-changed-formal.nl"
+16: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+16: Environment variables: 
+16:  PYTHONDONTWRITEBYTECODE=1
+16:  PYTHONHASHSEED=0
+16:  LC_ALL=C
+16:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+16:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+16: Test timeout computed to be: 90
+16: changed usize formal: earlier local-loan coverage rejection status=2 code=LOCAL-LOAN-PROFILE
+6/8 Test #16: p1499_N-changed-formal.unit .............   Passed    0.01 sec
+test 17
+    Start 17: p1499_N-overflow-consumer.unit
+
+17: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "negative" "/workspace/NewLang_Compiler/tests/p1499/N-overflow-consumer.nl"
+17: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+17: Environment variables: 
+17:  PYTHONDONTWRITEBYTECODE=1
+17:  PYTHONHASHSEED=0
+17:  LC_ALL=C
+17:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+17:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+17: Test timeout computed to be: 90
+17: /workspace/NewLang_Compiler/tests/p1499/N-overflow-consumer.nl rejection status=3 code=USIZE-ADDITION-PRECISION
+7/8 Test #17: p1499_N-overflow-consumer.unit ..........   Passed    0.01 sec
+test 18
+    Start 18: p1499_N-wrong-formal.unit
+
+18: Test command: /workspace/NewLang_Compiler/build-p1499-asan/p1499_probe "negative" "/workspace/NewLang_Compiler/tests/p1499/N-wrong-formal.nl"
+18: Working Directory: /workspace/NewLang_Compiler/build-p1499-asan
+18: Environment variables: 
+18:  PYTHONDONTWRITEBYTECODE=1
+18:  PYTHONHASHSEED=0
+18:  LC_ALL=C
+18:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+18:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+18: Test timeout computed to be: 90
+18: /workspace/NewLang_Compiler/tests/p1499/N-wrong-formal.nl rejection status=3 code=USIZE-ADDITION-PRECISION
+8/8 Test #18: p1499_N-wrong-formal.unit ...............   Passed    0.02 sec
+
+The following tests passed:
+	p1499_A-offset-composition_owned.unit
+	p1499_B-repeat-advance_owned.unit
+	p1499_current_result_tamper.unit
+	p1499_selected_oom.unit
+	p1499_named_no_clobber.unit
+	p1499_N-changed-formal.unit
+	p1499_N-overflow-consumer.unit
+	p1499_N-wrong-formal.unit
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.21 sec

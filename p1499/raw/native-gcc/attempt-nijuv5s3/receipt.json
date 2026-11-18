@@ -1,0 +1,284 @@
+[
+  {
+    "label": "A-offset-composition-emit",
+    "argv": [
+      "build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition.c",
+      "tests/p1499/A-offset-composition.nl"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O0-raw-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O0-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O0-raw-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O0-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O0-passive-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-passive.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O0-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O0-passive-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O0-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "31",
+      "32",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "9ecc138e07a7610d99d59323f2cbc543fb501a7f96b03014212027d17a943e18",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O2-raw-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O2-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O2-raw-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O2-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O2-passive-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-passive.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O2-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "A-offset-composition-O2-passive-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/A-offset-composition-O2-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "31",
+      "32",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "9ecc138e07a7610d99d59323f2cbc543fb501a7f96b03014212027d17a943e18",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-emit",
+    "argv": [
+      "build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance.c",
+      "tests/p1499/B-repeat-advance.nl"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O0-raw-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O0-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O0-raw-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O0-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O0-passive-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-passive.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O0-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O0-passive-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O0-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "0eb81f09860efc6dbead22e949989e5e3aad16b7fb55b6b3bb50ba5d4bcdc7d7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O2-raw-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O2-raw"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O2-raw-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O2-raw"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O2-passive-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-passive.c",
+      "-o",
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O2-passive"
+    ],
+    "status": 0,
+    "guest": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "B-repeat-advance-O2-passive-run",
+    "argv": [
+      "/workspace/p1499-evidence/native-gcc/attempt-nijuv5s3/B-repeat-advance-O2-passive",
+      "0",
+      "14",
+      "15",
+      "16",
+      "18446744073709551615"
+    ],
+    "status": 0,
+    "guest": true,
+    "stdout_sha256": "0eb81f09860efc6dbead22e949989e5e3aad16b7fb55b6b3bb50ba5d4bcdc7d7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

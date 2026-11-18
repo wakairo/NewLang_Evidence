@@ -1,0 +1,5 @@
+C263 reached stage=registration ordinal=249 exact-OOM/rollback/no-publication/retry=PASS
+C263 reached stage=registration ordinal=298 exact-OOM/rollback/no-publication/retry=PASS
+C263 reached stage=registration ordinal=547 exact-OOM/rollback/no-publication/retry=PASS
+C263 reached stage=registration ordinal=609 exact-OOM/rollback/no-publication/retry=PASS
+C263 selected OOM stage=registration trials=4 PASS

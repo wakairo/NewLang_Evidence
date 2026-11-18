@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1435/N-active-loan-end.nl:73:69-73:80: error(semantic)[P3-REF-CONFLICT]: operation conflicts with a live reference capability

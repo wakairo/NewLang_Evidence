@@ -1,0 +1,178 @@
+[
+  {
+    "label": "A-callee-local-raw-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-raw-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-raw-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+    "sha256": "a9dc5297b54f0aa99d4604045a3a8f0f680fb2e6a9716e89e8da2c17f7d34a6b",
+    "passive": false,
+    "profile": 0
+  },
+  {
+    "label": "A-callee-local-raw-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-raw-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-raw-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+    "sha256": "a9dc5297b54f0aa99d4604045a3a8f0f680fb2e6a9716e89e8da2c17f7d34a6b",
+    "passive": false,
+    "profile": 0
+  },
+  {
+    "label": "A-callee-local-passive-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-passive-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1332_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1332/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-passive-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+    "sha256": "a9dc5297b54f0aa99d4604045a3a8f0f680fb2e6a9716e89e8da2c17f7d34a6b",
+    "passive": true,
+    "profile": 0
+  },
+  {
+    "label": "A-callee-local-passive-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-passive-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1332_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1332/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local-passive-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/A-callee-local.c",
+    "sha256": "a9dc5297b54f0aa99d4604045a3a8f0f680fb2e6a9716e89e8da2c17f7d34a6b",
+    "passive": true,
+    "profile": 0
+  },
+  {
+    "label": "B-index1-raw-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-raw-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-raw-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+    "sha256": "5016d9eb08ef0fe11b99d2e2a7f0c54e2632a64c99c2e327f066c8b62459bbd7",
+    "passive": false,
+    "profile": 1
+  },
+  {
+    "label": "B-index1-raw-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-raw-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-raw-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+    "sha256": "5016d9eb08ef0fe11b99d2e2a7f0c54e2632a64c99c2e327f066c8b62459bbd7",
+    "passive": false,
+    "profile": 1
+  },
+  {
+    "label": "B-index1-passive-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-passive-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1332_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1332/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-passive-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+    "sha256": "5016d9eb08ef0fe11b99d2e2a7f0c54e2632a64c99c2e327f066c8b62459bbd7",
+    "passive": true,
+    "profile": 1
+  },
+  {
+    "label": "B-index1-passive-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-passive-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1332_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1332/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1-passive-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1332-native/native-9xjiharb/B-index1.c",
+    "sha256": "5016d9eb08ef0fe11b99d2e2a7f0c54e2632a64c99c2e327f066c8b62459bbd7",
+    "passive": true,
+    "profile": 1
+  }
+]

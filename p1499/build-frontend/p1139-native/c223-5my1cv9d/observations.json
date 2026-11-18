@@ -1,0 +1,582 @@
+[
+  {
+    "label": "01-add-many-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139_safety",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/01-add-many.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/01-add-many.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-observed-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(2),(size_t)UINTMAX_C(5),(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=43",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-observed-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-observed-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(2),(size_t)UINTMAX_C(5),(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=43",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-many-observed-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/01-add-many-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139_safety",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/02-add-zero.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/02-add-zero.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-observed-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=207",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-observed-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-observed-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=207",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-add-zero-observed-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/02-add-zero-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139_safety",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/03-add-one.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/03-add-one.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-observed-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=43",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-observed-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-observed-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(8),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=43",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-add-one-observed-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/03-add-one-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139_safety",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/04-add-overshoot.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/04-add-overshoot.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-observed-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(3),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=207",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-observed-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-observed-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(3),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(11)}",
+      "-DC223_RESULT=11",
+      "-DC223_TAG=207",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-add-overshoot-observed-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/04-add-overshoot-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139_safety",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/05-sub-many.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1139/sources/05-sub-many.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-observed-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(17),(size_t)UINTMAX_C(12),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(2)}",
+      "-DC223_RESULT=2",
+      "-DC223_TAG=53",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-observed-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-observed-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1139/observe.h\"",
+      "-DC223_TRACE={(size_t)UINTMAX_C(17),(size_t)UINTMAX_C(12),(size_t)UINTMAX_C(7),(size_t)UINTMAX_C(2)}",
+      "-DC223_RESULT=2",
+      "-DC223_TAG=53",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "05-sub-many-observed-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1139-native/c223-5my1cv9d/05-sub-many-observed-gcc-O2"
+    ],
+    "status": 0
+  }
+]

@@ -1,0 +1,4 @@
+C228 REGISTER=0
+C228 INVOKE=0
+C228_SYMBOLS {"original":1,"result":2,"copied":3,"decision":4,"old":5,"old_copy":8,"conditional":22,"field":1,"entry":10}
+C228 authentic Unknown loop/Copy/comparison/current/both-arm/join/old/sibling PASS

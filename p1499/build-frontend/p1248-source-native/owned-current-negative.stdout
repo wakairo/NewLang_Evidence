@@ -1,0 +1,42 @@
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/B-changed-phase-direct.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=14
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/C-other-field.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=29 field=1 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/E-equal-bits-distinct-values.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/L-adopted-literal-control.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=211 sibling=173 field=0 closed_loan=1 source_break=13
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+NEGATIVE 17 genuine foreign-source/world/edge/result/loan/field/incarnation/shallow/whole-arm controls PASS; A destroyed/B survives
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+SOURCE /workspace/NewLang_Compiler/tests/p1248/sources/A-helper-binding.nl CHECK=0 owned=1
+OWNED current=1 terminal_old=1 scalar_loop=0 result_type=u8 old_known=0 post=0 sibling=173 field=0 closed_loan=1 source_break=20
+ROLES 4 6 7 8 9 CALLER 2 3 4 5
+P1248 terminal NEGATIVE 16 PASS: short foreign signature, callable/source/current/graph and A destroyed/B alive
+P1248 genuine source CHECK/owned typed terminal transfer and foreign-issuer refusal PASS

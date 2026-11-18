@@ -1,0 +1,19 @@
+-- Frontend-only: LLVM discovery and llvm.c_api smoke omitted
+P1117 current oracle preserves original p504 6fc73c22f544e4d66d1eaf8d6526868cf7bb15d76ea2ab93f1bae880987e4e79
+P1117 current oracle preserves original p603 dba648f261a0ae2415c0ccb0e0bc0070399b9ee1dcb52fad5c97fe1b7fa0e040
+-- T991: exactly two approved synthetic CTests registered
+-- T993: no approved R manifest; zero R CTests registered
+-- Configuring done (0.4s)
+-- Generating done (0.5s)
+-- Build files have been written to: /workspace/NewLang_Compiler/build-frontend
+[ 12%] Built target newlang_diagnostic
+[ 12%] Built target newlang_source
+[ 12%] Built target newlang_lexer
+[ 25%] Built target newlang_syntax
+[ 25%] Built target newlang_parser
+[ 37%] Built target newlang_checked
+[ 87%] Built target newlang_semantic
+[ 87%] Built target newlang_checked_c_node
+[ 87%] Building C object CMakeFiles/p1499_probe.dir/tests/p1499/probe.c.o
+[100%] Linking C executable p1499_probe
+[100%] Built target p1499_probe

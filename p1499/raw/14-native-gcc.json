@@ -1,0 +1,1 @@
+{"argv": ["python3", "tests/p1499/native.py", "build-frontend/newlangc", "gcc", "tests/p1499", "/workspace/p1499-evidence/native-gcc", "none"], "exit": 0}

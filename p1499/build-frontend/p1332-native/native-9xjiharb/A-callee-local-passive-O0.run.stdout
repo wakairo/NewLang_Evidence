@@ -1,0 +1,7 @@
+Change0 index0 old43 new95 sibling181
+Change1 index0 old95 new95 sibling181
+Change2 index0 old95 new233 sibling181
+actual call2 function10 returned95
+caller Copy1 symbol6 value95
+caller Copy2 symbol7 value95
+P1332 physical-original1 real-backedges old->tail->call->caller PASS

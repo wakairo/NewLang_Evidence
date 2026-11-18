@@ -1,0 +1,5 @@
+90-wrong-return-type CHECK refusal/no-clobber/temporary PASS
+91-helper-break CHECK refusal/no-clobber/temporary PASS
+92-helper-continue CHECK refusal/no-clobber/temporary PASS
+93-both-return-continuation CHECK refusal/no-clobber/temporary PASS
+94-nonliteral-normal-arm CHECK refusal/no-clobber/temporary PASS

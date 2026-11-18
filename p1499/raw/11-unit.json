@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/ctest", "--test-dir", "build-frontend", "-R", "^p1499_", "-E", "native|oom|clobber", "--output-on-failure"], "exit": 8}

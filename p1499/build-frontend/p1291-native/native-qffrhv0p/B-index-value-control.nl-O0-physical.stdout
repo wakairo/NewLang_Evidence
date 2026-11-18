@@ -1,0 +1,3 @@
+H0 frees=0 writes=0 continuation=3
+H1 frees=1 writes=0 continuation=3
+H2 frees=2 writes=1 continuation=3

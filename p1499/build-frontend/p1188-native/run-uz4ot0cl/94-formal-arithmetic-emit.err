@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1188/sources/94-formal-arithmetic.nl:10:17-10:37: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

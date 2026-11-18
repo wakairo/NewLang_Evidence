@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1368/B-field-zero-alias.nl:2:34-7:2: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1208/c268/sources/91-wrong-normal-type.nl:13:13-26:3: error(precision)[P14-LOOP-PRECISION]: cyclic identity/dependency or memory correlation is not representable

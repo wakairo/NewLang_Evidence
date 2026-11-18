@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1217/sources/90-wrong-return-type.nl:15:19-15:38: error(semantic)[P9-RETURN-TYPE]: return expression must exactly match the function result

@@ -1,0 +1,40 @@
+[
+  {
+    "attempt": 1,
+    "name": "01-A-check",
+    "argv": [
+      "build-frontend/newlangc",
+      "--check",
+      "tests/p1499/A-offset-composition.nl"
+    ],
+    "exit": 0
+  },
+  {
+    "attempt": 2,
+    "name": "02-A-emit",
+    "argv": [
+      "build-frontend/newlangc",
+      "tests/p1499/A-offset-composition.nl"
+    ],
+    "exit": 4
+  },
+  {
+    "attempt": 3,
+    "name": "03-B-check",
+    "argv": [
+      "build-frontend/newlangc",
+      "--check",
+      "tests/p1499/B-repeat-advance.nl"
+    ],
+    "exit": 0
+  },
+  {
+    "attempt": 4,
+    "name": "04-B-emit",
+    "argv": [
+      "build-frontend/newlangc",
+      "tests/p1499/B-repeat-advance.nl"
+    ],
+    "exit": 4
+  }
+]

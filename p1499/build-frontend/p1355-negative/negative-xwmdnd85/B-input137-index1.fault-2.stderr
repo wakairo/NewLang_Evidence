@@ -1,0 +1,2 @@
+error(cli)[V0-C-FILE]: cannot safely write named C17 output
+note: /workspace/NewLang_Compiler/build-frontend/p1355-negative/negative-xwmdnd85/B-input137-index1.c

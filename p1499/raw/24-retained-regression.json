@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/ctest", "--test-dir", "build-frontend", "-E", "^p1499_", "--output-on-failure", "--parallel", "4"], "exit": 8}

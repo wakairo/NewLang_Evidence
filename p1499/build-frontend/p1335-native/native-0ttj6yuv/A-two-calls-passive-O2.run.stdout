@@ -1,0 +1,12 @@
+invocation1 Change0 index0 old43 new95 sibling181
+invocation1 Change1 index0 old95 new95 sibling181
+invocation1 Change2 index0 old95 new233 sibling181
+actual call2 invocation1 function10 returned95
+caller Copy1 symbol6 value95 after-calls1
+invocation2 Change0 index0 old43 new95 sibling181
+invocation2 Change1 index0 old95 new95 sibling181
+invocation2 Change2 index0 old95 new233 sibling181
+actual call5 invocation2 function10 returned95
+caller Copy2 symbol12 value95 after-calls2
+caller Copy3 symbol13 value95 after-calls2
+P1335 two actual calls / first Copy survives PASS

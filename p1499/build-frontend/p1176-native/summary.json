@@ -1,0 +1,142 @@
+{
+  "01-phase-left": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "02-phase-right": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "03-one-edge": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "04-zero-edge": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "05-phase-equality": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "06-incoming-alias": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 4
+  },
+  "100-zero-step": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "101-arm-type": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "80-literal-control": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 0
+  },
+  "81-stutter-control": {
+    "check": 0,
+    "emit": 0,
+    "named": 0,
+    "expected": 0,
+    "native_runs": 0
+  },
+  "90-incoming-usize": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "91-phase-shadow": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "92-inner-effect": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "93-overflow": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "94-other-phase": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "95-unrelated-literal": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "96-escaping-arm": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "97-break-store": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "98-second-if": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  },
+  "99-unrelated-copy": {
+    "check": 3,
+    "emit": 3,
+    "named": 3,
+    "expected": 3,
+    "native_runs": 0
+  }
+}

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1291/sources/N-mismatched-result.nl:50:17-98:18: error(precision)[ALLOCATED-CAPTURED-JOIN-PRECISION]: each allocation world must close its own responsibilities and prove the exact captured-prefix post-state

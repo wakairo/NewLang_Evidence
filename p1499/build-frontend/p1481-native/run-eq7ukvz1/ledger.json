@@ -1,0 +1,465 @@
+[
+  {
+    "label": "emit-0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/P1468-B2-after-cleanup-in-success-arm.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "emit-1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/Z-success-zero.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/Z-success-zero.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "emit-2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/I-field-index-one.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/I-field-index-one.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/raw-O2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "raw-native",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/raw-O2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail1-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=1",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail1"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail1"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "4f1ea4a16fc7d40dd6dd00c3e480404326b3d04c8fc99823aee0ed74c0e67d25",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail2-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=2",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "d3c72d76b2a797abc2fa10e534bccd784d8aceb8fb1f238d0418f11063625e8b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O0-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "0279e664c6ba7afcf93cdce54a0614f7ff0a7bedb86b102d85008709b8763e2e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail1-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=1",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail1"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail1"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "4f1ea4a16fc7d40dd6dd00c3e480404326b3d04c8fc99823aee0ed74c0e67d25",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail2-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=2",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "d3c72d76b2a797abc2fa10e534bccd784d8aceb8fb1f238d0418f11063625e8b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/P1468-B2-after-cleanup-in-success-arm.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v0-O2-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "0279e664c6ba7afcf93cdce54a0614f7ff0a7bedb86b102d85008709b8763e2e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O0-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=0",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/Z-success-zero.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v1-O0-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O0-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v1-O0-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "51a4efc923b666389a844f1643d1cd542ce5846e02be6474957551ca1b5260fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O2-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=0",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/Z-success-zero.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v1-O2-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O2-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v1-O2-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "51a4efc923b666389a844f1643d1cd542ce5846e02be6474957551ca1b5260fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v2-O0-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/I-field-index-one.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v2-O0-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v2-O0-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v2-O0-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "0279e664c6ba7afcf93cdce54a0614f7ff0a7bedb86b102d85008709b8763e2e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v2-O2-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=181",
+      "-DP1463_FIELD_INDEX=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/I-field-index-one.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v2-O2-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  },
+  {
+    "label": "passive-v2-O2-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1481-native/run-eq7ukvz1/passive-v2-O2-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "stdout_sha256": "0279e664c6ba7afcf93cdce54a0614f7ff0a7bedb86b102d85008709b8763e2e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit": 0
+  }
+]

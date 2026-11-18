@@ -1,0 +1,16 @@
+[
+  {
+    "phase": "check",
+    "census": 1754,
+    "tested": 17,
+    "clobbered": 0,
+    "retry": 17
+  },
+  {
+    "phase": "emit",
+    "census": 343,
+    "tested": 343,
+    "clobbered": 0,
+    "retry": 343
+  }
+]

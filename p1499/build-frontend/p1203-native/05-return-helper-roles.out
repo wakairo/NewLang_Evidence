@@ -1,0 +1,11 @@
+C256 HELPER formal=3 selection=5 normal=1 returns=1
+C256 GUARD operand=2 left_symbol=3
+C256 LITERAL arm=0 value=117
+C256 LITERAL arm=1 value=211
+C254 MAP loop=10 phase=2 result=2 base=1 index=0 helper=11
+C254 LOCAL symbol=4 name=incoming quantity=0
+C254 LOCAL symbol=6 name=old quantity=0
+C254 LOCAL symbol=7 name=saved quantity=0
+C254 LOCAL symbol=8 name=during quantity=0
+C254 LOCAL symbol=9 name=sibling quantity=0
+C254 OWNED public-body=YES private-current=YES canonical-root=YES

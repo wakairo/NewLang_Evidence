@@ -1,0 +1,15 @@
+p1492_Q-next-occupancy_owned.unit 1 0.00563723
+p1492_B-batch-advance_owned.unit 1 0.00483805
+p1492_M-max-bound_owned.unit 1 0.00418215
+p1492_current_result_tamper.unit 1 0.0066715
+p1492_selected_oom.unit 1 0.00796915
+p1492_named_no_clobber.unit 1 0.00570786
+p1492_N-decoy-guard.unit 1 0.00399804
+p1492_N-overflow-bound.unit 1 0.00319697
+p1499_A-offset-composition_owned.unit 1 0.00916257
+p1499_B-repeat-advance_owned.unit 1 0.00890136
+p1499_current_result_tamper.unit 1 0.0166314
+p1499_N-changed-formal.unit 1 0.0054714
+p1499_N-overflow-consumer.unit 1 0.00486847
+p1499_N-wrong-formal.unit 1 0.00400792
+---

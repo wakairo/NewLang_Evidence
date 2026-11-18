@@ -1,0 +1,673 @@
+[
+  {
+    "label": "p1208-01-left-normal-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-01-left-normal-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "b3e4615722760a578c71ac8cff6e17fb497e55a69e096c2b76ad96a9f109889f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-01-left-normal-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/01-left-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "99de2b0d0ebfa68214ba6ca0c4a5f7b726a4152d631eb9d2571411d689903cb2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-02-right-normal-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/02-right-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-02-right-normal-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/02-right-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "77b6b0fef2a0dcc0f04ef456d373e8b7c3c5508828e81f9e182f75d012eb5ea0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-02-right-normal-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/02-right-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "2f433b0c306feaaa71aa321426869fcd787f29a03a8ffba66f7508c1c5aace98",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-03-left-final-return-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-03-left-final-return-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "f1e7264b00b57b52f327458e13840714d835cc2a4496de5c6730006a4c5507fa",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-03-left-final-return-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "a188c95c13b6ec7f943ed9e878778d8726c17bbdf6433fb68a063e6010541488",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-04-right-final-return-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-04-right-final-return-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "05cec87f2b43433e2e8c13ab75cf8b6c98c7b2343f0626d181c8ab2375611b29",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-04-right-final-return-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/04-right-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "392357d666b0dac54dfbcd46bdc48b135dbfb2a08961a5d5a384f61b216239fa",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-80-normal-control-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/80-normal-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-80-normal-control-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/80-normal-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "4a998f4db6d02281285d8d3bbecbf844d760880a00f2e04d51f20914292a8604",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-80-normal-control-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/80-normal-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "86d43dc421997e0d1b7045e11a9e42e126d949e47b2bf0ce402d6e1a404c78f8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-81-mixed-tail-control-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/81-mixed-tail-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-81-mixed-tail-control-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/81-mixed-tail-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "4a998f4db6d02281285d8d3bbecbf844d760880a00f2e04d51f20914292a8604",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-81-mixed-tail-control-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/81-mixed-tail-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "4009df92913dd6ae8911fa517dd0b2ef63a8606ae0b0fb7de5805b8f7d2ada06",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-82-both-return-control-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/82-both-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-82-both-return-control-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/82-both-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "230d96268dfbe8bc9ff8946dc22e4347264c2c535eef42e01ad8910711088e23",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-82-both-return-control-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/82-both-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "851f1135a1cde0696892284c9197283cb4bb10f5c3ec6ab0a72f60e490e78eab",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-83-normal-final-return-control-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/83-normal-final-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-83-normal-final-return-control-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/83-normal-final-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "4f8337bb8138778618d59121ac8f720f3a22bfd16fa18c00c876ae06a07bf57a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-83-normal-final-return-control-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/83-normal-final-return-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "07a6f341707f430df9aa3ba764c772e46a6e33ced8011155d305665724c3b424",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-90-wrong-return-type-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/90-wrong-return-type.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "aa39e519766492e5bd9a2b895f52ed5f5a2ebc606ef9484c18a267d4546373bd"
+  },
+  {
+    "label": "p1208-90-wrong-return-type-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/90-wrong-return-type.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "aa39e519766492e5bd9a2b895f52ed5f5a2ebc606ef9484c18a267d4546373bd"
+  },
+  {
+    "label": "p1208-91-helper-break-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/91-helper-break.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "934f9a08bdb3468179afaaefbd2f6a597ecea4742dcca1bc1ad1e833c3ac3a88"
+  },
+  {
+    "label": "p1208-91-helper-break-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/91-helper-break.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "934f9a08bdb3468179afaaefbd2f6a597ecea4742dcca1bc1ad1e833c3ac3a88"
+  },
+  {
+    "label": "p1208-92-helper-continue-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/92-helper-continue.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "4b21106dd413a71b9b8edacb78e4e585b1675fce5c055cbd0ef3459531887d94"
+  },
+  {
+    "label": "p1208-92-helper-continue-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/92-helper-continue.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "4b21106dd413a71b9b8edacb78e4e585b1675fce5c055cbd0ef3459531887d94"
+  },
+  {
+    "label": "p1208-93-both-return-continuation-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/93-both-return-continuation.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6b2be4cfc7d4721587636d0dd131e4dd5944316fee9de888bc99f4f5d00fa5de"
+  },
+  {
+    "label": "p1208-93-both-return-continuation-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/93-both-return-continuation.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "6b2be4cfc7d4721587636d0dd131e4dd5944316fee9de888bc99f4f5d00fa5de"
+  },
+  {
+    "label": "p1208-94-nonliteral-normal-arm-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/94-nonliteral-normal-arm.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "7a26a15fd2aa1b5ccb3ab8ce163e852d99ed1d24fc7cfc40de2b835a64eadc6e"
+  },
+  {
+    "label": "p1208-94-nonliteral-normal-arm-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/94-nonliteral-normal-arm.nl"
+    ],
+    "status": 3,
+    "expected": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "7a26a15fd2aa1b5ccb3ab8ce163e852d99ed1d24fc7cfc40de2b835a64eadc6e"
+  },
+  {
+    "label": "p1208-05-left-discard-normal-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/05-left-discard-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-05-left-discard-normal-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/05-left-discard-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "94c0bec99ddf159e1a881e7c6173139ad27e6a4cb2c41d09a0671ae7894af5b1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-05-left-discard-normal-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/05-left-discard-normal.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "dd66b5a5e55593594ad509ac02d60d6ca789c973231d5648e60edbb98c3d49eb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-01-many-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-01-many-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "32d1f2711f4800119180ecb49258b796a97770b410e5041c05f1daa3ad01d99b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-01-many-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "d6a5c3b02934685fee6e7a21b8ad06525e2599623281c77f9a47ea0a75751ba3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-02-zero-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-02-zero-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "261621b23d22d5cdea3602a068e0f6684c5b6f4a45a76a352e738eb5318473e5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-02-zero-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/02-zero.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "d6a5c3b02934685fee6e7a21b8ad06525e2599623281c77f9a47ea0a75751ba3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-03-one-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-03-one-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "832a5bfcf9e784cbdb69b6429f9f3a941806504843c236b0fb776f7c8f04ccde",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-03-one-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/03-one.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "d6a5c3b02934685fee6e7a21b8ad06525e2599623281c77f9a47ea0a75751ba3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-04-second-field-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-04-second-field-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "cb7011bd39481cfcec1b526f9c98a555366254c3190a9dd6f54f04ec6af3a96e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-04-second-field-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "91a945b7bf2da9aab7f73ce5a9a18a455421888652cfd7b0d194f82855e5420d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-05-return-helper-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-05-return-helper-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "b96b2cc863c7dcf8183b683b0535f955b406cc7420ead873772cbec7af9877c2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-05-return-helper-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/05-return-helper.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "1d0647209bc756df1a2636b62e07b1faa9291aa3c6d469fcafb301d185180140",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-80-phase-control-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-80-phase-control-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "92d1d6ddc1025f90adfffaef340e200ec4ea23373f9232461fba0a5e7892c6fb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-80-phase-control-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/80-phase-control.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "d6a5c3b02934685fee6e7a21b8ad06525e2599623281c77f9a47ea0a75751ba3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mixed-census",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_census",
+      "/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "b490ad381b6d72a2d642e1979ec79c4af8202fab1b7e9e1887d148b2762ca4fd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "literal-census",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_census",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/01-many.nl"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "4702f8b781ae1fff7fb93f6700e4ec19636e3678b6915d985c37dd9222dc5517",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1208-no-clobber",
+    "args": [
+      "/workspace/NewLang_Compiler/.venv/bin/python",
+      "/workspace/NewLang_Compiler/tests/p1208/negative.py",
+      "/workspace/NewLang_Compiler/build-frontend/newlangc"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "bb7a7c54fdf29d690f09e029ad6afe48af5e46a1e530dea3d4de1ebe52fc010f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "p1203-no-clobber",
+    "args": [
+      "/workspace/NewLang_Compiler/.venv/bin/python",
+      "/workspace/NewLang_Compiler/tests/p1203/negative.py",
+      "/workspace/NewLang_Compiler/build-frontend/newlangc"
+    ],
+    "status": 0,
+    "expected": 0,
+    "stdout_sha256": "cd23e0127558c40fe00b23049d06bd98f4a2187bd85c45651afe5ae1e1f3d57d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

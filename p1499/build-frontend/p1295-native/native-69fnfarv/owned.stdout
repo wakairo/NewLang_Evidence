@@ -1,0 +1,26 @@
+CHECK=0 owned=1
+EDGE match=10 arm=0 variant=1 actual-tail=5 parent-result=4 distinct-world=1
+EDGE match=10 arm=1 variant=2 actual-tail=16 parent-result=4 distinct-world=1
+EDGE match=30 arm=0 variant=1 actual-tail=22 parent-result=16 distinct-world=1
+EDGE match=30 arm=1 variant=2 actual-tail=75 parent-result=16 distinct-world=1
+EDGE match=56 arm=0 variant=1 actual-tail=48 parent-result=47 distinct-world=1
+EDGE match=56 arm=1 variant=2 actual-tail=65 parent-result=47 distinct-world=1
+BIND sampled 27
+BIND removed 32
+BIND prior 33
+BIND copy 34
+BIND payload_result 24
+BIND computed 2
+BIND supplied 3
+BIND previous_mark 5
+BIND actual_current 6
+BIND observed_sibling 7
+BIND saved_old 8
+OWNED-PASS matches=3 same-H/T-caller=1 old=71 current=163 sibling=179 field=1 closed-loan=1 refusals=11
+DESTROY-REFUSAL 0 A-unrestored B-live=1
+DESTROY-REFUSAL 1 A-unrestored B-live=1
+DESTROY-REFUSAL 2 A-unrestored B-live=1
+DESTROY-REFUSAL 3 A-unrestored B-live=1
+DESTROY-REFUSAL 4 A-unrestored B-live=1
+DESTROY-REFUSAL 5 A-unrestored B-live=1
+CANONICAL-DESTROY-PASS controls=6

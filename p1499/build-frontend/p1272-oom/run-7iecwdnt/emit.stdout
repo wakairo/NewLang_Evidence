@@ -1,0 +1,30 @@
+BIND sampled_quota 17
+BIND retained_quota 18
+BIND pending_quota 19
+READ {"root":5,"child":10,"incarnation":8,"field":1,"Domain":1,"scope":2,"old":9,"copy":25,"byte":181,"readonly":true,"loan_closed":true,"sealed":true}
+CENSUS phase=emit total=19 sites=5
+SITE emit first=1 pc=0x44fd6b
+SITE emit first=2 pc=0x509d66
+SITE emit first=3 pc=0x509d84
+SITE emit first=14 pc=0x44a201
+SITE emit first=19 pc=0x44ce3a
+OOM emit ordinal=1 reached=1 status=2
+OOM emit ordinal=2 reached=3 status=2
+OOM emit ordinal=3 reached=3 status=2
+OOM emit ordinal=4 reached=5 status=2
+OOM emit ordinal=5 reached=5 status=2
+OOM emit ordinal=6 reached=7 status=2
+OOM emit ordinal=7 reached=7 status=2
+OOM emit ordinal=8 reached=9 status=2
+OOM emit ordinal=9 reached=9 status=2
+OOM emit ordinal=10 reached=11 status=2
+OOM emit ordinal=11 reached=11 status=2
+OOM emit ordinal=12 reached=13 status=2
+OOM emit ordinal=13 reached=13 status=2
+OOM emit ordinal=14 reached=14 status=2
+OOM emit ordinal=15 reached=16 status=2
+OOM emit ordinal=16 reached=16 status=2
+OOM emit ordinal=17 reached=18 status=2
+OOM emit ordinal=18 reached=18 status=2
+OOM emit ordinal=19 reached=19 status=2
+OOM-FINAL phase=emit total=19 selected=19 rollback-retry=19

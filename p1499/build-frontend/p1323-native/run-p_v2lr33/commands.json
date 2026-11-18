@@ -1,0 +1,58 @@
+[
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl-raw-O0",
+    "passive": false,
+    "source": "A-paired.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl.c",
+    "sha256": "4d9c33695f58aa89f19c15d6b5e264748127961950f3b50f59c313b9ace03c0b"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl-raw-O2",
+    "passive": false,
+    "source": "A-paired.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl.c",
+    "sha256": "4d9c33695f58aa89f19c15d6b5e264748127961950f3b50f59c313b9ace03c0b"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl-passive-O0",
+    "passive": true,
+    "source": "A-paired.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl.c",
+    "sha256": "4d9c33695f58aa89f19c15d6b5e264748127961950f3b50f59c313b9ace03c0b"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl-passive-O2",
+    "passive": true,
+    "source": "A-paired.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/A-paired.nl.c",
+    "sha256": "4d9c33695f58aa89f19c15d6b5e264748127961950f3b50f59c313b9ace03c0b"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl-raw-O0",
+    "passive": false,
+    "source": "B-reversed-distinct.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl.c",
+    "sha256": "9abb1270d666864e9ed4449bd1057ae4346150f76abe95f7ddfd0756608b16e8"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl-raw-O2",
+    "passive": false,
+    "source": "B-reversed-distinct.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl.c",
+    "sha256": "9abb1270d666864e9ed4449bd1057ae4346150f76abe95f7ddfd0756608b16e8"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl-passive-O0",
+    "passive": true,
+    "source": "B-reversed-distinct.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl.c",
+    "sha256": "9abb1270d666864e9ed4449bd1057ae4346150f76abe95f7ddfd0756608b16e8"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl-passive-O2",
+    "passive": true,
+    "source": "B-reversed-distinct.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1323-native/run-p_v2lr33/B-reversed-distinct.nl.c",
+    "sha256": "9abb1270d666864e9ed4449bd1057ae4346150f76abe95f7ddfd0756608b16e8"
+  }
+]

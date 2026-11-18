@@ -1,0 +1,4 @@
+replace0 index1 old23 current85 sibling59
+replace1 index1 old85 current173 sibling59
+replace2 index1 old173 current211 sibling59
+PASSIVE original1 backedges2 stores3 closed-loans3 result1 reads2

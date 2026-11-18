@@ -1,0 +1,58 @@
+[
+  {
+    "label": "A-input83-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/A-input83-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-input83-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/A-input83-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-input83-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/A-input83-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-input83-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/A-input83-passive-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-input137-index1-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/B-input137-index1-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-input137-index1-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/B-input137-index1-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-input137-index1-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/B-input137-index1-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-input137-index1-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1355-native/native-7qeyi31j/B-input137-index1-passive-O2"
+    ],
+    "exit_status": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "label": "A-caller-original-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/A-caller-original-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-caller-original-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/A-caller-original-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-caller-original-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/A-caller-original-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "A-caller-original-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/A-caller-original-passive-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/B-reversed-field-raw-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/B-reversed-field-raw-O2"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/B-reversed-field-passive-O0"
+    ],
+    "exit_status": 0
+  },
+  {
+    "label": "B-reversed-field-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1364-native/native-l44fvqj2/B-reversed-field-passive-O2"
+    ],
+    "exit_status": 0
+  }
+]

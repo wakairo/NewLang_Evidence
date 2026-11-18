@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1304/P-named-callers.nl:1:1-39:1: error(host)[P2-OUT-OF-MEMORY]: host allocation failed while constructing syntax

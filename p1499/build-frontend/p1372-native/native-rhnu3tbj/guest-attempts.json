@@ -1,0 +1,58 @@
+[
+  {
+    "label": "L-straight-local-old-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/L-straight-local-old-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "L-straight-local-old-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/L-straight-local-old-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "L-straight-local-old-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/L-straight-local-old-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "L-straight-local-old-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/L-straight-local-old-passive-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-local-alias-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/B-field-zero-local-alias-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-local-alias-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/B-field-zero-local-alias-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-local-alias-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/B-field-zero-local-alias-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-local-alias-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1372-native/native-rhnu3tbj/B-field-zero-local-alias-passive-O2"
+    ],
+    "status": 0
+  }
+]

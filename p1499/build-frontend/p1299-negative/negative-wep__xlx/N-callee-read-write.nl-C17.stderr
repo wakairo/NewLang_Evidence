@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1299/N-callee-read-write.nl:112:9-112:47: error(semantic)[P3-TYPE-MISMATCH]: argument semantic type does not match selected parameter

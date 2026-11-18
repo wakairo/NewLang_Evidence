@@ -1,0 +1,9 @@
+/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl:4:35-4:49: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl:4:35-4:49: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl:12:13-25:3: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+/workspace/NewLang_Compiler/tests/p1208/sources/03-left-final-return.nl:13:3-24:23: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+<v0-entry>:1:1-1:7: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+<v0-entry>:1:1-1:7: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+<v0-entry>:1:1-1:7: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+<v0-entry>:1:1-1:7: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking
+<v0-entry>:1:1-1:7: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking

@@ -1,0 +1,9 @@
+BIND sampled_quota 17
+BIND retained_quota 18
+BIND pending_quota 19
+READ {"root":5,"child":10,"incarnation":8,"field":1,"Domain":1,"scope":2,"old":9,"copy":25,"byte":43,"readonly":true,"loan_closed":true,"sealed":true}
+BIND sampled_quota 17
+BIND retained_quota 18
+BIND pending_quota 19
+READ {"root":5,"child":10,"incarnation":8,"field":1,"Domain":1,"scope":2,"old":9,"copy":25,"byte":43,"readonly":true,"loan_closed":true,"sealed":true}
+OWNED current/loan/clone/short-foreign/changed-read/canonical-destroy refusals=16

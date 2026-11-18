@@ -1,0 +1,11 @@
+C263 reached stage=named ordinal=390 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=439 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=688 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=750 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=2722 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=2723 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=2816 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=2817 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 reached stage=named ordinal=3132 failure/bytes-inode-mtime-no-clobber/temporary/retry=PASS
+C263 named total=3132 tested=9
+C263 selected OOM stage=named trials=9 PASS

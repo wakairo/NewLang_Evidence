@@ -1,0 +1,35 @@
+[ 14%] Built target newlang_diagnostic
+[ 14%] Built target newlang_source
+[ 28%] Built target newlang_syntax
+[ 28%] Built target newlang_lexer
+[ 42%] Built target newlang_checked
+[ 42%] Built target newlang_parser
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o
+[ 42%] Linking C static library libnewlang_semantic.a
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/newlangc.dir/src/main.c.o
+[100%] Linking C executable newlangc
+[100%] Built target newlangc
+[ 14%] Built target newlang_diagnostic
+[ 14%] Built target newlang_source
+[ 14%] Built target newlang_lexer
+[ 28%] Built target newlang_syntax
+[ 28%] Built target newlang_parser
+[ 42%] Built target newlang_checked
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1492_probe.dir/tests/p1492/probe.c.o
+[100%] Linking C executable p1492_probe
+[100%] Built target p1492_probe
+[ 12%] Built target newlang_diagnostic
+[ 12%] Built target newlang_source
+[ 25%] Built target newlang_lexer
+[ 25%] Built target newlang_syntax
+[ 37%] Built target newlang_checked
+[ 37%] Built target newlang_parser
+[ 87%] Built target newlang_semantic
+[ 87%] Built target newlang_checked_c_node
+[ 87%] Building C object CMakeFiles/p1499_probe.dir/tests/p1499/probe.c.o
+[100%] Linking C executable p1499_probe
+[100%] Built target p1499_probe

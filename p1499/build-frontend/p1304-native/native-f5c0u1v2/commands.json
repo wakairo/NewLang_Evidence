@@ -1,0 +1,38 @@
+[
+  {
+    "label": "emit",
+    "status": 0
+  },
+  {
+    "label": "O0-raw-build",
+    "status": 0
+  },
+  {
+    "label": "O0-raw-run",
+    "status": 0
+  },
+  {
+    "label": "O0-passive-build",
+    "status": 0
+  },
+  {
+    "label": "O0-passive-run",
+    "status": 0
+  },
+  {
+    "label": "O2-raw-build",
+    "status": 0
+  },
+  {
+    "label": "O2-raw-run",
+    "status": 0
+  },
+  {
+    "label": "O2-passive-build",
+    "status": 0
+  },
+  {
+    "label": "O2-passive-run",
+    "status": 0
+  }
+]

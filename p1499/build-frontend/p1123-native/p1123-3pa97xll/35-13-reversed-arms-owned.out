@@ -1,0 +1,33 @@
+C220 REGISTER=0
+C220 INVOKE=0
+C220 PRIVATE=0 stuttering=1 base=2 field=0 old-id=14 incoming=205 phase=12,13 limit=13
+C220 genuine public Copy GET/current0 parameters=4,5 Change old=5 post=12 same-root=4
+C220 missing-edge/count/root/wrong-target/stale-current refusals PASS
+C220 REGISTER=0
+C220 INVOKE=0
+C220 canonical A destruction / B survives PASS; altered graph never emitted/native
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 REGISTER=0
+C220 INVOKE=0
+C220 whole IF/body foreign array and short/long cardinality canonical cleanup PASS

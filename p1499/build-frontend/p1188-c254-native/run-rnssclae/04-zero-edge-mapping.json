@@ -1,0 +1,104 @@
+{
+  "roles": {
+    "loop": 19,
+    "phase": 5,
+    "result": 5,
+    "base": 1,
+    "index": 1,
+    "helper": 10,
+    "prefix": {
+      "2": {
+        "name": "snap",
+        "kind": "field",
+        "source": 1,
+        "index": 1
+      },
+      "3": {
+        "name": "held",
+        "kind": "copy",
+        "source": 2,
+        "index": 0
+      },
+      "4": {
+        "name": "same_bits",
+        "kind": "literal",
+        "source": 0,
+        "index": 0
+      }
+    },
+    "locals": {
+      "6": {
+        "name": "capture_before",
+        "quantity": 0
+      },
+      "8": {
+        "name": "incoming",
+        "quantity": 0
+      },
+      "10": {
+        "name": "old",
+        "quantity": 0
+      },
+      "11": {
+        "name": "old_copy",
+        "quantity": 0
+      },
+      "12": {
+        "name": "during",
+        "quantity": 0
+      },
+      "13": {
+        "name": "beside",
+        "quantity": 0
+      },
+      "14": {
+        "name": "capture_after",
+        "quantity": 0
+      }
+    },
+    "uses": [
+      {
+        "node": 2,
+        "symbol": 3,
+        "statement": 0
+      },
+      {
+        "node": 5,
+        "symbol": 3,
+        "statement": 1
+      },
+      {
+        "node": 35,
+        "symbol": 3,
+        "statement": 0
+      },
+      {
+        "node": 38,
+        "symbol": 3,
+        "statement": 1
+      }
+    ]
+  },
+  "mapping": {
+    "start": 1859,
+    "stop": 3646,
+    "body": "for (;;) {\n        const size_t nl_loop_phase_19 = nl_loop_carry_19;\n        NL_CURRENT_PHASE(nl_loop_phase_19, &nl_local_1.f0, &nl_local_1.f1);\n        if (nl_loop_phase_19 < (size_t)UINTMAX_C(4)) {\n            const uint8_t nl_local_6 = nl_local_3;\n            (void)nl_local_6;\n            NL_CURRENT_LOCAL(6, nl_local_6);\n            (void)nl_local_3;\n            (void)nl_loop_phase_19;\n            const uint8_t nl_local_8 = nl_fn_10(nl_loop_phase_19);\n            (void)nl_local_8;\n            NL_CURRENT_LOCAL(8, nl_local_8);\n            uint8_t nl_loan_result_1;\n            {\n                uint8_t *const nl_local_9 = &nl_local_1.f1;\n                (void)nl_local_9;\n                const uint8_t nl_replace_old_15 = *nl_local_9;\n                *nl_local_9 = nl_local_8;\n                nl_loan_result_1 = nl_replace_old_15;\n            }\n            (void)nl_loan_result_1;\n            const uint8_t nl_local_10 = nl_loan_result_1;\n            (void)nl_local_10;\n            NL_CURRENT_LOCAL(10, nl_local_10);\n            const uint8_t nl_local_11 = nl_local_10;\n            (void)nl_local_11;\n            NL_CURRENT_LOCAL(11, nl_local_11);\n            (void)nl_local_11;\n            const uint8_t nl_local_12 = nl_local_1.f1;\n            (void)nl_local_12;\n            NL_CURRENT_LOCAL(12, nl_local_12);\n            const uint8_t nl_local_13 = nl_local_1.f0;\n            (void)nl_local_13;\n            NL_CURRENT_LOCAL(13, nl_local_13);\n            (void)nl_local_12;\n            (void)nl_local_13;\n            const uint8_t nl_local_14 = nl_local_3;\n            (void)nl_local_14;\n            NL_CURRENT_LOCAL(14, nl_local_14);\n            (void)nl_local_3;\n            nl_loop_carry_19 = nl_loop_phase_19 + (size_t)UINTMAX_C(1);\n            continue;\n        }\n        ",
+    "prefix_values": {
+      "2": 58,
+      "3": 58,
+      "4": 58
+    },
+    "direct_discards": [
+      {
+        "node": 5,
+        "symbol": 3,
+        "statement": 1
+      },
+      {
+        "node": 38,
+        "symbol": 3,
+        "statement": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+p1499_A-offset-composition_owned.unit 1 0.0238157
+p1499_B-repeat-advance_owned.unit 1 0.028556
+p1499_current_result_tamper.unit 1 0.0326214
+p1499_selected_oom.unit 1 0.0417214
+p1499_named_no_clobber.unit 1 0.0171164
+p1499_N-changed-formal.unit 1 0.0112016
+p1499_N-overflow-consumer.unit 1 0.0134732
+p1499_N-wrong-formal.unit 1 0.0159978
+---

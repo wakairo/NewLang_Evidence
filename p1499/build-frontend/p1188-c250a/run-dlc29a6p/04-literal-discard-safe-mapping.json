@@ -1,0 +1,43 @@
+{
+  "roles": {
+    "loop": 10,
+    "phase": 2,
+    "result": 2,
+    "index": 0,
+    "helper": 0,
+    "locals": {
+      "old": {
+        "symbol": 4,
+        "quantity": 0
+      },
+      "old_copy": {
+        "symbol": 5,
+        "quantity": 0
+      },
+      "during": {
+        "symbol": 6,
+        "quantity": 0
+      },
+      "beside": {
+        "symbol": 7,
+        "quantity": 0
+      }
+    },
+    "discards": [
+      {
+        "node": 25,
+        "symbol": 2,
+        "phase": 1
+      }
+    ]
+  },
+  "mapping": {
+    "bad_phase_reads": 0,
+    "body": "for (;;) {\n        const size_t nl_loop_phase_10 = nl_loop_carry_10;\n        NL_CURRENT_PHASE(nl_loop_phase_10, &nl_local_1.f0, &nl_local_1.f1);\n        if (nl_loop_phase_10 < (size_t)UINTMAX_C(10)) {\n            uint8_t nl_loan_result_1;\n            {\n                uint8_t *const nl_local_3 = &nl_local_1.f0;\n                (void)nl_local_3;\n                const uint8_t nl_replace_old_4 = *nl_local_3;\n                *nl_local_3 = 203;\n                nl_loan_result_1 = nl_replace_old_4;\n            }\n            (void)nl_loan_result_1;\n            const uint8_t nl_local_4 = nl_loan_result_1;\n            (void)nl_local_4;\n            NL_CURRENT_LOCAL(4, nl_local_4);\n            const uint8_t nl_local_5 = nl_local_4;\n            (void)nl_local_5;\n            NL_CURRENT_LOCAL(5, nl_local_5);\n            (void)nl_local_5;\n            const uint8_t nl_local_6 = nl_local_1.f0;\n            (void)nl_local_6;\n            NL_CURRENT_LOCAL(6, nl_local_6);\n            const uint8_t nl_local_7 = nl_local_1.f1;\n            (void)nl_local_7;\n            NL_CURRENT_LOCAL(7, nl_local_7);\n            (void)nl_local_6;\n            (void)nl_local_7;\n            (void)nl_loop_phase_10;\n            nl_loop_carry_10 = nl_loop_phase_10 + (size_t)UINTMAX_C(4);\n            continue;\n        }\n        ",
+    "carriers": {
+      "nl_loop_phase_10": 1
+    },
+    "start": 1579,
+    "stop": 2880
+  }
+}

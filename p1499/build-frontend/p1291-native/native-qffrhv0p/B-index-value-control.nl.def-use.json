@@ -1,0 +1,13 @@
+{
+  "actual_H_load_to_T_call": true,
+  "actual_old_call_to_arm_copy": true,
+  "actual_old_through_three_matches_to_continuation": true,
+  "T_original": "nl_b_11_28",
+  "declared_field": 1,
+  "frames": {
+    "T": 11,
+    "arm": 6,
+    "continuation": 0
+  },
+  "C_sha256": "5afd01512a5ea8f28eacd80077123745e9c4de9666b40a84ba9f3939c3da51cd"
+}

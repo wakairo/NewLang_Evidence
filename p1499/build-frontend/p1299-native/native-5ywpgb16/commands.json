@@ -1,0 +1,129 @@
+[
+  {
+    "label": "CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1299/P-named-display.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "owned",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1299_owned",
+      "/workspace/NewLang_Compiler/tests/p1299/P-named-display.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1299/P-named-display.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "named-output",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/atomic.c",
+      "/workspace/NewLang_Compiler/tests/p1299/P-named-display.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-raw-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/named.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-raw",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-physical-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O0-physical.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O0-physical"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-physical",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O0-physical"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-raw-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/named.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-raw",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-physical-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O2-physical.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O2-physical"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-physical",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1299-native/native-5ywpgb16/O2-physical"
+    ],
+    "status": 0
+  }
+]

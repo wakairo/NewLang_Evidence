@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1351/N-wrong-type.nl:40:18-40:24: error(semantic)[P8-BODY-RESULT]: normal body result must exactly match the declared single result

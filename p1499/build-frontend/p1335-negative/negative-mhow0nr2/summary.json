@@ -1,0 +1,8 @@
+{
+  "CLI_OOM": 8,
+  "write": 2,
+  "flush": 2,
+  "source_negatives": 4,
+  "original_inode_bytes_mtime": true,
+  "retry_byte_identical": true
+}

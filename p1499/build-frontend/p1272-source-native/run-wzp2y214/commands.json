@@ -1,0 +1,420 @@
+[
+  {
+    "label": "N-bare-projection-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-bare-projection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-bare-projection-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-bare-projection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-bare-projection-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-bare-projection.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-bare-projection.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-ended-original-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-ended-original.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-ended-original-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-ended-original.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-ended-original-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-ended-original.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-ended-original.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-escaped-ref-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-escaped-ref.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-escaped-ref-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-escaped-ref.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-escaped-ref-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-escaped-ref.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-escaped-ref.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-no-T-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-no-T.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-no-T-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-no-T.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-no-T-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-no-T.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-no-T.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-write-base-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-write-base.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-write-base-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-write-base.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-write-base-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-write-base.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-write-base.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-wrong-domain-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-wrong-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-wrong-domain-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-wrong-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-wrong-domain-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/N-wrong-domain.named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/N-wrong-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "P-renamed-credit-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-renamed-credit.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272_owned",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-renamed-credit.nl",
+      "43"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-renamed-credit.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-renamed-credit.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O0-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O0-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O0-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O2-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O2-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-renamed-credit-O2-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-renamed-credit-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-template-copy.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272_owned",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-template-copy.nl",
+      "181"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-template-copy.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-named.c",
+      "/workspace/NewLang_Compiler/tests/p1272/sources/P-template-copy.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O0-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O0-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O0-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O2-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O2-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "P-template-copy-O2-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1272-source-native/run-wzp2y214/P-template-copy-physical-O2"
+    ],
+    "status": 0
+  }
+]

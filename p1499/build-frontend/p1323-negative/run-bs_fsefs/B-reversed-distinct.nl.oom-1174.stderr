@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1323/B-reversed-distinct.nl:24:22-24:32: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking

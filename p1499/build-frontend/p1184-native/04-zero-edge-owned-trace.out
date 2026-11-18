@@ -1,0 +1,9 @@
+C245 public-owned=YES private-current=0 index=1 phase=2 root=1 child=3
+C245 entry-function=10 loop=10 incoming=0 sibling=192 ghost-fresh=YES break-write=NO
+C245 LOCAL name=incoming symbol=4
+C245 LOCAL name=old symbol=6
+C245 LOCAL name=old_copy symbol=7
+C245 LOCAL name=during symbol=8
+C245 LOCAL name=beside symbol=9
+C245 tamper=57 foreign-A-destroy/B-survive=PASS
+C245 unrestored display-count/foreign-table canonical-destroy=22 PASS

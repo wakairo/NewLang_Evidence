@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1332/N-ended-ref.nl:23:19-23:59: error(semantic)[P8-EXIT-DEPENDENCY]: surviving state depends on the ending loan scope

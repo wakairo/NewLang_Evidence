@@ -1,0 +1,20 @@
+[
+  {
+    "label": "check-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_check_oom",
+      "/workspace/NewLang_Compiler/tests/p1295/P-surviving-state.nl",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "check-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_check_oom",
+      "/workspace/NewLang_Compiler/tests/p1295/P-surviving-state.nl",
+      "check"
+    ],
+    "status": 0
+  }
+]

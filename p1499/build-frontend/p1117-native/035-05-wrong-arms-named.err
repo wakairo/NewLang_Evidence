@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1117/sources/05-wrong-arms.nl:6:18-6:39: error(semantic)[P13-IF-RESULT]: normal if arms require the same single result type

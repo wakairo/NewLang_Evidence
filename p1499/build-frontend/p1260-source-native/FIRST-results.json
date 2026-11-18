@@ -1,0 +1,335 @@
+[
+  {
+    "label": "A-original-refresh-with-history-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/B-second-field-restore-known-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/B-second-field-restore-known-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "N-read-only-history-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-read-only-history.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-read-only-history-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/N-read-only-history.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-read-only-history.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-abandoned-first-backing-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-abandoned-first-backing.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-abandoned-first-backing-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/N-abandoned-first-backing.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-abandoned-first-backing.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "U-call-returns-incoming-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/U-call-returns-incoming.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "U-call-returns-incoming-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/U-call-returns-incoming.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/U-call-returns-incoming.nl"
+    ],
+    "status": 4
+  },
+  {
+    "label": "N-escaping-post-loop-loan-CHECK",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-escaping-post-loop-loan.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-escaping-post-loop-loan-C17",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/N-escaping-post-loop-loan.c",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/N-escaping-post-loop-loan.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "A-original-refresh-with-history-raw-O0-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-raw-O0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-raw-O2-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-raw-O2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-raw-O0-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-raw-O0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-raw-O2-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-raw-O2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "owned-negative",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260_owned",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/A-original-refresh-with-history.nl",
+      "/workspace/NewLang_Compiler/tests/p1260/sources/B-second-field-restore-known-return.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-O0-observer-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-O0.o"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-O0-observer-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-O0.o"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-observer-link",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-O0.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-O0.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/matrix-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O0-observer-native",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/matrix-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original-refresh-with-history-O2-observer-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-O2.o"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-second-field-restore-known-return-O2-observer-build",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-O2.o"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-observer-link",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/driver.c",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/A-original-refresh-with-history-O2.o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/B-second-field-restore-known-return-O2.o",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/matrix-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "O2-observer-native",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1260-source-native/matrix-O2"
+    ],
+    "status": 0
+  }
+]

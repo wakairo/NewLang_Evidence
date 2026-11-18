@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1455/N-wrong-domain.nl:82:56-82:95: error(semantic)[ALLOCATED-DOMAIN-MISMATCH]: pointer requires matching readable live domain

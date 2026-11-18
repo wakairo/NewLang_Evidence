@@ -1,0 +1,2 @@
+PASSIVE H0 outcome=27 terminal-old=117 current=27 sibling=167 phases=3 backedges=2 same-T=1 frees=0
+ALLOCATOR world=0 attempts=1 successes=0 frees=0 PASS

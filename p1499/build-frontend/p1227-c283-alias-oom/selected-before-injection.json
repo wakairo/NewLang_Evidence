@@ -1,0 +1,634 @@
+{
+  "binary_sha256": "9c2104a062805a72a62464648127873437a2bb4165379cf5e7bdaae354fd1832",
+  "plans": [
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 1,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 1,
+        "kind": "m",
+        "pc": "0x43c73a",
+        "function": "nl_checked_c_node"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 2,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 2,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 3,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 3,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 4,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 4,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 5,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 5,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 6,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 6,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 7,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 7,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 8,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 8,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 9,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 9,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 10,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 10,
+        "kind": "m",
+        "pc": "0x436c7b",
+        "function": "producer_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "emit",
+      "ordinal": 11,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 11,
+        "kind": "m",
+        "pc": "0x43988a",
+        "function": "owner_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 1,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 1,
+        "kind": "m",
+        "pc": "0x419c83",
+        "function": "emit_c17_to"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7514,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7514,
+        "kind": "m",
+        "pc": "0x43c73a",
+        "function": "nl_checked_c_node"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7515,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7515,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7516,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7516,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7517,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7517,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7518,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7518,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7519,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7519,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7520,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7520,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7521,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7521,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7522,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7522,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7523,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7523,
+        "kind": "m",
+        "pc": "0x436c7b",
+        "function": "producer_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl",
+      "stage": "named",
+      "ordinal": 7524,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-preH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7524,
+        "kind": "m",
+        "pc": "0x43988a",
+        "function": "owner_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 1,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 1,
+        "kind": "m",
+        "pc": "0x43c73a",
+        "function": "nl_checked_c_node"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 2,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 2,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 3,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 3,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 4,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 4,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 5,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 5,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 6,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 6,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 7,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 7,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 8,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 8,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 9,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 9,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 10,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 10,
+        "kind": "m",
+        "pc": "0x436c7b",
+        "function": "producer_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "emit",
+      "ordinal": 11,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "emit",
+        "ordinal": 11,
+        "kind": "m",
+        "pc": "0x43988a",
+        "function": "owner_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 1,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 1,
+        "kind": "m",
+        "pc": "0x419c83",
+        "function": "emit_c17_to"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7474,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7474,
+        "kind": "m",
+        "pc": "0x43c73a",
+        "function": "nl_checked_c_node"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7475,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7475,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7476,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7476,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7477,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7477,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7478,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7478,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7479,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7479,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7480,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7480,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7481,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7481,
+        "kind": "m",
+        "pc": "0x4d25d9",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7482,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7482,
+        "kind": "m",
+        "pc": "0x4d25f7",
+        "function": "nl_raw_validate"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7483,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7483,
+        "kind": "m",
+        "pc": "0x436c7b",
+        "function": "producer_call"
+      }
+    },
+    {
+      "source": "/workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl",
+      "stage": "named",
+      "ordinal": 7484,
+      "raw": "/workspace/NewLang_Compiler/build-frontend/p1227-c283-alias-oom/A-alias-postH",
+      "event": {
+        "stage": "named",
+        "ordinal": 7484,
+        "kind": "m",
+        "pc": "0x43988a",
+        "function": "owner_call"
+      }
+    }
+  ],
+  "static_coverage": [
+    {
+      "source": "A-alias-preH.nl",
+      "stage": "registration",
+      "reached": 3615,
+      "old_source_covered_static_sites": 57,
+      "additional_alias_sites": 0
+    },
+    {
+      "source": "A-alias-preH.nl",
+      "stage": "actual",
+      "reached": 3450,
+      "old_source_covered_static_sites": 50,
+      "additional_alias_sites": 0
+    },
+    {
+      "source": "A-alias-postH.nl",
+      "stage": "registration",
+      "reached": 3595,
+      "old_source_covered_static_sites": 57,
+      "additional_alias_sites": 0
+    },
+    {
+      "source": "A-alias-postH.nl",
+      "stage": "actual",
+      "reached": 3430,
+      "old_source_covered_static_sites": 50,
+      "additional_alias_sites": 0
+    }
+  ],
+  "old_source_trials": 260
+}

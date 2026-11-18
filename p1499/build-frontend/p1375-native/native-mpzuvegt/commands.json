@@ -1,0 +1,178 @@
+[
+  {
+    "label": "D-nonidentity-old-copy-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-raw-O0"
+    ],
+    "C_SHA256": "54e96affbba52435e9ba7aaf52708aa6c0b7e291ffbeb7768f0154f5f60a8b81",
+    "passive": false,
+    "numeric_transition_observed": false,
+    "caller_local_separation_while_live": false,
+    "local_pointer_cleared_before_return": false
+  },
+  {
+    "label": "D-nonidentity-old-copy-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-raw-O2"
+    ],
+    "C_SHA256": "54e96affbba52435e9ba7aaf52708aa6c0b7e291ffbeb7768f0154f5f60a8b81",
+    "passive": false,
+    "numeric_transition_observed": false,
+    "caller_local_separation_while_live": false,
+    "local_pointer_cleared_before_return": false
+  },
+  {
+    "label": "D-nonidentity-old-copy-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1375_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1375/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-passive-O0"
+    ],
+    "C_SHA256": "54e96affbba52435e9ba7aaf52708aa6c0b7e291ffbeb7768f0154f5f60a8b81",
+    "passive": true,
+    "numeric_transition_observed": true,
+    "caller_local_separation_while_live": true,
+    "local_pointer_cleared_before_return": true
+  },
+  {
+    "label": "D-nonidentity-old-copy-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1375_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1375/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/D-nonidentity-old-copy-passive-O2"
+    ],
+    "C_SHA256": "54e96affbba52435e9ba7aaf52708aa6c0b7e291ffbeb7768f0154f5f60a8b81",
+    "passive": true,
+    "numeric_transition_observed": true,
+    "caller_local_separation_while_live": true,
+    "local_pointer_cleared_before_return": true
+  },
+  {
+    "label": "E-index-zero-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-raw-O0"
+    ],
+    "C_SHA256": "fde801c63d12b817d408d28dd48446f355942bc153bb17b9e58a033c9780bf7d",
+    "passive": false,
+    "numeric_transition_observed": false,
+    "caller_local_separation_while_live": false,
+    "local_pointer_cleared_before_return": false
+  },
+  {
+    "label": "E-index-zero-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-raw-O2"
+    ],
+    "C_SHA256": "fde801c63d12b817d408d28dd48446f355942bc153bb17b9e58a033c9780bf7d",
+    "passive": false,
+    "numeric_transition_observed": false,
+    "caller_local_separation_while_live": false,
+    "local_pointer_cleared_before_return": false
+  },
+  {
+    "label": "E-index-zero-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1375_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1375/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-passive-O0"
+    ],
+    "C_SHA256": "fde801c63d12b817d408d28dd48446f355942bc153bb17b9e58a033c9780bf7d",
+    "passive": true,
+    "numeric_transition_observed": true,
+    "caller_local_separation_while_live": true,
+    "local_pointer_cleared_before_return": true
+  },
+  {
+    "label": "E-index-zero-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1375_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1375/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1375-native/native-mpzuvegt/E-index-zero-passive-O2"
+    ],
+    "C_SHA256": "fde801c63d12b817d408d28dd48446f355942bc153bb17b9e58a033c9780bf7d",
+    "passive": true,
+    "numeric_transition_observed": true,
+    "caller_local_separation_while_live": true,
+    "local_pointer_cleared_before_return": true
+  }
+]

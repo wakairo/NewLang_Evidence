@@ -1,0 +1,122 @@
+[
+  {
+    "source": "03-postheap-current-loop.nl",
+    "positive": true,
+    "check": 0,
+    "emit": 0,
+    "check_diagnostic": "",
+    "emit_diagnostic": "",
+    "no_clobber": null,
+    "generated_sha256": "abec97fb542083fa4138a9bf96d4f3de0f70c9e1faa17bf1defa5243dec78460"
+  },
+  {
+    "source": "04-preheap-original-current-loop.nl",
+    "positive": true,
+    "check": 0,
+    "emit": 0,
+    "check_diagnostic": "",
+    "emit_diagnostic": "",
+    "no_clobber": null,
+    "generated_sha256": "baf750fd6d2dd45ec6ce0b96a9a6263cddbedf994af0e8f2be7974a077e5fa7c"
+  },
+  {
+    "source": "05-zero-heap-control.nl",
+    "positive": true,
+    "check": 0,
+    "emit": 0,
+    "check_diagnostic": "",
+    "emit_diagnostic": "",
+    "no_clobber": null,
+    "generated_sha256": "8a06cc635c9c4d72b9e503e5932c41131c4342c794679e8b5fa2f7ade3b1cc5f"
+  },
+  {
+    "source": "08-no-write-literal-entry-control.nl",
+    "positive": true,
+    "check": 0,
+    "emit": 0,
+    "check_diagnostic": "",
+    "emit_diagnostic": "",
+    "no_clobber": null,
+    "generated_sha256": "61e92320f194508435f06bef093144e16e3ebc4b7eac10166721374ee0f06b32"
+  },
+  {
+    "source": "90-wrong-return-type.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/90-wrong-return-type.nl:15:19-15:38: error(semantic)[P9-RETURN-TYPE]: return expression must exactly match the function result\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/90-wrong-return-type.nl:15:19-15:38: error(semantic)[P9-RETURN-TYPE]: return expression must exactly match the function result\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "91-wrong-continue-type.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/91-wrong-continue-type.nl:23:4-23:20: error(semantic)[P14-CONTINUE-TYPE]: continue value must have the exact parameter static type\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/91-wrong-continue-type.nl:23:4-23:20: error(semantic)[P14-CONTINUE-TYPE]: continue value must have the exact parameter static type\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "92-escaped-write-ref.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/92-escaped-write-ref.nl:16:16-16:59: error(semantic)[P8-EXIT-DEPENDENCY]: surviving state depends on the ending loan scope\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/92-escaped-write-ref.nl:16:16-16:59: error(semantic)[P8-EXIT-DEPENDENCY]: surviving state depends on the ending loan scope\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "93-missing-failure-cleanup.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/93-missing-failure-cleanup.nl:31:11-36:6: error(semantic)[P5-SCOPE-OBLIGATION]: non-Discardable local remains available at block exit\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/93-missing-failure-cleanup.nl:31:11-36:6: error(semantic)[P5-SCOPE-OBLIGATION]: non-Discardable local remains available at block exit\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "94-unknown-field.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/94-unknown-field.nl:80:23-80:39: error(semantic)[FIELD-UNKNOWN-FIELD]: field is not declared by the selected nominal\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/94-unknown-field.nl:80:23-80:39: error(semantic)[FIELD-UNKNOWN-FIELD]: field is not declared by the selected nominal\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "95-wrong-domain.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/95-wrong-domain.nl:63:6-63:55: error(semantic)[P193-CALL-DOMAIN]: input LifetimeDomain does not govern the pointer's root\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/95-wrong-domain.nl:63:6-63:55: error(semantic)[P193-CALL-DOMAIN]: input LifetimeDomain does not govern the pointer's root\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "06-no-write-control.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/06-no-write-control.nl:12:19-12:20: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/06-no-write-control.nl:12:19-12:20: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  },
+  {
+    "source": "07-no-write-scalar-control.nl",
+    "positive": false,
+    "check": 3,
+    "emit": 3,
+    "check_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/07-no-write-scalar-control.nl:8:19-8:20: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n",
+    "emit_diagnostic": "/workspace/NewLang_Compiler/tests/p1217/sources/07-no-write-scalar-control.nl:8:19-8:20: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile\n",
+    "no_clobber": true,
+    "generated_sha256": null
+  }
+]

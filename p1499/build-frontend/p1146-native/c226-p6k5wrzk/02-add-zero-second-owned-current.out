@@ -1,0 +1,4 @@
+C226 REGISTER=0
+C226 INVOKE=0
+C226_SYMBOLS {"original":1,"amount":2,"argument":3,"incoming":5,"old":7,"updated":8,"sibling":9,"old_again":10,"call":16,"function":10,"formal":4,"field":1,"ref":6,"entry":11}
+C226 genuine pre-loop T/frame and postcall original/Change/old Copy/current/sibling PASS

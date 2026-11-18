@@ -1,0 +1,237 @@
+{
+  "track": "T / C1149 / Issue1513 STORAGE-ONLY",
+  "source_repo": "https://github.com/wakairo/NewLang_Compiler",
+  "source_ref": "refs/heads/archive/track-p-evidence-20261117",
+  "source_commit": "9a20de39506965bfa8ab92c91fddb191d2ac551b",
+  "source_tree": "385558cb17af4a5fb76501a1151a977f479802f4",
+  "archive_path": "P1499-C1127-cd37be8/P1499-C1122-cd37be8-evidence.tar.gz",
+  "archive_bytes": 292528339,
+  "archive_sha256": "79d158bc3ecc677474d738383878702627217c7b29accf737b7b5f3c60567a8c",
+  "production_base": "7ea4dc1a2d72e4274433572b7bff3c1dacfd7434",
+  "production_head": "cd37be844a2ea4b1b41cdd7332927ff72f314d4a",
+  "production_tree": "18961738c15972f9590004bb5648ad9eea7f8244",
+  "cohort_root": "p1499/",
+  "members": 23814,
+  "payload_bytes": 832993112,
+  "source_manifest_path": "p1499/manifest.json",
+  "source_manifest_sha256": "ab8dcd8150287da20d744d47f6fb4fcc773317098a498d1a77c5e5b146c13c72",
+  "manifest_shards": [
+    {
+      "path": "provenance/members-00.json",
+      "bytes": 717001,
+      "sha256": "df32a28d08d5527ea6e27bd228401ef83e32170aa5348598d45defe859110cea"
+    },
+    {
+      "path": "provenance/members-01.json",
+      "bytes": 709453,
+      "sha256": "06e285f7784e8832117b88265b8e4941f5c47b1ed85e32a928185648113a9783"
+    },
+    {
+      "path": "provenance/members-02.json",
+      "bytes": 696983,
+      "sha256": "8eae7732fb339ac90a15e72516e07b6e15496c9802d2ccf159b41c896fbddd17"
+    },
+    {
+      "path": "provenance/members-03.json",
+      "bytes": 710728,
+      "sha256": "fa05e55316738a7a80bf82c095da34b2213876269579d94802e963ae842e2a20"
+    },
+    {
+      "path": "provenance/members-04.json",
+      "bytes": 710423,
+      "sha256": "dde06a0938c5e4a2c752f1f38c64f2f21d711a112a9db6fa6839f520874e2cec"
+    },
+    {
+      "path": "provenance/members-05.json",
+      "bytes": 738718,
+      "sha256": "ca538dca1f8939cd1212fefacd7b05aa2592961d1ff3c4a9ef5c9e9c04c6562f"
+    },
+    {
+      "path": "provenance/members-06.json",
+      "bytes": 697642,
+      "sha256": "65198589a1b095917698f2a5bb4bb3e4fcab194a0bc1c8a5082fe753ec84ca6d"
+    },
+    {
+      "path": "provenance/members-07.json",
+      "bytes": 669726,
+      "sha256": "f09a35cca122615f5baebb56d0fb6ed9c2220d4db0ba5217e3ca30ffbaa08701"
+    }
+  ],
+  "member_mode_note": "Original tar modes retained in manifest shards; Git represents regular files as 100644 or 100755.",
+  "original_status": "FIRST/RED retained, including inherited baseline binary limitation, harness REDs, retained local26 RED; Release real archive route BLOCKED; historical LFS hydration assertion RED followed by full recovery PASS. Storage migration never changes compiler or Product status.",
+  "status": "Pre-push source verification PASS; remote full restoration NOT_RUN at commit time.",
+  "receipts": [
+    "https://github.com/wakairo/NewLang_Compiler/issues/1499#issuecomment-6950223019",
+    "https://github.com/wakairo/NewLang_Compiler/issues/1499#issuecomment-6950342944",
+    "https://github.com/wakairo/NewLang_Compiler/issues/1513"
+  ],
+  "old_lfs": "RETAINED unchanged. Individual files do not reconstruct the original compressed gzip sequence bit-for-bit. No LFS quota reduction claimed.",
+  "apparatus_first": "Local verifier initially flagged a PRIVATE KEY marker literal in the historical retention scanner; AST inspection proved marker-only, no key body. Original verifier retained in T receipt area; revised scanner exempts only that exact literal in that exact source file.",
+  "source_verification": {
+    "count": 23814,
+    "bytes": 832993112,
+    "max": 25999385,
+    "gt1MiB": 331,
+    "gt50MiB": 0,
+    "gt100MiB": 0,
+    "largest": [
+      {
+        "path": "build-frontend/Testing/Temporary/LastTest.log",
+        "size": 25999385,
+        "mode": "0o600"
+      },
+      {
+        "path": "build-ubsan/p1499_probe",
+        "size": 17030296,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-ubsan/p1492_probe",
+        "size": 16972952,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-ubsan/newlangc",
+        "size": 16869400,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-asan/p1499_probe",
+        "size": 8820112,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-asan/p1492_probe",
+        "size": 8797184,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-asan/newlangc",
+        "size": 8747624,
+        "mode": "0o700"
+      },
+      {
+        "path": "manifest.json",
+        "size": 4436210,
+        "mode": "0o644"
+      },
+      {
+        "path": "raw/native-asan/attempt-h9w76jfm/A-offset-composition-O0-passive",
+        "size": 3186768,
+        "mode": "0o700"
+      },
+      {
+        "path": "raw/native-asan/attempt-h9w76jfm/A-offset-composition-O2-passive",
+        "size": 3186552,
+        "mode": "0o700"
+      },
+      {
+        "path": "raw/native-asan/attempt-h9w76jfm/A-offset-composition-O0-raw",
+        "size": 3186216,
+        "mode": "0o700"
+      },
+      {
+        "path": "raw/native-asan/attempt-h9w76jfm/A-offset-composition-O2-raw",
+        "size": 3186104,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p722_gate_test",
+        "size": 2492848,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p514_gate_test",
+        "size": 2488688,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p791_issuer_oom",
+        "size": 2488688,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p534_semantic_gate",
+        "size": 2488344,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p706_gate_test",
+        "size": 2487000,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p713_gate_test",
+        "size": 2479256,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p718_gate_test",
+        "size": 2478656,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p508_gate_test",
+        "size": 2469264,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p596_gate_test",
+        "size": 2465248,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p517_gate_test",
+        "size": 2463168,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p1364_wrapper",
+        "size": 2463120,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p636_index_gate",
+        "size": 2462864,
+        "mode": "0o700"
+      },
+      {
+        "path": "build-frontend/p1375_owned",
+        "size": 2462512,
+        "mode": "0o700"
+      }
+    ],
+    "seconds": 6.330814909999987,
+    "elf": {
+      "files": 660,
+      "bytes": 748458904,
+      "gt1MiB": 315
+    },
+    "all_member_hashes": "PASS",
+    "filesystem_rehash": "PASS",
+    "offline_snapshots": [
+      "CMakeLists.txt",
+      "src/c17_guarded_usize_internal.h",
+      "src/usize_addition.c",
+      "tests/p1492/README.md",
+      "tests/p1492/probe.c",
+      "tests/p1499/A-offset-composition.nl",
+      "tests/p1499/B-repeat-advance.nl",
+      "tests/p1499/CMakeLists.txt",
+      "tests/p1499/N-changed-formal.nl",
+      "tests/p1499/N-overflow-consumer.nl",
+      "tests/p1499/N-wrong-formal.nl",
+      "tests/p1499/README.md",
+      "tests/p1499/history/N-changed-formal-v1-parser-red.nl",
+      "tests/p1499/native.py",
+      "tests/p1499/oracle.json",
+      "tests/p1499/probe.c"
+    ],
+    "original_manifest_sha256": "ab8dcd8150287da20d744d47f6fb4fcc773317098a498d1a77c5e5b146c13c72",
+    "source_verification_seconds": 30.60839852800001,
+    "observed_min_free_bytes": 62940262400,
+    "observed_min_free_inodes": 4169702,
+    "peak_budget_bytes": 4294967296,
+    "safety_margin_bytes": 8589934592
+  }
+}

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1272/sources/N-ended-original.nl:61:44-61:90: error(semantic)[P3-STALE-POINTER]: pointer/ref does not refer to a current live incarnation

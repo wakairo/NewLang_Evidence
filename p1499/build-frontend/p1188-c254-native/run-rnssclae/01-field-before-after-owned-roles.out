@@ -1,0 +1,23 @@
+C254 MAP loop=25 phase=7 result=7 base=1 index=0 helper=10
+C254 PREFIX symbol=2 name=snap kind=field from=1 index=0
+C254 PREFIX symbol=3 name=held kind=copy from=2 index=0
+C254 PREFIX symbol=4 name=peer_snap kind=field from=1 index=1
+C254 PREFIX symbol=5 name=peer_held kind=copy from=4 index=0
+C254 PREFIX symbol=6 name=same_bits kind=literal from=0 index=0
+C254 CAPTURE node=2 symbol=3 statement=0
+C254 LOCAL symbol=8 name=capture_before quantity=0
+C254 CAPTURE node=5 symbol=3 statement=1
+C254 CAPTURE node=7 symbol=5 statement=0
+C254 LOCAL symbol=9 name=peer_before quantity=0
+C254 LOCAL symbol=11 name=incoming quantity=0
+C254 LOCAL symbol=13 name=old quantity=0
+C254 LOCAL symbol=14 name=old_copy quantity=0
+C254 LOCAL symbol=15 name=during quantity=0
+C254 LOCAL symbol=16 name=beside quantity=0
+C254 CAPTURE node=38 symbol=3 statement=0
+C254 LOCAL symbol=17 name=capture_after quantity=0
+C254 CAPTURE node=41 symbol=3 statement=1
+C254 CAPTURE node=43 symbol=4 statement=0
+C254 LOCAL symbol=18 name=peer_after quantity=0
+C254 CAPTURE node=46 symbol=5 statement=1
+C254 OWNED public-body=YES private-current=YES canonical-root=YES

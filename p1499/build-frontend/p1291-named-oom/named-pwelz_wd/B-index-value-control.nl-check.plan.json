@@ -1,0 +1,26 @@
+{
+  "source": "B-index-value-control.nl",
+  "phase": "check",
+  "census": 1785,
+  "ordinals": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    892,
+    1778,
+    1779,
+    1780,
+    1781,
+    1782,
+    1783,
+    1784,
+    1785
+  ],
+  "injections_executed": 0,
+  "probe_sha256": "e1ef55dc2955280651ae6dd5bcd4ac14478314b5cd3ee099e6e32eb71368d386"
+}

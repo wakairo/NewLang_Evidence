@@ -1,0 +1,127 @@
+[
+  {
+    "label": "01-bound-discard-final-check",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1208/c268/sources/01-bound-discard-final.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-owned",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208_roles",
+      "/workspace/NewLang_Compiler/tests/p1208/c268/sources/01-bound-discard-final.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-c17",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1208/c268/sources/01-bound-discard-final.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O0-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O0-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O0-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O0-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O0-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O0-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O2-raw-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O2-raw-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O2-raw"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O2-passive-build",
+    "args": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-observer.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O2-passive"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-bound-discard-final-O2-passive-native",
+    "args": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-c268-native/01-bound-discard-final-O2-passive"
+    ],
+    "status": 0
+  }
+]

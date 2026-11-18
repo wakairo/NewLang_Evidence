@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1184/sources/97-formal-arity.nl:9:17-9:29: error(semantic)[P3-ARITY]: argument count differs from resolved signature

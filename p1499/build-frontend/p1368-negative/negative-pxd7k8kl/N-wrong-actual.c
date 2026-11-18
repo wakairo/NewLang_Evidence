@@ -1,0 +1,1 @@
+CURRENT preserve rejected output

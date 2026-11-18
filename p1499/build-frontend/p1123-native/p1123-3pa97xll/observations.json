@@ -1,0 +1,1197 @@
+[
+  {
+    "name": "01-stutter-less-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/01-stutter-less.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/01-stutter-less.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "b357ff7c055d2ab2f22ee9cd666125e0b1a1124f7a50445858c39fd3d63f92a0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/01-stutter-less.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "0a4774358aeffd51f1a9e203521ae5e2bfd9f4132eecf353bbb4bdf1b1b3c939",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=193",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=193",
+      "-DP1123_INITIAL=6",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=193",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=193",
+      "-DP1123_INITIAL=6",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "01-stutter-less-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/01-stutter-less-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/02-stutter-equality.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/02-stutter-equality.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "da7757d7451f9699c273eb8e79e94b75827a74afb4eb7b966dd0b5809a898458",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/02-stutter-equality.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "66c464941660a223ef9f3465314837bd1a20693797f842b0f37e75a6115374df",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=1",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=177",
+      "-DP1123_NEXT=205",
+      "-DP1123_F0=177",
+      "-DP1123_F1=64",
+      "-DP1123_Q0=39",
+      "-DP1123_Q1=241",
+      "-DP1123_ENTRY0=177",
+      "-DP1123_ENTRY1=64",
+      "-DP1123_INITIAL=12",
+      "-DP1123_NEXT_PHASE=13",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=1",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=177",
+      "-DP1123_NEXT=205",
+      "-DP1123_F0=177",
+      "-DP1123_F1=64",
+      "-DP1123_Q0=39",
+      "-DP1123_Q1=241",
+      "-DP1123_ENTRY0=177",
+      "-DP1123_ENTRY1=64",
+      "-DP1123_INITIAL=12",
+      "-DP1123_NEXT_PHASE=13",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "02-stutter-equality-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/02-stutter-equality-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/11-prefix-current.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/11-prefix-current.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "fbe827f6874ec1f1b591fd690ea201be27e69eb67c0ea6c0004db06975a25521",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/11-prefix-current.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "650a97aaed9c90c3fb9b2342171005094862451807f0d31cc4f37312f973aab6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=163",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=163",
+      "-DP1123_INITIAL=6",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=163",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=163",
+      "-DP1123_INITIAL=6",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "11-prefix-current-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/11-prefix-current-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/13-reversed-arms.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/13-reversed-arms.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "83e19cf0fd8355d29825237a6ce8486c852466d9668901b7654aa61c2c73e9e6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/13-reversed-arms.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "a6ebbeb96b125750252fdff19ec742deedb82100dea4dcaa90532c04cc58b7e1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=1",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=177",
+      "-DP1123_NEXT=205",
+      "-DP1123_F0=177",
+      "-DP1123_F1=64",
+      "-DP1123_Q0=39",
+      "-DP1123_Q1=241",
+      "-DP1123_ENTRY0=177",
+      "-DP1123_ENTRY1=64",
+      "-DP1123_INITIAL=12",
+      "-DP1123_NEXT_PHASE=13",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=1",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=177",
+      "-DP1123_NEXT=205",
+      "-DP1123_F0=177",
+      "-DP1123_F1=64",
+      "-DP1123_Q0=39",
+      "-DP1123_Q1=241",
+      "-DP1123_ENTRY0=177",
+      "-DP1123_ENTRY1=64",
+      "-DP1123_INITIAL=12",
+      "-DP1123_NEXT_PHASE=13",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "13-reversed-arms-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/13-reversed-arms-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/14-first-break.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/14-first-break.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "31ba0ad6a2c5a30faa56e7c6000e1066598b17950594a7d6c60cb931c43b68ae",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/14-first-break.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "a577987e2133fec0a15af717b85c2235ea2407f075cff43c265a4e57eb4755c2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=193",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=193",
+      "-DP1123_INITIAL=7",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=0",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=1",
+      "-DP1123_OLD=193",
+      "-DP1123_NEXT=224",
+      "-DP1123_F0=58",
+      "-DP1123_F1=193",
+      "-DP1123_Q0=91",
+      "-DP1123_Q1=217",
+      "-DP1123_ENTRY0=58",
+      "-DP1123_ENTRY1=193",
+      "-DP1123_INITIAL=7",
+      "-DP1123_NEXT_PHASE=7",
+      "-DP1123_CONTINUES=0",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "14-first-break-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/14-first-break-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/15-legacy-p1115-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123_safety",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/15-legacy-p1115-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "92e8f619c24fe3c7c403d8f0b245fcdaaa15a412c243a460a9711b00bcd42811",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/15-legacy-p1115-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "6c114b606114e11a89f8b222eb90ed63c0066493684c6fae08eaacbd982bcb12",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O0-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O2-raw"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O0-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=68",
+      "-DP1123_NEXT=123",
+      "-DP1123_F0=68",
+      "-DP1123_F1=214",
+      "-DP1123_Q0=13",
+      "-DP1123_Q1=235",
+      "-DP1123_ENTRY0=68",
+      "-DP1123_ENTRY1=214",
+      "-DP1123_INITIAL=0",
+      "-DP1123_NEXT_PHASE=1",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O0-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O0-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O2-observed-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1123/observe.h\"",
+      "-DP1123_SELECTED=0",
+      "-DP1123_INDEX=0",
+      "-DP1123_OLD=68",
+      "-DP1123_NEXT=123",
+      "-DP1123_F0=68",
+      "-DP1123_F1=214",
+      "-DP1123_Q0=13",
+      "-DP1123_Q1=235",
+      "-DP1123_ENTRY0=68",
+      "-DP1123_ENTRY1=214",
+      "-DP1123_INITIAL=0",
+      "-DP1123_NEXT_PHASE=1",
+      "-DP1123_CONTINUES=1",
+      "-DP1123_PREFIX=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-observed.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "15-legacy-p1115-control-gcc-O2-observed-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/15-legacy-p1115-control-gcc-O2-observed"
+    ],
+    "status": 0,
+    "stdout_sha256": "a3edc6b4ad8ae07fb69442b82c21915be2591e17c6086681a93a13d1a681d755",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-flat-header-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/05-flat-header-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "05-flat-header-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/05-flat-header-control.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/05-flat-header-control.nl"
+    ],
+    "status": 4,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "341149d93f3dccf7864d56b1a887a704818532fe9f639a3247552173e45382c2"
+  },
+  {
+    "name": "06-equal-bits-continue-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/06-equal-bits-continue.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "483d56fa058e5cec2bc684685f55f5e5baba6908aa72136d39b5ab2b1e2cb1f7"
+  },
+  {
+    "name": "06-equal-bits-continue-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/06-equal-bits-continue.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/06-equal-bits-continue.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "483d56fa058e5cec2bc684685f55f5e5baba6908aa72136d39b5ab2b1e2cb1f7"
+  },
+  {
+    "name": "07-extra-source-continue-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/07-extra-source-continue.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c0c68ee7d1ce23b7af3c3b1c28ab64e334abf8706d30e4d9ec2a5950e977e619"
+  },
+  {
+    "name": "07-extra-source-continue-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/07-extra-source-continue.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/07-extra-source-continue.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "c0c68ee7d1ce23b7af3c3b1c28ab64e334abf8706d30e4d9ec2a5950e977e619"
+  },
+  {
+    "name": "08-wrong-carry-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/08-wrong-carry-type.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "5207f38f796089683366bcd68fb3a67e5c00ccff13fda816ea049c9112bdc498"
+  },
+  {
+    "name": "08-wrong-carry-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/08-wrong-carry-type.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/08-wrong-carry-type.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "5207f38f796089683366bcd68fb3a67e5c00ccff13fda816ea049c9112bdc498"
+  },
+  {
+    "name": "09-wrong-carry-arity-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/09-wrong-carry-arity.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "18b3bab678712ff73b1e374154c8a10a678ec0ac9fed6b186b945e361ebd5fe4"
+  },
+  {
+    "name": "09-wrong-carry-arity-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/09-wrong-carry-arity.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/09-wrong-carry-arity.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "18b3bab678712ff73b1e374154c8a10a678ec0ac9fed6b186b945e361ebd5fe4"
+  },
+  {
+    "name": "10-ending-loan-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/10-ending-loan.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a54441d9361fcdf3b75c969286a8f27b338c9303ac9f3d3f18d2d01344a5883f"
+  },
+  {
+    "name": "10-ending-loan-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/10-ending-loan.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/10-ending-loan.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a54441d9361fcdf3b75c969286a8f27b338c9303ac9f3d3f18d2d01344a5883f"
+  },
+  {
+    "name": "12-no-nearest-target-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/12-no-nearest-target.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "8ee4c2bdcf4b0b2b30126a3d9e905d44f99149ee893b7c1ee5d0d027187286d1"
+  },
+  {
+    "name": "12-no-nearest-target-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1123-native/p1123-3pa97xll/12-no-nearest-target.c",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/12-no-nearest-target.nl"
+    ],
+    "status": 3,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "8ee4c2bdcf4b0b2b30126a3d9e905d44f99149ee893b7c1ee5d0d027187286d1"
+  },
+  {
+    "name": "03-zero-less-control-unchanged-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/03-zero-less-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "8b1ae0b923092b858ed0a8847fca00ca6e6ccdf902b0d8d1abc2bbd69490ec8f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "04-zero-equality-control-unchanged-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1123/sources/04-zero-equality-control.nl"
+    ],
+    "status": 0,
+    "stdout_sha256": "cee047fd0f3d4f1137175b6a5259cf70b15a6b2ed48ba682c6716c23ded747e5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

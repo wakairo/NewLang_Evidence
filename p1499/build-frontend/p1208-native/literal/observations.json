@@ -1,0 +1,138 @@
+[
+  {
+    "label": "04-second-field-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-roles",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1193_roles",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-c17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1203/sources/04-second-field.nl"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O0-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O0-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O0-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-raw-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O2-raw"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-passive-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-include",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.h",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  },
+  {
+    "label": "04-second-field-O2-passive-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1208-native/literal/04-second-field-O2-passive"
+    ],
+    "status": 0,
+    "expected": 0
+  }
+]

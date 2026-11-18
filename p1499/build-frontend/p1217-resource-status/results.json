@@ -1,0 +1,36 @@
+{
+  "h_only_strict_oom": 23,
+  "native": [
+    {
+      "optimization": "-O0",
+      "guest_heap": 0,
+      "exit": 0
+    },
+    {
+      "optimization": "-O0",
+      "guest_heap": 1,
+      "exit": 0
+    },
+    {
+      "optimization": "-O0",
+      "guest_heap": 2,
+      "exit": 0
+    },
+    {
+      "optimization": "-O2",
+      "guest_heap": 0,
+      "exit": 0
+    },
+    {
+      "optimization": "-O2",
+      "guest_heap": 1,
+      "exit": 0
+    },
+    {
+      "optimization": "-O2",
+      "guest_heap": 2,
+      "exit": 0
+    }
+  ],
+  "generated_sha256": "97c90e60dd1aaaa77491fe9742edef4af7b2a083b330834cfc5047d728bd244e"
+}

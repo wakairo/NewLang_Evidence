@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/ctest", "--test-dir", "build-p1499-ubsan", "-R", "^p1499_|^p1492_", "-E", "native|p1499_.*oom|p1499_.*clobber", "-V"], "exit": 0}

@@ -1,0 +1,2 @@
+error(cli)[V0-C-FILE]: cannot safely write named C17 output
+note: /workspace/NewLang_Compiler/build-frontend/p1351-negative/negative-71yn9mhd/A-wrapper.c

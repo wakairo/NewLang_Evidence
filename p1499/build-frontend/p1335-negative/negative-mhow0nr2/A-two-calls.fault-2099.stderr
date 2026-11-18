@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1335/A-two-calls.nl:26:17-26:26: error(host)[P3-OUT-OF-MEMORY]: host allocation failed during semantic checking

@@ -1,0 +1,2 @@
+PASSIVE H2 outcome=212 terminal-old=117 current=212 sibling=167 phases=3 backedges=2 same-T=1 frees=2
+ALLOCATOR world=2 attempts=2 successes=2 frees=2 PASS

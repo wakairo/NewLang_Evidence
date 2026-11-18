@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1217/sources/06-no-write-control.nl:12:19-12:20: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

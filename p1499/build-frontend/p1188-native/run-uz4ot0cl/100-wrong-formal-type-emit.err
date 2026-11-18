@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1188/sources/100-wrong-formal-type.nl:10:17-10:37: error(semantic)[USIZE-LESS-THAN-TYPE]: < requires two exact core usize operands

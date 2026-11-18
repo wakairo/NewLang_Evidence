@@ -1,0 +1,30 @@
+[
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl-raw-O0",
+    "passive": false,
+    "source": "A-helper.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl.c",
+    "sha256": "3686e66c7684d81ae9c83cb10f5121264453abb9e565d2616edbb5c8578089c6"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl-raw-O2",
+    "passive": false,
+    "source": "A-helper.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl.c",
+    "sha256": "3686e66c7684d81ae9c83cb10f5121264453abb9e565d2616edbb5c8578089c6"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl-passive-O0",
+    "passive": true,
+    "source": "A-helper.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl.c",
+    "sha256": "3686e66c7684d81ae9c83cb10f5121264453abb9e565d2616edbb5c8578089c6"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl-passive-O2",
+    "passive": true,
+    "source": "A-helper.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1326-native/run-u3k2dhmv/A-helper.nl.c",
+    "sha256": "3686e66c7684d81ae9c83cb10f5121264453abb9e565d2616edbb5c8578089c6"
+  }
+]

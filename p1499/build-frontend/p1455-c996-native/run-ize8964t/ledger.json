@@ -1,0 +1,120 @@
+[
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/D.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1455/c996/D-noncoincident-prefix.nl"
+    ],
+    "label": "emit-D",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/A.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1455/A-enabled.nl"
+    ],
+    "label": "emit-A",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/B.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1455/B-disabled-alias.nl"
+    ],
+    "label": "emit-B",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/L.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1451/A-front-install.nl"
+    ],
+    "label": "emit-L",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1455/c996/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1455/c996/passive.h\"",
+      "-DP1455_FAIL_AT=0",
+      "-DP1455_CASE_BACK=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/D.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-DP1441_FAIL_AT=0",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/D-0-physical-O2"
+    ],
+    "label": "D-0-physical-O2-build",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/D-0-physical-O2"
+    ],
+    "label": "D-0-physical-O2",
+    "state": "completed",
+    "guest": true,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1455/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1455/passive.h\"",
+      "-DP1455_FAIL_AT=0",
+      "-DP1455_CASE_BACK=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/B.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-DP1441_FAIL_AT=0",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/B-0-physical-O2"
+    ],
+    "label": "B-0-physical-O2-build",
+    "state": "completed",
+    "guest": false,
+    "exit": 0
+  },
+  {
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1455-c996-native/run-ize8964t/B-0-physical-O2"
+    ],
+    "label": "B-0-physical-O2",
+    "state": "completed",
+    "guest": true,
+    "exit": 0
+  }
+]

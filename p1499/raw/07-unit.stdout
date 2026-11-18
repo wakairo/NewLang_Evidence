@@ -1,0 +1,35 @@
+Internal ctest changing into directory: /workspace/NewLang_Compiler/build-frontend
+Test project /workspace/NewLang_Compiler/build-frontend
+    Start 10: p1499_A-offset-composition_owned.unit
+1/8 Test #10: p1499_A-offset-composition_owned.unit ...   Passed    0.00 sec
+    Start 11: p1499_B-repeat-advance_owned.unit
+2/8 Test #11: p1499_B-repeat-advance_owned.unit .......   Passed    0.00 sec
+    Start 13: p1499_current_result_tamper.unit
+3/8 Test #13: p1499_current_result_tamper.unit ........***Failed    0.01 sec
+/workspace/NewLang_Compiler/tests/p1499/../p1492/probe.c:211: nl_checked_proof_class(p->artifact) == NL_CHECKED_PROOF_INVALID
+/workspace/NewLang_Compiler/tests/p1499/probe.c:67: rejected(&p)
+/workspace/NewLang_Compiler/tests/p1499/A-offset-composition.nl CHECK=0 class=1
+actual/formal=1; bound=16 step=1; Unknown result=7; public Known receipt remains unavailable
+two genuine calls: producer result=5; copied actual/formal value=7/4; consumer result=11; Unknown preserved
+
+    Start 14: p1499_selected_oom.unit
+4/8 Test #14: p1499_selected_oom.unit .................   Passed    0.01 sec
+    Start 15: p1499_named_no_clobber.unit
+5/8 Test #15: p1499_named_no_clobber.unit .............   Passed    0.00 sec
+    Start 16: p1499_N-overflow-consumer.unit
+6/8 Test #16: p1499_N-overflow-consumer.unit ..........   Passed    0.00 sec
+    Start 17: p1499_N-wrong-formal.unit
+7/8 Test #17: p1499_N-wrong-formal.unit ...............   Passed    0.00 sec
+    Start 18: p1499_N-changed-formal.unit
+8/8 Test #18: p1499_N-changed-formal.unit .............***Failed    0.00 sec
+/workspace/NewLang_Compiler/tests/p1499/../p1492/probe.c:117: nl_parser_parse_function_unit(p->parser, &p->unit, NULL) == NL_PARSE_OK
+/workspace/NewLang_Compiler/tests/p1499/../p1492/probe.c:183: load(path, &p)
+
+
+75% tests passed, 2 tests failed out of 8
+
+Total Test time (real) =   0.06 sec
+
+The following tests FAILED:
+	 13 - p1499_current_result_tamper.unit (Failed)
+	 18 - p1499_N-changed-formal.unit (Failed)

@@ -1,0 +1,4 @@
+C232 REGISTER=0
+C232 INVOKE=0
+C232_SYMBOLS {"original":1,"decision":4,"old":6,"old_copy":9,"field":0,"return_arm":0,"entry":10}
+C232 genuine loop/condition/RETURN-ended and sole-normal replay/current/old/sibling PASS

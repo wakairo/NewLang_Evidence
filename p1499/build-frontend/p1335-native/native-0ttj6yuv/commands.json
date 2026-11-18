@@ -1,0 +1,178 @@
+[
+  {
+    "label": "A-two-calls-raw-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-raw-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-raw-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+    "sha256": "dc30c242e955dfbaec1e6239c28b11150b870bbbf253d2f452195ab5aaa145f8",
+    "passive": false,
+    "profile": 0
+  },
+  {
+    "label": "A-two-calls-raw-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-raw-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-raw-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+    "sha256": "dc30c242e955dfbaec1e6239c28b11150b870bbbf253d2f452195ab5aaa145f8",
+    "passive": false,
+    "profile": 0
+  },
+  {
+    "label": "A-two-calls-passive-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-passive-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1335_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1335/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-passive-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+    "sha256": "dc30c242e955dfbaec1e6239c28b11150b870bbbf253d2f452195ab5aaa145f8",
+    "passive": true,
+    "profile": 0
+  },
+  {
+    "label": "A-two-calls-passive-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-passive-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1335_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1335/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls-passive-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/A-two-calls.c",
+    "sha256": "dc30c242e955dfbaec1e6239c28b11150b870bbbf253d2f452195ab5aaa145f8",
+    "passive": true,
+    "profile": 0
+  },
+  {
+    "label": "B-two-calls-index1-raw-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-raw-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-raw-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+    "sha256": "7cbaa672de61c4d3a41e197414c510b99a680a92440667b8b6bdd056f0197262",
+    "passive": false,
+    "profile": 1
+  },
+  {
+    "label": "B-two-calls-index1-raw-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-raw-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-raw-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+    "sha256": "7cbaa672de61c4d3a41e197414c510b99a680a92440667b8b6bdd056f0197262",
+    "passive": false,
+    "profile": 1
+  },
+  {
+    "label": "B-two-calls-index1-passive-O0",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-passive-O0",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1335_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1335/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-passive-O0"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+    "sha256": "7cbaa672de61c4d3a41e197414c510b99a680a92440667b8b6bdd056f0197262",
+    "passive": true,
+    "profile": 1
+  },
+  {
+    "label": "B-two-calls-index1-passive-O2",
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-passive-O2",
+    "compile": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1335_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1335/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1-passive-O2"
+    ],
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1335-native/native-0ttj6yuv/B-two-calls-index1.c",
+    "sha256": "7cbaa672de61c4d3a41e197414c510b99a680a92440667b8b6bdd056f0197262",
+    "passive": true,
+    "profile": 1
+  }
+]

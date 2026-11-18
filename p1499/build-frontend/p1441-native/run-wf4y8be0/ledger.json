@@ -1,0 +1,319 @@
+[
+  {
+    "label": "emit-control",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/control.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/C-direct.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "e42422d7c0a85fc051ab1e0b4281f127cd5b6561ccfe7add0c1e25a738c9a896"
+  },
+  {
+    "label": "emit-some",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/P-some-read.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "4e45981c33257e1e0b4cfb6183d1d32ff8a03b14b90851444a3ce4059b6d836f"
+  },
+  {
+    "label": "emit-none",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/none.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/P-none-read.nl"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0,
+    "raw_sha256": "f7277bd5359fbc46206d9af38099f355721d9a3e8af0db6917bd416ec1f559cf"
+  },
+  {
+    "label": "N-wrong-domain.nl",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/N-wrong-domain.nl.sentinel",
+      "/workspace/NewLang_Compiler/tests/p1441/N-wrong-domain.nl"
+    ],
+    "exit": 3,
+    "named_no_clobber": true
+  },
+  {
+    "label": "N-loan-escape.nl",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/N-loan-escape.nl.sentinel",
+      "/workspace/NewLang_Compiler/tests/p1441/N-loan-escape.nl"
+    ],
+    "exit": 3,
+    "named_no_clobber": true
+  },
+  {
+    "label": "N-owner-consumed.nl",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/N-owner-consumed.nl.sentinel",
+      "/workspace/NewLang_Compiler/tests/p1441/N-owner-consumed.nl"
+    ],
+    "exit": 3,
+    "named_no_clobber": true
+  },
+  {
+    "label": "raw-0-some-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-some-O0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-some-O0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-some-O2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-some-O2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-some-O2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/none.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-none-O0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-none-O0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/none.raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-none-O2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-0-none-O2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/raw-0-none-O2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DP1441_FAIL_AT=0",
+      "-DP1441_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-none-fail0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address,undefined",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DP1441_FAIL_AT=0",
+      "-DP1441_CASE_NONE=1",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/none.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-none-fail0"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-none-fail0",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-none-fail0"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail1-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DP1441_FAIL_AT=1",
+      "-DP1441_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail1"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail1",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail1"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fno-omit-frame-pointer",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1441/passive.h\"",
+      "-DP1441_FAIL_AT=2",
+      "-DP1441_CASE_NONE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/some.raw.c",
+      "/workspace/NewLang_Compiler/tests/p1441/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail2"
+    ],
+    "guest": false,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-some-fail2",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1441-native/run-wf4y8be0/passive-some-fail2"
+    ],
+    "guest": true,
+    "state": "completed",
+    "exit": 0
+  }
+]

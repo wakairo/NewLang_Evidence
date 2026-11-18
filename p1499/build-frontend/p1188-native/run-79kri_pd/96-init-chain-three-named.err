@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1188/sources/96-init-chain-three.nl:11:13-23:3: error(precision)[P14-LOOP-PRECISION]: cyclic identity/dependency or memory correlation is not representable

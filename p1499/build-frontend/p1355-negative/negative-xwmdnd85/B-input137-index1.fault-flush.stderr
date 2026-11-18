@@ -1,0 +1,2 @@
+error(cli)[V0-C-OUTPUT]: failed to emit Checked-C
+note: /workspace/NewLang_Compiler/tests/p1355/B-input137-index1.nl

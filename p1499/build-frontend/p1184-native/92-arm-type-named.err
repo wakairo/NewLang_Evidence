@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1184/sources/92-arm-type.nl:2:2-2:46: error(semantic)[P13-IF-RESULT]: normal if arms require the same single result type

@@ -1,0 +1,314 @@
+[
+  {
+    "label": "A-linked-same-arm-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/A-linked-same-arm.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280_owned",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/A-linked-same-arm.nl",
+      "1",
+      "83"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/A-linked-same-arm.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-named.c",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/A-linked-same-arm.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O0-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O0-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O0-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O2-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O2-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-linked-same-arm-O2-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/A-linked-same-arm-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/B-known-back-isolation.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-owned",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280_owned",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/B-known-back-isolation.nl",
+      "0",
+      "167"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/B-known-back-isolation.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-named.c",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/B-known-back-isolation.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O0-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O0-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O0-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-observer-O0.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O0-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-physical-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O2-raw-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O2-raw",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O2-physical-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-observer-O2.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-known-back-isolation-O2-physical",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/B-known-back-isolation-physical-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "N-A-front-domain-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-A-front-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-A-front-domain-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-A-front-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-A-front-domain-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/N-A-front-domain.named.c",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-A-front-domain.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-B-escaped-read-ref-CHECK",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-B-escaped-read-ref.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-B-escaped-read-ref-C17",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-B-escaped-read-ref.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "N-B-escaped-read-ref-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1280-native/run-vbjf8s41/N-B-escaped-read-ref.named.c",
+      "/workspace/NewLang_Compiler/tests/p1280/sources/N-B-escaped-read-ref.nl"
+    ],
+    "status": 3
+  }
+]

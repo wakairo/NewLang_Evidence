@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1152/sources/82-different-child-control.nl:13:15-17:6: error(precision)[P6-JOIN-PRECISION]: branch post-state/result needs a richer relational join than P6 supports

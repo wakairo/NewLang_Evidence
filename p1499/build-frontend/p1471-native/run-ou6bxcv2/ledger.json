@@ -1,0 +1,273 @@
+[
+  {
+    "label": "emit-0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/P1468-B1-failure-return.nl"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "emit-1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/Z-selected-zero.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/Z-selected-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/raw-O2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "raw-native",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/raw-O2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail1-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=1",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail1"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail1"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail2-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=2",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O0-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O0-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail1-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=1",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail1"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail1",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail1"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail2-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=2",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail2",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail2"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1471_SAMPLE=181",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/P1468-B1-failure-return.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v0-O2-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v0-O2-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O2-fail0-compile",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1471/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1471_SAMPLE=0",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/Z-selected-zero.nl.c",
+      "/workspace/NewLang_Compiler/tests/p1471/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v1-O2-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "passive-v1-O2-fail0",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1471-native/run-ou6bxcv2/passive-v1-O2-fail0"
+    ],
+    "state": "completed",
+    "exit": 0
+  }
+]

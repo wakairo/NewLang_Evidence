@@ -1,0 +1,7 @@
+REGISTER=0
+CHECK=0
+OWNED root_custody=1 has_H=0 H_origin=1
+LOOP node=16 public_break_source=0 private_current_status=0 changing=1 scalar=1 root=3 child=4 field=0 initial=0 limit=5 step=1
+HELPER source_result_lineage=1 pure_current_contents=1 normal_arm=1 returns=2
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE fragments=8 loops=1 producers=0

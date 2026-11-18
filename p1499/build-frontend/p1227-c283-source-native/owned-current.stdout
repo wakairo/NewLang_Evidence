@@ -1,0 +1,89 @@
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=19 old_private_helper_lane=0
+ROLES incoming=11 old=13 old_copy=14 current=15 sibling=16 index=0
+COMPLETE source_observation=1 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-alias-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=19 old_private_helper_lane=0
+ROLES incoming=11 old=13 old_copy=14 current=15 sibling=16 index=0
+COMPLETE source_observation=2 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=18 old_private_helper_lane=0
+ROLES incoming=10 old=12 old_copy=13 current=14 sibling=15 index=0
+COMPLETE source_observation=3 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=21 old_private_helper_lane=0
+ROLES incoming=11 old=13 old_copy=14 current=15 sibling=16 index=0
+COMPLETE source_observation=4 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=15 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=5 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-different-tail-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=18 old_private_helper_lane=0
+ROLES incoming=10 old=12 old_copy=13 current=14 sibling=15 index=0
+COMPLETE source_observation=6 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-unrelated-alias-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=21 old_private_helper_lane=0
+ROLES incoming=11 old=13 old_copy=14 current=15 sibling=16 index=0
+COMPLETE source_observation=7 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-equal-bits-tail-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=15 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=8 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-old-material-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=1 selection=5 body_tail=15 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=9 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-preH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=2 selection=5 body_tail=0 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=10 loops=1 producer_valid=1 fragments=16
+CASE /workspace/NewLang_Compiler/tests/p1227/c283/sources/A-explicit-final-postH.nl REGISTER=0
+CHECK=0 owned=1
+OWNED source_custody=1 has_H=1 H_origin=1
+LOOP status=0 changing=1 scalar=1 legacy_direct_break=0 root=1 child=2 incarnation=1 index=0 initial=0 limit=3 step=1
+HELPER lineage=1 contents=1 normal_arms=1 body_returns=2 selection=5 body_tail=0 old_private_helper_lane=0
+ROLES incoming=9 old=11 old_copy=12 current=13 sibling=14 index=0
+COMPLETE source_observation=11 loops=1 producer_valid=1 fragments=16
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+REJECT unissued_owner=3 foreign_owner_world=3 output_root=987654 (owner guard may precede world guard)
+P1227 C283 all genuine owned/current checks and foreign-owner/world refusal PASS

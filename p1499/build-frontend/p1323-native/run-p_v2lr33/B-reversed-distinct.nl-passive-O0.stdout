@@ -1,0 +1,6 @@
+change0 field1 old211 new73 sibling31
+change1 field0 old31 new109 sibling73
+change2 field1 old73 new163 sibling109
+change3 field0 old109 new109 sibling163
+change4 field1 old163 new241 sibling109
+PAIR physical-original1 backedges2 source-changes5 closed-loans5 result1 reads2 PASS

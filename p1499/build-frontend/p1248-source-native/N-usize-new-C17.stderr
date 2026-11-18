@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1248/sources/N-usize-new.nl:106:83-106:87: error(semantic)[P3-TYPE-MISMATCH]: new value type differs from fixed field type

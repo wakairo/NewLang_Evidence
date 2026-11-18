@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1188/c254/sources/95-shadow-quantity.nl:31:20-31:21: error(precision)[USIZE-ADDITION-PRECISION]: addition needs known dependency-free quantity operands in this profile

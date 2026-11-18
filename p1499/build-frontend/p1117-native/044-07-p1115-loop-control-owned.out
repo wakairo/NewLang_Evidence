@@ -1,0 +1,6 @@
+P1117 parse=0
+P1117 actual source IF bool_known=0 node_known=0 dependencies=0 count=0
+P1117 registration=0 unchanged=0 no_owner=1
+P1117 actual source IF bool_known=0 node_known=0 dependencies=0 count=0
+P1117 actual invocation=0 owner=1
+P1117 actual checked consumer=1 functions=2

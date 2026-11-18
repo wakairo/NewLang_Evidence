@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1133/sources/94-arity-zero.nl:11:13-11:24: error(semantic)[P14-CONTINUE-ARITY]: continue arguments must match the loop parameter count

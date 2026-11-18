@@ -1,0 +1,58 @@
+[
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl-raw-O0",
+    "passive": false,
+    "source": "A-index0.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl.c",
+    "sha256": "146fed7d7d733a10f396156a376bab0eeab83cb8ab079a8c2cfdff6a2f743f2f"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl-raw-O2",
+    "passive": false,
+    "source": "A-index0.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl.c",
+    "sha256": "146fed7d7d733a10f396156a376bab0eeab83cb8ab079a8c2cfdff6a2f743f2f"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl-passive-O0",
+    "passive": true,
+    "source": "A-index0.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl.c",
+    "sha256": "146fed7d7d733a10f396156a376bab0eeab83cb8ab079a8c2cfdff6a2f743f2f"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl-passive-O2",
+    "passive": true,
+    "source": "A-index0.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/A-index0.nl.c",
+    "sha256": "146fed7d7d733a10f396156a376bab0eeab83cb8ab079a8c2cfdff6a2f743f2f"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl-raw-O0",
+    "passive": false,
+    "source": "B-index1.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl.c",
+    "sha256": "5cd93f764be196746cfffd40ae5b20e6609153947342ef1f3b11b77d728ec26c"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl-raw-O2",
+    "passive": false,
+    "source": "B-index1.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl.c",
+    "sha256": "5cd93f764be196746cfffd40ae5b20e6609153947342ef1f3b11b77d728ec26c"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl-passive-O0",
+    "passive": true,
+    "source": "B-index1.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl.c",
+    "sha256": "5cd93f764be196746cfffd40ae5b20e6609153947342ef1f3b11b77d728ec26c"
+  },
+  {
+    "binary": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl-passive-O2",
+    "passive": true,
+    "source": "B-index1.nl",
+    "generated": "/workspace/NewLang_Compiler/build-frontend/p1318-native/run-y3nvs94_/B-index1.nl.c",
+    "sha256": "5cd93f764be196746cfffd40ae5b20e6609153947342ef1f3b11b77d728ec26c"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "label": "A-original.nl-check-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/A-original.nl",
+      "check",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original.nl-check-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/A-original.nl",
+      "check"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original.nl-emit-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/A-original.nl",
+      "emit",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-original.nl-emit-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/A-original.nl",
+      "emit"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-index-value-control.nl-check-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/B-index-value-control.nl",
+      "check",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-index-value-control.nl-check-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/B-index-value-control.nl",
+      "check"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-index-value-control.nl-emit-census",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/B-index-value-control.nl",
+      "emit",
+      "census"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-index-value-control.nl-emit-faults",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/p1291_oom",
+      "/workspace/NewLang_Compiler/tests/p1291/sources/B-index-value-control.nl",
+      "emit"
+    ],
+    "status": 0
+  }
+]

@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1123/sources/07-extra-source-continue.nl:9:21-20:6: error(precision)[P14-LOOP-PRECISION]: cyclic identity/dependency or memory correlation is not representable

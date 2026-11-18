@@ -1,0 +1,14 @@
+[
+  {
+    "phase": "check",
+    "exhausted": 1141,
+    "clobbered": 0,
+    "retry": 1141
+  },
+  {
+    "phase": "emit",
+    "exhausted": 19,
+    "clobbered": 0,
+    "retry": 19
+  }
+]

@@ -1,0 +1,12 @@
+CHECK=0 owned=1
+BIND observed_byte 26
+BIND source_copy 27
+BIND displaced 32
+BIND old_selected 33
+BIND old_copy 34
+BIND current_byte 35
+BIND sibling_byte 36
+OBSERVE H-reads=1 T-calls=1 same-owner=1 linked-arm=1
+PUBLIC current/body=0 parameters=0 event=0
+OWNED-PASS actual-H-root=16 H-field=21 Domain=2 read-Copy=50 byte=83 T-root=36 T-inc=36 old=31 new=83 sibling=127 closed-loan=1 same-Some-arm=1
+CURRENT-NEGATIVE-PASS refusals=13 foreign-B-after-A-destroy=1

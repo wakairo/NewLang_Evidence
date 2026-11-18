@@ -1,0 +1,791 @@
+[
+  {
+    "label": "01-add-less-true-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/01-add-less-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152_safety",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/01-add-less-true.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/01-add-less-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/01-add-less-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={2,6,10,14}",
+      "-DC228_RESULT=14",
+      "-DC228_COMPARE=15",
+      "-DC228_TRUTH=1",
+      "-DC228_ARM=0",
+      "-DC228_INDEX=0",
+      "-DC228_UPDATED=137",
+      "-DC228_FIELD0=66",
+      "-DC228_FIELD1=192",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={2,6,10,14}",
+      "-DC228_RESULT=14",
+      "-DC228_COMPARE=15",
+      "-DC228_TRUTH=1",
+      "-DC228_ARM=0",
+      "-DC228_INDEX=0",
+      "-DC228_UPDATED=137",
+      "-DC228_FIELD0=66",
+      "-DC228_FIELD1=192",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "01-add-less-true-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/01-add-less-true-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/02-zero-less-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152_safety",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/02-zero-less-false.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/02-zero-less-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/02-zero-less-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={12}",
+      "-DC228_RESULT=12",
+      "-DC228_COMPARE=12",
+      "-DC228_TRUTH=0",
+      "-DC228_ARM=1",
+      "-DC228_INDEX=1",
+      "-DC228_UPDATED=209",
+      "-DC228_FIELD0=41",
+      "-DC228_FIELD1=91",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={12}",
+      "-DC228_RESULT=12",
+      "-DC228_COMPARE=12",
+      "-DC228_TRUTH=0",
+      "-DC228_ARM=1",
+      "-DC228_INDEX=1",
+      "-DC228_UPDATED=209",
+      "-DC228_FIELD0=41",
+      "-DC228_FIELD1=91",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "02-zero-less-false-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/02-zero-less-false-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/03-sub-equal-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152_safety",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/03-sub-equal-true.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/03-sub-equal-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/03-sub-equal-true.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={23,17,11,5}",
+      "-DC228_RESULT=5",
+      "-DC228_COMPARE=5",
+      "-DC228_TRUTH=1",
+      "-DC228_ARM=0",
+      "-DC228_INDEX=1",
+      "-DC228_UPDATED=184",
+      "-DC228_FIELD0=148",
+      "-DC228_FIELD1=76",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={23,17,11,5}",
+      "-DC228_RESULT=5",
+      "-DC228_COMPARE=5",
+      "-DC228_TRUTH=1",
+      "-DC228_ARM=0",
+      "-DC228_INDEX=1",
+      "-DC228_UPDATED=184",
+      "-DC228_FIELD0=148",
+      "-DC228_FIELD1=76",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "03-sub-equal-true-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/03-sub-equal-true-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/04-one-equal-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-owned-current",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152_safety",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/04-one-equal-false.nl",
+      "--describe"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/04-one-equal-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/04-one-equal-false.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-raw-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-raw-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-raw-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-raw-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-raw-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-passive-gcc-O0-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={7,11}",
+      "-DC228_RESULT=11",
+      "-DC228_COMPARE=10",
+      "-DC228_TRUTH=0",
+      "-DC228_ARM=1",
+      "-DC228_INDEX=0",
+      "-DC228_UPDATED=218",
+      "-DC228_FIELD0=52",
+      "-DC228_FIELD1=164",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-passive-gcc-O0-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive-gcc-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-passive-gcc-O2-build",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DNEWLANG_SCALAR_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1152/observe.h\"",
+      "-DC228_TRACE={7,11}",
+      "-DC228_RESULT=11",
+      "-DC228_COMPARE=10",
+      "-DC228_TRUTH=0",
+      "-DC228_ARM=1",
+      "-DC228_INDEX=0",
+      "-DC228_UPDATED=218",
+      "-DC228_FIELD0=52",
+      "-DC228_FIELD1=164",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "04-one-equal-false-passive-gcc-O2-native",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/04-one-equal-false-passive-gcc-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-condition-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/80-known-condition.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-condition-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/80-known-condition.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "80-known-condition-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/80-known-condition-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/80-known-condition.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-existing-loop-consumer-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/81-existing-loop-consumer.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-existing-loop-consumer-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/81-existing-loop-consumer.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "81-existing-loop-consumer-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/81-existing-loop-consumer-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/81-existing-loop-consumer.nl"
+    ],
+    "status": 0
+  },
+  {
+    "label": "82-different-child-control-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/82-different-child-control.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "82-different-child-control-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/82-different-child-control.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "82-different-child-control-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/82-different-child-control-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/82-different-child-control.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "90-overflow-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/90-overflow-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/90-overflow.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "91-read-mode-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/91-read-mode-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/91-read-mode.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "92-ending-reference-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/92-ending-reference-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/92-ending-reference.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-check",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-emit",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  },
+  {
+    "label": "93-incoming-type-named",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/NewLang_Compiler/build-frontend/p1152-native/c228-cfzb3_m7/93-incoming-type-named-directory/out.c",
+      "/workspace/NewLang_Compiler/tests/p1152/sources/93-incoming-type.nl"
+    ],
+    "status": 3
+  }
+]

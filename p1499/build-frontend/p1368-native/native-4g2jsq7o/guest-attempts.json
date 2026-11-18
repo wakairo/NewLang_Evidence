@@ -1,0 +1,58 @@
+[
+  {
+    "label": "A-current-copy-call-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-current-copy-call-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-current-copy-call-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "A-current-copy-call-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/A-current-copy-call-passive-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-alias-raw-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-raw-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-alias-raw-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-raw-O2"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-alias-passive-O0.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-passive-O0"
+    ],
+    "status": 0
+  },
+  {
+    "label": "B-field-zero-alias-passive-O2.run",
+    "command": [
+      "/workspace/NewLang_Compiler/build-frontend/p1368-native/native-4g2jsq7o/B-field-zero-alias-passive-O2"
+    ],
+    "status": 0
+  }
+]

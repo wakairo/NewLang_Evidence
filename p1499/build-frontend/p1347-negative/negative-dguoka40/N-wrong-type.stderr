@@ -1,0 +1,1 @@
+/workspace/NewLang_Compiler/tests/p1347/N-wrong-type.nl:33:23-33:31: error(semantic)[P3-TYPE-MISMATCH]: argument semantic type does not match selected parameter

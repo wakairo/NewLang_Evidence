@@ -1,0 +1,162 @@
+[
+  {
+    "label": "A-two-inputs-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-raw-O0"
+    ],
+    "C_SHA256": "ed54bc62f359ecc6fb73f37e6755f5d9fa81ef07d7a3ae673db739d48bbd1840",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-two-inputs-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-raw-O2"
+    ],
+    "C_SHA256": "ed54bc62f359ecc6fb73f37e6755f5d9fa81ef07d7a3ae673db739d48bbd1840",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-two-inputs-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1359_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1359/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-passive-O0"
+    ],
+    "C_SHA256": "ed54bc62f359ecc6fb73f37e6755f5d9fa81ef07d7a3ae673db739d48bbd1840",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "A-two-inputs-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1359_PROFILE=0",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1359/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/A-two-inputs-passive-O2"
+    ],
+    "C_SHA256": "ed54bc62f359ecc6fb73f37e6755f5d9fa81ef07d7a3ae673db739d48bbd1840",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reversed-field-raw-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-raw-O0"
+    ],
+    "C_SHA256": "0d327812feb1d93aa229f8105dd9c10a6244dfcdf95ed9fff1bbe463ef38d324",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reversed-field-raw-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-raw-O2"
+    ],
+    "C_SHA256": "0d327812feb1d93aa229f8105dd9c10a6244dfcdf95ed9fff1bbe463ef38d324",
+    "passive": false,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reversed-field-passive-O0",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O0",
+      "-DP1359_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1359/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-passive-O0"
+    ],
+    "C_SHA256": "0d327812feb1d93aa229f8105dd9c10a6244dfcdf95ed9fff1bbe463ef38d324",
+    "passive": true,
+    "sanitizer": "none"
+  },
+  {
+    "label": "B-reversed-field-passive-O2",
+    "command": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-UNDEBUG",
+      "-O2",
+      "-DP1359_PROFILE=1",
+      "-DNEWLANG_CURRENT_LOOP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1359/observer.h\"",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field.c",
+      "-o",
+      "/workspace/NewLang_Compiler/build-frontend/p1359-native/native-hkidmlul/B-reversed-field-passive-O2"
+    ],
+    "C_SHA256": "0d327812feb1d93aa229f8105dd9c10a6244dfcdf95ed9fff1bbe463ef38d324",
+    "passive": true,
+    "sanitizer": "none"
+  }
+]
