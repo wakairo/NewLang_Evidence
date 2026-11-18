@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python3 /workspace/p1525-evidence/cc.py /usr/bin/gcc "$@"

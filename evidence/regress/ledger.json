@@ -1,0 +1,331 @@
+[
+  {
+    "label": "CLI-N-H1-leak",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-H1-leak.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-foreign-allocation",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-foreign-allocation.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-foreign-domain",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-foreign-domain.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-foreign-pointer",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-foreign-pointer.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-incomplete-callee",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-incomplete-callee.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-owner-reused",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-owner-reused.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "CLI-N-stale-read",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--check",
+      "/workspace/NewLang_P1525/tests/p1517/N-stale-read.nl"
+    ],
+    "expected": 3,
+    "exit": 3,
+    "guest": false
+  },
+  {
+    "label": "emit-A-direct-zero",
+    "argv": [
+      "/workspace/p1525-evidence/build-gcc/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1525-evidence/regress/A-direct-zero.c",
+      "/workspace/NewLang_P1525/tests/p1507/A-direct-zero.nl"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "cc-A-direct-zero",
+    "argv": [
+      "/workspace/p1525-evidence/cc-gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1525-evidence/regress/A-direct-zero.c",
+      "/workspace/NewLang_P1525/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/regress/A-direct-zero"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "A-direct-zero-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/regress/A-direct-zero"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "A-direct-zero-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/regress/A-direct-zero"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "A-direct-zero-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/regress/A-direct-zero"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "emit-B-direct-index-one",
+    "argv": [
+      "/workspace/p1525-evidence/build-gcc/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1525-evidence/regress/B-direct-index-one.c",
+      "/workspace/NewLang_P1525/tests/p1507/B-direct-index-one.nl"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "cc-B-direct-index-one",
+    "argv": [
+      "/workspace/p1525-evidence/cc-gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=1",
+      "/workspace/p1525-evidence/regress/B-direct-index-one.c",
+      "/workspace/NewLang_P1525/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/regress/B-direct-index-one"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "B-direct-index-one-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/regress/B-direct-index-one"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "B-direct-index-one-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/regress/B-direct-index-one"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "B-direct-index-one-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/regress/B-direct-index-one"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "emit-linked-zero",
+    "argv": [
+      "/workspace/p1525-evidence/build-clang/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1525-evidence/regress/Z-success-zero.c",
+      "/workspace/NewLang_P1525/tests/p1481/Z-success-zero.nl"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "cc-linked-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=1",
+      "-DP1481_SAMPLE=0",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/p1525-evidence/regress/Z-success-zero.c",
+      "/workspace/NewLang_P1525/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail1"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "linked-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail1"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "cc-linked-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=2",
+      "-DP1481_SAMPLE=0",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/p1525-evidence/regress/Z-success-zero.c",
+      "/workspace/NewLang_P1525/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail2"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "linked-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail2"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  },
+  {
+    "label": "cc-linked-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1481/passive.h\"",
+      "-DP1463_FAIL_AT=0",
+      "-DP1481_SAMPLE=0",
+      "-DP1463_FIELD_INDEX=0",
+      "/workspace/p1525-evidence/regress/Z-success-zero.c",
+      "/workspace/NewLang_P1525/tests/p1481/../p1463/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail0"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": false
+  },
+  {
+    "label": "linked-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/regress/linked-zero-asan-fail0"
+    ],
+    "expected": 0,
+    "exit": 0,
+    "guest": true
+  }
+]

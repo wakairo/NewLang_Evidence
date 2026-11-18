@@ -1,0 +1,28 @@
+Internal ctest changing into directory: /workspace/p1525-evidence/build-ubsan
+Test project /workspace/p1525-evidence/build-ubsan
+      Start 19: p1517_zero_owned.unit
+ 1/11 Test #19: p1517_zero_owned.unit ....................   Passed    0.04 sec
+      Start 20: p1517_nonzero_owned.unit
+ 2/11 Test #20: p1517_nonzero_owned.unit .................   Passed    0.03 sec
+      Start 21: p1517_owner_authentication.unit
+ 3/11 Test #21: p1517_owner_authentication.unit ..........   Passed    0.05 sec
+      Start 28: p1517_negative_H1-leak.unit
+ 4/11 Test #28: p1517_negative_H1-leak.unit ..............   Passed    0.01 sec
+      Start 29: p1517_negative_foreign-allocation.unit
+ 5/11 Test #29: p1517_negative_foreign-allocation.unit ...   Passed    0.01 sec
+      Start 30: p1517_negative_foreign-domain.unit
+ 6/11 Test #30: p1517_negative_foreign-domain.unit .......   Passed    0.01 sec
+      Start 31: p1517_negative_foreign-pointer.unit
+ 7/11 Test #31: p1517_negative_foreign-pointer.unit ......   Passed    0.01 sec
+      Start 32: p1517_negative_incomplete-callee.unit
+ 8/11 Test #32: p1517_negative_incomplete-callee.unit ....   Passed    0.01 sec
+      Start 33: p1517_negative_owner-reused.unit
+ 9/11 Test #33: p1517_negative_owner-reused.unit .........   Passed    0.02 sec
+      Start 34: p1517_negative_stale-read.unit
+10/11 Test #34: p1517_negative_stale-read.unit ...........   Passed    0.01 sec
+      Start 35: p1517_native.integration
+11/11 Test #35: p1517_native.integration .................   Passed    1.50 sec
+
+100% tests passed, 0 tests failed out of 11
+
+Total Test time (real) =   1.72 sec

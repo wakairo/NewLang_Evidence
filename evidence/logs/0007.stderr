@@ -1,0 +1,579 @@
+/workspace/NewLang_P1525/src/checked_c_node.c:3077:30: error: code should be clang-formatted [-Wclang-format-violations]
+    const bool topology_bad = direct
+                             ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3077:37: error: code should be clang-formatted [-Wclang-format-violations]
+    const bool topology_bad = direct
+                                    ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3078:73: error: code should be clang-formatted [-Wclang-format-violations]
+        ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
+                                                                        ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3079:74: error: code should be clang-formatted [-Wclang-format-violations]
+           e->reloans || e->link_updates || e->projections || e->reads ||
+                                                                         ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3080:62: error: code should be clang-formatted [-Wclang-format-violations]
+           e->producer_calls || e->live_tail || e->custody ||
+                                                             ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3081:53: error: code should be clang-formatted [-Wclang-format-violations]
+           v->owner_call.definition.step_count != 4)
+                                                    ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3082:34: error: code should be clang-formatted [-Wclang-format-violations]
+        : ((terminal_role_lane(e)
+                                 ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3083:48: error: code should be clang-formatted [-Wclang-format-violations]
+                ? !terminal_sequence(e, env, v)
+                                               ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3084:32: error: code should be clang-formatted [-Wclang-format-violations]
+                : e->reloans != (e->custody ? 2u
+                               ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3084:49: error: code should be clang-formatted [-Wclang-format-violations]
+                : e->reloans != (e->custody ? 2u
+                                                ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3085:59: error: code should be clang-formatted [-Wclang-format-violations]
+                    : 4u + (e->live_tail != 0 ? 1u : 0u) -
+                                                          ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3086:51: error: code should be clang-formatted [-Wclang-format-violations]
+                      (e->no_pre_read ? 2u : 0u) + e->no_read_copies)) ||
+                                                  ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3086:74: error: code should be clang-formatted [-Wclang-format-violations]
+                      (e->no_pre_read ? 2u : 0u) + e->no_read_copies)) ||
+                                                                         ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3087:35: error: code should be clang-formatted [-Wclang-format-violations]
+           e->link_updates != 2 ||
+                                  ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3088:41: error: code should be clang-formatted [-Wclang-format-violations]
+           e->projections != (e->custody ? 2u
+                                        ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3088:46: error: code should be clang-formatted [-Wclang-format-violations]
+           e->projections != (e->custody ? 2u
+                                             ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3089:57: error: code should be clang-formatted [-Wclang-format-violations]
+               : e->no_pre_read ? 2u + e->no_read_copies : 3u) ||
+                                                        ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3089:66: error: code should be clang-formatted [-Wclang-format-violations]
+               : e->no_pre_read ? 2u + e->no_read_copies : 3u) ||
+                                                                 ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3090:35: error: code should be clang-formatted [-Wclang-format-violations]
+           e->reads != (e->custody ? 0u
+                                  ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3090:40: error: code should be clang-formatted [-Wclang-format-violations]
+           e->reads != (e->custody ? 0u
+                                       ^
+/workspace/NewLang_P1525/src/checked_c_node.c:3091:52: error: code should be clang-formatted [-Wclang-format-violations]
+               : e->no_pre_read ? e->no_read_copies : 1u));
+                                                   ^
+/workspace/NewLang_P1525/src/checked_c_node.c:4007:23: error: code should be clang-formatted [-Wclang-format-violations]
+        (e.direct_h && (!e.copy_h_closed || e.copy_roots != 1 ||
+                      ^
+/workspace/NewLang_P1525/src/checked_c_node.c:4007:65: error: code should be clang-formatted [-Wclang-format-violations]
+        (e.direct_h && (!e.copy_h_closed || e.copy_roots != 1 ||
+                                                                ^
+/workspace/NewLang_P1525/src/checked_c_node.c:4008:44: error: code should be clang-formatted [-Wclang-format-violations]
+                        e.producer_calls ||
+                                           ^
+/workspace/NewLang_P1525/src/checked_c_node.c:4009:84: error: code should be clang-formatted [-Wclang-format-violations]
+                        e.owner_calls != expected_owner_calls(&e) || e.live_tail ||
+                                                                                   ^
+/workspace/NewLang_P1525/src/checked_c_node.c:4010:80: error: code should be clang-formatted [-Wclang-format-violations]
+                        e.custody || e.heap_link || e.projections || e.reads ||
+                                                                               ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:2:80: error: code should be clang-formatted [-Wclang-format-violations]
+ * No semantic seed, private headers, artifact mutation, emission or guest run. */
+                                                                               ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:11:16: error: code should be clang-formatted [-Wclang-format-violations]
+#define NEED(x) do { if (!(x)) { \
+               ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:11:21: error: code should be clang-formatted [-Wclang-format-violations]
+#define NEED(x) do { if (!(x)) { \
+                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:11:33: error: code should be clang-formatted [-Wclang-format-violations]
+#define NEED(x) do { if (!(x)) { \
+                                ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:12:70: error: code should be clang-formatted [-Wclang-format-violations]
+    fprintf(stderr, "PROBE_ASSERT line=%d expression=%s\n", __LINE__, #x); \
+                                                                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:12:75: error: code should be clang-formatted [-Wclang-format-violations]
+    fprintf(stderr, "PROBE_ASSERT line=%d expression=%s\n", __LINE__, #x); \
+                                                                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:13:14: error: code should be clang-formatted [-Wclang-format-violations]
+    return 0; } } while (0)
+             ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:13:16: error: code should be clang-formatted [-Wclang-format-violations]
+    return 0; } } while (0)
+               ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:29:66: error: code should be clang-formatted [-Wclang-format-violations]
+    return nl_semantic_value_view(c, id, &v) && v.scalar_known &&
+                                                                 ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:30:75: error: code should be clang-formatted [-Wclang-format-violations]
+        v.scalar_value == value && v.dependencies == NL_DEPENDENCY_FREE &&
+                                                                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:112:58: error: code should be clang-formatted [-Wclang-format-violations]
+        NEED(arg && arg->kind == NL_CHECKED_IDENTIFIER && arg->result_count == 1 &&
+                                                         ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:117:73: error: code should be clang-formatted [-Wclang-format-violations]
+             nl_semantic_binding_view(post, n->owner_call.parameters[i], &formal) &&
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:120:15: error: code should be clang-formatted [-Wclang-format-violations]
+        if (i) NEED(donor.availability == NL_CONSUMED &&
+              ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:120:57: error: code should be clang-formatted [-Wclang-format-violations]
+        if (i) NEED(donor.availability == NL_CONSUMED &&
+                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:125:60: error: code should be clang-formatted [-Wclang-format-violations]
+         !dead.live && dead.incarnation == p.incarnation && !dead.current_value &&
+                                                           ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:125:83: error: code should be clang-formatted [-Wclang-format-violations]
+         !dead.live && dead.incarnation == p.incarnation && !dead.current_value &&
+                                                                                  ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:127:73: error: code should be clang-formatted [-Wclang-format-violations]
+         nl_semantic_backing_view(post, a.allocation_region, &dead_r) && !dead_r.live &&
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:128:69: error: code should be clang-formatted [-Wclang-format-violations]
+         nl_semantic_domain_view(post, life.domain, &dead_domain) && !dead_domain.live);
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:137:54: error: code should be clang-formatted [-Wclang-format-violations]
+                 v->lifetime_domain == life.domain && v->backing == a.allocation_region);
+                                                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:139:46: error: code should be clang-formatted [-Wclang-format-violations]
+        if (v->kind == NL_CHECKED_ERASE_SLOT) ++erases;
+                                             ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:140:51: error: code should be clang-formatted [-Wclang-format-violations]
+        if (v->kind == NL_CHECKED_DOMAIN_FINALIZE) ++finals;
+                                                  ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:143:42: error: code should be clang-formatted [-Wclang-format-violations]
+            const NLCheckedNodeView *av = nl_checked_node_view(body, v->first_argument);
+                                         ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:144:43: error: code should be clang-formatted [-Wclang-format-violations]
+            const NLCheckedNodeView *raw = av ? nl_checked_node_view(body, av->next_argument) : NULL;
+                                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:172:20: error: code should be clang-formatted [-Wclang-format-violations]
+    if (!t->copies) t->original_binding = p.field.base;
+                   ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:176:73: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("COPY call=%zu ordinal=%zu body=%d parameters=%d event=%d\n",
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:177:15: error: code should be clang-formatted [-Wclang-format-violations]
+           id, t->copies + 1, (int)bv, (int)pv, (int)ev);
+              ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:219:69: error: code should be clang-formatted [-Wclang-format-violations]
+                 nl_semantic_scope_view(c, n->loan.scope, &scope) && !scope.active);
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:236:45: error: code should be clang-formatted [-Wclang-format-violations]
+            const NLCheckedNodeView *field = nl_checked_node_view(f, n->first_argument);
+                                            ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:237:43: error: code should be clang-formatted [-Wclang-format-violations]
+            const NLCheckedNodeView *ref = field ? nl_checked_node_view(f, field->first_argument) : NULL;
+                                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:239:41: error: code should be clang-formatted [-Wclang-format-violations]
+            NEED(n->result_count == 1 && scalar(c, n->results[0].value, t->sample) &&
+                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:239:86: error: code should be clang-formatted [-Wclang-format-violations]
+            NEED(n->result_count == 1 && scalar(c, n->results[0].value, t->sample) &&
+                                                                                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:240:33: error: code should be clang-formatted [-Wclang-format-violations]
+                 field && ref && ref->result_count == 1 &&
+                                ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:245:56: error: code should be clang-formatted [-Wclang-format-violations]
+                if (candidate->owner_call.entry_proved) receiver = candidate;
+                                                       ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:247:66: error: code should be clang-formatted [-Wclang-format-violations]
+                    candidate->lifetime_place == n->field.parent) acquisition = candidate;
+                                                                 ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:252:54: error: code should be clang-formatted [-Wclang-format-violations]
+                 acquisition->lifetime_incarnation == receiver->owner_call.incarnation &&
+                                                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:255:63: error: code should be clang-formatted [-Wclang-format-violations]
+                   n->field.child, n->field.parent, t->sample, rv.reference.scope);
+                                                              ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:260:18: error: code should be clang-formatted [-Wclang-format-violations]
+        if (body) NEED(walk(body, t, out, depth + 1));
+                 ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:262:45: error: code should be clang-formatted [-Wclang-format-violations]
+            const NLCheckedNodeView *trial = nl_checked_node_view(f, n->initializer);
+                                            ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:263:72: error: code should be clang-formatted [-Wclang-format-violations]
+            NEED(trial && trial->kind == NL_CHECKED_TRY_ALLOCATE_ONE && n->item_count == 2);
+                                                                       ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:269:39: error: code should be clang-formatted [-Wclang-format-violations]
+                NEED(arm && ac != c && n->match_binding_prefix >= t->original_binding &&
+                                      ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:270:70: error: code should be clang-formatted [-Wclang-format-violations]
+                     nl_semantic_binding_view(c, t->original_binding, &parent_binding) &&
+                                                                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:271:71: error: code should be clang-formatted [-Wclang-format-violations]
+                     nl_semantic_binding_view(ac, t->original_binding, &child_binding) &&
+                                                                      ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:277:67: error: code should be clang-formatted [-Wclang-format-violations]
+                    NEED(closed(ac, resources) && !branch.calls && !branch.copies &&
+                                                                  ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:277:85: error: code should be clang-formatted [-Wclang-format-violations]
+                    NEED(closed(ac, resources) && !branch.calls && !branch.copies &&
+                                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:278:45: error: code should be clang-formatted [-Wclang-format-violations]
+                         !branch.payloads && branch.destroys == resources &&
+                                            ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:280:69: error: code should be clang-formatted [-Wclang-format-violations]
+                    printf("NORMAL H%zu receiver=0 second_T_write=0 releases=%zu\n",
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:283:63: error: code should be clang-formatted [-Wclang-format-violations]
+                    NEED(closed(ac, 2) && branch.calls == 1 && branch.copies == 1 &&
+                                                              ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:283:85: error: code should be clang-formatted [-Wclang-format-violations]
+                    NEED(closed(ac, 2) && branch.calls == 1 && branch.copies == 1 &&
+                                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:284:49: error: code should be clang-formatted [-Wclang-format-violations]
+                         branch.payloads == 1 && branch.destroys == 2 && branch.frees == 2);
+                                                ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:285:78: error: code should be clang-formatted [-Wclang-format-violations]
+                    printf("NORMAL H2 receiver=1 second_T_write=1 sample=%zu releases=2\n", t->sample);
+                                                                             ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:285:92: error: code should be clang-formatted [-Wclang-format-violations]
+                    printf("NORMAL H2 receiver=1 second_T_write=1 sample=%zu releases=2\n", t->sample);
+                                                                                           ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:312:49: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("PARSE status=%d code=%s\n", (int)ps, pd.diagnostic.code ? pd.diagnostic.code : "none");
+                                                ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:317:73: error: code should be clang-formatted [-Wclang-format-violations]
+           ud.diagnostic.diagnostic.code ? ud.diagnostic.diagnostic.code : "none");
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:320:68: error: code should be clang-formatted [-Wclang-format-violations]
+    NEED(nl_semantic_snapshot(c, &s) && !s.bindings && !s.values &&
+                                                                   ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:321:22: error: code should be clang-formatted [-Wclang-format-violations]
+         !s.places && !s.domains && !s.backing_regions);
+                     ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:326:59: error: code should be clang-formatted [-Wclang-format-violations]
+            NEED(d.definition_checked && !d.live_return && !d.head_link_required &&
+                                                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:327:64: error: code should be clang-formatted [-Wclang-format-violations]
+                 d.requirements == NL_OWNER_ALL_REQUIREMENTS && d.step_count == 4);
+                                                               ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:336:77: error: code should be clang-formatted [-Wclang-format-violations]
+    NEED(nl_source_create("main()", 6, "P1515-actual-main", &call_source) == NL_SOURCE_OK &&
+                                                                            ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:338:74: error: code should be clang-formatted [-Wclang-format-violations]
+         nl_parser_parse_expression_fragment(call_parser, &call, NULL) == NL_PARSE_OK);
+                                                                         ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:339:27: error: code should be clang-formatted [-Wclang-format-violations]
+    NLCheckStatus actual = nl_semantic_check_expression(c, call, &artifact, &cd);
+                          ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:344:60: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("PROOF_CLASS value=%d MACHINE=%d\n", (int)proof, (int)NL_CHECKED_MACHINE_PROVED);
+                                                           ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:346:41: error: code should be clang-formatted [-Wclang-format-violations]
+    const NLCheckedFragment *main_body = nl_checked_call_body(artifact, nl_checked_root(artifact));
+                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:352:73: error: code should be clang-formatted [-Wclang-format-violations]
+         count.calls == 1 && count.copies == 2 && count.destroys == 3 && count.frees == 3);
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:355:79: error: code should be clang-formatted [-Wclang-format-violations]
+           t.loans, t.original_root, t.original_child, t.original_incarnation, sample);
+                                                                              ^
+/workspace/NewLang_P1525/tests/p1517/public_owned.c:366:19: error: code should be clang-formatted [-Wclang-format-violations]
+    if (argc != 3) return 2;
+                  ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:6:17: error: code should be clang-formatted [-Wclang-format-violations]
+typedef struct { NLCheckedFragment *f; size_t id; } Site;
+                ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:6:39: error: code should be clang-formatted [-Wclang-format-violations]
+typedef struct { NLCheckedFragment *f; size_t id; } Site;
+                                      ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:6:50: error: code should be clang-formatted [-Wclang-format-violations]
+typedef struct { NLCheckedFragment *f; size_t id; } Site;
+                                                 ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:27:73: error: code should be clang-formatted [-Wclang-format-violations]
+            CHECK(nl_checked_copy_body_parameters_validate(f, id, &p) == NL_CHECK_OK);
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:31:18: error: code should be clang-formatted [-Wclang-format-violations]
+        if (body) CHECK(collect1517((NLCheckedFragment *)body, depth + 1));
+                 ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:34:35: error: code should be clang-formatted [-Wclang-format-violations]
+                CHECK(collect1517((NLCheckedFragment *)nl_checked_match_arm(f, id, a), depth + 1));
+                                  ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:34:87: error: code should be clang-formatted [-Wclang-format-violations]
+                CHECK(collect1517((NLCheckedFragment *)nl_checked_match_arm(f, id, a), depth + 1));
+                                                                                      ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:57:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 0: call->owner_call.inputs[1] = call->owner_call.inputs[2]; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:57:73: error: code should be clang-formatted [-Wclang-format-violations]
+        case 0: call->owner_call.inputs[1] = call->owner_call.inputs[2]; break;
+                                                                        ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:58:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 1: call->owner_call.parameters[1] = call->owner_call.donor[1]; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:58:76: error: code should be clang-formatted [-Wclang-format-violations]
+        case 1: call->owner_call.parameters[1] = call->owner_call.donor[1]; break;
+                                                                           ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:59:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 2: call->owner_call.donor[2] = call->owner_call.parameters[2]; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:59:76: error: code should be clang-formatted [-Wclang-format-violations]
+        case 2: call->owner_call.donor[2] = call->owner_call.parameters[2]; break;
+                                                                           ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:60:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 3: call->owner_call.root = 0; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:60:43: error: code should be clang-formatted [-Wclang-format-violations]
+        case 3: call->owner_call.root = 0; break;
+                                          ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:61:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 4: call->owner_call.incarnation = 0; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:61:50: error: code should be clang-formatted [-Wclang-format-violations]
+        case 4: call->owner_call.incarnation = 0; break;
+                                                 ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:62:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 5: call->owner_call.domain = 0; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:62:45: error: code should be clang-formatted [-Wclang-format-violations]
+        case 5: call->owner_call.domain = 0; break;
+                                            ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:63:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 6: call->owner_call.range.region = 0; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:63:51: error: code should be clang-formatted [-Wclang-format-violations]
+        case 6: call->owner_call.range.region = 0; break;
+                                                  ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:64:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 7: call->owner_call.definition.step_count = 0; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:64:60: error: code should be clang-formatted [-Wclang-format-violations]
+        case 7: call->owner_call.definition.step_count = 0; break;
+                                                           ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:65:16: error: code should be clang-formatted [-Wclang-format-violations]
+        case 8: call->owner_call.post_proved = false; break;
+               ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:65:54: error: code should be clang-formatted [-Wclang-format-violations]
+        case 8: call->owner_call.post_proved = false; break;
+                                                     ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:85:62: error: code should be clang-formatted [-Wclang-format-violations]
+        if (receiver1517->body_calls[b] != receiver_call1517) continue;
+                                                             ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:87:77: error: code should be clang-formatted [-Wclang-format-violations]
+        receiver1517->bodies[b] = (NLCheckedFragment *)nl_checked_call_body(foreign.artifact, nl_checked_root(foreign.artifact));
+                                                                            ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:101:36: error: code should be clang-formatted [-Wclang-format-violations]
+        case NL_CHECKED_DEALLOCATE: n->first_argument = 0; break;
+                                   ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:101:59: error: code should be clang-formatted [-Wclang-format-violations]
+        case NL_CHECKED_DEALLOCATE: n->first_argument = 0; break;
+                                                          ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:102:37: error: code should be clang-formatted [-Wclang-format-violations]
+        case NL_CHECKED_LOAN_HEADER: n->loan.body_nonescape_proved = false; break;
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:102:76: error: code should be clang-formatted [-Wclang-format-violations]
+        case NL_CHECKED_LOAN_HEADER: n->loan.body_nonescape_proved = false; break;
+                                                                           ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:104:33: error: code should be clang-formatted [-Wclang-format-violations]
+            if (n->result_count) n->results[0].value = 0;
+                                ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:105:17: error: code should be clang-formatted [-Wclang-format-violations]
+            else damage = false;
+                ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:107:17: error: code should be clang-formatted [-Wclang-format-violations]
+        default: damage = false;
+                ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:109:21: error: code should be clang-formatted [-Wclang-format-violations]
+        if (!damage) continue;
+                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:120:78: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("P1517 artifact negatives=%zu plus foreign origin; pristine retry PASS\n", checked);
+                                                                             ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:120:86: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("P1517 artifact negatives=%zu plus foreign origin; pristine retry PASS\n", checked);
+                                                                                     ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:131:69: error: code should be clang-formatted [-Wclang-format-violations]
+    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK && nl_semantic_snapshot(p.context, &before));
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:135:71: error: code should be clang-formatted [-Wclang-format-violations]
+           d.diagnostic.diagnostic.code ? d.diagnostic.diagnostic.code : "none");
+                                                                      ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:136:43: error: code should be clang-formatted [-Wclang-format-violations]
+    CHECK((s == NL_CHECK_SEMANTIC_ERROR || s == NL_CHECK_ANALYSIS_PRECISION_LIMIT) &&
+                                          ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:138:53: error: code should be clang-formatted [-Wclang-format-violations]
+          nl_semantic_snapshot(p.context, &after) && !memcmp(&before, &after, sizeof before));
+                                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:146:20: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point == 0) CHECK(load(path, &p));
+                   ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:147:9: error: code should be clang-formatted [-Wclang-format-violations]
+    else CHECK(ready(path, &p));
+        ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:148:20: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point >= 3) CHECK(actual(&p));
+                   ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:151:69: error: code should be clang-formatted [-Wclang-format-violations]
+    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK && nl_semantic_snapshot(p.context, &before));
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:157:37: error: code should be clang-formatted [-Wclang-format-violations]
+        NLCheckStatus s = point == 0 ? define(&p, &d)
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:157:54: error: code should be clang-formatted [-Wclang-format-violations]
+        NLCheckStatus s = point == 0 ? define(&p, &d)
+                                                     ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:158:62: error: code should be clang-formatted [-Wclang-format-violations]
+            : nl_semantic_check_expression(p.context, p.call, &p.artifact, NULL);
+                                                             ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:163:24: error: code should be clang-formatted [-Wclang-format-violations]
+        if (point <= 4) fault = point;
+                       ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:165:27: error: code should be clang-formatted [-Wclang-format-violations]
+            count1517 = 0; receiver1517 = NULL;
+                          ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:176:53: error: code should be clang-formatted [-Wclang-format-violations]
+          nl_semantic_snapshot(p.context, &after) && !memcmp(&before, &after, sizeof before));
+                                                    ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:177:22: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point == 0) { NLFunctionUnitDiagnostic d = {0}; CHECK(define(&p, &d) == NL_CHECK_OK); }
+                     ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:177:56: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point == 0) { NLFunctionUnitDiagnostic d = {0}; CHECK(define(&p, &d) == NL_CHECK_OK); }
+                                                       ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:177:94: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point == 0) { NLFunctionUnitDiagnostic d = {0}; CHECK(define(&p, &d) == NL_CHECK_OK); }
+                                                                                             ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:178:20: error: code should be clang-formatted [-Wclang-format-violations]
+    if (point <= 2) CHECK(actual(&p));
+                   ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:180:74: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("P1517 host OOM site=%u fault+retry=2 hit=1 NULL/length/state rollback PASS\n", point);
+                                                                         ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:180:91: error: code should be clang-formatted [-Wclang-format-violations]
+    printf("P1517 host OOM site=%u fault+retry=2 hit=1 NULL/length/state rollback PASS\n", point);
+                                                                                          ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:187:49: error: code should be clang-formatted [-Wclang-format-violations]
+    if (argc == 3 && !strcmp(argv[1], "attack")) return attack1517(argv[2]) ? 0 : 1;
+                                                ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:188:46: error: code should be clang-formatted [-Wclang-format-violations]
+    if (argc == 4 && !strcmp(argv[1], "oom")) return oom1517(argv[2], (unsigned)strtoul(argv[3], NULL, 10)) ? 0 : 1;
+                                             ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:190:39: error: code should be clang-formatted [-Wclang-format-violations]
+        for (int i = 2; i < argc; ++i) if (!negative1517(argv[i])) return 1;
+                                      ^
+/workspace/NewLang_P1525/tests/p1517/safety.c:190:67: error: code should be clang-formatted [-Wclang-format-violations]
+        for (int i = 2; i < argc; ++i) if (!negative1517(argv[i])) return 1;
+                                                                  ^
+/workspace/NewLang_P1525/tests/p1517/cli_fault.c:10:37: error: code should be clang-formatted [-Wclang-format-violations]
+    if (setting && size == 131072 && ++text_allocations == strtoul(setting, NULL, 10)) {
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/cli_fault.c:11:38: error: code should be clang-formatted [-Wclang-format-violations]
+        static const char message[] = "P1517 selected compiler-host text-buffer OOM\n";
+                                     ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:26:68: error: code should be clang-formatted [-Wclang-format-violations]
+static size_t receiver_entries, receiver_exits, handoffs, returned, active_scope;
+                                                                   ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:136:32: error: code should be clang-formatted [-Wclang-format-violations]
+        REQUIRE(!active_scope); active_scope = (scope); \
+                               ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:136:56: error: code should be clang-formatted [-Wclang-format-violations]
+        REQUIRE(!active_scope); active_scope = (scope); \
+                                                       ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:150:33: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
+                                ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:150:38: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
+                                     ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:150:67: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
+                                                                  ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:150:85: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
+                                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:154:71: error: code should be clang-formatted [-Wclang-format-violations]
+        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] && !(pointer)->f0.tag &&    \
+                                                                      ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:154:93: error: code should be clang-formatted [-Wclang-format-violations]
+        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] && !(pointer)->f0.tag &&    \
+                                                                                            ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:155:37: error: code should be clang-formatted [-Wclang-format-violations]
+                !(pointer)->f0.ptr);                                           \
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:175:41: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_HANDOFF(p, a, d, ap, dp) do { \
+                                        ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:175:46: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_HANDOFF(p, a, d, ap, dp) do { \
+                                             ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:176:60: error: code should be clang-formatted [-Wclang-format-violations]
+    REQUIRE(!handoffs++ && !in_receiver && !active_scope && \
+                                                           ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:177:69: error: code should be clang-formatted [-Wclang-format-violations]
+            (p) == live[1] && (a) == live[1] && (d) == domains[1] && \
+                                                                    ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:178:37: error: code should be clang-formatted [-Wclang-format-violations]
+            !ended[0] && !ended[1]); \
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:179:29: error: code should be clang-formatted [-Wclang-format-violations]
+    donor_allocation = (ap); donor_domain = (dp); \
+                            ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:179:50: error: code should be clang-formatted [-Wclang-format-violations]
+    donor_allocation = (ap); donor_domain = (dp); \
+                                                 ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:181:67: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp) do { \
+                                                                  ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:181:72: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp) do { \
+                                                                       ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:182:68: error: code should be clang-formatted [-Wclang-format-violations]
+    REQUIRE(handoffs == 1 && !receiver_entries++ && !in_receiver && \
+                                                                   ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:183:65: error: code should be clang-formatted [-Wclang-format-violations]
+            !active_scope && (p) == live[1] && (a) == live[1] && \
+                                                                ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:184:61: error: code should be clang-formatted [-Wclang-format-violations]
+            (d) == domains[1] && (ap) != donor_allocation && \
+                                                            ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:185:70: error: code should be clang-formatted [-Wclang-format-violations]
+            (dp) != donor_domain && (frame) && (ps) && (as) && (ds)); \
+                                                                     ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:186:24: error: code should be clang-formatted [-Wclang-format-violations]
+    in_receiver = true; \
+                       ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:188:32: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RECEIVER_EXIT() do { \
+                               ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:188:37: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RECEIVER_EXIT() do { \
+                                    ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:189:62: error: code should be clang-formatted [-Wclang-format-violations]
+    REQUIRE(in_receiver && !receiver_exits++ && frees == 1 && \
+                                                             ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:190:24: error: code should be clang-formatted [-Wclang-format-violations]
+            !live[1] && live[0] && !ended[0] && !active_scope); \
+                       ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:190:64: error: code should be clang-formatted [-Wclang-format-violations]
+            !live[1] && live[0] && !ended[0] && !active_scope); \
+                                                               ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:191:25: error: code should be clang-formatted [-Wclang-format-violations]
+    in_receiver = false; \
+                        ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:193:33: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RETURNED(ap, dp) do { \
+                                ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:193:38: error: code should be clang-formatted [-Wclang-format-violations]
+#define NL_HEAP_RETURNED(ap, dp) do { \
+                                     ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:194:66: error: code should be clang-formatted [-Wclang-format-violations]
+    REQUIRE(receiver_exits == 1 && !returned++ && !in_receiver && \
+                                                                 ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:195:63: error: code should be clang-formatted [-Wclang-format-violations]
+            (ap) == donor_allocation && (dp) == donor_domain); \
+                                                              ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:203:39: error: code should be clang-formatted [-Wclang-format-violations]
+        unsigned n = expected_roots(); \
+                                      ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:204:78: error: code should be clang-formatted [-Wclang-format-violations]
+        REQUIRE(receiver_entries == (n == 2) && receiver_exits == (n == 2) && \
+                                                                             ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:205:64: error: code should be clang-formatted [-Wclang-format-violations]
+                handoffs == (n == 2) && returned == (n == 2) && \
+                                                               ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:206:48: error: code should be clang-formatted [-Wclang-format-violations]
+                !in_receiver && !active_scope);                                         \
+                                               ^
+/workspace/NewLang_P1525/tests/p1517/passive-v2.h:215:69: error: code should be clang-formatted [-Wclang-format-violations]
+               "sibling=%u second-writes=%zu receiver-exact PASS\n",                          \
+                                                                    ^

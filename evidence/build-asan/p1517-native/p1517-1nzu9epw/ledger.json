@@ -1,0 +1,242 @@
+[
+  {
+    "label": "emit-zero",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero.c",
+      "/workspace/NewLang_P1525/tests/p1517/P-zero.nl"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "zero-O0-cc",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DP1517_SAMPLE=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero.c",
+      "/workspace/NewLang_P1525/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O0"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "zero-O0-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O0"
+    ],
+    "guest": true,
+    "fail_at": 1,
+    "exit": 0
+  },
+  {
+    "label": "zero-O0-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O0"
+    ],
+    "guest": true,
+    "fail_at": 2,
+    "exit": 0
+  },
+  {
+    "label": "zero-O0-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O0"
+    ],
+    "guest": true,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "zero-O2-cc",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DP1517_SAMPLE=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero.c",
+      "/workspace/NewLang_P1525/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O2"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "zero-O2-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O2"
+    ],
+    "guest": true,
+    "fail_at": 1,
+    "exit": 0
+  },
+  {
+    "label": "zero-O2-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O2"
+    ],
+    "guest": true,
+    "fail_at": 2,
+    "exit": 0
+  },
+  {
+    "label": "zero-O2-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/zero-O2"
+    ],
+    "guest": true,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "emit-nonzero",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero.c",
+      "/workspace/NewLang_P1525/tests/p1517/P-nonzero.nl"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O0-cc",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DP1517_SAMPLE=42",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero.c",
+      "/workspace/NewLang_P1525/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O0"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O0-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O0"
+    ],
+    "guest": true,
+    "fail_at": 1,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O0-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O0"
+    ],
+    "guest": true,
+    "fail_at": 2,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O0-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O0"
+    ],
+    "guest": true,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O2-cc",
+    "argv": [
+      "/workspace/p1525-evidence/cc-clang",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DP1517_SAMPLE=42",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1525/tests/p1517/passive-v2.h\"",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero.c",
+      "/workspace/NewLang_P1525/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O2"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O2-fail1",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O2"
+    ],
+    "guest": true,
+    "fail_at": 1,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O2-fail2",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O2"
+    ],
+    "guest": true,
+    "fail_at": 2,
+    "exit": 0
+  },
+  {
+    "label": "nonzero-O2-fail0",
+    "argv": [
+      "/workspace/p1525-evidence/build-asan/p1517-native/p1517-1nzu9epw/nonzero-O2"
+    ],
+    "guest": true,
+    "fail_at": 0,
+    "exit": 0
+  }
+]

@@ -1,0 +1,42 @@
+Internal ctest changing into directory: /workspace/p1525-evidence/build-clang
+Test project /workspace/p1525-evidence/build-clang
+      Start 19: p1517_zero_owned.unit
+ 1/18 Test #19: p1517_zero_owned.unit ....................   Passed    0.03 sec
+      Start 20: p1517_nonzero_owned.unit
+ 2/18 Test #20: p1517_nonzero_owned.unit .................   Passed    0.02 sec
+      Start 21: p1517_owner_authentication.unit
+ 3/18 Test #21: p1517_owner_authentication.unit ..........   Passed    0.05 sec
+      Start 22: p1517_oom_0.unit
+ 4/18 Test #22: p1517_oom_0.unit .........................   Passed    0.01 sec
+      Start 23: p1517_oom_1.unit
+ 5/18 Test #23: p1517_oom_1.unit .........................   Passed    0.01 sec
+      Start 24: p1517_oom_2.unit
+ 6/18 Test #24: p1517_oom_2.unit .........................   Passed    0.01 sec
+      Start 25: p1517_oom_3.unit
+ 7/18 Test #25: p1517_oom_3.unit .........................   Passed    0.01 sec
+      Start 26: p1517_oom_4.unit
+ 8/18 Test #26: p1517_oom_4.unit .........................   Passed    0.02 sec
+      Start 27: p1517_oom_5.unit
+ 9/18 Test #27: p1517_oom_5.unit .........................   Passed    0.02 sec
+      Start 28: p1517_negative_H1-leak.unit
+10/18 Test #28: p1517_negative_H1-leak.unit ..............   Passed    0.00 sec
+      Start 29: p1517_negative_foreign-allocation.unit
+11/18 Test #29: p1517_negative_foreign-allocation.unit ...   Passed    0.00 sec
+      Start 30: p1517_negative_foreign-domain.unit
+12/18 Test #30: p1517_negative_foreign-domain.unit .......   Passed    0.00 sec
+      Start 31: p1517_negative_foreign-pointer.unit
+13/18 Test #31: p1517_negative_foreign-pointer.unit ......   Passed    0.00 sec
+      Start 32: p1517_negative_incomplete-callee.unit
+14/18 Test #32: p1517_negative_incomplete-callee.unit ....   Passed    0.00 sec
+      Start 33: p1517_negative_owner-reused.unit
+15/18 Test #33: p1517_negative_owner-reused.unit .........   Passed    0.00 sec
+      Start 34: p1517_negative_stale-read.unit
+16/18 Test #34: p1517_negative_stale-read.unit ...........   Passed    0.00 sec
+      Start 35: p1517_native.integration
+17/18 Test #35: p1517_native.integration .................   Passed    0.79 sec
+      Start 36: p1517_named_no_clobber.integration
+18/18 Test #36: p1517_named_no_clobber.integration .......   Passed    0.12 sec
+
+100% tests passed, 0 tests failed out of 18
+
+Total Test time (real) =   1.16 sec

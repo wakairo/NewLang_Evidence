@@ -1,0 +1,892 @@
+From 394d35d4175716a4fc2947e3d5fbdbc89c167237 Mon Sep 17 00:00:00 2001
+From: J W <a_kg@ninegw.sakura.ne.jp>
+Date: Wed, 18 Nov 2026 19:01:35 +0900
+Subject: [PATCH] Format terminal receiver candidate and record C1177 local
+ verification
+
+
+diff --git a/src/checked_c_node.c b/src/checked_c_node.c
+index e4d8660ecf4ef6f1da530867f9c251967136d1b5..83ecc4c3c57e8f7c1520b7961bb2969397477423 100644
+--- a/src/checked_c_node.c
++++ b/src/checked_c_node.c
+@@ -3074,21 +3074,25 @@ static bool owner_evidence(Emit *e, Env *env, NLCheckedNodeId id,
+     const bool direct = e->direct_h &&
+                         e->direct_receiver_issuer == env->artifact &&
+                         e->direct_receiver_call == id;
+-    const bool topology_bad = direct
+-        ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
+-           e->reloans || e->link_updates || e->projections || e->reads ||
+-           e->producer_calls || e->live_tail || e->custody ||
+-           v->owner_call.definition.step_count != 4)
+-        : ((terminal_role_lane(e)
+-                ? !terminal_sequence(e, env, v)
+-                : e->reloans != (e->custody ? 2u
+-                    : 4u + (e->live_tail != 0 ? 1u : 0u) -
+-                      (e->no_pre_read ? 2u : 0u) + e->no_read_copies)) ||
+-           e->link_updates != 2 ||
+-           e->projections != (e->custody ? 2u
+-               : e->no_pre_read ? 2u + e->no_read_copies : 3u) ||
+-           e->reads != (e->custody ? 0u
+-               : e->no_pre_read ? e->no_read_copies : 1u));
++    const bool topology_bad =
++        direct ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
++                  e->reloans || e->link_updates || e->projections || e->reads ||
++                  e->producer_calls || e->live_tail || e->custody ||
++                  v->owner_call.definition.step_count != 4)
++               : ((terminal_role_lane(e)
++                       ? !terminal_sequence(e, env, v)
++                       : e->reloans !=
++                             (e->custody ? 2u
++                                         : 4u + (e->live_tail != 0 ? 1u : 0u) -
++                                               (e->no_pre_read ? 2u : 0u) +
++                                               e->no_read_copies)) ||
++                  e->link_updates != 2 ||
++                  e->projections != (e->custody       ? 2u
++                                     : e->no_pre_read ? 2u + e->no_read_copies
++                                                      : 3u) ||
++                  e->reads != (e->custody       ? 0u
++                               : e->no_pre_read ? e->no_read_copies
++                                                : 1u));
+     if (!e->two_heap || e->pending_live || e->owner_calls != 0 ||
+         e->allocations != 2 || (e->direct_h && !direct) || topology_bad ||
+         h == NULL || h->region_slot != 1 ||
+@@ -4004,11 +4008,11 @@ NLNodeCStatus nl_checked_c_node(const NLCheckedFragment *entry, char **out,
+         e.roots != (e.three_lexical_links ? 3u : 2u) || result.type != e.unit ||
+         (e.copy_type && (!e.copy_roots || e.copy_roots > 2 ||
+                          e.copy_calls != e.copy_expected_calls)) ||
+-        (e.direct_h && (!e.copy_h_closed || e.copy_roots != 1 ||
+-                        e.producer_calls ||
+-                        e.owner_calls != expected_owner_calls(&e) || e.live_tail ||
+-                        e.custody || e.heap_link || e.projections || e.reads ||
+-                        e.link_updates || e.direct_payload_reads != 1)) ||
++        (e.direct_h &&
++         (!e.copy_h_closed || e.copy_roots != 1 || e.producer_calls ||
++          e.owner_calls != expected_owner_calls(&e) || e.live_tail ||
++          e.custody || e.heap_link || e.projections || e.reads ||
++          e.link_updates || e.direct_payload_reads != 1)) ||
+         (e.copy_second_function && e.copy_roots != e.copy_expected_roots) ||
+         (e.copy_surviving_issuer &&
+          (!e.copy_h_closed ||
+diff --git a/tests/p1517/README.md b/tests/p1517/README.md
+index 1ee843a8c5f43abc886e95da7e852a9d4b5255b0..bf950fa25a161147c1dba38be1ac6d53082f8f00 100644
+--- a/tests/p1517/README.md
++++ b/tests/p1517/README.md
+@@ -1,5 +1,10 @@
+ # P1517 local terminal receiver candidate
+ 
++This file preserves the P1517 historical result and limitations below.
++The successor's separate local verification is recorded in
++[REVALIDATION-C1177.md](REVALIDATION-C1177.md); it does not reset P1517's FIRST,
++RED, exhausted budget or ENV-PARTIAL result.
++
+ Parent: unadopted PR1508 HEAD `7591848bd7f4bf8967dffd4be8d360e1901a3f06`.
+ Operational/canonical authority: adopted main `4c388693b95f371783e666f5c77e0aec5d17d215`, CURRENT_SPEC → Draft17.38.
+ 
+diff --git a/tests/p1517/REVALIDATION-C1177.md b/tests/p1517/REVALIDATION-C1177.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..cb10d67a85531b26478e5462a8f1acbf024d8292
+--- /dev/null
++++ b/tests/p1517/REVALIDATION-C1177.md
+@@ -0,0 +1,111 @@
++# P1525 C1177 local revalidation
++
++Status: LOCAL READY / WAIT PUBLICATION. This is finite P-owned capability
++evidence, not adopted main, a general soundness proof, independent review or
++Product GO. The Issue's explicit PUBLICATION RELEASE is still required.
++
++Authority is adopted main `4c388693b95f371783e666f5c77e0aec5d17d215`,
++CURRENT_SPEC -> Draft17.38. Exact local parent is reviewed integrated PR1508
++`ac6be8e3473f08c44fe8e9407dc33c0fb53086d6`, tree
++`7591cf7c908c9f7258d0d9512fc79d084d73fbaa`, ordered parents
++`7591848bd7f4bf8967dffd4be8d360e1901a3f06` and adopted main4c.
++Integration commit `7063ca3a770f3cea1b142f59774d63a263cc5184`, tree
++`a88510011994e1e6b719f8f7acdfcca2a60dfe66`, applied the original24 changed
++files byte-for-byte without removing adopted documentation. Its new metadata
++is not the original P1517 commit identity.
++
++The retained original candidate is implementation
++`24206697820ff5521aba0239487c5b9b0f168445` and child
++`c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c`. Original FIRST/RED, aggregate80/80,
++native19/36, unavailable Clang/formatter/sanitizers and ENV-PARTIAL remain
++unchanged in that worktree, Issue1517 and the P1520 Evidence archive at
++`e46bda3c634dc55d19f5561fb431f56720c87495`. `oracle.json` is the immutable
++historical FIRST packet (including its original prospective passive.h name);
++the active observer is passive-v2.h. Only mechanical pinned formatting and
++this documentation differ from the saved implementation. The first new
++formatter RED is preserved separately; it was not a compiler or safety PASS.
++
++## Exact supported increment
++
++The existing direct two-H mixed H/T lane admits one genuine four-step
++terminal receiver of the second original H after its scoped payload read.
++The callee ends that original lifetime, recovers its full original Storage,
++finalizes its original Domain and deallocates its original Allocation once.
++The caller then ends the first original H, and the named Copy updates the
++same original T field. H0/H1 have no phantom receiver or second T write;
++payload0 in H2 is genuine success. Actual/formal/body/result, original
++root/incarnation/R/Domain, whole-root source ownership, closed loan scopes,
++current/old Copy and affine consumption remain mandatory.
++
++No checker, public issuer, source law, API/ABI, LLVM lowering, producer or
++LiveTail capability is added. Optional five-step receiver-internal reads,
++receiver field-index1, arbitrary forwarding/owner/CFG compositions and
++general safe APIs remain outside this implementation. Existing inline direct
++and linked producer paths retain their original independent guards.
++
++## Toolchain and actual results
++
++Fresh P-only tooling checkout: T1522
++`52f49551df631e9d33c56d72011312309ef0cc28`, tree
++`b77a609e631e3d2258c0c8a366c69caf273d125b`. Its unmodified bootstrap and lock
++selected the curated SDK126520077B, SHA256
++`5369d292ef513d32758634f98ec7cf62c52f82a0a333eb330ecf9a325648b133`.
++One HTTPS acquisition passed every size/SHA/path/link/extraction/provenance/
++license/tool/relocation/marker/version guard. Generated activation was used.
++Clang and clang-format are23.1.3, upstream
++`0d261d1ca552c95a8f007e061c787ac7132fbcbc`; GCC14.2.0, CMake3.31.10,
++Python3.12.14 on actual Debian13. Distribution prerequisites were already
++installed. The curated archive is not independently GPG-signed. No T delta
++is part of this Production candidate.
++
++All compiler builds used fresh Debug frontend-only directories: NO LLVM /
++PARTIAL infrastructure; no local LLVM C API or full ordinary-suite claim.
++Compiler and emitted C used strict C17 warning/error flags. Native observers
++and real allocation faults used the same existing source/expectations.
++
++| Reached selection | Actual result |
++| --- | --- |
++| Ordinary --check, zero/42, GCC/Clang host builds |4/4 success |
++| Genuine whole-root MACHINE/owner/Copy, zero/42 |passed under all four configurations |
++| P1517 CTest cohort |GCC18/18, Clang18/18, Clang ASan18/18, Clang UBSan11/11 |
++| Strict GCC/Clang O0/O2 x zero/42 x H0/H1/H2 |24/24 native |
++| Pinned Clang ASan/UBSan, same O0/O2 matrix |24/24 native, no sanitizer diagnostics |
++| Declared source negatives |seven refuse through public definition checking and ordinary CLI; H1 leak is precision, other six semantic |
++| Artifact/foreign-origin tamper |all35 reject MACHINE/emission; output NULL, length98765 retained; pristine retry succeeds |
++| Selected host OOM |six logical sites;48 fault/retry cases across GCC, Clang and ASan; rollback/no-clobber/no-temp and clean retry pass |
++| Existing inline direct regression |P1507 A/B GCC O2 x H0/H1/H2:6 native; old owned/tamper CTest3/3 |
++| Existing linked producer regression |P1481 Z-success-zero Clang ASan O2 x H0/H1/H2:3 native |
++| Pinned formatting |all tracked C/H check passes after mechanical repair |
++
++UBSan's11 tests deliberately exclude six host OOM tests and named fault test:
++48/48 fault/retry cases were already exercised in the other three configurations.
++No fourth host campaign is claimed. ASan uses leak detection and immediate
++failure; UBSan uses immediate failure and no recovery. Physical observers
++check actual original allocation addresses, distinct Domains, closed read
++scope before EndRoot, callee second-free then caller first-free, exact same
++T/old/current/sibling and zero; they issue no program authority.
++
++Emitted bytes agree across all host/sanitizer compiler builds:
++zero11332B SHA256
++`15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248`,
++nonzero11333B SHA256
++`2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b`.
++
++New separate budget consumed:255/320 local,57/64 selected native,
++6/16 logical host sites,48/48 fault/retry cases,1/2 SDK acquisitions.
++The local ledger includes nested CLI/CC/guest work; two selected native
++translation units count twice. Four standard compiler build invocations are
++charged once each, with their individual compiler commands also recorded.
++No remote Compiler branch, PR, CI, READY or merge has been performed.
++Remote publication and natural Required CI remain NOT_RUN / gated. Independent
++F/R original inputs were not read; their eventual review is not supplied by
++these P tests. Preserve all raw logs, initial format failure and old evidence.
++
++## Value boundary
++
++VALUE-ALIGNMENT-RISK: this reuses a small existing private consumer and adds
++no fixture-specific trusted mechanism. It enables an actual cleanup call
++boundary, but a natural ordinary-safe library, all safe-reachable API states
++and smaller library-author plus ordinary-safe-caller UB audit/re-audit closure
++versus well-factored C remain UNMEASURED. Sound Rust ownership/Drop/safe facade
++is a fair alternative. Product GO624 PAUSED / H1 HOLD remain unchanged.
+diff --git a/tests/p1517/cli_fault.c b/tests/p1517/cli_fault.c
+index eb01ed9e6720d368c56e094f2258c1d6bb4c0c78..9f023f54f49bd17baf8e10fbacad75f2fa5d99ab 100644
+--- a/tests/p1517/cli_fault.c
++++ b/tests/p1517/cli_fault.c
+@@ -7,8 +7,10 @@ static size_t text_allocations;
+ void *__wrap_malloc(size_t size)
+ {
+     const char *setting = getenv("P1517_HOST_TEXT_FAIL");
+-    if (setting && size == 131072 && ++text_allocations == strtoul(setting, NULL, 10)) {
+-        static const char message[] = "P1517 selected compiler-host text-buffer OOM\n";
++    if (setting && size == 131072 &&
++        ++text_allocations == strtoul(setting, NULL, 10)) {
++        static const char message[] =
++            "P1517 selected compiler-host text-buffer OOM\n";
+         (void)write(2, message, sizeof message - 1);
+         return NULL;
+     }
+diff --git a/tests/p1517/passive-v2.h b/tests/p1517/passive-v2.h
+index e59115c49b466c86ffc04265f582685c261956d7..713186832edf4d0041b1821a18d3b740ba6b8849 100644
+--- a/tests/p1517/passive-v2.h
++++ b/tests/p1517/passive-v2.h
+@@ -23,7 +23,8 @@ static size_t domains[2], trials, inits, ends, finals, roots, payloads;
+ static volatile size_t frees;
+ static size_t calls, old_copies, final_copies, t_frame, t_symbol;
+ static bool ended[2], finalized[2];
+-static size_t receiver_entries, receiver_exits, handoffs, returned, active_scope;
++static size_t receiver_entries, receiver_exits, handoffs, returned,
++    active_scope;
+ static bool in_receiver;
+ static const void *donor_allocation, *donor_domain;
+ static const void *volatile pending_free;
+@@ -133,7 +134,8 @@ void p1517_observe_free(void *p)
+         size_t i = identity(pointer);                                          \
+         REQUIRE(i == 1 && !ended[i] && !(write) && (token) == domains[i] &&    \
+                 (place) && (inc) && (scope));                                  \
+-        REQUIRE(!active_scope); active_scope = (scope); \
++        REQUIRE(!active_scope);                                                \
++        active_scope = (scope);                                                \
+         ++roots;                                                               \
+     } while (0)
+ #define NL_HEAP_FIELD(pointer, field, write, nominal, index, child, inc,       \
+@@ -147,12 +149,16 @@ void p1517_observe_free(void *p)
+     } while (0)
+ #define NL_HEAP_COPY(...) REQUIRE(0)
+ #define NL_HEAP_CHANGE(...) REQUIRE(0)
+-#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
++#define NL_HEAP_SCOPE_END(scope)                                               \
++    do {                                                                       \
++        if (active_scope == (scope))                                           \
++            active_scope = 0;                                                  \
++    } while (0)
+ #define NL_HEAP_END(pointer, token)                                            \
+     do {                                                                       \
+         size_t i = identity(pointer);                                          \
+-        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] && !(pointer)->f0.tag &&    \
+-                !(pointer)->f0.ptr);                                           \
++        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] &&         \
++                !(pointer)->f0.tag && !(pointer)->f0.ptr);                     \
+         ended[i] = true;                                                       \
+         ++ends;                                                                \
+     } while (0)
+@@ -172,38 +178,43 @@ void p1517_observe_free(void *p)
+                 (length) == 24 && ended[i] && finalized[i]);                   \
+         pending_free = (handle);                                               \
+     } while (0)
+-#define NL_HEAP_HANDOFF(p, a, d, ap, dp) do { \
+-    REQUIRE(!handoffs++ && !in_receiver && !active_scope && \
+-            (p) == live[1] && (a) == live[1] && (d) == domains[1] && \
+-            !ended[0] && !ended[1]); \
+-    donor_allocation = (ap); donor_domain = (dp); \
+-} while (0)
+-#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp) do { \
+-    REQUIRE(handoffs == 1 && !receiver_entries++ && !in_receiver && \
+-            !active_scope && (p) == live[1] && (a) == live[1] && \
+-            (d) == domains[1] && (ap) != donor_allocation && \
+-            (dp) != donor_domain && (frame) && (ps) && (as) && (ds)); \
+-    in_receiver = true; \
+-} while (0)
+-#define NL_HEAP_RECEIVER_EXIT() do { \
+-    REQUIRE(in_receiver && !receiver_exits++ && frees == 1 && \
+-            !live[1] && live[0] && !ended[0] && !active_scope); \
+-    in_receiver = false; \
+-} while (0)
+-#define NL_HEAP_RETURNED(ap, dp) do { \
+-    REQUIRE(receiver_exits == 1 && !returned++ && !in_receiver && \
+-            (ap) == donor_allocation && (dp) == donor_domain); \
+-} while (0)
++#define NL_HEAP_HANDOFF(p, a, d, ap, dp)                                       \
++    do {                                                                       \
++        REQUIRE(!handoffs++ && !in_receiver && !active_scope &&                \
++                (p) == live[1] && (a) == live[1] && (d) == domains[1] &&       \
++                !ended[0] && !ended[1]);                                       \
++        donor_allocation = (ap);                                               \
++        donor_domain = (dp);                                                   \
++    } while (0)
++#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp)             \
++    do {                                                                       \
++        REQUIRE(handoffs == 1 && !receiver_entries++ && !in_receiver &&        \
++                !active_scope && (p) == live[1] && (a) == live[1] &&           \
++                (d) == domains[1] && (ap) != donor_allocation &&               \
++                (dp) != donor_domain && (frame) && (ps) && (as) && (ds));      \
++        in_receiver = true;                                                    \
++    } while (0)
++#define NL_HEAP_RECEIVER_EXIT()                                                \
++    do {                                                                       \
++        REQUIRE(in_receiver && !receiver_exits++ && frees == 1 && !live[1] &&  \
++                live[0] && !ended[0] && !active_scope);                        \
++        in_receiver = false;                                                   \
++    } while (0)
++#define NL_HEAP_RETURNED(ap, dp)                                               \
++    do {                                                                       \
++        REQUIRE(receiver_exits == 1 && !returned++ && !in_receiver &&          \
++                (ap) == donor_allocation && (dp) == donor_domain);             \
++    } while (0)
+ #define NL_LIVE_SEND(...) REQUIRE(0)
+ #define NL_LIVE_ENTER(...) REQUIRE(0)
+ #define NL_LIVE_RETURN(...) REQUIRE(0)
+ #define NL_LIVE_RECEIVE(...) REQUIRE(0)
+ #define NL_HEAP_FINISH()                                                       \
+     do {                                                                       \
+-        unsigned n = expected_roots(); \
+-        REQUIRE(receiver_entries == (n == 2) && receiver_exits == (n == 2) && \
+-                handoffs == (n == 2) && returned == (n == 2) && \
+-                !in_receiver && !active_scope);                                         \
++        unsigned n = expected_roots();                                         \
++        REQUIRE(receiver_entries == (n == 2) && receiver_exits == (n == 2) &&  \
++                handoffs == (n == 2) && returned == (n == 2) &&                \
++                !in_receiver && !active_scope);                                \
+         REQUIRE(trials == (n ? 2u : 1u) && inits == n && ends == n &&          \
+                 finals == n && frees == n);                                    \
+         REQUIRE(!live[0] && !live[1] && !pending_free &&                       \
+@@ -212,7 +223,7 @@ void p1517_observe_free(void *p)
+                 *target == current() && *sibling == other());                  \
+         REQUIRE(roots == (n == 2 ? 1u : 0u) && payloads == roots);             \
+         printf("P1517 H%u physical free order, same T old/current=%u "         \
+-               "sibling=%u second-writes=%zu receiver-exact PASS\n",                          \
++               "sibling=%u second-writes=%zu receiver-exact PASS\n",           \
+                n, *target, *sibling, calls - 1);                               \
+     } while (0)
+ #endif
+diff --git a/tests/p1517/public_owned.c b/tests/p1517/public_owned.c
+index ea40fb1826463dfeccf46573aab16040b12b5e50..156208db885f1e54d3a23631cdfaa0325c21cd72 100644
+--- a/tests/p1517/public_owned.c
++++ b/tests/p1517/public_owned.c
+@@ -1,5 +1,6 @@
+ /* P1515 C1150 public-only observation of authentic source-issued artifacts.
+- * No semantic seed, private headers, artifact mutation, emission or guest run. */
++ * No semantic seed, private headers, artifact mutation, emission or guest run.
++ */
+ #include "newlang/checked.h"
+ #include "newlang/copy_body.h"
+ #include "newlang/parser.h"
+@@ -8,9 +9,14 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
+-#define NEED(x) do { if (!(x)) { \
+-    fprintf(stderr, "PROBE_ASSERT line=%d expression=%s\n", __LINE__, #x); \
+-    return 0; } } while (0)
++#define NEED(x)                                                                \
++    do {                                                                       \
++        if (!(x)) {                                                            \
++            fprintf(stderr, "PROBE_ASSERT line=%d expression=%s\n", __LINE__,  \
++                    #x);                                                       \
++            return 0;                                                          \
++        }                                                                      \
++    } while (0)
+ 
+ typedef struct {
+     size_t calls, copies, payloads, destroys, frees, trials;
+@@ -27,8 +33,8 @@ static int scalar(const NLSemanticContext *c, NLValueId id, size_t value)
+ {
+     NLSemanticValueView v;
+     return nl_semantic_value_view(c, id, &v) && v.scalar_known &&
+-        v.scalar_value == value && v.dependencies == NL_DEPENDENCY_FREE &&
+-        v.value_dependency_count == 0;
++           v.scalar_value == value && v.dependencies == NL_DEPENDENCY_FREE &&
++           v.value_dependency_count == 0;
+ }
+ 
+ static int closed(const NLSemanticContext *c, size_t regions)
+@@ -109,23 +115,28 @@ static int owner(const NLCheckedFragment *f, NLCheckedNodeId id)
+     for (size_t i = 0; i < 3; ++i) {
+         NLSemanticBindingView formal, donor;
+         const NLCheckedNodeView *arg = nl_checked_node_view(f, argument);
+-        NEED(arg && arg->kind == NL_CHECKED_IDENTIFIER && arg->result_count == 1 &&
++        NEED(arg && arg->kind == NL_CHECKED_IDENTIFIER &&
++             arg->result_count == 1 &&
+              arg->results[0].value == n->owner_call.inputs[i] &&
+              arg->symbol == n->owner_call.donor[i] &&
+              arg->value_use == (i ? NL_VALUE_CONSUMED : NL_VALUE_COPIED) &&
+              n->owner_call.donor[i] != n->owner_call.parameters[i] &&
+-             nl_semantic_binding_view(post, n->owner_call.parameters[i], &formal) &&
++             nl_semantic_binding_view(post, n->owner_call.parameters[i],
++                                      &formal) &&
+              formal.value == n->owner_call.inputs[i] &&
+              nl_semantic_binding_view(entry, n->owner_call.donor[i], &donor));
+-        if (i) NEED(donor.availability == NL_CONSUMED &&
+-                    formal.availability == NL_CONSUMED);
++        if (i)
++            NEED(donor.availability == NL_CONSUMED &&
++                 formal.availability == NL_CONSUMED);
+         argument = arg->next_argument;
+     }
+     NEED(!argument && nl_semantic_place_view(post, n->owner_call.root, &dead) &&
+-         !dead.live && dead.incarnation == p.incarnation && !dead.current_value &&
+-         !dead.placement.region &&
+-         nl_semantic_backing_view(post, a.allocation_region, &dead_r) && !dead_r.live &&
+-         nl_semantic_domain_view(post, life.domain, &dead_domain) && !dead_domain.live);
++         !dead.live && dead.incarnation == p.incarnation &&
++         !dead.current_value && !dead.placement.region &&
++         nl_semantic_backing_view(post, a.allocation_region, &dead_r) &&
++         !dead_r.live &&
++         nl_semantic_domain_view(post, life.domain, &dead_domain) &&
++         !dead_domain.live);
+     size_t ends = 0, erases = 0, finals = 0, frees = 0;
+     for (size_t i = 1; i <= nl_checked_node_count(body); ++i) {
+         const NLCheckedNodeView *v = nl_checked_node_view(body, i);
+@@ -134,14 +145,19 @@ static int owner(const NLCheckedFragment *f, NLCheckedNodeId id)
+             ++ends;
+             NEED(v->lifetime_place == n->owner_call.root &&
+                  v->lifetime_incarnation == p.incarnation &&
+-                 v->lifetime_domain == life.domain && v->backing == a.allocation_region);
++                 v->lifetime_domain == life.domain &&
++                 v->backing == a.allocation_region);
+         }
+-        if (v->kind == NL_CHECKED_ERASE_SLOT) ++erases;
+-        if (v->kind == NL_CHECKED_DOMAIN_FINALIZE) ++finals;
++        if (v->kind == NL_CHECKED_ERASE_SLOT)
++            ++erases;
++        if (v->kind == NL_CHECKED_DOMAIN_FINALIZE)
++            ++finals;
+         if (v->kind == NL_CHECKED_DEALLOCATE) {
+             ++frees;
+-            const NLCheckedNodeView *av = nl_checked_node_view(body, v->first_argument);
+-            const NLCheckedNodeView *raw = av ? nl_checked_node_view(body, av->next_argument) : NULL;
++            const NLCheckedNodeView *av =
++                nl_checked_node_view(body, v->first_argument);
++            const NLCheckedNodeView *raw =
++                av ? nl_checked_node_view(body, av->next_argument) : NULL;
+             NLSemanticValueView full, avalue;
+             NEED(av && raw && av->result_count == 1 && raw->result_count == 1 &&
+                  nl_semantic_value_view(post, av->results[0].value, &avalue) &&
+@@ -169,12 +185,13 @@ static int copy(const NLCheckedFragment *f, NLCheckedNodeId id, Trace *t)
+     NEED(t->copies < 2 && nl_checked_copy_body_parameters(f, id, &p) &&
+          nl_checked_copy_body_view(f, id, &v) &&
+          nl_checked_copy_body_event(f, id, 0, &event));
+-    if (!t->copies) t->original_binding = p.field.base;
++    if (!t->copies)
++        t->original_binding = p.field.base;
+     NLCheckStatus bv = nl_checked_copy_body_validate(f, id, &v);
+     NLCheckStatus pv = nl_checked_copy_body_parameters_validate(f, id, &p);
+     NLCheckStatus ev = nl_checked_copy_body_event_validate(f, id, 0, &event);
+-    printf("COPY call=%zu ordinal=%zu body=%d parameters=%d event=%d\n",
+-           id, t->copies + 1, (int)bv, (int)pv, (int)ev);
++    printf("COPY call=%zu ordinal=%zu body=%d parameters=%d event=%d\n", id,
++           t->copies + 1, (int)bv, (int)pv, (int)ev);
+     NEED(bv == NL_CHECK_OK && pv == NL_CHECK_OK && ev == NL_CHECK_OK &&
+          v.event_count == 1 && event.kind == NL_COPY_BODY_CHANGE &&
+          p.field.index == 0 && p.entry && p.handoff &&
+@@ -216,7 +233,8 @@ static int walk(const NLCheckedFragment *f, Trace *t, Count *out, size_t depth)
+         if (n->kind == NL_CHECKED_LOAN_HEADER) {
+             NLSemanticScopeView scope;
+             NEED(n->loan.body_nonescape_proved &&
+-                 nl_semantic_scope_view(c, n->loan.scope, &scope) && !scope.active);
++                 nl_semantic_scope_view(c, n->loan.scope, &scope) &&
++                 !scope.active);
+             ++t->loans;
+         }
+         out->destroys += n->kind == NL_CHECKED_DESTROY;
+@@ -233,56 +251,74 @@ static int walk(const NLCheckedFragment *f, Trace *t, Count *out, size_t depth)
+             ++out->copies;
+         }
+         if (n->kind == NL_CHECKED_LINK_READ && n->field.index == 1) {
+-            const NLCheckedNodeView *field = nl_checked_node_view(f, n->first_argument);
+-            const NLCheckedNodeView *ref = field ? nl_checked_node_view(f, field->first_argument) : NULL;
++            const NLCheckedNodeView *field =
++                nl_checked_node_view(f, n->first_argument);
++            const NLCheckedNodeView *ref =
++                field ? nl_checked_node_view(f, field->first_argument) : NULL;
+             NLSemanticValueView rv;
+-            NEED(n->result_count == 1 && scalar(c, n->results[0].value, t->sample) &&
+-                 field && ref && ref->result_count == 1 &&
++            NEED(n->result_count == 1 &&
++                 scalar(c, n->results[0].value, t->sample) && field && ref &&
++                 ref->result_count == 1 &&
+                  nl_semantic_value_view(c, ref->results[0].value, &rv));
+             const NLCheckedNodeView *receiver = NULL, *acquisition = NULL;
+             for (size_t j = 1; j <= nl_checked_node_count(f); ++j) {
+                 const NLCheckedNodeView *candidate = nl_checked_node_view(f, j);
+-                if (candidate->owner_call.entry_proved) receiver = candidate;
++                if (candidate->owner_call.entry_proved)
++                    receiver = candidate;
+                 if (candidate->kind == NL_CHECKED_REF_FROM_PTR &&
+-                    candidate->lifetime_place == n->field.parent) acquisition = candidate;
++                    candidate->lifetime_place == n->field.parent)
++                    acquisition = candidate;
+             }
+             NEED(receiver && acquisition &&
+                  receiver->owner_call.root == n->field.parent &&
+                  acquisition->lifetime_domain == receiver->owner_call.domain &&
+-                 acquisition->lifetime_incarnation == receiver->owner_call.incarnation &&
++                 acquisition->lifetime_incarnation ==
++                     receiver->owner_call.incarnation &&
+                  acquisition->span.end_byte < receiver->span.start_byte);
+             printf("PAYLOAD child=%zu original=%zu sample=%zu ref_scope=%zu\n",
+-                   n->field.child, n->field.parent, t->sample, rv.reference.scope);
++                   n->field.child, n->field.parent, t->sample,
++                   rv.reference.scope);
+             ++out->payloads;
+             ++t->reads;
+         }
+         const NLCheckedFragment *body = nl_checked_call_body(f, id);
+-        if (body) NEED(walk(body, t, out, depth + 1));
++        if (body)
++            NEED(walk(body, t, out, depth + 1));
+         if (n->kind == NL_CHECKED_MATCH) {
+-            const NLCheckedNodeView *trial = nl_checked_node_view(f, n->initializer);
+-            NEED(trial && trial->kind == NL_CHECKED_TRY_ALLOCATE_ONE && n->item_count == 2);
++            const NLCheckedNodeView *trial =
++                nl_checked_node_view(f, n->initializer);
++            NEED(trial && trial->kind == NL_CHECKED_TRY_ALLOCATE_ONE &&
++                 n->item_count == 2);
+             ++t->matches;
+             for (size_t a = 0; a < 2; ++a) {
+                 const NLCheckedFragment *arm = nl_checked_match_arm(f, id, a);
+                 const NLSemanticContext *ac = nl_checked_context(arm);
+                 NLSemanticBindingView parent_binding, child_binding;
+-                NEED(arm && ac != c && n->match_binding_prefix >= t->original_binding &&
+-                     nl_semantic_binding_view(c, t->original_binding, &parent_binding) &&
+-                     nl_semantic_binding_view(ac, t->original_binding, &child_binding) &&
++                NEED(arm && ac != c &&
++                     n->match_binding_prefix >= t->original_binding &&
++                     nl_semantic_binding_view(c, t->original_binding,
++                                              &parent_binding) &&
++                     nl_semantic_binding_view(ac, t->original_binding,
++                                              &child_binding) &&
+                      parent_binding.place == child_binding.place);
+                 Count branch = {0};
+                 NEED(walk(arm, t, &branch, depth + 1));
+                 if (!a) {
+                     size_t resources = n->captured_frame_closed ? 1 : 0;
+-                    NEED(closed(ac, resources) && !branch.calls && !branch.copies &&
+-                         !branch.payloads && branch.destroys == resources &&
++                    NEED(closed(ac, resources) && !branch.calls &&
++                         !branch.copies && !branch.payloads &&
++                         branch.destroys == resources &&
+                          branch.frees == resources);
+-                    printf("NORMAL H%zu receiver=0 second_T_write=0 releases=%zu\n",
++                    printf("NORMAL H%zu receiver=0 second_T_write=0 "
++                           "releases=%zu\n",
+                            resources, branch.frees);
+                 } else if (n->captured_frame_closed) {
+-                    NEED(closed(ac, 2) && branch.calls == 1 && branch.copies == 1 &&
+-                         branch.payloads == 1 && branch.destroys == 2 && branch.frees == 2);
+-                    printf("NORMAL H2 receiver=1 second_T_write=1 sample=%zu releases=2\n", t->sample);
++                    NEED(closed(ac, 2) && branch.calls == 1 &&
++                         branch.copies == 1 && branch.payloads == 1 &&
++                         branch.destroys == 2 && branch.frees == 2);
++                    printf("NORMAL H2 receiver=1 second_T_write=1 sample=%zu "
++                           "releases=2\n",
++                           t->sample);
+                 }
+                 out->calls += branch.calls;
+                 out->copies += branch.copies;
+@@ -309,22 +345,26 @@ static int run(const char *path, size_t sample)
+     NEED(nl_source_load(path, &source) == NL_SOURCE_OK &&
+          nl_parser_create(source, &parser) == NL_PARSE_OK);
+     NLParseStatus ps = nl_parser_parse_function_unit(parser, &unit, &pd);
+-    printf("PARSE status=%d code=%s\n", (int)ps, pd.diagnostic.code ? pd.diagnostic.code : "none");
++    printf("PARSE status=%d code=%s\n", (int)ps,
++           pd.diagnostic.code ? pd.diagnostic.code : "none");
+     NEED(ps == NL_PARSE_OK && nl_semantic_create(&c) == NL_CHECK_OK);
+     const NLSyntaxTree *inputs[] = {unit};
+     NLCheckStatus ds = nl_semantic_register_function_unit(c, inputs, 1, &ud);
+     printf("DEFINITION status=%d code=%s\n", (int)ds,
+-           ud.diagnostic.diagnostic.code ? ud.diagnostic.diagnostic.code : "none");
++           ud.diagnostic.diagnostic.code ? ud.diagnostic.diagnostic.code
++                                         : "none");
+     NEED(ds == NL_CHECK_OK);
+     NLSemanticSnapshot s;
+-    NEED(nl_semantic_snapshot(c, &s) && !s.bindings && !s.values &&
+-         !s.places && !s.domains && !s.backing_regions);
++    NEED(nl_semantic_snapshot(c, &s) && !s.bindings && !s.values && !s.places &&
++         !s.domains && !s.backing_regions);
+     size_t definitions = 0;
+     for (size_t i = 1; i <= s.functions; ++i) {
+         NLTypedOwnerDefinition d;
+         if (nl_semantic_function_applicability(c, i, &d)) {
+-            NEED(d.definition_checked && !d.live_return && !d.head_link_required &&
+-                 d.requirements == NL_OWNER_ALL_REQUIREMENTS && d.step_count == 4);
++            NEED(d.definition_checked && !d.live_return &&
++                 !d.head_link_required &&
++                 d.requirements == NL_OWNER_ALL_REQUIREMENTS &&
++                 d.step_count == 4);
+             ++definitions;
+         }
+     }
+@@ -333,26 +373,33 @@ static int run(const char *path, size_t sample)
+     nl_syntax_tree_destroy(unit);
+     nl_parser_destroy(parser);
+     nl_source_destroy(source);
+-    NEED(nl_source_create("main()", 6, "P1515-actual-main", &call_source) == NL_SOURCE_OK &&
++    NEED(nl_source_create("main()", 6, "P1515-actual-main", &call_source) ==
++             NL_SOURCE_OK &&
+          nl_parser_create(call_source, &call_parser) == NL_PARSE_OK &&
+-         nl_parser_parse_expression_fragment(call_parser, &call, NULL) == NL_PARSE_OK);
+-    NLCheckStatus actual = nl_semantic_check_expression(c, call, &artifact, &cd);
++         nl_parser_parse_expression_fragment(call_parser, &call, NULL) ==
++             NL_PARSE_OK);
++    NLCheckStatus actual =
++        nl_semantic_check_expression(c, call, &artifact, &cd);
+     printf("ACTUAL status=%d code=%s\n", (int)actual,
+            cd.diagnostic.code ? cd.diagnostic.code : "none");
+     NEED(actual == NL_CHECK_OK && artifact);
+     NLCheckedProofClass proof = nl_checked_proof_class(artifact);
+-    printf("PROOF_CLASS value=%d MACHINE=%d\n", (int)proof, (int)NL_CHECKED_MACHINE_PROVED);
++    printf("PROOF_CLASS value=%d MACHINE=%d\n", (int)proof,
++           (int)NL_CHECKED_MACHINE_PROVED);
+     NEED(proof == NL_CHECKED_MACHINE_PROVED);
+-    const NLCheckedFragment *main_body = nl_checked_call_body(artifact, nl_checked_root(artifact));
++    const NLCheckedFragment *main_body =
++        nl_checked_call_body(artifact, nl_checked_root(artifact));
+     NEED(main_body);
+     Trace t = {.sample = sample};
+     Count count = {0};
+     NEED(walk(main_body, &t, &count, 0));
+     NEED(t.copies == 2 && t.owners == 1 && t.reads == 1 && t.matches == 2 &&
+-         count.calls == 1 && count.copies == 2 && count.destroys == 3 && count.frees == 3);
++         count.calls == 1 && count.copies == 2 && count.destroys == 3 &&
++         count.frees == 3);
+     printf("AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=%zu "
+            "root=%zu child=%zu incarnation=%zu sample=%zu\n",
+-           t.loans, t.original_root, t.original_child, t.original_incarnation, sample);
++           t.loans, t.original_root, t.original_child, t.original_incarnation,
++           sample);
+     nl_checked_destroy(artifact);
+     nl_syntax_tree_destroy(call);
+     nl_parser_destroy(call_parser);
+@@ -363,7 +410,8 @@ static int run(const char *path, size_t sample)
+ 
+ int main(int argc, char **argv)
+ {
+-    if (argc != 3) return 2;
++    if (argc != 3)
++        return 2;
+     setvbuf(stdout, NULL, _IONBF, 0);
+     return run(argv[1], (size_t)strtoul(argv[2], NULL, 10)) ? 0 : 1;
+ }
+diff --git a/tests/p1517/safety.c b/tests/p1517/safety.c
+index 1d0e1f0c97ae20e0900b0499a761e9da4b7e5db0..0e5fe9fb05c6c632c5cb20b635b4bb5e9dc8399c 100644
+--- a/tests/p1517/safety.c
++++ b/tests/p1517/safety.c
+@@ -3,7 +3,10 @@
+ #include "../p1463/probe.c"
+ #undef main
+ 
+-typedef struct { NLCheckedFragment *f; size_t id; } Site;
++typedef struct {
++    NLCheckedFragment *f;
++    size_t id;
++} Site;
+ static Site nodes1517[512];
+ static size_t count1517;
+ static NLCheckedFragment *receiver1517;
+@@ -24,14 +27,18 @@ static bool collect1517(NLCheckedFragment *f, size_t depth)
+         }
+         NLCopyBodyParameters p;
+         if (nl_checked_copy_body_parameters(f, id, &p)) {
+-            CHECK(nl_checked_copy_body_parameters_validate(f, id, &p) == NL_CHECK_OK);
++            CHECK(nl_checked_copy_body_parameters_validate(f, id, &p) ==
++                  NL_CHECK_OK);
+             CHECK(nl_checked_copy_body_event(f, id, 0, &last_copy1517));
+         }
+         const NLCheckedFragment *body = nl_checked_call_body(f, id);
+-        if (body) CHECK(collect1517((NLCheckedFragment *)body, depth + 1));
++        if (body)
++            CHECK(collect1517((NLCheckedFragment *)body, depth + 1));
+         if (n->kind == NL_CHECKED_MATCH)
+             for (size_t a = 0; a < n->item_count; ++a)
+-                CHECK(collect1517((NLCheckedFragment *)nl_checked_match_arm(f, id, a), depth + 1));
++                CHECK(collect1517(
++                    (NLCheckedFragment *)nl_checked_match_arm(f, id, a),
++                    depth + 1));
+     }
+     return true;
+ }
+@@ -54,15 +61,33 @@ static bool attack1517(const char *path)
+     NLCheckedNodeView saved = *call;
+     for (size_t k = 0; k < 9; ++k) {
+         switch (k) {
+-        case 0: call->owner_call.inputs[1] = call->owner_call.inputs[2]; break;
+-        case 1: call->owner_call.parameters[1] = call->owner_call.donor[1]; break;
+-        case 2: call->owner_call.donor[2] = call->owner_call.parameters[2]; break;
+-        case 3: call->owner_call.root = 0; break;
+-        case 4: call->owner_call.incarnation = 0; break;
+-        case 5: call->owner_call.domain = 0; break;
+-        case 6: call->owner_call.range.region = 0; break;
+-        case 7: call->owner_call.definition.step_count = 0; break;
+-        case 8: call->owner_call.post_proved = false; break;
++        case 0:
++            call->owner_call.inputs[1] = call->owner_call.inputs[2];
++            break;
++        case 1:
++            call->owner_call.parameters[1] = call->owner_call.donor[1];
++            break;
++        case 2:
++            call->owner_call.donor[2] = call->owner_call.parameters[2];
++            break;
++        case 3:
++            call->owner_call.root = 0;
++            break;
++        case 4:
++            call->owner_call.incarnation = 0;
++            break;
++        case 5:
++            call->owner_call.domain = 0;
++            break;
++        case 6:
++            call->owner_call.range.region = 0;
++            break;
++        case 7:
++            call->owner_call.definition.step_count = 0;
++            break;
++        case 8:
++            call->owner_call.post_proved = false;
++            break;
+         }
+         bool bad = refused(&p, "receiver actual/formal/original/domain/post");
+         *call = saved;
+@@ -82,9 +107,11 @@ static bool attack1517(const char *path)
+     CHECK(bad);
+     ++checked;
+     for (size_t b = 0; b < receiver1517->body_count; ++b) {
+-        if (receiver1517->body_calls[b] != receiver_call1517) continue;
++        if (receiver1517->body_calls[b] != receiver_call1517)
++            continue;
+         NLCheckedFragment *body = receiver1517->bodies[b];
+-        receiver1517->bodies[b] = (NLCheckedFragment *)nl_checked_call_body(foreign.artifact, nl_checked_root(foreign.artifact));
++        receiver1517->bodies[b] = (NLCheckedFragment *)nl_checked_call_body(
++            foreign.artifact, nl_checked_root(foreign.artifact));
+         bad = refused(&p, "receiver unrelated callee body");
+         receiver1517->bodies[b] = body;
+         CHECK(bad);
+@@ -98,15 +125,23 @@ static bool attack1517(const char *path)
+         case NL_CHECKED_DESTROY:
+         case NL_CHECKED_ERASE_SLOT:
+         case NL_CHECKED_DOMAIN_FINALIZE:
+-        case NL_CHECKED_DEALLOCATE: n->first_argument = 0; break;
+-        case NL_CHECKED_LOAN_HEADER: n->loan.body_nonescape_proved = false; break;
++        case NL_CHECKED_DEALLOCATE:
++            n->first_argument = 0;
++            break;
++        case NL_CHECKED_LOAN_HEADER:
++            n->loan.body_nonescape_proved = false;
++            break;
+         case NL_CHECKED_REGISTERED_CALL:
+-            if (n->result_count) n->results[0].value = 0;
+-            else damage = false;
++            if (n->result_count)
++                n->results[0].value = 0;
++            else
++                damage = false;
+             break;
+-        default: damage = false;
++        default:
++            damage = false;
+         }
+-        if (!damage) continue;
++        if (!damage)
++            continue;
+         bad = refused(&p, "callee primitive/loan/result substitution");
+         *n = old;
+         CHECK(bad);
+@@ -117,7 +152,9 @@ static bool attack1517(const char *path)
+     bad = refused(&p, "same numeric IDs foreign authentic origin");
+     p.artifact->h_origin = origin;
+     CHECK(bad && emit(&p, NL_NODE_C_OK));
+-    printf("P1517 artifact negatives=%zu plus foreign origin; pristine retry PASS\n", checked);
++    printf("P1517 artifact negatives=%zu plus foreign origin; pristine retry "
++           "PASS\n",
++           checked);
+     destroy(&foreign);
+     destroy(&p);
+     return true;
+@@ -128,14 +165,18 @@ static bool negative1517(const char *path)
+     CHECK(load(path, &p));
+     NLCopyCallAnchor anchor = {0};
+     NLSemanticSnapshot before, after;
+-    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK && nl_semantic_snapshot(p.context, &before));
++    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK &&
++          nl_semantic_snapshot(p.context, &before));
+     NLFunctionUnitDiagnostic d = {0};
+     NLCheckStatus s = define(&p, &d);
+     printf("P1517 source negative=%s status=%d code=%s\n", path, (int)s,
+-           d.diagnostic.diagnostic.code ? d.diagnostic.diagnostic.code : "none");
+-    CHECK((s == NL_CHECK_SEMANTIC_ERROR || s == NL_CHECK_ANALYSIS_PRECISION_LIMIT) &&
++           d.diagnostic.diagnostic.code ? d.diagnostic.diagnostic.code
++                                        : "none");
++    CHECK((s == NL_CHECK_SEMANTIC_ERROR ||
++           s == NL_CHECK_ANALYSIS_PRECISION_LIMIT) &&
+           !p.artifact && nl_copy_state_matches(p.context, &anchor) &&
+-          nl_semantic_snapshot(p.context, &after) && !memcmp(&before, &after, sizeof before));
++          nl_semantic_snapshot(p.context, &after) &&
++          !memcmp(&before, &after, sizeof before));
+     nl_copy_state_destroy(&anchor);
+     destroy(&p);
+     return true;
+@@ -143,26 +184,34 @@ static bool negative1517(const char *path)
+ static bool oom1517(const char *path, unsigned point)
+ {
+     Program p = {0};
+-    if (point == 0) CHECK(load(path, &p));
+-    else CHECK(ready(path, &p));
+-    if (point >= 3) CHECK(actual(&p));
++    if (point == 0)
++        CHECK(load(path, &p));
++    else
++        CHECK(ready(path, &p));
++    if (point >= 3)
++        CHECK(actual(&p));
+     NLCopyCallAnchor anchor = {0};
+     NLSemanticSnapshot before, after;
+-    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK && nl_semantic_snapshot(p.context, &before));
++    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK &&
++          nl_semantic_snapshot(p.context, &before));
+     hits = text_allocs = 0;
+     if (point <= 2) {
+         clone_target = p.context;
+         fault = point == 2 ? 2 : 1;
+         NLFunctionUnitDiagnostic d = {0};
+-        NLCheckStatus s = point == 0 ? define(&p, &d)
+-            : nl_semantic_check_expression(p.context, p.call, &p.artifact, NULL);
++        NLCheckStatus s = point == 0
++                              ? define(&p, &d)
++                              : nl_semantic_check_expression(p.context, p.call,
++                                                             &p.artifact, NULL);
+         fault = 0;
+         clone_target = NULL;
+         CHECK(s == NL_CHECK_OUT_OF_MEMORY && hits == 1 && !p.artifact);
+     } else {
+-        if (point <= 4) fault = point;
++        if (point <= 4)
++            fault = point;
+         else {
+-            count1517 = 0; receiver1517 = NULL;
++            count1517 = 0;
++            receiver1517 = NULL;
+             CHECK(collect1517(p.artifact, 0));
+             clone_target = last_copy1517.before;
+             fault = 2;
+@@ -173,21 +222,32 @@ static bool oom1517(const char *path, unsigned point)
+         CHECK(rejected && hits == 1);
+     }
+     CHECK(nl_copy_state_matches(p.context, &anchor) &&
+-          nl_semantic_snapshot(p.context, &after) && !memcmp(&before, &after, sizeof before));
+-    if (point == 0) { NLFunctionUnitDiagnostic d = {0}; CHECK(define(&p, &d) == NL_CHECK_OK); }
+-    if (point <= 2) CHECK(actual(&p));
++          nl_semantic_snapshot(p.context, &after) &&
++          !memcmp(&before, &after, sizeof before));
++    if (point == 0) {
++        NLFunctionUnitDiagnostic d = {0};
++        CHECK(define(&p, &d) == NL_CHECK_OK);
++    }
++    if (point <= 2)
++        CHECK(actual(&p));
+     CHECK(emit(&p, NL_NODE_C_OK));
+-    printf("P1517 host OOM site=%u fault+retry=2 hit=1 NULL/length/state rollback PASS\n", point);
++    printf("P1517 host OOM site=%u fault+retry=2 hit=1 NULL/length/state "
++           "rollback PASS\n",
++           point);
+     nl_copy_state_destroy(&anchor);
+     destroy(&p);
+     return true;
+ }
+ int main(int argc, char **argv)
+ {
+-    if (argc == 3 && !strcmp(argv[1], "attack")) return attack1517(argv[2]) ? 0 : 1;
+-    if (argc == 4 && !strcmp(argv[1], "oom")) return oom1517(argv[2], (unsigned)strtoul(argv[3], NULL, 10)) ? 0 : 1;
++    if (argc == 3 && !strcmp(argv[1], "attack"))
++        return attack1517(argv[2]) ? 0 : 1;
++    if (argc == 4 && !strcmp(argv[1], "oom"))
++        return oom1517(argv[2], (unsigned)strtoul(argv[3], NULL, 10)) ? 0 : 1;
+     if (argc >= 3 && !strcmp(argv[1], "negative")) {
+-        for (int i = 2; i < argc; ++i) if (!negative1517(argv[i])) return 1;
++        for (int i = 2; i < argc; ++i)
++            if (!negative1517(argv[i]))
++                return 1;
+         return 0;
+     }
+     return 2;

@@ -1,0 +1,22 @@
+{
+  "base": "ac6be8e3473f08c44fe8e9407dc33c0fb53086d6",
+  "base_tree": "7591cf7c908c9f7258d0d9512fc79d084d73fbaa",
+  "commits": [
+    {
+      "sha": "7063ca3a770f3cea1b142f59774d63a263cc5184",
+      "tree": "a88510011994e1e6b719f8f7acdfcca2a60dfe66",
+      "parent": "ac6be8e3473f08c44fe8e9407dc33c0fb53086d6",
+      "patch": "candidate/patches/0001-7063ca3a770f3cea1b142f59774d63a263cc5184.patch",
+      "raw_commit": "candidate/commits/7063ca3a770f3cea1b142f59774d63a263cc5184.commit"
+    },
+    {
+      "sha": "394d35d4175716a4fc2947e3d5fbdbc89c167237",
+      "tree": "902527f0635fb6c86890fe778244f393559e022b",
+      "parent": "7063ca3a770f3cea1b142f59774d63a263cc5184",
+      "patch": "candidate/patches/0002-394d35d4175716a4fc2947e3d5fbdbc89c167237.patch",
+      "raw_commit": "candidate/commits/394d35d4175716a4fc2947e3d5fbdbc89c167237.commit"
+    }
+  ],
+  "original_P1517": "unchanged; see e46bda3c634dc55d19f5561fb431f56720c87495 archive",
+  "status": "LOCAL READY / WAIT PUBLICATION"
+}

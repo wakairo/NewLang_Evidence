@@ -1,0 +1,1 @@
+/workspace/NewLang_P1525/tests/p1517/N-incomplete-callee.nl:10:71-17:2: error(semantic)[P193-DEFINITION-OBLIGATION]: normal exit retains non-Discardable responsibility

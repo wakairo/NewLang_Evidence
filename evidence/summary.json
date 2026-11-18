@@ -1,0 +1,96 @@
+{
+  "issue": 1525,
+  "status": "LOCAL READY / WAIT PUBLICATION",
+  "publication_release_seen": false,
+  "parent": "ac6be8e3473f08c44fe8e9407dc33c0fb53086d6",
+  "parent_tree": "7591cf7c908c9f7258d0d9512fc79d084d73fbaa",
+  "head": "394d35d4175716a4fc2947e3d5fbdbc89c167237",
+  "tree": "902527f0635fb6c86890fe778244f393559e022b",
+  "counters": {
+    "local": 255,
+    "native": 57,
+    "host_cases": 48
+  },
+  "logical_host_sites": 6,
+  "sdk_acquisitions": 1,
+  "ctest": {
+    "gcc": 18,
+    "clang": 18,
+    "asan": 18,
+    "ubsan_selected": 11,
+    "old_gcc_selected": 3
+  },
+  "emitted": [
+    {
+      "path": "build-asan/p1517-native/p1517-1nzu9epw/nonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "path": "build-asan/p1517-native/p1517-1nzu9epw/zero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    {
+      "path": "build-clang/p1517-native/p1517-t76996cp/nonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "path": "build-clang/p1517-native/p1517-t76996cp/zero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    {
+      "path": "build-gcc/p1517-native/p1517-5b85d7fk/nonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "path": "build-gcc/p1517-native/p1517-5b85d7fk/zero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    {
+      "path": "build-ubsan/p1517-native/p1517-vne31dpy/nonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "path": "build-ubsan/p1517-native/p1517-vne31dpy/zero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    }
+  ],
+  "record_count": 313,
+  "result_count": 313,
+  "first_new_red": 7,
+  "expected_nonzero_cli": [
+    113,
+    115,
+    117,
+    151,
+    153,
+    155,
+    282,
+    284,
+    286,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296
+  ],
+  "actual_clang": "23.1.3",
+  "actual_gcc": "14.2.0",
+  "frontend_only": true,
+  "LLVM_C_API": "NOT_RUN",
+  "remote_Compiler_branch_PR_CI": 0,
+  "independent_inputs_read": false,
+  "old_P1517": "immutable local80/80 native19/36 ENV-PARTIAL; distinct successor evidence",
+  "value_alignment": "UNMEASURED author+ordinary-safe caller UB audit closure vs well-factored C; Product GO PAUSED/H1 HOLD",
+  "free_bytes": 62226976768,
+  "free_inodes": 4147398
+}

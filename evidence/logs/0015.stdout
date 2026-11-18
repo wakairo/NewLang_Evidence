@@ -1,0 +1,94 @@
+[  0%] Building C object CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o
+[  0%] Building C object CMakeFiles/newlang_source.dir/src/source.c.o
+[  0%] Linking C static library libnewlang_diagnostic.a
+[  0%] Linking C static library libnewlang_source.a
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_source
+[ 14%] Building C object CMakeFiles/newlang_lexer.dir/src/lexer.c.o
+[ 14%] Building C object CMakeFiles/newlang_syntax.dir/src/syntax.c.o
+[ 14%] Linking C static library libnewlang_syntax.a
+[ 14%] Linking C static library libnewlang_lexer.a
+[ 14%] Built target newlang_lexer
+[ 14%] Built target newlang_syntax
+[ 14%] Building C object CMakeFiles/newlang_parser.dir/src/parser.c.o
+[ 14%] Building C object CMakeFiles/newlang_checked.dir/src/checked.c.o
+[ 28%] Linking C static library libnewlang_checked.a
+[ 28%] Built target newlang_checked
+[ 28%] Linking C static library libnewlang_parser.a
+[ 28%] Built target newlang_parser
+[ 28%] Building C object CMakeFiles/newlang_semantic.dir/src/copy_body.c.o
+[ 28%] Building C object CMakeFiles/newlang_semantic.dir/src/array4.c.o
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/if_field.c.o
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/semantic.c.o
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o
+[ 42%] Building C object CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/node_join.c.o
+[ 57%] Building C object CMakeFiles/newlang_semantic.dir/src/node_links.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/sum.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/function_body.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o
+[ 71%] Building C object CMakeFiles/newlang_semantic.dir/src/custody.c.o
+[ 85%] Building C object CMakeFiles/newlang_semantic.dir/src/control.c.o
+[ 85%] Linking C static library libnewlang_semantic.a
+[ 85%] Built target newlang_semantic
+[ 85%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o
+[ 85%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o
+[ 85%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o
+[ 85%] Linking C static library libnewlang_checked_c_node.a
+[ 85%] Built target newlang_checked_c_node
+[ 85%] Building C object CMakeFiles/newlangc.dir/src/main.c.o
+[100%] Linking C executable newlangc
+[100%] Built target newlangc
+[  0%] Built target newlang_source
+[  0%] Built target newlang_diagnostic
+[ 14%] Built target newlang_lexer
+[ 14%] Built target newlang_syntax
+[ 28%] Built target newlang_checked
+[ 28%] Built target newlang_parser
+[ 85%] Built target newlang_semantic
+[100%] Building C object CMakeFiles/p1517_public_owned.dir/tests/p1517/public_owned.c.o
+[100%] Linking C executable p1517_public_owned
+[100%] Built target p1517_public_owned
+[  0%] Built target newlang_source
+[  0%] Built target newlang_diagnostic
+[ 16%] Built target newlang_lexer
+[ 16%] Built target newlang_syntax
+[ 33%] Built target newlang_checked
+[ 33%] Built target newlang_parser
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o
+[100%] Linking C executable p1517_safety
+[100%] Built target p1517_safety
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_source
+[ 16%] Built target newlang_lexer
+[ 16%] Built target newlang_syntax
+[ 16%] Built target newlang_parser
+[ 33%] Built target newlang_checked
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1517_cli_fault.dir/src/main.c.o
+[100%] Building C object CMakeFiles/p1517_cli_fault.dir/tests/p1517/cli_fault.c.o
+[100%] Linking C executable p1517_cli_fault
+[100%] Built target p1517_cli_fault
+[  0%] Built target newlang_source
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_syntax
+[ 16%] Built target newlang_lexer
+[ 33%] Built target newlang_checked
+[ 33%] Built target newlang_parser
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1507_probe.dir/tests/p1507/probe.c.o
+[100%] Linking C executable p1507_probe
+[100%] Built target p1507_probe

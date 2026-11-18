@@ -1,0 +1,13 @@
+-- The C compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /workspace/p1525-evidence/cc-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Frontend-only: LLVM discovery and llvm.c_api smoke omitted
+-- Found Python3: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 (found suitable version "3.12.14", minimum required is "3.12") found components: Interpreter
+P1117 current oracle preserves original p504 6fc73c22f544e4d66d1eaf8d6526868cf7bb15d76ea2ab93f1bae880987e4e79
+P1117 current oracle preserves original p603 dba648f261a0ae2415c0ccb0e0bc0070399b9ee1dcb52fad5c97fe1b7fa0e040
+-- Configuring done (1.5s)
+-- Generating done (0.6s)
+-- Build files have been written to: /workspace/p1525-evidence/build-gcc

@@ -1,0 +1,276 @@
+Start testing: Nov 18 18:57 JST
+----------------------------------------------------------
+19/1167 Testing: p1517_zero_owned.unit
+19/1167 Test: p1517_zero_owned.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_public_owned" "/workspace/NewLang_P1525/tests/p1517/P-zero.nl" "0"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_zero_owned.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=0 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_zero_owned.unit" end time: Nov 18 18:57 JST
+"p1517_zero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/1167 Testing: p1517_nonzero_owned.unit
+20/1167 Test: p1517_nonzero_owned.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_public_owned" "/workspace/NewLang_P1525/tests/p1517/P-nonzero.nl" "42"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_nonzero_owned.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=42 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=42 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=42
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_nonzero_owned.unit" end time: Nov 18 18:57 JST
+"p1517_nonzero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/1167 Testing: p1517_owner_authentication.unit
+21/1167 Test: p1517_owner_authentication.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "attack" "/workspace/NewLang_P1525/tests/p1517/P-zero.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_owner_authentication.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+definition status=0 code=none
+actual status=0 code=none
+definition status=0 code=none
+actual status=0 code=none
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign world public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign source public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver unrelated callee body public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper same numeric IDs foreign authentic origin public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 artifact negatives=34 plus foreign origin; pristine retry PASS
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_owner_authentication.unit" end time: Nov 18 18:57 JST
+"p1517_owner_authentication.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/1167 Testing: p1517_negative_H1-leak.unit
+28/1167 Test: p1517_negative_H1-leak.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-H1-leak.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_H1-leak.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-H1-leak.nl status=3 code=ALLOCATED-CAPTURED-JOIN-PRECISION
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_H1-leak.unit" end time: Nov 18 18:57 JST
+"p1517_negative_H1-leak.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/1167 Testing: p1517_negative_foreign-allocation.unit
+29/1167 Test: p1517_negative_foreign-allocation.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-foreign-allocation.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_foreign-allocation.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-foreign-allocation.nl status=1 code=P193-CALL-BACKING
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_foreign-allocation.unit" end time: Nov 18 18:57 JST
+"p1517_negative_foreign-allocation.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/1167 Testing: p1517_negative_foreign-domain.unit
+30/1167 Test: p1517_negative_foreign-domain.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-foreign-domain.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_foreign-domain.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-foreign-domain.nl status=1 code=P193-CALL-DOMAIN
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_foreign-domain.unit" end time: Nov 18 18:57 JST
+"p1517_negative_foreign-domain.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/1167 Testing: p1517_negative_foreign-pointer.unit
+31/1167 Test: p1517_negative_foreign-pointer.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-foreign-pointer.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_foreign-pointer.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-foreign-pointer.nl status=1 code=P193-CALL-DOMAIN
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_foreign-pointer.unit" end time: Nov 18 18:57 JST
+"p1517_negative_foreign-pointer.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/1167 Testing: p1517_negative_incomplete-callee.unit
+32/1167 Test: p1517_negative_incomplete-callee.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-incomplete-callee.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_incomplete-callee.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-incomplete-callee.nl status=1 code=P193-DEFINITION-OBLIGATION
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_incomplete-callee.unit" end time: Nov 18 18:57 JST
+"p1517_negative_incomplete-callee.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/1167 Testing: p1517_negative_owner-reused.unit
+33/1167 Test: p1517_negative_owner-reused.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-owner-reused.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_owner-reused.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-owner-reused.nl status=1 code=P3-USE-AFTER-CONSUME
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_owner-reused.unit" end time: Nov 18 18:57 JST
+"p1517_negative_owner-reused.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/1167 Testing: p1517_negative_stale-read.unit
+34/1167 Test: p1517_negative_stale-read.unit
+Command: "/workspace/p1525-evidence/build-ubsan/p1517_safety" "negative" "/workspace/NewLang_P1525/tests/p1517/N-stale-read.nl"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_negative_stale-read.unit" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1525/tests/p1517/N-stale-read.nl status=1 code=P3-USE-AFTER-CONSUME
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_negative_stale-read.unit" end time: Nov 18 18:57 JST
+"p1517_negative_stale-read.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/1167 Testing: p1517_native.integration
+35/1167 Test: p1517_native.integration
+Command: "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12" "/workspace/NewLang_P1525/tests/p1517/native.py" "/workspace/p1525-evidence/build-ubsan/newlangc" "/workspace/p1525-evidence/cc-clang" "/workspace/NewLang_P1525/tests/p1517" "/workspace/p1525-evidence/build-ubsan/p1517-native" "undefined"
+Directory: /workspace/p1525-evidence/build-ubsan
+"p1517_native.integration" start time: Nov 18 18:57 JST
+Output:
+----------------------------------------------------------
+P1517 native two sources x O0/O2 x H0/H1/H2 PASS /workspace/p1525-evidence/build-ubsan/p1517-native/p1517-vne31dpy
+<end of output>
+Test time =   1.50 sec
+----------------------------------------------------------
+Test Passed.
+"p1517_native.integration" end time: Nov 18 18:57 JST
+"p1517_native.integration" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Nov 18 18:57 JST

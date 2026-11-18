@@ -1,0 +1,146 @@
+Start testing: Nov 18 19:00 JST
+----------------------------------------------------------
+1/1167 Testing: p1507_A-direct-zero_owned.unit
+1/1167 Test: p1507_A-direct-zero_owned.unit
+Command: "/workspace/p1525-evidence/build-gcc/p1507_probe" "/workspace/NewLang_P1525/tests/p1507/A-direct-zero.nl"
+Directory: /workspace/p1525-evidence/build-gcc
+"p1507_A-direct-zero_owned.unit" start time: Nov 18 19:00 JST
+Output:
+----------------------------------------------------------
+definition status=0 code=none
+actual status=0 code=none
+COPY depth=1 node=11 root=1 child=2 index=0 entry-regions=0 entry-domains=0
+MATCH depth=1 id=17 field=1 captured=0 unchanged=0 normal=2
+MATCH depth=2 id=30 field=1 captured=1 unchanged=0 normal=2
+COPY depth=3 node=79 root=1 child=2 index=0 entry-regions=2 entry-domains=2
+P1507 genuine source-issued MACHINE/origin/Copy validators PASS
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"p1507_A-direct-zero_owned.unit" end time: Nov 18 19:00 JST
+"p1507_A-direct-zero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/1167 Testing: p1507_B-direct-index-one_owned.unit
+2/1167 Test: p1507_B-direct-index-one_owned.unit
+Command: "/workspace/p1525-evidence/build-gcc/p1507_probe" "/workspace/NewLang_P1525/tests/p1507/B-direct-index-one.nl"
+Directory: /workspace/p1525-evidence/build-gcc
+"p1507_B-direct-index-one_owned.unit" start time: Nov 18 19:00 JST
+Output:
+----------------------------------------------------------
+definition status=0 code=none
+actual status=0 code=none
+COPY depth=1 node=11 root=1 child=3 index=1 entry-regions=0 entry-domains=0
+MATCH depth=1 id=17 field=1 captured=0 unchanged=0 normal=2
+MATCH depth=2 id=30 field=1 captured=1 unchanged=0 normal=2
+COPY depth=3 node=79 root=1 child=3 index=1 entry-regions=2 entry-domains=2
+P1507 genuine source-issued MACHINE/origin/Copy validators PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p1507_B-direct-index-one_owned.unit" end time: Nov 18 19:00 JST
+"p1507_B-direct-index-one_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/1167 Testing: p1507_direct_tamper.unit
+5/1167 Test: p1507_direct_tamper.unit
+Command: "/workspace/p1525-evidence/build-gcc/p1507_probe" "attack" "/workspace/NewLang_P1525/tests/p1507/A-direct-zero.nl"
+Directory: /workspace/p1525-evidence/build-gcc
+"p1507_direct_tamper.unit" start time: Nov 18 19:00 JST
+Output:
+----------------------------------------------------------
+definition status=0 code=none
+actual status=0 code=none
+COPY depth=1 node=11 root=1 child=2 index=0 entry-regions=0 entry-domains=0
+MATCH depth=1 id=17 field=1 captured=0 unchanged=0 normal=2
+MATCH depth=2 id=30 field=1 captured=1 unchanged=0 normal=2
+COPY depth=3 node=79 root=1 child=2 index=0 entry-regions=2 entry-domains=2
+definition status=0 code=none
+actual status=0 code=none
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper actual old result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper wrong original T field/current sibling public-proof=0
+emitter status=1 out=NULL length=98765
+tamper H2 witness substituted for normal failure edge public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper wrong original T field/current sibling public-proof=0
+emitter status=1 out=NULL length=98765
+tamper H2 witness substituted for normal failure edge public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper direct operation/current/actual tamper public-proof=0
+emitter status=1 out=NULL length=98765
+tamper actual old result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper same numeric IDs, foreign genuine origin public-proof=0
+emitter status=1 out=NULL length=98765
+tamper foreign world for authentic call public-proof=0
+emitter status=1 out=NULL length=98765
+tamper foreign source for authentic call public-proof=0
+emitter status=1 out=NULL length=98765
+tamper foreign world for authentic call public-proof=0
+emitter status=1 out=NULL length=98765
+tamper foreign source for authentic call public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=10786
+P1507 32 operation/loan/join attacks + foreign issuer/world/root PASS
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"p1507_direct_tamper.unit" end time: Nov 18 19:00 JST
+"p1507_direct_tamper.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 19:00 JST
