@@ -236,8 +236,11 @@
   {
     "original": "/workspace/p1529-evidence/archive-preflight.json",
     "archive": "raw/archive-preflight.json",
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "bytes": 127,
+    "sha256": "83460b883715aa148386b6b6261d3586136700f47212cad21d15323692f04696",
+    "first_capture_bytes": 0,
+    "first_capture_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "first_capture_retained": "custody/history/first-empty-preflight.json.data"
   },
   {
     "original": "/workspace/p1529-evidence/baseline-prediction-mismatch.txt",

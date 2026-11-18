@@ -1,0 +1,99 @@
+[
+  {
+    "argv": [
+      "git",
+      "init",
+      "-q"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "fetch",
+      "--depth=1",
+      "https://github.com/wakairo/NewLang_Compiler.git",
+      "7deabd1b1f44bc40862b6a28c89fde502832d8cb"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "From https://github.com/wakairo/NewLang_Compiler\n * branch            7deabd1b1f44bc40862b6a28c89fde502832d8cb -> FETCH_HEAD\n"
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "7deabd1b1f44bc40862b6a28c89fde502832d8cb"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "HEAD is now at 7deabd1 Consume fault helper write result under fortified Release builds\n"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD^{tree}"
+    ],
+    "exit": 0,
+    "stdout": "20083ff35349efd254e015f90dcac38a8d16852a\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "apply",
+      "--index",
+      "/workspace/p1529-custody-restore/candidate/local-candidate.patch"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "write-tree"
+    ],
+    "exit": 0,
+    "stdout": "0c4d781d22216bf65dd2ee01f22d5c6cc239ceef\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "hash-object",
+      "-w",
+      "-t",
+      "commit",
+      "/workspace/p1529-custody-restore/candidate/original.commit"
+    ],
+    "exit": 0,
+    "stdout": "738024ff18973459c1ec83efcf8dbd92619fb0bd\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "reset",
+      "--hard",
+      "738024ff18973459c1ec83efcf8dbd92619fb0bd"
+    ],
+    "exit": 0,
+    "stdout": "HEAD is now at 738024f fix(c17): authenticate pure T observations before terminal allocation match\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]
