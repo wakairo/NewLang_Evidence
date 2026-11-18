@@ -1,0 +1,37 @@
+[
+  {
+    "path": "tests/p1529/A-prefix-zero.nl",
+    "bytes": 3029,
+    "sha256": "8957ade54807b093ef31d9025882bdaef83abd207f623fa16eb0e4ccce9d151d"
+  },
+  {
+    "path": "tests/p1529/B-prefix-nonzero.nl",
+    "bytes": 3030,
+    "sha256": "3dd0056b3572d82d35b52f246b431309587307ef902289583856803cb5875209"
+  },
+  {
+    "path": "tests/p1529/C-oldcopy-zero.nl",
+    "bytes": 2956,
+    "sha256": "aa5d230d9d708ea13984e33109f76b76d8cd38dc7492b64b522633055fce84b7"
+  },
+  {
+    "path": "tests/p1529/CMakeLists.txt",
+    "bytes": 144,
+    "sha256": "7b68b8475724507a4fa50d59fa28c46ed763275380763a7259fd2b6b7bff9b92"
+  },
+  {
+    "path": "tests/p1529/D-combined-nonzero.nl",
+    "bytes": 3044,
+    "sha256": "5b4ac8bbd6e67804e5712f55082e21a5513dc542adbb81d6a6622033f1df41e1"
+  },
+  {
+    "path": "tests/p1529/passive.h",
+    "bytes": 13753,
+    "sha256": "1287b43a4876e268bae7e42f0d37b05240340b86b7dc7b0de4cad779c8537dab"
+  },
+  {
+    "path": "tests/p1529/public_owned.c",
+    "bytes": 19625,
+    "sha256": "710f725acf2589a52633951f0d416518c8eeb801dd059c65ff9741a0b1478021"
+  }
+]

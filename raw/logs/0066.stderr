@@ -1,0 +1,219 @@
+In file included from /workspace/p1529-evidence/A-prefix-zero.c:12:
+/workspace/p1529-evidence/A-prefix-zero.c: In function ‘nl_owner_10’:
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:93:1: note: in expansion of macro ‘NL_NODE_BIND’
+   93 | NL_NODE_BIND(9, 32, 4, &nl_b_9_32);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:100:1: note: in expansion of macro ‘NL_NODE_BIND’
+  100 | NL_NODE_BIND(9, 33, 4, &nl_b_9_33);
+      | ^~~~~~~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c: In function ‘main’:
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:126:1: note: in expansion of macro ‘NL_NODE_BIND’
+  126 | NL_NODE_BIND(0, 6, 4, &nl_b_0_6);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:130:1: note: in expansion of macro ‘NL_NODE_BIND’
+  130 | NL_NODE_BIND(0, 7, 4, &nl_b_0_7);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:134:1: note: in expansion of macro ‘NL_NODE_BIND’
+  134 | NL_NODE_BIND(0, 8, 4, &nl_b_0_8);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:154:1: note: in expansion of macro ‘NL_NODE_BIND’
+  154 | NL_NODE_BIND(2, 12, 4, &nl_b_2_12);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:161:1: note: in expansion of macro ‘NL_NODE_BIND’
+  161 | NL_NODE_BIND(2, 13, 4, &nl_b_2_13);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:166:1: note: in expansion of macro ‘NL_NODE_BIND’
+  166 | NL_NODE_BIND(2, 14, 4, &nl_b_2_14);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:184:1: note: in expansion of macro ‘NL_NODE_BIND’
+  184 | NL_NODE_BIND(2, 16, 2, &nl_b_2_16);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:199:1: note: in expansion of macro ‘NL_NODE_BIND’
+  199 | NL_NODE_BIND(4, 18, 4, &nl_b_4_18);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:206:1: note: in expansion of macro ‘NL_NODE_BIND’
+  206 | NL_NODE_BIND(4, 19, 4, &nl_b_4_19);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:235:1: note: in expansion of macro ‘NL_NODE_BIND’
+  235 | NL_NODE_BIND(6, 20, 4, &nl_b_6_20);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:242:1: note: in expansion of macro ‘NL_NODE_BIND’
+  242 | NL_NODE_BIND(6, 21, 4, &nl_b_6_21);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:247:1: note: in expansion of macro ‘NL_NODE_BIND’
+  247 | NL_NODE_BIND(6, 22, 4, &nl_b_6_22);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:265:1: note: in expansion of macro ‘NL_NODE_BIND’
+  265 | NL_NODE_BIND(6, 24, 2, &nl_b_6_24);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:276:1: note: in expansion of macro ‘NL_NODE_BIND’
+  276 | NL_NODE_BIND(8, 26, 4, &nl_b_8_26);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:286:1: note: in expansion of macro ‘NL_NODE_BIND’
+  286 | NL_NODE_BIND(6, 27, 4, &nl_b_6_27);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:305:1: note: in expansion of macro ‘NL_NODE_BIND’
+  305 | NL_NODE_BIND(6, 35, 4, &nl_b_6_35);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:312:1: note: in expansion of macro ‘NL_NODE_BIND’
+  312 | NL_NODE_BIND(6, 36, 4, &nl_b_6_36);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:330:1: note: in expansion of macro ‘NL_NODE_BIND’
+  330 | NL_NODE_BIND(6, 41, 4, &nl_b_6_41);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:334:1: note: in expansion of macro ‘NL_NODE_BIND’
+  334 | NL_NODE_BIND(6, 42, 4, &nl_b_6_42);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:340:1: note: in expansion of macro ‘NL_NODE_BIND’
+  340 | NL_NODE_BIND(0, 9, 4, &nl_b_0_9);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:344:1: note: in expansion of macro ‘NL_NODE_BIND’
+  344 | NL_NODE_BIND(0, 10, 4, &nl_b_0_10);
+      | ^~~~~~~~~~~~
+/workspace/NewLang_P1529/tests/p1529/passive.h:15:5: error: expected expression before ‘do’
+   15 |     do {                                                                       \
+      |     ^~
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:18: note: in expansion of macro ‘REQUIRE’
+   75 |                 +REQUIRE(x == (old_copies == 0   ? initial()                   \
+      |                  ^~~~~~~
+/workspace/p1529-evidence/A-prefix-zero.c:348:1: note: in expansion of macro ‘NL_NODE_BIND’
+  348 | NL_NODE_BIND(0, 11, 4, &nl_b_0_11);
+      | ^~~~~~~~~~~~

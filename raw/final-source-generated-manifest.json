@@ -1,0 +1,137 @@
+[
+  {
+    "path": "tests/p1529/A-prefix-zero.nl",
+    "bytes": 3029,
+    "sha256": "8957ade54807b093ef31d9025882bdaef83abd207f623fa16eb0e4ccce9d151d"
+  },
+  {
+    "path": "tests/p1529/B-prefix-nonzero.nl",
+    "bytes": 3030,
+    "sha256": "3dd0056b3572d82d35b52f246b431309587307ef902289583856803cb5875209"
+  },
+  {
+    "path": "tests/p1529/C-oldcopy-zero.nl",
+    "bytes": 2956,
+    "sha256": "aa5d230d9d708ea13984e33109f76b76d8cd38dc7492b64b522633055fce84b7"
+  },
+  {
+    "path": "tests/p1529/CMakeLists.txt",
+    "bytes": 1627,
+    "sha256": "64b3bd6e02058abbbf00b560868b31ed67c7e41c3b7e497a07159787624b3053"
+  },
+  {
+    "path": "tests/p1529/D-combined-nonzero.nl",
+    "bytes": 3044,
+    "sha256": "5b4ac8bbd6e67804e5712f55082e21a5513dc542adbb81d6a6622033f1df41e1"
+  },
+  {
+    "path": "tests/p1529/N-foreign-allocation.nl",
+    "bytes": 3029,
+    "sha256": "ad84316c67b33725d9806abb1f3987d72298bc8d71af058a9687799286edd84a"
+  },
+  {
+    "path": "tests/p1529/N-foreign-domain.nl",
+    "bytes": 3029,
+    "sha256": "973226d3ea3ba0dac7bf4d9579eee6b49a5d80e50dc7f422134073e995c34b91"
+  },
+  {
+    "path": "tests/p1529/N-foreign-pointer.nl",
+    "bytes": 3029,
+    "sha256": "0f20c5e90dbd1e3635c1d393d3ee1b340f1c989d7acf281c9815ead62f207f48"
+  },
+  {
+    "path": "tests/p1529/N-live-loan.nl",
+    "bytes": 3128,
+    "sha256": "50887eab30a40e8bd77c9237fe4acf2400aed9e0d1ad9192b3f9350bd3b9b846"
+  },
+  {
+    "path": "tests/p1529/README.md",
+    "bytes": 4032,
+    "sha256": "f414b3236296fe014c02ea9e836e5c41539d1a770a1cd4df42b2089aa43ac34b"
+  },
+  {
+    "path": "tests/p1529/consumer.c",
+    "bytes": 2893,
+    "sha256": "eb518f5474efdca02614cfa04f082bc7f388a170e2480dea939aeb31c7177d2a"
+  },
+  {
+    "path": "tests/p1529/native.py",
+    "bytes": 2692,
+    "sha256": "f17c7c00023f3791e4924bf265b78e9d8cf91cc6a291959aedb6f3f87efce9d1"
+  },
+  {
+    "path": "tests/p1529/passive.h",
+    "bytes": 14072,
+    "sha256": "b67d18f699e2d07219b237c8a01a07f31ebaf7238c105f01d3e42b002cae166b"
+  },
+  {
+    "path": "tests/p1529/public_owned.c",
+    "bytes": 19625,
+    "sha256": "710f725acf2589a52633951f0d416518c8eeb801dd059c65ff9741a0b1478021"
+  },
+  {
+    "path": "/workspace/p1529-evidence/A-prefix-zero.asan.c",
+    "bytes": 11563,
+    "sha256": "3f24339e575464d797517386655c91b2ecf05ff4d4d1c3d1d3f29bc6facd77e4"
+  },
+  {
+    "path": "/workspace/p1529-evidence/A-prefix-zero.c",
+    "bytes": 11563,
+    "sha256": "3f24339e575464d797517386655c91b2ecf05ff4d4d1c3d1d3f29bc6facd77e4"
+  },
+  {
+    "path": "/workspace/p1529-evidence/A-prefix-zero.ubsan.c",
+    "bytes": 11563,
+    "sha256": "3f24339e575464d797517386655c91b2ecf05ff4d4d1c3d1d3f29bc6facd77e4"
+  },
+  {
+    "path": "/workspace/p1529-evidence/B-prefix-nonzero.asan.c",
+    "bytes": 11564,
+    "sha256": "6ca6ab8e45a9219382d534effc080c86ddb1fb21e6cc9ae23139849035aae41c"
+  },
+  {
+    "path": "/workspace/p1529-evidence/B-prefix-nonzero.c",
+    "bytes": 11564,
+    "sha256": "6ca6ab8e45a9219382d534effc080c86ddb1fb21e6cc9ae23139849035aae41c"
+  },
+  {
+    "path": "/workspace/p1529-evidence/B-prefix-nonzero.ubsan.c",
+    "bytes": 11564,
+    "sha256": "6ca6ab8e45a9219382d534effc080c86ddb1fb21e6cc9ae23139849035aae41c"
+  },
+  {
+    "path": "/workspace/p1529-evidence/C-oldcopy-zero.asan.c",
+    "bytes": 11338,
+    "sha256": "92d26f4203110d39d79f0abbe44345078d897bc9568609e40f33d77fc8001405"
+  },
+  {
+    "path": "/workspace/p1529-evidence/C-oldcopy-zero.baseline.c",
+    "bytes": 11338,
+    "sha256": "92d26f4203110d39d79f0abbe44345078d897bc9568609e40f33d77fc8001405"
+  },
+  {
+    "path": "/workspace/p1529-evidence/C-oldcopy-zero.c",
+    "bytes": 11338,
+    "sha256": "92d26f4203110d39d79f0abbe44345078d897bc9568609e40f33d77fc8001405"
+  },
+  {
+    "path": "/workspace/p1529-evidence/C-oldcopy-zero.ubsan.c",
+    "bytes": 11338,
+    "sha256": "92d26f4203110d39d79f0abbe44345078d897bc9568609e40f33d77fc8001405"
+  },
+  {
+    "path": "/workspace/p1529-evidence/D-combined-nonzero.asan.c",
+    "bytes": 11570,
+    "sha256": "22f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b"
+  },
+  {
+    "path": "/workspace/p1529-evidence/D-combined-nonzero.c",
+    "bytes": 11570,
+    "sha256": "22f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b"
+  },
+  {
+    "path": "/workspace/p1529-evidence/D-combined-nonzero.ubsan.c",
+    "bytes": 11570,
+    "sha256": "22f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b"
+  }
+]

@@ -1,0 +1,12 @@
+/workspace/NewLang_P1529/tests/p1529/passive.h:75:60: error: code should be clang-formatted [-Wclang-format-violations]
+                REQUIRE(x == (old_copies == 0   ? initial()                   \
+                                                           ^
+/workspace/NewLang_P1529/tests/p1529/passive.h:76:54: error: code should be clang-formatted [-Wclang-format-violations]
+                               : old_copies == 1 ? 0u                          \
+                                                     ^
+/workspace/NewLang_P1529/tests/p1529/passive.h:77:62: error: code should be clang-formatted [-Wclang-format-violations]
+                                                 : other()));                  \
+                                                             ^
+/workspace/NewLang_P1529/tests/p1529/passive.h:78:30: error: code should be clang-formatted [-Wclang-format-violations]
+                ++old_copies;                                                \
+                             ^

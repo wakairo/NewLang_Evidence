@@ -1,0 +1,15 @@
+{
+  "executed_ledger_ids": [123,124,125,126,127,128,129,130,131,132,133,134,135,136,137],
+  "unique_existing_sites": 6,
+  "fault_retry_cases": 22,
+  "GCC_sites_0_through_5": "12 fault/retry cases PASS",
+  "ASan_sites_3_4_5": "6 fault/retry cases PASS",
+  "named_main_callee_text_buffer_sites": "4 fault/retry cases PASS; duplicate sites3/4, no new physical sites",
+  "semantic_named_negative_retry": "PASS, outside host fault cases",
+  "every_named_failure_retained_original_sentinel": true,
+  "no_named_staging_leaks": true,
+  "every_named_retry_exact_pristine_C17_bytes": true,
+  "snapshot_and_NULL_length_checks": "existing p1517_safety apparatus, raw logs retained",
+  "guest_allocation_failures_are_separate": true,
+  "custody_reruns": 0
+}

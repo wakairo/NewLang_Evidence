@@ -1,0 +1,42 @@
+{
+  "parent": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "head": "738024ff18973459c1ec83efcf8dbd92619fb0bd",
+  "tree": "0c4d781d22216bf65dd2ee01f22d5c6cc239ceef",
+  "totals": {
+    "local": 181,
+    "native": 45,
+    "build": 4,
+    "host": 22
+  },
+  "host_sites": 6,
+  "baseline": {
+    "A": "CHECK0/ownedMACHINE/C17exit4",
+    "B": "CHECK0/ownedMACHINE/C17exit4",
+    "C": "CHECK0/ownedMACHINE/C17exit0 already supported",
+    "D": "CHECK0/ownedMACHINE/C17exit4"
+  },
+  "candidate": "all4 CHECK0/ownedMACHINE/C17/API0",
+  "native_matrix": {
+    "AB-GCC-Clang-O0-O2-H0-H1-H2": 24,
+    "CD-GCC-Clang-O2-H0-H1-H2": 12,
+    "D-Clang-ASan-O2-H0-H1-H2": 3,
+    "A-Clang-UBSan-O2-H0-H1-H2": 3,
+    "old-inline-field1-linked-zero-H2": 2,
+    "formatted-observer-final-zero-H2": 1
+  },
+  "source_negative": 4,
+  "artifact_negative": 4,
+  "selected_CTest_units": "9/9",
+  "full_CTest": "NOT_RUN",
+  "native_CTest_driver": "NOT_RUN; same helper selected directly",
+  "first_refusal_ids": [
+    8,
+    10,
+    14
+  ],
+  "apparatus_compile_RED": 66,
+  "formatter_RED": 148,
+  "baseline_prediction_mismatch_id": 12,
+  "compiler_remote_PR_CI": 0,
+  "SDK_acquisition": 0
+}

@@ -1,0 +1,1781 @@
+From 738024ff18973459c1ec83efcf8dbd92619fb0bd Mon Sep 17 00:00:00 2001
+From: J W <a_kg@ninegw.sakura.ne.jp>
+Date: Wed, 18 Nov 2026 21:41:02 +0900
+Subject: [PATCH] fix(c17): authenticate pure T observations before terminal
+ allocation match
+
+---
+ CMakeLists.txt                             |   1 +
+ src/checked_c_allocated_current_internal.h |  63 +++-
+ tests/p1529/A-prefix-zero.nl               |  83 ++++
+ tests/p1529/B-prefix-nonzero.nl            |  83 ++++
+ tests/p1529/C-oldcopy-zero.nl              |  81 ++++
+ tests/p1529/CMakeLists.txt                 |  26 ++
+ tests/p1529/D-combined-nonzero.nl          |  83 ++++
+ tests/p1529/N-foreign-allocation.nl        |  83 ++++
+ tests/p1529/N-foreign-domain.nl            |  83 ++++
+ tests/p1529/N-foreign-pointer.nl           |  83 ++++
+ tests/p1529/N-live-loan.nl                 |  86 +++++
+ tests/p1529/README.md                      |  63 ++++
+ tests/p1529/consumer.c                     |  81 ++++
+ tests/p1529/native.py                      |  62 +++
+ tests/p1529/passive.h                      | 235 ++++++++++++
+ tests/p1529/public_owned.c                 | 417 +++++++++++++++++++++
+ 16 files changed, 1606 insertions(+), 7 deletions(-)
+ create mode 100644 tests/p1529/A-prefix-zero.nl
+ create mode 100644 tests/p1529/B-prefix-nonzero.nl
+ create mode 100644 tests/p1529/C-oldcopy-zero.nl
+ create mode 100644 tests/p1529/CMakeLists.txt
+ create mode 100644 tests/p1529/D-combined-nonzero.nl
+ create mode 100644 tests/p1529/N-foreign-allocation.nl
+ create mode 100644 tests/p1529/N-foreign-domain.nl
+ create mode 100644 tests/p1529/N-foreign-pointer.nl
+ create mode 100644 tests/p1529/N-live-loan.nl
+ create mode 100644 tests/p1529/README.md
+ create mode 100644 tests/p1529/consumer.c
+ create mode 100644 tests/p1529/native.py
+ create mode 100644 tests/p1529/passive.h
+ create mode 100644 tests/p1529/public_owned.c
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0e2458ac40894be2ce82b134b9cf36d158eff3e0..127c093d21bc294bd37b30f85edaa5410ae9ecaa 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -111,6 +111,7 @@ if(BUILD_TESTING)
+     find_package(Python3 3.12 REQUIRED COMPONENTS Interpreter)
+     include(tests/p1507/CMakeLists.txt)
+     include(tests/p1517/CMakeLists.txt)
++    include(tests/p1529/CMakeLists.txt)
+     include(tests/p1492/CMakeLists.txt)
+     include(tests/p1499/CMakeLists.txt)
+     include(tests/p1208/CMakeLists.txt)
+diff --git a/src/checked_c_allocated_current_internal.h b/src/checked_c_allocated_current_internal.h
+index 48ca4d75bc4347418abf923ad9527ad530879891..57ef4efbb141bfcfa48b5f55d31566a9dd955830 100644
+--- a/src/checked_c_allocated_current_internal.h
++++ b/src/checked_c_allocated_current_internal.h
+@@ -33,6 +33,47 @@ static bool copy_conditional_join(const Emit *e, const NLCheckedFragment *f,
+            unknown.dependencies == NL_DEPENDENCY_FREE &&
+            !unknown.value_dependency_count;
+ }
++/* Borrow only an ordinary read of the same original T in the actual startup
++ * handoff world. This recognizes an emitted observation, not an effect to skip.
++ * The whole-source seal and the later carrier/world checks remain mandatory. */
++static bool copy_prefix_observation(Emit *e, const NLCheckedFragment *body,
++                                    const NLCheckedNodeView *binding,
++                                    const NLCopyBodyParameters *first)
++{
++    const NLCheckedNodeView *read =
++        nl_checked_node_view(body, binding->initializer);
++    NLSemanticPlaceView root, child;
++    NLSemanticValueView current, observed;
++    if (binding->kind != NL_CHECKED_BINDING || binding->terminates ||
++        !binding->symbol || !read || read->kind != NL_CHECKED_FIELD_READ ||
++        read->terminates || read->type != e->u8 ||
++        read->value_use != NL_VALUE_COPIED || read->result_count != 1 ||
++        read->results[0].type != e->u8 || !read->field.present ||
++        !read->field.dependency_compatible ||
++        read->field.access != NL_ACCESS_READ ||
++        read->field.nominal != first->field.nominal ||
++        read->field.type != e->u8 || read->field.index > 1 ||
++        read->field.base != first->field.base ||
++        read->field.parent != first->field.parent ||
++        read->field.parent_incarnation != first->field.parent_incarnation ||
++        !nl_semantic_place_view(first->handoff, first->field.parent, &root) ||
++        !root.live || root.type != e->copy_type ||
++        root.incarnation != read->field.parent_incarnation ||
++        root.current_fact != read->field.parent_fact ||
++        root.fixed_field_count != 2 ||
++        root.fixed_fields[read->field.index] != read->field.child ||
++        !nl_semantic_place_view(first->handoff, read->field.child, &child) ||
++        !child.live || child.type != e->u8 ||
++        child.incarnation != read->field.child_incarnation ||
++        child.current_fact != read->field.child_fact ||
++        child.current_value != read->field.old_value ||
++        !copy_plain(first->handoff, child.current_value, e->u8, &current) ||
++        !copy_plain(nl_checked_context(body), read->results[0].value, e->u8,
++                    &observed) ||
++        observed.scalar_value != current.scalar_value)
++        return false;
++    return true;
++}
+ static bool copy_conditional_plan(Emit *e, const NLCheckedFragment *body)
+ {
+     /* Classification only: the whole source seal, both Copy proofs, exact
+@@ -47,26 +88,34 @@ static bool copy_conditional_plan(Emit *e, const NLCheckedFragment *body)
+             binding ? nl_checked_node_view(body, binding->next_item) : NULL,
+         *statement =
+             prefix ? nl_checked_node_view(body, prefix->next_item) : NULL,
+-        *outer = statement ? nl_checked_node_view(body, statement->initializer)
+-                           : NULL,
+         *loan = prefix ? nl_checked_node_view(body, prefix->initializer) : NULL,
+         *block = loan ? nl_checked_node_view(body, loan->initializer) : NULL;
+     NLCopyBodyParameters first, last;
+     if (!root || root->kind != NL_CHECKED_BLOCK || root->terminates ||
+         !binding || binding->kind != NL_CHECKED_BINDING || !prefix ||
+-        prefix->kind != NL_CHECKED_BINDING || !statement ||
+-        statement->kind != NL_CHECKED_STATEMENT || !outer || !loan ||
++        prefix->kind != NL_CHECKED_BINDING || !statement || !loan ||
+         loan->kind != NL_CHECKED_LOAN_HEADER || !block || block->item_count ||
+         e->copy_expected_calls != 2 || e->copy_second_function ||
+         body != e->copy_issuer || !e->scalar_issued || !e->two_heap ||
+         (!e->live_tail && !direct) || e->custody || e->current ||
+-        !copy_conditional_join(e, body, statement->initializer) ||
+-        outer->captured_frame_closed ||
+         !copy_call_proof(e, body, block->tail, &first) ||
+         !copy_call_proof(e, e->copy_conditional_issuer,
+                          e->copy_conditional_call, &last) ||
+         first.field.base != binding->symbol ||
+-        !copy_conditional_field(&first.field, &last.field) ||
++        !copy_conditional_field(&first.field, &last.field))
++        return reject(e);
++    size_t observations = 0;
++    while (statement && statement->kind == NL_CHECKED_BINDING) {
++        if (++observations > root->item_count ||
++            !copy_prefix_observation(e, body, statement, &first))
++            return reject(e);
++        statement = nl_checked_node_view(body, statement->next_item);
++    }
++    const NLCheckedNodeView *outer =
++        statement ? nl_checked_node_view(body, statement->initializer) : NULL;
++    if (!statement || statement->kind != NL_CHECKED_STATEMENT || !outer ||
++        !copy_conditional_join(e, body, statement->initializer) ||
++        outer->captured_frame_closed ||
+         !copy_conditional_field(&outer->field, &first.field))
+         return reject(e);
+     const NLCheckedFragment *none = nl_checked_match_arm(
+diff --git a/tests/p1529/A-prefix-zero.nl b/tests/p1529/A-prefix-zero.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..b6dc0068b76acb319d055d5db14f47ddbfe8fe59
+--- /dev/null
++++ b/tests/p1529/A-prefix-zero.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a1, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/B-prefix-nonzero.nl b/tests/p1529/B-prefix-nonzero.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..d6970fee92ab7bc5de0f9c2cb81497cab0ff2c1b
+--- /dev/null
++++ b/tests/p1529/B-prefix-nonzero.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(37) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a1, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/C-oldcopy-zero.nl b/tests/p1529/C-oldcopy-zero.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..40dc75ef6649fc76128a90a535fc694284928728
+--- /dev/null
++++ b/tests/p1529/C-oldcopy-zero.nl
+@@ -0,0 +1,81 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: before_start }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a1, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/CMakeLists.txt b/tests/p1529/CMakeLists.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a61f3e14afe7b82583032b79566a6e0bf0b13ae
+--- /dev/null
++++ b/tests/p1529/CMakeLists.txt
+@@ -0,0 +1,26 @@
++add_executable(p1529_public_owned tests/p1529/public_owned.c)
++target_link_libraries(p1529_public_owned PRIVATE newlang_semantic newlang_parser)
++add_executable(p1529_consumer tests/p1529/consumer.c)
++target_include_directories(p1529_consumer PRIVATE src)
++target_link_libraries(p1529_consumer PRIVATE newlang_checked_c_node newlang_semantic newlang_parser)
++target_link_options(p1529_consumer PRIVATE -Wl,--wrap=malloc -Wl,--wrap=realloc -Wl,--wrap=nl_sem_clone)
++foreach(p1529_variant A-prefix-zero B-prefix-nonzero C-oldcopy-zero D-combined-nonzero)
++    if(p1529_variant MATCHES "nonzero")
++        set(p1529_sample 37)
++    else()
++        set(p1529_sample 0)
++    endif()
++    add_test(NAME p1529_${p1529_variant}_owned.unit COMMAND p1529_public_owned
++        "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/${p1529_variant}.nl" ${p1529_sample})
++endforeach()
++add_test(NAME p1529_prefix_authentication.unit COMMAND p1529_consumer attack
++    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/D-combined-nonzero.nl")
++foreach(p1529_negative foreign-allocation foreign-domain foreign-pointer live-loan)
++    add_test(NAME p1529_negative_${p1529_negative}.unit COMMAND p1517_safety negative
++        "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/N-${p1529_negative}.nl")
++endforeach()
++add_test(NAME p1529_native.integration COMMAND "${Python3_EXECUTABLE}"
++    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/native.py" "$<TARGET_FILE:newlangc>"
++    "${CMAKE_C_COMPILER}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529"
++    "${CMAKE_CURRENT_BINARY_DIR}/p1529-native" "${NEWLANG_SANITIZER}")
++set_tests_properties(p1529_native.integration PROPERTIES TIMEOUT 180 RUN_SERIAL TRUE)
+diff --git a/tests/p1529/D-combined-nonzero.nl b/tests/p1529/D-combined-nonzero.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..9e5144d30d4ba58b5315ccb646a10e7c5092d2a8
+--- /dev/null
++++ b/tests/p1529/D-combined-nonzero.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    return old;
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: before_start }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(37) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a1, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/N-foreign-allocation.nl b/tests/p1529/N-foreign-allocation.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..235583d09e202f5e1c6a8158a2c33c964f9b15b2
+--- /dev/null
++++ b/tests/p1529/N-foreign-allocation.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a0, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/N-foreign-domain.nl b/tests/p1529/N-foreign-domain.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..e83538d093cfee863285cd4084aa79094ece59c1
+--- /dev/null
++++ b/tests/p1529/N-foreign-domain.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p1, a1, d0);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/N-foreign-pointer.nl b/tests/p1529/N-foreign-pointer.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..b2c7f0cfb717a82f801e75af6e42dd57d9501ff8
+--- /dev/null
++++ b/tests/p1529/N-foreign-pointer.nl
+@@ -0,0 +1,83 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    close_cell(p0, a1, d1);
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/N-live-loan.nl b/tests/p1529/N-live-loan.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..067b6211ab17a10f62720a8110f15f624d207fd4
+--- /dev/null
++++ b/tests/p1529/N-live-loan.nl
+@@ -0,0 +1,86 @@
++// P1529 C1202 own FIRST: finite two-H/four-step terminal consumer composition.
++struct Meter { count: u8, kind: u8 }
++struct Cell { next: Option<ptr<Cell>>, payload: u8 }
++
++fn set_count(dst: ref<write, u8>, next: u8) -> u8 {
++    let old = replace(dst, next);
++    old
++}
++
++fn close_cell(p: ptr<Cell>, a: Allocation, d: LifetimeDomain) -> unit {
++    let empty = loan_exclusive_read(d) { |ending|
++        destroy(p, ending)
++    };
++    let full = erase_slot<Cell>(empty);
++    finalize_domain(d);
++    deallocate(a, full);
++    unit
++}
++
++fn main() -> unit {
++    let meter = Meter { count: u8(83), kind: u8(27) };
++    let before_start = loan_write(meter@count) { |w|
++        set_count(w, u8(0))
++    };
++    let observed_current = meter@count;
++    let observed_sibling = meter@kind;
++    match try_allocate_one<Cell>() {
++        None => { unit },
++        Some(first) => {
++            let OneBacking { allocation, raw } = first;
++            let a0 = allocation;
++            let slot0 = into_slot<Cell>(raw);
++            let d0 = lifetime_domain();
++            let p0 = loan_read(d0) { |stable0|
++                initialize(slot0,
++                    Cell { next: Option<ptr<Cell>>::None,
++                               payload: u8(83) }, stable0)
++            };
++            match try_allocate_one<Cell>() {
++                None => {
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    unit
++                },
++                Some(second) => {
++                    let OneBacking { allocation, raw } = second;
++                    let a1 = allocation;
++                    let slot1 = into_slot<Cell>(raw);
++                    let d1 = lifetime_domain();
++                    let p1 = loan_read(d1) { |stable1|
++                        initialize(slot1,
++                            Cell { next: Option<ptr<Cell>>::None,
++                                       payload: u8(0) }, stable1)
++                    };
++                    let sample = loan_read(d1) { |stable_read|
++                        let r1 = ref_from_ptr(read, p1, stable_read);
++                        read(r1@payload)
++                    };
++                    loan_read(d1) { |kept|
++                        close_cell(p1, a1, d1);
++                        unit
++                    };
++                    let empty0 = loan_exclusive_read(d0) { |end0|
++                        destroy(p0, end0)
++                    };
++                    let full0 = erase_slot<Cell>(empty0);
++                    finalize_domain(d0);
++                    deallocate(a0, full0);
++                    let before_sample = loan_write(meter@count) { |w|
++                        set_count(w, sample)
++                    };
++                    let retained_sample_old = before_sample;
++                    unit
++                },
++            }
++        },
++    };
++    let retained_start_old = before_start;
++    let current = meter@count;
++    let sibling = meter@kind;
++    unit
++}
+diff --git a/tests/p1529/README.md b/tests/p1529/README.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..3403f45bcbf21ed615de486e9b314be17af1cfe9
+--- /dev/null
++++ b/tests/p1529/README.md
+@@ -0,0 +1,63 @@
++# P1529 C1202: finite prefix-read consumer repair
++
++Local parent: unadopted `7deabd1b1f44bc40862b6a28c89fde502832d8cb`.
++Adopted main: `c97ce81c48a0c003b072c77c655bdeb10860ebf1`,
++CURRENT_SPEC selects Draft17.38. Publication requires a separate C release.
++
++The existing C17 planner required the allocation-match statement immediately
++after the startup named Copy. It rejected otherwise legal current/sibling
++observations of the original T. The private planner now recognizes each such
++binding using the actual startup Copy handoff's original root, field,
++incarnation, current facts and scalar value. It still emits those reads through
++the existing field/carrier consumer. It never skips arbitrary effects, creates
++authority, or replaces the whole-source, Copy, arm or typed-owner checks.
++
++| Own FIRST source | Prefix reads | First H byte | Second H byte | Copy return | Unchanged7de C17 |
++| --- | --- | --- | --- | --- | --- |
++| A-prefix-zero | current0, sibling27 | literal83 | 0 | tail | UNSUPPORTED |
++| B-prefix-nonzero | current0, sibling27 | literal83 | 37 | tail | UNSUPPORTED |
++| C-oldcopy-zero | none | old Copy83 | 0 | tail | OK already |
++| D-combined-nonzero | current0, sibling27 | old Copy83 | 37 | explicit | UNSUPPORTED |
++
++All four initially passed ordinary CHECK and genuine public MACHINE/owner/Copy
++observations. All four now produce identical CLI/public API C17 bytes with
++GCC, pinned Clang23.1.3 ASan and UBSan frontends. Old-Copy initializer support
++was already present; this change does not claim it as new implementation.
++
++The real unit receiver retains exactly four teardown steps. In H2 it physically
++ends original H2; the caller ends original H1, then Copy-updates the same T.
++H0 ends no H; H1 ends original H1 once. Zero is successful H2. Passive hooks
++check original addresses and Domains, donor/formal handoff, closed payload
++loan, callee-before-caller free order, old83/old0 and final T0/37 with sibling27.
++The original malloc/free wrapper observes only live pointers before real free.
++
++Local evidence: A/B GCC+Clang O0/O2 x H0/H1/H2 (24), C/D GCC+Clang O2 x
++H0/H1/H2 (12), Clang ASan D (3), Clang UBSan A (3), old inline field1 and
++linked-zero H2 (2), final formatted observer zero H2 (1): **45 actual guests**.
++The final observer changes only spaces on four macro lines relative to the
++tested r3; token/line/literal preservation is recorded, plus the final recheck.
++Four source authority/loan negatives and four artifact negatives reject;
++pristine retries succeed. Selected ASan CTest units: 9/9. The full CTest sweep
++and registered native integration driver were not run; its same helper was
++used for the selected local native matrix. Six existing host OOM sites,
++22 fault/retry cases, preserve output/state, retry and named no-clobber.
++
++FIRST and REDs remain immutable: own source/probe FIRST6978592897;
++verification r2 FIRST6978681858; native runner FIRST6978736426;
++observer correction r3 FIRST6978751983; spacing r4 FIRST6978818724.
++Baseline A/B/D refusal, the runner's unexpected C success, initial observer
++compile RED (two stray '+' tokens) and formatter RED are retained separately.
++Final counters: local181/192, native45/48, host6/8 sites and22/24 cases,
++frontend/probe builds4/4, SDK acquisition0, Compiler remote/PR/CI0.
++
++Raw, exact source/oracle/apparatus revisions, logs, ledger, patch and hashes:
++[Issue1529](https://github.com/wakairo/NewLang_Compiler/issues/1529), Evidence
++ref `archive/c1202-prefix-read-repair-20261118`. P1525/P1528 and their
++FIRST/RED/counters stay COMPLETE/STOP. No independent F/R original was read.
++
++Scope debt: optional receiver read/five-step support remains HOLD; no general
++CFG, new source/checker/issuer/API/ABI, forwarding or producer/LiveTail profile.
++Finite capability evidence is not a general soundness or safe-library result.
++UB-prevention audit/re-audit locality versus factored C remains UNMEASURED;
++sound Rust safe facades remain fair alternatives. Product GO624 PAUSED,
++H1 HOLD. Changed-subject independent review and publication/adoption remain C.
+diff --git a/tests/p1529/consumer.c b/tests/p1529/consumer.c
+new file mode 100644
+index 0000000000000000000000000000000000000000..b0bf830a94f910b3f8217e9600dc9c56a594eb35
+--- /dev/null
++++ b/tests/p1529/consumer.c
+@@ -0,0 +1,81 @@
++/* Reuse P's source loader and host wrappers; no new proof or fault engine. */
++#define main retained_p1463_main
++#include "../p1463/probe.c"
++#undef main
++
++static NLCheckedNodeView *prefix_read, *terminal;
++static void locate(NLCheckedFragment *f)
++{
++    for (size_t i = 1; i <= f->count; ++i) {
++        NLCheckedNodeView *n = &f->nodes[i - 1];
++        if (!prefix_read && n->kind == NL_CHECKED_FIELD_READ)
++            prefix_read = n;
++        if (n->owner_call.entry_proved)
++            terminal = n;
++        NLCheckedFragment *body =
++            (NLCheckedFragment *)nl_checked_call_body(f, i);
++        if (body)
++            locate(body);
++        if (n->kind == NL_CHECKED_MATCH)
++            for (size_t a = 0; a < n->item_count; ++a)
++                locate((NLCheckedFragment *)nl_checked_match_arm(f, i, a));
++    }
++}
++static bool agreement(const char *path, const char *raw)
++{
++    Program p = {0};
++    CHECK(ready(path, &p) && actual(&p));
++    char *text = NULL;
++    size_t length = 0;
++    CHECK(nl_checked_c_node(p.artifact, &text, &length) == NL_NODE_C_OK);
++    NLSource *expected = NULL;
++    CHECK(nl_source_load(raw, &expected) == NL_SOURCE_OK);
++    NLSourceView v;
++    CHECK(nl_source_view(expected,
++                         (NLSourceSpan){0, nl_source_length(expected)}, &v));
++    CHECK(v.length == length && !memcmp(v.bytes, text, length));
++    printf("P1529 genuine public API / CLI bytes agree: %zu\n", length);
++    nl_source_destroy(expected);
++    free(text);
++    destroy(&p);
++    return true;
++}
++static bool attacks(const char *path)
++{
++    Program p = {0}, foreign = {0};
++    CHECK(ready(path, &p) && actual(&p) && ready(path, &foreign) &&
++          actual(&foreign));
++    locate(p.artifact);
++    CHECK(prefix_read && terminal);
++    NLCheckedNodeView saved = *prefix_read;
++    prefix_read->field.child_fact = 0;
++    bool bad = refused(&p, "prefix current fact");
++    *prefix_read = saved;
++    CHECK(bad && emit(&p, NL_NODE_C_OK));
++    prefix_read->results[0].value = 0;
++    bad = refused(&p, "prefix Copy result");
++    *prefix_read = saved;
++    CHECK(bad && emit(&p, NL_NODE_C_OK));
++    struct NLHOriginOwner *origin = p.artifact->h_origin;
++    p.artifact->h_origin = foreign.artifact->h_origin;
++    bad = refused(&p, "foreign authentic origin world");
++    p.artifact->h_origin = origin;
++    CHECK(bad && emit(&p, NL_NODE_C_OK));
++    saved = *terminal;
++    terminal->owner_call.domain = 0;
++    bad = refused(&p, "terminal original Domain");
++    *terminal = saved;
++    CHECK(bad && emit(&p, NL_NODE_C_OK));
++    printf("P1529 four isolated artifact negatives / pristine retries PASS\n");
++    destroy(&foreign);
++    destroy(&p);
++    return true;
++}
++int main(int argc, char **argv)
++{
++    if (argc == 4 && !strcmp(argv[1], "agree"))
++        return agreement(argv[2], argv[3]) ? 0 : 1;
++    if (argc == 3 && !strcmp(argv[1], "attack"))
++        return attacks(argv[2]) ? 0 : 1;
++    return 2;
++}
+diff --git a/tests/p1529/native.py b/tests/p1529/native.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..ec43a3c59cc1d15b1d61b0241894e556ad647385
+--- /dev/null
++++ b/tests/p1529/native.py
+@@ -0,0 +1,62 @@
++"""Finite prefix-read/old-Copy regression; physical H0/H1/H2, strict C17."""
++import hashlib
++import json
++import os
++from pathlib import Path
++import subprocess
++import sys
++
++CASES = [("A-prefix-zero", 0, 1), ("B-prefix-nonzero", 37, 1),
++         ("C-oldcopy-zero", 0, 0), ("D-combined-nonzero", 37, 1)]
++
++
++def compile_and_run(cc, tests, raw, out, case, opt, sanitizer, run):
++    name, sample, reads = case
++    exe = out / (name + "-O" + str(opt))
++    strict = ["-std=c17", "-Wall", "-Wextra", "-Wpedantic", "-Werror"]
++    flags = [] if sanitizer == "none" else ["-fsanitize=" + sanitizer,
++        "-fno-omit-frame-pointer", "-fno-sanitize-recover=all"]
++    before = hashlib.sha256(raw.read_bytes()).hexdigest()
++    run(exe.name + "-cc", [cc, *strict, "-O" + str(opt), *flags,
++        "-DP1517_SAMPLE=" + str(sample), "-DP1529_PREFIX_READS=" + str(reads),
++        '-DNEWLANG_NODE_OBSERVER="' + str(tests / "passive.h") + '"',
++        '-DNEWLANG_HEAP_OBSERVER="' + str(tests / "passive.h") + '"',
++        raw, tests / "../p1517/guest_wrap.c", "-Wl,--wrap=malloc",
++        "-Wl,--wrap=free", "-o", exe], units=2)
++    for fail in [1, 2, 0]:
++        result = run(exe.name + "-H" + str(fail), [exe], guest=True,
++                     setting={"P1517_FAIL_AT": str(fail)})
++        assert b"receiver-exact PASS" in result.stdout
++    assert hashlib.sha256(raw.read_bytes()).hexdigest() == before
++
++
++def main():
++    compiler, cc, tests_arg, output, sanitizer = sys.argv[1:]
++    tests, out = Path(tests_arg).resolve(), Path(output).resolve()
++    out.mkdir(parents=True, exist_ok=True)
++    rows = []
++
++    def run(label, argv, units=1, guest=False, setting=None):
++        env = dict(os.environ, ASAN_OPTIONS="detect_leaks=1:halt_on_error=1",
++                   UBSAN_OPTIONS="halt_on_error=1:print_stacktrace=1")
++        env.update(setting or {})
++        argv = list(map(str, argv))
++        r = subprocess.run(argv, capture_output=True, env=env)
++        for suffix, data in [("stdout", r.stdout), ("stderr", r.stderr)]:
++            (out / (label + "." + suffix)).write_bytes(data)
++        rows.append(dict(label=label, argv=argv, translation_units=units,
++                         guest=guest, exit=r.returncode))
++        (out / "ledger.json").write_text(json.dumps(rows, indent=2) + "\n")
++        assert r.returncode == 0, (label, r.stderr)
++        return r
++
++    for case in CASES:
++        raw = out / (case[0] + ".c")
++        run("emit-" + case[0], [compiler, "--emit-c17-to", raw,
++                                tests / (case[0] + ".nl")])
++        compile_and_run(cc, tests, raw, out, case, 2, sanitizer, run)
++    print("P1529 four finite compositions x H0/H1/H2 PASS")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/tests/p1529/passive.h b/tests/p1529/passive.h
+new file mode 100644
+index 0000000000000000000000000000000000000000..67044301639a6b7809dcc6185792e89079f02b42
+--- /dev/null
++++ b/tests/p1529/passive.h
+@@ -0,0 +1,235 @@
++#ifndef P1517_PASSIVE_H
++#define P1517_PASSIVE_H
++#include <stdbool.h>
++#include <stdio.h>
++#ifndef P1517_INDEX
++#define P1517_INDEX 0
++#endif
++#ifndef P1517_FAIL_AT
++#define P1517_FAIL_AT                                                          \
++    (getenv("P1517_FAIL_AT")                                                   \
++         ? (unsigned)strtoul(getenv("P1517_FAIL_AT"), NULL, 10)                \
++         : 0u)
++#endif
++#define REQUIRE(x)                                                             \
++    do {                                                                       \
++        if (!(x)) {                                                            \
++            fprintf(stderr, "P1517 %d: %s\n", __LINE__, #x);                   \
++            abort();                                                           \
++        }                                                                      \
++    } while (0)
++static const nl_node *volatile live[2];
++static size_t domains[2], trials, inits, ends, finals, roots, payloads;
++static volatile size_t frees;
++static size_t calls, old_copies, final_copies, t_frame, t_symbol;
++static bool ended[2], finalized[2];
++static size_t receiver_entries, receiver_exits, handoffs, returned,
++    active_scope;
++static bool in_receiver;
++static const void *donor_allocation, *donor_domain;
++static const void *volatile pending_free;
++static const uint8_t *target, *sibling;
++static unsigned expected_roots(void)
++{
++    return P1517_FAIL_AT ? P1517_FAIL_AT - 1u : 2u;
++}
++static unsigned initial(void)
++{
++    return 83u;
++}
++static unsigned other(void)
++{
++    return 27u;
++}
++static unsigned payload(void)
++{
++    return P1517_SAMPLE;
++}
++static unsigned current(void)
++{
++    return expected_roots() == 2 ? payload() : 0u;
++}
++static size_t identity(const nl_node *p)
++{
++    REQUIRE(p && (p == live[0] || p == live[1]));
++    return p == live[0] ? 0u : 1u;
++}
++void p1517_observe_free(void *p)
++{
++    size_t i = identity(p);
++    REQUIRE(p == pending_free && ended[i] && finalized[i]);
++    REQUIRE(i == (expected_roots() == 2 ? 1u - frees : 0u));
++    REQUIRE(in_receiver == (expected_roots() == 2 && i == 1));
++    live[i] = NULL;
++    pending_free = NULL;
++    ++frees;
++}
++#define NL_NODE_BIND(frame, symbol, kind, address)                             \
++    do {                                                                       \
++        if (target && (frame) == t_frame && (symbol) > t_symbol &&             \
++            (kind) == 4) {                                                     \
++            unsigned x = *(const uint8_t *)(address);                          \
++            if (!trials) {                                                     \
++                REQUIRE(calls == 1 &&                                          \
++                        old_copies < (P1529_PREFIX_READS ? 3u : 1u));          \
++                REQUIRE(x == (old_copies == 0   ? initial()                    \
++                              : old_copies == 1 ? 0u                           \
++                                                : other()));                   \
++                ++old_copies;                                                  \
++            } else {                                                           \
++                REQUIRE(final_copies < 3);                                     \
++                REQUIRE(x == (final_copies == 0   ? initial()                  \
++                              : final_copies == 1 ? current()                  \
++                                                  : other()));                 \
++                ++final_copies;                                                \
++            }                                                                  \
++        }                                                                      \
++    } while (0)
++#define NL_NODE_REPLACE(...) REQUIRE(0)
++#define NL_NODE_RELOAN(...) REQUIRE(0)
++#define NL_NODE_ARM(...) REQUIRE(0)
++#define NL_NODE_FINISH() REQUIRE(0)
++#define NL_MIXED_COPY_BIND(frame, symbol, first, second)                       \
++    do {                                                                       \
++        REQUIRE(!target);                                                      \
++        target = P1517_INDEX ? (second) : (first);                             \
++        sibling = P1517_INDEX ? (first) : (second);                            \
++        REQUIRE(target != sibling && *target == initial() &&                   \
++                *sibling == other());                                          \
++        t_frame = (frame);                                                     \
++        t_symbol = (symbol);                                                   \
++    } while (0)
++#define NL_MIXED_COPY_CALL(address, old, next)                                 \
++    do {                                                                       \
++        REQUIRE(calls < 2 && (address) == target && *sibling == other());      \
++        if (!calls)                                                            \
++            REQUIRE(!trials && (old) == initial() && (next) == 0);             \
++        else                                                                   \
++            REQUIRE(expected_roots() == 2 && frees == 2 && !pending_free &&    \
++                    (old) == 0 && (next) == payload() && payloads == 1);       \
++        REQUIRE(*(address) == (next));                                         \
++        ++calls;                                                               \
++    } while (0)
++#define NL_MIXED_COPY_STORE(...) REQUIRE(0)
++#define NL_MIXED_OWNER_LOCAL(...) REQUIRE(0)
++#define NL_HEAP_TRIAL(pointer, bytes, alignment)                               \
++    do {                                                                       \
++        ++trials;                                                              \
++        REQUIRE(calls == 1 && trials <= 2 && (bytes) == 24 &&                  \
++                (alignment) == 8);                                             \
++        REQUIRE(((pointer) == NULL) ==                                         \
++                (P1517_FAIL_AT && trials == P1517_FAIL_AT));                   \
++    } while (0)
++#define NL_HEAP_ARM(...) ((void)0)
++#define NL_HEAP_DOMAIN(...) ((void)0)
++#define NL_HEAP_SLOT(...) ((void)0)
++#define NL_HEAP_INITIALIZE(pointer, token)                                     \
++    do {                                                                       \
++        REQUIRE(inits < 2 && (pointer) && (token) && !(pointer)->f0.tag &&     \
++                !(pointer)->f0.ptr);                                           \
++        REQUIRE((pointer)->f1 == (inits ? payload() : 83u));                   \
++        if (inits)                                                             \
++            REQUIRE((pointer) != live[0] && (token) != domains[0]);            \
++        live[inits] = (pointer);                                               \
++        domains[inits++] = (token);                                            \
++    } while (0)
++#define NL_HEAP_RELOAN(...) ((void)0)
++#define NL_HEAP_ROOT(pointer, token, write, place, inc, scope)                 \
++    do {                                                                       \
++        size_t i = identity(pointer);                                          \
++        REQUIRE(i == 1 && !ended[i] && !(write) && (token) == domains[i] &&    \
++                (place) && (inc) && (scope));                                  \
++        REQUIRE(!active_scope);                                                \
++        active_scope = (scope);                                                \
++        ++roots;                                                               \
++    } while (0)
++#define NL_HEAP_FIELD(pointer, field, write, nominal, index, child, inc,       \
++                      scope)                                                   \
++    do {                                                                       \
++        size_t i = identity(pointer);                                          \
++        REQUIRE(i == 1 && !ended[i] && !(write) && (nominal) &&                \
++                (index) == 1 && (child) && (inc) && (scope) &&                 \
++                (const void *)(field) == (const void *)&(pointer)->f1 &&       \
++                (pointer)->f1 == payload() && payloads++ == 0);                \
++    } while (0)
++#define NL_HEAP_COPY(...) REQUIRE(0)
++#define NL_HEAP_CHANGE(...) REQUIRE(0)
++#define NL_HEAP_SCOPE_END(scope)                                               \
++    do {                                                                       \
++        if (active_scope == (scope))                                           \
++            active_scope = 0;                                                  \
++    } while (0)
++#define NL_HEAP_END(pointer, token)                                            \
++    do {                                                                       \
++        size_t i = identity(pointer);                                          \
++        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] &&         \
++                !(pointer)->f0.tag && !(pointer)->f0.ptr);                     \
++        ended[i] = true;                                                       \
++        ++ends;                                                                \
++    } while (0)
++#define NL_HEAP_RAW(bytes, length) REQUIRE((bytes) && (length) == 24)
++#define NL_HEAP_FINALIZE(token)                                                \
++    do {                                                                       \
++        size_t i = (token) == domains[0] ? 0u : 1u;                            \
++        REQUIRE((token) && (token) == domains[i] && ended[i] &&                \
++                !finalized[i]);                                                \
++        finalized[i] = true;                                                   \
++        ++finals;                                                              \
++    } while (0)
++#define NL_HEAP_RELEASE(handle, bytes, length)                                 \
++    do {                                                                       \
++        size_t i = identity(handle);                                           \
++        REQUIRE(!pending_free && (void *)(handle) == (void *)(bytes) &&        \
++                (length) == 24 && ended[i] && finalized[i]);                   \
++        pending_free = (handle);                                               \
++    } while (0)
++#define NL_HEAP_HANDOFF(p, a, d, ap, dp)                                       \
++    do {                                                                       \
++        REQUIRE(!handoffs++ && !in_receiver && !active_scope &&                \
++                (p) == live[1] && (a) == live[1] && (d) == domains[1] &&       \
++                !ended[0] && !ended[1]);                                       \
++        donor_allocation = (ap);                                               \
++        donor_domain = (dp);                                                   \
++    } while (0)
++#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp)             \
++    do {                                                                       \
++        REQUIRE(handoffs == 1 && !receiver_entries++ && !in_receiver &&        \
++                !active_scope && (p) == live[1] && (a) == live[1] &&           \
++                (d) == domains[1] && (ap) != donor_allocation &&               \
++                (dp) != donor_domain && (frame) && (ps) && (as) && (ds));      \
++        in_receiver = true;                                                    \
++    } while (0)
++#define NL_HEAP_RECEIVER_EXIT()                                                \
++    do {                                                                       \
++        REQUIRE(in_receiver && !receiver_exits++ && frees == 1 && !live[1] &&  \
++                live[0] && !ended[0] && !active_scope);                        \
++        in_receiver = false;                                                   \
++    } while (0)
++#define NL_HEAP_RETURNED(ap, dp)                                               \
++    do {                                                                       \
++        REQUIRE(receiver_exits == 1 && !returned++ && !in_receiver &&          \
++                (ap) == donor_allocation && (dp) == donor_domain);             \
++    } while (0)
++#define NL_LIVE_SEND(...) REQUIRE(0)
++#define NL_LIVE_ENTER(...) REQUIRE(0)
++#define NL_LIVE_RETURN(...) REQUIRE(0)
++#define NL_LIVE_RECEIVE(...) REQUIRE(0)
++#define NL_HEAP_FINISH()                                                       \
++    do {                                                                       \
++        unsigned n = expected_roots();                                         \
++        REQUIRE(receiver_entries == (n == 2) && receiver_exits == (n == 2) &&  \
++                handoffs == (n == 2) && returned == (n == 2) &&                \
++                !in_receiver && !active_scope);                                \
++        REQUIRE(trials == (n ? 2u : 1u) && inits == n && ends == n &&          \
++                finals == n && frees == n);                                    \
++        REQUIRE(!live[0] && !live[1] && !pending_free &&                       \
++                calls == (n == 2 ? 2u : 1u));                                  \
++        REQUIRE(old_copies == (P1529_PREFIX_READS ? 3u : 1u) &&                \
++                final_copies == 3 && *target == current() &&                   \
++                *sibling == other());                                          \
++        REQUIRE(roots == (n == 2 ? 1u : 0u) && payloads == roots);             \
++        printf("P1517 H%u physical free order, same T old/current=%u "         \
++               "sibling=%u second-writes=%zu receiver-exact PASS\n",           \
++               n, *target, *sibling, calls - 1);                               \
++    } while (0)
++#endif
+diff --git a/tests/p1529/public_owned.c b/tests/p1529/public_owned.c
+new file mode 100644
+index 0000000000000000000000000000000000000000..bf4be845bd9c09058417c9db7fbb0550072a901b
+--- /dev/null
++++ b/tests/p1529/public_owned.c
+@@ -0,0 +1,417 @@
++/* P1529 C1202 public-only observation of authentic source-issued artifacts.
++ * No semantic seed, private headers, artifact mutation, emission or guest run.
++ */
++#include "newlang/checked.h"
++#include "newlang/copy_body.h"
++#include "newlang/parser.h"
++#include "newlang/raw_storage.h"
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++
++#define NEED(x)                                                                \
++    do {                                                                       \
++        if (!(x)) {                                                            \
++            fprintf(stderr, "PROBE_ASSERT line=%d expression=%s\n", __LINE__,  \
++                    #x);                                                       \
++            return 0;                                                          \
++        }                                                                      \
++    } while (0)
++
++typedef struct {
++    size_t calls, copies, payloads, destroys, frees, trials;
++} Count;
++typedef struct {
++    size_t sample, copies, owners, reads, matches, loans;
++    NLSymbolId original_binding;
++    NLPlaceId original_root, original_child;
++    NLIncarnationId original_incarnation;
++    const NLCheckedFragment *copy_owners[2];
++} Trace;
++
++static int scalar(const NLSemanticContext *c, NLValueId id, size_t value)
++{
++    NLSemanticValueView v;
++    return nl_semantic_value_view(c, id, &v) && v.scalar_known &&
++           v.scalar_value == value && v.dependencies == NL_DEPENDENCY_FREE &&
++           v.value_dependency_count == 0;
++}
++
++static int closed(const NLSemanticContext *c, size_t regions)
++{
++    NLSemanticSnapshot s;
++    NEED(nl_semantic_snapshot(c, &s) && s.backing_regions == regions &&
++         s.domains == regions);
++    for (size_t i = 1; i <= s.backing_regions; ++i) {
++        NLSemanticBackingView r;
++        NEED(nl_semantic_backing_view(c, i, &r) && !r.live);
++    }
++    for (size_t i = 1; i <= s.domains; ++i) {
++        NLSemanticDomainView d;
++        NEED(nl_semantic_domain_view(c, i, &d) && !d.live);
++    }
++    for (size_t i = 1; i <= s.scopes; ++i) {
++        NLSemanticScopeView scope;
++        NEED(nl_semantic_scope_view(c, i, &scope) && !scope.active);
++    }
++    return 1;
++}
++
++static int owner(const NLCheckedFragment *f, NLCheckedNodeId id)
++{
++    const NLCheckedNodeView *n = nl_checked_node_view(f, id);
++    const NLSemanticContext *entry = nl_checked_owner_entry(f, id);
++    const NLSemanticContext *post = nl_checked_context(f);
++    const NLCheckedFragment *body = nl_checked_call_body(f, id);
++    NLTypedOwnerDefinition d;
++    NLSemanticSnapshot s;
++    NLSemanticPlaceView p, dead;
++    NLSemanticValueView ptr, a, life;
++    NLSemanticBackingView r, dead_r;
++    NLSemanticDomainView domain, dead_domain;
++    NEED(n && entry && entry != post && body && n->body_backed &&
++         nl_checked_context(body) == post && n->owner_call.entry_proved &&
++         n->owner_call.post_proved && n->argument_count == 3 &&
++         !n->result_count && nl_semantic_snapshot(entry, &s) &&
++         s.backing_regions == 2 && s.domains == 2);
++    NEED(nl_semantic_function_applicability(post, n->function, &d) &&
++         d.definition_checked && !d.live_return && !d.head_link_required &&
++         d.requirements == NL_OWNER_ALL_REQUIREMENTS && d.step_count == 4 &&
++         d.target == n->owner_call.definition.target);
++    for (size_t i = 0; i < 4; ++i)
++        NEED(d.steps[i] == (NLTypedOwnerStep)(i + 1) &&
++             n->owner_call.definition.steps[i] == d.steps[i]);
++    NEED(nl_semantic_value_view(entry, n->owner_call.inputs[0], &ptr) &&
++         nl_semantic_value_view(entry, n->owner_call.inputs[1], &a) &&
++         nl_semantic_value_view(entry, n->owner_call.inputs[2], &life) &&
++         ptr.reference.provenance == NL_PROVENANCE_VALID &&
++         ptr.reference.place == n->owner_call.root &&
++         ptr.reference.incarnation == n->owner_call.incarnation &&
++         a.allocation_region == n->owner_call.range.region &&
++         life.domain == n->owner_call.domain);
++    NEED(nl_semantic_place_view(entry, n->owner_call.root, &p) && p.live &&
++         p.independent_root && p.type == d.target &&
++         p.incarnation == n->owner_call.incarnation &&
++         p.governing_domain == life.domain && p.placement.start == 0 &&
++         p.placement.region == a.allocation_region &&
++         p.placement.length == n->owner_call.range.length &&
++         nl_semantic_backing_view(entry, a.allocation_region, &r) && r.live &&
++         r.size == p.placement.length && r.ordinary_read && r.ordinary_write &&
++         nl_semantic_domain_view(entry, life.domain, &domain) && domain.live &&
++         domain.value == n->owner_call.inputs[2]);
++    size_t others = 0;
++    for (size_t i = 1; i <= s.places; ++i) {
++        NLSemanticPlaceView q;
++        NEED(nl_semantic_place_view(entry, i, &q));
++        if (i != n->owner_call.root && q.live && q.independent_root &&
++            q.placement.region) {
++            ++others;
++            NEED(q.placement.region != a.allocation_region &&
++                 q.governing_domain != life.domain);
++        }
++    }
++    NEED(others == 1);
++    NLCheckedNodeId argument = n->first_argument;
++    for (size_t i = 0; i < 3; ++i) {
++        NLSemanticBindingView formal, donor;
++        const NLCheckedNodeView *arg = nl_checked_node_view(f, argument);
++        NEED(arg && arg->kind == NL_CHECKED_IDENTIFIER &&
++             arg->result_count == 1 &&
++             arg->results[0].value == n->owner_call.inputs[i] &&
++             arg->symbol == n->owner_call.donor[i] &&
++             arg->value_use == (i ? NL_VALUE_CONSUMED : NL_VALUE_COPIED) &&
++             n->owner_call.donor[i] != n->owner_call.parameters[i] &&
++             nl_semantic_binding_view(post, n->owner_call.parameters[i],
++                                      &formal) &&
++             formal.value == n->owner_call.inputs[i] &&
++             nl_semantic_binding_view(entry, n->owner_call.donor[i], &donor));
++        if (i)
++            NEED(donor.availability == NL_CONSUMED &&
++                 formal.availability == NL_CONSUMED);
++        argument = arg->next_argument;
++    }
++    NEED(!argument && nl_semantic_place_view(post, n->owner_call.root, &dead) &&
++         !dead.live && dead.incarnation == p.incarnation &&
++         !dead.current_value && !dead.placement.region &&
++         nl_semantic_backing_view(post, a.allocation_region, &dead_r) &&
++         !dead_r.live &&
++         nl_semantic_domain_view(post, life.domain, &dead_domain) &&
++         !dead_domain.live);
++    size_t ends = 0, erases = 0, finals = 0, frees = 0;
++    for (size_t i = 1; i <= nl_checked_node_count(body); ++i) {
++        const NLCheckedNodeView *v = nl_checked_node_view(body, i);
++        NEED(v && !v->allocation_trial && !v->allocation_success);
++        if (v->kind == NL_CHECKED_DESTROY) {
++            ++ends;
++            NEED(v->lifetime_place == n->owner_call.root &&
++                 v->lifetime_incarnation == p.incarnation &&
++                 v->lifetime_domain == life.domain &&
++                 v->backing == a.allocation_region);
++        }
++        if (v->kind == NL_CHECKED_ERASE_SLOT)
++            ++erases;
++        if (v->kind == NL_CHECKED_DOMAIN_FINALIZE)
++            ++finals;
++        if (v->kind == NL_CHECKED_DEALLOCATE) {
++            ++frees;
++            const NLCheckedNodeView *av =
++                nl_checked_node_view(body, v->first_argument);
++            const NLCheckedNodeView *raw =
++                av ? nl_checked_node_view(body, av->next_argument) : NULL;
++            NLSemanticValueView full, avalue;
++            NEED(av && raw && av->result_count == 1 && raw->result_count == 1 &&
++                 nl_semantic_value_view(post, av->results[0].value, &avalue) &&
++                 nl_semantic_value_view(post, raw->results[0].value, &full) &&
++                 avalue.allocation_region == a.allocation_region &&
++                 full.occupancy.region == a.allocation_region &&
++                 full.occupancy.start == 0 && full.occupancy.length == r.size);
++        }
++    }
++    NEED(ends == 1 && erases == 1 && finals == 1 && frees == 1);
++    printf("OWNER actual=%zu root=%zu incarnation=%zu region=%zu domain=%zu "
++           "independent_other_live=%zu definition_steps=4 full_range=%zu\n",
++           id, n->owner_call.root, p.incarnation, a.allocation_region,
++           life.domain, others, r.size);
++    return 1;
++}
++
++static int copy(const NLCheckedFragment *f, NLCheckedNodeId id, Trace *t)
++{
++    NLCopyBodyParameters p;
++    NLCopyBodyView v;
++    NLCopyBodyEventView event;
++    NLSemanticPlaceView before, after, parent, sibling;
++    NLSemanticBindingView binding;
++    NEED(t->copies < 2 && nl_checked_copy_body_parameters(f, id, &p) &&
++         nl_checked_copy_body_view(f, id, &v) &&
++         nl_checked_copy_body_event(f, id, 0, &event));
++    if (!t->copies)
++        t->original_binding = p.field.base;
++    NLCheckStatus bv = nl_checked_copy_body_validate(f, id, &v);
++    NLCheckStatus pv = nl_checked_copy_body_parameters_validate(f, id, &p);
++    NLCheckStatus ev = nl_checked_copy_body_event_validate(f, id, 0, &event);
++    printf("COPY call=%zu ordinal=%zu body=%d parameters=%d event=%d\n", id,
++           t->copies + 1, (int)bv, (int)pv, (int)ev);
++    NEED(bv == NL_CHECK_OK && pv == NL_CHECK_OK && ev == NL_CHECK_OK &&
++         v.event_count == 1 && event.kind == NL_COPY_BODY_CHANGE &&
++         p.field.index == 0 && p.entry && p.handoff &&
++         nl_semantic_place_view(p.entry, p.field.child, &before) &&
++         nl_semantic_place_view(p.handoff, p.field.child, &after) &&
++         nl_semantic_place_view(p.handoff, p.field.parent, &parent) &&
++         nl_semantic_place_view(p.handoff, parent.fixed_fields[1], &sibling) &&
++         scalar(p.entry, before.current_value, t->copies ? 0 : 83) &&
++         scalar(p.handoff, after.current_value, t->copies ? t->sample : 0) &&
++         scalar(p.handoff, sibling.current_value, 27) &&
++         scalar(v.live_exit, v.result.value, t->copies ? 0 : 83) &&
++         before.incarnation == after.incarnation &&
++         before.current_fact != after.current_fact &&
++         nl_semantic_binding_view(p.entry, t->original_binding, &binding) &&
++         binding.place == p.field.parent);
++    if (!t->copies) {
++        t->original_root = p.field.parent;
++        t->original_child = p.field.child;
++        t->original_incarnation = p.field.parent_incarnation;
++    } else {
++        /* Prefix identity was authenticated at each actual owned match edge.
++         * These equal IDs alone would not authenticate a foreign world. */
++        NEED(t->original_root == p.field.parent &&
++             t->original_child == p.field.child &&
++             t->original_incarnation == p.field.parent_incarnation &&
++             t->copy_owners[0] != f);
++    }
++    t->copy_owners[t->copies++] = f;
++    return 1;
++}
++
++static int walk(const NLCheckedFragment *f, Trace *t, Count *out, size_t depth)
++{
++    NEED(f && depth < 16);
++    const NLSemanticContext *c = nl_checked_context(f);
++    for (size_t id = 1; id <= nl_checked_node_count(f); ++id) {
++        const NLCheckedNodeView *n = nl_checked_node_view(f, id);
++        NEED(n);
++        if (n->kind == NL_CHECKED_LOAN_HEADER) {
++            NLSemanticScopeView scope;
++            NEED(n->loan.body_nonescape_proved &&
++                 nl_semantic_scope_view(c, n->loan.scope, &scope) &&
++                 !scope.active);
++            ++t->loans;
++        }
++        out->destroys += n->kind == NL_CHECKED_DESTROY;
++        out->frees += n->kind == NL_CHECKED_DEALLOCATE;
++        out->trials += n->allocation_trial;
++        if (n->owner_call.entry_proved) {
++            NEED(owner(f, id));
++            ++out->calls;
++            ++t->owners;
++        }
++        NLCopyBodyParameters parameters;
++        if (nl_checked_copy_body_parameters(f, id, &parameters)) {
++            NEED(copy(f, id, t));
++            ++out->copies;
++        }
++        if (n->kind == NL_CHECKED_LINK_READ && n->field.index == 1) {
++            const NLCheckedNodeView *field =
++                nl_checked_node_view(f, n->first_argument);
++            const NLCheckedNodeView *ref =
++                field ? nl_checked_node_view(f, field->first_argument) : NULL;
++            NLSemanticValueView rv;
++            NEED(n->result_count == 1 &&
++                 scalar(c, n->results[0].value, t->sample) && field && ref &&
++                 ref->result_count == 1 &&
++                 nl_semantic_value_view(c, ref->results[0].value, &rv));
++            const NLCheckedNodeView *receiver = NULL, *acquisition = NULL;
++            for (size_t j = 1; j <= nl_checked_node_count(f); ++j) {
++                const NLCheckedNodeView *candidate = nl_checked_node_view(f, j);
++                if (candidate->owner_call.entry_proved)
++                    receiver = candidate;
++                if (candidate->kind == NL_CHECKED_REF_FROM_PTR &&
++                    candidate->lifetime_place == n->field.parent)
++                    acquisition = candidate;
++            }
++            NEED(receiver && acquisition &&
++                 receiver->owner_call.root == n->field.parent &&
++                 acquisition->lifetime_domain == receiver->owner_call.domain &&
++                 acquisition->lifetime_incarnation ==
++                     receiver->owner_call.incarnation &&
++                 acquisition->span.end_byte < receiver->span.start_byte);
++            printf("PAYLOAD child=%zu original=%zu sample=%zu ref_scope=%zu\n",
++                   n->field.child, n->field.parent, t->sample,
++                   rv.reference.scope);
++            ++out->payloads;
++            ++t->reads;
++        }
++        const NLCheckedFragment *body = nl_checked_call_body(f, id);
++        if (body)
++            NEED(walk(body, t, out, depth + 1));
++        if (n->kind == NL_CHECKED_MATCH) {
++            const NLCheckedNodeView *trial =
++                nl_checked_node_view(f, n->initializer);
++            NEED(trial && trial->kind == NL_CHECKED_TRY_ALLOCATE_ONE &&
++                 n->item_count == 2);
++            ++t->matches;
++            for (size_t a = 0; a < 2; ++a) {
++                const NLCheckedFragment *arm = nl_checked_match_arm(f, id, a);
++                const NLSemanticContext *ac = nl_checked_context(arm);
++                NLSemanticBindingView parent_binding, child_binding;
++                NEED(arm && ac != c &&
++                     n->match_binding_prefix >= t->original_binding &&
++                     nl_semantic_binding_view(c, t->original_binding,
++                                              &parent_binding) &&
++                     nl_semantic_binding_view(ac, t->original_binding,
++                                              &child_binding) &&
++                     parent_binding.place == child_binding.place);
++                Count branch = {0};
++                NEED(walk(arm, t, &branch, depth + 1));
++                if (!a) {
++                    size_t resources = n->captured_frame_closed ? 1 : 0;
++                    NEED(closed(ac, resources) && !branch.calls &&
++                         !branch.copies && !branch.payloads &&
++                         branch.destroys == resources &&
++                         branch.frees == resources);
++                    printf("NORMAL H%zu receiver=0 second_T_write=0 "
++                           "releases=%zu\n",
++                           resources, branch.frees);
++                } else if (n->captured_frame_closed) {
++                    NEED(closed(ac, 2) && branch.calls == 1 &&
++                         branch.copies == 1 && branch.payloads == 1 &&
++                         branch.destroys == 2 && branch.frees == 2);
++                    printf("NORMAL H2 receiver=1 second_T_write=1 sample=%zu "
++                           "releases=2\n",
++                           t->sample);
++                }
++                out->calls += branch.calls;
++                out->copies += branch.copies;
++                out->payloads += branch.payloads;
++                out->destroys += branch.destroys;
++                out->frees += branch.frees;
++                out->trials += branch.trials;
++            }
++        }
++    }
++    return 1;
++}
++
++static int run(const char *path, size_t sample)
++{
++    NLSource *source = NULL, *call_source = NULL;
++    NLParser *parser = NULL, *call_parser = NULL;
++    NLSyntaxTree *unit = NULL, *call = NULL;
++    NLSemanticContext *c = NULL;
++    NLCheckedFragment *artifact = NULL;
++    NLParseDiagnostic pd = {0};
++    NLFunctionUnitDiagnostic ud = {0};
++    NLCheckDiagnostic cd = {0};
++    NEED(nl_source_load(path, &source) == NL_SOURCE_OK &&
++         nl_parser_create(source, &parser) == NL_PARSE_OK);
++    NLParseStatus ps = nl_parser_parse_function_unit(parser, &unit, &pd);
++    printf("PARSE status=%d code=%s\n", (int)ps,
++           pd.diagnostic.code ? pd.diagnostic.code : "none");
++    NEED(ps == NL_PARSE_OK && nl_semantic_create(&c) == NL_CHECK_OK);
++    const NLSyntaxTree *inputs[] = {unit};
++    NLCheckStatus ds = nl_semantic_register_function_unit(c, inputs, 1, &ud);
++    printf("DEFINITION status=%d code=%s\n", (int)ds,
++           ud.diagnostic.diagnostic.code ? ud.diagnostic.diagnostic.code
++                                         : "none");
++    NEED(ds == NL_CHECK_OK);
++    NLSemanticSnapshot s;
++    NEED(nl_semantic_snapshot(c, &s) && !s.bindings && !s.values && !s.places &&
++         !s.domains && !s.backing_regions);
++    size_t definitions = 0;
++    for (size_t i = 1; i <= s.functions; ++i) {
++        NLTypedOwnerDefinition d;
++        if (nl_semantic_function_applicability(c, i, &d)) {
++            NEED(d.definition_checked && !d.live_return &&
++                 !d.head_link_required &&
++                 d.requirements == NL_OWNER_ALL_REQUIREMENTS &&
++                 d.step_count == 4);
++            ++definitions;
++        }
++    }
++    NEED(definitions == 1);
++    /* Destroy the source AST before using the owned registered definition. */
++    nl_syntax_tree_destroy(unit);
++    nl_parser_destroy(parser);
++    nl_source_destroy(source);
++    NEED(nl_source_create("main()", 6, "P1515-actual-main", &call_source) ==
++             NL_SOURCE_OK &&
++         nl_parser_create(call_source, &call_parser) == NL_PARSE_OK &&
++         nl_parser_parse_expression_fragment(call_parser, &call, NULL) ==
++             NL_PARSE_OK);
++    NLCheckStatus actual =
++        nl_semantic_check_expression(c, call, &artifact, &cd);
++    printf("ACTUAL status=%d code=%s\n", (int)actual,
++           cd.diagnostic.code ? cd.diagnostic.code : "none");
++    NEED(actual == NL_CHECK_OK && artifact);
++    NLCheckedProofClass proof = nl_checked_proof_class(artifact);
++    printf("PROOF_CLASS value=%d MACHINE=%d\n", (int)proof,
++           (int)NL_CHECKED_MACHINE_PROVED);
++    NEED(proof == NL_CHECKED_MACHINE_PROVED);
++    const NLCheckedFragment *main_body =
++        nl_checked_call_body(artifact, nl_checked_root(artifact));
++    NEED(main_body);
++    Trace t = {.sample = sample};
++    Count count = {0};
++    NEED(walk(main_body, &t, &count, 0));
++    NEED(t.copies == 2 && t.owners == 1 && t.reads == 1 && t.matches == 2 &&
++         count.calls == 1 && count.copies == 2 && count.destroys == 3 &&
++         count.frees == 3);
++    printf("AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=%zu "
++           "root=%zu child=%zu incarnation=%zu sample=%zu\n",
++           t.loans, t.original_root, t.original_child, t.original_incarnation,
++           sample);
++    nl_checked_destroy(artifact);
++    nl_syntax_tree_destroy(call);
++    nl_parser_destroy(call_parser);
++    nl_source_destroy(call_source);
++    nl_semantic_destroy(c);
++    return 1;
++}
++
++int main(int argc, char **argv)
++{
++    if (argc != 3)
++        return 2;
++    setvbuf(stdout, NULL, _IONBF, 0);
++    return run(argv[1], (size_t)strtoul(argv[2], NULL, 10)) ? 0 : 1;
++}
+-- 
+2.52.0
+

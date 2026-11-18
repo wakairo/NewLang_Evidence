@@ -1,0 +1,16 @@
+{
+  "issue": 1529,
+  "actual_start": 6978420683,
+  "first": 6978592897,
+  "checkpoint": 6978653361,
+  "verification_first_r2": 6978681858,
+  "native_first": 6978736426,
+  "observer_r3": 6978751983,
+  "observer_r4": 6978818724,
+  "all_POST_GET": true,
+  "first_exact": true,
+  "verification_exact": true,
+  "native_exact": true,
+  "r3_exact": true,
+  "r4_exact": true
+}

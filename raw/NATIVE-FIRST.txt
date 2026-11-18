@@ -1,0 +1,97 @@
+P1529 native runner FIRST — before first native/CC execution. Same source/oracle/probe/observer as FIRST/r2. Uses unchanged generated C bytes and original P1517 guest malloc/free wrapper; strict C17, observer passive, first-original byte83, other T27. Tests default O2 four sources; selected local invocation imports helper and executes A/B GCC+Clang O0/O2 (24), C/D GCC+Clang O2 (12), Clang ASan D O2 H0/H1/H2 (3), Clang UBSan A O2 H0/H1/H2 (3), selected old inline/linked H2 (2), total planned44. Every two-TU CC charged2 and actual guest1/local1, failed attempts count. Registration only, no fullCTest. SDK0/new acquisition; tool pin23.1.3 unchanged.
+
+tests/p1529/native.py bytes=2692 SHA256=f17c7c00023f3791e4924bf265b78e9d8cf91cc6a291959aedb6f3f87efce9d1
+```
+"""Finite prefix-read/old-Copy regression; physical H0/H1/H2, strict C17."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+CASES = [("A-prefix-zero", 0, 1), ("B-prefix-nonzero", 37, 1),
+         ("C-oldcopy-zero", 0, 0), ("D-combined-nonzero", 37, 1)]
+
+
+def compile_and_run(cc, tests, raw, out, case, opt, sanitizer, run):
+    name, sample, reads = case
+    exe = out / (name + "-O" + str(opt))
+    strict = ["-std=c17", "-Wall", "-Wextra", "-Wpedantic", "-Werror"]
+    flags = [] if sanitizer == "none" else ["-fsanitize=" + sanitizer,
+        "-fno-omit-frame-pointer", "-fno-sanitize-recover=all"]
+    before = hashlib.sha256(raw.read_bytes()).hexdigest()
+    run(exe.name + "-cc", [cc, *strict, "-O" + str(opt), *flags,
+        "-DP1517_SAMPLE=" + str(sample), "-DP1529_PREFIX_READS=" + str(reads),
+        '-DNEWLANG_NODE_OBSERVER="' + str(tests / "passive.h") + '"',
+        '-DNEWLANG_HEAP_OBSERVER="' + str(tests / "passive.h") + '"',
+        raw, tests / "../p1517/guest_wrap.c", "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free", "-o", exe], units=2)
+    for fail in [1, 2, 0]:
+        result = run(exe.name + "-H" + str(fail), [exe], guest=True,
+                     setting={"P1517_FAIL_AT": str(fail)})
+        assert b"receiver-exact PASS" in result.stdout
+    assert hashlib.sha256(raw.read_bytes()).hexdigest() == before
+
+
+def main():
+    compiler, cc, tests_arg, output, sanitizer = sys.argv[1:]
+    tests, out = Path(tests_arg).resolve(), Path(output).resolve()
+    out.mkdir(parents=True, exist_ok=True)
+    rows = []
+
+    def run(label, argv, units=1, guest=False, setting=None):
+        env = dict(os.environ, ASAN_OPTIONS="detect_leaks=1:halt_on_error=1",
+                   UBSAN_OPTIONS="halt_on_error=1:print_stacktrace=1")
+        env.update(setting or {})
+        argv = list(map(str, argv))
+        r = subprocess.run(argv, capture_output=True, env=env)
+        for suffix, data in [("stdout", r.stdout), ("stderr", r.stderr)]:
+            (out / (label + "." + suffix)).write_bytes(data)
+        rows.append(dict(label=label, argv=argv, translation_units=units,
+                         guest=guest, exit=r.returncode))
+        (out / "ledger.json").write_text(json.dumps(rows, indent=2) + "\n")
+        assert r.returncode == 0, (label, r.stderr)
+        return r
+
+    for case in CASES:
+        raw = out / (case[0] + ".c")
+        run("emit-" + case[0], [compiler, "--emit-c17-to", raw,
+                                tests / (case[0] + ".nl")])
+        compile_and_run(cc, tests, raw, out, case, 2, sanitizer, run)
+    print("P1529 four finite compositions x H0/H1/H2 PASS")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+tests/p1529/CMakeLists.txt bytes=1627 SHA256=64b3bd6e02058abbbf00b560868b31ed67c7e41c3b7e497a07159787624b3053
+```
+add_executable(p1529_public_owned tests/p1529/public_owned.c)
+target_link_libraries(p1529_public_owned PRIVATE newlang_semantic newlang_parser)
+add_executable(p1529_consumer tests/p1529/consumer.c)
+target_include_directories(p1529_consumer PRIVATE src)
+target_link_libraries(p1529_consumer PRIVATE newlang_checked_c_node newlang_semantic newlang_parser)
+target_link_options(p1529_consumer PRIVATE -Wl,--wrap=malloc -Wl,--wrap=realloc -Wl,--wrap=nl_sem_clone)
+foreach(p1529_variant A-prefix-zero B-prefix-nonzero C-oldcopy-zero D-combined-nonzero)
+    if(p1529_variant MATCHES "nonzero")
+        set(p1529_sample 37)
+    else()
+        set(p1529_sample 0)
+    endif()
+    add_test(NAME p1529_${p1529_variant}_owned.unit COMMAND p1529_public_owned
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/${p1529_variant}.nl" ${p1529_sample})
+endforeach()
+add_test(NAME p1529_prefix_authentication.unit COMMAND p1529_consumer attack
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/D-combined-nonzero.nl")
+foreach(p1529_negative foreign-allocation foreign-domain foreign-pointer live-loan)
+    add_test(NAME p1529_negative_${p1529_negative}.unit COMMAND p1517_safety negative
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/N-${p1529_negative}.nl")
+endforeach()
+add_test(NAME p1529_native.integration COMMAND "${Python3_EXECUTABLE}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529/native.py" "$<TARGET_FILE:newlangc>"
+    "${CMAKE_C_COMPILER}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1529"
+    "${CMAKE_CURRENT_BINARY_DIR}/p1529-native" "${NEWLANG_SANITIZER}")
+set_tests_properties(p1529_native.integration PROPERTIES TIMEOUT 180 RUN_SERIAL TRUE)
+```

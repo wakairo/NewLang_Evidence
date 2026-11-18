@@ -1,0 +1,1 @@
+/workspace/NewLang_P1529/tests/p1529/N-live-loan.nl:64:44-64:46: error(semantic)[P3-REF-CONFLICT]: operation conflicts with a live reference capability

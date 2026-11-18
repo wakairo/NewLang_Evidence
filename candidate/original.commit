@@ -1,0 +1,6 @@
+tree 0c4d781d22216bf65dd2ee01f22d5c6cc239ceef
+parent 7deabd1b1f44bc40862b6a28c89fde502832d8cb
+author J W <a_kg@ninegw.sakura.ne.jp> 1795005662 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795005662 +0900
+
+fix(c17): authenticate pure T observations before terminal allocation match

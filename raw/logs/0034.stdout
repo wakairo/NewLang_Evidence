@@ -1,0 +1,12 @@
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=0 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0

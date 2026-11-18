@@ -1,0 +1,207 @@
+Start testing: Nov 18 21:38 JST
+----------------------------------------------------------
+37/1177 Testing: p1529_A-prefix-zero_owned.unit
+37/1177 Test: p1529_A-prefix-zero_owned.unit
+Command: "/workspace/p1529-evidence/build-asan/p1529_public_owned" "/workspace/NewLang_P1529/tests/p1529/A-prefix-zero.nl" "0"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_A-prefix-zero_owned.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=31 original=26 sample=0 ref_scope=4
+OWNER actual=41 root=26 incarnation=29 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_A-prefix-zero_owned.unit" end time: Nov 18 21:38 JST
+"p1529_A-prefix-zero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/1177 Testing: p1529_B-prefix-nonzero_owned.unit
+38/1177 Test: p1529_B-prefix-nonzero_owned.unit
+Command: "/workspace/p1529-evidence/build-asan/p1529_public_owned" "/workspace/NewLang_P1529/tests/p1529/B-prefix-nonzero.nl" "37"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_B-prefix-nonzero_owned.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=31 original=26 sample=37 ref_scope=4
+OWNER actual=41 root=26 incarnation=29 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=37 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=37
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_B-prefix-nonzero_owned.unit" end time: Nov 18 21:38 JST
+"p1529_B-prefix-nonzero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/1177 Testing: p1529_C-oldcopy-zero_owned.unit
+39/1177 Test: p1529_C-oldcopy-zero_owned.unit
+Command: "/workspace/p1529-evidence/build-asan/p1529_public_owned" "/workspace/NewLang_P1529/tests/p1529/C-oldcopy-zero.nl" "0"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_C-oldcopy-zero_owned.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=0 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_C-oldcopy-zero_owned.unit" end time: Nov 18 21:38 JST
+"p1529_C-oldcopy-zero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/1177 Testing: p1529_D-combined-nonzero_owned.unit
+40/1177 Test: p1529_D-combined-nonzero_owned.unit
+Command: "/workspace/p1529-evidence/build-asan/p1529_public_owned" "/workspace/NewLang_P1529/tests/p1529/D-combined-nonzero.nl" "37"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_D-combined-nonzero_owned.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=31 original=26 sample=37 ref_scope=4
+OWNER actual=41 root=26 incarnation=29 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=37 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=37
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_D-combined-nonzero_owned.unit" end time: Nov 18 21:38 JST
+"p1529_D-combined-nonzero_owned.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/1177 Testing: p1529_prefix_authentication.unit
+41/1177 Test: p1529_prefix_authentication.unit
+Command: "/workspace/p1529-evidence/build-asan/p1529_consumer" "attack" "/workspace/NewLang_P1529/tests/p1529/D-combined-nonzero.nl"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_prefix_authentication.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+definition status=0 code=none
+actual status=0 code=none
+definition status=0 code=none
+actual status=0 code=none
+tamper prefix current fact public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11570
+tamper prefix Copy result public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11570
+tamper foreign authentic origin world public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11570
+tamper terminal original Domain public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11570
+P1529 four isolated artifact negatives / pristine retries PASS
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_prefix_authentication.unit" end time: Nov 18 21:38 JST
+"p1529_prefix_authentication.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/1177 Testing: p1529_negative_foreign-allocation.unit
+42/1177 Test: p1529_negative_foreign-allocation.unit
+Command: "/workspace/p1529-evidence/build-asan/p1517_safety" "negative" "/workspace/NewLang_P1529/tests/p1529/N-foreign-allocation.nl"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_negative_foreign-allocation.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1529/tests/p1529/N-foreign-allocation.nl status=1 code=P193-CALL-BACKING
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_negative_foreign-allocation.unit" end time: Nov 18 21:38 JST
+"p1529_negative_foreign-allocation.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/1177 Testing: p1529_negative_foreign-domain.unit
+43/1177 Test: p1529_negative_foreign-domain.unit
+Command: "/workspace/p1529-evidence/build-asan/p1517_safety" "negative" "/workspace/NewLang_P1529/tests/p1529/N-foreign-domain.nl"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_negative_foreign-domain.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1529/tests/p1529/N-foreign-domain.nl status=1 code=P193-CALL-DOMAIN
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_negative_foreign-domain.unit" end time: Nov 18 21:38 JST
+"p1529_negative_foreign-domain.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/1177 Testing: p1529_negative_foreign-pointer.unit
+44/1177 Test: p1529_negative_foreign-pointer.unit
+Command: "/workspace/p1529-evidence/build-asan/p1517_safety" "negative" "/workspace/NewLang_P1529/tests/p1529/N-foreign-pointer.nl"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_negative_foreign-pointer.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1529/tests/p1529/N-foreign-pointer.nl status=1 code=P193-CALL-DOMAIN
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_negative_foreign-pointer.unit" end time: Nov 18 21:38 JST
+"p1529_negative_foreign-pointer.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/1177 Testing: p1529_negative_live-loan.unit
+45/1177 Test: p1529_negative_live-loan.unit
+Command: "/workspace/p1529-evidence/build-asan/p1517_safety" "negative" "/workspace/NewLang_P1529/tests/p1529/N-live-loan.nl"
+Directory: /workspace/p1529-evidence/build-asan
+"p1529_negative_live-loan.unit" start time: Nov 18 21:38 JST
+Output:
+----------------------------------------------------------
+P1517 source negative=/workspace/NewLang_P1529/tests/p1529/N-live-loan.nl status=1 code=P3-REF-CONFLICT
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"p1529_negative_live-loan.unit" end time: Nov 18 21:38 JST
+"p1529_negative_live-loan.unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 21:38 JST

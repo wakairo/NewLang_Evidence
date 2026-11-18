@@ -1,0 +1,17 @@
+ CMakeLists.txt                             |   1 +
+ src/checked_c_allocated_current_internal.h |  63 ++++-
+ tests/p1529/A-prefix-zero.nl               |  83 ++++++
+ tests/p1529/B-prefix-nonzero.nl            |  83 ++++++
+ tests/p1529/C-oldcopy-zero.nl              |  81 ++++++
+ tests/p1529/CMakeLists.txt                 |  26 ++
+ tests/p1529/D-combined-nonzero.nl          |  83 ++++++
+ tests/p1529/N-foreign-allocation.nl        |  83 ++++++
+ tests/p1529/N-foreign-domain.nl            |  83 ++++++
+ tests/p1529/N-foreign-pointer.nl           |  83 ++++++
+ tests/p1529/N-live-loan.nl                 |  86 ++++++
+ tests/p1529/README.md                      |  63 +++++
+ tests/p1529/consumer.c                     |  81 ++++++
+ tests/p1529/native.py                      |  62 +++++
+ tests/p1529/passive.h                      | 235 ++++++++++++++++
+ tests/p1529/public_owned.c                 | 417 +++++++++++++++++++++++++++++
+ 16 files changed, 1606 insertions(+), 7 deletions(-)

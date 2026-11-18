@@ -1,0 +1,24 @@
+Internal ctest changing into directory: /workspace/p1529-evidence/build-asan
+Test project /workspace/p1529-evidence/build-asan
+    Start 37: p1529_A-prefix-zero_owned.unit
+1/9 Test #37: p1529_A-prefix-zero_owned.unit ...........   Passed    0.18 sec
+    Start 38: p1529_B-prefix-nonzero_owned.unit
+2/9 Test #38: p1529_B-prefix-nonzero_owned.unit ........   Passed    0.07 sec
+    Start 39: p1529_C-oldcopy-zero_owned.unit
+3/9 Test #39: p1529_C-oldcopy-zero_owned.unit ..........   Passed    0.07 sec
+    Start 40: p1529_D-combined-nonzero_owned.unit
+4/9 Test #40: p1529_D-combined-nonzero_owned.unit ......   Passed    0.15 sec
+    Start 41: p1529_prefix_authentication.unit
+5/9 Test #41: p1529_prefix_authentication.unit .........   Passed    0.32 sec
+    Start 42: p1529_negative_foreign-allocation.unit
+6/9 Test #42: p1529_negative_foreign-allocation.unit ...   Passed    0.04 sec
+    Start 43: p1529_negative_foreign-domain.unit
+7/9 Test #43: p1529_negative_foreign-domain.unit .......   Passed    0.06 sec
+    Start 44: p1529_negative_foreign-pointer.unit
+8/9 Test #44: p1529_negative_foreign-pointer.unit ......   Passed    0.03 sec
+    Start 45: p1529_negative_live-loan.unit
+9/9 Test #45: p1529_negative_live-loan.unit ............   Passed    0.07 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   1.03 sec
