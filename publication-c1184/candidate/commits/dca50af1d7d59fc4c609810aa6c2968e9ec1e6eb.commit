@@ -1,0 +1,6 @@
+tree 902527f0635fb6c86890fe778244f393559e022b
+parent c97ce81c48a0c003b072c77c655bdeb10860ebf1
+author J W <a_kg@ninegw.sakura.ne.jp> 1794998736 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1794998736 +0900
+
+Emit C17 for the bounded second-H terminal receiver

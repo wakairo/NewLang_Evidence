@@ -1,0 +1,40 @@
+{
+  "sha": "3d0301cd4f0830b183f92eb0921bf08b6171392f",
+  "node_id": "C_kwDOU7KX29oAKDNkMDMwMWNkNGYwODMwYjE4M2Y5MmViMDkyMWJmMDhiNjE3MTM5MmY",
+  "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits/3d0301cd4f0830b183f92eb0921bf08b6171392f",
+  "html_url": "https://github.com/wakairo/NewLang_Compiler/commit/3d0301cd4f0830b183f92eb0921bf08b6171392f",
+  "author": {
+    "name": "Joji Wakairo",
+    "email": "jw1@ninegw.sakura.ne.jp",
+    "date": "2026-11-18T10:59:47Z"
+  },
+  "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-11-18T10:59:47Z"
+  },
+  "tree": {
+    "sha": "20083ff35349efd254e015f90dcac38a8d16852a",
+    "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees/20083ff35349efd254e015f90dcac38a8d16852a"
+  },
+  "message": "Merge 7deabd1b1f44bc40862b6a28c89fde502832d8cb into c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "parents": [
+    {
+      "sha": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits/c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/commit/c97ce81c48a0c003b072c77c655bdeb10860ebf1"
+    },
+    {
+      "sha": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits/7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/commit/7deabd1b1f44bc40862b6a28c89fde502832d8cb"
+    }
+  ],
+  "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq/YUjCRC1aQ7uu5UhlAAAm24QAJ4gtsCLTkdiLkJn/MstI3LB\nEqpCkh5xsmfJ7c2aZRgLSsCtIpv1nPaE7/H+wSzSRc9d3+lkEwlUMaq3tWks2vE/\naMqj4XwARstSjjowAGMF9u3Tao5Efgiz85QNvfNXR2A8SK7mcK3cfkBAqURA59XA\nK+YUV8YenCpl+iX4bCaqq0dDB5wDegWPl99xd9HRDFMXayNJnt5tzeHzcI68vYnG\nhlY/ADFK+Ui4YhGRIM0ROsGWccqS8OctkMFeY1w5gnzSTYRhKXrQu7GbQeLmo8A1\nHnLG8MWxcwO+fXsHpJvInlnvgrJ/x/SPM50ICeSwxTXsDgyfNIoU3xwE5dJRuyo2\nPvR5mHCgMQAKdIeNy9LD4d1C3W7jToBseZ8cEn3zv8M8vovc05N4yuC33tlEYx/4\nBrARyO194OpNIm8MntOJVl1NyCPLllEA3LuotrvavU6TTRCOTa9st9XEoRKPF905\n1tXBSWlNUHjxnQFex0L74MYu0BbJZjs3+GKTFEmAtCYGaRzz4MbDBte6Q9e74wql\n9HlWWzEX6e7AYgDMFS1E0eOP2RY9werT30rQmyyL/jlvDbhwt3SjmjZek151PiFz\n36jF4jz+tEr/R1azfsM0k7r0s6bg3mTAOVD4kbaKtSyISxQG1LkPHcPYXUxlO8a5\nAphbu71SEROo1gWx0yGC\n=RO6W\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 20083ff35349efd254e015f90dcac38a8d16852a\nparent c97ce81c48a0c003b072c77c655bdeb10860ebf1\nparent 7deabd1b1f44bc40862b6a28c89fde502832d8cb\nauthor Joji Wakairo <jw1@ninegw.sakura.ne.jp> 1794999587 +0000\ncommitter GitHub <noreply@github.com> 1794999587 +0000\n\nMerge 7deabd1b1f44bc40862b6a28c89fde502832d8cb into c97ce81c48a0c003b072c77c655bdeb10860ebf1\n",
+    "verified_at": "2026-11-18T10:59:47Z"
+  }
+}

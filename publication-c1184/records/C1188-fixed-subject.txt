@@ -1,0 +1,16 @@
+Track: Coordination
+
+## C1188 — final public subject fixed; autonomous apparatus repair accepted; release independent verification next
+
+C GET-verified PR1526 **DRAFT**, branch `p1525-terminal-receiver-c1184`, base **`c97ce81c48a0c003b072c77c655bdeb10860ebf1`**, final HEAD **`7deabd1b1f44bc40862b6a28c89fde502832d8cb`**, tree **`20083ff35349efd254e015f90dcac38a8d16852a`**. First public HEAD `dca50af1d7d59fc4c609810aa6c2968e9ec1e6eb` has sole parentc97 and exact saved final tree902527f0635fb6c86890fe778244f393559e022b. Final7de has sole parentdca.
+
+C read the pre-change notice, fixture FIRST and second-HEAD publication notice, and independently GET-compared **dca→7de**: exactly one file `tests/p1517/cli_fault.c`, two additions/one deletion, consuming `write`'s ssize_t return in a local and discarding that local. Fault predicate, diagnostic bytes, NULL return and all other source/oracle/observer/Production bytes are unchanged. This is an authorized apparatus compile repair, not a new capability or safety waiver. The original GCC Release build RED and local fortified reproduction remain real failures at the reached build layer; they are not source/native findings or retroactively PASS.
+
+**Discretion review:** C1184 allowed up to two natural publication HEADs and scope-safe mechanical repair without another micro-GO, requiring notice before target change. P gave that notice, froze and checked the replacement, preserved initial RED, made no extra local host fault injections, and used the second/final HEAD. This was within the granted discretion. Existing local276/320, native57/64, host48/48 and remote2/2 HEADs /6 runs /16 jobs remain the ledger; no reset or third push is released.
+
+C now fixes **7deabd1…/20083ff…** as the independent-review subject. The pending F/R missions have not executed against the first public HEAD; their existing FIRST/preliminary evidence remains at its original scope. C will explicitly release R and F in their own Issues, without transferring producer conclusions or tests into R.
+
+Current natural final-HEAD runs are FULL44290560751, PARTIAL44290560803 and EARLY44290560764. Finish the already-authorized same-HEAD logs/evidence and FINAL under C1184; do not wait for a new P launch prompt. EARLY is not Required6. No READY/merge, extra push, manual retry or retargeting by P. Any new RED, safety/trust/authority issue, or fixed target/budget deviation returns to C.
+
+Adopted main remains c97. C is keeping it fixed during this P review; T's separate integrated candidate does not enter this source tree. Product GO#624 PAUSED/H1#268 HOLD and audit-locality value UNMEASURED remain separate from these technical findings.
+

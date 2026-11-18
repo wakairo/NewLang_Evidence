@@ -1,0 +1,21 @@
+From 7deabd1b1f44bc40862b6a28c89fde502832d8cb Mon Sep 17 00:00:00 2001
+From: J W <a_kg@ninegw.sakura.ne.jp>
+Date: Wed, 18 Nov 2026 19:58:36 +0900
+Subject: [PATCH] Consume fault helper write result under fortified Release
+ builds
+
+
+diff --git a/tests/p1517/cli_fault.c b/tests/p1517/cli_fault.c
+index 9f023f54f49bd17baf8e10fbacad75f2fa5d99ab..7b9888d264dfac80d658fab0e93428d35f48313b 100644
+--- a/tests/p1517/cli_fault.c
++++ b/tests/p1517/cli_fault.c
+@@ -11,7 +11,8 @@ void *__wrap_malloc(size_t size)
+         ++text_allocations == strtoul(setting, NULL, 10)) {
+         static const char message[] =
+             "P1517 selected compiler-host text-buffer OOM\n";
+-        (void)write(2, message, sizeof message - 1);
++        const ssize_t written = write(2, message, sizeof message - 1);
++        (void)written;
+         return NULL;
+     }
+     return __real_malloc(size);

@@ -1,0 +1,11 @@
+P1525 / C1184 ACTUAL RESUME — same existing sole Track P
+
+GET-verified C1184 comment6975628006 and latest Issue/comments (duplicate comments GET), plus actual HTTPS main ref c97ce81c48a0c003b072c77c655bdeb10860ebf1. C1184 explicitly replaces PUBLICATION HOLD with bounded publication release; pending main postmerge jobs are not assumed PASS.
+
+Same actor/custody as P1515→P1517→P1520→P1525 local mission. Original final394d35d4175716a4fc2947e3d5fbdbc89c167237 / tree902527f0635fb6c86890fe778244f393559e022b is present and clean, parent7063ca3 / integration ac6. Original P1517 c57/242 and all prior FIRST/RED/80-of80/ENV-PARTIAL, local raw and independently restored Evidence0db02f5088c494d5811e18edb1f15c1537a5cfef remain retained. No independent F/R original questions/source/oracle/runner have been read/imported; no design contact with F/R.
+
+Ledger carries forward unchanged: local255/320, selected native57/64, host6 logical sites/48-of48 cases, SDK1/2, Evidence1/2 pushes. Local host reinjection0. No reset or repeated local/native/fault campaign for commit metadata. Remote portion now released: one new P branch, one DRAFT/HOLD PR, ≤2 candidate HEADs/16 natural jobs/6 runs; manual retry/dispatch0; READY/merge remain C.
+
+Will recheck Compass→Value §1.1→Process→CURRENT_SPEC Draft17.38, actual c97 parents/tree and equality to verified ac6, mechanically apply exactly the saved final25-path delta and verify final tree902527… before first publication. No source capability, T tooling, checker/issuer/API/ABI or old evidence change. Immediately after PR creation will POST/GET exact HEAD/tree/base/branch/PR and available natural CI IDs for C to pin independent F/R, without waiting for CI completion. Initial subject stays fixed; any needed scope-safe repair is reported before changing it. Main/head drift, safety/authority/trust/independence/budget issues STOP C.
+
+Technical verification remains finite. VALUE-ALIGNMENT-RISK remains separately UNMEASURED author+ordinary-safe-caller UB audit/re-audit closure reduction vs well-factored C; sound Rust ownership/Drop/safe facade remains a fair alternative. Product GO624 PAUSED/H1 HOLD.

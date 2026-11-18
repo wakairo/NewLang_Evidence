@@ -1,0 +1,11 @@
+{
+  "original": {
+    "bytes": 593,
+    "sha256": "4e28704bd10b669425e4dc8143dd611f576ab61f952add286bf45c3e9231fc3d"
+  },
+  "candidate": {
+    "bytes": 634,
+    "sha256": "140f00f969afa3f6fcf96a9b87514c949531eede8f40c49d951e501a62d3a3b3"
+  },
+  "prediction": "GCC/Clang strict optimized fortified object compile succeeds; exact same selected host-fault guard/NULL return and diagnostic; no local fault execution authorized"
+}

@@ -1,0 +1,8 @@
+First Git-only evidence-aggregation check failed an assertion that a historical
+workflow_run.pull_requests.head.sha would remain the old PR head. The fetched
+run.head_sha remained the original dca50af1; the PR association had updated to
+the current7deabd1. No compiler/native/CI execution or source identity changed.
+The publication-time snapshot preserves the original PR association. Final
+verification uses run.head_sha plus the original checkout/immutable Git
+parents/tree and preserves both old and current association metadata. This
+does not change any source/native oracle or initial Release RED.

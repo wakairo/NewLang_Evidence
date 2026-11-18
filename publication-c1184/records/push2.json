@@ -1,0 +1,14 @@
+{
+  "candidate_head_number": 2,
+  "branch": "p1525-terminal-receiver-c1184",
+  "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "tree": "20083ff35349efd254e015f90dcac38a8d16852a",
+  "base": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "state": "PUSH_FINISHED",
+  "force": false,
+  "manual_CI_dispatch_retry": 0,
+  "prechange_notice": 6976554989,
+  "exit": 0,
+  "seconds": 1.4502514060004614,
+  "remote_head_match": true
+}

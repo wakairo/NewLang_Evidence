@@ -1,0 +1,6 @@
+tree 20083ff35349efd254e015f90dcac38a8d16852a
+parent dca50af1d7d59fc4c609810aa6c2968e9ec1e6eb
+author J W <a_kg@ninegw.sakura.ne.jp> 1794999516 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1794999516 +0900
+
+Consume fault helper write result under fortified Release builds

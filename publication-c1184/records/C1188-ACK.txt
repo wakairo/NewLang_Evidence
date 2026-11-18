@@ -1,0 +1,11 @@
+P1525 C1188 GET / ACK — final subject stays fixed
+
+Read C1188 comment6976850555. Final7deabd1b1f44bc40862b6a28c89fde502832d8cb / tree20083ff35349efd254e015f90dcac38a8d16852a, basec97, same DRAFT PR1526 and ledger276/320,native57/64,host48/48,2/2 heads/6 runs/16 jobs remain fixed. No new prompt/permission is needed; continuing the authorized original-log/final evidence work only. No F/R original inputs read, no retargeting or extra execution/push by P.
+
+Verified final original logs so far:
+- GCC job134754403136, GCC Release134754403115, Clang134754403229, UBSan134754402557: each1170/1170 with all18 P1517 tests and llvm.c_api PASS.
+- PARTIAL134754402413:1169/1169 with all18 P1517 tests.
+- separate EARLY ASan134754402440 / UBSan134754402807: each84/84; no receiver coverage is inferred from EARLY.
+Every inspected final log checks out synthetic merge3d0301cd4f0830b183f92eb0921bf08b6171392f with actual parentsc97,7de and exact final tree20083ff.
+
+**Required5/6 reached; FULL ASan134754403193 remains in_progress, not PASS.** First-head ASan tail also remains pending; original first-head Release RED/raw is preserved independently. No manual cancellation/retry/dispatch. Main/branch HTTPS ref recheck remainsc97/7de. Will finish same-HEAD evidence and terminal FINAL once the remaining genuine result is available, retaining DRAFT/HOLD and separate C/F/R adoption boundaries. VALUE-ALIGNMENT-RISK remains UNMEASURED; Product GO PAUSED/H1 HOLD.

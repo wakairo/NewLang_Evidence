@@ -1,0 +1,2108 @@
+[
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o -c /workspace/NewLang_P1525_publication/src/diagnostic.c",
+  "file": "/workspace/NewLang_P1525_publication/src/diagnostic.c",
+  "output": "CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_source.dir/src/source.c.o -c /workspace/NewLang_P1525_publication/src/source.c",
+  "file": "/workspace/NewLang_P1525_publication/src/source.c",
+  "output": "CMakeFiles/newlang_source.dir/src/source.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_lexer.dir/src/lexer.c.o -c /workspace/NewLang_P1525_publication/src/lexer.c",
+  "file": "/workspace/NewLang_P1525_publication/src/lexer.c",
+  "output": "CMakeFiles/newlang_lexer.dir/src/lexer.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_syntax.dir/src/syntax.c.o -c /workspace/NewLang_P1525_publication/src/syntax.c",
+  "file": "/workspace/NewLang_P1525_publication/src/syntax.c",
+  "output": "CMakeFiles/newlang_syntax.dir/src/syntax.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_parser.dir/src/parser.c.o -c /workspace/NewLang_P1525_publication/src/parser.c",
+  "file": "/workspace/NewLang_P1525_publication/src/parser.c",
+  "output": "CMakeFiles/newlang_parser.dir/src/parser.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_checked.dir/src/checked.c.o -c /workspace/NewLang_P1525_publication/src/checked.c",
+  "file": "/workspace/NewLang_P1525_publication/src/checked.c",
+  "output": "CMakeFiles/newlang_checked.dir/src/checked.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/copy_body.c.o -c /workspace/NewLang_P1525_publication/src/copy_body.c",
+  "file": "/workspace/NewLang_P1525_publication/src/copy_body.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/copy_body.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/if_field.c.o -c /workspace/NewLang_P1525_publication/src/if_field.c",
+  "file": "/workspace/NewLang_P1525_publication/src/if_field.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/if_field.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/array4.c.o -c /workspace/NewLang_P1525_publication/src/array4.c",
+  "file": "/workspace/NewLang_P1525_publication/src/array4.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/array4.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o -c /workspace/NewLang_P1525_publication/src/usize_addition.c",
+  "file": "/workspace/NewLang_P1525_publication/src/usize_addition.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/semantic.c.o -c /workspace/NewLang_P1525_publication/src/semantic.c",
+  "file": "/workspace/NewLang_P1525_publication/src/semantic.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/semantic.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o -c /workspace/NewLang_P1525_publication/src/semantic_check.c",
+  "file": "/workspace/NewLang_P1525_publication/src/semantic_check.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o -c /workspace/NewLang_P1525_publication/src/unchecked_ref_internal.c",
+  "file": "/workspace/NewLang_P1525_publication/src/unchecked_ref_internal.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o -c /workspace/NewLang_P1525_publication/src/h_origin_internal.c",
+  "file": "/workspace/NewLang_P1525_publication/src/h_origin_internal.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o -c /workspace/NewLang_P1525_publication/src/recursive_type.c",
+  "file": "/workspace/NewLang_P1525_publication/src/recursive_type.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o -c /workspace/NewLang_P1525_publication/src/allocated_node.c",
+  "file": "/workspace/NewLang_P1525_publication/src/allocated_node.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o -c /workspace/NewLang_P1525_publication/src/allocated_join.c",
+  "file": "/workspace/NewLang_P1525_publication/src/allocated_join.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o -c /workspace/NewLang_P1525_publication/src/captured_closure.c",
+  "file": "/workspace/NewLang_P1525_publication/src/captured_closure.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/node_join.c.o -c /workspace/NewLang_P1525_publication/src/node_join.c",
+  "file": "/workspace/NewLang_P1525_publication/src/node_join.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/node_join.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/node_links.c.o -c /workspace/NewLang_P1525_publication/src/node_links.c",
+  "file": "/workspace/NewLang_P1525_publication/src/node_links.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/node_links.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o -c /workspace/NewLang_P1525_publication/src/packet_fork.c",
+  "file": "/workspace/NewLang_P1525_publication/src/packet_fork.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o -c /workspace/NewLang_P1525_publication/src/fixed_field.c",
+  "file": "/workspace/NewLang_P1525_publication/src/fixed_field.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/sum.c.o -c /workspace/NewLang_P1525_publication/src/sum.c",
+  "file": "/workspace/NewLang_P1525_publication/src/sum.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/sum.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o -c /workspace/NewLang_P1525_publication/src/raw_storage.c",
+  "file": "/workspace/NewLang_P1525_publication/src/raw_storage.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/function_body.c.o -c /workspace/NewLang_P1525_publication/src/function_body.c",
+  "file": "/workspace/NewLang_P1525_publication/src/function_body.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/function_body.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o -c /workspace/NewLang_P1525_publication/src/typed_owner.c",
+  "file": "/workspace/NewLang_P1525_publication/src/typed_owner.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/custody.c.o -c /workspace/NewLang_P1525_publication/src/custody.c",
+  "file": "/workspace/NewLang_P1525_publication/src/custody.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/custody.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_semantic.dir/src/control.c.o -c /workspace/NewLang_P1525_publication/src/control.c",
+  "file": "/workspace/NewLang_P1525_publication/src/control.c",
+  "output": "CMakeFiles/newlang_semantic.dir/src/control.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -c /workspace/NewLang_P1525_publication/src/checked_c_node.c",
+  "file": "/workspace/NewLang_P1525_publication/src/checked_c_node.c",
+  "output": "CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o -c /workspace/NewLang_P1525_publication/src/checked_c_five.c",
+  "file": "/workspace/NewLang_P1525_publication/src/checked_c_five.c",
+  "output": "CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o -c /workspace/NewLang_P1525_publication/src/readonly_u8_consumer_internal.c",
+  "file": "/workspace/NewLang_P1525_publication/src/readonly_u8_consumer_internal.c",
+  "output": "CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlangc.dir/src/main.c.o -c /workspace/NewLang_P1525_publication/src/main.c",
+  "file": "/workspace/NewLang_P1525_publication/src/main.c",
+  "output": "CMakeFiles/newlangc.dir/src/main.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1507_probe.dir/tests/p1507/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1507/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1507/probe.c",
+  "output": "CMakeFiles/p1507_probe.dir/tests/p1507/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1517_public_owned.dir/tests/p1517/public_owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1517/public_owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1517/public_owned.c",
+  "output": "CMakeFiles/p1517_public_owned.dir/tests/p1517/public_owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1517/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1517/safety.c",
+  "output": "CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1517_cli_fault.dir/src/main.c.o -c /workspace/NewLang_P1525_publication/src/main.c",
+  "file": "/workspace/NewLang_P1525_publication/src/main.c",
+  "output": "CMakeFiles/p1517_cli_fault.dir/src/main.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1517_cli_fault.dir/tests/p1517/cli_fault.c.o -c /workspace/NewLang_P1525_publication/tests/p1517/cli_fault.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1517/cli_fault.c",
+  "output": "CMakeFiles/p1517_cli_fault.dir/tests/p1517/cli_fault.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1492_probe.dir/tests/p1492/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1492/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1492/probe.c",
+  "output": "CMakeFiles/p1492_probe.dir/tests/p1492/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1499_probe.dir/tests/p1499/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1499/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1499/probe.c",
+  "output": "CMakeFiles/p1499_probe.dir/tests/p1499/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1208_roles.dir/tests/p1208/roles.c.o -c /workspace/NewLang_P1525_publication/tests/p1208/roles.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1208/roles.c",
+  "output": "CMakeFiles/p1208_roles.dir/tests/p1208/roles.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1208_safety.dir/tests/p1208/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1208/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1208/safety.c",
+  "output": "CMakeFiles/p1208_safety.dir/tests/p1208/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1208_oom.dir/tests/p1208/c266/oom_host.c.o -c /workspace/NewLang_P1525_publication/tests/p1208/c266/oom_host.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1208/c266/oom_host.c",
+  "output": "CMakeFiles/p1208_oom.dir/tests/p1208/c266/oom_host.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1208_oom.dir/tests/p1208/c266/oom_owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1208/c266/oom_owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1208/c266/oom_owned.c",
+  "output": "CMakeFiles/p1208_oom.dir/tests/p1208/c266/oom_owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_observe.dir/tests/p1217/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/observe.c",
+  "output": "CMakeFiles/p1217_observe.dir/tests/p1217/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_safety.dir/tests/p1217/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/safety.c",
+  "output": "CMakeFiles/p1217_safety.dir/tests/p1217/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_oom.dir/tests/p1217/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/oom.c",
+  "output": "CMakeFiles/p1217_oom.dir/tests/p1217/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_resource_status.dir/tests/p1217/c274/resource_status.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/c274/resource_status.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/c274/resource_status.c",
+  "output": "CMakeFiles/p1217_resource_status.dir/tests/p1217/c274/resource_status.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1227_observe.dir/tests/p1227/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1227/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1227/observe.c",
+  "output": "CMakeFiles/p1227_observe.dir/tests/p1227/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1227_safety.dir/tests/p1227/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1227/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1227/safety.c",
+  "output": "CMakeFiles/p1227_safety.dir/tests/p1227/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1227_oom.dir/tests/p1227/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1227/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1227/oom.c",
+  "output": "CMakeFiles/p1227_oom.dir/tests/p1227/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1227_c283_observe.dir/tests/p1227/c283/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1227/c283/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1227/c283/observe.c",
+  "output": "CMakeFiles/p1227_c283_observe.dir/tests/p1227/c283/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1227_c283_return_safety.dir/tests/p1227/c283/return_safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1227/c283/return_safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1227/c283/return_safety.c",
+  "output": "CMakeFiles/p1227_c283_return_safety.dir/tests/p1227/c283/return_safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1236_EMIT_SAFETY -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1236_owned.dir/tests/p1236/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1236/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1236/owned.c",
+  "output": "CMakeFiles/p1236_owned.dir/tests/p1236/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1236_oom.dir/tests/p1236/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1236/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1236/oom.c",
+  "output": "CMakeFiles/p1236_oom.dir/tests/p1236/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_c275_live_return_backend_current.dir/tests/p1217/c275/live_return_backend_current_v1.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/c275/live_return_backend_current_v1.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/c275/live_return_backend_current_v1.c",
+  "output": "CMakeFiles/p1217_c275_live_return_backend_current.dir/tests/p1217/c275/live_return_backend_current_v1.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_c275_p733_current.dir/tests/p1217/c275/p733_current_v1.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/c275/p733_current_v1.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/c275/p733_current_v1.c",
+  "output": "CMakeFiles/p1217_c275_p733_current.dir/tests/p1217/c275/p733_current_v1.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1217_c276_p733_current.dir/tests/p1217/c276/p733_current_v2.c.o -c /workspace/NewLang_P1525_publication/tests/p1217/c276/p733_current_v2.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1217/c276/p733_current_v2.c",
+  "output": "CMakeFiles/p1217_c276_p733_current.dir/tests/p1217/c276/p733_current_v2.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1248_EMIT_SAFETY -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1248_owned.dir/tests/p1248/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1248/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1248/owned.c",
+  "output": "CMakeFiles/p1248_owned.dir/tests/p1248/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1248_oom.dir/tests/p1248/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1248/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1248/oom.c",
+  "output": "CMakeFiles/p1248_oom.dir/tests/p1248/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1253_EMIT_SAFETY -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1253_owned.dir/tests/p1253/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1253/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1253/owned.c",
+  "output": "CMakeFiles/p1253_owned.dir/tests/p1253/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1253_oom.dir/tests/p1253/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1253/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1253/oom.c",
+  "output": "CMakeFiles/p1253_oom.dir/tests/p1253/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1260_owned.dir/tests/p1260/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1260/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1260/owned.c",
+  "output": "CMakeFiles/p1260_owned.dir/tests/p1260/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1260_oom.dir/tests/p1260/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1260/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1260/oom.c",
+  "output": "CMakeFiles/p1260_oom.dir/tests/p1260/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1272_owned.dir/tests/p1272/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1272/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1272/owned.c",
+  "output": "CMakeFiles/p1272_owned.dir/tests/p1272/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1272_oom.dir/tests/p1272/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1272/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1272/oom.c",
+  "output": "CMakeFiles/p1272_oom.dir/tests/p1272/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1272_cli_oom.dir/tests/p1272/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1272/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1272/cli_oom.c",
+  "output": "CMakeFiles/p1272_cli_oom.dir/tests/p1272/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1280_owned.dir/tests/p1280/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1280/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1280/owned.c",
+  "output": "CMakeFiles/p1280_owned.dir/tests/p1280/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1280_oom.dir/tests/p1280/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1280/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1280/oom.c",
+  "output": "CMakeFiles/p1280_oom.dir/tests/p1280/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1280_cli_oom.dir/tests/p1280/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1280/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1280/cli_oom.c",
+  "output": "CMakeFiles/p1280_cli_oom.dir/tests/p1280/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1291_owned.dir/tests/p1291/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1291/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1291/owned.c",
+  "output": "CMakeFiles/p1291_owned.dir/tests/p1291/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1291_EMIT=1 -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1291_emit_owned.dir/tests/p1291/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1291/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1291/owned.c",
+  "output": "CMakeFiles/p1291_emit_owned.dir/tests/p1291/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1291_check_oom.dir/tests/p1291/check_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1291/check_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1291/check_oom.c",
+  "output": "CMakeFiles/p1291_check_oom.dir/tests/p1291/check_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1291_oom.dir/tests/p1291/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1291/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1291/oom.c",
+  "output": "CMakeFiles/p1291_oom.dir/tests/p1291/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1295_prefix.dir/tests/p1295/prefix.c.o -c /workspace/NewLang_P1525_publication/tests/p1295/prefix.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1295/prefix.c",
+  "output": "CMakeFiles/p1295_prefix.dir/tests/p1295/prefix.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1295_EMIT=1 -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1295_emit_current.dir/tests/p1295/prefix.c.o -c /workspace/NewLang_P1525_publication/tests/p1295/prefix.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1295/prefix.c",
+  "output": "CMakeFiles/p1295_emit_current.dir/tests/p1295/prefix.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1299_owned.dir/tests/p1299/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1299/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1299/owned.c",
+  "output": "CMakeFiles/p1299_owned.dir/tests/p1299/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1299_EMIT=1 -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1299_emit_owned.dir/tests/p1299/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1299/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1299/owned.c",
+  "output": "CMakeFiles/p1299_emit_owned.dir/tests/p1299/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1304_owned.dir/tests/p1304/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1304/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1304/owned.c",
+  "output": "CMakeFiles/p1304_owned.dir/tests/p1304/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1304_driver.dir/tests/p1304/driver.c.o -c /workspace/NewLang_P1525_publication/tests/p1304/driver.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1304/driver.c",
+  "output": "CMakeFiles/p1304_driver.dir/tests/p1304/driver.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1304_cli_oom.dir/tests/p1304/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1304/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1304/cli_oom.c",
+  "output": "CMakeFiles/p1304_cli_oom.dir/tests/p1304/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1312_consumer.dir/tests/p1312/consumer_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p1312/consumer_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1312/consumer_gate.c",
+  "output": "CMakeFiles/p1312_consumer.dir/tests/p1312/consumer_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1318_owned.dir/tests/p1318/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1318/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1318/owned.c",
+  "output": "CMakeFiles/p1318_owned.dir/tests/p1318/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1318_cli_oom.dir/tests/p1318/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1318/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1318/cli_oom.c",
+  "output": "CMakeFiles/p1318_cli_oom.dir/tests/p1318/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1323_owned.dir/tests/p1323/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1323/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1323/owned.c",
+  "output": "CMakeFiles/p1323_owned.dir/tests/p1323/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1323_cli_oom.dir/tests/p1323/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1323/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1323/cli_oom.c",
+  "output": "CMakeFiles/p1323_cli_oom.dir/tests/p1323/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1326_owned.dir/tests/p1326/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1326/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1326/owned.c",
+  "output": "CMakeFiles/p1326_owned.dir/tests/p1326/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1326_cli_oom.dir/tests/p1326/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1326/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1326/cli_oom.c",
+  "output": "CMakeFiles/p1326_cli_oom.dir/tests/p1326/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1329_current_copy.dir/tests/p1329/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1329/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1329/owned.c",
+  "output": "CMakeFiles/p1329_current_copy.dir/tests/p1329/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1332_consumer.dir/tests/p1332/consumer.c.o -c /workspace/NewLang_P1525_publication/tests/p1332/consumer.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1332/consumer.c",
+  "output": "CMakeFiles/p1332_consumer.dir/tests/p1332/consumer.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1332_cli_oom.dir/tests/p1332/cli_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1332/cli_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1332/cli_oom.c",
+  "output": "CMakeFiles/p1332_cli_oom.dir/tests/p1332/cli_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1387_owned.dir/tests/p1387/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1387/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1387/owned.c",
+  "output": "CMakeFiles/p1387_owned.dir/tests/p1387/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1393_owned.dir/tests/p1393/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1393/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1393/owned.c",
+  "output": "CMakeFiles/p1393_owned.dir/tests/p1393/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1393_probe.dir/tests/p1393/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1393/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1393/probe.c",
+  "output": "CMakeFiles/p1393_probe.dir/tests/p1393/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1408_owned.dir/tests/p1408/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1408/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1408/owned.c",
+  "output": "CMakeFiles/p1408_owned.dir/tests/p1408/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1412_seal.dir/tests/p1412/seal.c.o -c /workspace/NewLang_P1525_publication/tests/p1412/seal.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1412/seal.c",
+  "output": "CMakeFiles/p1412_seal.dir/tests/p1412/seal.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1412_emitter.dir/tests/p1412/emitter.c.o -c /workspace/NewLang_P1525_publication/tests/p1412/emitter.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1412/emitter.c",
+  "output": "CMakeFiles/p1412_emitter.dir/tests/p1412/emitter.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1420_check.dir/tests/p1420/check.c.o -c /workspace/NewLang_P1525_publication/tests/p1420/check.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1420/check.c",
+  "output": "CMakeFiles/p1420_check.dir/tests/p1420/check.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1426_qualified.dir/tests/p1426/qualified.c.o -c /workspace/NewLang_P1525_publication/tests/p1426/qualified.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1426/qualified.c",
+  "output": "CMakeFiles/p1426_qualified.dir/tests/p1426/qualified.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1435_probe.dir/tests/p1435/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1435/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1435/probe.c",
+  "output": "CMakeFiles/p1435_probe.dir/tests/p1435/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1436_probe.dir/tests/p1436/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1436/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1436/probe.c",
+  "output": "CMakeFiles/p1436_probe.dir/tests/p1436/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1441_probe.dir/tests/p1441/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1441/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1441/probe.c",
+  "output": "CMakeFiles/p1441_probe.dir/tests/p1441/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1446_probe.dir/tests/p1446/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1446/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1446/probe.c",
+  "output": "CMakeFiles/p1446_probe.dir/tests/p1446/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1451_probe.dir/tests/p1451/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1451/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1451/probe.c",
+  "output": "CMakeFiles/p1451_probe.dir/tests/p1451/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1455_probe.dir/tests/p1455/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1455/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1455/probe.c",
+  "output": "CMakeFiles/p1455_probe.dir/tests/p1455/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1455_c996_fragments.dir/tests/p1455/c996/fragment_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1455/c996/fragment_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1455/c996/fragment_probe.c",
+  "output": "CMakeFiles/p1455_c996_fragments.dir/tests/p1455/c996/fragment_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1463_probe.dir/tests/p1463/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1463/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1463/probe.c",
+  "output": "CMakeFiles/p1463_probe.dir/tests/p1463/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1471_probe.dir/tests/p1471/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1471/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1471/probe.c",
+  "output": "CMakeFiles/p1471_probe.dir/tests/p1471/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1472_probe.dir/tests/p1472/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1472/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1472/probe.c",
+  "output": "CMakeFiles/p1472_probe.dir/tests/p1472/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1481_probe.dir/tests/p1481/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1481/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1481/probe.c",
+  "output": "CMakeFiles/p1481_probe.dir/tests/p1481/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p930_observe.dir/tests/p930/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p930/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p930/observe.c",
+  "output": "CMakeFiles/p930_observe.dir/tests/p930/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP930_OOM=1 -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p930_oom.dir/tests/p930/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p930/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p930/observe.c",
+  "output": "CMakeFiles/p930_oom.dir/tests/p930/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p718_gate_test.dir/tests/p718/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p718/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p718/gate_test.c",
+  "output": "CMakeFiles/p718_gate_test.dir/tests/p718/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p728_gate_test.dir/tests/p728/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p728/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p728/gate_test.c",
+  "output": "CMakeFiles/p728_gate_test.dir/tests/p728/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p728_public_probe.dir/tests/p728/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p728/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p728/public_probe.c",
+  "output": "CMakeFiles/p728_public_probe.dir/tests/p728/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p722_gate_test.dir/tests/p722/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p722/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p722/gate_test.c",
+  "output": "CMakeFiles/p722_gate_test.dir/tests/p722/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p722_public_probe.dir/tests/p722/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p722/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p722/public_probe.c",
+  "output": "CMakeFiles/p722_public_probe.dir/tests/p722/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p718_public_probe.dir/tests/p718/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p718/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p718/public_probe.c",
+  "output": "CMakeFiles/p718_public_probe.dir/tests/p718/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p713_gate_test.dir/tests/p713/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p713/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p713/gate_test.c",
+  "output": "CMakeFiles/p713_gate_test.dir/tests/p713/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p713_public_probe.dir/tests/p713/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p713/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p713/public_probe.c",
+  "output": "CMakeFiles/p713_public_probe.dir/tests/p713/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p706_gate_test.dir/tests/p706/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p706/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p706/gate_test.c",
+  "output": "CMakeFiles/p706_gate_test.dir/tests/p706/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p706_public_probe.dir/tests/p706/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p706/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p706/public_probe.c",
+  "output": "CMakeFiles/p706_public_probe.dir/tests/p706/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p701_gate_test.dir/tests/p701/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p701/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p701/gate_test.c",
+  "output": "CMakeFiles/p701_gate_test.dir/tests/p701/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p701_public_probe.dir/tests/p701/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p701/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p701/public_probe.c",
+  "output": "CMakeFiles/p701_public_probe.dir/tests/p701/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DNEWLANG_EXPERIMENTAL_OPTION_ARRAY4_SOURCE=1 -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_parser_p534.dir/src/parser.c.o -c /workspace/NewLang_P1525_publication/src/parser.c",
+  "file": "/workspace/NewLang_P1525_publication/src/parser.c",
+  "output": "CMakeFiles/newlang_parser_p534.dir/src/parser.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlangc_p534.dir/src/main.c.o -c /workspace/NewLang_P1525_publication/src/main.c",
+  "file": "/workspace/NewLang_P1525_publication/src/main.c",
+  "output": "CMakeFiles/newlangc_p534.dir/src/main.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p572_public_probe.dir/tests/p572/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p572/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p572/public_probe.c",
+  "output": "CMakeFiles/p572_public_probe.dir/tests/p572/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p572_fault_test.dir/tests/p572/fault_test.c.o -c /workspace/NewLang_P1525_publication/tests/p572/fault_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p572/fault_test.c",
+  "output": "CMakeFiles/p572_fault_test.dir/tests/p572/fault_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p791_one_probe.dir/tests/p534/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p534/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p534/public_probe.c",
+  "output": "CMakeFiles/p791_one_probe.dir/tests/p534/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p791_two_probe.dir/tests/p541/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p541/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p541/public_probe.c",
+  "output": "CMakeFiles/p791_two_probe.dir/tests/p541/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p791_issuer_oom.dir/tests/p514/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "output": "CMakeFiles/p791_issuer_oom.dir/tests/p514/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p791_parser_oom.dir/tests/p791/parser_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p791/parser_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p791/parser_oom.c",
+  "output": "CMakeFiles/p791_parser_oom.dir/tests/p791/parser_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p534_public_probe.dir/tests/p534/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p534/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p534/public_probe.c",
+  "output": "CMakeFiles/p534_public_probe.dir/tests/p534/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p534_semantic_gate.dir/tests/p514/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "output": "CMakeFiles/p534_semantic_gate.dir/tests/p514/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p534_fault_test.dir/tests/p534/fault_test.c.o -c /workspace/NewLang_P1525_publication/tests/p534/fault_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p534/fault_test.c",
+  "output": "CMakeFiles/p534_fault_test.dir/tests/p534/fault_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p541_public_probe.dir/tests/p541/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p541/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p541/public_probe.c",
+  "output": "CMakeFiles/p541_public_probe.dir/tests/p541/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p541_fault_test.dir/tests/p541/fault_test.c.o -c /workspace/NewLang_P1525_publication/tests/p541/fault_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p541/fault_test.c",
+  "output": "CMakeFiles/p541_fault_test.dir/tests/p541/fault_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p636_index_gate.dir/tests/p636/index_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p636/index_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p636/index_gate.c",
+  "output": "CMakeFiles/p636_index_gate.dir/tests/p636/index_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p634_ended_root_gate.dir/tests/p634/ended_root_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p634/ended_root_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p634/ended_root_gate.c",
+  "output": "CMakeFiles/p634_ended_root_gate.dir/tests/p634/ended_root_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p633_derivation_gate.dir/tests/p633/derivation_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p633/derivation_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p633/derivation_gate.c",
+  "output": "CMakeFiles/p633_derivation_gate.dir/tests/p633/derivation_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p633_local_gate.dir/tests/p633/local_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p633/local_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p633/local_gate.c",
+  "output": "CMakeFiles/p633_local_gate.dir/tests/p633/local_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p651_gate.dir/tests/p651/gate.c.o -c /workspace/NewLang_P1525_publication/tests/p651/gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p651/gate.c",
+  "output": "CMakeFiles/p651_gate.dir/tests/p651/gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p633_public_probe.dir/tests/p633/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p633/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p633/public_probe.c",
+  "output": "CMakeFiles/p633_public_probe.dir/tests/p633/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p633_origin_gate.dir/tests/p633/origin_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p633/origin_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p633/origin_gate.c",
+  "output": "CMakeFiles/p633_origin_gate.dir/tests/p633/origin_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p628_public_probe.dir/tests/p628/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p628/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p628/public_probe.c",
+  "output": "CMakeFiles/p628_public_probe.dir/tests/p628/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p626_public_probe.dir/tests/p626/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p626/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p626/public_probe.c",
+  "output": "CMakeFiles/p626_public_probe.dir/tests/p626/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p626_comparison_gate.dir/tests/p626/comparison_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p626/comparison_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p626/comparison_gate.c",
+  "output": "CMakeFiles/p626_comparison_gate.dir/tests/p626/comparison_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p605_public_probe.dir/tests/p605/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p605/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p605/public_probe.c",
+  "output": "CMakeFiles/p605_public_probe.dir/tests/p605/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p603_public_probe.dir/tests/p603/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p603/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p603/public_probe.c",
+  "output": "CMakeFiles/p603_public_probe.dir/tests/p603/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p603_gate_probe.dir/tests/p603/gate_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p603/gate_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p603/gate_probe.c",
+  "output": "CMakeFiles/p603_gate_probe.dir/tests/p603/gate_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/p603 -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p603_comparison_test.dir/p1117-current/p603_current.c.o -c /workspace/p1525-evidence/publication-c1184/build-release/p1117-current/p603_current.c",
+  "file": "/workspace/p1525-evidence/publication-c1184/build-release/p1117-current/p603_current.c",
+  "output": "CMakeFiles/p603_comparison_test.dir/p1117-current/p603_current.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p504_public_probe.dir/tests/p504/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p504/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p504/public_probe.c",
+  "output": "CMakeFiles/p504_public_probe.dir/tests/p504/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p504_gate_probe.dir/tests/p504/gate_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p504/gate_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p504/gate_probe.c",
+  "output": "CMakeFiles/p504_gate_probe.dir/tests/p504/gate_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/p504 -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p504_equality_test.dir/p1117-current/p504_current.c.o -c /workspace/p1525-evidence/publication-c1184/build-release/p1117-current/p504_current.c",
+  "file": "/workspace/p1525-evidence/publication-c1184/build-release/p1117-current/p504_current.c",
+  "output": "CMakeFiles/p504_equality_test.dir/p1117-current/p504_current.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p508_public_probe.dir/tests/p508/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p508/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p508/public_probe.c",
+  "output": "CMakeFiles/p508_public_probe.dir/tests/p508/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p508_gate_test.dir/tests/p508/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p508/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p508/gate_test.c",
+  "output": "CMakeFiles/p508_gate_test.dir/tests/p508/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p514_public_probe.dir/tests/p514/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p514/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p514/public_probe.c",
+  "output": "CMakeFiles/p514_public_probe.dir/tests/p514/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/r675_public_probe.dir/tests/r675/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/r675/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/r675/public_probe.c",
+  "output": "CMakeFiles/r675_public_probe.dir/tests/r675/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p671_public_probe.dir/tests/p671/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p671/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p671/public_probe.c",
+  "output": "CMakeFiles/p671_public_probe.dir/tests/p671/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p671_fragment_probe.dir/tests/p671/fragment_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p671/fragment_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p671/fragment_probe.c",
+  "output": "CMakeFiles/p671_fragment_probe.dir/tests/p671/fragment_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p694_fault_test.dir/tests/p694/fault_test.c.o -c /workspace/NewLang_P1525_publication/tests/p694/fault_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p694/fault_test.c",
+  "output": "CMakeFiles/p694_fault_test.dir/tests/p694/fault_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p688_public_probe.dir/tests/p688/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p688/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p688/public_probe.c",
+  "output": "CMakeFiles/p688_public_probe.dir/tests/p688/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p688_gate_test.dir/tests/p688/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p688/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p688/gate_test.c",
+  "output": "CMakeFiles/p688_gate_test.dir/tests/p688/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p685_public_probe.dir/tests/p685/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p685/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p685/public_probe.c",
+  "output": "CMakeFiles/p685_public_probe.dir/tests/p685/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p685_gate_test.dir/tests/p685/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p685/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p685/gate_test.c",
+  "output": "CMakeFiles/p685_gate_test.dir/tests/p685/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p679_public_probe.dir/tests/p679/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p679/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p679/public_probe.c",
+  "output": "CMakeFiles/p679_public_probe.dir/tests/p679/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p514_gate_test.dir/tests/p514/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p514/gate_test.c",
+  "output": "CMakeFiles/p514_gate_test.dir/tests/p514/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p517_public_probe.dir/tests/p517/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p517/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p517/public_probe.c",
+  "output": "CMakeFiles/p517_public_probe.dir/tests/p517/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p517_gate_test.dir/tests/p517/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p517/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p517/gate_test.c",
+  "output": "CMakeFiles/p517_gate_test.dir/tests/p517/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p521_owned_probe.dir/tests/p521/owned_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p521/owned_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p521/owned_probe.c",
+  "output": "CMakeFiles/p521_owned_probe.dir/tests/p521/owned_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p521_call_gate.dir/tests/p521/call_gate.c.o -c /workspace/NewLang_P1525_publication/tests/p521/call_gate.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p521/call_gate.c",
+  "output": "CMakeFiles/p521_call_gate.dir/tests/p521/call_gate.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/diagnostic_test.dir/tests/unit/diagnostic_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/diagnostic_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/diagnostic_test.c",
+  "output": "CMakeFiles/diagnostic_test.dir/tests/unit/diagnostic_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/source_test.dir/tests/unit/source_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/source_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/source_test.c",
+  "output": "CMakeFiles/source_test.dir/tests/unit/source_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/lexer_test.dir/tests/unit/lexer_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/lexer_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/lexer_test.c",
+  "output": "CMakeFiles/lexer_test.dir/tests/unit/lexer_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/lexical_frontend_test.dir/tests/integration/lexical_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/lexical_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/lexical_frontend_test.c",
+  "output": "CMakeFiles/lexical_frontend_test.dir/tests/integration/lexical_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/parser_test.dir/tests/unit/parser_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/parser_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/parser_test.c",
+  "output": "CMakeFiles/parser_test.dir/tests/unit/parser_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/syntax_frontend_test.dir/tests/integration/syntax_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/syntax_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/syntax_frontend_test.c",
+  "output": "CMakeFiles/syntax_frontend_test.dir/tests/integration/syntax_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/semantic_test.dir/tests/unit/semantic_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/semantic_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/semantic_test.c",
+  "output": "CMakeFiles/semantic_test.dir/tests/unit/semantic_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/semantic_frontend_test.dir/tests/integration/semantic_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/semantic_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/semantic_frontend_test.c",
+  "output": "CMakeFiles/semantic_frontend_test.dir/tests/integration/semantic_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/raw_storage_test.dir/tests/unit/raw_storage_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/raw_storage_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/raw_storage_test.c",
+  "output": "CMakeFiles/raw_storage_test.dir/tests/unit/raw_storage_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/raw_storage_cycle_test.dir/tests/integration/raw_storage_cycle_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/raw_storage_cycle_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/raw_storage_cycle_test.c",
+  "output": "CMakeFiles/raw_storage_cycle_test.dir/tests/integration/raw_storage_cycle_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/source_slice_test.dir/tests/unit/source_slice_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/source_slice_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/source_slice_test.c",
+  "output": "CMakeFiles/source_slice_test.dir/tests/unit/source_slice_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/source_slice_frontend_test.dir/tests/integration/source_slice_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/source_slice_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/source_slice_frontend_test.c",
+  "output": "CMakeFiles/source_slice_frontend_test.dir/tests/integration/source_slice_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/sum_slice_test.dir/tests/unit/sum_slice_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/sum_slice_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/sum_slice_test.c",
+  "output": "CMakeFiles/sum_slice_test.dir/tests/unit/sum_slice_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/sum_frontend_test.dir/tests/integration/sum_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/sum_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/sum_frontend_test.c",
+  "output": "CMakeFiles/sum_frontend_test.dir/tests/integration/sum_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/ref_join_test.dir/tests/unit/ref_join_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/ref_join_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/ref_join_test.c",
+  "output": "CMakeFiles/ref_join_test.dir/tests/unit/ref_join_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/ref_join_frontend_test.dir/tests/integration/ref_join_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/ref_join_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/ref_join_frontend_test.c",
+  "output": "CMakeFiles/ref_join_frontend_test.dir/tests/integration/ref_join_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/function_body_test.dir/tests/unit/function_body_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/function_body_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/function_body_test.c",
+  "output": "CMakeFiles/function_body_test.dir/tests/unit/function_body_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/function_body_frontend_test.dir/tests/integration/function_body_frontend_test.c.o -c /workspace/NewLang_P1525_publication/tests/integration/function_body_frontend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/function_body_frontend_test.c",
+  "output": "CMakeFiles/function_body_frontend_test.dir/tests/integration/function_body_frontend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/return_test.dir/tests/unit/return_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/return_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/return_test.c",
+  "output": "CMakeFiles/return_test.dir/tests/unit/return_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/function_source_test.dir/tests/unit/function_source_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/function_source_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/function_source_test.c",
+  "output": "CMakeFiles/function_source_test.dir/tests/unit/function_source_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/structural_name_test.dir/tests/unit/structural_name_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/structural_name_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/structural_name_test.c",
+  "output": "CMakeFiles/structural_name_test.dir/tests/unit/structural_name_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/control_test.dir/tests/unit/control_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/control_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/control_test.c",
+  "output": "CMakeFiles/control_test.dir/tests/unit/control_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/loop_test.dir/tests/unit/loop_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/loop_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/loop_test.c",
+  "output": "CMakeFiles/loop_test.dir/tests/unit/loop_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1088_provenance_test.dir/tests/p1088/provenance_test.c.o -c /workspace/NewLang_P1525_publication/tests/p1088/provenance_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1088/provenance_test.c",
+  "output": "CMakeFiles/p1088_provenance_test.dir/tests/p1088/provenance_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1088_oom_probe.dir/tests/p1088/oom_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1088/oom_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1088/oom_probe.c",
+  "output": "CMakeFiles/p1088_oom_probe.dir/tests/p1088/oom_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1088_break_add_oom.dir/tests/p1088/break_add_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1088/break_add_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1088/break_add_oom.c",
+  "output": "CMakeFiles/p1088_break_add_oom.dir/tests/p1088/break_add_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/if_test.dir/tests/unit/if_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/if_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/if_test.c",
+  "output": "CMakeFiles/if_test.dir/tests/unit/if_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/unit_name_test.dir/tests/unit/unit_name_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/unit_name_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/unit_name_test.c",
+  "output": "CMakeFiles/unit_name_test.dir/tests/unit/unit_name_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/argument_compatibility_test.dir/tests/unit/argument_compatibility_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/argument_compatibility_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/argument_compatibility_test.c",
+  "output": "CMakeFiles/argument_compatibility_test.dir/tests/unit/argument_compatibility_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/local_root_test.dir/tests/unit/local_root_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/local_root_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/local_root_test.c",
+  "output": "CMakeFiles/local_root_test.dir/tests/unit/local_root_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p866_public.dir/tests/p866/public.c.o -c /workspace/NewLang_P1525_publication/tests/p866/public.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p866/public.c",
+  "output": "CMakeFiles/p866_public.dir/tests/p866/public.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p866_integrity.dir/tests/p866/integrity.c.o -c /workspace/NewLang_P1525_publication/tests/p866/integrity.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p866/integrity.c",
+  "output": "CMakeFiles/p866_integrity.dir/tests/p866/integrity.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p866_oom.dir/tests/p866/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p866/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p866/oom.c",
+  "output": "CMakeFiles/p866_oom.dir/tests/p866/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p878_guard.dir/tests/p878/guard.c.o -c /workspace/NewLang_P1525_publication/tests/p878/guard.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p878/guard.c",
+  "output": "CMakeFiles/p878_guard.dir/tests/p878/guard.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p817_public.dir/tests/p817/public.c.o -c /workspace/NewLang_P1525_publication/tests/p817/public.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p817/public.c",
+  "output": "CMakeFiles/p817_public.dir/tests/p817/public.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p817_integrity.dir/tests/p817/integrity.c.o -c /workspace/NewLang_P1525_publication/tests/p817/integrity.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p817/integrity.c",
+  "output": "CMakeFiles/p817_integrity.dir/tests/p817/integrity.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p817_oom.dir/tests/p817/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p817/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p817/oom.c",
+  "output": "CMakeFiles/p817_oom.dir/tests/p817/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p785_public.dir/tests/p785/public.c.o -c /workspace/NewLang_P1525_publication/tests/p785/public.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p785/public.c",
+  "output": "CMakeFiles/p785_public.dir/tests/p785/public.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p785_integrity.dir/tests/p785/integrity.c.o -c /workspace/NewLang_P1525_publication/tests/p785/integrity.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p785/integrity.c",
+  "output": "CMakeFiles/p785_integrity.dir/tests/p785/integrity.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p785_oom.dir/tests/p785/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p785/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p785/oom.c",
+  "output": "CMakeFiles/p785_oom.dir/tests/p785/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_ownership.dir/tests/p965/ownership.c.o -c /workspace/NewLang_P1525_publication/tests/p965/ownership.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/ownership.c",
+  "output": "CMakeFiles/p965_ownership.dir/tests/p965/ownership.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_oom.dir/tests/p965/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p965/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/oom.c",
+  "output": "CMakeFiles/p965_oom.dir/tests/p965/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_output.dir/tests/p965/output.c.o -c /workspace/NewLang_P1525_publication/tests/p965/output.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/output.c",
+  "output": "CMakeFiles/p965_output.dir/tests/p965/output.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_c89_guard.dir/tests/p965/c89/guard.c.o -c /workspace/NewLang_P1525_publication/tests/p965/c89/guard.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/c89/guard.c",
+  "output": "CMakeFiles/p965_c89_guard.dir/tests/p965/c89/guard.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_c89_observer.dir/tests/p965/c89/observer.c.o -c /workspace/NewLang_P1525_publication/tests/p965/c89/observer.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/c89/observer.c",
+  "output": "CMakeFiles/p965_c89_observer.dir/tests/p965/c89/observer.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p965_c89_entry_source.dir/tests/p965/c89/entry_source.c.o -c /workspace/NewLang_P1525_publication/tests/p965/c89/entry_source.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p965/c89/entry_source.c",
+  "output": "CMakeFiles/p965_c89_entry_source.dir/tests/p965/c89/entry_source.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p974_entry_auth.dir/tests/p974/entry.c.o -c /workspace/NewLang_P1525_publication/tests/p974/entry.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p974/entry.c",
+  "output": "CMakeFiles/p974_entry_auth.dir/tests/p974/entry.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p974_driver.dir/tests/p974/driver.c.o -c /workspace/NewLang_P1525_publication/tests/p974/driver.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p974/driver.c",
+  "output": "CMakeFiles/p974_driver.dir/tests/p974/driver.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p982_probe.dir/tests/p982/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p982/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p982/probe.c",
+  "output": "CMakeFiles/p982_probe.dir/tests/p982/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p982_oom.dir/tests/p982/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p982/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p982/oom.c",
+  "output": "CMakeFiles/p982_oom.dir/tests/p982/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p990_probe.dir/tests/p990/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p990/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p990/probe.c",
+  "output": "CMakeFiles/p990_probe.dir/tests/p990/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p990_oom.dir/tests/p990/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p990/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p990/oom.c",
+  "output": "CMakeFiles/p990_oom.dir/tests/p990/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1107_probe.dir/tests/p1107/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1107/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1107/probe.c",
+  "output": "CMakeFiles/p1107_probe.dir/tests/p1107/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1107_OOM -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1107_oom.dir/tests/p1107/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1107/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1107/probe.c",
+  "output": "CMakeFiles/p1107_oom.dir/tests/p1107/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1117_probe.dir/tests/p1117/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1117/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1117/probe.c",
+  "output": "CMakeFiles/p1117_probe.dir/tests/p1117/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1117_lineage.dir/tests/p1117/lineage_v2.c.o -c /workspace/NewLang_P1525_publication/tests/p1117/lineage_v2.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1117/lineage_v2.c",
+  "output": "CMakeFiles/p1117_lineage.dir/tests/p1117/lineage_v2.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1117_safety.dir/tests/p1117/safety_v3.c.o -c /workspace/NewLang_P1525_publication/tests/p1117/safety_v3.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1117/safety_v3.c",
+  "output": "CMakeFiles/p1117_safety.dir/tests/p1117/safety_v3.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1117_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1117_oom.dir/tests/p1117/safety_oom_v2.c.o -c /workspace/NewLang_P1525_publication/tests/p1117/safety_oom_v2.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1117/safety_oom_v2.c",
+  "output": "CMakeFiles/p1117_oom.dir/tests/p1117/safety_oom_v2.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1117_c217_lineage.dir/tests/p1117/c217/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1117/c217/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1117/c217/probe.c",
+  "output": "CMakeFiles/p1117_c217_lineage.dir/tests/p1117/c217/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1123_safety.dir/tests/p1123/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1123/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1123/safety.c",
+  "output": "CMakeFiles/p1123_safety.dir/tests/p1123/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1123_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1123_oom.dir/tests/p1123/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1123/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1123/safety.c",
+  "output": "CMakeFiles/p1123_oom.dir/tests/p1123/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1133_safety.dir/tests/p1133/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1133/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1133/safety.c",
+  "output": "CMakeFiles/p1133_safety.dir/tests/p1133/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1133_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1133_oom.dir/tests/p1133/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1133/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1133/safety.c",
+  "output": "CMakeFiles/p1133_oom.dir/tests/p1133/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1139_safety.dir/tests/p1139/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1139/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1139/safety.c",
+  "output": "CMakeFiles/p1139_safety.dir/tests/p1139/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1139_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1139_oom.dir/tests/p1139/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1139/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1139/safety.c",
+  "output": "CMakeFiles/p1139_oom.dir/tests/p1139/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1146_safety.dir/tests/p1146/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1146/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1146/safety.c",
+  "output": "CMakeFiles/p1146_safety.dir/tests/p1146/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1146_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1146_oom.dir/tests/p1146/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1146/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1146/safety.c",
+  "output": "CMakeFiles/p1146_oom.dir/tests/p1146/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1176_safety.dir/tests/p1176/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1176/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1176/safety.c",
+  "output": "CMakeFiles/p1176_safety.dir/tests/p1176/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1176_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1176_oom.dir/tests/p1176/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1176/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1176/safety.c",
+  "output": "CMakeFiles/p1176_oom.dir/tests/p1176/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1176_census.dir/tests/p1176/census.c.o -c /workspace/NewLang_P1525_publication/tests/p1176/census.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1176/census.c",
+  "output": "CMakeFiles/p1176_census.dir/tests/p1176/census.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1184_safety.dir/tests/p1184/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "output": "CMakeFiles/p1184_safety.dir/tests/p1184/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1184_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1184_oom.dir/tests/p1184/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "output": "CMakeFiles/p1184_oom.dir/tests/p1184/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1184_census.dir/tests/p1184/census.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/census.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/census.c",
+  "output": "CMakeFiles/p1184_census.dir/tests/p1184/census.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1184_signature.dir/tests/p1184/c246a/signature.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/c246a/signature.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/c246a/signature.c",
+  "output": "CMakeFiles/p1184_signature.dir/tests/p1184/c246a/signature.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1184_signature.dir/tests/p1184/c246a/signature_driver.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/c246a/signature_driver.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/c246a/signature_driver.c",
+  "output": "CMakeFiles/p1184_signature.dir/tests/p1184/c246a/signature_driver.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/p1525-evidence/publication-c1184/build-release -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_safety.dir/tests/p1188/safety-v2.c.o -c /workspace/NewLang_P1525_publication/tests/p1188/safety-v2.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1188/safety-v2.c",
+  "output": "CMakeFiles/p1188_safety.dir/tests/p1188/safety-v2.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1184_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/p1525-evidence/publication-c1184/build-release -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_oom.dir/tests/p1184/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "output": "CMakeFiles/p1188_oom.dir/tests/p1184/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/p1525-evidence/publication-c1184/build-release -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_census.dir/tests/p1184/census.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/census.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/census.c",
+  "output": "CMakeFiles/p1188_census.dir/tests/p1184/census.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_c250a_probe.dir/tests/p1188/c250a/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1188/c250a/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1188/c250a/probe.c",
+  "output": "CMakeFiles/p1188_c250a_probe.dir/tests/p1188/c250a/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/p1525-evidence/publication-c1184/build-release -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_c254_probe.dir/tests/p1188/c254/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1188/c254/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1188/c254/probe.c",
+  "output": "CMakeFiles/p1188_c254_probe.dir/tests/p1188/c254/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/p1525-evidence/publication-c1184/build-release -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1188_c254_capture.dir/tests/p1188/c254/capture.c.o -c /workspace/NewLang_P1525_publication/tests/p1188/c254/capture.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1188/c254/capture.c",
+  "output": "CMakeFiles/p1188_c254_capture.dir/tests/p1188/c254/capture.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1203_safety.dir/tests/p1203/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1203/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1203/safety.c",
+  "output": "CMakeFiles/p1203_safety.dir/tests/p1203/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_roles.dir/tests/p1193/production/roles.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/production/roles.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/production/roles.c",
+  "output": "CMakeFiles/p1193_roles.dir/tests/p1193/production/roles.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_challenges.dir/tests/p1193/production/challenges.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/production/challenges.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/production/challenges.c",
+  "output": "CMakeFiles/p1193_challenges.dir/tests/p1193/production/challenges.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DC256_CANDIDATE -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_census.dir/tests/p1193/production/census.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/production/census.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/production/census.c",
+  "output": "CMakeFiles/p1193_census.dir/tests/p1193/production/census.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_observe.dir/tests/p1193/production/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/production/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/production/observe.c",
+  "output": "CMakeFiles/p1193_observe.dir/tests/p1193/production/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1184_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_oom.dir/tests/p1184/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1184/safety.c",
+  "output": "CMakeFiles/p1193_oom.dir/tests/p1184/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_signature_auth.dir/tests/p1193/signature-auth/challenges.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/signature-auth/challenges.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/signature-auth/challenges.c",
+  "output": "CMakeFiles/p1193_signature_auth.dir/tests/p1193/signature-auth/challenges.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1193_signature_oom.dir/tests/p1193/signature-auth/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p1193/signature-auth/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1193/signature-auth/oom.c",
+  "output": "CMakeFiles/p1193_signature_oom.dir/tests/p1193/signature-auth/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1169_safety.dir/tests/p1169/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1169/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1169/safety.c",
+  "output": "CMakeFiles/p1169_safety.dir/tests/p1169/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1169_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1169_oom.dir/tests/p1169/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1169/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1169/safety.c",
+  "output": "CMakeFiles/p1169_oom.dir/tests/p1169/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1158_safety.dir/tests/p1158/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1158/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1158/safety.c",
+  "output": "CMakeFiles/p1158_safety.dir/tests/p1158/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1152_safety.dir/tests/p1152/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1152/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1152/safety.c",
+  "output": "CMakeFiles/p1152_safety.dir/tests/p1152/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1152_OOM -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1152_oom.dir/tests/p1152/safety.c.o -c /workspace/NewLang_P1525_publication/tests/p1152/safety.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1152/safety.c",
+  "output": "CMakeFiles/p1152_oom.dir/tests/p1152/safety.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1098_probe.dir/tests/p1098/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1098/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1098/probe.c",
+  "output": "CMakeFiles/p1098_probe.dir/tests/p1098/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1098_OOM -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1098_oom.dir/tests/p1098/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p1098/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1098/probe.c",
+  "output": "CMakeFiles/p1098_oom.dir/tests/p1098/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1092_observe.dir/tests/p1092/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1092/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1092/observe.c",
+  "output": "CMakeFiles/p1092_observe.dir/tests/p1092/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc -DP1092_OOM -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -fno-pie -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1092_oom.dir/tests/p1092/observe.c.o -c /workspace/NewLang_P1525_publication/tests/p1092/observe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1092/observe.c",
+  "output": "CMakeFiles/p1092_oom.dir/tests/p1092/observe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p961_oom.dir/tests/p961/oom.c.o -c /workspace/NewLang_P1525_publication/tests/p961/oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p961/oom.c",
+  "output": "CMakeFiles/p961_oom.dir/tests/p961/oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p961_output.dir/tests/p961/output.c.o -c /workspace/NewLang_P1525_publication/tests/p961/output.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p961/output.c",
+  "output": "CMakeFiles/p961_output.dir/tests/p961/output.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p961_original.dir/tests/p961/original.c.o -c /workspace/NewLang_P1525_publication/tests/p961/original.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p961/original.c",
+  "output": "CMakeFiles/p961_original.dir/tests/p961/original.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p961_origin.dir/tests/p961/origin.c.o -c /workspace/NewLang_P1525_publication/tests/p961/origin.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p961/origin.c",
+  "output": "CMakeFiles/p961_origin.dir/tests/p961/origin.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/tests/support -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p953_integrity.dir/tests/p953/integrity.c.o -c /workspace/NewLang_P1525_publication/tests/p953/integrity.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p953/integrity.c",
+  "output": "CMakeFiles/p953_integrity.dir/tests/p953/integrity.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p945_integrity.dir/tests/p945/integrity.c.o -c /workspace/NewLang_P1525_publication/tests/p945/integrity.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p945/integrity.c",
+  "output": "CMakeFiles/p945_integrity.dir/tests/p945/integrity.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p778_probe.dir/tests/p778/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p778/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p778/probe.c",
+  "output": "CMakeFiles/p778_probe.dir/tests/p778/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p778_gate_test.dir/tests/p778/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p778/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p778/gate_test.c",
+  "output": "CMakeFiles/p778_gate_test.dir/tests/p778/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p774_probe.dir/tests/p774/gate0_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p774/gate0_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p774/gate0_probe.c",
+  "output": "CMakeFiles/p774_probe.dir/tests/p774/gate0_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p774_gate_test.dir/tests/p774/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p774/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p774/gate_test.c",
+  "output": "CMakeFiles/p774_gate_test.dir/tests/p774/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p774_driver_oom.dir/tests/p774/driver_oom.c.o -c /workspace/NewLang_P1525_publication/tests/p774/driver_oom.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p774/driver_oom.c",
+  "output": "CMakeFiles/p774_driver_oom.dir/tests/p774/driver_oom.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p761_probe.dir/tests/p761/probe.c.o -c /workspace/NewLang_P1525_publication/tests/p761/probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p761/probe.c",
+  "output": "CMakeFiles/p761_probe.dir/tests/p761/probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p761_metadata_test.dir/tests/p761/metadata_test.c.o -c /workspace/NewLang_P1525_publication/tests/p761/metadata_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p761/metadata_test.c",
+  "output": "CMakeFiles/p761_metadata_test.dir/tests/p761/metadata_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p761_gate_test.dir/tests/p761/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p761/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p761/gate_test.c",
+  "output": "CMakeFiles/p761_gate_test.dir/tests/p761/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p761_oom_test.dir/tests/p761/oom_test.c.o -c /workspace/NewLang_P1525_publication/tests/p761/oom_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p761/oom_test.c",
+  "output": "CMakeFiles/p761_oom_test.dir/tests/p761/oom_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p752_driver_test.dir/tests/p752/driver_test.c.o -c /workspace/NewLang_P1525_publication/tests/p752/driver_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p752/driver_test.c",
+  "output": "CMakeFiles/p752_driver_test.dir/tests/p752/driver_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p752_unit_test.dir/tests/p752/unit_test.c.o -c /workspace/NewLang_P1525_publication/tests/p752/unit_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p752/unit_test.c",
+  "output": "CMakeFiles/p752_unit_test.dir/tests/p752/unit_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/avs_test.dir/tests/unit/avs_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/avs_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/avs_test.c",
+  "output": "CMakeFiles/avs_test.dir/tests/unit/avs_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/u8_literal_test.dir/tests/unit/u8_literal_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/u8_literal_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/u8_literal_test.c",
+  "output": "CMakeFiles/u8_literal_test.dir/tests/unit/u8_literal_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p497_literal_test.dir/tests/p497/literal_test.c.o -c /workspace/NewLang_P1525_publication/tests/p497/literal_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p497/literal_test.c",
+  "output": "CMakeFiles/p497_literal_test.dir/tests/p497/literal_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p497_public_probe.dir/tests/p497/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p497/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p497/public_probe.c",
+  "output": "CMakeFiles/p497_public_probe.dir/tests/p497/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/fixed_field_test.dir/tests/unit/fixed_field_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/fixed_field_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/fixed_field_test.c",
+  "output": "CMakeFiles/fixed_field_test.dir/tests/unit/fixed_field_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/recursive_type_test.dir/tests/unit/recursive_type_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/recursive_type_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/recursive_type_test.c",
+  "output": "CMakeFiles/recursive_type_test.dir/tests/unit/recursive_type_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/heap_link_test.dir/tests/unit/heap_link_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/heap_link_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/heap_link_test.c",
+  "output": "CMakeFiles/heap_link_test.dir/tests/unit/heap_link_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/heap_link_support_test.dir/tests/unit/heap_link_support_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/heap_link_support_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/heap_link_support_test.c",
+  "output": "CMakeFiles/heap_link_support_test.dir/tests/unit/heap_link_support_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/heap_link_checked_probe.dir/tests/integration/heap_link_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/heap_link_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/heap_link_checked_probe.c",
+  "output": "CMakeFiles/heap_link_checked_probe.dir/tests/integration/heap_link_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/heap_link_backend_test.dir/tests/unit/heap_link_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/heap_link_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/heap_link_backend_test.c",
+  "output": "CMakeFiles/heap_link_backend_test.dir/tests/unit/heap_link_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/allocated_backend_test.dir/tests/unit/allocated_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/allocated_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/allocated_backend_test.c",
+  "output": "CMakeFiles/allocated_backend_test.dir/tests/unit/allocated_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/allocated_checked_probe.dir/tests/integration/allocated_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/allocated_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/allocated_checked_probe.c",
+  "output": "CMakeFiles/allocated_checked_probe.dir/tests/integration/allocated_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/handoff_backend_test.dir/tests/unit/handoff_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/handoff_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/handoff_backend_test.c",
+  "output": "CMakeFiles/handoff_backend_test.dir/tests/unit/handoff_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/handoff_checked_probe.dir/tests/integration/handoff_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/handoff_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/handoff_checked_probe.c",
+  "output": "CMakeFiles/handoff_checked_probe.dir/tests/integration/handoff_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p738_gate_test.dir/tests/p738/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p738/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p738/gate_test.c",
+  "output": "CMakeFiles/p738_gate_test.dir/tests/p738/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p733_gate_test.dir/tests/p733/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p733/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p733/gate_test.c",
+  "output": "CMakeFiles/p733_gate_test.dir/tests/p733/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p733_history_test.dir/tests/p733/history_test.c.o -c /workspace/NewLang_P1525_publication/tests/p733/history_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p733/history_test.c",
+  "output": "CMakeFiles/p733_history_test.dir/tests/p733/history_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p733_public_probe.dir/tests/p733/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p733/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p733/public_probe.c",
+  "output": "CMakeFiles/p733_public_probe.dir/tests/p733/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p733_driver_test.dir/tests/p733/driver_test.c.o -c /workspace/NewLang_P1525_publication/tests/p733/driver_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p733/driver_test.c",
+  "output": "CMakeFiles/p733_driver_test.dir/tests/p733/driver_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/live_return_backend_test.dir/tests/unit/live_return_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/live_return_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/live_return_backend_test.c",
+  "output": "CMakeFiles/live_return_backend_test.dir/tests/unit/live_return_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/live_tail_return_test.dir/tests/unit/live_tail_return_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/live_tail_return_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/live_tail_return_test.c",
+  "output": "CMakeFiles/live_tail_return_test.dir/tests/unit/live_tail_return_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/packet_fork_test.dir/tests/unit/packet_fork_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/packet_fork_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/packet_fork_test.c",
+  "output": "CMakeFiles/packet_fork_test.dir/tests/unit/packet_fork_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/packet_retention_test.dir/tests/unit/packet_retention_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/packet_retention_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/packet_retention_test.c",
+  "output": "CMakeFiles/packet_retention_test.dir/tests/unit/packet_retention_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/custody_source_test.dir/tests/unit/custody_source_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/custody_source_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/custody_source_test.c",
+  "output": "CMakeFiles/custody_source_test.dir/tests/unit/custody_source_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/custody_checked_probe.dir/tests/integration/custody_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/custody_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/custody_checked_probe.c",
+  "output": "CMakeFiles/custody_checked_probe.dir/tests/integration/custody_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/custody_definition_test.dir/tests/unit/custody_definition_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/custody_definition_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/custody_definition_test.c",
+  "output": "CMakeFiles/custody_definition_test.dir/tests/unit/custody_definition_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/typed_owner_test.dir/tests/unit/typed_owner_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/typed_owner_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/typed_owner_test.c",
+  "output": "CMakeFiles/typed_owner_test.dir/tests/unit/typed_owner_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/two_heap_checked_probe.dir/tests/integration/two_heap_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/two_heap_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/two_heap_checked_probe.c",
+  "output": "CMakeFiles/two_heap_checked_probe.dir/tests/integration/two_heap_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/two_heap_backend_test.dir/tests/unit/two_heap_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/two_heap_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/two_heap_backend_test.c",
+  "output": "CMakeFiles/two_heap_backend_test.dir/tests/unit/two_heap_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/two_heap_test.dir/tests/unit/two_heap_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/two_heap_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/two_heap_test.c",
+  "output": "CMakeFiles/two_heap_test.dir/tests/unit/two_heap_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/captured_closure_test.dir/tests/unit/captured_closure_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/captured_closure_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/captured_closure_test.c",
+  "output": "CMakeFiles/captured_closure_test.dir/tests/unit/captured_closure_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/five_checked_probe.dir/tests/integration/five_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/five_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/five_checked_probe.c",
+  "output": "CMakeFiles/five_checked_probe.dir/tests/integration/five_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/five_backend_test.dir/tests/unit/five_backend_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/five_backend_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/five_backend_test.c",
+  "output": "CMakeFiles/five_backend_test.dir/tests/unit/five_backend_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/allocated_join_test.dir/tests/unit/allocated_join_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/allocated_join_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/allocated_join_test.c",
+  "output": "CMakeFiles/allocated_join_test.dir/tests/unit/allocated_join_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/allocated_node_test.dir/tests/unit/allocated_node_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/allocated_node_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/allocated_node_test.c",
+  "output": "CMakeFiles/allocated_node_test.dir/tests/unit/allocated_node_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p466_public_probe.dir/tests/p466/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p466/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p466/public_probe.c",
+  "output": "CMakeFiles/p466_public_probe.dir/tests/p466/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p471_public_probe.dir/tests/p471/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p471/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p471/public_probe.c",
+  "output": "CMakeFiles/p471_public_probe.dir/tests/p471/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p490_public_probe.dir/tests/p490/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p490/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p490/public_probe.c",
+  "output": "CMakeFiles/p490_public_probe.dir/tests/p490/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_link_test.dir/tests/unit/node_link_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/node_link_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/node_link_test.c",
+  "output": "CMakeFiles/node_link_test.dir/tests/unit/node_link_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_initial_test.dir/tests/unit/node_initial_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/node_initial_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/node_initial_test.c",
+  "output": "CMakeFiles/node_initial_test.dir/tests/unit/node_initial_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_join_native_test.dir/tests/unit/node_join_native_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/node_join_native_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/node_join_native_test.c",
+  "output": "CMakeFiles/node_join_native_test.dir/tests/unit/node_join_native_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_join_native_probe.dir/tests/integration/node_join_native_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/node_join_native_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/node_join_native_probe.c",
+  "output": "CMakeFiles/node_join_native_probe.dir/tests/integration/node_join_native_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_checked_probe.dir/tests/integration/node_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/node_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/node_checked_probe.c",
+  "output": "CMakeFiles/node_checked_probe.dir/tests/integration/node_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/checked_c_node_test.dir/tests/unit/checked_c_node_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/checked_c_node_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/checked_c_node_test.c",
+  "output": "CMakeFiles/checked_c_node_test.dir/tests/unit/checked_c_node_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_join_proof_test.dir/tests/unit/node_join_proof_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/node_join_proof_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/node_join_proof_test.c",
+  "output": "CMakeFiles/node_join_proof_test.dir/tests/unit/node_join_proof_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/node_join_test.dir/tests/unit/node_join_test.c.o -c /workspace/NewLang_P1525_publication/tests/unit/node_join_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/unit/node_join_test.c",
+  "output": "CMakeFiles/node_join_test.dir/tests/unit/node_join_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/nested_u8_checked_probe.dir/tests/integration/nested_u8_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/nested_u8_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/nested_u8_checked_probe.c",
+  "output": "CMakeFiles/nested_u8_checked_probe.dir/tests/integration/nested_u8_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/u8_call_checked_probe.dir/tests/integration/u8_call_checked_probe.c.o -c /workspace/NewLang_P1525_publication/tests/integration/u8_call_checked_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/integration/u8_call_checked_probe.c",
+  "output": "CMakeFiles/u8_call_checked_probe.dir/tests/integration/u8_call_checked_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p589_public_probe.dir/tests/p589/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p589/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p589/public_probe.c",
+  "output": "CMakeFiles/p589_public_probe.dir/tests/p589/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p589_gate_test.dir/tests/p589/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p589/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p589/gate_test.c",
+  "output": "CMakeFiles/p589_gate_test.dir/tests/p589/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p589_parser_oom_test.dir/tests/p589/parser_oom_test.c.o -c /workspace/NewLang_P1525_publication/tests/p589/parser_oom_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p589/parser_oom_test.c",
+  "output": "CMakeFiles/p589_parser_oom_test.dir/tests/p589/parser_oom_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p596_public_probe.dir/tests/p596/public_probe.c.o -c /workspace/NewLang_P1525_publication/tests/p596/public_probe.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p596/public_probe.c",
+  "output": "CMakeFiles/p596_public_probe.dir/tests/p596/public_probe.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p596_gate_test.dir/tests/p596/gate_test.c.o -c /workspace/NewLang_P1525_publication/tests/p596/gate_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p596/gate_test.c",
+  "output": "CMakeFiles/p596_gate_test.dir/tests/p596/gate_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p596_parser_oom_test.dir/tests/p596/parser_oom_test.c.o -c /workspace/NewLang_P1525_publication/tests/p596/parser_oom_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p596/parser_oom_test.c",
+  "output": "CMakeFiles/p596_parser_oom_test.dir/tests/p596/parser_oom_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p596_proof_core_test.dir/tests/p596/proof_core_test.c.o -c /workspace/NewLang_P1525_publication/tests/p596/proof_core_test.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p596/proof_core_test.c",
+  "output": "CMakeFiles/p596_proof_core_test.dir/tests/p596/proof_core_test.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1335_two_calls.dir/tests/p1335/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1335/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1335/owned.c",
+  "output": "CMakeFiles/p1335_two_calls.dir/tests/p1335/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1339_readonly.dir/tests/p1339/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1339/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1339/owned.c",
+  "output": "CMakeFiles/p1339_readonly.dir/tests/p1339/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1343_frame.dir/tests/p1343/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1343/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1343/owned.c",
+  "output": "CMakeFiles/p1343_frame.dir/tests/p1343/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1347_reuse.dir/tests/p1347/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1347/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1347/owned.c",
+  "output": "CMakeFiles/p1347_reuse.dir/tests/p1347/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1351_wrapper.dir/tests/p1351/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1351/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1351/owned.c",
+  "output": "CMakeFiles/p1351_wrapper.dir/tests/p1351/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1355_wrapper.dir/tests/p1355/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1355/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1355/owned.c",
+  "output": "CMakeFiles/p1355_wrapper.dir/tests/p1355/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1359_wrapper.dir/tests/p1359/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1359/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1359/owned.c",
+  "output": "CMakeFiles/p1359_wrapper.dir/tests/p1359/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1364_wrapper.dir/tests/p1364/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1364/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1364/owned.c",
+  "output": "CMakeFiles/p1364_wrapper.dir/tests/p1364/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1368_owned.dir/tests/p1368/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1368/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1368/owned.c",
+  "output": "CMakeFiles/p1368_owned.dir/tests/p1368/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1372_owned.dir/tests/p1372/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1372/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1372/owned.c",
+  "output": "CMakeFiles/p1372_owned.dir/tests/p1372/owned.c.o"
+},
+{
+  "directory": "/workspace/p1525-evidence/publication-c1184/build-release",
+  "command": "/workspace/p1525-evidence/cc-gcc  -I/workspace/NewLang_P1525_publication/src -I/workspace/NewLang_P1525_publication/include -D_FORTIFY_SOURCE=3 -O3 -DNDEBUG -std=c17 -UNDEBUG -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1375_owned.dir/tests/p1375/owned.c.o -c /workspace/NewLang_P1525_publication/tests/p1375/owned.c",
+  "file": "/workspace/NewLang_P1525_publication/tests/p1375/owned.c",
+  "output": "CMakeFiles/p1375_owned.dir/tests/p1375/owned.c.o"
+}
+]

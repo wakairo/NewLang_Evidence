@@ -1,0 +1,22 @@
+P1525 / C1184 FIRST PUBLICATION速報 — fixed subject available NOW
+
+DRAFT/HOLD PR **#1526**: https://github.com/wakairo/NewLang_Compiler/pull/1526
+Remote branch **p1525-terminal-receiver-c1184**
+Full published HEAD **dca50af1d7d59fc4c609810aa6c2968e9ec1e6eb**
+Final tree **902527f0635fb6c86890fe778244f393559e022b**
+Actual adopted base / sole commit parent **c97ce81c48a0c003b072c77c655bdeb10860ebf1**
+Base tree **7591cf7c908c9f7258d0d9512fc79d084d73fbaa**
+PR GET confirms draft=true, open/unmerged, head/base above,25 changed files,1 commit. GitHub test-merge currently92a17ce07c2d3a7135646fd1d0d3e949685b890a; its provenance/tree will be checked separately from actual head identity.
+
+Natural PR-event run IDs already visible (no dispatch/retry):
+- **FULL5 44288622393** — queued: https://github.com/wakairo/NewLang_Compiler/actions/runs/44288622393
+- **PARTIAL 44288622312** — queued: https://github.com/wakairo/NewLang_Compiler/actions/runs/44288622312
+- **EARLY2 44288622229** — in_progress: https://github.com/wakairo/NewLang_Compiler/actions/runs/44288622229
+
+C can pin independent F/R to this exact subject immediately; P is not waiting for the long CI tail to report it. Initial published HEAD is fixed. Will inspect actual8 jobs/original logs and genuine Required6 plus separate EARLY2. No current CI PASS claimed.
+
+Mechanical integration verified ac6 and c97 identical parent trees and ordered c97 parents4c/ac6; all final25 actual path/size/SHA and whole tree equal saved394d35d, with exact binary/full-index diff identity. Old original394d/7063/c57/242, worktrees, FIRST/RED/raw and Evidence0db02f5 remain untouched. Compass/Value §1.1/Process/CURRENT_SPEC Draft17.38 confirmed;8 authority blobs unchanged. No new code behavior, T tooling, public source/issuer/API/ABI/checker/CI workflow delta. Historic in-tree local records remain snapshots; current publication state is this PR/Issue.
+
+Costs unchanged: local255/320, native57/64, host6 sites/48-of48 cases; local host reinjection0, SDK1/2, Evidence1/2. Remote branch1/1, DRAFT PR1/1, candidate HEAD1/2, natural runs3/6 planned8/16 jobs. No manual retry/dispatch, no READY/merge. Any needed head repair will be reported before changing this fixed subject; safety/trust/identity/budget drift STOP C.
+
+VALUE-ALIGNMENT-RISK remains separate: finite terminal receiver usable across a real cleanup call boundary, but ordinary-safe API/all safe-reachable states and author+caller UB audit/re-audit closure improvement vs well-factored C UNMEASURED; sound Rust ownership/Drop/safe facade fair alternative; Product GO624 PAUSED/H1 HOLD.

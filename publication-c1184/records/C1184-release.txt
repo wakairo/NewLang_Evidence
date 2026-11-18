@@ -1,0 +1,63 @@
+Track: Coordination
+
+## C1184 — LOCAL FINAL accepted; ACTUAL-MAIN PUBLICATION RELEASED NOW
+
+C read [P LOCAL FINAL](https://github.com/wakairo/NewLang_Compiler/issues/1525#issuecomment-6975396857) and the [restore receipt](https://github.com/wakairo/NewLang_Compiler/issues/1525#issuecomment-6975340901). Read-only C review independently compared the archived patches/source membership: the original24-file implementation is preserved on ac6, final25-file delta adds pinned formatting and successor documentation; Production's added difference from the saved review is two whitespace-only hunks in checked_c_node.c, with the other two Production blobs unchanged. Original source/oracle/native runner and prior FIRST/RED remain. This is sufficient for **bounded local completion acceptance**, not final PR/independent-review adoption.
+
+### Concrete predecessor gate is now satisfied
+
+PR1508 has been substantively accepted and **actually merged** under C1183 after same-final-HEAD Required6 success, preserved F1509/R1516 review and exact integration checks.
+
+**Actual adopted base now: `c97ce81c48a0c003b072c77c655bdeb10860ebf1`**  
+**Tree: `7591cf7c908c9f7258d0d9512fc79d084d73fbaa`**  
+Ordered parents: `4c388693b95f371783e666f5c77e0aec5d17d215`, `ac6be8e3473f08c44fe8e9407dc33c0fb53086d6`.
+
+C GET-verified the actual main ref/commit/tree and merge metadata. This tree is EXACTLY the local mission's reviewed ac6 parent tree. CURRENT_SPEC remains Draft17.38. It is no longer a synthetic/unadopted-parent assumption.
+
+Natural postmerge main FULL5 [44283656211](https://github.com/wakairo/NewLang_Compiler/actions/runs/44283656211) / PARTIAL [44283656154](https://github.com/wakairo/NewLang_Compiler/actions/runs/44283656154) are running, not yet accepted. **C explicitly permits same-tree successor publication while this verification runs**, to avoid another idle wait; C retains original-log follow-up. A later RED/skip/cancel/stale or material finding stops/reassesses affected dependent work. Nothing here represents pending postmerge jobs as PASS.
+
+### Resume and publish the already verified increment
+
+1. Same sole P: GET this actual release/latest comments and main ref, POST/GET ACTUAL RESUME and exposure/ledger. No new P actor or reset.
+2. Preserve original final `394d35d4175716a4fc2947e3d5fbdbc89c167237` / tree `902527f0635fb6c86890fe778244f393559e022b`, parent integration7063ca3, all originals and Evidence0db02f5088c494d5811e18edb1f15c1537a5cfef. Mechanically anchor the same final25-path delta to actual c97 main, keeping all adopted paths. P chooses normal Git technique; old original identities and new commit identities stay distinct.
+3. Parent tree equality means no new compiler/source behavior is introduced by this anchoring. Do not repeat the full local/native/fault campaign solely for new commit metadata. Verify actual final tree/diff and run only concrete remaining checks inside the existing budgets.
+4. Publish **one new P remote branch and one DRAFT/HOLD PR targeting main**. Do not update old PR1508/R/T refs or main, import T tooling into Production, or add source capability. PR must declare the actual limited receiver/H2-only second same-T update/common reads and all untested/out-of-profile boundaries.
+5. **Immediately after first publication**, report full HEAD/tree/adopted base/branch/PR and natural run IDs, without waiting for the long CI tail. C will pin independent F/R to that exact subject. Keep P away from their original questions/source/oracle/runner.
+6. Observe genuine same-final-HEAD Required FULL5 + PARTIAL; EARLY2 is separate. No self-READY/merge. On sufficient results, post exact FINAL/ledger/evidence/limits and STOP. New P head changes must be surfaced to C before publication so independent fixed subjects are not silently retargeted; routine scope-safe repairs remain P's decision, not a new micro-permission.
+
+### Existing finite budgets, now remote portion activated
+
+Local ledger is **255/320**, selected native **57/64**, host **6 logical sites /48-of48 fault-retry cases**, SDK **1/2**. Remaining local65/native7 may be used for a concrete need; **no additional local host fault injection is authorized**. Old P1517 80/80/ENV-PARTIAL is immutable. CI's required fault/native executions are in their separate already planned remote budget, not falsely counted as local replay.
+
+Now released: remote branch1 / DRAFT PR1; at most **two CI-triggering candidate HEADs**, each natural FULL5+PARTIAL+EARLY2 =8 jobs/3 runs; total **16 jobs/6 runs**. No manual retry/dispatch or third HEAD. Batch safe repairs and stop at the first sufficiently verified final HEAD. P's existing Evidence1/2 pushes remain; original snapshots and restore/deletion rules remain.
+
+### Brief discretion review and boundaries
+
+Previous C1177 delegated full local integration, pinned-SDK setup and private/mechanical repair within the finite capability. P actually obtained authentic Clang in a fresh prefix, preserved the format RED, completed GCC/Clang/ASan plus selected UBSan, used57/64 native, correctly omitted a fourth fault campaign at48/48, and stopped at PUBLICATION HOLD rather than consuming unused budget. That is the intended autonomy. Next, retain it for mechanical anchoring/publication/CI triage, with no blanket budget reset or new design.
+
+The finite new results supersede missing checks only for this successor measurement; they do not rewrite historical NOT_RUN. Real ordinary-safe API/all safe-reachable states and author+caller UB audit/re-audit locality vs good factored C remain UNMEASURED. Product GO624 PAUSED/H1 HOLD. C1161's value concern returns before any larger general mechanism/fixture-specific machinery investment; it does not block this faithful bounded increment.
+
+STOP for actual-main/head/source identity mismatch, source/issuer/API/ABI need, authority/owner/loan/current/UB/wrong-code/OOM/no-clobber concern, toolchain trust weakening, independence/actor collision or budget excess. Preserve the first affected evidence. F/R final candidate review and C substantive adoption remain separate.
+
+### Copyable Codex resume prompt
+
+```text
+既存sole Track Pとして、Issue #1525 のC1184 PUBLICATION RELEASEを再開してください。
+https://github.com/wakairo/NewLang_Compiler/issues/1525
+
+Issue最新裁定をGETし、ACTUAL RESUME・来歴をPOST/GET。
+Compass→Value §1.1→Process→CURRENT_SPEC Draft17.38を確認。
+実採用main c97ce81c48a0c003b072c77c655bdeb10860ebf1
+（tree7591cf7c908c9f7258d0d9512fc79d084d73fbaa）へ、
+保存済み最終394d35d4175716a4fc2947e3d5fbdbc89c167237を機械的に統合し、
+1 branch／1 DRAFT PRで公開してください。親treeは検証済みac6と同一です。
+
+公開直後に完全HEAD/tree/base/branch/PR/自然CI IDsを速報し、F/Rを待たせないでください。
+新能力・T差分の追加、独立F/R資料の参照、旧FIRST/REDの変更は禁止。
+localは既存255/320、native57/64、host fault48/48を引継ぎ、host再注入0。
+自然CIは最大2HEAD・計16jobs（各FULL5+PARTIAL+EARLY2）、手動再実行0。
+初回HEADは固定し、修復が必要ならscope内で自律対応しつつ変更前にCへ速報。
+main/head drift・安全性・trust・予算逸脱はSTOP C。READY/mergeはC。
+詳細C1184を優先し、同じ最終HEADの必要CI・証拠でFINAL POST/GET後STOP。
+```
+

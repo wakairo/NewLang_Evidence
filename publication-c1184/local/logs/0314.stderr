@@ -1,0 +1,5 @@
+/workspace/NewLang_P1525_publication/tests/p1517/cli_fault.c: In function ‘__wrap_malloc’:
+/workspace/NewLang_P1525_publication/tests/p1517/cli_fault.c:14:15: error: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   14 |         (void)write(2, message, sizeof message - 1);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors

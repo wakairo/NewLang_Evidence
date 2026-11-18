@@ -1,0 +1,20 @@
+{
+  "final_head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "tree": "20083ff35349efd254e015f90dcac38a8d16852a",
+  "base": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "changed_files": 25,
+  "only_change_since_first": "tests/p1517/cli_fault.c",
+  "ledger_records": 365,
+  "local": 276,
+  "native": 57,
+  "host_cases": 48,
+  "host_reinjection": 0,
+  "Compiler_remote_branches": 1,
+  "PR": 1526,
+  "draft": true,
+  "HEADs": 2,
+  "natural_runs": 6,
+  "jobs": 16,
+  "manual_retry_dispatch": 0,
+  "status": "Awaiting final FULL ASan; not PASS"
+}

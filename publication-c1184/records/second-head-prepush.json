@@ -1,0 +1,12 @@
+{
+  "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "tree": "20083ff35349efd254e015f90dcac38a8d16852a",
+  "parent": "dca50af1d7d59fc4c609810aa6c2968e9ec1e6eb",
+  "base": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "branch": "p1525-terminal-receiver-c1184",
+  "only_change_from_first": "tests/p1517/cli_fault.c: consume write result",
+  "local": 276,
+  "native": 57,
+  "host_cases": 48,
+  "host_reinjection": 0
+}
