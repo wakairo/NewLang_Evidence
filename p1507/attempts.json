@@ -1,0 +1,1221 @@
+[
+  {
+    "attempt": 1,
+    "label": "configure-baseline",
+    "argv": [
+      ".venv/bin/cmake",
+      "-S",
+      ".",
+      "-B",
+      "build-p1507",
+      "-DNEWLANG_FRONTEND_ONLY=ON",
+      "-DCMAKE_BUILD_TYPE=Debug"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 1.1578502290003598,
+    "stdout": {
+      "size": 846,
+      "sha256": "171f4e21be4aeeffd8b18017210d6d60aecf0398b29874f3948b325be9274fb4"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 2,
+    "label": "build-baseline",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "newlangc",
+      "p1481_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 3.8844588819993078,
+    "stdout": {
+      "size": 3694,
+      "sha256": "71ff331a2bcbb92b89d89ea93cae542631ed6477fbee7c494619dbbb8cecc872"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 3,
+    "label": "baseline-check-A",
+    "argv": [
+      "build-p1507/newlangc",
+      "--check",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.004674083999816503,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 4,
+    "label": "baseline-c17-A",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 2,
+    "seconds": 0.0008640949999971781,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 86,
+      "sha256": "f2f67a0be7b8a85ed92140a1f5c1b31060dede7d884a236936e1c3f6185163c6"
+    }
+  },
+  {
+    "attempt": 5,
+    "label": "baseline-c17-A-v2",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/baseline-A.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 4,
+    "seconds": 0.005295079999996233,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 116,
+      "sha256": "3c5db259f18bb4465166f5f1694a61a0bb31e4ae250a87f2c15c37d431ae45e7"
+    }
+  },
+  {
+    "attempt": 6,
+    "label": "compile-owned-probe",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-Iinclude",
+      "-Isrc",
+      "tests/p1507/probe.c",
+      "build-p1507/libnewlang_checked_c_node.a",
+      "build-p1507/libnewlang_semantic.a",
+      "build-p1507/libnewlang_checked.a",
+      "build-p1507/libnewlang_parser.a",
+      "build-p1507/libnewlang_syntax.a",
+      "build-p1507/libnewlang_lexer.a",
+      "build-p1507/libnewlang_source.a",
+      "build-p1507/libnewlang_diagnostic.a",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=realloc",
+      "-Wl,--wrap=nl_sem_clone",
+      "-o",
+      "/workspace/p1507-evidence/probe"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.1744951709997622,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 7,
+    "label": "baseline-owned-A",
+    "argv": [
+      "/workspace/p1507-evidence/probe",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.004779236000103992,
+    "stdout": {
+      "size": 392,
+      "sha256": "f35ad784904a42e08d09f3ca8af3e9267e4af154c203d2e47f076a618e224281"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 8,
+    "label": "build-direct-v1",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "newlangc",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.997377630000301,
+    "stdout": {
+      "size": 506,
+      "sha256": "ae070f36c11285d2120809fc878d051be9c5027bf9819ea67401307770b8bb3b"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 9,
+    "label": "emit-direct-v1",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/A-v1.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 4,
+    "seconds": 0.0058847489999607205,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 116,
+      "sha256": "3c5db259f18bb4465166f5f1694a61a0bb31e4ae250a87f2c15c37d431ae45e7"
+    }
+  },
+  {
+    "attempt": 10,
+    "label": "build-debug-direct",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "newlangc",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 1.0294915579997905,
+    "stdout": {
+      "size": 506,
+      "sha256": "49f5d07fca5b469bae87524dede7e54ac90fe3996e388e8e7a7a997ea05ac148"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 11,
+    "label": "emit-debug-direct",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/A-debug.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 4,
+    "seconds": 0.005624738999358669,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 116,
+      "sha256": "3c5db259f18bb4465166f5f1694a61a0bb31e4ae250a87f2c15c37d431ae45e7"
+    }
+  },
+  {
+    "attempt": 12,
+    "label": "build-debug-final",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "newlangc",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 1.0325053699998534,
+    "stdout": {
+      "size": 506,
+      "sha256": "ab27dc229437479eb7e2ac163fa54fad04b9a65731523b8bbcf262053512114e"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 13,
+    "label": "emit-debug-final",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/A-debug-final.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 4,
+    "seconds": 0.009364903999994567,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 302,
+      "sha256": "5c5e04244582e223395eaf15b4d8f2c66f38012d938a690d67d871efa21cf99c"
+    }
+  },
+  {
+    "attempt": 14,
+    "label": "build-direct-tests",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "newlangc",
+      "p1507_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 2,
+    "seconds": 1.9317497780002668,
+    "stdout": {
+      "size": 918,
+      "sha256": "e3829a83f3c37352e889de73cc58b3474a6ecdbfcd963644306fb5ad01847d01"
+    },
+    "stderr": {
+      "size": 56,
+      "sha256": "2021ab49cd82d9c2acbd82e09619ee8a558e8bad58739dec6f5755d8d1880cd6"
+    }
+  },
+  {
+    "attempt": 15,
+    "label": "build-probe-v2",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "p1507_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 2,
+    "seconds": 0.3050565719995575,
+    "stdout": {
+      "size": 368,
+      "sha256": "1d80140e72ee11b5c14c73aeb38cb8b63ef89becbb0def7b2948979d330b8f93"
+    },
+    "stderr": {
+      "size": 1107,
+      "sha256": "1c76e53e8147636e62fc6e47b08904d92a3dea1a2dde4de6b3730d7f4302cb7c"
+    }
+  },
+  {
+    "attempt": 16,
+    "label": "emit-A",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/A.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.00643706199934968,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 17,
+    "label": "emit-B",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/B.c",
+      "tests/p1507/B-direct-index-one.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.00592724200032535,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 18,
+    "label": "build-probe-fixed",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "p1507_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.4091695500001151,
+    "stdout": {
+      "size": 440,
+      "sha256": "b448cbce67defb51df8b62482099a7e2a79ac163df6abd9026c623596e8a875b"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 19,
+    "label": "owned-candidate-A",
+    "argv": [
+      "build-p1507/p1507_probe",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 1,
+    "seconds": 0.0044369600000209175,
+    "stdout": {
+      "size": 252,
+      "sha256": "4a176b245df1948be966f5960b20cb0c45f0225c7d01934b65258eb43c688e34"
+    },
+    "stderr": {
+      "size": 550,
+      "sha256": "09df54b566dee7a978bcf40f6c2a58fc8854994cf0e7f848d20809158d107b69"
+    }
+  },
+  {
+    "attempt": 20,
+    "label": "build-probe-capacity",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "p1507_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.3956491480003024,
+    "stdout": {
+      "size": 440,
+      "sha256": "ed3aabd59b4c043b90010742b00da68466c8ba9e85119978569884d79be2eb24"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 21,
+    "label": "local-direct-safety",
+    "argv": [
+      ".venv/bin/ctest",
+      "--test-dir",
+      "build-p1507",
+      "-R",
+      "^p1507_",
+      "--output-on-failure"
+    ],
+    "state": "completed",
+    "exit": 8,
+    "seconds": 0.26898214900029416,
+    "stdout": {
+      "size": 10007,
+      "sha256": "13db7697bebd848bca1200d59f5f83ed9606432fa27f9f3061f9f13d83008926"
+    },
+    "stderr": {
+      "size": 27,
+      "sha256": "18e00877dc1071c85cd4f479d451bebeef8309022e46cf8c63b0bed5151984a4"
+    }
+  },
+  {
+    "attempt": 22,
+    "label": "build-probe-known-payload",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "--target",
+      "p1507_probe",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.4379178059998594,
+    "stdout": {
+      "size": 440,
+      "sha256": "abcbc7317b67ac6d289434d0f1d606693ac93208368d3d974e15b71457f54439"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 23,
+    "label": "local-direct-safety-v2",
+    "argv": [
+      ".venv/bin/ctest",
+      "--test-dir",
+      "build-p1507",
+      "-R",
+      "^p1507_",
+      "--output-on-failure"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.19659849599975132,
+    "stdout": {
+      "size": 2093,
+      "sha256": "2bb92c52a7899e8e0a06878ac22ff7a827ee4c3c5aa0f5abcefa30a84d1fa950"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 24,
+    "label": "run-t7m_fcw0-raw-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1507-evidence/A.c",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc/run-t7m_fcw0/raw"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.057858023999870056,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 25,
+    "label": "run-t7m_fcw0-v0-O0-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc/run-t7m_fcw0/v0-O0"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.1060761190001358,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 26,
+    "label": "run-t7m_fcw0-v0-O2-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc/run-t7m_fcw0/v0-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.20801344600022276,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 27,
+    "label": "run-84400r7q-v0-O2-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc-repair/run-84400r7q/v0-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.19155435300035606,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 28,
+    "label": "run-84400r7q-v1-O0-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=1",
+      "/workspace/p1507-evidence/B.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc-repair/run-84400r7q/v1-O0"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.11388814500060107,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 29,
+    "label": "run-84400r7q-v1-O2-compile",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=1",
+      "/workspace/p1507-evidence/B.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-gcc-repair/run-84400r7q/v1-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.20690111299973069,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 30,
+    "label": "run-t8opvpba-raw-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1507-evidence/A.c",
+      "-o",
+      "/workspace/p1507-evidence/native-clang/run-t8opvpba/raw"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.5615785889995095,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 31,
+    "label": "run-t8opvpba-v0-O0-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-clang/run-t8opvpba/v0-O0"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.07489797099970019,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 32,
+    "label": "run-t8opvpba-v0-O2-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-clang/run-t8opvpba/v0-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.09681542099951912,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 33,
+    "label": "run-t8opvpba-v1-O0-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=1",
+      "/workspace/p1507-evidence/B.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-clang/run-t8opvpba/v1-O0"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.06226515100024699,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 34,
+    "label": "run-t8opvpba-v1-O2-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=1",
+      "/workspace/p1507-evidence/B.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-clang/run-t8opvpba/v1-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.08094490699932066,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 35,
+    "label": "run-pa1xso1e-v0-O2-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-asan/run-pa1xso1e/v0-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.22516735200042604,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 36,
+    "label": "run-bn7vkn7u-v0-O2-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=undefined",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-ubsan/run-bn7vkn7u/v0-O2"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.15685035799924663,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 37,
+    "label": "build-all",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 2,
+    "seconds": 17.687415078999948,
+    "stdout": {
+      "size": 37321,
+      "sha256": "84046a8aaade042d3fd84e7644e4f3839dbfd0402051243076644a0fe19dd4c9"
+    },
+    "stderr": {
+      "size": 660,
+      "sha256": "5c8b746f51e9f96dd07054fd36d68323ce7ec280950642e7c966ac814ba01541"
+    }
+  },
+  {
+    "attempt": 38,
+    "label": "build-all-fixed",
+    "argv": [
+      ".venv/bin/cmake",
+      "--build",
+      "build-p1507",
+      "-j",
+      "4"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 10.769658619999973,
+    "stdout": {
+      "size": 22730,
+      "sha256": "4c3f30c0c2175b4fae773afe5c264c472a684dcf1fd1100d11ca56bc14d8a8c5"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 39,
+    "label": "final-host-safety",
+    "argv": [
+      ".venv/bin/ctest",
+      "--test-dir",
+      "build-p1507",
+      "-R",
+      "^p1507_",
+      "-E",
+      "native|named",
+      "--output-on-failure"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.18574276699928305,
+    "stdout": {
+      "size": 2093,
+      "sha256": "5c0b79d38066e2b000fa6b3e5b28631a2dea5e8591c9bb506ecee1f9c4e912ac"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 40,
+    "label": "final-nearby-regression",
+    "argv": [
+      ".venv/bin/ctest",
+      "--test-dir",
+      "build-p1507",
+      "-R",
+      "^(p1481_.*owned|p1499_.*owned|p1499_current_result_tamper)",
+      "--output-on-failure"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.17383870600042428,
+    "stdout": {
+      "size": 971,
+      "sha256": "2e7817785670020e0b884060450caea9bcd7b36a6193e0edfc8d55dd65ae35df"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 41,
+    "label": "named-negative",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/named-sentinel.c",
+      "tests/p1507/N-wrong-domain.nl"
+    ],
+    "state": "completed",
+    "exit": 3,
+    "seconds": 0.002378215000135242,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 134,
+      "sha256": "e7bf7ed683861fd646943dffe1f5c20323c6dec2924945e195f77abb427e303c"
+    }
+  },
+  {
+    "attempt": 42,
+    "label": "named-negative-sentinel",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/named-sentinel.c",
+      "tests/p1507/N-wrong-domain.nl"
+    ],
+    "state": "completed",
+    "exit": 3,
+    "seconds": 0.003358523000315472,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 134,
+      "sha256": "e7bf7ed683861fd646943dffe1f5c20323c6dec2924945e195f77abb427e303c"
+    }
+  },
+  {
+    "attempt": 43,
+    "label": "named-positive-retry",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/named-sentinel.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.010801258000356029,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 44,
+    "label": "final-emit-A",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/A-final.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.005832251000356337,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 45,
+    "label": "final-emit-B",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/B-final.c",
+      "tests/p1507/B-direct-index-one.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.006930671999725746,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 46,
+    "label": "format-final",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-format",
+      "--dry-run",
+      "--Werror",
+      "src/checked_c_node.c",
+      "src/checked_c_copy_internal.h",
+      "src/checked_c_allocated_current_internal.h",
+      "tests/p1507/probe.c",
+      "tests/p1507/passive.h",
+      "tests/p1507/guest_wrap.c"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.5242087249998804,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 47,
+    "label": "final-cli-N-wrong-domain.nl",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/named-final/named-8_xaqxzv/result.c",
+      "tests/p1507/N-wrong-domain.nl"
+    ],
+    "state": "completed",
+    "exit": 3,
+    "seconds": 0.00237997699969128,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 134,
+      "sha256": "e7bf7ed683861fd646943dffe1f5c20323c6dec2924945e195f77abb427e303c"
+    }
+  },
+  {
+    "attempt": 48,
+    "label": "final-cli-A-direct-zero.nl",
+    "argv": [
+      "build-p1507/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1507-evidence/named-final/named-8_xaqxzv/result.c",
+      "tests/p1507/A-direct-zero.nl"
+    ],
+    "state": "completed",
+    "exit": 0,
+    "seconds": 0.006107978999352781,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

@@ -1,0 +1,5 @@
+/workspace/NewLang_Compiler/tests/p1507/probe.c:22: operation_count < 128
+/workspace/NewLang_Compiler/tests/p1507/probe.c:90: trace_direct((NLCheckedFragment *) nl_checked_match_arm(f, id, a), depth + 1)
+/workspace/NewLang_Compiler/tests/p1507/probe.c:90: trace_direct((NLCheckedFragment *) nl_checked_match_arm(f, id, a), depth + 1)
+/workspace/NewLang_Compiler/tests/p1507/probe.c:87: trace_direct((NLCheckedFragment *)body, depth + 1)
+/workspace/NewLang_Compiler/tests/p1507/probe.c:100: ready(path, p) && actual(p) && trace_direct(p->artifact, 0)

@@ -1,0 +1,8 @@
+{
+  "transport": "Git HTTPS credential helper (Evidence path)",
+  "exit": 128,
+  "username_available": false,
+  "credential_available": false,
+  "repository_scope_proven": false,
+  "release_pat_used": false
+}

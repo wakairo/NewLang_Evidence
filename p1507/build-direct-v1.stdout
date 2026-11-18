@@ -1,0 +1,12 @@
+[ 14%] Built target newlang_diagnostic
+[ 14%] Built target newlang_source
+[ 14%] Built target newlang_lexer
+[ 28%] Built target newlang_syntax
+[ 42%] Built target newlang_checked
+[ 42%] Built target newlang_parser
+[100%] Built target newlang_semantic
+[100%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o
+[100%] Linking C static library libnewlang_checked_c_node.a
+[100%] Built target newlang_checked_c_node
+[100%] Linking C executable newlangc
+[100%] Built target newlangc

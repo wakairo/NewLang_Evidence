@@ -1,0 +1,3 @@
+{"attempt": 24, "label": "run-t7m_fcw0-raw-compile", "argv": ["gcc", "-std=c17", "-Wall", "-Wextra", "-Wpedantic", "-Werror", "-O2", "/workspace/p1507-evidence/A.c", "-o", "/workspace/p1507-evidence/native-gcc/run-t7m_fcw0/raw"], "state": "completed", "exit": 0, "seconds": 0.057858023999870056, "stdout": {"size": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}, "stderr": {"size": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}}
+
+

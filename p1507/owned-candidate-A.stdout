@@ -1,0 +1,5 @@
+definition status=0 code=none
+actual status=0 code=none
+COPY depth=1 node=11 root=1 child=2 index=0 entry-regions=0 entry-domains=0
+MATCH depth=1 id=17 field=1 captured=0 unchanged=0 normal=2
+MATCH depth=2 id=30 field=1 captured=1 unchanged=0 normal=2

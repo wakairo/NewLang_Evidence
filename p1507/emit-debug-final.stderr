@@ -1,0 +1,3 @@
+P1507 block=1 direct=1 alloc=2 root=2 copyroot=1 calls=2 expect=2 closed=1 destroy=3 free=3 domains=2 final=3 slots=2 erased=3 reloan=0 projections=0 reads=0 payload=1 options=0 links=0
+error(cli)[V1-BACKEND-UNSUPPORTED]: mixed H plus T has no dual-carrier C17 proof
+note: tests/p1507/A-direct-zero.nl

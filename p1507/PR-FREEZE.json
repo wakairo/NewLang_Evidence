@@ -1,0 +1,17 @@
+{
+  "pr": 1508,
+  "base": "716a457d19c83ff2470a5be801f7108b37a6c7e7",
+  "head": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+  "tree": "f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6",
+  "natural_ci": [
+    44222785587,
+    44222785617
+  ],
+  "event": "pull_request",
+  "attempt": 1,
+  "state": "in_progress",
+  "storage": "AUTHORIZATION_BLOCKED",
+  "archive_pushes": 0,
+  "deletion_bytes": 0,
+  "deletion_inodes": 0
+}

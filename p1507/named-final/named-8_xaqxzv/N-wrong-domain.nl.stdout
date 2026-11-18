@@ -1,0 +1,4 @@
+{"attempt": 47, "label": "final-cli-N-wrong-domain.nl", "argv": ["build-p1507/newlangc", "--emit-c17-to", "/workspace/p1507-evidence/named-final/named-8_xaqxzv/result.c", "tests/p1507/N-wrong-domain.nl"], "state": "completed", "exit": 3, "seconds": 0.00237997699969128, "stdout": {"size": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}, "stderr": {"size": 134, "sha256": "e7bf7ed683861fd646943dffe1f5c20323c6dec2924945e195f77abb427e303c"}}
+
+tests/p1507/N-wrong-domain.nl:47:33-47:63: error(semantic)[ALLOCATED-DOMAIN-MISMATCH]: pointer requires matching readable live domain
+

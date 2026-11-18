@@ -1,0 +1,64 @@
+[
+  {
+    "label": "v0-O2-compile",
+    "argv": [
+      ".deps/p1499-sdk/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-fsanitize=address",
+      "-fno-omit-frame-pointer",
+      "-fno-sanitize-recover=all",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_Compiler/tests/p1507/passive.h\"",
+      "-DP1507_INDEX=0",
+      "/workspace/p1507-evidence/A.c",
+      "/workspace/NewLang_Compiler/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1507-evidence/native-asan/run-pa1xso1e/v0-O2"
+    ],
+    "guest": false,
+    "fail_at": 0,
+    "expected": 0,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "v0-O2-fail1",
+    "argv": [
+      "/workspace/p1507-evidence/native-asan/run-pa1xso1e/v0-O2"
+    ],
+    "guest": true,
+    "fail_at": 1,
+    "expected": 0,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "v0-O2-fail2",
+    "argv": [
+      "/workspace/p1507-evidence/native-asan/run-pa1xso1e/v0-O2"
+    ],
+    "guest": true,
+    "fail_at": 2,
+    "expected": 0,
+    "state": "completed",
+    "exit": 0
+  },
+  {
+    "label": "v0-O2-fail0",
+    "argv": [
+      "/workspace/p1507-evidence/native-asan/run-pa1xso1e/v0-O2"
+    ],
+    "guest": true,
+    "fail_at": 0,
+    "expected": 0,
+    "state": "completed",
+    "exit": 0
+  }
+]

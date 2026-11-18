@@ -1,0 +1,1 @@
+tests/p1507/N-wrong-domain.nl:47:33-47:63: error(semantic)[ALLOCATED-DOMAIN-MISMATCH]: pointer requires matching readable live domain
