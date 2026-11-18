@@ -1,0 +1,6 @@
+{
+  "original": "tests/p1517/passive.h",
+  "preserved_as": "tests/p1517/history/passive-v1.h.data",
+  "sha256": "afea7a30c785f727fe05d90688cdaf9e79364d62ea38f16742e9c31cdb64d393",
+  "reason": "Preserve original malformed observer FIRST and compile RED in history; active tests use separately frozen passive-v2.h. No original bytes removed."
+}

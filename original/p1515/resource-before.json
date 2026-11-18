@@ -1,0 +1,9 @@
+{
+  "free_bytes": 64131923968,
+  "free_inodes": 4194139,
+  "additional_peak_forecast_bytes": 33554432,
+  "additional_peak_forecast_inodes": 256,
+  "basis": "no full rebuild; prepared main frontend target verification, one small public probe object/executable, eight tiny sources and raw receipts; stop before any unexpected recompile fanout or capacity/budget excess",
+  "margin_bytes": 64098369536,
+  "margin_inodes": 4193883
+}

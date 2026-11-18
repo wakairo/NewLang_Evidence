@@ -1,0 +1,6 @@
+{
+  "path": "tests/p1517/passive-v2.h",
+  "bytes": 12354,
+  "sha256": "523074cb59f486c9775cee1f7ff7c8faa8a49412d4f90d46591219df4543fc3c",
+  "reason": "attempt08 observer preprocessing failure: missing line continuation, no native executed. Fix one backslash only; native/world/owner oracle unchanged. Predict strict compile0 and all H0/H1/H2 observations PASS; original passive.h and raw compile RED retained."
+}

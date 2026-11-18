@@ -1,0 +1,31 @@
+{
+  "owner": "P",
+  "mission": "C1157",
+  "custody_issue": 1520,
+  "source_repository": "https://github.com/wakairo/NewLang_Compiler.git",
+  "base": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+  "base_tree": "f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6",
+  "commits": [
+    {
+      "sha": "24206697820ff5521aba0239487c5b9b0f168445",
+      "tree": "f0cc19d3540102784c41c25a780ceb19570e5271",
+      "parent": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+      "patch": "candidate/patches/0001-Connect-authentic-terminal-H-receiver-to-original-T-.patch",
+      "raw_commit": "candidate/commits/24206697820ff5521aba0239487c5b9b0f168445.commit"
+    },
+    {
+      "sha": "c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c",
+      "tree": "a0b1fb1be96befe86f5b87bb82daed39017ba213",
+      "parent": "24206697820ff5521aba0239487c5b9b0f168445",
+      "patch": "candidate/patches/0002-Record-C1163-local-environment-partial-verdict-and-e.patch",
+      "raw_commit": "candidate/commits/c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c.commit"
+    }
+  ],
+  "adopted_main": "4c388693b95f371783e666f5c77e0aec5d17d215",
+  "spec": "Draft17.38",
+  "status": "LOCAL ONLY / DRAFT NOT_RELEASED / ENV-PARTIAL",
+  "old_local_budget": "80/80 unchanged",
+  "new_compiler_native_CI_runs": 0,
+  "bundle_scope": "only two P1517 commits; original fixed P parent is prerequisite",
+  "evidence_is_not_safety_or_product_adoption": true
+}

@@ -1,0 +1,1 @@
+/workspace/NewLang_P1517/tests/p1517/N-stale-read.nl:62:43-62:45: error(semantic)[P3-USE-AFTER-CONSUME]: use of consumed semantic binding

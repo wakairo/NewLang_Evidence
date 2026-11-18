@@ -1,0 +1,67 @@
+[
+  {
+    "path": "source/N-H1-leak.nl",
+    "bytes": 2745,
+    "sha256": "bfc34cb49c3994dfcdd4d3310147d56360ae3c407748a98fc5f5c09b56860fc3"
+  },
+  {
+    "path": "source/N-foreign-allocation.nl",
+    "bytes": 3022,
+    "sha256": "3556c2d4c9c380b6f254a04f206346ddd0e4feebd244b5e705ca90739660c51e"
+  },
+  {
+    "path": "source/N-foreign-domain.nl",
+    "bytes": 3022,
+    "sha256": "ec3e689d27ea60d5cfcb5e285434cb6bacc369dc385f7332ac37cd04a2523fda"
+  },
+  {
+    "path": "source/N-incomplete-callee.nl",
+    "bytes": 2997,
+    "sha256": "35961c146e53106e440e91733b49db4b8f940295d6f2cdc46a63dac5d0dc824f"
+  },
+  {
+    "path": "source/N-owner-reused.nl",
+    "bytes": 3062,
+    "sha256": "5426cc5561b381533a2b42798d318602b770ea15570aefbb6ad898f88bcbb7ae"
+  },
+  {
+    "path": "source/N-stale-read.nl",
+    "bytes": 3208,
+    "sha256": "73134d7f8a481309fec656a9829d5ca1dd3b78674452d469295919eac75f7a7c"
+  },
+  {
+    "path": "source/P-nonzero.nl",
+    "bytes": 3023,
+    "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c"
+  },
+  {
+    "path": "source/P-zero.nl",
+    "bytes": 3022,
+    "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b"
+  },
+  {
+    "path": "oracle.json",
+    "bytes": 8219,
+    "sha256": "1af5bcae5ec14d0a7a702af8a62afb12e8c5eed1a34ac02c7f63d1c381708a5f"
+  },
+  {
+    "path": "probe.c",
+    "bytes": 18408,
+    "sha256": "23194e04fda8190396585c810cf42110036284565cba3c6befd09e1c2a0e8aa8"
+  },
+  {
+    "path": "prepare.py",
+    "bytes": 7729,
+    "sha256": "c2258788741c7932ad5cd5be7805580221d8316af776d5b593d4c5b8929aca99"
+  },
+  {
+    "path": "resource-before.json",
+    "bytes": 429,
+    "sha256": "3322fbffc74b528c81f425f27ade43262b44d964b54fa2b7e74cf6517a268675"
+  },
+  {
+    "path": "provenance-before.json",
+    "bytes": 2220,
+    "sha256": "024e709e2d8ead80b1eb9f8ac25eb1932a1b5ed89fc759d9e405e360582720cf"
+  }
+]

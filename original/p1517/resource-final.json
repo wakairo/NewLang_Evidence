@@ -1,0 +1,9 @@
+{
+  "free_bytes": 63843721216,
+  "free_inodes": 4181792,
+  "local_evidence_files": 3308,
+  "no_cleanup_deletion": true,
+  "FIRST_all_hashes_verified": true,
+  "raw_all_hashes_verified": true,
+  "source_manifest_sha256": "b8a5afd9df7560286ec46c56bcd98e354c92bde2183e1c3d74634694220bd660"
+}

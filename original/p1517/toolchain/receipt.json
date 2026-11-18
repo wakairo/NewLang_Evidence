@@ -1,0 +1,16 @@
+[
+  {
+    "name": "clang-23",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "clang-23",
+    "attempt": 2,
+    "http": 404
+  },
+  {
+    "name": "clang-23",
+    "attempt": 3,
+    "http": 404
+  }
+]

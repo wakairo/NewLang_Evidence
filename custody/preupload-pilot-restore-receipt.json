@@ -1,0 +1,20 @@
+{
+  "commit": "4339e93f93432788da743886f1e55bee91791a87",
+  "tree": "8453a31bdefd36dfb3c991da23b2d42e30d0952e",
+  "members": [
+    {
+      "path": ".gitattributes",
+      "bytes": 16,
+      "sha256": "3cacdde9d8c2edf1eba36178d8b0c211b10db5c0562fc9aaa4b15266fc4b26a4"
+    },
+    {
+      "path": "transport-probe.json",
+      "bytes": 250,
+      "sha256": "6d328f27febd1c5c9494faef2383fd01b5a436139104a8263f96dc56052105d3"
+    }
+  ],
+  "fresh_HTTPS": true,
+  "no_alternates": true,
+  "clone_and_verify_seconds": 0.6789598209998076,
+  "deleted": false
+}

@@ -1,0 +1,181 @@
+{
+  "track": "P",
+  "issue": 1515,
+  "mission": "C1150 SOURCE-FIRST Gate0",
+  "main": "4c388693b95f371783e666f5c77e0aec5d17d215",
+  "tree": "867784ea863675788bc5ce4745904091ee319d3e",
+  "spec": "Draft17.38",
+  "cases": {
+    "P-zero.nl": {
+      "kind": "positive",
+      "sample": 0,
+      "bytes": 3022,
+      "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b",
+      "parse": 0,
+      "check_cli_exit": 0,
+      "definition": 0,
+      "actual": 0,
+      "proof_class": "NL_CHECKED_MACHINE_PROVED",
+      "public_copy_validators": 0,
+      "owner": "real p1/a1/d1 -> same original callee EndRoot/full Storage/finalize/free; caller p0 release",
+      "backend_hypothesis": {
+        "cli_exit": 4,
+        "code": "V1-BACKEND-UNSUPPORTED",
+        "C_output": "absent",
+        "first_guard_static_hypothesis": "copy_prepare_at requires live_tail; owner_evidence also requires unrelated link topology; observed first guard may differ"
+      }
+    },
+    "P-nonzero.nl": {
+      "kind": "positive",
+      "sample": 42,
+      "bytes": 3023,
+      "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c",
+      "parse": 0,
+      "check_cli_exit": 0,
+      "definition": 0,
+      "actual": 0,
+      "proof_class": "NL_CHECKED_MACHINE_PROVED",
+      "public_copy_validators": 0,
+      "owner": "real p1/a1/d1 -> same original callee EndRoot/full Storage/finalize/free; caller p0 release",
+      "backend_hypothesis": {
+        "cli_exit": 4,
+        "code": "V1-BACKEND-UNSUPPORTED",
+        "C_output": "absent",
+        "first_guard_static_hypothesis": "copy_prepare_at requires live_tail; owner_evidence also requires unrelated link topology; observed first guard may differ"
+      }
+    },
+    "N-foreign-allocation.nl": {
+      "kind": "negative",
+      "reason": "wrong original BackingRegion at receiver entry",
+      "predicted_code": "P193-CALL-BACKING",
+      "bytes": 3022,
+      "sha256": "3556c2d4c9c380b6f254a04f206346ddd0e4feebd244b5e705ca90739660c51e",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    },
+    "N-foreign-domain.nl": {
+      "kind": "negative",
+      "reason": "wrong original governing Domain at receiver entry",
+      "predicted_code": "P193-CALL-DOMAIN",
+      "bytes": 3022,
+      "sha256": "ec3e689d27ea60d5cfcb5e285434cb6bacc369dc385f7332ac37cd04a2523fda",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    },
+    "N-owner-reused.nl": {
+      "kind": "negative",
+      "reason": "second use of consumed a1/d1",
+      "predicted_code": "P3-USE-AFTER-CONSUME",
+      "bytes": 3062,
+      "sha256": "5426cc5561b381533a2b42798d318602b770ea15570aefbb6ad898f88bcbb7ae",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    },
+    "N-stale-read.nl": {
+      "kind": "negative",
+      "reason": "d1 consumed and p1 ended before attempted stability/read",
+      "predicted_code": "P3-USE-AFTER-CONSUME",
+      "bytes": 3208,
+      "sha256": "73134d7f8a481309fec656a9829d5ca1dd3b78674452d469295919eac75f7a7c",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    },
+    "N-incomplete-callee.nl": {
+      "kind": "negative",
+      "reason": "independent definition leaves Allocation/full Storage responsibility",
+      "predicted_code": "P193-DEFINITION-OBLIGATION",
+      "bytes": 2997,
+      "sha256": "35961c146e53106e440e91733b49db4b8f940295d6f2cdc46a63dac5d0dc824f",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    },
+    "N-H1-leak.nl": {
+      "kind": "negative",
+      "reason": "second allocation None leaves first H/root/domain/Allocation alive",
+      "predicted_code": "normal-exit affine/closure diagnostic, exact code not asserted",
+      "bytes": 2745,
+      "sha256": "bfc34cb49c3994dfcdd4d3310147d56360ae3c407748a98fc5f5c09b56860fc3",
+      "parse": 0,
+      "check_cli_exit": 3,
+      "earliest_layer": "definition-time semantic CHECK (actual proof must also fail if reached)",
+      "accepted_safety_result": "semantic rejection; precision refusal separately labeled, parser refusal is not safety coverage",
+      "C_output": "NOT_RUN; no emission for negative"
+    }
+  },
+  "worlds": {
+    "H0": {
+      "allocations": 0,
+      "receiver_calls": 0,
+      "releases": 0,
+      "T_writes": 1,
+      "current": 0,
+      "second_T_write": false
+    },
+    "H1": {
+      "allocations": 1,
+      "receiver_calls": 0,
+      "releases": 1,
+      "release_order": [
+        "original0 caller"
+      ],
+      "T_writes": 1,
+      "current": 0,
+      "second_T_write": false
+    },
+    "H2": {
+      "allocations": 2,
+      "receiver_calls": 1,
+      "releases": 2,
+      "release_order": [
+        "original1 callee",
+        "original0 caller"
+      ],
+      "T_writes": 2,
+      "current": "sample including zero",
+      "second_T_write": true
+    }
+  },
+  "T": {
+    "same_original": true,
+    "field": 0,
+    "old_Copy_first": 91,
+    "old_Copy_second_H2": 0,
+    "sibling_all_worlds": 23
+  },
+  "authentication": [
+    "independent receiver definition requirements255 steps EndRoot/erase/finalize/free; no concrete root from signature",
+    "actual main() from public parse/register/check APIs; no seed/semantic fixtures",
+    "original two live regions/domains distinct at owner entry; actual inputs/formals/donors preserve identities and affine consume",
+    "callee only original1 destroy/erase/finalize/free; caller original0 destroy/free; no producer/LiveTail/link writes",
+    "payload read from original1 under D1; closed scopes; public Copy body/parameters/event validators for both named calls and same-original current/sibling",
+    "MACHINE class alone is insufficient; failed structural authentication halts before baseline C emission"
+  ],
+  "limits": {
+    "aggregate_local_attempts": 24,
+    "native_guest": 0,
+    "host_OOM": 0,
+    "CI_pairs": 0,
+    "branches_PR": 0,
+    "baseline_emit_c17_to_max": 1,
+    "isolated_safety_negatives": 6
+  },
+  "budget_plan": "one selected-target build check with every nested CC counted; one probe CC/link; two positive CLI; six negative CLI; two public API probe runs; at most one baseline CLI emit; repairs count additionally; no blanket full build",
+  "apparatus": "reuse environment-prepared frontend only after provenance/target dependency verification; isolated new output directory. No guest/native. Probe is compiler-host API observation, not generated program execution.",
+  "prediction_discipline": "all results predictions until run. Preserve FIRST sources/oracle and earliest diagnostics. Semantic/code change or apparatus repair needs separate new bytes/SHA and predictions before execution. No post-hoc PASS rewrite.",
+  "value": "technical capability/first refusal only; well-factored C versus NewLang author+ordinary-safe caller audit/re-audit dependency closure UNMEASURED. Rust sound facade is a valid alternative. Product GO624 PAUSED/H1#268 HOLD."
+}

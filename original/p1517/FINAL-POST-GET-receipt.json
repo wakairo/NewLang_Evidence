@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6971090011",
+  "POST_GET_exact_match": true,
+  "bytes": 49229,
+  "sha256": "9816edfb8c239b565af9550440731ce270eed3f5f908189fd81d742787770a4c",
+  "status": "LOCAL ONLY FINAL / ENV-PARTIAL / STOP",
+  "HEAD": "c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c",
+  "aggregate_local": 80,
+  "guest": 19,
+  "host_sites": 6,
+  "host_fault_retry": 16,
+  "additional_execution": false
+}

@@ -1,0 +1,7 @@
+{
+  "free_bytes": 63877435392,
+  "free_inodes": 4186131,
+  "additional_peak_budget_bytes": 8589934592,
+  "additional_peak_budget_inodes": 200000,
+  "basis": "isolated source/worktree, prepared unchanged libs, direct selected backend compile, native matrix/probe/logs, headroom for exact SDK if available, no full SDK rebuild"
+}

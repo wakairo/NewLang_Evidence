@@ -1,0 +1,129 @@
+diff --git a/src/checked_c_allocated_current_internal.h b/src/checked_c_allocated_current_internal.h
+index 12f327d..48ca4d7 100644
+--- a/src/checked_c_allocated_current_internal.h
++++ b/src/checked_c_allocated_current_internal.h
+@@ -103,6 +103,28 @@ static bool copy_conditional_plan(Emit *e, const NLCheckedFragment *body)
+     }
+     if (!inner)
+         return reject(e);
++    if (direct) {
++        /* Keep the exact checked H2 call/owner, never just a call count or
++         * a same-number root in another arm. The existing whole-root seal
++         * authenticates this graph before this serializer borrows it. */
++        const NLCheckedFragment *h2 = e->copy_conditional_issuer;
++        for (size_t id = 1; id <= nl_checked_node_count(h2); ++id) {
++            const NLCheckedNodeView *n = nl_checked_node_view(h2, id);
++            if (!n->owner_call.entry_proved)
++                continue;
++            if (e->direct_receiver_issuer ||
++                n->kind != NL_CHECKED_REGISTERED_CALL || !n->body_backed ||
++                !n->owner_call.post_proved ||
++                n->owner_call.definition.live_return ||
++                n->owner_call.definition.head_link_required ||
++                n->span.end_byte >
++                    nl_checked_node_view(h2, e->copy_conditional_call)
++                        ->span.start_byte)
++                return reject(e);
++            e->direct_receiver_issuer = h2;
++            e->direct_receiver_call = id;
++        }
++    }
+     e->copy_conditional_inner = some;
+     e->copy_conditional_inner_match = inner;
+     e->copy_conditional_match = statement->initializer;
+diff --git a/src/checked_c_copy_internal.h b/src/checked_c_copy_internal.h
+index 9ba3f94..b91302a 100644
+--- a/src/checked_c_copy_internal.h
++++ b/src/checked_c_copy_internal.h
+@@ -1087,7 +1087,7 @@ static bool copy_carrier_world(Emit *e, const Env *env)
+         NLCopyBodyParameters p;
+         if (e->allocations != 2 ||
+             e->producer_calls != (e->direct_h ? 0u : 1u) ||
+-            e->owner_calls != (e->direct_h ? 0u : 1u) || e->pending_live ||
++            e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+             e->active_owner_call || e->active_owner_body ||
+             !copy_call_proof(e, env->artifact, e->copy_conditional_call, &p))
+             return false;
+@@ -1115,7 +1115,7 @@ static bool copy_carrier_world(Emit *e, const Env *env)
+         return !e->pending_live && !e->active_owner_call &&
+                !e->active_owner_body && e->allocations == 2 &&
+                e->producer_calls == (e->direct_h ? 0u : 1u) &&
+-               e->owner_calls == (e->direct_h ? 0u : 1u) &&
++               e->owner_calls == expected_owner_calls(e) &&
+                !e->lifecycle[0].stage && !e->lifecycle[1].stage;
+     if (e->copy_surviving_issuer && env->artifact == e->copy_surviving_issuer &&
+         !env->parent && !env->backing && !env->heap_place &&
+diff --git a/src/checked_c_node.c b/src/checked_c_node.c
+index 18b8359..e943f8a 100644
+--- a/src/checked_c_node.c
++++ b/src/checked_c_node.c
+@@ -63,6 +63,10 @@ typedef struct {
+     bool scalar_issued; /* existing sealed CHECK body, no new issuer */
+     bool direct_h;      /* direct physical closure, never a LiveTail producer */
+     size_t direct_payload_reads;
++    /* One genuine terminal receiver in the direct H2 arm. Borrowed source
++     * call identity only; owner_evidence still proves every actual relation. */
++    const NLCheckedFragment *direct_receiver_issuer;
++    NLCheckedNodeId direct_receiver_call;
+     bool scalar_control; /* primitive normal result, existing whole-root seal */
+     NLTypeId boolean, usize;
+     size_t scalar_none_expected;
+@@ -593,6 +597,10 @@ static bool terminal_role_lane(const Emit *e)
+             (e->current && e->current->post_count)) &&
+            e->live_tail && e->no_pre_read && !e->custody;
+ }
++static size_t expected_owner_calls(const Emit *e)
++{
++    return e->direct_h ? (e->direct_receiver_issuer ? 1u : 0u) : 1u;
++}
+ 
+ /* The same source-issued producer original licenses the optional caller read
+  * and its later terminal. No count supplies a missing owner relationship. */
+@@ -2052,7 +2060,7 @@ static bool allocated_match(Emit *e, Env *env, NLCheckedNodeId id,
+     if (closing) {
+         if (!seen[0] || !seen[1] || e->allocations != 2 ||
+             e->producer_calls != (e->direct_h ? 0u : 1u) ||
+-            e->owner_calls != (e->direct_h ? 0u : 1u))
++            e->owner_calls != expected_owner_calls(e))
+             return reject(e);
+         if (current_closing)
+             e->current_h_closed = true;
+@@ -3062,9 +3070,18 @@ static bool owner_evidence(Emit *e, Env *env, NLCheckedNodeId id,
+     NLSemanticBackingView r, dead_r;
+     NLSemanticDomainView d, dead_d;
+     const Env *h = region(env, v->owner_call.range.region);
++    const bool direct = e->direct_h &&
++                        e->direct_receiver_issuer == env->artifact &&
++                        e->direct_receiver_call == id;
+     if (!e->two_heap || e->pending_live || e->owner_calls != 0 ||
+         e->allocations != 2 ||
+-        (terminal_role_lane(e)
++        (e->direct_h && !direct) ||
++        (direct
++             ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
++                e->reloans || e->link_updates || e->projections || e->reads ||
++                e->producer_calls || e->live_tail || e->custody ||
++                v->owner_call.definition.step_count != 4)
++             : (terminal_role_lane(e)
+              ? !terminal_sequence(e, env, v)
+              : e->reloans != (e->custody ? 2u
+                                          : 4u + (e->live_tail != 0 ? 1u : 0u) -
+@@ -3076,7 +3093,7 @@ static bool owner_evidence(Emit *e, Env *env, NLCheckedNodeId id,
+                                             : 3u) ||
+         e->reads != (e->custody       ? 0u
+                      : e->no_pre_read ? e->no_read_copies
+-                                      : 1u) ||
++                                      : 1u))) ||
+         h == NULL || h->region_slot != 1 ||
+         v->kind != NL_CHECKED_REGISTERED_CALL || !v->body_backed ||
+         v->argument_count != 3 || v->type != e->unit || v->result_count != 0 ||
+@@ -3991,7 +4008,8 @@ NLNodeCStatus nl_checked_c_node(const NLCheckedFragment *entry, char **out,
+         (e.copy_type && (!e.copy_roots || e.copy_roots > 2 ||
+                          e.copy_calls != e.copy_expected_calls)) ||
+         (e.direct_h && (!e.copy_h_closed || e.copy_roots != 1 ||
+-                        e.producer_calls || e.owner_calls || e.live_tail ||
++                        e.producer_calls ||
++                        e.owner_calls != expected_owner_calls(&e) || e.live_tail ||
+                         e.custody || e.heap_link || e.projections || e.reads ||
+                         e.link_updates || e.direct_payload_reads != 1)) ||
+         (e.copy_second_function && e.copy_roots != e.copy_expected_roots) ||

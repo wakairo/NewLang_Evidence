@@ -1,0 +1,743 @@
+Track: P — C1150 / Issue #1515 **PREP FINAL / SOURCE-FIRST Gate0 / STOP**
+
+Coordination宛：採用mainで、二つの完全な自作sourceについて parser→independent definition→実main caller→**MACHINE / genuine owned + named Copy public validators** まで成立した。認可された一回の通常C17生成の最初の拒否層は **backend consumer**。`--emit-c17-to` は exit **4**、`V1-BACKEND-UNSUPPORTED: mixed H plus T has no dual-carrier C17 proof`、生成Cなし・残存stagingなし。**full vertical compiler capability PASS / native PASSではない。** 元FIRST/予測/原診断を保ち、13/24でこのGate0を終了する。
+
+**別判定：VALUE-ALIGNMENT-RISK / GO TECHNICAL RESEARCH ONLY / HOLD PRODUCT PRIORITY。** 今回の有限source/owner/Copy成立は、同じ元pointer topologyと明示的allocation/failure/cleanupを保つための実装依存を絞ったCAPABILITY evidenceに限る。library author＋ordinary-safe callerのUB防止監査・再監査依存閉包が、十分にfactorしたCより縮むことはUNMEASURED。callerにptr/A/Dとfailure cleanupが露出したまま、自然な公開safe API、representation hiding、全合法writer・error/rollback/teardown/reentrancy/FFI経路、変更費用・実利用要求を今回検証していない。opaque resource＋factored cleanupのCは無関係なreport scalar変更に全内部再監査を要求しない場合があり、sound Rust owned/Dropまたは必要最小限unsafe＋safe facadeも正当な代替である。library teardownのread-before-free変更は両言語で影響する依存閉包を比較すべきで、今回のchecker拒否だけで負担差を断定しない。C1151が既にACCEPTした懸念を、次の該当する実装投資判断へ明示的に返す。**Product GO #624 PAUSED / H1 #268 HOLD** は維持。
+
+### Authority / custody / FIRST
+
+- main `4c388693b95f371783e666f5c77e0aec5d17d215` / tree `867784ea863675788bc5ce4745904091ee319d3e`、CURRENT_SPEC→Draft17.38。終了前remote main GETも同じSHA。既存local branch名workのHEAD/treeを維持し、Git statusは空。Production・仕様変更0、新branch/commit/PR0。
+- [ACTUAL START #6969911190](https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6969911190)、[完全source/6負例/oracle FIRST #6970060503](https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970060503)、[完全probe/来歴/resource FIRST #6970065387](https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970065387) は各POST→GETでbody exact match。すべてcompiler実行前に固定。今回source/probe/oracle修復0、FIRST全bytes/hashは終了時にも一致。初回backend REDを後続PASSに置換していない。
+- Compassの関連目標/非目標/代替を入口にValue §§1.1–1.3、Process §§4.1.2/4.3.2/7、Review §27、採用Evidence/Disk・Backend policy、canonical §§3.2/13.5a/16.3.8/17.1(Draft17.35)/18.1a/18.2–8/26.9/27.3を確認。source法KEEPで新設計選択なし。P1512 own PREP/C1151以外に独立F/Rの原source/oracle/runner/FIRSTは読まず輸入0。Issue内のaggregate過去結論に露出した来歴はSTARTで申告済み。
+- PR1508は未採用のまま実装baseへ使っていない。環境に用意済みの採用main Debug/GCC/frontend-only/sanitizer-none buildを使用。選定targetのread-only build planでは再compile/link予定0であり、新規の全体clean buildを実施したとは主張しない。compiler・関連archive・CMakeCache・CURRENT_SPEC/canonicalの前後hashは全一致。setup script、以前のtests/native生成物、全CTest/Actionsは実行していない。新規出力は `/workspace/p1515-c1150` に隔離。
+
+### Source law / actual proof / observed first failure
+
+二例はsample 0と42だけが異なる。両方で、元Readingの同じfield0に初期named Copy（91→0）、二つのfallible Resource original、H2内の元p1 payloadをD1でreadしloanを閉じる→`retire(p1,a1,d1)`→callerがp0を終了→元Reading field0にsampleをnamed Copyする。producer/LiveTail、link書込み、owner mint、unchecked、host seedは0。H2 sample0でも二度目の書込みを省略しない。
+
+| 層 | 観測結果 |
+| --- | --- |
+| 完全unit parser | 二例ともpublic parse status0 |
+| 独立definition | 二例ともregistration status0。signatureからconcrete root/Backing/Domainを作らず、登録直後bindings/values/places/regions/domains0。receiverはrequirements255、EndRoot→erase→finalize→freeの4 steps、live-return/head-link要求なし |
+| 実actual main() | 元input AST/sourceを破棄した後、public APIで実main()をCHECKしstatus0、所有artifactのproof class=1/MACHINE=1 |
+| 元H owner関係 | 実entryでは二つのlive original R/Dがdistinct。p1のcurrent root/incarnation/read provenance、a1の同じfull R、d1の同じgoverning D、actual identifier/Copy ptr＋consume A/D、別formal bindingへの同じvalue対応を観測。callee BODY内のdestroy/freeは第二originalに各1回、full Storage回収・Domain終了・終了後root/R/D dead。caller第一Hの終了は別source operationであり、calleeに移していない |
+| 真正なpayload read | 元p1 rootに属するchild index1、同じD1のscoped ref acquisition、receiverより前のreadとloan終了を観測。実sample0/42がTのincomingへ対応 |
+| named T Copy/current | 二例×二実callそれぞれpublic body/parameters/event validatorは全status0。実owned match tree/prefixで元T lineageを確認し、同じroot/incarnation/childにold Copy91→0、H2ではold Copy0→sample、sibling23保持、child current fact更新。別worldの同数値ID単独では認定しない |
+| failure worlds | public owned armのH0 release0・receiver0・second T write0、H1 release1・receiver0・second T write0、H2 callee第二H＋caller第一Hのrelease2・receiver1・second T write1。各armのR/Dは閉じ、scopes閉鎖を確認。これは静的所有artifactの証拠で、guest allocator/native物理解放の実測ではない |
+| C17 FIRST | P-zeroだけ一回 `--emit-c17-to`。exit4・下記原診断、stdout0B、named C absent/staging0。P-nonzeroのemitはNOT_RUN |
+
+測定されたbackend境界は `src/main.c:4560–4582` の mixed routeが呼ぶ既存 `nl_checked_c_node` consumerの不成立である。FIRSTの `copy_prepare_at` の `!live_tail`（`src/checked_c_copy_internal.h:114`）、さらにowner consumerのlink topology要求（`src/checked_c_node.c:3048`以降）は**静的な制約仮説**であり、このGate0で内部のどのguardが最初にreturnしたかをdebugger/patchで計測したとはしない。CLI backend拒否をparser/source-law/issuer失敗とは扱わず、内部guardの推測を観測事実に昇格しない。
+
+### 六つのisolated negative — all C emission NOT_RUN
+
+| source | 最初の実測 | 意味と限界 |
+| --- | --- | --- |
+| N-foreign-allocation | CLI3 / semantic `P193-CALL-BACKING` | 同型の別a0はp1のRを所有しない |
+| N-foreign-domain | CLI3 / semantic `P193-CALL-DOMAIN` | 別d0はp1をgovernしない |
+| N-owner-reused | CLI3 / semantic `P3-USE-AFTER-CONSUME` | 二回目receiver actualのa1再利用で拒否 |
+| N-stale-read | CLI3 / semantic `P3-USE-AFTER-CONSUME` | 終了後readに必要なd1の再利用を先に拒否。独立のUAF ref発行まで進んだ試験ではない |
+| N-incomplete-callee | CLI3 / semantic `P193-DEFINITION-OBLIGATION` | callee内deallocate欠落を独立definitionで拒否 |
+| N-H1-leak | CLI3 / **precision** `ALLOCATED-CAPTURED-JOIN-PRECISION` | H1 original責任を閉じない世界のjoinをfail closed。FIRSTのsemantic affine diagnostic予測より精度層で先に停止し、特定のaffine診断や一般leak検出PASSへは読み替えない |
+
+いずれもparser拒否ではない。false CHECK acceptanceは今回観測なし。選んだ6つ以外のforeign-p、live conflicting loan、forged actual/formal/public candidate mutationはNOT_RUNで、一般soundnessは認定しない。author-premise負例は使用していない。
+
+### Cost / resources / next envelope
+
+**aggregate13/24**：target-plan診断1、ordinary CLI --check8、probe GCC compile/link1、public API probe2、baseline CLI emit1。script一回に隠したnewlangc/CC0（probeはchild process0、make -nはCC0）。API呼出し内訳は下記summary。Production compiler再compile0、source/apparatus repair0、旧P1507 48/48は変更なし。追加11枠は未使用で、この終了後の実装権限にはならない。
+
+local native/generated guest execution・ASan/UBSan・guest ELF・selected host OOM・CI/Actions/full CTestはすべて **NOT_RUN / 0**。probe実行はcompiler-host public API観測であり、NewLangから生成されたnative programではない。
+
+開始時空き64,131,923,968B / 4,194,139 inodes、追加予測peak32MiB / 256 inodes、予測後margin64,098,369,536B / 4,193,883 inodes。各attempt前後sampleの最大占有増加1,896,448B / 37 inodes（瞬間peakではない）。attempt合計wall 0.541521秒、観測子process最大RSS18,432KiB。既存repo/build/SDKは保持し、固有FIRST/RED/raw/logも削除0。branch/PR禁止なのでEvidence refの新設/push0；小さいFIRST/原ログ/receiptは本Issueへ全文掲載し、ローカル元copyも保持する。新credential/PATやpermission拡大0。
+
+次の限定実装候補は、今回成立した§18.1a actual owner relationを既存source-owned receiptからprivate C17 carrierへ保存し、calleeによる第二originalだけの一度のEndRoot/full-range/free→caller第一original closure→元T named Copyへ接続する一能力である。不要なlink/LiveTailを追加してgateを通さない。**PR1508の固定独立審査結果のC処分、次の採用mainの確定、別C RELEASE・予算が先**であり、本報告からProduction変更/branch/PRを起動しない。full verticalでは両source/failure worlds、actual/formal/world改変負例、strict C17/native、異常系/OOM/rollback/no-clobberと独立安全性検証が別途必要。既存receiptで真正性を保存できず新public issuer/source lawが必要なら、その境界でSTOP C/Mへ返す。
+
+### FIRST source/oracle/probe hashes (full bytes are in linked FIRST records)
+
+| file | bytes | SHA256 |
+| --- | ---: | --- |
+| source/N-H1-leak.nl | 2745 | `bfc34cb49c3994dfcdd4d3310147d56360ae3c407748a98fc5f5c09b56860fc3` |
+| source/N-foreign-allocation.nl | 3022 | `3556c2d4c9c380b6f254a04f206346ddd0e4feebd244b5e705ca90739660c51e` |
+| source/N-foreign-domain.nl | 3022 | `ec3e689d27ea60d5cfcb5e285434cb6bacc369dc385f7332ac37cd04a2523fda` |
+| source/N-incomplete-callee.nl | 2997 | `35961c146e53106e440e91733b49db4b8f940295d6f2cdc46a63dac5d0dc824f` |
+| source/N-owner-reused.nl | 3062 | `5426cc5561b381533a2b42798d318602b770ea15570aefbb6ad898f88bcbb7ae` |
+| source/N-stale-read.nl | 3208 | `73134d7f8a481309fec656a9829d5ca1dd3b78674452d469295919eac75f7a7c` |
+| source/P-nonzero.nl | 3023 | `3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c` |
+| source/P-zero.nl | 3022 | `c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b` |
+| oracle.json | 8219 | `1af5bcae5ec14d0a7a702af8a62afb12e8c5eed1a34ac02c7f63d1c381708a5f` |
+| probe.c | 18408 | `23194e04fda8190396585c810cf42110036284565cba3c6befd09e1c2a0e8aa8` |
+
+### Durable execution receipts / complete original raw logs
+
+全26 raw filesのうちempty fileもledgerに0Bとempty SHA256を記録。以下のnonempty fencesはUTF-8/LFで復元し、コードfence直前のデータ末尾LFは元fileに含まれる。全stderr/stdout hashを実bytesと照合済み。元source/RED/予測を上書きする補正なし。
+
+#### technical-summary.json — 1077 bytes / SHA256 `7d7abc90d7688ff508ce159002d21a0c74c1927089a21b82c4e65bd54096b4a2`
+
+```json
+{
+  "trials": 13,
+  "sum_attempt_wall_seconds": 0.541521,
+  "peak_child_maxrss_kib": 18432,
+  "ordinary_newlangc_check_invocations": 8,
+  "baseline_newlangc_emit_invocations": 1,
+  "public_API_probe_invocations": 2,
+  "GCC_probe_build_invocations": 1,
+  "build_plan_diagnostic_invocations": 1,
+  "production_recompile_steps": 0,
+  "repairs": 0,
+  "raw_log_files": 26,
+  "raw_log_total_bytes": 10744,
+  "public_API_census_per_probe": {
+    "function_unit_parse": 1,
+    "registration": 1,
+    "definition_applicability_getters": "all registered functions, exactly one conditional receiver",
+    "entry_expression_parse": 1,
+    "actual_main_check": 1,
+    "public_proof_class": 1,
+    "copy_body_validate": 2,
+    "copy_parameters_validate": 2,
+    "copy_event_validate": 2,
+    "source_seed": 0,
+    "mutated_artifacts": 0,
+    "newlangc_CC_child_processes": 0
+  },
+  "not_covered": "No forged actual/formal/public candidate mutation tests; no foreign-p alternative or live competing-loan negative; chosen six source negatives only. H1 cleanup failure is precision refusal."
+}
+```
+
+#### checkpoint.json — 1195 bytes / SHA256 `c08cae84c091dbb781cc54d4600ac0fd01f63ec78aee8db18e58ff40ae3c7022`
+
+```json
+{
+  "attempts": 13,
+  "charge": 13,
+  "baseline_C_exists": false,
+  "baseline_C_bytes": null,
+  "leftover_C_staging": [],
+  "source_and_compiler_archive_hashes_unchanged": {
+    "build-frontend/newlangc": true,
+    "build-frontend/libnewlang_semantic.a": true,
+    "build-frontend/libnewlang_checked.a": true,
+    "build-frontend/libnewlang_parser.a": true,
+    "build-frontend/libnewlang_diagnostic.a": true,
+    "build-frontend/libnewlang_syntax.a": true,
+    "build-frontend/libnewlang_lexer.a": true,
+    "build-frontend/libnewlang_source.a": true,
+    "build-frontend/libnewlang_checked_c_node.a": true,
+    "build-frontend/CMakeCache.txt": true,
+    "docs/reference/CURRENT_SPEC.md": true,
+    "docs/reference/NewLang_v0_spec_Draft17_38.md": true
+  },
+  "git_HEAD": "4c388693b95f371783e666f5c77e0aec5d17d215",
+  "git_tree": "867784ea863675788bc5ce4745904091ee319d3e",
+  "git_status": "",
+  "free_bytes_after": 64130023424,
+  "free_inodes_after": 4194102,
+  "max_observed_used_delta_bytes": 1896448,
+  "max_observed_used_delta_inodes": 37,
+  "peak_is_sampled_endpoints_not_instantaneous": true,
+  "guest_native": 0,
+  "host_OOM": 0,
+  "CI": 0,
+  "branches_PR": 0,
+  "production_edits": 0
+}
+```
+
+#### attempts.json — 12350 bytes / SHA256 `1bbf34461ad01b924859d6e5a56285e92061eaa892866ce50995bc1b1ac3f938`
+
+```json
+[
+  {
+    "attempt": 1,
+    "label": "target-plan",
+    "argv": [
+      "/usr/bin/make",
+      "-n",
+      "-C",
+      "/workspace/NewLang_Compiler/build-frontend",
+      "newlangc"
+    ],
+    "utc": "2026-11-18T05:33:05.506113+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131805184,
+    "free_inodes_before": 4194130,
+    "exit": 0,
+    "seconds": 0.175439,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194127,
+    "stdout": {
+      "path": "logs/01-target-plan.stdout",
+      "bytes": 8393,
+      "sha256": "0730b89106748237a671c897e593d88635301c7e1ca81607cafcfe27cf10ca56"
+    },
+    "stderr": {
+      "path": "logs/01-target-plan.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 2,
+    "label": "check-zero",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/P-zero.nl"
+    ],
+    "utc": "2026-11-18T05:33:12.348265+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194127,
+    "exit": 0,
+    "seconds": 0.007942,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194125,
+    "stdout": {
+      "path": "logs/02-check-zero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/02-check-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 3,
+    "label": "check-nonzero",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/P-nonzero.nl"
+    ],
+    "utc": "2026-11-18T05:33:22.011360+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194125,
+    "exit": 0,
+    "seconds": 0.007864,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194123,
+    "stdout": {
+      "path": "logs/03-check-nonzero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/03-check-nonzero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 4,
+    "label": "build-probe",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_Compiler/include",
+      "/workspace/p1515-c1150/probe.c",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-o",
+      "/workspace/p1515-c1150/probe-v1"
+    ],
+    "utc": "2026-11-18T05:33:22.372338+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194123,
+    "exit": 0,
+    "seconds": 0.265133,
+    "maxrss_kib_children": 18432,
+    "free_bytes_after": 64130072576,
+    "free_inodes_after": 4194120,
+    "stdout": {
+      "path": "logs/04-build-probe.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/04-build-probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 5,
+    "label": "owned-zero-v1",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/p1515-c1150/source/P-zero.nl",
+      "0"
+    ],
+    "utc": "2026-11-18T05:33:27.446939+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130068480,
+    "free_inodes_before": 4194120,
+    "exit": 0,
+    "seconds": 0.008104,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130064384,
+    "free_inodes_after": 4194118,
+    "stdout": {
+      "path": "logs/05-owned-zero-v1.stdout",
+      "bytes": 635,
+      "sha256": "7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b"
+    },
+    "stderr": {
+      "path": "logs/05-owned-zero-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 6,
+    "label": "owned-nonzero-v1",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/p1515-c1150/source/P-nonzero.nl",
+      "42"
+    ],
+    "utc": "2026-11-18T05:33:43.136778+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130064384,
+    "free_inodes_before": 4194118,
+    "exit": 0,
+    "seconds": 0.016801,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130060288,
+    "free_inodes_after": 4194116,
+    "stdout": {
+      "path": "logs/06-owned-nonzero-v1.stdout",
+      "bytes": 638,
+      "sha256": "8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe"
+    },
+    "stderr": {
+      "path": "logs/06-owned-nonzero-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 7,
+    "label": "neg-foreign-allocation",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-foreign-allocation.nl"
+    ],
+    "utc": "2026-11-18T05:33:43.509546+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130060288,
+    "free_inodes_before": 4194116,
+    "exit": 3,
+    "seconds": 0.007973,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130056192,
+    "free_inodes_after": 4194114,
+    "stdout": {
+      "path": "logs/07-neg-foreign-allocation.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/07-neg-foreign-allocation.stderr",
+      "bytes": 158,
+      "sha256": "a6aaade8f11c302fbee4d727afe67669cec0be2cbfe95fd4e784b9f40bafe22d"
+    }
+  },
+  {
+    "attempt": 8,
+    "label": "neg-foreign-domain",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-foreign-domain.nl"
+    ],
+    "utc": "2026-11-18T05:33:43.907237+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130056192,
+    "free_inodes_before": 4194114,
+    "exit": 3,
+    "seconds": 0.017257,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130052096,
+    "free_inodes_after": 4194112,
+    "stdout": {
+      "path": "logs/08-neg-foreign-domain.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/08-neg-foreign-domain.stderr",
+      "bytes": 154,
+      "sha256": "e20933bf8bb10f461a2cf25d21b2336ac0ecd11ec480050c0850a52512ba5928"
+    }
+  },
+  {
+    "attempt": 9,
+    "label": "neg-owner-reused",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-owner-reused.nl"
+    ],
+    "utc": "2026-11-18T05:33:44.295089+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130052096,
+    "free_inodes_before": 4194112,
+    "exit": 3,
+    "seconds": 0.006739,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130043904,
+    "free_inodes_after": 4194110,
+    "stdout": {
+      "path": "logs/09-neg-owner-reused.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/09-neg-owner-reused.stderr",
+      "bytes": 133,
+      "sha256": "2f29ad3ee2f1bdce178ab42317b3fc43e605d7564eca94a4f28fe259fa788a7b"
+    }
+  },
+  {
+    "attempt": 10,
+    "label": "neg-stale-read",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-stale-read.nl"
+    ],
+    "utc": "2026-11-18T05:33:44.660982+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130043904,
+    "free_inodes_before": 4194110,
+    "exit": 3,
+    "seconds": 0.004178,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130039808,
+    "free_inodes_after": 4194108,
+    "stdout": {
+      "path": "logs/10-neg-stale-read.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/10-neg-stale-read.stderr",
+      "bytes": 131,
+      "sha256": "da1021579a8bbdb7dd13da54b6b52cf9fece6caf636bc3708b9b16e25eae10f8"
+    }
+  },
+  {
+    "attempt": 11,
+    "label": "neg-incomplete-callee",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-incomplete-callee.nl"
+    ],
+    "utc": "2026-11-18T05:33:45.014545+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130039808,
+    "free_inodes_before": 4194108,
+    "exit": 3,
+    "seconds": 0.004071,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130035712,
+    "free_inodes_after": 4194106,
+    "stdout": {
+      "path": "logs/11-neg-incomplete-callee.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/11-neg-incomplete-callee.stderr",
+      "bytes": 161,
+      "sha256": "35933ca79c42047cf8a4eab3d603d7d14061f7499a2a498d19bc4a0f32413be6"
+    }
+  },
+  {
+    "attempt": 12,
+    "label": "neg-H1-leak",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-H1-leak.nl"
+    ],
+    "utc": "2026-11-18T05:33:45.373683+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130035712,
+    "free_inodes_before": 4194106,
+    "exit": 3,
+    "seconds": 0.003877,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130031616,
+    "free_inodes_after": 4194104,
+    "stdout": {
+      "path": "logs/12-neg-H1-leak.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/12-neg-H1-leak.stderr",
+      "bytes": 214,
+      "sha256": "f0cbdccdfe53681ec0ed7a08788df449286653d83110e2d22b326f9600ee25ea"
+    }
+  },
+  {
+    "attempt": 13,
+    "label": "emit-baseline",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1515-c1150/baseline.c",
+      "/workspace/p1515-c1150/source/P-zero.nl"
+    ],
+    "utc": "2026-11-18T05:34:06.139233+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130031616,
+    "free_inodes_before": 4194104,
+    "exit": 4,
+    "seconds": 0.016143,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130027520,
+    "free_inodes_after": 4194102,
+    "stdout": {
+      "path": "logs/13-emit-baseline.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/13-emit-baseline.stderr",
+      "bytes": 127,
+      "sha256": "a2acc5c32c1dbbc398f171b201bcad91b505cdf32cb95d7d9ca39feabcddc178"
+    }
+  }
+]
+```
+
+#### run_attempt.py — 2139 bytes / SHA256 `069d3b3bc033734c085997184ce1cae83c6e1328f89926d220859a01c779ff96`
+
+```python
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import os
+import resource
+import subprocess
+import sys
+import time
+
+root = Path(__file__).resolve().parent
+label, *argv = sys.argv[1:]
+assert argv and '/' not in label
+ledger = root / 'attempts.json'
+entries = json.loads(ledger.read_text()) if ledger.exists() else []
+assert len(entries) < 24
+assert not any(e['label'] == label for e in entries)
+for m in json.loads((root / 'FIRST-manifest.json').read_text()):
+    b = (root / m['path']).read_bytes()
+    assert len(b) == m['bytes'] and hashlib.sha256(b).hexdigest() == m['sha256'], m['path']
+logs = root / 'logs'
+logs.mkdir(exist_ok=True)
+prefix = logs / f'{len(entries)+1:02d}-{label}'
+before = os.statvfs(root)
+entry = {'attempt': len(entries)+1, 'label': label, 'argv': argv,
+         'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         'status': 'STARTED', 'charge': 1, 'nested_compiler_commands': 0,
+         'free_bytes_before': before.f_bavail*before.f_frsize,
+         'free_inodes_before': before.f_favail}
+entries.append(entry)
+ledger.write_text(json.dumps(entries, indent=2)+'\n')
+start = time.monotonic()
+with prefix.with_suffix('.stdout').open('wb') as out, prefix.with_suffix('.stderr').open('wb') as err:
+    result = subprocess.run(argv, cwd='/workspace/NewLang_Compiler', stdout=out, stderr=err, timeout=180)
+after = os.statvfs(root)
+entry.update(status='FINISHED', exit=result.returncode,
+             seconds=round(time.monotonic()-start, 6),
+             maxrss_kib_children=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
+             free_bytes_after=after.f_bavail*after.f_frsize,
+             free_inodes_after=after.f_favail)
+for kind in ['stdout','stderr']:
+    p = prefix.with_suffix('.'+kind)
+    b = p.read_bytes()
+    entry[kind] = {'path': str(p.relative_to(root)), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+ledger.write_text(json.dumps(entries, indent=2)+'\n')
+print(json.dumps(entry, indent=2))
+print(prefix.with_suffix('.stdout').read_text(errors='replace')[:12000])
+print(prefix.with_suffix('.stderr').read_text(errors='replace')[:12000])
+```
+
+#### logs/01-target-plan.stdout — 8393 bytes / SHA256 `0730b89106748237a671c897e593d88635301c7e1ca81607cafcfe27cf10ca56`
+
+```text
+make: Entering directory '/workspace/NewLang_Compiler/build-frontend'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_Compiler -B/workspace/NewLang_Compiler/build-frontend --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/make -s -f CMakeFiles/Makefile2 newlangc
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_Compiler -B/workspace/NewLang_Compiler/build-frontend --check-build-system CMakeFiles/Makefile.cmake 0
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/NewLang_Compiler/build-frontend/CMakeFiles 7
+/usr/bin/make -s -f CMakeFiles/Makefile2 CMakeFiles/newlangc.dir/all
+/usr/bin/make -s -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_source.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_source"
+/usr/bin/make -s -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_syntax.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=16 "Built target newlang_syntax"
+/usr/bin/make -s -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_checked.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=10 "Built target newlang_checked"
+/usr/bin/make -s -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_diagnostic.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=11 "Built target newlang_diagnostic"
+/usr/bin/make -s -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_lexer.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_lexer"
+/usr/bin/make -s -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_parser.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_parser"
+/usr/bin/make -s -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_semantic.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=12,13,14,15 "Built target newlang_semantic"
+/usr/bin/make -s -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_checked_c_node.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_checked_c_node"
+/usr/bin/make -s -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlangc.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlangc"
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/NewLang_Compiler/build-frontend/CMakeFiles 0
+make: Leaving directory '/workspace/NewLang_Compiler/build-frontend'
+```
+
+#### logs/05-owned-zero-v1.stdout — 635 bytes / SHA256 `7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b`
+
+```text
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=0 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+```
+
+#### logs/06-owned-nonzero-v1.stdout — 638 bytes / SHA256 `8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe`
+
+```text
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=42 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=42 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=42
+```
+
+#### logs/07-neg-foreign-allocation.stderr — 158 bytes / SHA256 `a6aaade8f11c302fbee4d727afe67669cec0be2cbfe95fd4e784b9f40bafe22d`
+
+```text
+/workspace/p1515-c1150/source/N-foreign-allocation.nl:61:21-61:39: error(semantic)[P193-CALL-BACKING]: input Allocation does not own the root's BackingRegion
+```
+
+#### logs/08-neg-foreign-domain.stderr — 154 bytes / SHA256 `e20933bf8bb10f461a2cf25d21b2336ac0ecd11ec480050c0850a52512ba5928`
+
+```text
+/workspace/p1515-c1150/source/N-foreign-domain.nl:61:21-61:39: error(semantic)[P193-CALL-DOMAIN]: input LifetimeDomain does not govern the pointer's root
+```
+
+#### logs/09-neg-owner-reused.stderr — 133 bytes / SHA256 `2f29ad3ee2f1bdce178ab42317b3fc43e605d7564eca94a4f28fe259fa788a7b`
+
+```text
+/workspace/p1515-c1150/source/N-owner-reused.nl:62:32-62:34: error(semantic)[P3-USE-AFTER-CONSUME]: use of consumed semantic binding
+```
+
+#### logs/10-neg-stale-read.stderr — 131 bytes / SHA256 `da1021579a8bbdb7dd13da54b6b52cf9fece6caf636bc3708b9b16e25eae10f8`
+
+```text
+/workspace/p1515-c1150/source/N-stale-read.nl:62:43-62:45: error(semantic)[P3-USE-AFTER-CONSUME]: use of consumed semantic binding
+```
+
+#### logs/11-neg-incomplete-callee.stderr — 161 bytes / SHA256 `35933ca79c42047cf8a4eab3d603d7d14061f7499a2a498d19bc4a0f32413be6`
+
+```text
+/workspace/p1515-c1150/source/N-incomplete-callee.nl:10:71-17:2: error(semantic)[P193-DEFINITION-OBLIGATION]: normal exit retains non-Discardable responsibility
+```
+
+#### logs/12-neg-H1-leak.stderr — 214 bytes / SHA256 `f0cbdccdfe53681ec0ed7a08788df449286653d83110e2d22b326f9600ee25ea`
+
+```text
+/workspace/p1515-c1150/source/N-H1-leak.nl:38:17-40:18: error(precision)[ALLOCATED-CAPTURED-JOIN-PRECISION]: each allocation world must close its own responsibilities and prove the exact captured-prefix post-state
+```
+
+#### logs/13-emit-baseline.stderr — 127 bytes / SHA256 `a2acc5c32c1dbbc398f171b201bcad91b505cdf32cb95d7d9ca39feabcddc178`
+
+```text
+error(cli)[V1-BACKEND-UNSUPPORTED]: mixed H plus T has no dual-carrier C17 proof
+note: /workspace/p1515-c1150/source/P-zero.nl
+```
+
+
+**PREP FINAL POST/GET後STOP。技術結果とVALUE-ALIGNMENT-RISKは上記の別判定としてCoordinationへ返却し、新たな実行/実装は開始しない。**

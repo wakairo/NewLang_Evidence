@@ -1,0 +1,44 @@
+make: Entering directory '/workspace/NewLang_Compiler/build-frontend'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_Compiler -B/workspace/NewLang_Compiler/build-frontend --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/make -s -f CMakeFiles/Makefile2 newlangc
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_Compiler -B/workspace/NewLang_Compiler/build-frontend --check-build-system CMakeFiles/Makefile.cmake 0
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/NewLang_Compiler/build-frontend/CMakeFiles 7
+/usr/bin/make -s -f CMakeFiles/Makefile2 CMakeFiles/newlangc.dir/all
+/usr/bin/make -s -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_source.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_source"
+/usr/bin/make -s -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_syntax.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=16 "Built target newlang_syntax"
+/usr/bin/make -s -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_checked.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=10 "Built target newlang_checked"
+/usr/bin/make -s -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_diagnostic.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=11 "Built target newlang_diagnostic"
+/usr/bin/make -s -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_lexer.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_lexer"
+/usr/bin/make -s -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_parser.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_parser"
+/usr/bin/make -s -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_semantic.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num=12,13,14,15 "Built target newlang_semantic"
+/usr/bin/make -s -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlang_checked_c_node.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlang_checked_c_node"
+/usr/bin/make -s -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/depend
+cd /workspace/NewLang_Compiler/build-frontend && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_Compiler /workspace/NewLang_Compiler /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend /workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlangc.dir/DependInfo.cmake "--color="
+/usr/bin/make -s -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/build
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_echo_color "--switch=" --progress-dir=/workspace/NewLang_Compiler/build-frontend/CMakeFiles --progress-num= "Built target newlangc"
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/NewLang_Compiler/build-frontend/CMakeFiles 0
+make: Leaving directory '/workspace/NewLang_Compiler/build-frontend'

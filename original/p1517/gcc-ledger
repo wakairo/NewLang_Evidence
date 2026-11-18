@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import os,sys,json,subprocess
+from pathlib import Path
+r=Path('/workspace/p1517-evidence')
+rows=json.loads((r/'attempts.json').read_text())
+label='cmake-gcc-'+str(len(rows)+1)
+env=dict(os.environ,P1517_ATTEMPT_CWD=os.getcwd())
+p=subprocess.run([sys.executable,str(r/'run.py'),label,'/usr/bin/gcc',*sys.argv[1:]],capture_output=True,env=env)
+rows=json.loads((r/'attempts.json').read_text())
+found=next((e for e in rows if e['label']==label),None)
+if not found or found['status']!='FINISHED':
+    sys.stderr.buffer.write(p.stderr);sys.exit(1)
+sys.stdout.buffer.write((r/found['stdout']['path']).read_bytes())
+sys.stderr.buffer.write((r/found['stderr']['path']).read_bytes())
+sys.exit(found['exit'])

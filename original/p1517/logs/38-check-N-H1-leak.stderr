@@ -1,0 +1,1 @@
+/workspace/NewLang_P1517/tests/p1517/N-H1-leak.nl:38:17-40:18: error(precision)[ALLOCATED-CAPTURED-JOIN-PRECISION]: each allocation world must close its own responsibilities and prove the exact captured-prefix post-state

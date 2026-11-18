@@ -1,0 +1,412 @@
+[
+  {
+    "attempt": 1,
+    "label": "target-plan",
+    "argv": [
+      "/usr/bin/make",
+      "-n",
+      "-C",
+      "/workspace/NewLang_Compiler/build-frontend",
+      "newlangc"
+    ],
+    "utc": "2026-11-18T05:33:05.506113+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131805184,
+    "free_inodes_before": 4194130,
+    "exit": 0,
+    "seconds": 0.175439,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194127,
+    "stdout": {
+      "path": "logs/01-target-plan.stdout",
+      "bytes": 8393,
+      "sha256": "0730b89106748237a671c897e593d88635301c7e1ca81607cafcfe27cf10ca56"
+    },
+    "stderr": {
+      "path": "logs/01-target-plan.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 2,
+    "label": "check-zero",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/P-zero.nl"
+    ],
+    "utc": "2026-11-18T05:33:12.348265+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194127,
+    "exit": 0,
+    "seconds": 0.007942,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194125,
+    "stdout": {
+      "path": "logs/02-check-zero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/02-check-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 3,
+    "label": "check-nonzero",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/P-nonzero.nl"
+    ],
+    "utc": "2026-11-18T05:33:22.011360+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194125,
+    "exit": 0,
+    "seconds": 0.007864,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64131788800,
+    "free_inodes_after": 4194123,
+    "stdout": {
+      "path": "logs/03-check-nonzero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/03-check-nonzero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 4,
+    "label": "build-probe",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_Compiler/include",
+      "/workspace/p1515-c1150/probe.c",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-o",
+      "/workspace/p1515-c1150/probe-v1"
+    ],
+    "utc": "2026-11-18T05:33:22.372338+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64131788800,
+    "free_inodes_before": 4194123,
+    "exit": 0,
+    "seconds": 0.265133,
+    "maxrss_kib_children": 18432,
+    "free_bytes_after": 64130072576,
+    "free_inodes_after": 4194120,
+    "stdout": {
+      "path": "logs/04-build-probe.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/04-build-probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 5,
+    "label": "owned-zero-v1",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/p1515-c1150/source/P-zero.nl",
+      "0"
+    ],
+    "utc": "2026-11-18T05:33:27.446939+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130068480,
+    "free_inodes_before": 4194120,
+    "exit": 0,
+    "seconds": 0.008104,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130064384,
+    "free_inodes_after": 4194118,
+    "stdout": {
+      "path": "logs/05-owned-zero-v1.stdout",
+      "bytes": 635,
+      "sha256": "7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b"
+    },
+    "stderr": {
+      "path": "logs/05-owned-zero-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 6,
+    "label": "owned-nonzero-v1",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/p1515-c1150/source/P-nonzero.nl",
+      "42"
+    ],
+    "utc": "2026-11-18T05:33:43.136778+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130064384,
+    "free_inodes_before": 4194118,
+    "exit": 0,
+    "seconds": 0.016801,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130060288,
+    "free_inodes_after": 4194116,
+    "stdout": {
+      "path": "logs/06-owned-nonzero-v1.stdout",
+      "bytes": 638,
+      "sha256": "8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe"
+    },
+    "stderr": {
+      "path": "logs/06-owned-nonzero-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 7,
+    "label": "neg-foreign-allocation",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-foreign-allocation.nl"
+    ],
+    "utc": "2026-11-18T05:33:43.509546+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130060288,
+    "free_inodes_before": 4194116,
+    "exit": 3,
+    "seconds": 0.007973,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130056192,
+    "free_inodes_after": 4194114,
+    "stdout": {
+      "path": "logs/07-neg-foreign-allocation.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/07-neg-foreign-allocation.stderr",
+      "bytes": 158,
+      "sha256": "a6aaade8f11c302fbee4d727afe67669cec0be2cbfe95fd4e784b9f40bafe22d"
+    }
+  },
+  {
+    "attempt": 8,
+    "label": "neg-foreign-domain",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-foreign-domain.nl"
+    ],
+    "utc": "2026-11-18T05:33:43.907237+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130056192,
+    "free_inodes_before": 4194114,
+    "exit": 3,
+    "seconds": 0.017257,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130052096,
+    "free_inodes_after": 4194112,
+    "stdout": {
+      "path": "logs/08-neg-foreign-domain.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/08-neg-foreign-domain.stderr",
+      "bytes": 154,
+      "sha256": "e20933bf8bb10f461a2cf25d21b2336ac0ecd11ec480050c0850a52512ba5928"
+    }
+  },
+  {
+    "attempt": 9,
+    "label": "neg-owner-reused",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-owner-reused.nl"
+    ],
+    "utc": "2026-11-18T05:33:44.295089+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130052096,
+    "free_inodes_before": 4194112,
+    "exit": 3,
+    "seconds": 0.006739,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130043904,
+    "free_inodes_after": 4194110,
+    "stdout": {
+      "path": "logs/09-neg-owner-reused.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/09-neg-owner-reused.stderr",
+      "bytes": 133,
+      "sha256": "2f29ad3ee2f1bdce178ab42317b3fc43e605d7564eca94a4f28fe259fa788a7b"
+    }
+  },
+  {
+    "attempt": 10,
+    "label": "neg-stale-read",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-stale-read.nl"
+    ],
+    "utc": "2026-11-18T05:33:44.660982+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130043904,
+    "free_inodes_before": 4194110,
+    "exit": 3,
+    "seconds": 0.004178,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130039808,
+    "free_inodes_after": 4194108,
+    "stdout": {
+      "path": "logs/10-neg-stale-read.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/10-neg-stale-read.stderr",
+      "bytes": 131,
+      "sha256": "da1021579a8bbdb7dd13da54b6b52cf9fece6caf636bc3708b9b16e25eae10f8"
+    }
+  },
+  {
+    "attempt": 11,
+    "label": "neg-incomplete-callee",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-incomplete-callee.nl"
+    ],
+    "utc": "2026-11-18T05:33:45.014545+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130039808,
+    "free_inodes_before": 4194108,
+    "exit": 3,
+    "seconds": 0.004071,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130035712,
+    "free_inodes_after": 4194106,
+    "stdout": {
+      "path": "logs/11-neg-incomplete-callee.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/11-neg-incomplete-callee.stderr",
+      "bytes": 161,
+      "sha256": "35933ca79c42047cf8a4eab3d603d7d14061f7499a2a498d19bc4a0f32413be6"
+    }
+  },
+  {
+    "attempt": 12,
+    "label": "neg-H1-leak",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--check",
+      "/workspace/p1515-c1150/source/N-H1-leak.nl"
+    ],
+    "utc": "2026-11-18T05:33:45.373683+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130035712,
+    "free_inodes_before": 4194106,
+    "exit": 3,
+    "seconds": 0.003877,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130031616,
+    "free_inodes_after": 4194104,
+    "stdout": {
+      "path": "logs/12-neg-H1-leak.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/12-neg-H1-leak.stderr",
+      "bytes": 214,
+      "sha256": "f0cbdccdfe53681ec0ed7a08788df449286653d83110e2d22b326f9600ee25ea"
+    }
+  },
+  {
+    "attempt": 13,
+    "label": "emit-baseline",
+    "argv": [
+      "/workspace/NewLang_Compiler/build-frontend/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1515-c1150/baseline.c",
+      "/workspace/p1515-c1150/source/P-zero.nl"
+    ],
+    "utc": "2026-11-18T05:34:06.139233+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "free_bytes_before": 64130031616,
+    "free_inodes_before": 4194104,
+    "exit": 4,
+    "seconds": 0.016143,
+    "maxrss_kib_children": 10368,
+    "free_bytes_after": 64130027520,
+    "free_inodes_after": 4194102,
+    "stdout": {
+      "path": "logs/13-emit-baseline.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/13-emit-baseline.stderr",
+      "bytes": 127,
+      "sha256": "a2acc5c32c1dbbc398f171b201bcad91b505cdf32cb95d7d9ca39feabcddc178"
+    }
+  }
+]

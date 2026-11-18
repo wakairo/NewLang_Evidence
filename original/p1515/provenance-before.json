@@ -1,0 +1,56 @@
+{
+  "HEAD": "4c388693b95f371783e666f5c77e0aec5d17d215",
+  "tree": "867784ea863675788bc5ce4745904091ee319d3e",
+  "status": "",
+  "build": "provided build-frontend; Debug/GCC/frontend-only/none sanitizer; no new configuration, only ordinary newlangc target verification authorized; no prior generated tests/results used",
+  "files": {
+    "build-frontend/newlangc": {
+      "bytes": 2413576,
+      "sha256": "61481236b4d2a84e5b5af4697bd8b86dab0d7f0d0a076813792eff383863a74e"
+    },
+    "build-frontend/libnewlang_semantic.a": {
+      "bytes": 2524756,
+      "sha256": "4b6fe85e904274ac0f82de13a6a87bcaf24cc26a3f8456535a9aa04ba1805c39"
+    },
+    "build-frontend/libnewlang_checked.a": {
+      "bytes": 47294,
+      "sha256": "7aeaf6be6f7c3f6a7b99671f9088583c9b1110a5e03a5c1f4d040701c55f5e0a"
+    },
+    "build-frontend/libnewlang_parser.a": {
+      "bytes": 105454,
+      "sha256": "fb38eb4ebfb52cf991b73c7c8800d04bf7b92e67ee5012cf06ce4434accd0a8d"
+    },
+    "build-frontend/libnewlang_diagnostic.a": {
+      "bytes": 10270,
+      "sha256": "85291c4be6c145ed941a8ed84209cc21505f8fbdad8a21fe42392985c75fa7dc"
+    },
+    "build-frontend/libnewlang_syntax.a": {
+      "bytes": 14946,
+      "sha256": "0222bacce784fb09907897fbcb2ada130989ec5fb4d06551624353b3697af6f4"
+    },
+    "build-frontend/libnewlang_lexer.a": {
+      "bytes": 9002,
+      "sha256": "d11831850324c9ac932b855bf5e324e4361004aec02795788dd2445a1d586c44"
+    },
+    "build-frontend/libnewlang_source.a": {
+      "bytes": 15106,
+      "sha256": "b1210b6f44a7f03f54347ead6ef1c8c202a0258879bc448c10a4ff22aeb7b65a"
+    },
+    "build-frontend/libnewlang_checked_c_node.a": {
+      "bytes": 638776,
+      "sha256": "fd8d5f71568677c46dfd2c0269ac2a0ff8329da70be21eb7729d8aeff4083a28"
+    },
+    "build-frontend/CMakeCache.txt": {
+      "bytes": 16447,
+      "sha256": "9b3def7dd6383b05872770628825e09ecffaabbc11361822307fe685bddc5294"
+    },
+    "docs/reference/CURRENT_SPEC.md": {
+      "bytes": 17219,
+      "sha256": "6f5391cd9513142b49fb9ad0e317dc3ced425edfc63f771d1bbea153ff6cefaf"
+    },
+    "docs/reference/NewLang_v0_spec_Draft17_38.md": {
+      "bytes": 639477,
+      "sha256": "1a40abd7f8b404c61eaa0e0d65a3095f0d6198db71478a92a14f2ca54ad66aa8"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+definition status=0 code=none
+actual status=0 code=none
+definition status=0 code=none
+actual status=0 code=none
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign world public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign source public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver unrelated callee body public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper same numeric IDs foreign authentic origin public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 artifact negatives=34 plus foreign origin; pristine retry PASS

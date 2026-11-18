@@ -1,0 +1,26 @@
+In file included from /workspace/p1517-evidence/P-zero-v2.c:12:
+/workspace/NewLang_P1517/tests/p1517/passive.h:137:9: error: expected identifier or ‘(’ before ‘++’ token
+  137 |         ++roots;                                                               \
+      |         ^~
+/workspace/NewLang_P1517/tests/p1517/passive.h:138:5: error: expected identifier or ‘(’ before ‘}’ token
+  138 |     } while (0)
+      |     ^
+/workspace/NewLang_P1517/tests/p1517/passive.h:138:7: error: expected identifier or ‘(’ before ‘while’
+  138 |     } while (0)
+      |       ^~~~~
+/workspace/p1517-evidence/P-zero-v2.c: In function ‘main’:
+/workspace/p1517-evidence/P-zero-v2.c:276:1: error: expected ‘while’ before ‘uint8_t’
+  276 | uint8_t nl_b_6_25 = nl_v_40;
+      | ^~~~~~~
+/workspace/p1517-evidence/P-zero-v2.c:277:7: error: ‘nl_b_6_25’ undeclared (first use in this function); did you mean ‘nl_b_6_22’?
+  277 | (void)nl_b_6_25;
+      |       ^~~~~~~~~
+      |       nl_b_6_22
+/workspace/p1517-evidence/P-zero-v2.c:277:7: note: each undeclared identifier is reported only once for each function it appears in
+/workspace/p1517-evidence/P-zero-v2.c:258:9: error: variable ‘nl_v_40’ set but not used [-Werror=unused-but-set-variable]
+  258 | uint8_t nl_v_40;
+      |         ^~~~~~~
+/workspace/p1517-evidence/P-zero-v2.c:343:1: error: expected declaration or statement at end of input
+  343 | }
+      | ^
+cc1: all warnings being treated as errors

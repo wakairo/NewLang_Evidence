@@ -1,0 +1,1 @@
+Preserved first-private-patch-v1.diff and attempt04 original compile RED. V2 mechanical declaration-order and parentheses repair only; source/native oracle unchanged; predicted strict host compile0, later genuine consumer/CLI0 unchanged.

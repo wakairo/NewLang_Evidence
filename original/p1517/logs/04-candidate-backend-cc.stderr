@@ -1,0 +1,47 @@
+In file included from /workspace/NewLang_P1517/src/checked_c_node.c:569:
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h: In function ‘copy_carrier_world’:
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:31: error: implicit declaration of function ‘expected_owner_calls’ [-Wimplicit-function-declaration]
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:28: error: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Werror=sign-compare]
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                            ^~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1118:31: error: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Werror=sign-compare]
+ 1118 |                e->owner_calls == expected_owner_calls(e) &&
+      |                               ^~
+/workspace/NewLang_P1517/src/checked_c_node.c: At top level:
+/workspace/NewLang_P1517/src/checked_c_node.c:600:15: error: conflicting types for ‘expected_owner_calls’; have ‘size_t(const Emit *)’ {aka ‘long unsigned int(const Emit *)’}
+  600 | static size_t expected_owner_calls(const Emit *e)
+      |               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:31: note: previous implicit declaration of ‘expected_owner_calls’ with type ‘int()’
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c: In function ‘owner_evidence’:
+/workspace/NewLang_P1517/src/checked_c_node.c:3096:47: error: expected expression before ‘||’ token
+ 3096 |                                       : 1u))) ||
+      |                                               ^~
+/workspace/NewLang_P1517/src/checked_c_node.c:3134:79: error: expected statement before ‘)’ token
+ 3134 |         !nl_semantic_domain_view(post, h->heap_domain, &dead_d) || dead_d.live)
+      |                                                                               ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3071:29: error: unused variable ‘dead_d’ [-Werror=unused-variable]
+ 3071 |     NLSemanticDomainView d, dead_d;
+      |                             ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3071:26: error: unused variable ‘d’ [-Werror=unused-variable]
+ 3071 |     NLSemanticDomainView d, dead_d;
+      |                          ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3070:30: error: unused variable ‘dead_r’ [-Werror=unused-variable]
+ 3070 |     NLSemanticBackingView r, dead_r;
+      |                              ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3070:27: error: unused variable ‘r’ [-Werror=unused-variable]
+ 3070 |     NLSemanticBackingView r, dead_r;
+      |                           ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3069:33: error: unused variable ‘after’ [-Werror=unused-variable]
+ 3069 |     NLSemanticPlaceView before, after;
+      |                                 ^~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3069:25: error: unused variable ‘before’ [-Werror=unused-variable]
+ 3069 |     NLSemanticPlaceView before, after;
+      |                         ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3066:30: error: unused variable ‘body’ [-Werror=unused-variable]
+ 3066 |     const NLCheckedFragment *body = nl_checked_call_body(env->artifact, id);
+      |                              ^~~~
+cc1: all warnings being treated as errors

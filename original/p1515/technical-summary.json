@@ -1,0 +1,29 @@
+{
+  "trials": 13,
+  "sum_attempt_wall_seconds": 0.541521,
+  "peak_child_maxrss_kib": 18432,
+  "ordinary_newlangc_check_invocations": 8,
+  "baseline_newlangc_emit_invocations": 1,
+  "public_API_probe_invocations": 2,
+  "GCC_probe_build_invocations": 1,
+  "build_plan_diagnostic_invocations": 1,
+  "production_recompile_steps": 0,
+  "repairs": 0,
+  "raw_log_files": 26,
+  "raw_log_total_bytes": 10744,
+  "public_API_census_per_probe": {
+    "function_unit_parse": 1,
+    "registration": 1,
+    "definition_applicability_getters": "all registered functions, exactly one conditional receiver",
+    "entry_expression_parse": 1,
+    "actual_main_check": 1,
+    "public_proof_class": 1,
+    "copy_body_validate": 2,
+    "copy_parameters_validate": 2,
+    "copy_event_validate": 2,
+    "source_seed": 0,
+    "mutated_artifacts": 0,
+    "newlangc_CC_child_processes": 0
+  },
+  "not_covered": "No forged actual/formal/public candidate mutation tests; no foreign-p alternative or live competing-loan negative; chosen six source negatives only. H1 cleanup failure is precision refusal."
+}

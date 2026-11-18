@@ -1,0 +1,17 @@
+[
+  {
+    "attempt": 1,
+    "kind": "synthetic transport probe",
+    "ref": "refs/heads/archive/p1517-c1157-local-20261118",
+    "argv": [
+      "git",
+      "push",
+      "--porcelain",
+      "origin",
+      "HEAD:refs/heads/archive/p1517-c1157-local-20261118"
+    ],
+    "state": "FINISHED",
+    "exit": 0,
+    "seconds": 1.3157896140000958
+  }
+]

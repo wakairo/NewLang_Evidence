@@ -1,0 +1,11 @@
+{
+  "host_text_sites": [
+    1,
+    2
+  ],
+  "host_fault_retry_cases": 4,
+  "semantic_failure_retry": true,
+  "sentinel_unchanged_on_every_failure": true,
+  "no_temp_leak": true,
+  "clean_retry_exact_original_C": true
+}

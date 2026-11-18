@@ -1,0 +1,2521 @@
+[
+  {
+    "attempt": 1,
+    "label": "parent-backend-cc",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_P1517/include",
+      "-I/workspace/NewLang_P1517/src",
+      "-c",
+      "/workspace/NewLang_P1517/src/checked_c_node.c",
+      "-o",
+      "/workspace/p1517-evidence/build/backend-parent.o"
+    ],
+    "utc": "2026-11-18T06:08:53.920494+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63877394432,
+    "free_inodes_before": 4186126,
+    "exit": 0,
+    "seconds": 1.019868,
+    "maxrss_kib_children": 60540,
+    "free_bytes_after": 63876898816,
+    "free_inodes_after": 4186122,
+    "stdout": {
+      "path": "logs/01-parent-backend-cc.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/01-parent-backend-cc.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 2,
+    "label": "parent-link",
+    "argv": [
+      "/usr/bin/gcc",
+      "-g",
+      "/workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlangc.dir/src/main.c.o",
+      "/workspace/p1517-evidence/build/backend-parent.o",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked_c_node.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-o",
+      "/workspace/p1517-evidence/build/newlangc-parent"
+    ],
+    "utc": "2026-11-18T06:09:05.439826+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63876898816,
+    "free_inodes_before": 4186122,
+    "exit": 0,
+    "seconds": 0.114864,
+    "maxrss_kib_children": 11108,
+    "free_bytes_after": 63874482176,
+    "free_inodes_after": 4186119,
+    "stdout": {
+      "path": "logs/02-parent-link.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/02-parent-link.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 3,
+    "label": "parent-emit",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-parent",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/parent.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:09:05.600633+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63874482176,
+    "free_inodes_before": 4186119,
+    "exit": 4,
+    "seconds": 0.016129,
+    "maxrss_kib_children": 11108,
+    "free_bytes_after": 63874478080,
+    "free_inodes_after": 4186117,
+    "stdout": {
+      "path": "logs/03-parent-emit.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/03-parent-emit.stderr",
+      "bytes": 134,
+      "sha256": "ab8cc0f7e26f2b51c644029807c5e597ac5b2697f66c943b7e4b70a9c223ce98"
+    }
+  },
+  {
+    "attempt": 4,
+    "label": "candidate-backend-cc",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_P1517/include",
+      "-I/workspace/NewLang_P1517/src",
+      "-c",
+      "/workspace/NewLang_P1517/src/checked_c_node.c",
+      "-o",
+      "/workspace/p1517-evidence/build/backend-v1.o"
+    ],
+    "utc": "2026-11-18T06:09:43.643356+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63874469888,
+    "free_inodes_before": 4186117,
+    "exit": 1,
+    "seconds": 0.365374,
+    "maxrss_kib_children": 29992,
+    "free_bytes_after": 63874461696,
+    "free_inodes_after": 4186115,
+    "stdout": {
+      "path": "logs/04-candidate-backend-cc.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/04-candidate-backend-cc.stderr",
+      "bytes": 3837,
+      "sha256": "0cd0224bfaa23cc2a9cc8dfecc84bbb28f00301806be7c453c7f71ad7e1c56f2"
+    }
+  },
+  {
+    "attempt": 5,
+    "label": "candidate-backend-cc-v2",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_P1517/include",
+      "-I/workspace/NewLang_P1517/src",
+      "-c",
+      "/workspace/NewLang_P1517/src/checked_c_node.c",
+      "-o",
+      "/workspace/p1517-evidence/build/backend-v2.o"
+    ],
+    "utc": "2026-11-18T06:10:08.888603+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63874449408,
+    "free_inodes_before": 4186113,
+    "exit": 0,
+    "seconds": 1.017836,
+    "maxrss_kib_children": 60720,
+    "free_bytes_after": 63873953792,
+    "free_inodes_after": 4186110,
+    "stdout": {
+      "path": "logs/05-candidate-backend-cc-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/05-candidate-backend-cc-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 6,
+    "label": "candidate-link-v2",
+    "argv": [
+      "/usr/bin/gcc",
+      "-g",
+      "/workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlangc.dir/src/main.c.o",
+      "/workspace/p1517-evidence/build/backend-v2.o",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked_c_node.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-o",
+      "/workspace/p1517-evidence/build/newlangc-v2"
+    ],
+    "utc": "2026-11-18T06:10:26.878260+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63873953792,
+    "free_inodes_before": 4186110,
+    "exit": 0,
+    "seconds": 0.06431,
+    "maxrss_kib_children": 11204,
+    "free_bytes_after": 63871537152,
+    "free_inodes_after": 4186107,
+    "stdout": {
+      "path": "logs/06-candidate-link-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/06-candidate-link-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 7,
+    "label": "candidate-emit-zero-v2",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/P-zero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:10:26.984026+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871537152,
+    "free_inodes_before": 4186107,
+    "exit": 0,
+    "seconds": 0.016262,
+    "maxrss_kib_children": 11204,
+    "free_bytes_after": 63871520768,
+    "free_inodes_after": 4186104,
+    "stdout": {
+      "path": "logs/07-candidate-emit-zero-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/07-candidate-emit-zero-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 8,
+    "label": "native-zero-gcc-O0-cc",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DP1517_SAMPLE=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive.h\"",
+      "/workspace/p1517-evidence/P-zero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/zero-gcc-O0"
+    ],
+    "utc": "2026-11-18T06:10:42.092246+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871520768,
+    "free_inodes_before": 4186104,
+    "exit": 1,
+    "seconds": 0.064645,
+    "maxrss_kib_children": 12416,
+    "free_bytes_after": 63871516672,
+    "free_inodes_after": 4186102,
+    "stdout": {
+      "path": "logs/08-native-zero-gcc-O0-cc.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/08-native-zero-gcc-O0-cc.stderr",
+      "bytes": 1485,
+      "sha256": "6d236271ade079df5183166308cd643188254ba7e6ec41d5cd3fdc97406526c9"
+    },
+    "CC_translation_units_attempted": 2
+  },
+  {
+    "attempt": 9,
+    "label": "native-zero-gcc-O0-cc-v2",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DP1517_SAMPLE=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "/workspace/p1517-evidence/P-zero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/zero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:07.121274+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871479808,
+    "free_inodes_before": 4186099,
+    "exit": 0,
+    "seconds": 0.21467,
+    "maxrss_kib_children": 21212,
+    "free_bytes_after": 63871438848,
+    "free_inodes_after": 4186096,
+    "stdout": {
+      "path": "logs/09-native-zero-gcc-O0-cc-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/09-native-zero-gcc-O0-cc-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 10,
+    "label": "native-zero-gcc-O0-H2",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:07.661791+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "0",
+    "free_bytes_before": 63871438848,
+    "free_inodes_before": 4186096,
+    "exit": 0,
+    "seconds": 0.004102,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871434752,
+    "free_inodes_after": 4186094,
+    "stdout": {
+      "path": "logs/10-native-zero-gcc-O0-H2.stdout",
+      "bytes": 98,
+      "sha256": "18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58"
+    },
+    "stderr": {
+      "path": "logs/10-native-zero-gcc-O0-H2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 11,
+    "label": "candidate-emit-nonzero-v2",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/P-nonzero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-nonzero.nl"
+    ],
+    "utc": "2026-11-18T06:12:45.158730+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871430656,
+    "free_inodes_before": 4186094,
+    "exit": 0,
+    "seconds": 0.016537,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871418368,
+    "free_inodes_after": 4186091,
+    "stdout": {
+      "path": "logs/11-candidate-emit-nonzero-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/11-candidate-emit-nonzero-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 12,
+    "label": "native-zero-gcc-O0-H0",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:45.552981+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "1",
+    "free_bytes_before": 63871418368,
+    "free_inodes_before": 4186091,
+    "exit": 0,
+    "seconds": 0.001894,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871414272,
+    "free_inodes_after": 4186089,
+    "stdout": {
+      "path": "logs/12-native-zero-gcc-O0-H0.stdout",
+      "bytes": 98,
+      "sha256": "0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177"
+    },
+    "stderr": {
+      "path": "logs/12-native-zero-gcc-O0-H0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 13,
+    "label": "native-zero-gcc-O0-H1",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:45.611190+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "2",
+    "free_bytes_before": 63871414272,
+    "free_inodes_before": 4186089,
+    "exit": 0,
+    "seconds": 0.001568,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871410176,
+    "free_inodes_after": 4186087,
+    "stdout": {
+      "path": "logs/13-native-zero-gcc-O0-H1.stdout",
+      "bytes": 98,
+      "sha256": "084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39"
+    },
+    "stderr": {
+      "path": "logs/13-native-zero-gcc-O0-H1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 14,
+    "label": "native-zero-gcc-O2-cc-v2",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DP1517_SAMPLE=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "/workspace/p1517-evidence/P-zero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/zero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:45.656873+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871410176,
+    "free_inodes_before": 4186087,
+    "exit": 0,
+    "seconds": 0.365417,
+    "maxrss_kib_children": 26020,
+    "free_bytes_after": 63871381504,
+    "free_inodes_after": 4186084,
+    "stdout": {
+      "path": "logs/14-native-zero-gcc-O2-cc-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/14-native-zero-gcc-O2-cc-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 15,
+    "label": "native-zero-gcc-O2-H0",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.066139+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "1",
+    "free_bytes_before": 63871377408,
+    "free_inodes_before": 4186084,
+    "exit": 0,
+    "seconds": 0.001807,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871373312,
+    "free_inodes_after": 4186082,
+    "stdout": {
+      "path": "logs/15-native-zero-gcc-O2-H0.stdout",
+      "bytes": 98,
+      "sha256": "0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177"
+    },
+    "stderr": {
+      "path": "logs/15-native-zero-gcc-O2-H0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 16,
+    "label": "native-zero-gcc-O2-H1",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.110913+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "2",
+    "free_bytes_before": 63871373312,
+    "free_inodes_before": 4186082,
+    "exit": 0,
+    "seconds": 0.001765,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871369216,
+    "free_inodes_after": 4186080,
+    "stdout": {
+      "path": "logs/16-native-zero-gcc-O2-H1.stdout",
+      "bytes": 98,
+      "sha256": "084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39"
+    },
+    "stderr": {
+      "path": "logs/16-native-zero-gcc-O2-H1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 17,
+    "label": "native-zero-gcc-O2-H2",
+    "argv": [
+      "/workspace/p1517-evidence/build/zero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.154301+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "0",
+    "free_bytes_before": 63871369216,
+    "free_inodes_before": 4186080,
+    "exit": 0,
+    "seconds": 0.001801,
+    "maxrss_kib_children": 10496,
+    "free_bytes_after": 63871365120,
+    "free_inodes_after": 4186078,
+    "stdout": {
+      "path": "logs/17-native-zero-gcc-O2-H2.stdout",
+      "bytes": 98,
+      "sha256": "18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58"
+    },
+    "stderr": {
+      "path": "logs/17-native-zero-gcc-O2-H2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 18,
+    "label": "native-nonzero-gcc-O0-cc-v2",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-DP1517_SAMPLE=42",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "/workspace/p1517-evidence/P-nonzero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/nonzero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.197665+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871365120,
+    "free_inodes_before": 4186078,
+    "exit": 0,
+    "seconds": 0.164525,
+    "maxrss_kib_children": 21216,
+    "free_bytes_after": 63871324160,
+    "free_inodes_after": 4186075,
+    "stdout": {
+      "path": "logs/18-native-nonzero-gcc-O0-cc-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/18-native-nonzero-gcc-O0-cc-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 19,
+    "label": "native-nonzero-gcc-O0-H0",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.407076+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "1",
+    "free_bytes_before": 63871320064,
+    "free_inodes_before": 4186075,
+    "exit": 0,
+    "seconds": 0.001808,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871315968,
+    "free_inodes_after": 4186073,
+    "stdout": {
+      "path": "logs/19-native-nonzero-gcc-O0-H0.stdout",
+      "bytes": 98,
+      "sha256": "0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177"
+    },
+    "stderr": {
+      "path": "logs/19-native-nonzero-gcc-O0-H0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 20,
+    "label": "native-nonzero-gcc-O0-H1",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.451420+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "2",
+    "free_bytes_before": 63871315968,
+    "free_inodes_before": 4186073,
+    "exit": 0,
+    "seconds": 0.00213,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871311872,
+    "free_inodes_after": 4186071,
+    "stdout": {
+      "path": "logs/20-native-nonzero-gcc-O0-H1.stdout",
+      "bytes": 98,
+      "sha256": "084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39"
+    },
+    "stderr": {
+      "path": "logs/20-native-nonzero-gcc-O0-H1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 21,
+    "label": "native-nonzero-gcc-O0-H2",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O0-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.494785+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "0",
+    "free_bytes_before": 63871311872,
+    "free_inodes_before": 4186071,
+    "exit": 0,
+    "seconds": 0.006231,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871307776,
+    "free_inodes_after": 4186069,
+    "stdout": {
+      "path": "logs/21-native-nonzero-gcc-O0-H2.stdout",
+      "bytes": 99,
+      "sha256": "cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb"
+    },
+    "stderr": {
+      "path": "logs/21-native-nonzero-gcc-O0-H2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 22,
+    "label": "native-nonzero-gcc-O2-cc-v2",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DP1517_SAMPLE=42",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1517/passive-v2.h\"",
+      "/workspace/p1517-evidence/P-nonzero-v2.c",
+      "/workspace/NewLang_P1517/tests/p1517/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/nonzero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.546754+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871307776,
+    "free_inodes_before": 4186069,
+    "exit": 0,
+    "seconds": 0.31559,
+    "maxrss_kib_children": 27144,
+    "free_bytes_after": 63871279104,
+    "free_inodes_after": 4186066,
+    "stdout": {
+      "path": "logs/22-native-nonzero-gcc-O2-cc-v2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/22-native-nonzero-gcc-O2-cc-v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 23,
+    "label": "native-nonzero-gcc-O2-H0",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.933357+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "1",
+    "free_bytes_before": 63871275008,
+    "free_inodes_before": 4186066,
+    "exit": 0,
+    "seconds": 0.001934,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871270912,
+    "free_inodes_after": 4186064,
+    "stdout": {
+      "path": "logs/23-native-nonzero-gcc-O2-H0.stdout",
+      "bytes": 98,
+      "sha256": "0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177"
+    },
+    "stderr": {
+      "path": "logs/23-native-nonzero-gcc-O2-H0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 24,
+    "label": "native-nonzero-gcc-O2-H1",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:46.979766+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "2",
+    "free_bytes_before": 63871270912,
+    "free_inodes_before": 4186064,
+    "exit": 0,
+    "seconds": 0.003851,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871266816,
+    "free_inodes_after": 4186062,
+    "stdout": {
+      "path": "logs/24-native-nonzero-gcc-O2-H1.stdout",
+      "bytes": 98,
+      "sha256": "084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39"
+    },
+    "stderr": {
+      "path": "logs/24-native-nonzero-gcc-O2-H1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 25,
+    "label": "native-nonzero-gcc-O2-H2",
+    "argv": [
+      "/workspace/p1517-evidence/build/nonzero-gcc-O2-v2"
+    ],
+    "utc": "2026-11-18T06:12:47.029724+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": "0",
+    "free_bytes_before": 63871266816,
+    "free_inodes_before": 4186062,
+    "exit": 0,
+    "seconds": 0.001765,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871262720,
+    "free_inodes_after": 4186060,
+    "stdout": {
+      "path": "logs/25-native-nonzero-gcc-O2-H2.stdout",
+      "bytes": 99,
+      "sha256": "cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb"
+    },
+    "stderr": {
+      "path": "logs/25-native-nonzero-gcc-O2-H2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 26,
+    "label": "public-owned-zero",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "0"
+    ],
+    "utc": "2026-11-18T06:12:47.357396+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871262720,
+    "free_inodes_before": 4186060,
+    "exit": 0,
+    "seconds": 0.016295,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63871258624,
+    "free_inodes_after": 4186058,
+    "stdout": {
+      "path": "logs/26-public-owned-zero.stdout",
+      "bytes": 635,
+      "sha256": "7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b"
+    },
+    "stderr": {
+      "path": "logs/26-public-owned-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 27,
+    "label": "public-owned-nonzero",
+    "argv": [
+      "/workspace/p1515-c1150/probe-v1",
+      "/workspace/NewLang_P1517/tests/p1517/P-nonzero.nl",
+      "42"
+    ],
+    "utc": "2026-11-18T06:12:47.414716+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871258624,
+    "free_inodes_before": 4186058,
+    "exit": 0,
+    "seconds": 0.016321,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63871250432,
+    "free_inodes_after": 4186056,
+    "stdout": {
+      "path": "logs/27-public-owned-nonzero.stdout",
+      "bytes": 638,
+      "sha256": "8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe"
+    },
+    "stderr": {
+      "path": "logs/27-public-owned-nonzero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 28,
+    "label": "safety-cc",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_P1517/include",
+      "-I/workspace/NewLang_P1517/src",
+      "/workspace/NewLang_P1517/tests/p1517/safety.c",
+      "/workspace/p1517-evidence/build/backend-v2.o",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked_c_node.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=realloc",
+      "-Wl,--wrap=nl_sem_clone",
+      "-o",
+      "/workspace/p1517-evidence/build/p1517_safety"
+    ],
+    "utc": "2026-11-18T06:17:06.660776+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63871225856,
+    "free_inodes_before": 4186053,
+    "exit": 0,
+    "seconds": 0.214917,
+    "maxrss_kib_children": 22016,
+    "free_bytes_after": 63868993536,
+    "free_inodes_after": 4186050,
+    "stdout": {
+      "path": "logs/28-safety-cc.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/28-safety-cc.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 29,
+    "label": "safety-attacks",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "attack",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:17:06.917230+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868993536,
+    "free_inodes_before": 4186050,
+    "exit": 0,
+    "seconds": 0.032203,
+    "maxrss_kib_children": 22016,
+    "free_bytes_after": 63868989440,
+    "free_inodes_after": 4186048,
+    "stdout": {
+      "path": "logs/29-safety-attacks.stdout",
+      "bytes": 3795,
+      "sha256": "bb70206cd7562a99778bffdcc8750cf81cb2852f0ceee64e393e666adaa844b6"
+    },
+    "stderr": {
+      "path": "logs/29-safety-attacks.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 30,
+    "label": "host-oom-0",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "0"
+    ],
+    "utc": "2026-11-18T06:17:20.950614+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868989440,
+    "free_inodes_before": 4186048,
+    "exit": 0,
+    "seconds": 0.016293,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63868985344,
+    "free_inodes_after": 4186046,
+    "stdout": {
+      "path": "logs/30-host-oom-0.stdout",
+      "bytes": 139,
+      "sha256": "35de902a79291e499e1074e4a37c8a2db0514df8d086944e0abcaf385532e10f"
+    },
+    "stderr": {
+      "path": "logs/30-host-oom-0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 31,
+    "label": "host-oom-1",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "1"
+    ],
+    "utc": "2026-11-18T06:17:21.320572+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868981248,
+    "free_inodes_before": 4186046,
+    "exit": 0,
+    "seconds": 0.01611,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63868977152,
+    "free_inodes_after": 4186044,
+    "stdout": {
+      "path": "logs/31-host-oom-1.stdout",
+      "bytes": 169,
+      "sha256": "156cc7b588b7d329656064424c2dde44732fbd490c5538217216596ce74b52f4"
+    },
+    "stderr": {
+      "path": "logs/31-host-oom-1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 32,
+    "label": "host-oom-2",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "2"
+    ],
+    "utc": "2026-11-18T06:17:21.705587+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868977152,
+    "free_inodes_before": 4186044,
+    "exit": 0,
+    "seconds": 0.016335,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63868973056,
+    "free_inodes_after": 4186042,
+    "stdout": {
+      "path": "logs/32-host-oom-2.stdout",
+      "bytes": 169,
+      "sha256": "86e7142c394a9e2879968007917b4611c42c26a3da42b4d72331fbc1aa3326a4"
+    },
+    "stderr": {
+      "path": "logs/32-host-oom-2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 33,
+    "label": "host-oom-3",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "3"
+    ],
+    "utc": "2026-11-18T06:17:22.083131+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868973056,
+    "free_inodes_before": 4186042,
+    "exit": 0,
+    "seconds": 0.019807,
+    "maxrss_kib_children": 10624,
+    "free_bytes_after": 63868968960,
+    "free_inodes_after": 4186040,
+    "stdout": {
+      "path": "logs/33-host-oom-3.stdout",
+      "bytes": 208,
+      "sha256": "9fd232cb0d4b45fdc97b70e4a665af55d9815da250b4b677e1bfada4822229ea"
+    },
+    "stderr": {
+      "path": "logs/33-host-oom-3.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 34,
+    "label": "host-oom-4",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "4"
+    ],
+    "utc": "2026-11-18T06:17:22.500722+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868968960,
+    "free_inodes_before": 4186040,
+    "exit": 0,
+    "seconds": 0.016231,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868964864,
+    "free_inodes_after": 4186038,
+    "stdout": {
+      "path": "logs/34-host-oom-4.stdout",
+      "bytes": 208,
+      "sha256": "4bd3a3927ebb64a30af44be64e3bcd041b2372f49dd27f53945105b855cab670"
+    },
+    "stderr": {
+      "path": "logs/34-host-oom-4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 35,
+    "label": "host-oom-5",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "oom",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl",
+      "5"
+    ],
+    "utc": "2026-11-18T06:17:22.892838+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868964864,
+    "free_inodes_before": 4186038,
+    "exit": 0,
+    "seconds": 0.011105,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868956672,
+    "free_inodes_after": 4186036,
+    "stdout": {
+      "path": "logs/35-host-oom-5.stdout",
+      "bytes": 208,
+      "sha256": "9873dc34a714a7d4d0cc9edcb90190bd59785137e86f8730c819564388623bc5"
+    },
+    "stderr": {
+      "path": "logs/35-host-oom-5.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 36,
+    "label": "check-P-zero.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.325066+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868956672,
+    "free_inodes_before": 4186036,
+    "exit": 0,
+    "seconds": 0.016423,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868956672,
+    "free_inodes_after": 4186034,
+    "stdout": {
+      "path": "logs/36-check-P-zero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/36-check-P-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 37,
+    "label": "check-P-nonzero.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/P-nonzero.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.391195+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868956672,
+    "free_inodes_before": 4186034,
+    "exit": 0,
+    "seconds": 0.007884,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868956672,
+    "free_inodes_after": 4186032,
+    "stdout": {
+      "path": "logs/37-check-P-nonzero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/37-check-P-nonzero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 38,
+    "label": "check-N-H1-leak.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-H1-leak.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.561316+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868956672,
+    "free_inodes_before": 4186032,
+    "exit": 3,
+    "seconds": 0.003956,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868952576,
+    "free_inodes_after": 4186030,
+    "stdout": {
+      "path": "logs/38-check-N-H1-leak.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/38-check-N-H1-leak.stderr",
+      "bytes": 221,
+      "sha256": "8eabc404504c22766964eea239a41117363bff5d99923954f7f85d870594860d"
+    }
+  },
+  {
+    "attempt": 39,
+    "label": "check-N-foreign-allocation.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-allocation.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.631918+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868952576,
+    "free_inodes_before": 4186030,
+    "exit": 3,
+    "seconds": 0.004063,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868944384,
+    "free_inodes_after": 4186028,
+    "stdout": {
+      "path": "logs/39-check-N-foreign-allocation.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/39-check-N-foreign-allocation.stderr",
+      "bytes": 165,
+      "sha256": "49fd6da300eadbd9acfe09047a1919d80fb615c4949e70fa91eba9056772af37"
+    }
+  },
+  {
+    "attempt": 40,
+    "label": "check-N-foreign-domain.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-domain.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.733050+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868944384,
+    "free_inodes_before": 4186028,
+    "exit": 3,
+    "seconds": 0.004241,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868940288,
+    "free_inodes_after": 4186026,
+    "stdout": {
+      "path": "logs/40-check-N-foreign-domain.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/40-check-N-foreign-domain.stderr",
+      "bytes": 161,
+      "sha256": "dadc8958ec32ce5940d81dfa0baf828988b10b9590b8bd74f02b2ee61919e23d"
+    }
+  },
+  {
+    "attempt": 41,
+    "label": "check-N-foreign-pointer.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-pointer.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.793030+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868940288,
+    "free_inodes_before": 4186026,
+    "exit": 3,
+    "seconds": 0.004043,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868936192,
+    "free_inodes_after": 4186024,
+    "stdout": {
+      "path": "logs/41-check-N-foreign-pointer.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/41-check-N-foreign-pointer.stderr",
+      "bytes": 162,
+      "sha256": "880a007cd9e86b41c1ddb017fe836d3a781e469c14c737178d5969c20a50cfcc"
+    }
+  },
+  {
+    "attempt": 42,
+    "label": "check-N-incomplete-callee.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-incomplete-callee.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.901279+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868936192,
+    "free_inodes_before": 4186024,
+    "exit": 3,
+    "seconds": 0.00881,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868932096,
+    "free_inodes_after": 4186022,
+    "stdout": {
+      "path": "logs/42-check-N-incomplete-callee.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/42-check-N-incomplete-callee.stderr",
+      "bytes": 168,
+      "sha256": "93ffa459a70341d11246ad67aa6c14e981dd6ddf45ba0575fc45a6a9cb499fc3"
+    }
+  },
+  {
+    "attempt": 43,
+    "label": "check-N-owner-reused.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-owner-reused.nl"
+    ],
+    "utc": "2026-11-18T06:17:23.966016+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868932096,
+    "free_inodes_before": 4186022,
+    "exit": 3,
+    "seconds": 0.016178,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868928000,
+    "free_inodes_after": 4186020,
+    "stdout": {
+      "path": "logs/43-check-N-owner-reused.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/43-check-N-owner-reused.stderr",
+      "bytes": 140,
+      "sha256": "b7307318821b0c9d64deca1147dc90fd5fa3480fc79d9518187d48281f088b67"
+    }
+  },
+  {
+    "attempt": 44,
+    "label": "check-N-stale-read.nl",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--check",
+      "/workspace/NewLang_P1517/tests/p1517/N-stale-read.nl"
+    ],
+    "utc": "2026-11-18T06:17:24.076658+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868923904,
+    "free_inodes_before": 4186020,
+    "exit": 3,
+    "seconds": 0.00569,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868919808,
+    "free_inodes_after": 4186018,
+    "stdout": {
+      "path": "logs/44-check-N-stale-read.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/44-check-N-stale-read.stderr",
+      "bytes": 138,
+      "sha256": "93ea294706de849be80812d66df30cd016418896e079b540da223657bfa8fab9"
+    }
+  },
+  {
+    "attempt": 45,
+    "label": "source-negative-rollback",
+    "argv": [
+      "/workspace/p1517-evidence/build/p1517_safety",
+      "negative",
+      "/workspace/NewLang_P1517/tests/p1517/N-H1-leak.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-allocation.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-domain.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-pointer.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-incomplete-callee.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-owner-reused.nl",
+      "/workspace/NewLang_P1517/tests/p1517/N-stale-read.nl"
+    ],
+    "utc": "2026-11-18T06:17:24.474002+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868919808,
+    "free_inodes_before": 4186018,
+    "exit": 0,
+    "seconds": 0.008292,
+    "maxrss_kib_children": 10752,
+    "free_bytes_after": 63868915712,
+    "free_inodes_after": 4186016,
+    "stdout": {
+      "path": "logs/45-source-negative-rollback.stdout",
+      "bytes": 801,
+      "sha256": "e964b2c6e7f396acb648f52f4ceb55727239d1c2559ca9665abfcc6b78a45407"
+    },
+    "stderr": {
+      "path": "logs/45-source-negative-rollback.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 46,
+    "label": "cli-fault-link",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "/workspace/NewLang_Compiler/build-frontend/CMakeFiles/newlangc.dir/src/main.c.o",
+      "/workspace/NewLang_P1517/tests/p1517/cli_fault.c",
+      "/workspace/p1517-evidence/build/backend-v2.o",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked_c_node.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-Wl,--wrap=malloc",
+      "-o",
+      "/workspace/p1517-evidence/build/newlangc-host-fault"
+    ],
+    "utc": "2026-11-18T06:18:42.468430+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63868915712,
+    "free_inodes_before": 4186016,
+    "exit": 0,
+    "seconds": 0.116395,
+    "maxrss_kib_children": 12800,
+    "free_bytes_after": 63866499072,
+    "free_inodes_after": 4186013,
+    "stdout": {
+      "path": "logs/46-cli-fault-link.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/46-cli-fault-link.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 47,
+    "label": "host-named-fault-1",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-host-fault",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:18:42.964463+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866490880,
+    "free_inodes_before": 4186012,
+    "exit": 1,
+    "seconds": 0.008337,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866486784,
+    "free_inodes_after": 4186010,
+    "stdout": {
+      "path": "logs/47-host-named-fault-1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/47-host-named-fault-1.stderr",
+      "bytes": 167,
+      "sha256": "592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8"
+    }
+  },
+  {
+    "attempt": 48,
+    "label": "host-named-retry-1",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-host-fault",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:18:43.023359+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866486784,
+    "free_inodes_before": 4186010,
+    "exit": 0,
+    "seconds": 0.01616,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866478592,
+    "free_inodes_after": 4186008,
+    "stdout": {
+      "path": "logs/48-host-named-retry-1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/48-host-named-retry-1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 49,
+    "label": "host-named-fault-2",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-host-fault",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:18:43.082271+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866486784,
+    "free_inodes_before": 4186008,
+    "exit": 1,
+    "seconds": 0.016161,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866482688,
+    "free_inodes_after": 4186006,
+    "stdout": {
+      "path": "logs/49-host-named-fault-2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/49-host-named-fault-2.stderr",
+      "bytes": 167,
+      "sha256": "592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8"
+    }
+  },
+  {
+    "attempt": 50,
+    "label": "host-named-retry-2",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-host-fault",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:18:43.144588+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866482688,
+    "free_inodes_before": 4186006,
+    "exit": 0,
+    "seconds": 0.016219,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866474496,
+    "free_inodes_after": 4186004,
+    "stdout": {
+      "path": "logs/50-host-named-retry-2.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/50-host-named-retry-2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 51,
+    "label": "semantic-named-no-clobber",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/N-foreign-domain.nl"
+    ],
+    "utc": "2026-11-18T06:18:43.207080+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866478592,
+    "free_inodes_before": 4186004,
+    "exit": 3,
+    "seconds": 0.004045,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866474496,
+    "free_inodes_after": 4186002,
+    "stdout": {
+      "path": "logs/51-semantic-named-no-clobber.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/51-semantic-named-no-clobber.stderr",
+      "bytes": 161,
+      "sha256": "dadc8958ec32ce5940d81dfa0baf828988b10b9590b8bd74f02b2ee61919e23d"
+    }
+  },
+  {
+    "attempt": 52,
+    "label": "semantic-named-retry",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/no-clobber.c",
+      "/workspace/NewLang_P1517/tests/p1517/P-zero.nl"
+    ],
+    "utc": "2026-11-18T06:18:43.257530+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866474496,
+    "free_inodes_before": 4186002,
+    "exit": 0,
+    "seconds": 0.016218,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866466304,
+    "free_inodes_after": 4186000,
+    "stdout": {
+      "path": "logs/52-semantic-named-retry.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/52-semantic-named-retry.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 53,
+    "label": "regress-emit-A-direct-zero",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/A-direct-zero-regression.c",
+      "/workspace/NewLang_P1517/tests/p1507/A-direct-zero.nl"
+    ],
+    "utc": "2026-11-18T06:20:36.071404+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866449920,
+    "free_inodes_before": 4185996,
+    "exit": 0,
+    "seconds": 0.016145,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866429440,
+    "free_inodes_after": 4185993,
+    "stdout": {
+      "path": "logs/53-regress-emit-A-direct-zero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/53-regress-emit-A-direct-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 54,
+    "label": "regress-cc-A-direct-zero",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DP1507_INDEX=0",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1507/passive.h\"",
+      "/workspace/p1517-evidence/A-direct-zero-regression.c",
+      "/workspace/NewLang_P1517/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/A-direct-zero"
+    ],
+    "utc": "2026-11-18T06:20:36.127641+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866429440,
+    "free_inodes_before": 4185993,
+    "exit": 0,
+    "seconds": 0.365686,
+    "maxrss_kib_children": 26172,
+    "free_bytes_after": 63866400768,
+    "free_inodes_after": 4185990,
+    "stdout": {
+      "path": "logs/54-regress-cc-A-direct-zero.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/54-regress-cc-A-direct-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 55,
+    "label": "regress-A-direct-zero-fail1",
+    "argv": [
+      "/workspace/p1517-evidence/build/A-direct-zero"
+    ],
+    "utc": "2026-11-18T06:20:36.537467+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866400768,
+    "free_inodes_before": 4185990,
+    "exit": 0,
+    "seconds": 0.003872,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866396672,
+    "free_inodes_after": 4185988,
+    "stdout": {
+      "path": "logs/55-regress-A-direct-zero-fail1.stdout",
+      "bytes": 83,
+      "sha256": "41cc672ccdf5c76f404c9f1d97661a1cbb27b589b9be7e48cc69519f4f5a500f"
+    },
+    "stderr": {
+      "path": "logs/55-regress-A-direct-zero-fail1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 56,
+    "label": "regress-A-direct-zero-fail2",
+    "argv": [
+      "/workspace/p1517-evidence/build/A-direct-zero"
+    ],
+    "utc": "2026-11-18T06:20:36.582910+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866396672,
+    "free_inodes_before": 4185988,
+    "exit": 0,
+    "seconds": 0.003858,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866392576,
+    "free_inodes_after": 4185986,
+    "stdout": {
+      "path": "logs/56-regress-A-direct-zero-fail2.stdout",
+      "bytes": 83,
+      "sha256": "16bf4170c35505485b01cc166fc201f123362d7a13c395a9fdd40d4b542d7c26"
+    },
+    "stderr": {
+      "path": "logs/56-regress-A-direct-zero-fail2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 57,
+    "label": "regress-A-direct-zero-fail0",
+    "argv": [
+      "/workspace/p1517-evidence/build/A-direct-zero"
+    ],
+    "utc": "2026-11-18T06:20:36.638699+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866392576,
+    "free_inodes_before": 4185986,
+    "exit": 0,
+    "seconds": 0.003254,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866388480,
+    "free_inodes_after": 4185984,
+    "stdout": {
+      "path": "logs/57-regress-A-direct-zero-fail0.stdout",
+      "bytes": 83,
+      "sha256": "9fafa1640eafadee1efed70f13e46d0f390576571fe363e2b630c42a3f833514"
+    },
+    "stderr": {
+      "path": "logs/57-regress-A-direct-zero-fail0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 58,
+    "label": "regress-emit-B-direct-index-one",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/B-direct-index-one-regression.c",
+      "/workspace/NewLang_P1517/tests/p1507/B-direct-index-one.nl"
+    ],
+    "utc": "2026-11-18T06:20:36.712948+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866388480,
+    "free_inodes_before": 4185984,
+    "exit": 0,
+    "seconds": 0.032133,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866376192,
+    "free_inodes_after": 4185981,
+    "stdout": {
+      "path": "logs/58-regress-emit-B-direct-index-one.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/58-regress-emit-B-direct-index-one.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 59,
+    "label": "regress-cc-B-direct-index-one",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "-DP1507_INDEX=1",
+      "-DNEWLANG_NODE_OBSERVER=\"/workspace/NewLang_P1517/tests/p1507/passive.h\"",
+      "-DNEWLANG_HEAP_OBSERVER=\"/workspace/NewLang_P1517/tests/p1507/passive.h\"",
+      "/workspace/p1517-evidence/B-direct-index-one-regression.c",
+      "/workspace/NewLang_P1517/tests/p1507/guest_wrap.c",
+      "-Wl,--wrap=malloc",
+      "-Wl,--wrap=free",
+      "-o",
+      "/workspace/p1517-evidence/build/B-direct-index-one"
+    ],
+    "utc": "2026-11-18T06:20:36.797496+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866372096,
+    "free_inodes_before": 4185981,
+    "exit": 0,
+    "seconds": 0.415923,
+    "maxrss_kib_children": 25988,
+    "free_bytes_after": 63866347520,
+    "free_inodes_after": 4185978,
+    "stdout": {
+      "path": "logs/59-regress-cc-B-direct-index-one.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/59-regress-cc-B-direct-index-one.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 60,
+    "label": "regress-B-direct-index-one-fail1",
+    "argv": [
+      "/workspace/p1517-evidence/build/B-direct-index-one"
+    ],
+    "utc": "2026-11-18T06:20:37.285715+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866347520,
+    "free_inodes_before": 4185978,
+    "exit": 0,
+    "seconds": 0.0029,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866343424,
+    "free_inodes_after": 4185976,
+    "stdout": {
+      "path": "logs/60-regress-B-direct-index-one-fail1.stdout",
+      "bytes": 83,
+      "sha256": "efe25d9ac4601ae898c3e93c86e0cf14478daca5afa063351372f75dbc21104e"
+    },
+    "stderr": {
+      "path": "logs/60-regress-B-direct-index-one-fail1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 61,
+    "label": "regress-B-direct-index-one-fail2",
+    "argv": [
+      "/workspace/p1517-evidence/build/B-direct-index-one"
+    ],
+    "utc": "2026-11-18T06:20:37.342420+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866343424,
+    "free_inodes_before": 4185976,
+    "exit": 0,
+    "seconds": 0.001765,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866339328,
+    "free_inodes_after": 4185974,
+    "stdout": {
+      "path": "logs/61-regress-B-direct-index-one-fail2.stdout",
+      "bytes": 83,
+      "sha256": "7d184e6a7866d980b7f8525ee2c0f6f9f8f490b6dc37d951421f301ca5baaf99"
+    },
+    "stderr": {
+      "path": "logs/61-regress-B-direct-index-one-fail2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 62,
+    "label": "regress-B-direct-index-one-fail0",
+    "argv": [
+      "/workspace/p1517-evidence/build/B-direct-index-one"
+    ],
+    "utc": "2026-11-18T06:20:37.401543+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866339328,
+    "free_inodes_before": 4185974,
+    "exit": 0,
+    "seconds": 0.003672,
+    "maxrss_kib_children": 10880,
+    "free_bytes_after": 63866335232,
+    "free_inodes_after": 4185972,
+    "stdout": {
+      "path": "logs/62-regress-B-direct-index-one-fail0.stdout",
+      "bytes": 85,
+      "sha256": "4e27ed9558ecd7dc33aa8799bb906541a023f52d000b50a50ba6014a032614d8"
+    },
+    "stderr": {
+      "path": "logs/62-regress-B-direct-index-one-fail0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 63,
+    "label": "regress-emit-linked-producer",
+    "argv": [
+      "/workspace/p1517-evidence/build/newlangc-v2",
+      "--emit-c17-to",
+      "/workspace/p1517-evidence/linked-producer.c",
+      "/workspace/NewLang_P1517/tests/p1481/Z-success-zero.nl"
+    ],
+    "utc": "2026-11-18T06:20:37.449958+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866331136,
+    "free_inodes_before": 4185972,
+    "exit": 0,
+    "seconds": 0.032268,
+    "maxrss_kib_children": 11008,
+    "free_bytes_after": 63866310656,
+    "free_inodes_after": 4185969,
+    "stdout": {
+      "path": "logs/63-regress-emit-linked-producer.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/63-regress-emit-linked-producer.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 64,
+    "label": "regress-cc-linked-producer",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O2",
+      "/workspace/p1517-evidence/linked-producer.c",
+      "-o",
+      "/workspace/p1517-evidence/build/linked-producer"
+    ],
+    "utc": "2026-11-18T06:20:37.536761+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866310656,
+    "free_inodes_before": 4185969,
+    "exit": 0,
+    "seconds": 0.064326,
+    "maxrss_kib_children": 15104,
+    "free_bytes_after": 63866294272,
+    "free_inodes_after": 4185966,
+    "stdout": {
+      "path": "logs/64-regress-cc-linked-producer.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/64-regress-cc-linked-producer.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 65,
+    "label": "regress-native-linked-producer",
+    "argv": [
+      "/workspace/p1517-evidence/build/linked-producer"
+    ],
+    "utc": "2026-11-18T06:20:37.655966+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": true,
+    "fail_at": null,
+    "free_bytes_before": 63866294272,
+    "free_inodes_before": 4185966,
+    "exit": 0,
+    "seconds": 0.00223,
+    "maxrss_kib_children": 11008,
+    "free_bytes_after": 63866294272,
+    "free_inodes_after": 4185964,
+    "stdout": {
+      "path": "logs/65-regress-native-linked-producer.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/65-regress-native-linked-producer.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 66,
+    "label": "cmake-register",
+    "argv": [
+      "/workspace/newlang-tools/bin/cmake",
+      "-S",
+      "/workspace/NewLang_P1517",
+      "-B",
+      "/workspace/p1517-evidence/ctest-build",
+      "-DCMAKE_C_COMPILER=/workspace/p1517-evidence/gcc-ledger",
+      "-DNEWLANG_FRONTEND_ONLY=ON",
+      "-DBUILD_TESTING=ON",
+      "-DCMAKE_BUILD_TYPE=Debug"
+    ],
+    "utc": "2026-11-18T06:22:42.172513+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866290176,
+    "free_inodes_before": 4185963,
+    "exit": 0,
+    "seconds": 2.024477,
+    "maxrss_kib_children": 23808,
+    "free_bytes_after": 63845494784,
+    "free_inodes_after": 4181806,
+    "stdout": {
+      "path": "logs/66-cmake-register.stdout",
+      "bytes": 869,
+      "sha256": "64d2bbb5dd5873831573ad206ac48b649700471803fb0250fd484faf18645bb5"
+    },
+    "stderr": {
+      "path": "logs/66-cmake-register.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 67,
+    "label": "cmake-gcc-67",
+    "argv": [
+      "/usr/bin/gcc",
+      "CMakeCCompilerId.c"
+    ],
+    "utc": "2026-11-18T06:22:42.452687+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866228736,
+    "free_inodes_before": 4185952,
+    "exit": 0,
+    "seconds": 0.064452,
+    "maxrss_kib_children": 11648,
+    "free_bytes_after": 63866208256,
+    "free_inodes_after": 4185949,
+    "stdout": {
+      "path": "logs/67-cmake-gcc-67.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/67-cmake-gcc-67.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 68,
+    "label": "cmake-gcc-68",
+    "argv": [
+      "/usr/bin/gcc",
+      "-print-sysroot"
+    ],
+    "utc": "2026-11-18T06:22:42.628476+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866204160,
+    "free_inodes_before": 4185949,
+    "exit": 0,
+    "seconds": 0.0037,
+    "maxrss_kib_children": 11008,
+    "free_bytes_after": 63866204160,
+    "free_inodes_after": 4185947,
+    "stdout": {
+      "path": "logs/68-cmake-gcc-68.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/68-cmake-gcc-68.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 69,
+    "label": "cmake-gcc-69",
+    "argv": [
+      "/usr/bin/gcc",
+      "-v",
+      "-o",
+      "CMakeFiles/cmTC_6ee72.dir/CMakeCCompilerABI.c.o",
+      "-c",
+      "/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
+    ],
+    "utc": "2026-11-18T06:22:42.753211+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866081280,
+    "free_inodes_before": 4185922,
+    "exit": 0,
+    "seconds": 0.064473,
+    "maxrss_kib_children": 11648,
+    "free_bytes_after": 63866073088,
+    "free_inodes_after": 4185919,
+    "stdout": {
+      "path": "logs/69-cmake-gcc-69.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/69-cmake-gcc-69.stderr",
+      "bytes": 4042,
+      "sha256": "65a519f08fcc97df64d4877c47b490813168adf1ecd99063327442e4f5684f99"
+    }
+  },
+  {
+    "attempt": 70,
+    "label": "cmake-gcc-70",
+    "argv": [
+      "/usr/bin/gcc",
+      "-v",
+      "-Wl,-v",
+      "CMakeFiles/cmTC_6ee72.dir/CMakeCCompilerABI.c.o",
+      "-o",
+      "cmTC_6ee72"
+    ],
+    "utc": "2026-11-18T06:22:42.926436+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63866073088,
+    "free_inodes_before": 4185919,
+    "exit": 0,
+    "seconds": 0.032099,
+    "maxrss_kib_children": 11008,
+    "free_bytes_after": 63866044416,
+    "free_inodes_after": 4185916,
+    "stdout": {
+      "path": "logs/70-cmake-gcc-70.stdout",
+      "bytes": 38,
+      "sha256": "8374f96da9f5cc630f40a9ca18dd6ba1363a89641189344276a087309490dce0"
+    },
+    "stderr": {
+      "path": "logs/70-cmake-gcc-70.stderr",
+      "bytes": 4782,
+      "sha256": "ebce16bd2fbe8965b2dc7cca7f8ba6864773b50076855a2c290bd96000938b4e"
+    }
+  },
+  {
+    "attempt": 71,
+    "label": "public-owned-ctest-cc",
+    "argv": [
+      "/usr/bin/gcc",
+      "-std=c17",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-I/workspace/NewLang_P1517/include",
+      "/workspace/NewLang_P1517/tests/p1517/public_owned.c",
+      "-Wl,--start-group",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_semantic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_checked.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_parser.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_diagnostic.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_syntax.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_lexer.a",
+      "/workspace/NewLang_Compiler/build-frontend/libnewlang_source.a",
+      "-Wl,--end-group",
+      "-o",
+      "/workspace/p1517-evidence/ctest-build/p1517_public_owned"
+    ],
+    "utc": "2026-11-18T06:23:54.994314+00:00",
+    "status": "FINISHED",
+    "charge": 1,
+    "nested_compiler_commands": 0,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63845490688,
+    "free_inodes_before": 4181806,
+    "exit": 0,
+    "seconds": 0.164665,
+    "maxrss_kib_children": 18432,
+    "free_bytes_after": 63843774464,
+    "free_inodes_after": 4181803,
+    "stdout": {
+      "path": "logs/71-public-owned-ctest-cc.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "logs/71-public-owned-ctest-cc.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "attempt": 72,
+    "label": "ctest-owned-zero",
+    "argv": [
+      "/workspace/newlang-tools/bin/ctest",
+      "--test-dir",
+      "/workspace/p1517-evidence/ctest-build",
+      "-R",
+      "^p1517_zero_owned.unit$",
+      "--output-on-failure",
+      "-V"
+    ],
+    "utc": "2026-11-18T06:23:55.520787+00:00",
+    "status": "FINISHED",
+    "charge": 2,
+    "nested_compiler_commands": 1,
+    "guest": false,
+    "fail_at": null,
+    "free_bytes_before": 63843774464,
+    "free_inodes_before": 4181803,
+    "exit": 0,
+    "seconds": 0.214936,
+    "maxrss_kib_children": 16680,
+    "free_bytes_after": 63843762176,
+    "free_inodes_after": 4181799,
+    "stdout": {
+      "path": "logs/72-ctest-owned-zero.stdout",
+      "bytes": 2030,
+      "sha256": "f29f70fc17ba08ad6067c3024fc1ef86029a88ebc721dd76122deff1d28c0545"
+    },
+    "stderr": {
+      "path": "logs/72-ctest-owned-zero.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

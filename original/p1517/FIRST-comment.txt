@@ -1,0 +1,492 @@
+Track: P — C1157 **FIRST SOURCE / NATIVE ORACLE — before compiler execution (0/80; guest0/36; host0/16, cases0/48)**.
+
+START #6970520361 POST/GET body exact. Local branch p1517-terminal-receiver-local from exact parent7591848/treef0cea; adopted main4c388 is untouched. P1515 originals/source/negative/oracle/public probe and original backend RED are immutable; linked original FIRST contains all inherited full source bytes. The copies below match their original SHA. Only new source N-foreign-pointer is added, with full bytes below. Main vs fixed parent has no semantic/parser/public header/main.c differences; only private backend3 differs. New backend consumer will borrow existing owner entry/body/current proofs, never mint source authority.
+
+Tool setup ancillary failure: supported system package helper/sudo absent; first exact project-lock Clang23 rootless HTTPS package request returned404. This is preserved, not a compiler finding. No unpinned compiler fallback will be counted as pinned validation. All available authorized GCC/private work can continue; if locked Clang remains unavailable its mandatory matrix is NOT_RUN / publication BLOCKED, returned to C.
+
+### oracle-FIRST.json: 5275B SHA256 `3ba663b3099215e96204468c12451f0ac9480f9f2503229c25c382c187d3039c`
+
+```
+{
+  "mission": "P1517 C1157 LOCAL ONLY",
+  "adopted_main": "4c388693b95f371783e666f5c77e0aec5d17d215",
+  "parent": "7591848bd7f4bf8967dffd4be8d360e1901a3f06",
+  "parent_tree": "f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6",
+  "spec": "Draft17.38",
+  "inherited_FIRST": "https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970060503",
+  "inherited_RED": "https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970154248",
+  "files": [
+    {
+      "path": "N-H1-leak.nl",
+      "bytes": 2745,
+      "sha256": "bfc34cb49c3994dfcdd4d3310147d56360ae3c407748a98fc5f5c09b56860fc3"
+    },
+    {
+      "path": "N-foreign-allocation.nl",
+      "bytes": 3022,
+      "sha256": "3556c2d4c9c380b6f254a04f206346ddd0e4feebd244b5e705ca90739660c51e"
+    },
+    {
+      "path": "N-foreign-domain.nl",
+      "bytes": 3022,
+      "sha256": "ec3e689d27ea60d5cfcb5e285434cb6bacc369dc385f7332ac37cd04a2523fda"
+    },
+    {
+      "path": "N-foreign-pointer.nl",
+      "bytes": 3022,
+      "sha256": "9259c3e510359fd6a1ad1274b6d546333fa34e05f5ccab4814af7b99ff8fcb7f"
+    },
+    {
+      "path": "N-incomplete-callee.nl",
+      "bytes": 2997,
+      "sha256": "35961c146e53106e440e91733b49db4b8f940295d6f2cdc46a63dac5d0dc824f"
+    },
+    {
+      "path": "N-owner-reused.nl",
+      "bytes": 3062,
+      "sha256": "5426cc5561b381533a2b42798d318602b770ea15570aefbb6ad898f88bcbb7ae"
+    },
+    {
+      "path": "N-stale-read.nl",
+      "bytes": 3208,
+      "sha256": "73134d7f8a481309fec656a9829d5ca1dd3b78674452d469295919eac75f7a7c"
+    },
+    {
+      "path": "P-nonzero.nl",
+      "bytes": 3023,
+      "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c"
+    },
+    {
+      "path": "P-zero.nl",
+      "bytes": 3022,
+      "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b"
+    },
+    {
+      "path": "guest_wrap.c",
+      "bytes": 707,
+      "sha256": "f511cbd663eef21768a350ef9fde0922e87cbb3931260b2d753949afb215ce98"
+    },
+    {
+      "path": "passive.h",
+      "bytes": 12352,
+      "sha256": "afea7a30c785f727fe05d90688cdaf9e79364d62ea38f16742e9c31cdb64d393"
+    },
+    {
+      "path": "public_owned.c",
+      "bytes": 18408,
+      "sha256": "23194e04fda8190396585c810cf42110036284565cba3c6befd09e1c2a0e8aa8"
+    }
+  ],
+  "worlds": {
+    "H0": {
+      "fail_malloc_at": 1,
+      "live_originals": 0,
+      "free_order": [],
+      "receiver": 0,
+      "writes": 1,
+      "current": 0
+    },
+    "H1": {
+      "fail_malloc_at": 2,
+      "live_originals": 1,
+      "free_order": [
+        "original0 caller"
+      ],
+      "receiver": 0,
+      "writes": 1,
+      "current": 0
+    },
+    "H2": {
+      "fail_malloc_at": 0,
+      "live_originals": 2,
+      "free_order": [
+        "original1 callee",
+        "original0 caller"
+      ],
+      "receiver": 1,
+      "writes": 2,
+      "current": "true sampled payload0 or42"
+    }
+  },
+  "all_worlds": {
+    "old_first": 91,
+    "old_second_H2": 0,
+    "sibling": 23,
+    "first_payload": 67,
+    "no_live_originals_after_finish": true,
+    "no_live_read_scope_at_EndRoot": true
+  },
+  "stages": {
+    "parent": "ordinary CHECK and public MACHINE/owner/Copy PASS, inherited source baseline emit unsupported4",
+    "candidate": "ordinary CHECK and public MACHINE/owner/Copy PASS; strict C17 ordinary CLI emission0; GCC/Clang O0/O2 H0/H1/H2 native0",
+    "source_negatives": "six original source negatives retain original earliest results; extra wrong-p0/a1/d1 must semantic reject; no unsafe artifact to native",
+    "artifact_negatives": "actual/formal/input/root/domain/incarnation/body/world/source/result/loan/teardown tampering invalidates MACHINE or emitter, no new issuer; pristine retry succeeds",
+    "host_OOM": "selected registration/call-entry source closure, Copy validators, main emitter buffer, receiver buffer and named output; explicit site/case census <=16/48; failure NULL/out_length unchanged, state/sentinel unchanged, no temp leak, clean retry succeeds"
+  },
+  "native_observer": "observe actual allocation/address/domain/read/free order and real named T stores without creating program state; free wrapper checks pointer before real free and clears stored pointer; receiver entry/exit use existing hooks; real malloc failures only; original generated C bytes preserved",
+  "matrix_guest": 24,
+  "optional_raw_native": 2,
+  "optional_sanitizer": "only if pinned Clang available and remaining budget; otherwise NOT_RUN",
+  "budget": {
+    "local": 80,
+    "guest": 36,
+    "host_oom_sites": 16,
+    "host_fault_retry_cases": 48,
+    "remote_production_push_PR_CI": 0
+  },
+  "toolchain": "use supplied adopted-main unchanged semantic/parser/etc archives only after exact source diff and binary hashes; compile parent/private changed backend TU and link isolated CLI; exact locked Clang23 Debian package fetch currently HTTP404; no silent unpinned substitution. Preserve failure; independently continue allowed GCC/private work, report missing mandatory Clang if unresolved.",
+  "source_law": "KEEP selected18.1a/16.3.8/17.35; no public API/ABI/issuer or checker semantics change",
+  "value": "UNMEASURED author+ordinary-safe caller audit dependency reduction vs well-factored C; sound Rust owned/Drop/safe facade valid alternative; Product GO PAUSED/H1 HOLD"
+}
+```
+
+### resource-FIRST.json: 328B SHA256 `c52a715e3aca0c25f481d744833ee9b8e22b6242c400ccf0455d78bb30f89a3e`
+
+```
+{
+  "free_bytes": 63877435392,
+  "free_inodes": 4186131,
+  "additional_peak_budget_bytes": 8589934592,
+  "additional_peak_budget_inodes": 200000,
+  "basis": "isolated source/worktree, prepared unchanged libs, direct selected backend compile, native matrix/probe/logs, headroom for exact SDK if available, no full SDK rebuild"
+}
+```
+
+### passive.h: 12352B SHA256 `afea7a30c785f727fe05d90688cdaf9e79364d62ea38f16742e9c31cdb64d393`
+
+```
+#ifndef P1517_PASSIVE_H
+#define P1517_PASSIVE_H
+#include <stdbool.h>
+#include <stdio.h>
+#ifndef P1517_INDEX
+#define P1517_INDEX 0
+#endif
+#ifndef P1517_FAIL_AT
+#define P1517_FAIL_AT                                                          \
+    (getenv("P1517_FAIL_AT")                                                   \
+         ? (unsigned)strtoul(getenv("P1517_FAIL_AT"), NULL, 10)                \
+         : 0u)
+#endif
+#define REQUIRE(x)                                                             \
+    do {                                                                       \
+        if (!(x)) {                                                            \
+            fprintf(stderr, "P1517 %d: %s\n", __LINE__, #x);                   \
+            abort();                                                           \
+        }                                                                      \
+    } while (0)
+static const nl_node *volatile live[2];
+static size_t domains[2], trials, inits, ends, finals, roots, payloads;
+static volatile size_t frees;
+static size_t calls, old_copies, final_copies, t_frame, t_symbol;
+static bool ended[2], finalized[2];
+static size_t receiver_entries, receiver_exits, handoffs, returned, active_scope;
+static bool in_receiver;
+static const void *donor_allocation, *donor_domain;
+static const void *volatile pending_free;
+static const uint8_t *target, *sibling;
+static unsigned expected_roots(void)
+{
+    return P1517_FAIL_AT ? P1517_FAIL_AT - 1u : 2u;
+}
+static unsigned initial(void)
+{
+    return 91u;
+}
+static unsigned other(void)
+{
+    return 23u;
+}
+static unsigned payload(void)
+{
+    return P1517_SAMPLE;
+}
+static unsigned current(void)
+{
+    return expected_roots() == 2 ? payload() : 0u;
+}
+static size_t identity(const nl_node *p)
+{
+    REQUIRE(p && (p == live[0] || p == live[1]));
+    return p == live[0] ? 0u : 1u;
+}
+void p1517_observe_free(void *p)
+{
+    size_t i = identity(p);
+    REQUIRE(p == pending_free && ended[i] && finalized[i]);
+    REQUIRE(i == (expected_roots() == 2 ? 1u - frees : 0u));
+    REQUIRE(in_receiver == (expected_roots() == 2 && i == 1));
+    live[i] = NULL;
+    pending_free = NULL;
+    ++frees;
+}
+#define NL_NODE_BIND(frame, symbol, kind, address)                             \
+    do {                                                                       \
+        if (target && (frame) == t_frame && (symbol) > t_symbol &&             \
+            (kind) == 4) {                                                     \
+            unsigned x = *(const uint8_t *)(address);                          \
+            if (!trials) {                                                     \
+                REQUIRE(calls == 1 && old_copies++ == 0 && x == initial());    \
+            } else {                                                           \
+                REQUIRE(final_copies < 3);                                     \
+                REQUIRE(x == (final_copies == 0   ? initial()                  \
+                              : final_copies == 1 ? current()                  \
+                                                  : other()));                 \
+                ++final_copies;                                                \
+            }                                                                  \
+        }                                                                      \
+    } while (0)
+#define NL_NODE_REPLACE(...) REQUIRE(0)
+#define NL_NODE_RELOAN(...) REQUIRE(0)
+#define NL_NODE_ARM(...) REQUIRE(0)
+#define NL_NODE_FINISH() REQUIRE(0)
+#define NL_MIXED_COPY_BIND(frame, symbol, first, second)                       \
+    do {                                                                       \
+        REQUIRE(!target);                                                      \
+        target = P1517_INDEX ? (second) : (first);                             \
+        sibling = P1517_INDEX ? (first) : (second);                            \
+        REQUIRE(target != sibling && *target == initial() &&                   \
+                *sibling == other());                                          \
+        t_frame = (frame);                                                     \
+        t_symbol = (symbol);                                                   \
+    } while (0)
+#define NL_MIXED_COPY_CALL(address, old, next)                                 \
+    do {                                                                       \
+        REQUIRE(calls < 2 && (address) == target && *sibling == other());      \
+        if (!calls)                                                            \
+            REQUIRE(!trials && (old) == initial() && (next) == 0);             \
+        else                                                                   \
+            REQUIRE(expected_roots() == 2 && frees == 2 && !pending_free &&    \
+                    (old) == 0 && (next) == payload() && payloads == 1);       \
+        REQUIRE(*(address) == (next));                                         \
+        ++calls;                                                               \
+    } while (0)
+#define NL_MIXED_COPY_STORE(...) REQUIRE(0)
+#define NL_MIXED_OWNER_LOCAL(...) REQUIRE(0)
+#define NL_HEAP_TRIAL(pointer, bytes, alignment)                               \
+    do {                                                                       \
+        ++trials;                                                              \
+        REQUIRE(calls == 1 && trials <= 2 && (bytes) == 24 &&                  \
+                (alignment) == 8);                                             \
+        REQUIRE(((pointer) == NULL) ==                                         \
+                (P1517_FAIL_AT && trials == P1517_FAIL_AT));                   \
+    } while (0)
+#define NL_HEAP_ARM(...) ((void)0)
+#define NL_HEAP_DOMAIN(...) ((void)0)
+#define NL_HEAP_SLOT(...) ((void)0)
+#define NL_HEAP_INITIALIZE(pointer, token)                                     \
+    do {                                                                       \
+        REQUIRE(inits < 2 && (pointer) && (token) && !(pointer)->f0.tag &&     \
+                !(pointer)->f0.ptr);                                           \
+        REQUIRE((pointer)->f1 == (inits ? payload() : 67u));                   \
+        if (inits)                                                             \
+            REQUIRE((pointer) != live[0] && (token) != domains[0]);            \
+        live[inits] = (pointer);                                               \
+        domains[inits++] = (token);                                            \
+    } while (0)
+#define NL_HEAP_RELOAN(...) ((void)0)
+#define NL_HEAP_ROOT(pointer, token, write, place, inc, scope)                 \
+    do {                                                                       \
+        size_t i = identity(pointer);                                          \
+        REQUIRE(i == 1 && !ended[i] && !(write) && (token) == domains[i] &&    \
+                (place) && (inc) && (scope));                                  \
+        REQUIRE(!active_scope); active_scope = (scope);
+        ++roots;                                                               \
+    } while (0)
+#define NL_HEAP_FIELD(pointer, field, write, nominal, index, child, inc,       \
+                      scope)                                                   \
+    do {                                                                       \
+        size_t i = identity(pointer);                                          \
+        REQUIRE(i == 1 && !ended[i] && !(write) && (nominal) &&                \
+                (index) == 1 && (child) && (inc) && (scope) &&                 \
+                (const void *)(field) == (const void *)&(pointer)->f1 &&       \
+                (pointer)->f1 == payload() && payloads++ == 0);                \
+    } while (0)
+#define NL_HEAP_COPY(...) REQUIRE(0)
+#define NL_HEAP_CHANGE(...) REQUIRE(0)
+#define NL_HEAP_SCOPE_END(scope) do { if (active_scope == (scope)) active_scope = 0; } while (0)
+#define NL_HEAP_END(pointer, token)                                            \
+    do {                                                                       \
+        size_t i = identity(pointer);                                          \
+        REQUIRE(!active_scope && !ended[i] && (token) == domains[i] && !(pointer)->f0.tag &&    \
+                !(pointer)->f0.ptr);                                           \
+        ended[i] = true;                                                       \
+        ++ends;                                                                \
+    } while (0)
+#define NL_HEAP_RAW(bytes, length) REQUIRE((bytes) && (length) == 24)
+#define NL_HEAP_FINALIZE(token)                                                \
+    do {                                                                       \
+        size_t i = (token) == domains[0] ? 0u : 1u;                            \
+        REQUIRE((token) && (token) == domains[i] && ended[i] &&                \
+                !finalized[i]);                                                \
+        finalized[i] = true;                                                   \
+        ++finals;                                                              \
+    } while (0)
+#define NL_HEAP_RELEASE(handle, bytes, length)                                 \
+    do {                                                                       \
+        size_t i = identity(handle);                                           \
+        REQUIRE(!pending_free && (void *)(handle) == (void *)(bytes) &&        \
+                (length) == 24 && ended[i] && finalized[i]);                   \
+        pending_free = (handle);                                               \
+    } while (0)
+#define NL_HEAP_HANDOFF(p, a, d, ap, dp) do { \
+    REQUIRE(!handoffs++ && !in_receiver && !active_scope && \
+            (p) == live[1] && (a) == live[1] && (d) == domains[1] && \
+            !ended[0] && !ended[1]); \
+    donor_allocation = (ap); donor_domain = (dp); \
+} while (0)
+#define NL_HEAP_RECEIVER_ENTER(p, a, d, frame, ps, as, ds, ap, dp) do { \
+    REQUIRE(handoffs == 1 && !receiver_entries++ && !in_receiver && \
+            !active_scope && (p) == live[1] && (a) == live[1] && \
+            (d) == domains[1] && (ap) != donor_allocation && \
+            (dp) != donor_domain && (frame) && (ps) && (as) && (ds)); \
+    in_receiver = true; \
+} while (0)
+#define NL_HEAP_RECEIVER_EXIT() do { \
+    REQUIRE(in_receiver && !receiver_exits++ && frees == 1 && \
+            !live[1] && live[0] && !ended[0] && !active_scope); \
+    in_receiver = false; \
+} while (0)
+#define NL_HEAP_RETURNED(ap, dp) do { \
+    REQUIRE(receiver_exits == 1 && !returned++ && !in_receiver && \
+            (ap) == donor_allocation && (dp) == donor_domain); \
+} while (0)
+#define NL_LIVE_SEND(...) REQUIRE(0)
+#define NL_LIVE_ENTER(...) REQUIRE(0)
+#define NL_LIVE_RETURN(...) REQUIRE(0)
+#define NL_LIVE_RECEIVE(...) REQUIRE(0)
+#define NL_HEAP_FINISH()                                                       \
+    do {                                                                       \
+        unsigned n = expected_roots(); \
+        REQUIRE(receiver_entries == (n == 2) && receiver_exits == (n == 2) && \
+                handoffs == (n == 2) && returned == (n == 2) && \
+                !in_receiver && !active_scope);                                         \
+        REQUIRE(trials == (n ? 2u : 1u) && inits == n && ends == n &&          \
+                finals == n && frees == n);                                    \
+        REQUIRE(!live[0] && !live[1] && !pending_free &&                       \
+                calls == (n == 2 ? 2u : 1u));                                  \
+        REQUIRE(old_copies == 1 && final_copies == 3 &&                        \
+                *target == current() && *sibling == other());                  \
+        REQUIRE(roots == (n == 2 ? 1u : 0u) && payloads == roots);             \
+        printf("P1517 H%u physical free order, same T old/current=%u "         \
+               "sibling=%u second-writes=%zu receiver-exact PASS\n",                          \
+               n, *target, *sibling, calls - 1);                               \
+    } while (0)
+#endif
+```
+
+### guest_wrap.c: 707B SHA256 `f511cbd663eef21768a350ef9fde0922e87cbb3931260b2d753949afb215ce98`
+
+```
+#include <stddef.h>
+#include <stdlib.h>
+#ifndef P1517_FAIL_AT
+#define P1517_FAIL_AT                                                          \
+    (getenv("P1517_FAIL_AT")                                                   \
+         ? (unsigned)strtoul(getenv("P1517_FAIL_AT"), NULL, 10)                \
+         : 0u)
+#endif
+void *__real_malloc(size_t);
+void __real_free(void *);
+void p1517_observe_free(void *);
+static size_t attempts;
+void *__wrap_malloc(size_t size)
+{
+    ++attempts;
+    return P1517_FAIL_AT && attempts == P1517_FAIL_AT ? NULL
+                                                      : __real_malloc(size);
+}
+void __wrap_free(void *p)
+{
+    p1517_observe_free(p);
+    __real_free(p);
+}
+```
+
+### N-foreign-pointer.nl: 3022B SHA256 `9259c3e510359fd6a1ad1274b6d546333fa34e05f5ccab4814af7b99ff8fcb7f`
+
+```
+// P1515 C1150 FIRST: two original H resources, terminal receiver, same T.
+struct Reading { value: u8, route: u8 }
+struct Resource { next: Option<ptr<Resource>>, payload: u8 }
+
+fn write_reading(dst: ref<write, u8>, next: u8) -> u8 {
+    let old = replace(dst, next);
+    old
+}
+
+fn retire(p: ptr<Resource>, a: Allocation, d: LifetimeDomain) -> unit {
+    let empty = loan_exclusive_read(d) { |ending|
+        destroy(p, ending)
+    };
+    let full = erase_slot<Resource>(empty);
+    finalize_domain(d);
+    deallocate(a, full);
+    unit
+}
+
+fn main() -> unit {
+    let reading = Reading { value: u8(91), route: u8(23) };
+    let before_start = loan_write(reading@value) { |w|
+        write_reading(w, u8(0))
+    };
+    match try_allocate_one<Resource>() {
+        None => { unit },
+        Some(first) => {
+            let OneBacking { allocation, raw } = first;
+            let a0 = allocation;
+            let slot0 = into_slot<Resource>(raw);
+            let d0 = lifetime_domain();
+            let p0 = loan_read(d0) { |stable0|
+                initialize(slot0,
+                    Resource { next: Option<ptr<Resource>>::None,
+                               payload: u8(67) }, stable0)
+            };
+            match try_allocate_one<Resource>() {
+                None => {
+                    let empty0 = loan_exclusive_read(d0) { |end0|
+                        destroy(p0, end0)
+                    };
+                    let full0 = erase_slot<Resource>(empty0);
+                    finalize_domain(d0);
+                    deallocate(a0, full0);
+                    unit
+                },
+                Some(second) => {
+                    let OneBacking { allocation, raw } = second;
+                    let a1 = allocation;
+                    let slot1 = into_slot<Resource>(raw);
+                    let d1 = lifetime_domain();
+                    let p1 = loan_read(d1) { |stable1|
+                        initialize(slot1,
+                            Resource { next: Option<ptr<Resource>>::None,
+                                       payload: u8(0) }, stable1)
+                    };
+                    let sample = loan_read(d1) { |stable_read|
+                        let r1 = ref_from_ptr(read, p1, stable_read);
+                        read(r1@payload)
+                    };
+                    retire(p0, a1, d1);
+                    let empty0 = loan_exclusive_read(d0) { |end0|
+                        destroy(p0, end0)
+                    };
+                    let full0 = erase_slot<Resource>(empty0);
+                    finalize_domain(d0);
+                    deallocate(a0, full0);
+                    let before_sample = loan_write(reading@value) { |w|
+                        write_reading(w, sample)
+                    };
+                    let retained_sample_old = before_sample;
+                    unit
+                },
+            }
+        },
+    };
+    let retained_start_old = before_start;
+    let current = reading@value;
+    let sibling = reading@route;
+    unit
+}
+```
+
+Existing immutable source/owned probe full text: [P1515 FIRST-SOURCE](https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970060503) and [FIRST-PROBE](https://github.com/wakairo/NewLang_Compiler/issues/1515#issuecomment-6970065387). New apparatus changes will be separately hashed/predicted before use, with original preserved. No independent R1516 originals read.

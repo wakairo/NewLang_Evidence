@@ -1,0 +1,14 @@
+{
+  "free_bytes_baseline": 63843188736,
+  "free_inodes_baseline": 4181721,
+  "fixed_parent_blobs_bytes": 232258874,
+  "fixed_parent_files": 7399,
+  "cohort_forecast_bytes": 2097152,
+  "stage_pack_restore_forecast_bytes": 16777216,
+  "source_replay_checkout_and_pack_forecast_bytes": 536870912,
+  "additional_peak_with_margin_bytes": 2147483648,
+  "additional_peak_with_margin_inodes": 50000,
+  "basis": "small individual text/patch/bundle payload, two transient Evidence clones, fresh fixed-parent HTTPS fetch and7399-file checkout; no SDK/build/ELF copying",
+  "margin_bytes": 61695705088,
+  "margin_inodes": 4131721
+}

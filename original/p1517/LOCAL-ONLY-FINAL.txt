@@ -1,0 +1,732 @@
+Track: P — C1157 / #1517 **LOCAL ONLY FINAL / DRAFT NOT_RELEASED / ENV-PARTIAL / STOP**
+
+Coordination宛：**限定private C17 consumerを実装し、真正な§18.1a receiver内の第二元H物理終了→caller第一元H終了→同じ元T named Copy/currentを、GCC O0/O2で実測した。** 二source×H0/H1/H2＝12 selected native PASS、実u8(0)でも第二T書込1。既存公開MACHINE/owner/Copy証拠、35 artifact改変拒否、7 source負例、選定host OOM/rollback/named no-clobber/retryが成立。**Clang/ASan/UBSan/format toolはNOT_RUNであり、full GCC+Clang matrix PASSではない。** [C1163](https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970882404)が裁定したENV-PARTIALとして、aggregate **80/80** 到達後は追加compiler/native実行を止めた。remote Production push/new PR/CI/READY/merge0。
+
+**VALUE-ALIGNMENT-RISK（技術結果と別）：** 正当な元H終了を通常関数へfactorできるcompiler能力の不足は縮小したが、自然なordinary-safe library/API、representation hiding、全safe-reachable states/legal writer/error/rollback/teardown/reentrant/FFI経路、実利用要求、well-factored Cに対するlibrary author＋ordinary-safe callerのUB監査・再監査依存閉包縮小はUNMEASURED。callerにptr/A/Dとfailure cleanupが見えている。十分にfactorしたCのopaque resource＋cleanup helperなら、無関係なreport scalar変更で内部全体の再監査が常に要るとは言えない。read-before-freeのteardown変更は、本当に影響する依存閉包を両者で比較すべきで、今回の拒否数やunchecked行数から差は断定しない。sound Rust owned/Drop・必要最小限unsafe＋safe facadeも公平な代替。新しいgeneral trusted state/history/issuerは導入せず、Production差分はprivate3file/55追加18削除の範囲。**GO TECHNICAL RESEARCH ONLY / HOLD PRODUCT PRIORITY、Product GO624 PAUSED / H1#268 HOLD**を維持し、次の投資裁定へ返す。
+
+### 固定authority / ローカル候補
+
+- 採用main **4c388693b95f371783e666f5c77e0aec5d17d215** / tree **867784ea863675788bc5ce4745904091ee319d3e**、CURRENT_SPEC→Draft17.38。終了前remote GETも同じ。main作業領域 `/workspace/NewLang_Compiler` はclean。
+- ローカル固定base＝未採用PR1508 HEAD **7591848bd7f4bf8967dffd4be8d360e1901a3f06** / tree **f0cea393dacbecc9b7fd0064fcd4955b8ad9c3a6**、親716a457d19c83ff2470a5be801f7108b37a6c7e7。終了前refs/pull/1508/headも7591848のまま。PR1508本体を変更していない。
+- 一つの専用local branch **p1517-terminal-receiver-local**、worktree **/workspace/NewLang_P1517**。実装commit **24206697820ff5521aba0239487c5b9b0f168445** / tree **f0cc19d3540102784c41c25a780ceb19570e5271**、直接親7591848。C1163/環境記述だけのdoc childを経た最終HEAD **c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c** / tree **a0b1fb1be96befe86f5b87bb82daed39017ba213**。source/implementationは実測時と同じ、最終Git status clean。全24変更fileのmanifestと完全diffはローカル証跡dirへ固定。リモートにはpushしていない。
+- 採用mainとfixed parentのcompiler/public header/semantic issuerは同じで、差は既存private backend3fileとP1507 tests、採用main側の運用docs差だけ。供給済みmain buildの変更なしsemantic/parser/checked等archiveとmain.oを用い、親private TUと候補private TUを別出力へstrict GCC再compile/linkした。新規full clean compiler buildとは主張しない。
+
+### FIRST / 実装 / 初回RED
+
+[ACTUAL START #6970520361](https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970520361)→[SOURCE/native oracle FIRST #6970648347](https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970648347)→[observer repair freeze #6970711609](https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970711609)→[safety/host-OOM apparatus FIRST #6970794491](https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970794491) は各POST/GET exact match。P1515原source/6負例/oracle/probe全bytes/SHA・原backend exit4・旧13/24は不変。今回の親baselineもattempt03でCLI4/no C。最初のprivate implementation C compile RED（attempt04、宣言順/括弧）と最初のobserver preprocessing RED（attempt08、macro継続一文字欠落）を原ログ/first-private-patch-v1.diff/元observerとともに保持した。**いずれもNewLang source parser不適格やsemantic期待値変更ではない。** 正常実行を強行せず、機械修復を別候補として実施した。
+
+元observerは同じbytesのまま `tests/p1517/history/passive-v1.h.data` へ保全、activeは事前freeze済みpassive-v2.h。移動receiptあり。原FIRST/REDの削除・上書き・後日PASSへの変更なし。新法・public issuer・API/ABI・checker semantics変更0。R1516の独立原FIRST/source/oracle/runner、独立F rawは読まず輸入0。C1163の集約判断だけを受領した。
+
+private追加は、既存のwhole-root-authenticated H2に属する**正確なreceiver owner/call identityを同期borrow**し、既存owner_evidenceのactual/formal/元R・root/incarnation/Domain/full occupancy/全loan終了/affine消費/実callee BODY検査と既存receiver carrierを使用する。旧link topology要求をdirect laneと分離し、calleeが第二Hだけを一度終了したことを既存lifecycle ledgerで確認後、caller第一H cleanupと元T Copyを許す。call countや同数値ID単独でauthorityを作らない。対象は既存normal二allocation/current-Copy lane、payload read1、receiver step-count4。optional receiver read5・一般owner・任意CFG/追加call・新issuer・receiver field-index1 nativeは未宣言/未検証であり、一般化しない。旧inline direct / linked producer gateは保持。
+
+### 実測した層 / 負例 / OOM
+
+| 対象 | 実測と限界 |
+| --- | --- |
+| 二完全source P-zero/P-nonzero | P1515 original bytes。CLI CHECK0両方、独立definition requirements255/4steps、実main CHECK0、全root MACHINE1、元H actual/formal/root/R/D/loan/full recoveryと二named Copy body/parameters/event validator全0。旧public probeを再使用し、同bytesのfresh public probeでも登録CTestを実行 |
+| ordinary C17 | 二例ともCLI --emit-c17-to exit0、実static nl_owner関数内に第二H destroy/erase/finalize/free、caller内に第一H cleanup、その後同じ元T named Copy。生成C原bytes/hashは固定、observerから書換えない |
+| GCC native | strict C17 -Wall/-Wextra/-Wpedantic/-Werror、O0/O2×sample0/42×H0/H1/H2＝12 PASS。元heap address/別Domain/閉じたread scope、受信callee内第二H free→caller第一H free、元T old91→0/旧0→sample/current/sibling23。H0 frees0・第二書込0、H1 caller free1・receiver0・第二書込0、H2 receiver1/free2/第二書込1。解放済pointerを後から観測しない |
+| 旧経路回帰 | P1507 original inline A/B（field0/1）各GCC O2×H0/H1/H2＝6 native PASS（元passive observerを使用）。P1481 linked producer sourceのstrict GCC O2/native1 PASS（この1件は追加passive observerなし）。計selected guest19/36 |
+| source負例7 | wrong a0＝semantic P193-CALL-BACKING、wrong d0/p0＝semantic P193-CALL-DOMAIN、owner再利用/stale read＝P3-USE-AFTER-CONSUME、callee deallocate欠落＝P193-DEFINITION-OBLIGATION、H1 leak＝precision ALLOCATED-CAPTURED-JOIN-PRECISION。全CLI3、public登録rollbackも確認。stale ref発行まで到達したとは言わず、H1 precisionを特定affine診断PASSにしない |
+| artifact負例35 | actual/input/formal/donor、root/incarnation/R/D/step/post、foreign world/source/callee body、loan/primitive/result、同数値ID foreign genuine originを改変し、MACHINE INVALID + emitter UNSUPPORTED/NULL/length98765保持。原artifact復元後C17再生成0。偽artifactをnativeへ送っていない |
+| host OOM | 選定6 logical fault箇所：登録realloc、actual realloc、actual context clone、main text buffer、receiver text buffer、後続Copy event replay clone。各hit1、OOM、出力NULL/length保持、原context anchor/snapshot同一、clean retry0。全allocation PC網羅ではない。fault/retry12 cases |
+| named output | main/receiver既存text buffer各1のcompiler-host OOM CLI1（NODE-C-RESOURCE）でsentinel保持・staging残存0、同じpathでclean retryの生成Cが原Cと完全一致。追加fault/retry4cases、host case計16/48。semantic拒否→同path retryもPASS |
+| CTests | coherent18件を実登録し、fresh GCC host probeによるp1517_zero_owned.unitをCTest経由で実行PASS。その他上記probe/native/negative/OOMは直接実行。全CTest PASSやCI greenとは言わない |
+
+### ENV-PARTIAL / pin精度 / publication条件
+
+承認済みsystem helper/sudoが無く、rootlessで**repository lockのDebian legacy clang-23 URL**を3回要求したが全404。同じ既知404の再試行・token/network/permission拡大は止めた。**精度補足：lock top-level LLVM版は23.1.3だが、今回404だったDebian legacy artifact URL/package版は23.1.2**。C1163中の23.1.3 URLという要約に対し、実receiptの対象は後者である。両版とも未導入・未検証で、pinを変更/代用していない。Clang O0/O2、Clang-ASan/UBSan、固定clang-formatはNOT_RUN。C1163に従い他の安全な作業を完了し、このlocal missionはENV-PARTIALで終了する。
+
+Publication/new PR/自然CIは引き続きNOT_RELEASED。CがPR1508の独立結果を裁定・採用し、実際の新adopted base/treeへのintegrationとpublicationを別RELEASEすることが先。将来の固定新HEAD自然FULL5の真正Clang/ASan/UBSan＋PARTIAL原ログと、通常pipelineで覆わない選定dual GCC/Clang physical cleanup/native/observer例、format、実質リスクに応じた独立安全性検証がCのhard merge gate。今回GCCやENV-PARTIALで代用しない。追加ローカル実行には別予算が必要。新source law/issuer/general ownerが必要ならSTOP C/Mという境界も維持する。
+
+### 費用 / 保全
+
+ledger72 records、保守的aggregate80/80（二TUのCCは各2 charge、CTestの子API実行もcharge。CMake内部GCC4呼出しも別record）。guest19/36、host logical site6/16、fault/retry16/48。CMake configure含む各record観測秒の和7.952249秒（CMake親子の重複を含み実経過時間ではない）、子process最大観測RSS60,720KiB（人間/AI工数の測定ではない）。旧P1507 48/48・P1515 13/24は変更なし。branch1/local commits2、remote Production/Evidence push/new PR/CI/READY/merge0。権限・credential拡大0。
+
+追加容量予測8GiB/200,000 inodes。開始空き63,877,451,776B/4,186,134 inodes、attempt前後sample最小63,843,762,176B/4,181,799 inodes（占有増33,689,600B/4,335 inodes；瞬間peakではない）。最終記録時63,843,721,216B/4,181,792 inodes、SDKを含む予測内。旧active main/build/SDK・原FIRST/RED/log/生成C/ELFを保持し、cleanup削除0。HEAD/local sources/144 raw stdout+stderrの全SHA照合済み。十分なheadroomがありEvidence archive pushは不要、未restoreのローカル原証拠を削除していない。
+
+ローカルreview入口：`/workspace/NewLang_P1517/tests/p1517/README.md`、完全diff `/workspace/p1517-evidence/candidate.diff`、原ledger `/workspace/p1517-evidence/attempts.json`、全原ログ `/workspace/p1517-evidence/logs/`、manifest `/workspace/p1517-evidence/final-source-manifest.json`。ローカル原材料は全保持。以下にcompact manifest/ledgerと主要原ログを永続記録する。
+
+### summary.json — 1636B SHA256 `e7e237d85ac81cc20a21b4c81c02075104c03a4dd4f6a836fe5a82657ce2aa95`
+
+```json
+{
+  "command_invocations": 72,
+  "aggregate_local_charges": 80,
+  "local_limit": 80,
+  "selected_guest_executions": 19,
+  "guest_limit": 36,
+  "selected_host_OOM_sites": 6,
+  "host_limit": 16,
+  "fault_retry_cases": 16,
+  "host_case_limit": 48,
+  "new_native_GCC_profiles": 4,
+  "new_native_GCC_worlds": 12,
+  "old_inline_regression_native_worlds": 6,
+  "linked_producer_regression_native": 1,
+  "artifact_mutations_refused": 35,
+  "source_negatives": 7,
+  "source_negative_semantic": 6,
+  "source_negative_precision": 1,
+  "CTest_registered": 18,
+  "CTest_executed": 1,
+  "Clang": "NOT_RUN / locked package URL404 after3 requests",
+  "ASan_UBSan": "NOT_RUN",
+  "format_tool": "NOT_RUN / fixed clang-format also unavailable",
+  "remote_Production_push_PR_CI_READY_merge": 0,
+  "public_issuer_semantics_API_ABI_changes": 0,
+  "total_attempt_seconds": 7.952249,
+  "peak_observed_child_RSS_kib": 60720,
+  "resource_free_bytes_baseline": 63877451776,
+  "resource_free_inodes_baseline": 4186134,
+  "resource_forecast_peak_bytes": 8589934592,
+  "resource_forecast_peak_inodes": 200000,
+  "min_sampled_free_bytes": 63843762176,
+  "min_sampled_free_inodes": 4181799,
+  "first_private_compile_RED": 4,
+  "first_observer_compile_RED": 8,
+  "new_parent_emit_RED": 3,
+  "original_P1515": "unchanged13/24; original FIRST/RED retained",
+  "candidate_status": "LOCAL ONLY / DRAFT NOT_RELEASED / ENV-PARTIAL (C1163) / BUDGET STOP",
+  "C1163": "https://github.com/wakairo/NewLang_Compiler/issues/1517#issuecomment-6970882404",
+  "toolchain_precision": "top-level lock23.1.3; actual Debian legacy clang-23 failed URL/package23.1.2; no Clang installed"
+}
+```
+
+### final-source-manifest.json — 3636B SHA256 `b8a5afd9df7560286ec46c56bcd98e354c92bde2183e1c3d74634694220bd660`
+
+```json
+[
+  {
+    "path": "CMakeLists.txt",
+    "bytes": 155924,
+    "sha256": "572a11558c2a752664cf3852a4ad4e274a9b042794028e97e849e2bfbbea5676"
+  },
+  {
+    "path": "src/checked_c_allocated_current_internal.h",
+    "bytes": 8193,
+    "sha256": "49fec55d6e8e92fb5a8f860a1bdeef9d38d55bcf3f9c3ad51bac58ad094e0426"
+  },
+  {
+    "path": "src/checked_c_copy_internal.h",
+    "bytes": 79080,
+    "sha256": "c3b763673d73c9e5cd3f92b3bc0187b88c314d2feb5bfb7094b394ddd13063a8"
+  },
+  {
+    "path": "src/checked_c_node.c",
+    "bytes": 201078,
+    "sha256": "0a6af7f92c6659b989281def3baa79f85bba34611383c4a1169317fb8018f7e4"
+  },
+  {
+    "path": "tests/p1517/CMakeLists.txt",
+    "bytes": 2287,
+    "sha256": "0c0d40196912ebf1f7845fd4d8bb0ae0a67f2e9e6b6b1701912dac6bc53fc4ae"
+  },
+  {
+    "path": "tests/p1517/N-H1-leak.nl",
+    "bytes": 2745,
+    "sha256": "bfc34cb49c3994dfcdd4d3310147d56360ae3c407748a98fc5f5c09b56860fc3"
+  },
+  {
+    "path": "tests/p1517/N-foreign-allocation.nl",
+    "bytes": 3022,
+    "sha256": "3556c2d4c9c380b6f254a04f206346ddd0e4feebd244b5e705ca90739660c51e"
+  },
+  {
+    "path": "tests/p1517/N-foreign-domain.nl",
+    "bytes": 3022,
+    "sha256": "ec3e689d27ea60d5cfcb5e285434cb6bacc369dc385f7332ac37cd04a2523fda"
+  },
+  {
+    "path": "tests/p1517/N-foreign-pointer.nl",
+    "bytes": 3022,
+    "sha256": "9259c3e510359fd6a1ad1274b6d546333fa34e05f5ccab4814af7b99ff8fcb7f"
+  },
+  {
+    "path": "tests/p1517/N-incomplete-callee.nl",
+    "bytes": 2997,
+    "sha256": "35961c146e53106e440e91733b49db4b8f940295d6f2cdc46a63dac5d0dc824f"
+  },
+  {
+    "path": "tests/p1517/N-owner-reused.nl",
+    "bytes": 3062,
+    "sha256": "5426cc5561b381533a2b42798d318602b770ea15570aefbb6ad898f88bcbb7ae"
+  },
+  {
+    "path": "tests/p1517/N-stale-read.nl",
+    "bytes": 3208,
+    "sha256": "73134d7f8a481309fec656a9829d5ca1dd3b78674452d469295919eac75f7a7c"
+  },
+  {
+    "path": "tests/p1517/P-nonzero.nl",
+    "bytes": 3023,
+    "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c"
+  },
+  {
+    "path": "tests/p1517/P-zero.nl",
+    "bytes": 3022,
+    "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b"
+  },
+  {
+    "path": "tests/p1517/README.md",
+    "bytes": 3739,
+    "sha256": "d8acc1c4fa98159865c0c17a9bec579362f457244f497ce935f44d52daa627ad"
+  },
+  {
+    "path": "tests/p1517/cli_fault.c",
+    "bytes": 573,
+    "sha256": "748312c5a489b08caeb37b7fca13338a6e2119960e4ad65934c7a1396a874323"
+  },
+  {
+    "path": "tests/p1517/guest_wrap.c",
+    "bytes": 707,
+    "sha256": "f511cbd663eef21768a350ef9fde0922e87cbb3931260b2d753949afb215ce98"
+  },
+  {
+    "path": "tests/p1517/history/passive-v1.h.data",
+    "bytes": 12352,
+    "sha256": "afea7a30c785f727fe05d90688cdaf9e79364d62ea38f16742e9c31cdb64d393"
+  },
+  {
+    "path": "tests/p1517/named.py",
+    "bytes": 1586,
+    "sha256": "6e28ccafebe156fd9427ce4abd143b7faa0d3ef679e717e2c74d3b66b4c327f9"
+  },
+  {
+    "path": "tests/p1517/native.py",
+    "bytes": 2340,
+    "sha256": "f2fcb03d4b1984a63bbcadc8dbde203fd62d520bb10d3b6379be2d61d819f00f"
+  },
+  {
+    "path": "tests/p1517/oracle.json",
+    "bytes": 5275,
+    "sha256": "3ba663b3099215e96204468c12451f0ac9480f9f2503229c25c382c187d3039c"
+  },
+  {
+    "path": "tests/p1517/passive-v2.h",
+    "bytes": 12354,
+    "sha256": "523074cb59f486c9775cee1f7ff7c8faa8a49412d4f90d46591219df4543fc3c"
+  },
+  {
+    "path": "tests/p1517/public_owned.c",
+    "bytes": 18408,
+    "sha256": "23194e04fda8190396585c810cf42110036284565cba3c6befd09e1c2a0e8aa8"
+  },
+  {
+    "path": "tests/p1517/safety.c",
+    "bytes": 7940,
+    "sha256": "29612138e23e00d5c2d146948e82b77d3705c118d0a697316b665da02c04ec76"
+  }
+]
+```
+
+### named-receipt.json — 220B SHA256 `426451676ee7445dcdff67fc7ee1c9f16af465ee0a56ff4aabfc8ded8585518a`
+
+```json
+{
+  "host_text_sites": [
+    1,
+    2
+  ],
+  "host_fault_retry_cases": 4,
+  "semantic_failure_retry": true,
+  "sentinel_unchanged_on_every_failure": true,
+  "no_temp_leak": true,
+  "clean_retry_exact_original_C": true
+}
+```
+
+### toolchain/receipt.json — 211B SHA256 `55e5782d4c0795d70c1b172a8e071a4635e7f1980ea694ff354afbddb3cf32c8`
+
+```json
+[
+  {
+    "name": "clang-23",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "clang-23",
+    "attempt": 2,
+    "http": 404
+  },
+  {
+    "name": "clang-23",
+    "attempt": 3,
+    "http": 404
+  }
+]
+```
+
+### relocation-receipt.json — 343B SHA256 `3232816aafa9fd8a7dc38c51abb1f8020139a3993bc40b2ddd110d6a66f400f7`
+
+```json
+{
+  "original": "tests/p1517/passive.h",
+  "preserved_as": "tests/p1517/history/passive-v1.h.data",
+  "sha256": "afea7a30c785f727fe05d90688cdaf9e79364d62ea38f16742e9c31cdb64d393",
+  "reason": "Preserve original malformed observer FIRST and compile RED in history; active tests use separately frozen passive-v2.h. No original bytes removed."
+}
+```
+
+### Compact execution ledger
+
+Full argv and every raw hash remain in local attempts.json. Columns: index, charge, exit, guest, label, stdout SHA256, stderr SHA256.
+
+```text
+1 1 0 0 parent-backend-cc e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2 1 0 0 parent-link e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+3 1 4 0 parent-emit e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ab8cc0f7e26f2b51c644029807c5e597ac5b2697f66c943b7e4b70a9c223ce98
+4 1 1 0 candidate-backend-cc e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0cd0224bfaa23cc2a9cc8dfecc84bbb28f00301806be7c453c7f71ad7e1c56f2
+5 1 0 0 candidate-backend-cc-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+6 1 0 0 candidate-link-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+7 1 0 0 candidate-emit-zero-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+8 2 1 0 native-zero-gcc-O0-cc e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 6d236271ade079df5183166308cd643188254ba7e6ec41d5cd3fdc97406526c9
+9 2 0 0 native-zero-gcc-O0-cc-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+10 1 0 1 native-zero-gcc-O0-H2 18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+11 1 0 0 candidate-emit-nonzero-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+12 1 0 1 native-zero-gcc-O0-H0 0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+13 1 0 1 native-zero-gcc-O0-H1 084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+14 2 0 0 native-zero-gcc-O2-cc-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+15 1 0 1 native-zero-gcc-O2-H0 0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+16 1 0 1 native-zero-gcc-O2-H1 084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+17 1 0 1 native-zero-gcc-O2-H2 18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+18 2 0 0 native-nonzero-gcc-O0-cc-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+19 1 0 1 native-nonzero-gcc-O0-H0 0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+20 1 0 1 native-nonzero-gcc-O0-H1 084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+21 1 0 1 native-nonzero-gcc-O0-H2 cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+22 2 0 0 native-nonzero-gcc-O2-cc-v2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+23 1 0 1 native-nonzero-gcc-O2-H0 0020edcc32964fc1939aa6a04062ce0c4be69a58dc6c3acd5215e5dbc6e56177 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+24 1 0 1 native-nonzero-gcc-O2-H1 084e646ff403cedab82e0ace7a12032ca09542474edf4ee55f8ea43757076f39 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+25 1 0 1 native-nonzero-gcc-O2-H2 cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+26 1 0 0 public-owned-zero 7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+27 1 0 0 public-owned-nonzero 8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+28 1 0 0 safety-cc e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+29 1 0 0 safety-attacks bb70206cd7562a99778bffdcc8750cf81cb2852f0ceee64e393e666adaa844b6 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+30 1 0 0 host-oom-0 35de902a79291e499e1074e4a37c8a2db0514df8d086944e0abcaf385532e10f e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+31 1 0 0 host-oom-1 156cc7b588b7d329656064424c2dde44732fbd490c5538217216596ce74b52f4 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+32 1 0 0 host-oom-2 86e7142c394a9e2879968007917b4611c42c26a3da42b4d72331fbc1aa3326a4 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+33 1 0 0 host-oom-3 9fd232cb0d4b45fdc97b70e4a665af55d9815da250b4b677e1bfada4822229ea e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+34 1 0 0 host-oom-4 4bd3a3927ebb64a30af44be64e3bcd041b2372f49dd27f53945105b855cab670 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+35 1 0 0 host-oom-5 9873dc34a714a7d4d0cc9edcb90190bd59785137e86f8730c819564388623bc5 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+36 1 0 0 check-P-zero.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+37 1 0 0 check-P-nonzero.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+38 1 3 0 check-N-H1-leak.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 8eabc404504c22766964eea239a41117363bff5d99923954f7f85d870594860d
+39 1 3 0 check-N-foreign-allocation.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 49fd6da300eadbd9acfe09047a1919d80fb615c4949e70fa91eba9056772af37
+40 1 3 0 check-N-foreign-domain.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 dadc8958ec32ce5940d81dfa0baf828988b10b9590b8bd74f02b2ee61919e23d
+41 1 3 0 check-N-foreign-pointer.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 880a007cd9e86b41c1ddb017fe836d3a781e469c14c737178d5969c20a50cfcc
+42 1 3 0 check-N-incomplete-callee.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 93ffa459a70341d11246ad67aa6c14e981dd6ddf45ba0575fc45a6a9cb499fc3
+43 1 3 0 check-N-owner-reused.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 b7307318821b0c9d64deca1147dc90fd5fa3480fc79d9518187d48281f088b67
+44 1 3 0 check-N-stale-read.nl e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 93ea294706de849be80812d66df30cd016418896e079b540da223657bfa8fab9
+45 1 0 0 source-negative-rollback e964b2c6e7f396acb648f52f4ceb55727239d1c2559ca9665abfcc6b78a45407 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+46 1 0 0 cli-fault-link e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+47 1 1 0 host-named-fault-1 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8
+48 1 0 0 host-named-retry-1 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+49 1 1 0 host-named-fault-2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8
+50 1 0 0 host-named-retry-2 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+51 1 3 0 semantic-named-no-clobber e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 dadc8958ec32ce5940d81dfa0baf828988b10b9590b8bd74f02b2ee61919e23d
+52 1 0 0 semantic-named-retry e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+53 1 0 0 regress-emit-A-direct-zero e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+54 2 0 0 regress-cc-A-direct-zero e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+55 1 0 1 regress-A-direct-zero-fail1 41cc672ccdf5c76f404c9f1d97661a1cbb27b589b9be7e48cc69519f4f5a500f e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+56 1 0 1 regress-A-direct-zero-fail2 16bf4170c35505485b01cc166fc201f123362d7a13c395a9fdd40d4b542d7c26 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+57 1 0 1 regress-A-direct-zero-fail0 9fafa1640eafadee1efed70f13e46d0f390576571fe363e2b630c42a3f833514 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+58 1 0 0 regress-emit-B-direct-index-one e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+59 2 0 0 regress-cc-B-direct-index-one e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+60 1 0 1 regress-B-direct-index-one-fail1 efe25d9ac4601ae898c3e93c86e0cf14478daca5afa063351372f75dbc21104e e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+61 1 0 1 regress-B-direct-index-one-fail2 7d184e6a7866d980b7f8525ee2c0f6f9f8f490b6dc37d951421f301ca5baaf99 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+62 1 0 1 regress-B-direct-index-one-fail0 4e27ed9558ecd7dc33aa8799bb906541a023f52d000b50a50ba6014a032614d8 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+63 1 0 0 regress-emit-linked-producer e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+64 1 0 0 regress-cc-linked-producer e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+65 1 0 1 regress-native-linked-producer e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+66 1 0 0 cmake-register 64d2bbb5dd5873831573ad206ac48b649700471803fb0250fd484faf18645bb5 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+67 1 0 0 cmake-gcc-67 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+68 1 0 0 cmake-gcc-68 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+69 1 0 0 cmake-gcc-69 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 65a519f08fcc97df64d4877c47b490813168adf1ecd99063327442e4f5684f99
+70 1 0 0 cmake-gcc-70 8374f96da9f5cc630f40a9ca18dd6ba1363a89641189344276a087309490dce0 ebce16bd2fbe8965b2dc7cca7f8ba6864773b50076855a2c290bd96000938b4e
+71 1 0 0 public-owned-ctest-cc e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+72 2 0 0 ctest-owned-zero f29f70fc17ba08ad6067c3024fc1ef86029a88ebc721dd76122deff1d28c0545 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+```
+
+### Original raw checkpoints
+
+#### logs/03-parent-emit.stderr — 134B SHA256 `ab8cc0f7e26f2b51c644029807c5e597ac5b2697f66c943b7e4b70a9c223ce98`
+
+```text
+error(cli)[V1-BACKEND-UNSUPPORTED]: mixed H plus T has no dual-carrier C17 proof
+note: /workspace/NewLang_P1517/tests/p1517/P-zero.nl
+```
+
+#### logs/04-candidate-backend-cc.stderr — 3837B SHA256 `0cd0224bfaa23cc2a9cc8dfecc84bbb28f00301806be7c453c7f71ad7e1c56f2`
+
+```text
+In file included from /workspace/NewLang_P1517/src/checked_c_node.c:569:
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h: In function ‘copy_carrier_world’:
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:31: error: implicit declaration of function ‘expected_owner_calls’ [-Wimplicit-function-declaration]
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:28: error: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Werror=sign-compare]
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                            ^~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1118:31: error: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Werror=sign-compare]
+ 1118 |                e->owner_calls == expected_owner_calls(e) &&
+      |                               ^~
+/workspace/NewLang_P1517/src/checked_c_node.c: At top level:
+/workspace/NewLang_P1517/src/checked_c_node.c:600:15: error: conflicting types for ‘expected_owner_calls’; have ‘size_t(const Emit *)’ {aka ‘long unsigned int(const Emit *)’}
+  600 | static size_t expected_owner_calls(const Emit *e)
+      |               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_copy_internal.h:1090:31: note: previous implicit declaration of ‘expected_owner_calls’ with type ‘int()’
+ 1090 |             e->owner_calls != expected_owner_calls(e) || e->pending_live ||
+      |                               ^~~~~~~~~~~~~~~~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c: In function ‘owner_evidence’:
+/workspace/NewLang_P1517/src/checked_c_node.c:3096:47: error: expected expression before ‘||’ token
+ 3096 |                                       : 1u))) ||
+      |                                               ^~
+/workspace/NewLang_P1517/src/checked_c_node.c:3134:79: error: expected statement before ‘)’ token
+ 3134 |         !nl_semantic_domain_view(post, h->heap_domain, &dead_d) || dead_d.live)
+      |                                                                               ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3071:29: error: unused variable ‘dead_d’ [-Werror=unused-variable]
+ 3071 |     NLSemanticDomainView d, dead_d;
+      |                             ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3071:26: error: unused variable ‘d’ [-Werror=unused-variable]
+ 3071 |     NLSemanticDomainView d, dead_d;
+      |                          ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3070:30: error: unused variable ‘dead_r’ [-Werror=unused-variable]
+ 3070 |     NLSemanticBackingView r, dead_r;
+      |                              ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3070:27: error: unused variable ‘r’ [-Werror=unused-variable]
+ 3070 |     NLSemanticBackingView r, dead_r;
+      |                           ^
+/workspace/NewLang_P1517/src/checked_c_node.c:3069:33: error: unused variable ‘after’ [-Werror=unused-variable]
+ 3069 |     NLSemanticPlaceView before, after;
+      |                                 ^~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3069:25: error: unused variable ‘before’ [-Werror=unused-variable]
+ 3069 |     NLSemanticPlaceView before, after;
+      |                         ^~~~~~
+/workspace/NewLang_P1517/src/checked_c_node.c:3066:30: error: unused variable ‘body’ [-Werror=unused-variable]
+ 3066 |     const NLCheckedFragment *body = nl_checked_call_body(env->artifact, id);
+      |                              ^~~~
+cc1: all warnings being treated as errors
+```
+
+#### logs/08-native-zero-gcc-O0-cc.stderr — 1485B SHA256 `6d236271ade079df5183166308cd643188254ba7e6ec41d5cd3fdc97406526c9`
+
+```text
+In file included from /workspace/p1517-evidence/P-zero-v2.c:12:
+/workspace/NewLang_P1517/tests/p1517/passive.h:137:9: error: expected identifier or ‘(’ before ‘++’ token
+  137 |         ++roots;                                                               \
+      |         ^~
+/workspace/NewLang_P1517/tests/p1517/passive.h:138:5: error: expected identifier or ‘(’ before ‘}’ token
+  138 |     } while (0)
+      |     ^
+/workspace/NewLang_P1517/tests/p1517/passive.h:138:7: error: expected identifier or ‘(’ before ‘while’
+  138 |     } while (0)
+      |       ^~~~~
+/workspace/p1517-evidence/P-zero-v2.c: In function ‘main’:
+/workspace/p1517-evidence/P-zero-v2.c:276:1: error: expected ‘while’ before ‘uint8_t’
+  276 | uint8_t nl_b_6_25 = nl_v_40;
+      | ^~~~~~~
+/workspace/p1517-evidence/P-zero-v2.c:277:7: error: ‘nl_b_6_25’ undeclared (first use in this function); did you mean ‘nl_b_6_22’?
+  277 | (void)nl_b_6_25;
+      |       ^~~~~~~~~
+      |       nl_b_6_22
+/workspace/p1517-evidence/P-zero-v2.c:277:7: note: each undeclared identifier is reported only once for each function it appears in
+/workspace/p1517-evidence/P-zero-v2.c:258:9: error: variable ‘nl_v_40’ set but not used [-Werror=unused-but-set-variable]
+  258 | uint8_t nl_v_40;
+      |         ^~~~~~~
+/workspace/p1517-evidence/P-zero-v2.c:343:1: error: expected declaration or statement at end of input
+  343 | }
+      | ^
+cc1: all warnings being treated as errors
+```
+
+#### logs/10-native-zero-gcc-O0-H2.stdout — 98B SHA256 `18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58`
+
+```text
+P1517 H2 physical free order, same T old/current=0 sibling=23 second-writes=1 receiver-exact PASS
+```
+
+#### logs/17-native-zero-gcc-O2-H2.stdout — 98B SHA256 `18753d7a02fab1a5d1a43b005d231ce85fba106b96da39425ed10361c5d84f58`
+
+```text
+P1517 H2 physical free order, same T old/current=0 sibling=23 second-writes=1 receiver-exact PASS
+```
+
+#### logs/21-native-nonzero-gcc-O0-H2.stdout — 99B SHA256 `cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb`
+
+```text
+P1517 H2 physical free order, same T old/current=42 sibling=23 second-writes=1 receiver-exact PASS
+```
+
+#### logs/25-native-nonzero-gcc-O2-H2.stdout — 99B SHA256 `cad433c7fa484c41fb01a7a864a2b36bb18c9d1988c254da40dda6bb1fdeb5fb`
+
+```text
+P1517 H2 physical free order, same T old/current=42 sibling=23 second-writes=1 receiver-exact PASS
+```
+
+#### logs/26-public-owned-zero.stdout — 635B SHA256 `7a930f58e9ec18a3be793907defe521b972da9baf6ce7fc4389af7bcffeab39b`
+
+```text
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=0 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+```
+
+#### logs/27-public-owned-nonzero.stdout — 638B SHA256 `8bd94310e541d56e4446b2361ec818d1759c8c18634d7edd2e509174586c4bbe`
+
+```text
+PARSE status=0 code=none
+DEFINITION status=0 code=none
+ACTUAL status=0 code=none
+PROOF_CLASS value=1 MACHINE=1
+COPY call=11 ordinal=1 body=0 parameters=0 event=0
+NORMAL H0 receiver=0 second_T_write=0 releases=0
+NORMAL H1 receiver=0 second_T_write=0 releases=1
+PAYLOAD child=29 original=24 sample=42 ref_scope=4
+OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+COPY call=66 ordinal=2 body=0 parameters=0 event=0
+NORMAL H2 receiver=1 second_T_write=1 sample=42 releases=2
+AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=42
+```
+
+#### logs/29-safety-attacks.stdout — 3795B SHA256 `bb70206cd7562a99778bffdcc8750cf81cb2852f0ceee64e393e666adaa844b6`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+definition status=0 code=none
+actual status=0 code=none
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver actual/formal/original/domain/post public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign world public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver foreign source public-proof=0
+emitter status=1 out=NULL length=98765
+tamper receiver unrelated callee body public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper callee primitive/loan/result substitution public-proof=0
+emitter status=1 out=NULL length=98765
+tamper same numeric IDs foreign authentic origin public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 artifact negatives=34 plus foreign origin; pristine retry PASS
+```
+
+#### logs/30-host-oom-0.stdout — 139B SHA256 `35de902a79291e499e1074e4a37c8a2db0514df8d086944e0abcaf385532e10f`
+
+```text
+actual status=0 code=none
+emitter status=0 out=text length=11332
+P1517 host OOM site=0 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/31-host-oom-1.stdout — 169B SHA256 `156cc7b588b7d329656064424c2dde44732fbd490c5538217216596ce74b52f4`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+emitter status=0 out=text length=11332
+P1517 host OOM site=1 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/32-host-oom-2.stdout — 169B SHA256 `86e7142c394a9e2879968007917b4611c42c26a3da42b4d72331fbc1aa3326a4`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+emitter status=0 out=text length=11332
+P1517 host OOM site=2 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/33-host-oom-3.stdout — 208B SHA256 `9fd232cb0d4b45fdc97b70e4a665af55d9815da250b4b677e1bfada4822229ea`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+emitter status=2 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 host OOM site=3 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/34-host-oom-4.stdout — 208B SHA256 `4bd3a3927ebb64a30af44be64e3bcd041b2372f49dd27f53945105b855cab670`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+emitter status=2 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 host OOM site=4 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/35-host-oom-5.stdout — 208B SHA256 `9873dc34a714a7d4d0cc9edcb90190bd59785137e86f8730c819564388623bc5`
+
+```text
+definition status=0 code=none
+actual status=0 code=none
+emitter status=2 out=NULL length=98765
+emitter status=0 out=text length=11332
+P1517 host OOM site=5 fault+retry=2 hit=1 NULL/length/state rollback PASS
+```
+
+#### logs/45-source-negative-rollback.stdout — 801B SHA256 `e964b2c6e7f396acb648f52f4ceb55727239d1c2559ca9665abfcc6b78a45407`
+
+```text
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-H1-leak.nl status=3 code=ALLOCATED-CAPTURED-JOIN-PRECISION
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-foreign-allocation.nl status=1 code=P193-CALL-BACKING
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-foreign-domain.nl status=1 code=P193-CALL-DOMAIN
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-foreign-pointer.nl status=1 code=P193-CALL-DOMAIN
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-incomplete-callee.nl status=1 code=P193-DEFINITION-OBLIGATION
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-owner-reused.nl status=1 code=P3-USE-AFTER-CONSUME
+P1517 source negative=/workspace/NewLang_P1517/tests/p1517/N-stale-read.nl status=1 code=P3-USE-AFTER-CONSUME
+```
+
+#### logs/47-host-named-fault-1.stderr — 167B SHA256 `592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8`
+
+```text
+P1517 selected compiler-host text-buffer OOM
+error(cli)[NODE-C-RESOURCE]: bounded mixed emission resource failure
+note: /workspace/NewLang_P1517/tests/p1517/P-zero.nl
+```
+
+#### logs/49-host-named-fault-2.stderr — 167B SHA256 `592baea8ecbdc4bc8fb4be96ba25e4133cbaa2f3c6c5e0c779b903bea68f5de8`
+
+```text
+P1517 selected compiler-host text-buffer OOM
+error(cli)[NODE-C-RESOURCE]: bounded mixed emission resource failure
+note: /workspace/NewLang_P1517/tests/p1517/P-zero.nl
+```
+
+#### logs/66-cmake-register.stdout — 869B SHA256 `64d2bbb5dd5873831573ad206ac48b649700471803fb0250fd484faf18645bb5`
+
+```text
+-- The C compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /workspace/p1517-evidence/gcc-ledger - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Frontend-only: LLVM discovery and llvm.c_api smoke omitted
+-- Found Python3: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 (found suitable version "3.12.14", minimum required is "3.12") found components: Interpreter
+P1117 current oracle preserves original p504 6fc73c22f544e4d66d1eaf8d6526868cf7bb15d76ea2ab93f1bae880987e4e79
+P1117 current oracle preserves original p603 dba648f261a0ae2415c0ccb0e0bc0070399b9ee1dcb52fad5c97fe1b7fa0e040
+-- Configuring done (1.2s)
+-- Generating done (0.6s)
+-- Build files have been written to: /workspace/p1517-evidence/ctest-build
+```
+
+#### logs/72-ctest-owned-zero.stdout — 2030B SHA256 `f29f70fc17ba08ad6067c3024fc1ef86029a88ebc721dd76122deff1d28c0545`
+
+```text
+Internal ctest changing into directory: /workspace/p1517-evidence/ctest-build
+UpdateCTestConfiguration  from :/workspace/p1517-evidence/ctest-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1517-evidence/ctest-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1517-evidence/ctest-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1517-evidence/ctest-build/DartConfiguration.tcl
+Test project /workspace/p1517-evidence/ctest-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 19
+    Start 19: p1517_zero_owned.unit
+
+19: Test command: /workspace/p1517-evidence/ctest-build/p1517_public_owned "/workspace/NewLang_P1517/tests/p1517/P-zero.nl" "0"
+19: Working Directory: /workspace/p1517-evidence/ctest-build
+19: Environment variables: 
+19:  PYTHONDONTWRITEBYTECODE=1
+19:  PYTHONHASHSEED=0
+19:  LC_ALL=C
+19:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+19:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+19: Test timeout computed to be: 90
+19: PARSE status=0 code=none
+19: DEFINITION status=0 code=none
+19: ACTUAL status=0 code=none
+19: PROOF_CLASS value=1 MACHINE=1
+19: COPY call=11 ordinal=1 body=0 parameters=0 event=0
+19: NORMAL H0 receiver=0 second_T_write=0 releases=0
+19: NORMAL H1 receiver=0 second_T_write=0 releases=1
+19: PAYLOAD child=29 original=24 sample=0 ref_scope=4
+19: OWNER actual=41 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=4 full_range=24
+19: COPY call=66 ordinal=2 body=0 parameters=0 event=0
+19: NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+19: AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=8 root=1 child=2 incarnation=1 sample=0
+1/1 Test #19: p1517_zero_owned.unit ............   Passed    0.01 sec
+
+The following tests passed:
+	p1517_zero_owned.unit
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.04 sec
+```
+
+**LOCAL ONLY FINAL POST/GET後STOP。ENV-PARTIALを全体PASSにせず、技術成果とVALUE-ALIGNMENT-RISKを分けてCoordinationへ返却する。追加compiler/native/CI/remote公開は実行しない。**
