@@ -1,0 +1,364 @@
+[
+  {
+    "id": 1,
+    "label": "initial refs/status/P1525 STOP/build availability (read-only)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 2,
+    "label": "Compass/canonical/baseline/probe anchors (read-only)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 3,
+    "label": "Value/Process/probe/definition anchors (read-only)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 4,
+    "label": "create detached7de local worktree",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 5,
+    "label": "public probe and private consumer read-only inspection",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 6,
+    "label": "generate FIRST packet/initial provenance (no source execution)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 7,
+    "label": "FIRST oracle/hash/comment assembly (no source execution)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 8,
+    "label": "FIRST packet read for POST (no source execution)",
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "exit": 0,
+    "administrative": true
+  },
+  {
+    "id": 9,
+    "label": "fixed-ref-check-before-source",
+    "argv": [
+      "git",
+      "-C",
+      "/workspace/NewLang_P1528_gate0",
+      "ls-remote",
+      "--heads",
+      "https://github.com/wakairo/NewLang_Compiler.git",
+      "refs/heads/main",
+      "refs/heads/p1525-terminal-receiver-c1184"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002804.9760556,
+    "exit": 0,
+    "seconds": 0.5283358509987011
+  },
+  {
+    "id": 10,
+    "label": "CHECK-zero",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--check",
+      "/workspace/p1528-gate0/source/P-zero.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002805.5909398,
+    "exit": 0,
+    "seconds": 0.013495971001248108
+  },
+  {
+    "id": 11,
+    "label": "CHECK-nonzero",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--check",
+      "/workspace/p1528-gate0/source/P-nonzero.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002805.707002,
+    "exit": 0,
+    "seconds": 0.009527009999146685
+  },
+  {
+    "id": 12,
+    "label": "build-public-probe",
+    "argv": [
+      "gcc",
+      "-std=c17",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-O0",
+      "-I/workspace/NewLang_P1528_gate0/include",
+      "/workspace/p1528-gate0/public_owned.c",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_semantic.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_parser.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_lexer.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_checked.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_syntax.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_source.a",
+      "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_diagnostic.a",
+      "-o",
+      "/workspace/p1528-gate0/public_owned"
+    ],
+    "build": true,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002831.931438,
+    "exit": 0,
+    "seconds": 0.15756602399778785
+  },
+  {
+    "id": 13,
+    "label": "owned-zero",
+    "argv": [
+      "/workspace/p1528-gate0/public_owned",
+      "/workspace/p1528-gate0/source/P-zero.nl",
+      "0"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002832.1399574,
+    "exit": 0,
+    "seconds": 0.020788302001164993
+  },
+  {
+    "id": 14,
+    "label": "owned-nonzero",
+    "argv": [
+      "/workspace/p1528-gate0/public_owned",
+      "/workspace/p1528-gate0/source/P-nonzero.nl",
+      "42"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002855.068451,
+    "exit": 0,
+    "seconds": 0.02548580800066702
+  },
+  {
+    "id": 15,
+    "label": "C17-zero-FIRST",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1528-gate0/zero.c",
+      "/workspace/p1528-gate0/source/P-zero.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002861.068408,
+    "exit": 4,
+    "seconds": 0.007287633998203091
+  },
+  {
+    "id": 16,
+    "label": "C17-nonzero-FIRST",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--emit-c17-to",
+      "/workspace/p1528-gate0/nonzero.c",
+      "/workspace/p1528-gate0/source/P-nonzero.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002868.2737043,
+    "exit": 4,
+    "seconds": 0.011725168998964364
+  },
+  {
+    "id": 17,
+    "label": "negative-foreign-domain-FIRST",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--check",
+      "/workspace/p1528-gate0/source/N-foreign-domain.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002868.6435137,
+    "exit": 3,
+    "seconds": 0.0036846520015387796
+  },
+  {
+    "id": 18,
+    "label": "negative-live-read-at-end-FIRST",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--check",
+      "/workspace/p1528-gate0/source/N-live-read-at-end.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002874.586493,
+    "exit": 3,
+    "seconds": 0.002221974002168281
+  },
+  {
+    "id": 19,
+    "label": "negative-post-end-read-FIRST",
+    "argv": [
+      "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "--check",
+      "/workspace/p1528-gate0/source/N-post-end-read.nl"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002874.9320042,
+    "exit": 3,
+    "seconds": 0.003138579002552433
+  },
+  {
+    "id": 20,
+    "label": "read-only-consumer-reuse-analysis",
+    "argv": [
+      "bash",
+      "-c",
+      "rg -n \"owner_read|active_owner_body|direct_payload_reads\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"3260,3308p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"3308,3338p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"88,142p\" /workspace/NewLang_P1528_gate0/src/checked_c_allocated_current_internal.h"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002929.9375086,
+    "exit": 0,
+    "seconds": 0.0246946500010381
+  },
+  {
+    "id": 21,
+    "label": "read-only-read-routing-constraints",
+    "argv": [
+      "bash",
+      "-c",
+      "rg -n \"terminal_role_lane|direct_payload_reads|receiver_tail_reads\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nrg -n \"terminal_role_lane|active_owner_body|receiver_tail_reads|direct_h\" /workspace/NewLang_P1528_gate0/src/checked_c_readonly_internal.h /workspace/NewLang_P1528_gate0/src/readonly_u8_consumer_internal.c"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002950.4678037,
+    "exit": 2,
+    "seconds": 0.018851290999009507
+  },
+  {
+    "id": 22,
+    "label": "read-only-routing-corrected-path",
+    "argv": [
+      "bash",
+      "-c",
+      "sed -n \"595,602p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"645,682p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"2390,2425p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c\nsed -n \"2450,2485p\" /workspace/NewLang_P1528_gate0/src/checked_c_node.c"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795002958.545243,
+    "exit": 0,
+    "seconds": 0.02998674599803053
+  },
+  {
+    "id": 23,
+    "label": "freeze-actual-results-and-identity",
+    "argv": [
+      "python3",
+      "/workspace/p1528-gate0/finish_packet.py"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795003124.4854894,
+    "exit": 0,
+    "seconds": 0.8062676000008651
+  },
+  {
+    "id": 24,
+    "label": "fixed-refs-before-custody",
+    "argv": [
+      "git",
+      "-C",
+      "/workspace/NewLang_P1528_gate0",
+      "ls-remote",
+      "--heads",
+      "https://github.com/wakairo/NewLang_Compiler.git",
+      "refs/heads/main",
+      "refs/heads/p1525-terminal-receiver-c1184"
+    ],
+    "build": false,
+    "native_compile": false,
+    "native": false,
+    "status": "FINISHED",
+    "time": 1795003237.396874,
+    "exit": 0,
+    "seconds": 0.512584689000505
+  }
+]
