@@ -1,0 +1,1480 @@
+{
+  "authority": {
+    "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000609762",
+    "body": "Track: Coordination → same sole external P Codex actor\n\n## C1236 — fixed-tree public integration RELEASED; resume now\n\nC1230 GCC_VERIFIED is accepted at [7000503478](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000503478). The preceding compiler increment is now actually adopted. This supersedes only the prior publication HOLD/STOP boundary: resume this new bounded publication phase, without rerunning completed local verification.\n\n### Fixed authority and subject\n\n- Actual adopted main **1a32f87f1007db8e8c11dc375a6b7416a35adbc7**, ordered parents[b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1,b1a6f1725abe25981ad29088175de581f956f919], tree **1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9**; Draft17.38 unchanged.\n- Original local **58245a24e047280304443258b2cfc8a540c9202a**, tree **a7e0561c7b57e03330b1d1d91c90300dd093f938**, parentb1a6 remains immutable.\n- Exact production blob **e18c444ffc667be9022819c9b6151cf10b82d34b**; root CMake **baa36d087955f745fb26874db2e48fcfe6252b7b**. Preserve all15 changed paths/bytes, tests/registration/source/oracle.\n- New parent main CI is genuinely running: FULL44464917022/PARTIAL44464917274. Its completion may overlap this phase; no PASS is presumed. C will relay any material STOP. P need not inspect other actors' packets or aggregate expected outputs.\n\nRead this/latest own comments and current authority; POST/GET **ACTUAL RESUME**. Verify current main exactly as above. Use a separate publication worktree/new ordinary branch **p1535-root-read-integration-c1236**. By a Git method of P's choice, create **one fresh commit whose sole parent is main1a32f87 and whose tree is exactlya7e0561**. This is new commit provenance over identical reviewed source, not a rewrite of582 or old refs. Record the complete new HEAD/tree/parent and the local-to-public equality, then one normal push and one **DRAFT PR to main**. No empty-base preliminary ref push.\n\n### Finite publication budget / genuine CI\n\n- **1 new public HEAD,1 ordinary branch/normal push,1 DRAFT PR.**\n- Natural PR CI only: **FULL5 + PARTIAL1 + EARLY2 =3 runs/8 jobs**, attempt1.\n- Manual retry/dispatch/cancellation/additional HEAD/source amendment0.\n- New local compiler/probe builds, native, host-fault, full CTest, SDK/toolchain acquisition0. Administrative Git/hash/metadata/log reads are separate.\n- Prior C1223/C1230 counters remain149 selected/3 frontend/3 probe,21 native/3sites10host; no reset/reuse.\n\nRead original final logs and exact real checkout/parents/tree, required6 actual execution, and all8 conclusions. Frozen registration adds10 P1535 CTests (3 owned,5 source negatives,1 authentication,1 native.integration). Predicted FULL1191/PARTIAL1190/EARLY84 are static expectations, not measured PASS; EARLY does not execute the new10. Verify real new-test/native execution in Required lanes and PARTIAL's actual CLI exit/streams. No skip/NOT_RUN/retry reclassification. Preserve any RED and let already-started natural jobs finish; do not repair this fixed subject silently.\n\n### Scope / custody / completion\n\nPR declaration must match the finite **one-binding same-D discarded-root reference → ordinary scope closure → original unit terminal teardown** family. Preserve named four-step/zero-prefix controls; do not claim universal preservation of all source-valid four-step bodies or extra vacuous/nonselected ordinary scopes. No callee payload projection/use/u8 return, general owner or new source/API/issuer. Existing source-law validity and conservative backend refusal remain distinct.\n\nKeep582, all FIRST/RED/source/oracle/raw, prior Evidence94fb7376... and5acde0a... immutable, and active source/build/SDK. Save only new publication/CI metadata and original logs; no need to copy the old351-file packet again. If using new Evidence, one normal ref/push **archive/p1535-c1236-publication-20261119**, ≤128files/8MiB, is allowed. Full fresh empty HTTPS member/path/size/SHA/mode/blob verification is required before deleting only its new redundant custody copies. No force/ref deletion.\n\nReturn exact public HEAD/parent/tree correspondence, actual all8 CI outcomes, scope/NOT_RUN and custody via FINAL POST/GET, then STOP C. P has no READY/merge permission. A moved main, different tree/bytes, safety defect, CI RED/skip or required extra execution/source edit → preserve concrete evidence and STOP C for the affected step.\n\n### Discretion and value\n\nC1223 delegated private implementation/repair strategy; P preserved first failures and delivered the narrow consumer. C1230 delegated fixed-code GCC verification and P completed32/32 without amendment. **This phase delegates Git integration method and metadata/log-collection order**, while source/test/oracle are fixed to preserve completed review. C will perform the public identity/review bridge; no repeated code-first round is requested for identical bytes.\n\nProductGO624 PAUSED/H1 HOLD/comparative UB audit locality UNMEASURED. This closes selected compiler coverage, not ordinary-safe library value.\n\n## Copyable P Codex resume prompt\n\n```text\nP1535 / C1236 公開統合を同じP環境で再開。Issue1535のC1236全文・最新コメントをGETしACTUAL RESUME。\n実main1a32f87f1007db8e8c11dc375a6b7416a35adbc7/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9、Draft17.38。\n固定local58245a24e047280304443258b2cfc8a540c9202aの全15paths/bytesを維持。\n別worktreeで親=上記main、tree=a7e0561c7b57e03330b1d1d91c90300dd093f938の新commitを1個作る。\n新branch p1535-root-read-integration-c1236へ1push、main宛DRAFT PR1件。\n新HEAD1、自然FULL5+PARTIAL+EARLY2の1組のみ。retry/dispatch/追加HEAD0。\n追加local build/native/hostfault/fullCTest/SDK0。完了済みGCC確認は繰り返さない。\nRequired6の実checkout・新10検査/native/CLIと全8結末を確認。元FIRST/RED/582/旧Evidence保持、R/F原資料を読まない。\n不一致/RED/修正や追加実行が必要なら原証拠を残してSTOP C。READY/mergeはC。\nFINALをPOST/GETしてSTOP。親main CIは並走可、C1236詳細を優先。\n```\n",
+    "user": {
+      "login": "wakairo",
+      "name": "wakairo",
+      "email": null,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+      "id": 6393110
+    },
+    "id": 7000609762,
+    "pull_request_review_id": null,
+    "in_reply_to_id": null,
+    "created_at": null,
+    "updated_at": null,
+    "review": null,
+    "side": null,
+    "line": null,
+    "start_line": null,
+    "path": null,
+    "body_html": "<p dir=\"auto\">Track: Coordination → same sole external P Codex actor</p>\n<h2 dir=\"auto\">C1236 — fixed-tree public integration RELEASED; resume now</h2>\n<p dir=\"auto\">C1230 GCC_VERIFIED is accepted at <a href=\"https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000503478\" data-hovercard-type=\"issue\" data-hovercard-url=\"/wakairo/NewLang_Compiler/issues/1535/hovercard\">7000503478</a>. The preceding compiler increment is now actually adopted. This supersedes only the prior publication HOLD/STOP boundary: resume this new bounded publication phase, without rerunning completed local verification.</p>\n<h3 dir=\"auto\">Fixed authority and subject</h3>\n<ul dir=\"auto\">\n<li>Actual adopted main <strong><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/wakairo/NewLang_Compiler/commit/1a32f87f1007db8e8c11dc375a6b7416a35adbc7/hovercard\" href=\"https://github.com/wakairo/NewLang_Compiler/commit/1a32f87f1007db8e8c11dc375a6b7416a35adbc7\"><tt>1a32f87</tt></a></strong>, ordered parents[<a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/wakairo/NewLang_Compiler/commit/b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1/hovercard\" href=\"https://github.com/wakairo/NewLang_Compiler/commit/b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1\"><tt>b2f22d3</tt></a>,b1a6f1725abe25981ad29088175de581f956f919], tree <strong>1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9</strong>; Draft17.38 unchanged.</li>\n<li>Original local <strong>58245a24e047280304443258b2cfc8a540c9202a</strong>, tree <strong>a7e0561c7b57e03330b1d1d91c90300dd093f938</strong>, parentb1a6 remains immutable.</li>\n<li>Exact production blob <strong>e18c444ffc667be9022819c9b6151cf10b82d34b</strong>; root CMake <strong>baa36d087955f745fb26874db2e48fcfe6252b7b</strong>. Preserve all15 changed paths/bytes, tests/registration/source/oracle.</li>\n<li>New parent main CI is genuinely running: FULL44464917022/PARTIAL44464917274. Its completion may overlap this phase; no PASS is presumed. C will relay any material STOP. P need not inspect other actors' packets or aggregate expected outputs.</li>\n</ul>\n<p dir=\"auto\">Read this/latest own comments and current authority; POST/GET <strong>ACTUAL RESUME</strong>. Verify current main exactly as above. Use a separate publication worktree/new ordinary branch <strong>p1535-root-read-integration-c1236</strong>. By a Git method of P's choice, create <strong>one fresh commit whose sole parent is main1a32f87 and whose tree is exactlya7e0561</strong>. This is new commit provenance over identical reviewed source, not a rewrite of582 or old refs. Record the complete new HEAD/tree/parent and the local-to-public equality, then one normal push and one <strong>DRAFT PR to main</strong>. No empty-base preliminary ref push.</p>\n<h3 dir=\"auto\">Finite publication budget / genuine CI</h3>\n<ul dir=\"auto\">\n<li><strong>1 new public HEAD,1 ordinary branch/normal push,1 DRAFT PR.</strong></li>\n<li>Natural PR CI only: <strong>FULL5 + PARTIAL1 + EARLY2 =3 runs/8 jobs</strong>, attempt1.</li>\n<li>Manual retry/dispatch/cancellation/additional HEAD/source amendment0.</li>\n<li>New local compiler/probe builds, native, host-fault, full CTest, SDK/toolchain acquisition0. Administrative Git/hash/metadata/log reads are separate.</li>\n<li>Prior C1223/C1230 counters remain149 selected/3 frontend/3 probe,21 native/3sites10host; no reset/reuse.</li>\n</ul>\n<p dir=\"auto\">Read original final logs and exact real checkout/parents/tree, required6 actual execution, and all8 conclusions. Frozen registration adds10 P1535 CTests (3 owned,5 source negatives,1 authentication,1 native.integration). Predicted FULL1191/PARTIAL1190/EARLY84 are static expectations, not measured PASS; EARLY does not execute the new10. Verify real new-test/native execution in Required lanes and PARTIAL's actual CLI exit/streams. No skip/NOT_RUN/retry reclassification. Preserve any RED and let already-started natural jobs finish; do not repair this fixed subject silently.</p>\n<h3 dir=\"auto\">Scope / custody / completion</h3>\n<p dir=\"auto\">PR declaration must match the finite <strong>one-binding same-D discarded-root reference → ordinary scope closure → original unit terminal teardown</strong> family. Preserve named four-step/zero-prefix controls; do not claim universal preservation of all source-valid four-step bodies or extra vacuous/nonselected ordinary scopes. No callee payload projection/use/u8 return, general owner or new source/API/issuer. Existing source-law validity and conservative backend refusal remain distinct.</p>\n<p dir=\"auto\">Keep582, all FIRST/RED/source/oracle/raw, prior Evidence94fb7376... and5acde0a... immutable, and active source/build/SDK. Save only new publication/CI metadata and original logs; no need to copy the old351-file packet again. If using new Evidence, one normal ref/push <strong>archive/p1535-c1236-publication-20261119</strong>, ≤128files/8MiB, is allowed. Full fresh empty HTTPS member/path/size/SHA/mode/blob verification is required before deleting only its new redundant custody copies. No force/ref deletion.</p>\n<p dir=\"auto\">Return exact public HEAD/parent/tree correspondence, actual all8 CI outcomes, scope/NOT_RUN and custody via FINAL POST/GET, then STOP C. P has no READY/merge permission. A moved main, different tree/bytes, safety defect, CI RED/skip or required extra execution/source edit → preserve concrete evidence and STOP C for the affected step.</p>\n<h3 dir=\"auto\">Discretion and value</h3>\n<p dir=\"auto\">C1223 delegated private implementation/repair strategy; P preserved first failures and delivered the narrow consumer. C1230 delegated fixed-code GCC verification and P completed32/32 without amendment. <strong>This phase delegates Git integration method and metadata/log-collection order</strong>, while source/test/oracle are fixed to preserve completed review. C will perform the public identity/review bridge; no repeated code-first round is requested for identical bytes.</p>\n<p dir=\"auto\">ProductGO624 PAUSED/H1 HOLD/comparative UB audit locality UNMEASURED. This closes selected compiler coverage, not ordinary-safe library value.</p>\n<h2 dir=\"auto\">Copyable P Codex resume prompt</h2>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"P1535 / C1236 公開統合を同じP環境で再開。Issue1535のC1236全文・最新コメントをGETしACTUAL RESUME。\n実main1a32f87f1007db8e8c11dc375a6b7416a35adbc7/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9、Draft17.38。\n固定local58245a24e047280304443258b2cfc8a540c9202aの全15paths/bytesを維持。\n別worktreeで親=上記main、tree=a7e0561c7b57e03330b1d1d91c90300dd093f938の新commitを1個作る。\n新branch p1535-root-read-integration-c1236へ1push、main宛DRAFT PR1件。\n新HEAD1、自然FULL5+PARTIAL+EARLY2の1組のみ。retry/dispatch/追加HEAD0。\n追加local build/native/hostfault/fullCTest/SDK0。完了済みGCC確認は繰り返さない。\nRequired6の実checkout・新10検査/native/CLIと全8結末を確認。元FIRST/RED/582/旧Evidence保持、R/F原資料を読まない。\n不一致/RED/修正や追加実行が必要なら原証拠を残してSTOP C。READY/mergeはC。\nFINALをPOST/GETしてSTOP。親main CIは並走可、C1236詳細を優先。\"><pre lang=\"text\" class=\"notranslate\"><code class=\"notranslate\">P1535 / C1236 公開統合を同じP環境で再開。Issue1535のC1236全文・最新コメントをGETしACTUAL RESUME。\n実main1a32f87f1007db8e8c11dc375a6b7416a35adbc7/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9、Draft17.38。\n固定local58245a24e047280304443258b2cfc8a540c9202aの全15paths/bytesを維持。\n別worktreeで親=上記main、tree=a7e0561c7b57e03330b1d1d91c90300dd093f938の新commitを1個作る。\n新branch p1535-root-read-integration-c1236へ1push、main宛DRAFT PR1件。\n新HEAD1、自然FULL5+PARTIAL+EARLY2の1組のみ。retry/dispatch/追加HEAD0。\n追加local build/native/hostfault/fullCTest/SDK0。完了済みGCC確認は繰り返さない。\nRequired6の実checkout・新10検査/native/CLIと全8結末を確認。元FIRST/RED/582/旧Evidence保持、R/F原資料を読まない。\n不一致/RED/修正や追加実行が必要なら原証拠を残してSTOP C。READY/mergeはC。\nFINALをPOST/GETしてSTOP。親main CIは並走可、C1236詳細を優先。\n</code></pre></div>"
+  },
+  "comments": [
+    {
+      "id": 6999337891,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999337891",
+      "body": "P1535 / C1223 ACTUAL START — same sole Track P / LOCAL ONLY\n\nIssue1535全文/latest comments GET, duplicate latest-comment GET no other actor; Compass→actual Value§§1.1/1.3→Process§§4.1.2/4.3.2→CURRENT_SPEC Draft17.38 confirmed. Live adopted mainb2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1 remains fixed; local baseb1a6f1725abe25981ad29088175de581f956f919/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9 present/clean, PR1532 public ref stillb1a6. P1531 FINAL6999167892/STOP and all prior P1525/P1528/P1529 FIRST/RED/custody/consumed budgets retained.\n\nSame P context/environment; own P1528 source/probe/FIRST/RED and own existing machinery only. Independent R/F source/oracle/runner/raw/reports/PRs unread. Will create separate isolated local worktree/branch from exactb1a6; no Compiler remote/ref/PR/CI/READY/merge, no mutation of publication worktree. If C relays material current-candidate correction, checkpoint this local work and stop its execution for adoption priority.\n\nSelected §18.1a optional same-D scoped root reference obtained/discarded, closes before exclusive EndRoot, followed by existing four teardown steps/unit. No callee payload projection/use/u8 return, new source/issuer/API/ABI/owner/profile or alternative proof engine. Will preserve P1528 measurements on7de as historical, register own inherited source/oracle/probe bytes+expected b1a6 baseline before execution, then trace authentic definition/actual/world/read validation and emission for a coherent private reuse. Existing four-step, direct-only prefix and zero-prefix LiveTail controls maintained.\n\nNew counters0/128selected,0/24guest,0/2frontendbuild,0/2publicprobebuild,host0/4sites0/12cases if materially needed,SDK0. Honest nested CLI/CC/probe counts, no full historical CTest sweep. At about75% relevant budget checkpoint and closure priority. Local work only, one new normal Git Evidence ref/push≤512files/16MiB and fresh-empty HTTPS full restoration before redundant temporary cleanup; originals/active SDK/worktrees retained.\n\nTechnical capability and VALUE-ALIGNMENT-RISK reported separately: obtaining/discarding a root ref does not establish useful callee payload/API/all safe-reachable states or audit/re-audit closure improvement over factored C. Existing four-step path already performs caller payload→teardown→same T continuation; postponing optional coverage is an immediate alternative. Comparative value UNMEASURED, fair sound Rust safe facade, ProductGO624 PAUSED/H1 HOLD. LOCAL_READY/bounded declared capability or concrete NO_NARROW_REUSE FINAL POST/GET then STOP C."
+    },
+    {
+      "id": 6999520101,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999520101",
+      "body": "P1535 / C1223 own SOURCE/ORACLE FIRST — before all new compiler/probe/native executions\n\nFixed base b1a6f1725abe25981ad29088175de581f956f919/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9; isolated local p1535-scoped-root-read-local worktree, PR1532 untouched. P1528 old FIRST/RED remain immutable on7de; this baseline is distinct.\n\nFull source files fixed locally, exact bytes/SHA256:\n- inherited P-zero.nl 3126 /449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94\n- inherited P-nonzero.nl 3127 /d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031\n- own P-composed.nl 3154 /eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4: own P1529 D source adds the same optional callee loan_read(d){rootref binding;unit}, unit receiver; startup83→0, sibling27, direct current/sibling prefix reads, first-H payload old Copy83, second37.\nAll have caller payload read, receiver physically closes second H then caller first, named Copy back to original T and retained old/current/sibling. Zero is actualu8(0).\n\nFull positive/negative/apparatus manifest17members2575B SHA75438a30e2a245030ea52bd62c73a8ea4a7ae35fe787d655668ac39720810525; oracle2611B SHA6117bb008fb37056516e77aa5c1a37252d69cc66074449e514a64c700eb02a45. New public probe20917B SHA36971b383c61a5f0591f8c321b47dd563b10e9c5d259ab366ee6563fb4e3f252 derives own P1528 actual source-issued probe, initial/sibling values made parameters only. Passive observer15019B SHAb7f68906c2807a16997de38d5d40345771c92d15c909318396ced0dbc58adaaa derives own P1517 observer, adds root-only receiver read/closed-scope checks and configurable T/first-H values, prohibits callee payload field use. Full original snapshots kept. No F/R materials read.\n\nPrediction on unmodified b1: CHECK0→authentic MACHINE/public-owned five ordered steps (original root/inc/R/A/D/fullrange, donor/formal/input result, optional loan closed before EndRoot)→C17 CLI4 no artifact and API UNSUPPORTED/NULL/unchanged length/snapshot/anchor. Initial blocker expected direct owner topology count4 and producer-only optional read admission; exact first executed guard not instrumented. Native remains NOT_RUN until C17 reached.\n\nLocal repair plan reuses existing unit_observation structure plus full general REF_FROM_PTR world/type/provenance/range/scope checks, authenticates exact active direct owner body, emits existing root/scope-end hooks. No changed issuer/source/API/ABI/owner/producer/LiveTail identities. Preserve4step zero/nonzero and zero-prefix LiveTail controls; legal new LiveTail prefixes remain refused. Negatives wrong Domain/Allocation/pointer, live loan at EndRoot and post-EndRoot read; genuine artifact tampering fail closed/rollback/pristine retry.\n\nFinite intended matrix21guest (3 reserve): GCC O2 zero/42 H0/1/2; pinnedClang ASan O2 zero/42 H0/1/2; pinnedClang UBSan O2 composed H0/1/2; GCC O2 unchanged4stepzero H0/1/2; pinnedClang O2 composed H0/1/2. O0 NOT_RUN. Frontend≤2/probe≤2; host only material main/callee staging, actual-root clone/trailing Copy clone≤4sites12cases with retained apparatus;128selected/24guest. SDK0, no broad CTest/Compiler remote/CI. Every selected subprocess metered, original/apparatus RED preserved. At~75% checkpoint/closure.\n\nTechnical coverage is separate from VALUE-ALIGNMENT-RISK: discarded root reference does not demonstrate useful callee payload/API/all safe-reachable states or reduced author+caller UB audit closure. Existing4step already supports caller payload→teardown→sameT; postpone optional is valid alternative. Final bounded LOCAL_READY or concrete NO_NARROW_REUSE, one Evidence push≤512files16MiB+fresh HTTPS full restore, POST/GET then STOP C."
+    },
+    {
+      "id": 6999575159,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999575159",
+      "body": "P1535 FIRST apparatus r2 / baseline RED retained\nBaseline selected1–16: all3 CHECK0/genuine MACHINE/public-owned5step success; CLI4 no artifact and API UNSUPPORTED NULL/length98765/anchor+snapshot unchanged for all3. Four-step zero/nonzero and old zero-prefix LiveTail emitted baselines saved separately; old P1528 immutable.\n\nStatic observer preflight found accidental leading '+' macro continuation characters before any native compilation. FIRST apparatus bytes retained; removed those literal characters and applied pinned formatter (selected17), no prediction/source/oracle change. Final candidate/apparatus snapshot and manifest fixed before new build:\ncandidate-FIRST-manifest2397B SHAcdc82eb526b54a08d8a67e868bb4a9310d413decfd8288e007eb2ffee999dc27;\npassive.h15075B SHAc9d6fec01c4ea376b6b62e8292ee498200eee6477836cac5f9a2b968e7626806;\npublic_owned.c20953B SHA2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906 (format-only after probe1 build);\nnative.py2711B SHAe223000455532744fbf486a662fac7cba68c528aa7954927957c024b226e5dce, callback meters each nested CC/guest invocation.\nNo frontend build or native yet; public-probe1/2,selected17/128. Scope/own source/native21+reserve3 unchanged. No new authority or independent material."
+    },
+    {
+      "id": 6999618460,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999618460",
+      "body": "P1535 local candidate FIRST RED / autonomous narrow repair\nSelected23: candidate-FIRST still CLI4 (no output), saved raw/source. No native attempted. Static route trace found the new direct active-body helper mistakenly required unrelated copy_after_match; direct conditional plan uses copy_conditional_match. Removed only that unrelated emission selector predicate; exact direct call/body identity plus mandatory owner_evidence/full generic reference validation remain. Candidate-r2 source203646B SHA6338c7f930cb8b5e8ecd8dce791eb505f42c7ec931477e11d300e5215b4b606f saved before second/final frontend build. This is a failed private candidate and scope-safe repair, not new authority.\n\nObserver r3 before first native compile: replace unsigned prefix_reads<0 warning-prone expression with != finite expected count. Same oracle, r2 preserved;15076B SHA63e69286a179ff4c63b3a28f235ba60fb7ba685cafb667b9957528e8f160253b. No guest or host injection yet.\nCounters23/128selected,0/24native,1/2frontend,2/2public-probe. Remaining frontend build uses already-authenticated pinnedClang23.1.3+ASan; SDK0 and Compiler remote/PR/CI0 unchanged."
+    },
+    {
+      "id": 6999637364,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999637364",
+      "body": "P1535 build/probe checkpoint — 2/2 frontend, 2/2 public probe, selected49/128; guest0/24, host0, SDK0\nCandidate-r2 reached CHECK→genuine MACHINE/public-owned→C17 for inheritedzero/42 and owncomposed37. Final CLI/API bytes agree (11687/11688/11925B). Four-stepzero/nonzero and oldzero-prefixLiveTail remain CHECK/owned/C17/API successful with exact b1 baseline C bytes (11332/11333/16402B). Original first candidate CLI4 RED selected23 retained. No additional frontend/probe builds planned or permitted within current cap.\n\nFinal repaired consumer built with pinnedClang23.1.3+ASan; GCC frontend first candidate is explicitly RED, not called final validation. GCC/Clang strict generated-C guests follow only now that backend succeeded. Public issuer source is unchanged; probe2 uses final-format public-only source linked to same authentic GCC-built semantic libraries, not private authority.\n\nNext bounded negatives/authentication, material host faults main/callee text plus trailingCopy replay only (3sites, intended10cases incl named fault+retry; no redundant actual-check issuer fault), then declared21guest matrix. No new source/API/ABI/owner/producer capability. Compiler remote/PR/CI0, publication PR1532 stays frozen."
+    },
+    {
+      "id": 6999654784,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999654784",
+      "body": "P1535 ~75%/closure checkpoint — selected102/128, guest18/24, frontend2/2,probe2/2,host3sites10/12cases,SDK0\nAll declared source negatives CHECK3 with expected Domain/backing/order/relation codes, snapshot+anchor rollback; genuine owned tampering35+foreign-origin cases and composedprefix4cases refused with NULL/length98765 plus pristine retry. Held legal non-direct prefix CHECK/MACHINE preserved, C17CLI4/no-clobber/API refusal. No issuer/source/category expansion.\n\nHost ASan material sites3main staging/4callee staging/5trailingCopy replay: each OOM+pristine retry; named main/callee faults each no-clobber/no temp residue plus exact-byte clean retry. Total3sites10cases, no more host injections planned.\n\nStrict O2 guests18 passed: GCCzero/42×H0/H1/H2, pinnedClangASanzero/42×H0/H1/H2, pinnedClangUBSancomposed37×H0/H1/H2, unchanged4stepzeroGCC×H0/H1/H2. Physical free order second/callee thenfirst/caller, optional root loan closed before EndRoot, actual0, originalT old/current/sibling and no H0/H1 receiver/secondCopy all observed. No sanitizer diagnostics.\n\nClosure plan: remaining pinnedClang normal composed H0/H1/H2=3guest (21total), formatting/static review and exact local commit/patch custody; no new frontend/probe builds or broad CTest/CI. Original REDs retained. Compiler remote/public refs untouched. Technical outcome remains bounded; discarded-root support does not measure UB audit locality or practical callee payload/API completion."
+    },
+    {
+      "id": 6999766084,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999766084",
+      "body": "P1535 / C1223 PREP LOCAL_READY — bounded technical result; custody push/restore pending\n\nLocal-only HEAD58245a24e047280304443258b2cfc8a540c9202a, treea7e0561c7b57e03330b1d1d91c90300dd093f938, sole parentb1a6f1725abe25981ad29088175de581f956f919/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9; branchp1535-scoped-root-read-local, clean.15paths+1549/-6: private consumer57-line diff plus focused own tests/CMake. No semantic/public issuer/source law/API/ABI/owner/toolchain/workflow change, no producer/LiveTail relabelling. Adoptedmainb2f and PR1532 publicb1 still exact/unmoved.\n\nThree own declared sources (inherited P1528zero/42 byte-identical, owncomposed37 with oldCopy83/directprefixcurrent0/sibling27) now CHECK→genuine MACHINE/public-owned5steps→C17/API agreement→native. Exact direct activecall/body gate reuses existing unit_observation structure, full root/ref/Domain/original-range validation and scope-end emission; one discarded root ref then original4teardown/unit only. No callee payload projection/use/u8 return. Actual/formal/donor/full original R/A/D/root/inc mandatory unchanged.\n\nFinal C outputs zero11687B SHAe409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4;4211688B SHAd91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e; composed11925B SHA9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a. CLI/API exact.4stepzero/42 and oldzero-prefixLiveTail exact baseline C bytes retained.\n\n21 O2 guests all PASS: GCCzero/42=6, pinnedClangASanzero/42=6, pinnedClangUBSancomposed=3, GCC4stepzero=3, pinnedClangnormalcomposed=3. Each has H0/H1/H2; physical second-H callee EndRoot/finalize/free before first-H caller free, root-read scope closed first, actualu8(0), originalT old/current/sibling, H0/H1 no receiver/secondCopy. No sanitizer diagnostics. Observer-free generated C also strict GCC/Clang C17 syntax PASS.\n\nFive authority/loan source negatives CHECK3+snapshot/anchor rollback;35artifact mutations+foreign-origin and4composedprefix mutations fail closed/pristine retry. Held legal LiveTailprefix remains CHECK/MACHINE then CLI4/API refusal with no-clobber. HostASan3material sites(main/callee staging,trailingCopy replay)10cases fault/retry including named unchanged-output/no-temp-residue. OriginalP1528 FIRST/RED/raw, new b1 baseline refusals, privatecandidate selected23CLI4 and formatter selected101RED preserved. Observer static '+' typo FIRST preserved/repaired before compile. Final formatting passes; exact longest-punctuator C token identity before/after recorded, no extra rebuild.\n\nFinal new counters117/128selected,21/24guest,2/2frontend,2/2probe,3/4hostsites10/12cases,SDK0,Compiler remote/PR/CI0. NOT_RUN:O0/fullCTest/LLVM backend/newCI/final repaired GCC frontend build; final repaired frontend is pinnedClang23.1.3ASan, first GCC private candidate stayed RED. No tests hidden as PASS. No more compiler/native executions planned.\n\nOne eligible normalGit Evidence ref archive/p1535-c1223-scoped-root-read-20261119, local archive commit94fb7376d4cb7803d7b97672e91f3edc2d23e5c2/tree992732170f08ddb9fc26748e27979160486c7e3d,351files1661256B (<512/16MiB), largest203669B. Manifest SHA0a96b1b77fce63b9ad414c7100e39f457622982b34f78ff5ce4cddadb2324eb9. New ref absent; same authenticatedwakairo normalGit path, Evidencepush permissionGETconfirmed. Full local paths/sizes/SHA/modes/Git blob bytes ALL_MATCH. Next one normalpush, freshempty HTTPS full member restoration and fixed-public-parent patch/tree/originalcommit verification, POST/GET receipt before deleting only redundant owned temporary clones. Active worktree/HEAD/raw/baseline tools/SDK/old custody remain.\n\nVALUE-ALIGNMENT-RISK (separate): this is optional discarded-root backend coverage. Four-step already performs caller payload→teardown→sameT. Useful callee payload/API/all safe-reachable states and author+ordinary-safe-caller UB audit/re-audit closure reduction versus factored C remain UNMEASURED. Postponing optional/keeping4step-only and fair sound Rust facade alternatives retained. ProductGO624 PAUSED/H1 HOLD. Independent F/R materials unread. After complete custody FINAL POST/GET then STOP C; no publication/adoption claim."
+    },
+    {
+      "id": 6999813276,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999813276",
+      "body": "P1535 C1223 CUSTODY RESTORE PASS / cleanup receipt before deletion\n\nOne normalGit push used1/1 to [NewLang_Evidence archive/p1535-c1223-scoped-root-read-20261119](https://github.com/wakairo/NewLang_Evidence/tree/archive/p1535-c1223-scoped-root-read-20261119).\nRemote ref GET exact94fb7376d4cb7803d7b97672e91f3edc2d23e5c2; actual fresh HTTPS clone HEAD94fb7376d4cb7803d7b97672e91f3edc2d23e5c2/tree992732170f08ddb9fc26748e27979160486c7e3d.351files1661256B, payload350+manifest; largest203669B. Manifest SHA2560a96b1b77fce63b9ad414c7100e39f457622982b34f78ff5ce4cddadb2324eb9. Full actual member set (including untracked/extra check), every size/SHA256/mode and Git blob bytes ALL_MATCH, no symlink/special file, no alternates/local/shared/cache clone. HTTPS clone0.723s, one push2.065s. No SDK/ELF/build tree/F/R originals.\n\nA second empty owned repo fetched exact public Compiler parentb1a6f1725abe25981ad29088175de581f956f919 via HTTPS (7.236s), verified original parenttree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9 and raw parent commit bytes. Applied restored format-patch SHA25628459f0618f6a842843b2ca7b687d38a77682493217896f67d294a15efa72bcf to its index. write-tree EXACTa7e0561c7b57e03330b1d1d91c90300dd093f938; restored raw original local commit hashes EXACT58245a24e047280304443258b2cfc8a540c9202a with thattree. No compiler/native rerun claimed; this restores bytes/tree, not new technical execution.\n\nLive Compiler mainb2f and frozen PR1532 publicrefb1 re-GET unchanged; activeP localhead58245a2 clean. No C correction relayed in latest1535 GET. P1528 own original FIRST/RED/raw separately copied into cohort, old Evidence untouched. Full implementation and all original/candidate/formatter RED/raw/source/oracle/ledger retained.\n\nAfter this exact receipt POST/GET only these now-redundant standalone P-owned temporary clones will be deleted:\n- /workspace/p1535-custody-stage: logical2108443B /allocated3829760B /679inodes\n- /workspace/p1535-custody-restore: logical1931630B /allocated2674688B /411inodes\n- /workspace/p1535-parent-replay: logical330829550B /allocated350044160B /7996inodes\nAll have own .git/no alternates, no active shared worktree. Total allocated356548608B/9086inodes. df before available60050534400B/freeinodes4063101. Keep /workspace/NewLang_P1535 HEAD58245a2, /workspace/p1535-evidence full raw/build/baseline, every prior P original/worktree/commit and pinned SDK. No remote ref deletion/force/update.\n\nTechnical LOCAL_READY remains117/128selected,21/24guest,2/2frontend,2/2probe,host3sites10/12cases,SDK0,Compiler remote/PR/CI0. Optional discard-root support and all finite controls described in PREP6999766084. Comparative UB audit-locality/value UNMEASURED, ProductGO624 PAUSED/H1 HOLD; no Product/library/API/adoption claim. FINAL after owned temporary cleanup, then STOP C."
+    },
+    {
+      "id": 6999845760,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999845760",
+      "body": "P1535 / C1223 FINAL — LOCAL_READY / bounded declared capability / STOP C\n\nACTUAL START6999337891、own SOURCE/ORACLE FIRST6999520101、scope-safe repair/raw checkpoint6999618460、75% checkpoint6999654784、PREP6999766084、custody receipt6999813276をPOST/GET済み。P1525/P1528/P1529/P1531 COMPLETE/STOP・元FIRST/RED・旧Evidenceは保持。独立F/R source/oracle/runner/raw/report/PRは参照していません。\n\n技術結果:\n固定親b1a6f1725abe25981ad29088175de581f956f919/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9から、別local branch p1535-scoped-root-read-localにHEAD58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938を作成、cleanで保持。15files+1549/-6（private consumer57-line diff、自分のfocused fixtures/probe/observer/docs/CMake）。実mainb2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1 /Draft17.38、PR1532 publicHEADb1a6は最新GETでも未変更。Compiler remote publication/PR/push/CI/READY/merge0、SDK取得0。\n\n真正source-issued owner_evidenceのexact direct call/body内だけで、既存unit_observation・REF_FROM_PTRの型/provenance/元root/inc/R/A/D/full-range/loan検証とscope-end出力を再利用。独立definitionとactual/formal/donor/result、両original、Domain/carrier消費、物理teardown順は引き続き必須。read countはemission記録のみでauthorityを作りません。producer/LiveTailへの付替え、新source law/issuer/API/ABI/owner/proof engineなし。能力は同一D scoped root referenceを取得して捨て、scope終了後に既存4teardownを行うunit terminal receiver。callee payload projection/use/u8 return/general ownerは未追加です。\n\nP1528原zero/42 sourceを同一bytesで継承し、別にowncomposed37（startupCopy83→0、prefixcurrent0/sibling27、first-H初期値=旧Copy83）を固定。3sourceとも:\nCHECK0→真正MACHINE/public-owned5 ordered steps→C17→CLI/API完全bytes一致→限定native到達。\n- zero:11687B /SHA256e409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4\n- nonzero42:11688B /SHAd91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e\n- composed37:11925B /SHA9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a\n\n21 O2 native guest PASS（各H0/H1/H2）:GCCzero/42=6、固定Clang23.1.3ASanzero/42=6、ClangUBSancomposed=3、GCC既存4stepzero=3、Clang通常composed=3。実u8(0)成功、calleeによる第二HのEndRoot/finalize/physical free→caller第一H free→同じ元TへのnamedCopy/current/retainedold/siblingを観測。H0/H1ではreceiver/第二Copyなし。borrowed root scopeはEndRoot前に閉鎖、callee payload hookなし、donor/formal carrier addressも区別。sanitizer診断なし。observer無しの3 C出力もGCC/Clang strictC17 syntax成功。\n\n既存4stepzero/42・zero-prefixLiveTailはCHECK/owned/C17/API成功、C bytesはb1 baselineと完全一致。新prefixはdirect-onlyを維持。合法だが未公開のLiveTailprefix合成はCHECK/MACHINE成功を保持し、C17CLI4/API拒否、named no-clobber。\n\n負例・失敗:\nwrong Domain/Allocation/pointer、live read at EndRoot、post-EndRoot readの5sourceがCHECK3、snapshot/anchor rollback成功。35artifact改変+foreign-originとcomposedprefix4改変はNULL/length98765で拒否・pristine retry成功。ASan hostはmain/callee staging・trailingCopy replayの3sites、計10cases（fault/retryとnamed no-clobber/no temp residue）成功。追加host注入なし。\n旧P1528の7de測定は不変。新b1 baselineCLI4/API拒否（selected4/8/12）、初回private候補CLI4（23）、formatter RED（101）を原rawとともに保存。observer生成時の余分な'+'は静的発見時FIRSTを残してcompile前修正。最終formatter PASS、テスト後の整形はC identifiers/literals/longest punctuatorsを含むtoken列同一を照合し、3回目buildは行っていません。\n\n最終予算117/128selected（106 ledger recordsに2TU/複数TU CCの追加11を含む）、21/24native、2/2frontend、2/2public-probe、host3/4sites・10/12cases。NOT_RUN:O0、残native3、fullCTest、LLVM backend、新CI、修復後GCC frontend再build。最終修復frontendは固定Clang+ASanで、初回GCC private候補を最終PASSと扱っていません。Compiler/probe/guestのraw/expected exit/元REDは全保存。\n\nCustody:\n[Evidence ref archive/p1535-c1223-scoped-root-read-20261119](https://github.com/wakairo/NewLang_Evidence/tree/archive/p1535-c1223-scoped-root-read-20261119)\ncommit94fb7376d4cb7803d7b97672e91f3edc2d23e5c2 /tree992732170f08ddb9fc26748e27979160486c7e3d、通常push1/1。351files/1661256B、manifest SHA2560a96b1b77fce63b9ad414c7100e39f457622982b34f78ff5ce4cddadb2324eb9。\nfresh empty HTTPS cloneで全actual path集合・size・SHA・mode・Git blob bytes一致。別の空repoへ公開固定親b1をHTTPS fetchし、復元patch（SHA25628459f0618f6a842843b2ca7b687d38a77682493217896f67d294a15efa72bcf）適用後write-treeがa7e0561c7b57e03330b1d1d91c90300dd093f938に一致。元parent commit bytes、元local commit hash58245a2も一致。復元時compiler/native再実行0。\nreceipt6999813276のPOST/GET後、指定済みの自分の不要な3一時cloneだけ削除。df available60050534400→60407054336B、freeinodes4063101→4072185。active P worktree/commit、全original raw/FIRST/RED、baseline tools/builds、固定SDKと旧Evidenceを保持。\n\nVALUE-ALIGNMENT-RISK（技術結果と別）:\n今回閉じたのは選択済みv0のoptional discarded-root backend coverageです。既存4stepだけでもcaller payload→teardown→元T継続は可能であり、今回の追加はその操作に必須ではありません。有用なcallee payload/API、全safe-reachable state、十分factorしたCに対するlibrary author＋ordinary-safe callerのUB監査/再監査依存閉包の縮小は実証していません。比較価値UNMEASURED、ProductGO624 PAUSED/H1 HOLD。4step-only継続/optional延期と健全なRust safe facadeも公平な代替です。\n\nこれでLOCAL_READYを提出しSTOP C。新main統合・Compiler公開・独立review・READY/mergeは別のC裁定を待ちます。"
+    },
+    {
+      "id": 7000082606,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000082606",
+      "body": "Track: Coordination → same sole external P Codex actor\n\n## C1230 — LOCAL_READY/custody received; fixed-candidate GCC closure RESUME\n\nC read [LOCAL_READY FINAL6999845760](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999845760) and [restore receipt6999813276](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-6999813276). The completed C1223 implementation stage remains frozen at selected117/128, native21/24, frontend2/2,probe2/2,host3sites10cases,SDK0. Its first REDs and final limits are not reset.\n\nC helper GET-verified Evidence94fb7376d4cb7803d7b97672e91f3edc2d23e5c2/tree992732170f08ddb9fc26748e27979160486c7e3d, complete351files/1,661,256B inventory and manifest paths/sizes/modes, all15 patch newblob IDs, and independently hashed original local/parent commit bytes to their stated IDs. P's full fresh restore/patch replay stays P evidence, not a repeated C execution. Scope is one private production file(+51/-6), one test include and13 own test files. Local source-static review is now separately prepared against these immutable bytes.\n\n### Why this small parallel phase\n\nThe final repaired/formatted candidate was built under pinned Clang+ASan, while the final GCC frontend rebuild is explicitly NOT_RUN; initial GCC candidate RED must not be transferred to the final code. Close that concrete compiler-family/build limitation while current adoption/review work proceeds. This is fixed-code verification, not new implementation or a new blanket testing policy.\n\n### Fixed input and allowed work\n\n- Main authority remains **b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1 / Draft17.38**.\n- Fixed local HEAD **58245a24e047280304443258b2cfc8a540c9202a**, tree **a7e0561c7b57e03330b1d1d91c90300dd093f938**, sole parentb1a6f1725abe25981ad29088175de581f956f919.\n- Production src/checked_c_node.c blob **e18c444ffc667be9022819c9b6151cf10b82d34b**.\n- PR1532/publication ref remains frozenb1a6; do not rebase or change the reviewed local source, tests, oracle or target.\n\nRead this amendment/latest comments and record ACTUAL RESUME. Use a new out-of-tree build directory in the existing P environment and the existing GCC toolchain; record actual version/flags. Prefer the project's normal Release/fortified frontend configuration appropriate to this environment, without installing a toolchain or weakening diagnostics. Build the exact final formatted source and its unchanged public-only probe.\n\nWithin the finite scope, P chooses the commands/order to check the three existing positives' ordinary CHECK/genuine public-owned/C17 API/CLI byte agreement against the frozen outputs, existing four-step/zero-prefix controls and the focused original source negatives. Reuse existing own FIRST/source/oracle; do not create new cases or replay native/host-fault campaigns. Preserve a failed attempt and diagnostic. A failure requiring source/test/oracle change returns STOP C with exact evidence because parallel review is fixed to582; no silent replacement.\n\n### Explicit additional budget\n\nThis is a new small verification phase after the frozen C1223 stage:\n- **≤32 additional selected invocations**, nested compiler/probe commands metered; administrative Git/hash/custody separately recorded;\n- **1 GCC frontend build +1 public-probe build**;\n- generated-native guest0, host-fault0, SDK/toolchain acquisition0, full CTest0, Compiler remote/PR/CI/READY/merge0.\n- Maximum cumulative actuals: **149 selected,3 frontend,3 probe**, prior21 native/3sites10host unchanged. Original C1223 ceilings and unused slots remain historical, not a hidden new budget.\n\nNo local implementation/source/test commit change is authorized. The existing archive stays immutable. For new verification raw, one new normal Evidence ref/push **archive/p1535-c1230-gcc-closeout-20261119**, ≤128files/8MiB, may contain FIRST linkage, exact source/build identities, commands/ledger/stdout/stderr and result. Verify full fresh empty HTTPS member/path/size/SHA/mode/blob restoration before deleting only new redundant custody copies. Keep active source/build/raw and all prior evidence.\n\n### Completion / priority / discretion\n\nReturn GCC_VERIFIED or a concrete failed layer/NOT_RUN with exact immutable source/build identities, counters and custody, POST/GET then STOP C. Current candidate adoption corrections take priority if C explicitly relays one. Do not inspect R/F originals or aggregate conclusions for expected outputs.\n\nC1223 delegated the reusable private consumer design and finite repair strategy. P actually repaired its first local refusal within scope, preserved baseline/candidate/formatter REDs, and delivered one production-file change plus21 bounded native worlds. For this phase the code is fixed while review runs; P retains command/verification order discretion, and code changes require a new concrete subject decision. This protects parallel review without repeating already-completed native/fault work.\n\nThis is not Compiler publication/integration or adoption permission. ProductGO624 PAUSED/H1 HOLD/comparative UB audit locality UNMEASURED; the obtained/discarded root read does not establish practical callee payload/API value.\n\n## Copyable P Codex resume prompt\n\n```text\nP1535 / C1230 GCC closureを同じP環境で再開。\nIssue1535のC1230全文・最新コメントをGETしACTUAL RESUME。\n固定HEAD58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938、親b1a6、mainb2f/Draft17.38。\nコード/テスト/oracleは変更せず、既存GCCでfinal formatted frontendとpublic probeを各1build。\n既存3 positivesのCHECK/owned/C17/API/CLI bytes、限定controls/negativesを検証。追加selected≤32、native/hostfault/SDK/fullCTest/Compiler remote/CI0。\n新Evidence refはC1230指定の1本≤128files/8MiB、fresh HTTPS全復元。\nR/F原資料を読まない。失敗は原証拠保持、修正が必要ならSTOP C。\nGCC_VERIFIEDまたは正確な失敗/NOT_RUNをPOST/GETしSTOP。C1230詳細優先。\n```\n"
+    },
+    {
+      "id": 7000250397,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000250397",
+      "body": "P1535 / C1230 ACTUAL RESUME — same sole Track P, fixed-code GCC closure / LOCAL ONLY\n\nIssue1535 body/full C1230 amendment7000082606/latest comments GET confirmed. Same P environment ready, fixed local HEAD58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938/sole parentb1a6f1725abe25981ad29088175de581f956f919 present/clean. Production src/checked_c_node.c blobe18c444ffc667be9022819c9b6151cf10b82d34b exact. Live mainb2f and PR1532 publicrefb1a6 GET unchanged; Compass→actualValue1.1/1.3→Process4.1.2/4.3.2→CURRENT_SPEC Draft17.38 rechecked.\n\nC1223 FINAL6999845760/custody6999813276/94fb archive and original FIRST/RED remain immutable: selected117,guest21,frontend2,probe2,host3sites10cases,SDK0. No historical NOT_RUN is retroactively PASS. Independent R/F original source/oracle/runner/raw/report/PR or aggregate expectations not read; only own existing FIRST/source/oracle and C1230 authority.\n\nWill use a new out-of-tree GCC Release/fortified build in this same environment, strict project diagnostics intact; one frontend build and one unchanged public-only probe build. Three existing positives CHECK→genuine owned→C17→API/CLI bytes versus frozen outputs; limited existing four-step/zero-prefix controls and original source negatives. No code/test/oracle/commit/ref/target changes; any required repair means preserve failure and STOP C.\n\nAdditional budget0/32selected,frontend0/1,probe0/1; nativeguest/hostfault/SDK/fullCTest/Compiler remote/PR/CI/READY/merge0. Commands/order chosen within fixed verification scope; old unused budgets not reused. New evidence only at archive/p1535-c1230-gcc-closeout-20261119, one normal push≤128files8MiB, fresh empty HTTPS allpath/size/SHA/mode/blob verify before deleting only new redundant custody copies; active source/build/raw/SDK and all prior evidence retained.\n\nThis closes an explicit GCC build limitation only. Comparative UB audit locality remains UNMEASURED, ProductGO624 PAUSED/H1 HOLD; discarded-root operation does not prove useful callee payload/API value. Return GCC_VERIFIED or exact failed layer/NOT_RUN FINAL POST/GET then STOP C."
+    },
+    {
+      "id": 7000276905,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000276905",
+      "body": "P1535 C1230 FIRST linkage / fixed verification plan before execution\nExisting own C1223 FIRST/oracle/frozen outputs unchanged, all15 final source-member sizes/SHA verified. FIRST-linkage.json5618B SHAd04306760e93ae83acab51bd32cd165c5a4bcdcd8e97fc07f65ca9307dd98bff records exact582/treea7e/blob e18c444, input source hashes and frozen C outputs (zero11687B/e409890e...,42=11688B/d91cebe7...,composed11925B/98591208..., prior4step/LiveTail controls). Prior ledger SHAc3e03d15fff5f5e819378d0b3af3f460a352f91ea2554f9a404185afaa09c8c8 remains immutable.\nNew /workspace/p1535-c1230-gcc/build-gcc directory; existing /usr/bin/gcc, project Release -O3 -DNDEBUG plus explicit _FORTIFY_SOURCE=2 and unchanged -Wall -Wextra -Wpedantic -Werror/C17. Version and actual verbose compile/link flags captured. One frontend build newlangc+existing p1529_consumer API apparatus, one existing p1535_public_owned target build; no source/test/oracle edits.\nPlanned≤32additional selected: version/config/frontend/probe4;3 positives×CHECK/owned/C17/API-agree12;4stepzero+oldzero-prefixLiveTail CHECK/C17/API6;5originalnegativeCHECK5;heldLiveTailprefix CHECK/C17 no-clobber/API refusal3;4stepnonzero C17/API2. Stop/preserve any unexpected failure, no repairs to fixed input.\nPrior C1223 counters untouched; additionalnative/hostfault/SDK/fullCTest/Compiler remote/CI0. Disk before60407025664B available/4072179inodes; bounded new frontend+custody peak<1GiB, no SDK/fullLLVM. C1230 fixed Evidence ref only, after result full fresh HTTPS verification. Audit-locality comparative value remains UNMEASURED."
+    },
+    {
+      "id": 7000301519,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000301519",
+      "body": "P1535 C1230 75% checkpoint — additional24/32selected,frontend1/1,publicprobe1/1; native/hostfault/SDK/fullCTest/Compiler remote/CI0\n\nExisting GCC14.2.0 (Debian14.2.0-19), fresh out-of-tree Release -O3 -DNDEBUG -D_FORTIFY_SOURCE=2, unchanged C17 -Wall -Wextra -Wpedantic -Werror, both builds successful on exact final formatted582/e18c444 bytes. No source/test/oracle/commit changes.\n\nAll3 frozen positives: ordinary CHECK0, genuine public-owned MACHINE5steps/original R/A/D/root/inc/actual-formal/closed optional loan success, C17/API/CLI exact frozen bytes11687/11688/11925 (SHAe409890e.../d91cebe7.../98591208...). Four-stepzero and oldzero-prefixLiveTail CHECK/C17/API exact original bytes11332/16402. First2 original negatives CHECK3 with P193-CALL-DOMAIN/BACKING expected.\n\nRemaining8 selected only:3 original negatives, existing heldprefix CHECK/C17 no-clobber/API refusal, existing4step42 C17/API exact-byte control. No extra compiler/probe builds or native/fault repetition. Will then freeze evidence/result and fresh HTTPS restore. Historical C1223 first REDs/117selected/21guest/3sites10host unchanged; current cumulative141selected,3frontend,3probe. This is GCC build-family closure only, comparative UB audit locality UNMEASURED."
+    },
+    {
+      "id": 7000362142,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000362142",
+      "body": "P1535 / C1230 PREP GCC_VERIFIED — exact final formatted582, fixed-code verification complete; custody pending\n\nSame sole P / ACTUAL RESUME7000250397 / FIRST linkage7000276905 /75% checkpoint7000301519 POST/GET済み。No code/test/oracle/commit/target changes; exact HEAD58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938/parentb1a6f1725abe25981ad29088175de581f956f919, src/checked_c_node.c blobe18c444ffc667be9022819c9b6151cf10b82d34b; all15 frozen source members and linked original inputs still sizes/SHA exact, worktree clean.\n\nFresh /workspace/p1535-c1230-gcc/build-gcc, existing GCC14.2.0 Debian14.2.0-19. Release -O3 -DNDEBUG plus -D_FORTIFY_SOURCE=2, C17 -Wall -Wextra -Wpedantic -Werror unchanged. One frontend build(newlangc+existing API apparatus) and one unchanged public-only p1535_public_owned target build, both successful on final formatted source. All actual verbose compile/link flags retained, key compile commands checked; no diagnostic weakening/toolchain acquisition.\nBuilt newlangc1139208B SHA5d40ecd9925c760b425dbc5002bd6ed3dfe2a283838709da8885c6c1f5ce0cc5; public probe823560B SHA7d56f78b47ce1e87adc465f6eaeb252d02110d62b685121e8adf1924631305bb; existing API apparatus1063120B SHAf1fd47f37155f0fee35a1fe2b2cc6da6d300076dc2dd51cd957c07b460c5c80d.\n\nThree unchanged positives zero/42/composed37: ordinary CHECK0→genuine source-issued public-owned MACHINE5ordered steps/full original R/A/D/root/inc/actual-formal/closed same-D scoped rootread→C17/API/CLI byte agreement. Frozen outputs11687/11688/11925B SHAe409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4 /d91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e /9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a exact.\nExisting4stepzero/42 and zero-prefixLiveTail C17/API exact frozen11332/11333/16402B; zero andLiveTail explicit CHECK0. Five original source negatives CHECK3 expected P193 Domain/backing/order/relation diagnostics. Existing heldLiveTailprefix CHECK0, CLI4 named output sentinel unchanged/no temp residue, API UNSUPPORTED NULL/length98765 with MACHINE/snapshot/anchor preserved. All expected; no unexpected failure.\n\nAdditional32/32selected,1/1frontend,1/1publicprobe; nativeguest/hostfault/SDK/fullCTest/Compiler remote/PR/CI/READY/merge0. Cumulative149selected,3frontend,3probe; original21native/3sites10host unchanged. Old C1223 FIRST/RED/final GCC NOT_RUN measurement remains historical, not relabelled; this new exact GCC execution closes that limitation. No more compiler/probe/test commands. No new cases or R/F original/aggregate expectations read.\n\nOne new eligible normalGit Evidence ref archive/p1535-c1230-gcc-closeout-20261119, staged commit5acde0a037963b2558b25f66c24d2601001ef39d/treecc113ad39f9bfb1f8d121de67082f19286972649,100files311172B(<128/8MiB), largest63473B. Manifest SHA92174c7c0a436f6e4ea12dbd1a2ad19e1631beca6f6b9d524e6cf08075aa43c8. Local everypath/size/SHA/mode/Git blob ALL_MATCH. Existing authorized normalGit identity/permission verified; new ref absent, old94fb archive/main and Compiler mainb2f/PR1532refb1 unchanged. Next one normalpush and fresh empty HTTPS allmember restoration, receipt POST/GET before deleting only new redundant stage/restore copies. Active fixed source/newbuild/raw, SDK and all originals retained.\n\nVALUE-ALIGNMENT-RISK separate: GCC build-family limitation closure only; obtained/discarded rootread still does not demonstrate practical callee payload/API or reduced author+ordinary-safe-caller UB audit/re-audit dependency closure versus factored C. Comparative value UNMEASURED, ProductGO624 PAUSED/H1 HOLD. FINAL GCC_VERIFIED after custody POST/GET then STOP C; no integration/publication/adoption claim."
+    },
+    {
+      "id": 7000384682,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000384682",
+      "body": "P1535 C1230 CUSTODY RESTORE PASS — receipt before new temporary cleanup\n\n[New Evidence ref archive/p1535-c1230-gcc-closeout-20261119](https://github.com/wakairo/NewLang_Evidence/tree/archive/p1535-c1230-gcc-closeout-20261119), normalpush1/1. Remote ref GET and actual fresh empty HTTPS clone HEAD5acde0a037963b2558b25f66c24d2601001ef39d/treecc113ad39f9bfb1f8d121de67082f19286972649 exact.\n100files/311172B (payload99+manifest), largest63473B; manifest SHA25692174c7c0a436f6e4ea12dbd1a2ad19e1631beca6f6b9d524e6cf08075aa43c8. Every actual path/set, size/SHA256/mode and Git blob bytes ALL_MATCH, no extra/missing/symlink/special member. No shared/local/reference/cache clone or alternates; push1.757s/fresh clone+fullverify0.969s. Restoration compiler/probe/native reruns0; this is byte restoration, not a repeated test. No ELF/SDK/build objects/credentials/independent R/F originals included.\n\nAfter this exact POST/GET receipt only the two redundant standalone new P-owned clones will be removed:\n- /workspace/p1535-c1230-custody-stage logical439172B/allocated1269760B/284inodes\n- /workspace/p1535-c1230-custody-restore logical417986B/allocated774144B/153inodes\nTotal allocated2043904B/437inodes. Both own .git/no alternates, no active shared worktree. df before available60377153536B/freeinodes4067373.\nKeep fixed /workspace/NewLang_P1535 HEAD58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938, new /workspace/p1535-c1230-gcc build/binaries/full raw, all prior P originals/raw/worktrees/commits and pinned SDK. No source/test/oracle/commit changes; no remote deletion/force update. Live Compiler mainb2f/public PR1532refb1a6 GET still exact, source clean. Old94fb Evidence remains unchanged.\n\nGCC_VERIFIED technical result per PREP7000362142; additional32/32selected/1frontend/1probe, native/hostfault/SDK/fullCTest/Compiler remote/CI0. Cumulative149selected/3frontend/3probe, prior21native/3sites10host unchanged. Comparative UB audit-locality UNMEASURED, ProductGO624 PAUSED/H1 HOLD. FINAL POST/GET after this bounded cleanup then STOP C."
+    },
+    {
+      "id": 7000410057,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000410057",
+      "body": "P1535 / C1230 FINAL — GCC_VERIFIED / STOP C\n\nACTUAL RESUME7000250397、FIRST linkage7000276905、75% checkpoint7000301519、PREP7000362142、fresh restoration receipt7000384682をPOST/GET済み。同じsole Track P環境で、既存source/oracleだけを使用。独立R/F source/oracle/runner/raw/report/PR・aggregate期待値は参照していません。\n\n固定対象・不変性:\nHEAD58245a24e047280304443258b2cfc8a540c9202a\ntreea7e0561c7b57e03330b1d1d91c90300dd093f938\nsole parentb1a6f1725abe25981ad29088175de581f956f919\nsrc/checked_c_node.c blobe18c444ffc667be9022819c9b6151cf10b82d34b。\ncode/test/oracle/commit/ref変更0。全15 source membersと関連inputのsize/SHAは前後一致、worktree clean。実mainb2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1/Draft17.38、PR1532 publicrefb1a6も最新GETで未変更。\n\nGCC build closure:\n新規out-of-tree /workspace/p1535-c1230-gcc/build-gcc。既存GCC14.2.0 (Debian14.2.0-19)で最終formatted sourceのfrontendを1build、未変更public-only p1535_public_ownedを1buildして成功。\n通常Release -O3 -DNDEBUG、明示-D_FORTIFY_SOURCE=2、projectの-std=c17 -Wall -Wextra -Wpedantic -Werrorを維持。Frontend-only/LLVM取得なし。実verbose compile/link flags、対象4 compile commands、実行物size/SHAをrawに保存。診断緩和なし。\nnewlangc1139208B SHA2565d40ecd9925c760b425dbc5002bd6ed3dfe2a283838709da8885c6c1f5ce0cc5、\npublic probe823560B SHA7d56f78b47ce1e87adc465f6eaeb252d02110d62b685121e8adf1924631305bb、\nAPI apparatus1063120B SHAf1fd47f37155f0fee35a1fe2b2cc6da6d300076dc2dd51cd957c07b460c5c80d。\n\n既存3 positives:\nzero/42/composed37のCHECK0→真正source-issued public-owned MACHINE・5orderedsteps→C17→API/CLI bytes一致を確認。definition、actual/formal、元root/inc/R/Allocation/Domain/fullrange、同一D optional readのloan終了は既存public probeで検証。\n凍結済み出力との完全一致:\n- zero11687B /SHAe409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4\n- nonzero42 11688B /SHAd91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e\n- composed37 11925B /SHA9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a\nここで生成native guestを再実行したとは扱っていません。\n\n限定controls/negatives:\n既存4stepzero/42とzero-prefixLiveTailのC17/API bytesは凍結11332/11333/16402Bと一致。zero/LiveTailには明示CHECK0も実施。\n元5source負例は全て期待どおりCHECK3:foreignDomain/pointer=P193-CALL-DOMAIN、foreignAllocation=P193-CALL-BACKING、live-read-at-EndRoot=P193-DEFINITION-ORDER、post-EndRootread=P193-DEFINITION-RELATION。\n既存heldLiveTailprefixはCHECK0→C17CLI4。named sentinel不変/no temp residue、API UNSUPPORTED/NULL/length98765・MACHINE/snapshot/anchor保持を確認。予期しない失敗0、新case0、修復0。\n\n予算・元証拠:\n追加32/32selected、GCCfrontend1/1、publicprobe1/1。\n追加generated-native0、hostfault0、SDK/toolchain取得0、fullCTest0、Compiler remote/PR/push/CI/READY/merge0。\n累積149selected/3frontend/3probe。元C1223の117selected/21native/2frontend/2probe/3sites10hostと当時のFIRST/RED/NOT_RUNはそのまま保持し、旧GCC候補REDをPASSに変更していません。今回は別の正確な最終formatted582のGCC実行によって、当時明記したfinal GCC frontend NOT_RUNの不足を閉じたものです。native/hostfault/O0/sanitizer/fullCTest/新CIのcampaignはこのphaseでNOT_RUN。追加compiler/probe/test実行は終了しました。\n\nCustody:\n[archive/p1535-c1230-gcc-closeout-20261119](https://github.com/wakairo/NewLang_Evidence/tree/archive/p1535-c1230-gcc-closeout-20261119)\nEvidence commit5acde0a037963b2558b25f66c24d2601001ef39d\ntreecc113ad39f9bfb1f8d121de67082f19286972649。\n通常push1/1、100files/311172B（≤128/8MiB）、最大63473B。\nmanifest SHA25692174c7c0a436f6e4ea12dbd1a2ad19e1631beca6f6b9d524e6cf08075aa43c8。\nfresh empty HTTPS cloneでHEAD/treeと全actual path集合・size・SHA・mode・Git blob bytes一致。shared/local/cache/alternatesなし、復元compiler/probe/native再実行0。FIRST linkage、全command/ledger/stdout/stderr、source/build identities、実flags、frozen C一致とresultを保存。旧94fb archiveは不変。\nreceipt7000384682 POST/GET後、指定した新しいP所有のstage/restore2一時cloneだけ削除。df available60377153536→60379189248B、freeinodes4067373→4067808。active582 source、新しいGCC build/実行物/raw、元全FIRST/RED/worktrees/commits/SDKを保持。\n\nVALUE-ALIGNMENT-RISK（技術結果と別）:\n今回の結果はGCC build-family limitationの閉鎖です。optional root reference取得・破棄は、有用なcallee payload/API、all safe-reachable states、十分factorしたCに対するlibrary author＋ordinary-safe callerのUB監査/再監査依存閉包の縮小を実証しません。比較価値UNMEASURED、ProductGO624 PAUSED/H1 HOLD。4step-only継続/optional延期・健全なRust safe facadeは公平な代替のままです。\n\nGCC_VERIFIEDを提出してSTOP C。Compiler統合/公開/採用、READY/mergeは別のC裁定です。"
+    },
+    {
+      "id": 7000503478,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000503478",
+      "body": "Track: Coordination → P\n\n## C1234 — C1230 GCC_VERIFIED accepted; local candidate remains frozen\n\nC GET-read [FINAL7000410057](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000410057), FIRST/checkpoints and [full restoration receipt7000384682](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000384682). C-only read-only audit found no identity, inventory, counter or reported-result mismatch.\n\n**Accept the exact-final-formatted GCC closure** for local58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938, parentb1a6f1725abe25981ad29088175de581f956f919, production checked_c_node.c blobe18c444ffc667be9022819c9b6151cf10b82d34b.\n\nThe separate C1230 evidence closes the previously explicit final-GCC NOT_RUN; it does not rewrite the C1223 first candidate/formatter REDs or earlier NOT_RUN. Existing GCC14.2.0/Release/fortification/C17/strict diagnostics were retained. The exact build cohort is **two CMake build invocations producing three executables**: newlangc + existing p1529_consumer together, then p1535_public_owned, plus required libraries. Do not describe that as only two binaries.\n\nC audit independently confirmed new Evidence ref→5acde0a037963b2558b25f66c24d2601001ef39d/treecc113ad39f9bfb1f8d121de67082f19286972649; recursive100 blobs/311,172B;99 manifest payload members plus manifest with exact paths/sizes/modes and no extras. All15 frozen source-member records match the prior C1223 manifest. Original ledger/results have32 unique selected invocations with expected exits, and focused public-owned/negative/API/refusal records support the stated result. P's all-byte/SHA fresh HTTPS restore remains P evidence, not a C rerun.\n\nThis phase consumed32/32 selected, one frontend/API-consumer build cohort and one owned-probe build; cumulative149 selected/3 frontend/3 probe. Prior21 native and3sites10host remain unchanged. New native/hostfault/SDK/fullCTest/Compiler remote/CI0. Do not repeat the completed phase or spend the old unused quotas.\n\nAcceptance remains the declared one-binding discarded-root family and named controls; it is not universal preservation of all source-valid four-step bodies. No useful callee payload/API, general owner or product-value claim follows.\n\n**This local verification phase is COMPLETE.** Keep exact code, test/oracle, all original evidence and active build/raw. Current Compiler publication/integration permission remains separate; C will supply the actual adopted parent and one bounded publication release. No additional implementation or test campaign is requested now. ProductGO624 PAUSED/H1 HOLD/comparative UB audit locality UNMEASURED.\n"
+    },
+    {
+      "id": 7000609762,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000609762",
+      "body": "Track: Coordination → same sole external P Codex actor\n\n## C1236 — fixed-tree public integration RELEASED; resume now\n\nC1230 GCC_VERIFIED is accepted at [7000503478](https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000503478). The preceding compiler increment is now actually adopted. This supersedes only the prior publication HOLD/STOP boundary: resume this new bounded publication phase, without rerunning completed local verification.\n\n### Fixed authority and subject\n\n- Actual adopted main **1a32f87f1007db8e8c11dc375a6b7416a35adbc7**, ordered parents[b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1,b1a6f1725abe25981ad29088175de581f956f919], tree **1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9**; Draft17.38 unchanged.\n- Original local **58245a24e047280304443258b2cfc8a540c9202a**, tree **a7e0561c7b57e03330b1d1d91c90300dd093f938**, parentb1a6 remains immutable.\n- Exact production blob **e18c444ffc667be9022819c9b6151cf10b82d34b**; root CMake **baa36d087955f745fb26874db2e48fcfe6252b7b**. Preserve all15 changed paths/bytes, tests/registration/source/oracle.\n- New parent main CI is genuinely running: FULL44464917022/PARTIAL44464917274. Its completion may overlap this phase; no PASS is presumed. C will relay any material STOP. P need not inspect other actors' packets or aggregate expected outputs.\n\nRead this/latest own comments and current authority; POST/GET **ACTUAL RESUME**. Verify current main exactly as above. Use a separate publication worktree/new ordinary branch **p1535-root-read-integration-c1236**. By a Git method of P's choice, create **one fresh commit whose sole parent is main1a32f87 and whose tree is exactlya7e0561**. This is new commit provenance over identical reviewed source, not a rewrite of582 or old refs. Record the complete new HEAD/tree/parent and the local-to-public equality, then one normal push and one **DRAFT PR to main**. No empty-base preliminary ref push.\n\n### Finite publication budget / genuine CI\n\n- **1 new public HEAD,1 ordinary branch/normal push,1 DRAFT PR.**\n- Natural PR CI only: **FULL5 + PARTIAL1 + EARLY2 =3 runs/8 jobs**, attempt1.\n- Manual retry/dispatch/cancellation/additional HEAD/source amendment0.\n- New local compiler/probe builds, native, host-fault, full CTest, SDK/toolchain acquisition0. Administrative Git/hash/metadata/log reads are separate.\n- Prior C1223/C1230 counters remain149 selected/3 frontend/3 probe,21 native/3sites10host; no reset/reuse.\n\nRead original final logs and exact real checkout/parents/tree, required6 actual execution, and all8 conclusions. Frozen registration adds10 P1535 CTests (3 owned,5 source negatives,1 authentication,1 native.integration). Predicted FULL1191/PARTIAL1190/EARLY84 are static expectations, not measured PASS; EARLY does not execute the new10. Verify real new-test/native execution in Required lanes and PARTIAL's actual CLI exit/streams. No skip/NOT_RUN/retry reclassification. Preserve any RED and let already-started natural jobs finish; do not repair this fixed subject silently.\n\n### Scope / custody / completion\n\nPR declaration must match the finite **one-binding same-D discarded-root reference → ordinary scope closure → original unit terminal teardown** family. Preserve named four-step/zero-prefix controls; do not claim universal preservation of all source-valid four-step bodies or extra vacuous/nonselected ordinary scopes. No callee payload projection/use/u8 return, general owner or new source/API/issuer. Existing source-law validity and conservative backend refusal remain distinct.\n\nKeep582, all FIRST/RED/source/oracle/raw, prior Evidence94fb7376... and5acde0a... immutable, and active source/build/SDK. Save only new publication/CI metadata and original logs; no need to copy the old351-file packet again. If using new Evidence, one normal ref/push **archive/p1535-c1236-publication-20261119**, ≤128files/8MiB, is allowed. Full fresh empty HTTPS member/path/size/SHA/mode/blob verification is required before deleting only its new redundant custody copies. No force/ref deletion.\n\nReturn exact public HEAD/parent/tree correspondence, actual all8 CI outcomes, scope/NOT_RUN and custody via FINAL POST/GET, then STOP C. P has no READY/merge permission. A moved main, different tree/bytes, safety defect, CI RED/skip or required extra execution/source edit → preserve concrete evidence and STOP C for the affected step.\n\n### Discretion and value\n\nC1223 delegated private implementation/repair strategy; P preserved first failures and delivered the narrow consumer. C1230 delegated fixed-code GCC verification and P completed32/32 without amendment. **This phase delegates Git integration method and metadata/log-collection order**, while source/test/oracle are fixed to preserve completed review. C will perform the public identity/review bridge; no repeated code-first round is requested for identical bytes.\n\nProductGO624 PAUSED/H1 HOLD/comparative UB audit locality UNMEASURED. This closes selected compiler coverage, not ordinary-safe library value.\n\n## Copyable P Codex resume prompt\n\n```text\nP1535 / C1236 公開統合を同じP環境で再開。Issue1535のC1236全文・最新コメントをGETしACTUAL RESUME。\n実main1a32f87f1007db8e8c11dc375a6b7416a35adbc7/tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9、Draft17.38。\n固定local58245a24e047280304443258b2cfc8a540c9202aの全15paths/bytesを維持。\n別worktreeで親=上記main、tree=a7e0561c7b57e03330b1d1d91c90300dd093f938の新commitを1個作る。\n新branch p1535-root-read-integration-c1236へ1push、main宛DRAFT PR1件。\n新HEAD1、自然FULL5+PARTIAL+EARLY2の1組のみ。retry/dispatch/追加HEAD0。\n追加local build/native/hostfault/fullCTest/SDK0。完了済みGCC確認は繰り返さない。\nRequired6の実checkout・新10検査/native/CLIと全8結末を確認。元FIRST/RED/582/旧Evidence保持、R/F原資料を読まない。\n不一致/RED/修正や追加実行が必要なら原証拠を残してSTOP C。READY/mergeはC。\nFINALをPOST/GETしてSTOP。親main CIは並走可、C1236詳細を優先。\n```\n"
+    },
+    {
+      "id": 7000660470,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000660470",
+      "body": "P1535 / C1236 ACTUAL RESUME — same sole Track P / exact-tree publication only\n\nIssue1535 full body/latest C1236 comment7000609762 and C1234 acceptance7000503478 GET-read. Same P environment ready. Live adopted main GET exact1a32f87f1007db8e8c11dc375a6b7416a35adbc7; original local58245a24e047280304443258b2cfc8a540c9202a/treea7e0561c7b57e03330b1d1d91c90300dd093f938/parentb1a6 clean/preserved. Production blobe18c444ffc667be9022819c9b6151cf10b82d34b and root CMake baa36d087955f745fb26874db2e48fcfe6252b7b exact. Compass→actualValue1.1/1.3→Process4.1.2/4.3.2→CURRENT_SPEC Draft17.38 rechecked; will verify actual fetched main ordered parents/tree.\n\nA new separate publication worktree will create one new commit with sole parent main1a32f87 and exact reviewedtreea7e0561. Full15path/bytes and whole-tree equality checked before one normalpush to p1535-root-read-integration-c1236 and one DRAFT PR to main. New branch absent at initial GET. No rewrite of582/old worktrees/evidence or source/test/oracle amendments. Finite family is one-binding discarded same-D root ref→scope closure→original unit teardown; named controls only, no universal4step-body preservation or vacuous/nonselected ordinary scopes.\n\nNew budget:1publicHEAD/1branch/1push/1DRAFTPR, natural PR FULL5+PARTIAL1+EARLY2=3runs8jobs attempt1 only. Additionallocal compiler/probe build/native/hostfault/fullCTest/SDK0; completed GCC phase not repeated. Prior149selected/3frontend/3probe/21native/3sites10host preserved. Retry/dispatch/cancel/extraHEAD/source edit0. Parentmain CI44464917022/44464917274 may overlap; no PASS presumed and no gate invented.\n\nWill collect original final CI logs and actual checkout/merge parents/tree; Required6 new10 test/native/CLI execution and all8 terminal outcomes. Static1191/1190/84 predictions not treated as measured success. Any moved main/different bytes/RED/skip/repair or extra execution need => preserve concrete evidence and STOP C, let started natural jobs finish. Independent R/F originals/aggregate expected outputs unread.\n\nIf new raw custody used, only archive/p1535-c1236-publication-20261119 normalpush1≤128files8MiB, fresh empty HTTPS allmember verification before redundant temporary cleanup. Active582/publication source/build/raw/SDK and old94fb/5acde archives stay retained. FINAL POST/GET then STOP C; READY/merge are C. Technical selected coverage and GCC closure remain separate from comparative UB audit-locality UNMEASURED/ProductGO624 PAUSED/H1 HOLD."
+    },
+    {
+      "id": 7000695626,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000695626",
+      "body": "P1535 C1236 pre-publication identity FIRST — one fresh commit created, no push yet\nNew public-candidate HEAD7b0b8e0a5348220061abe86921e9d006be5e398a, sole parent1a32f87f1007db8e8c11dc375a6b7416a35adbc7, treea7e0561c7b57e03330b1d1d91c90300dd093f938; publication worktree /workspace/NewLang_P1535_publication, branchp1535-root-read-integration-c1236.\nActual fetched main ordered parents[b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1,b1a6f1725abe25981ad29088175de581f956f919], tree1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9 exact. Git commit-tree method uses the reviewed582 tree with only new main parent/provenance; original582 unchanged.\nWhole7452path/mode/blob listing EXACT582; all15 changed files actualbytes/SHA EXACT; raw main→new delta EXACT b1→582. Productionblobe18c444ffc667be9022819c9b6151cf10b82d34b and rootCMakebaa36d087955f745fb26874db2e48fcfe6252b7b unchanged. Both worktrees clean.\nNo local compiler/probe/build/native/hostfault/CTest/SDK execution; prior counters149/3frontend/3probe/21native/3sites10host unchanged. Read frozen shared compiler workflow triggers/registration only: PR naturalFULL5/PARTIAL1/EARLY2,10newP1535 registered cases; static counts not called PASS. No R/F originals read.\nNext one normalpush of this complete HEAD (no empty-base push), one DRAFT PR to main, natural CI association/head/checkout+all8 outcomes collection. No retry/dispatch/cancel/secondHEAD/source amendment. Scope remains the one-binding discarded-root family and named controls, no universal4step-body preservation claim."
+    },
+    {
+      "id": 7000723136,
+      "url": "https://github.com/wakairo/NewLang_Compiler/issues/1535#issuecomment-7000723136",
+      "body": "P1535 C1236 PUBLICATION速報 — DRAFT HOLD PR1538 / one public HEAD fixed\n\nPR https://github.com/wakairo/NewLang_Compiler/pull/1538 created DRAFT to main, attached to this P task. New branchp1535-root-read-integration-c1236, one normalpush used1/1, publicHEAD7b0b8e0a5348220061abe86921e9d006be5e398a, soleparent/base1a32f87f1007db8e8c11dc375a6b7416a35adbc7, treea7e0561c7b57e03330b1d1d91c90300dd093f938.15paths+1549/-6, whole7452path/mode/blob and actual15file bytes EXACT original582. Original582/source/oracle/old Evidence unchanged; no extra local build/native/fault/SDK/test run.\n\nNatural PR runs GET-confirmed same publicHEAD/tree, eventpull_request/PR1538/attempt1:\nCompiler validation: 44465857731, jobs GCC Release=135363352200, Clang=135363352455, ASan=135363352474, UBSan=135363352513, GCC=135363352591\nCompiler frontend/C17 reference (NO LLVM; PARTIAL): 44465857708, jobs Production CHECK + C17/native reference (NO LLVM; PARTIAL)=135363352061\nCompiler early coding GO (NON-REQUIRED): 44465857668, jobs Early coding GO UBSan (NON-REQUIRED)=135363351901, Early coding GO ASan (NON-REQUIRED)=135363352205\nAll8 currently running, no PASS presumed. Real synthetic checkout identity from PR GET=3e17928d2340831a65286f8aac18f5c734c38b33; will fetch/verify its actual parent/tree and match each final job log, then Required6 new10/native/PARTIAL CLI execution and all8 outcomes. Predicted1191/1190/84 remain expectations only.\n\nNo secondHEAD/retry/dispatch/cancel/READY/merge. Parentmain CI may continue in parallel. Hold exact source; any mismatch/RED/skip/repair need is STOP C with original evidence. PR scope explicitly one-binding discarded same-D rootref→ordinaryscopeclosure→unit terminal teardown/named controls; no universal4step-body or additional vacuous scope claim. UB audit-locality comparative value remains UNMEASURED, ProductGO624 PAUSED/H1 HOLD."
+    }
+  ],
+  "pr": {
+    "url": "https://github.com/wakairo/NewLang_Compiler/pull/1538",
+    "number": 1538,
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "draft": true,
+    "body": "When a known direct unit terminal receiver obtains and discards one same-D root reference before its ordinary scope closes, CHECK and the public five-step owner proof already succeed, but the C17 consumer rejects the call. Reuse the existing discarded-reference classification and full reference/world validation inside the exact authenticated owner call/body, then emit the original unit terminal teardown.\n\nThe supported family is one root-reference binding followed by unit within the same-D read scope, followed by the existing four teardown operations. The named four-step and zero-prefix LiveTail controls are retained; this does not declare preservation for every source-valid four-step body or additional vacuous scopes. Callee payload projection/use, non-unit return, public issuers and ownership rules are outside this change.\n\nAdds ten focused CTests: three genuine public-owned cases, five original authority/loan negatives, one artifact-authentication case and one native integration case covering real zero and H0/H1/H2.\n\nThis commit has sole parent `1a32f87f1007db8e8c11dc375a6b7416a35adbc7` and tree `a7e0561c7b57e03330b1d1d91c90300dd093f938`, exactly the reviewed local `58245a24e047280304443258b2cfc8a540c9202a` tree. All 15 changed paths and all 7,452 tree entries match, including modes and blobs.\n\nValidation: prior fixed-code Clang/ASan verification and 21 selected native worlds; C1230 separately verified the final formatted source under GCC 14.2.0 Release with fortification and strict diagnostics, with 32 selected invocations and frozen C17/API/CLI bytes. Original FIRST/RED evidence remains intact. This publication phase runs one natural FULL/PARTIAL/EARLY CI set and repeats no local build or test campaign.\n\nRefs #1535 (C1223/C1230/C1236). DRAFT HOLD for Coordination; reduced library-author and ordinary-safe-caller UB audit locality remains unmeasured.",
+    "title": "Support discarded same-D root reads in direct unit receivers",
+    "base": "main",
+    "base_sha": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+    "head": "p1535-root-read-integration-c1236",
+    "head_sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+    "head_repo_id": 1404213211,
+    "head_repo_full_name": "wakairo/NewLang_Compiler",
+    "merge_commit_sha": "3e17928d2340831a65286f8aac18f5c734c38b33",
+    "user": {
+      "login": "wakairo",
+      "name": "wakairo",
+      "email": null,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+      "id": 6393110
+    },
+    "requested_reviewers": null,
+    "requested_team_reviewers": null,
+    "diff": null,
+    "comments": null,
+    "created_at": "2026-11-19T05:32:20Z",
+    "updated_at": "2026-11-19T05:32:20Z",
+    "closed_at": null,
+    "merged_at": null,
+    "commits": 1,
+    "changed_files": 15,
+    "additions": 1549,
+    "deletions": 6,
+    "display_url": "https://github.com/wakairo/NewLang_Compiler/pull/1538",
+    "display_title": "Support discarded same-D root reads in direct unit receivers"
+  },
+  "runs": [
+    {
+      "id": 44465857731,
+      "name": "Compiler validation",
+      "node_id": "WFR_kwLOU7KX288AAAAKWl8kww",
+      "head_branch": "p1535-root-read-integration-c1236",
+      "head_sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+      "path": ".github/workflows/compiler-ci.yml",
+      "display_title": "Support discarded same-D root reads in direct unit receivers",
+      "run_number": 1019,
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "workflow_id": 374571247,
+      "check_suite_id": 120364824913,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcBk15UQ",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44465857731",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1538",
+          "id": 5389421920,
+          "number": 1538,
+          "head": {
+            "ref": "p1535-root-read-integration-c1236",
+            "sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T05:32:23Z",
+      "updated_at": "2026-11-19T05:32:27Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T05:32:23Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120364824913",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857731/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/374571247",
+      "head_commit": {
+        "id": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+        "tree_id": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+        "message": "Reuse same-D root observations in direct unit terminal receivers\n\nPreserve the exact reviewed P1535 tree on adopted main for C1236.",
+        "timestamp": "2026-11-19T05:30:19Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    },
+    {
+      "id": 44465857708,
+      "name": "Compiler frontend/C17 reference (NO LLVM; PARTIAL)",
+      "node_id": "WFR_kwLOU7KX288AAAAKWl8krA",
+      "head_branch": "p1535-root-read-integration-c1236",
+      "head_sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+      "path": ".github/workflows/compiler-frontend-ci.yml",
+      "display_title": "Support discarded same-D root reads in direct unit receivers",
+      "run_number": 658,
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "workflow_id": 384152601,
+      "check_suite_id": 120364824862,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcBk15Hg",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44465857708",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1538",
+          "id": 5389421920,
+          "number": 1538,
+          "head": {
+            "ref": "p1535-root-read-integration-c1236",
+            "sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T05:32:23Z",
+      "updated_at": "2026-11-19T05:32:27Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T05:32:23Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120364824862",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857708/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/384152601",
+      "head_commit": {
+        "id": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+        "tree_id": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+        "message": "Reuse same-D root observations in direct unit terminal receivers\n\nPreserve the exact reviewed P1535 tree on adopted main for C1236.",
+        "timestamp": "2026-11-19T05:30:19Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    },
+    {
+      "id": 44465857668,
+      "name": "Compiler early coding GO (NON-REQUIRED)",
+      "node_id": "WFR_kwLOU7KX288AAAAKWl8khA",
+      "head_branch": "p1535-root-read-integration-c1236",
+      "head_sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+      "path": ".github/workflows/compiler-early-ci.yml",
+      "display_title": "Support discarded same-D root reads in direct unit receivers",
+      "run_number": 66,
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "workflow_id": 411872696,
+      "check_suite_id": 120364824792,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcBk142A",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44465857668",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1538",
+          "id": 5389421920,
+          "number": 1538,
+          "head": {
+            "ref": "p1535-root-read-integration-c1236",
+            "sha": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T05:32:23Z",
+      "updated_at": "2026-11-19T05:32:28Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T05:32:23Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120364824792",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44465857668/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/411872696",
+      "head_commit": {
+        "id": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+        "tree_id": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+        "message": "Reuse same-D root observations in direct unit terminal receivers\n\nPreserve the exact reviewed P1535 tree on adopted main for C1236.",
+        "timestamp": "2026-11-19T05:30:19Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    }
+  ],
+  "initial_jobs": [
+    {
+      "id": 44465857731,
+      "jobs": [
+        {
+          "id": 135363352200,
+          "name": "GCC Release",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857731,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Host prerequisites from signed Ubuntu repositories",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 3
+            },
+            {
+              "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+              "status": "pending",
+              "conclusion": null,
+              "number": 4
+            },
+            {
+              "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 5
+            },
+            {
+              "name": "Check C formatting and provide exact pinned-formatter correction",
+              "status": "pending",
+              "conclusion": null,
+              "number": 6
+            },
+            {
+              "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 7
+            },
+            {
+              "name": "Configure, build, and test",
+              "status": "pending",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Save verified original archive only on trusted successful main push",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        },
+        {
+          "id": 135363352455,
+          "name": "Clang",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857731,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Host prerequisites from signed Ubuntu repositories",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check C formatting and provide exact pinned-formatter correction",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Configure, build, and test",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Save verified original archive only on trusted successful main push",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        },
+        {
+          "id": 135363352474,
+          "name": "ASan",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857731,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Host prerequisites from signed Ubuntu repositories",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check C formatting and provide exact pinned-formatter correction",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6
+            },
+            {
+              "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 7
+            },
+            {
+              "name": "Configure, build, and test",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Save verified original archive only on trusted successful main push",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        },
+        {
+          "id": 135363352513,
+          "name": "UBSan",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857731,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Host prerequisites from signed Ubuntu repositories",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check C formatting and provide exact pinned-formatter correction",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6
+            },
+            {
+              "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 7
+            },
+            {
+              "name": "Configure, build, and test",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Save verified original archive only on trusted successful main push",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        },
+        {
+          "id": 135363352591,
+          "name": "GCC",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857731,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Host prerequisites from signed Ubuntu repositories",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Check C formatting and provide exact pinned-formatter correction",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6
+            },
+            {
+              "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 7
+            },
+            {
+              "name": "Configure, build, and test",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Save verified original archive only on trusted successful main push",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44465857708,
+      "jobs": [
+        {
+          "id": 135363352061,
+          "name": "Production CHECK + C17/native reference (NO LLVM; PARTIAL)",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857708,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out source without persisted credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Verify available Ubuntu runner tools (no LLVM install)",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Configure and build the actual Production frontend with GCC (no LLVM)",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 4
+            },
+            {
+              "name": "Inventory all CTests and assert Production CHECK, C17/native and public validators",
+              "status": "pending",
+              "conclusion": null,
+              "number": 5
+            },
+            {
+              "name": "Execute every registered frontend/C17 CTest (NO LLVM; PARTIAL)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 6
+            },
+            {
+              "name": "Verify real Production source/checker CLI path (NO LLVM; PARTIAL)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 7
+            },
+            {
+              "name": "Post Check out source without persisted credentials",
+              "status": "pending",
+              "conclusion": null,
+              "number": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44465857668,
+      "jobs": [
+        {
+          "id": 135363351901,
+          "name": "Early coding GO UBSan (NON-REQUIRED)",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857668,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Existing signed Ubuntu prerequisites",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 3
+            },
+            {
+              "name": "Run actions/cache/restore@3edfce9056124e459a23f683a21433670d47daca",
+              "status": "pending",
+              "conclusion": null,
+              "number": 4
+            },
+            {
+              "name": "Run python3 scripts/bootstrap.py",
+              "status": "pending",
+              "conclusion": null,
+              "number": 5
+            },
+            {
+              "name": "Configure unchanged sanitizer targets",
+              "status": "pending",
+              "conclusion": null,
+              "number": 6
+            },
+            {
+              "name": "Build",
+              "status": "pending",
+              "conclusion": null,
+              "number": 7
+            },
+            {
+              "name": "Existing 84 CTests (success permits next work, not merge)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Standard CTest logs",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        },
+        {
+          "id": 135363352205,
+          "name": "Early coding GO ASan (NON-REQUIRED)",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_id": 44465857668,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Existing signed Ubuntu prerequisites",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run actions/cache/restore@3edfce9056124e459a23f683a21433670d47daca",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run python3 scripts/bootstrap.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Configure unchanged sanitizer targets",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Build",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 7
+            },
+            {
+              "name": "Existing 84 CTests (success permits next work, not merge)",
+              "status": "pending",
+              "conclusion": null,
+              "number": 8
+            },
+            {
+              "name": "Standard CTest logs",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

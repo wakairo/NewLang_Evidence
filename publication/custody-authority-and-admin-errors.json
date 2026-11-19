@@ -1,0 +1,48 @@
+{
+  "identity": {
+    "login": "wakairo",
+    "id": 6393110
+  },
+  "repository": {
+    "id": "1462122373",
+    "name": "NewLang_Evidence",
+    "owner": {
+      "login": "wakairo",
+      "id": 6393110,
+      "type": "User",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+      "url": "https://api.github.com/users/wakairo"
+    },
+    "repository_full_name": "wakairo/NewLang_Evidence",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "pull": true,
+      "push": true,
+      "triage": true
+    },
+    "allow_auto_merge": false,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_squash_merge": true,
+    "allow_update_branch": false,
+    "clone_url": "https://github.com/wakairo/NewLang_Evidence.git",
+    "size": 110182,
+    "default_branch": "main",
+    "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Evidence/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Evidence/git/refs{/sha}",
+    "git_url": "git://github.com/wakairo/NewLang_Evidence.git",
+    "master_branch": null,
+    "visibility": "public",
+    "archived": false,
+    "is_code_search_indexed": null
+  },
+  "permission": {
+    "permission": "admin"
+  },
+  "optional_job_detail_GET_error": {
+    "error": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)",
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "explanation": "Optional direct job-detail GET unsupported400; subsequent JSON parse failed on missing content. No CI/compiler/source action, no result inferred. Continue supported run-jobs wrapper plus original final logs; no bypass."
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "job-135363351901.log",
+    "bytes": 136666,
+    "sha256": "e263eab91f728d1f1e7a95407b0d3b3e351c47e250fedd25159580ae35bc4da0",
+    "checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+    "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+    "lane": "EARLY",
+    "total": 84,
+    "actual_passed": 84,
+    "new10_passed": [],
+    "native_integration_executed": false,
+    "partial_actual_CLI": [],
+    "source_of_bytes": "Exact UTF-8 re-encoding of original connector-decoded complete job text, BOM/newlines retained; no ZIP or rerun."
+  },
+  {
+    "file": "job-135363352205.log",
+    "bytes": 136626,
+    "sha256": "3c191e96354c2b21103925dc3ce9b34eb088afab0ee7a792e8671fa95d83f396",
+    "checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+    "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+    "lane": "EARLY",
+    "total": 84,
+    "actual_passed": 84,
+    "new10_passed": [],
+    "native_integration_executed": false,
+    "partial_actual_CLI": [],
+    "source_of_bytes": "Exact UTF-8 re-encoding of original connector-decoded complete job text, BOM/newlines retained; no ZIP or rerun."
+  }
+]

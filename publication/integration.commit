@@ -1,0 +1,8 @@
+tree a7e0561c7b57e03330b1d1d91c90300dd093f938
+parent 1a32f87f1007db8e8c11dc375a6b7416a35adbc7
+author J W <a_kg@ninegw.sakura.ne.jp> 1795066219 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795066219 +0900
+
+Reuse same-D root observations in direct unit terminal receivers
+
+Preserve the exact reviewed P1535 tree on adopted main for C1236.

@@ -1,0 +1,1 @@
+Original attempt to persist publication API packet in one shell argument was rejected by exec-server: argument list too long. No process ran and no Compiler/source/CI action occurred. Saved same complete JSON in20k Unicode codepoint chunks; source and public HEAD unchanged.

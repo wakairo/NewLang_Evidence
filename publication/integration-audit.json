@@ -1,0 +1,121 @@
+{
+  "head": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "parent": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+  "original_local": "58245a24e047280304443258b2cfc8a540c9202a",
+  "original_parent": "b1a6f1725abe25981ad29088175de581f956f919",
+  "branch": "p1535-root-read-integration-c1236",
+  "worktree": "/workspace/NewLang_P1535_publication",
+  "whole_tree_paths": 7452,
+  "whole_tree_path_mode_blob_equal": true,
+  "all15_actual_bytes_equal": true,
+  "raw_diff_exact_original": true,
+  "source_members": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 156044,
+      "sha256": "aa411b56574c920a43000c71ad8425d91afaf41f54949e5de534c33b4e04f28d",
+      "mode": "100644",
+      "blob": "baa36d087955f745fb26874db2e48fcfe6252b7b"
+    },
+    {
+      "path": "src/checked_c_node.c",
+      "bytes": 203646,
+      "sha256": "bd102f93b67f5ae8e4a8a9d37895ce1af5cc330901d165276a5e18b728ac0391",
+      "mode": "100644",
+      "blob": "e18c444ffc667be9022819c9b6151cf10b82d34b"
+    },
+    {
+      "path": "tests/p1535/CMakeLists.txt",
+      "bytes": 1319,
+      "sha256": "a093408261b358adcc84392b60828ca89e2f91ab45f7441041ad0c5e9d4100fb",
+      "mode": "100644",
+      "blob": "ec0be39948582276ca9dece689800a366011cf48"
+    },
+    {
+      "path": "tests/p1535/N-foreign-allocation.nl",
+      "bytes": 3126,
+      "sha256": "87af2bb6c65c2c3c75b84df830986e8d0ba843b3479a3d5e9cefae4a39b4c086",
+      "mode": "100644",
+      "blob": "77361ffb05c3411008c83d1f524d46d1fbd811a3"
+    },
+    {
+      "path": "tests/p1535/N-foreign-domain.nl",
+      "bytes": 3126,
+      "sha256": "1f79d19e41fe88e2d66da6baa1a221dd25a5796423811551397bcc51c8c94373",
+      "mode": "100644",
+      "blob": "3fa38d6f02d3015ff57fc252c5428ab599a49b6e"
+    },
+    {
+      "path": "tests/p1535/N-foreign-pointer.nl",
+      "bytes": 3126,
+      "sha256": "938b9961af9c1d92a6fe897fa6ce17dc51c6172d80a5d299cb413bff515fe44a",
+      "mode": "100644",
+      "blob": "4c892c54875b8ab18a2db7a9a571d261c4ba55b3"
+    },
+    {
+      "path": "tests/p1535/N-live-read-at-end.nl",
+      "bytes": 3124,
+      "sha256": "4d93c03b500d3c5b1c4df6bc3c832c0c714da339241b8749ef901bdd26a17fe0",
+      "mode": "100644",
+      "blob": "38d05e8e5efa2aeb11137361cf5df45a23c99b06"
+    },
+    {
+      "path": "tests/p1535/N-post-end-read.nl",
+      "bytes": 3126,
+      "sha256": "2ba24d7169035730486e9c3072bb9794f423e16703f3f188ea02e65167d21806",
+      "mode": "100644",
+      "blob": "70b828060dc0ee62f72b793a944440febf9a8456"
+    },
+    {
+      "path": "tests/p1535/P-composed.nl",
+      "bytes": 3154,
+      "sha256": "eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4",
+      "mode": "100644",
+      "blob": "0c7511ab90b61214cb5bac4d3576c616f0690d11"
+    },
+    {
+      "path": "tests/p1535/P-nonzero.nl",
+      "bytes": 3127,
+      "sha256": "d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031",
+      "mode": "100644",
+      "blob": "d92ce468b702f4191f840272dff21201863def55"
+    },
+    {
+      "path": "tests/p1535/P-zero.nl",
+      "bytes": 3126,
+      "sha256": "449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94",
+      "mode": "100644",
+      "blob": "731059113967dfcb9e9c3495763b8772b68ee0f4"
+    },
+    {
+      "path": "tests/p1535/README.md",
+      "bytes": 1875,
+      "sha256": "9163fe45585237c1a46eca0358063962301aa065f8ba97fdee93bd37549dce09",
+      "mode": "100644",
+      "blob": "4bdb862dc27560b20bd0ab5049eb09f732c701f5"
+    },
+    {
+      "path": "tests/p1535/native.py",
+      "bytes": 2711,
+      "sha256": "e223000455532744fbf486a662fac7cba68c528aa7954927957c024b226e5dce",
+      "mode": "100644",
+      "blob": "7d588099dc12e141f090e78e95b3cc98e23cf781"
+    },
+    {
+      "path": "tests/p1535/passive.h",
+      "bytes": 15075,
+      "sha256": "9d53d56de3615e0dcfa514c14da52a37fb37d07c9b9eda2dc0fa0f4d900ada89",
+      "mode": "100644",
+      "blob": "a3fae7ad71744f79f5df2b9331cf56297999d83a"
+    },
+    {
+      "path": "tests/p1535/public_owned.c",
+      "bytes": 20953,
+      "sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906",
+      "mode": "100644",
+      "blob": "9dc1bd2e94616cc144029530824aaa6f76075524"
+    }
+  ],
+  "additional_local_build_probe_native_hostfault_CTest_SDK": 0
+}

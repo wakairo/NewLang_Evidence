@@ -1,0 +1,10 @@
+{
+  "pushes": 1,
+  "public_HEADs": 1,
+  "ref": "refs/heads/p1535-root-read-integration-c1236",
+  "head": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "base": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+  "remote_GET": "7b0b8e0a5348220061abe86921e9d006be5e398a\trefs/heads/p1535-root-read-integration-c1236\n",
+  "elapsed_seconds": 1.7841579460000503
+}

@@ -1,0 +1,7 @@
+{
+  "available_bytes": 60124192768,
+  "free_inodes": 4059830,
+  "archive_cap_bytes": 8388608,
+  "archive_cap_files": 128,
+  "expected_remaining_peak": "<=32MiB custody copies/pack, no build or SDK"
+}

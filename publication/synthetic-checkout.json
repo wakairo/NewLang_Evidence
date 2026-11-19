@@ -1,0 +1,11 @@
+{
+  "merge": "3e17928d2340831a65286f8aac18f5c734c38b33",
+  "ordered_parents": [
+    "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+    "7b0b8e0a5348220061abe86921e9d006be5e398a"
+  ],
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "whole_tree_matches_original582": true,
+  "expected_log_checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+  "HEAD_unchanged": "7b0b8e0a5348220061abe86921e9d006be5e398a"
+}

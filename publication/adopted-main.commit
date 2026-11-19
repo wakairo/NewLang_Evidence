@@ -1,0 +1,26 @@
+tree 1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9
+parent b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1
+parent b1a6f1725abe25981ad29088175de581f956f919
+author Joji Wakairo <jw1@ninegw.sakura.ne.jp> 1795065847 +0900
+committer GitHub <noreply@github.com> 1795065847 +0900
+gpgsig -----BEGIN PGP SIGNATURE-----
+ 
+ wsFcBAABCAAQBQJq/of3CRC1aQ7uu5UhlAAA3WkQACFZdzlBetNTdYJKptCCFOVm
+ jbdhRv+3efwJmn/RYBlAgZypcMgf5hXeHMTASEynFVnceHy/NR+vjzf1uwmQzmOw
+ r6aWyZdXKqWnzr4Ceq7JelJNcbWX4Bz3RiqdLuAEv3l7147tv0ro4n3MGbGHuMGq
+ 1STqwJwBD/DrqItIQhYfzjmRUFEdxIUbCbqln0CJAd115b3X7dToZYksWsjV/NXj
+ A+uVUGJw8cswhms1UTL638J/sRvOVtuZ4D3/UaYj7arwMP/oRJeLl+ZtRwnpXgwK
+ XwnptEblZ62LYtalbeqg1uNwK5E+NZ18Mr1nhy4uPnzz06Ku5gDSOyKdxa9C4IyM
+ 4umq9LNCGxZwGWO8Iw1+t6YazLa//eFfA3/ZHyslUyitnuJlf9ra/au8xGUDhIW4
+ lFCT4PuCcCpFbn8TFB6ZVSYHPejDTRNd6eMYxNl/30QDqW8u61h0BGpCHLD5RNFY
+ ULfe2fjqQQDGCYqOQ6yiMYOWcJZqh8QPfq67ihqyiYtBRuEp9LzY4ug3jcAKX45S
+ 9XtcBDbBjpdkMEmrKiTWwwrZLi5zjR2BFyueHCDSRewtc2T3n96VH8sRK1CwXqXW
+ Bb+43X3FMDTV4w8VgfOEIMOavhDLUeHO0loomi3I/REGhVCMNhCElBhccOCIDqV8
+ /pqs5JQQnTEVokpKP1TX
+ =QCHF
+ -----END PGP SIGNATURE-----
+ 
+
+Merge pull request #1532 from wakairo/p1531-terminal-integration-c1209
+
+Support terminal cleanup with pure prefix Copy observations

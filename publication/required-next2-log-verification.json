@@ -1,0 +1,52 @@
+[
+  {
+    "file": "job-135363352455.log",
+    "bytes": 362565,
+    "sha256": "d5618985037703652e3d4318116e5476574938ad049bc521a9ad91f5957d8cf5",
+    "checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+    "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+    "lane": "FULL",
+    "total": 1191,
+    "actual_passed": 1191,
+    "new10_passed": [
+      "p1535_composed_owned.unit",
+      "p1535_native.integration",
+      "p1535_negative_foreign-allocation.unit",
+      "p1535_negative_foreign-domain.unit",
+      "p1535_negative_foreign-pointer.unit",
+      "p1535_negative_live-read-at-end.unit",
+      "p1535_negative_post-end-read.unit",
+      "p1535_nonzero_owned.unit",
+      "p1535_owner_authentication.unit",
+      "p1535_zero_owned.unit"
+    ],
+    "native_integration_executed": true,
+    "partial_actual_CLI": [],
+    "source_of_bytes": "Exact UTF-8 re-encoding of original connector-decoded complete job text, BOM/newlines retained; no ZIP or rerun."
+  },
+  {
+    "file": "job-135363352513.log",
+    "bytes": 360701,
+    "sha256": "fcc69f7b9ed120edcab9f281879736b130333126a0e6b4a3e6fde450e9deefb8",
+    "checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+    "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+    "lane": "FULL",
+    "total": 1191,
+    "actual_passed": 1191,
+    "new10_passed": [
+      "p1535_composed_owned.unit",
+      "p1535_native.integration",
+      "p1535_negative_foreign-allocation.unit",
+      "p1535_negative_foreign-domain.unit",
+      "p1535_negative_foreign-pointer.unit",
+      "p1535_negative_live-read-at-end.unit",
+      "p1535_negative_post-end-read.unit",
+      "p1535_nonzero_owned.unit",
+      "p1535_owner_authentication.unit",
+      "p1535_zero_owned.unit"
+    ],
+    "native_integration_executed": true,
+    "partial_actual_CLI": [],
+    "source_of_bytes": "Exact UTF-8 re-encoding of original connector-decoded complete job text, BOM/newlines retained; no ZIP or rerun."
+  }
+]

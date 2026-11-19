@@ -1,0 +1,131 @@
+{
+  "status": "PUBLICATION_CI_COMPLETE / DRAFT HOLD / custody pending",
+  "pr": 1538,
+  "url": "https://github.com/wakairo/NewLang_Compiler/pull/1538",
+  "head": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "base": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+  "branch": "p1535-root-read-integration-c1236",
+  "original_local": "58245a24e047280304443258b2cfc8a540c9202a",
+  "whole7452tree_entries_and15actual_bytes": "EXACT",
+  "synthetic_checkout": "3e17928d2340831a65286f8aac18f5c734c38b33",
+  "public_HEADs": 1,
+  "Compiler_pushes": 1,
+  "DRAFT_PRs": 1,
+  "natural_runs": 3,
+  "natural_jobs": 8,
+  "attempts": 1,
+  "all8_success": true,
+  "Required6_verified": true,
+  "Required6_new10_and_native_integration": true,
+  "EARLY_new10_coverage": 0,
+  "additional_HEAD": 0,
+  "manual_retry_dispatch_cancel": 0,
+  "additional_local_build_probe_native_hostfault_CTest_SDK": 0,
+  "prior_counters": {
+    "selected": 149,
+    "frontend": 3,
+    "probe": 3,
+    "native": 21,
+    "host_sites": 3,
+    "host_cases": 10
+  },
+  "not_run": [
+    "additional local compiler/probe build or native/hostfault/CTest/SDK campaign",
+    "EARLY new10 tests",
+    "READY/merge",
+    "extra source/API/owner/body category or universal preservation claim"
+  ],
+  "scope": "one-binding discarded same-D root ref -> ordinary scope closure -> original direct unit terminal teardown; declared named controls only",
+  "value_alignment_risk": "Selected compiler coverage only. Callee payload/API/all safe-reachable state and author+ordinary safe caller UB audit/re-audit closure comparison UNMEASURED. ProductGO624 PAUSED/H1 HOLD.",
+  "CI": [
+    {
+      "job_id": 135363352200,
+      "job_name": "GCC Release",
+      "run_id": 44465857731,
+      "conclusion": "success",
+      "lane": "FULL",
+      "total": 1191,
+      "actual_passed": 1191,
+      "native_integration_executed": true,
+      "sha256": "890459b92d5126f43f25c35adc23a344c094cf2d70092e6e2e39fd1e4eb98521"
+    },
+    {
+      "job_id": 135363352455,
+      "job_name": "Clang",
+      "run_id": 44465857731,
+      "conclusion": "success",
+      "lane": "FULL",
+      "total": 1191,
+      "actual_passed": 1191,
+      "native_integration_executed": true,
+      "sha256": "d5618985037703652e3d4318116e5476574938ad049bc521a9ad91f5957d8cf5"
+    },
+    {
+      "job_id": 135363352474,
+      "job_name": "ASan",
+      "run_id": 44465857731,
+      "conclusion": "success",
+      "lane": "FULL",
+      "total": 1191,
+      "actual_passed": 1191,
+      "native_integration_executed": true,
+      "sha256": "ea864da0bbf6e84728cb0796b9bad736469b534e15127f7403981b0be8bb9dc7"
+    },
+    {
+      "job_id": 135363352513,
+      "job_name": "UBSan",
+      "run_id": 44465857731,
+      "conclusion": "success",
+      "lane": "FULL",
+      "total": 1191,
+      "actual_passed": 1191,
+      "native_integration_executed": true,
+      "sha256": "fcc69f7b9ed120edcab9f281879736b130333126a0e6b4a3e6fde450e9deefb8"
+    },
+    {
+      "job_id": 135363352591,
+      "job_name": "GCC",
+      "run_id": 44465857731,
+      "conclusion": "success",
+      "lane": "FULL",
+      "total": 1191,
+      "actual_passed": 1191,
+      "native_integration_executed": true,
+      "sha256": "bfee7349694754d1ff59deb2157bd73bd968fe217f5dbce8e217cf5ae842962e"
+    },
+    {
+      "job_id": 135363352061,
+      "job_name": "Production CHECK + C17/native reference (NO LLVM; PARTIAL)",
+      "run_id": 44465857708,
+      "conclusion": "success",
+      "lane": "PARTIAL",
+      "total": 1190,
+      "actual_passed": 1190,
+      "native_integration_executed": true,
+      "sha256": "7ac18bd394492c454848664c2bceba0e219f80f1d439f014efa8cc5445914a98"
+    },
+    {
+      "job_id": 135363351901,
+      "job_name": "Early coding GO UBSan (NON-REQUIRED)",
+      "run_id": 44465857668,
+      "conclusion": "success",
+      "lane": "EARLY",
+      "total": 84,
+      "actual_passed": 84,
+      "native_integration_executed": false,
+      "sha256": "e263eab91f728d1f1e7a95407b0d3b3e351c47e250fedd25159580ae35bc4da0"
+    },
+    {
+      "job_id": 135363352205,
+      "job_name": "Early coding GO ASan (NON-REQUIRED)",
+      "run_id": 44465857668,
+      "conclusion": "success",
+      "lane": "EARLY",
+      "total": 84,
+      "actual_passed": 84,
+      "native_integration_executed": false,
+      "sha256": "3c191e96354c2b21103925dc3ce9b34eb088afab0ee7a792e8671fa95d83f396"
+    }
+  ]
+}
