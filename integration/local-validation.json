@@ -1,0 +1,37 @@
+{
+  "actual_new_tests": [
+    "p1539_zero_owned.unit",
+    "p1539_nonzero_owned.unit",
+    "p1539_negative_foreign-allocation.unit",
+    "p1539_negative_foreign-domain.unit",
+    "p1539_negative_live-read-at-end.unit",
+    "p1539_negative_post-end-read.unit",
+    "p1539_artifact_authentication.unit",
+    "p1539_rollback_4.unit",
+    "p1539_rollback_5.unit",
+    "p1539_native.integration"
+  ],
+  "all10_success": true,
+  "ordinary_CLI_native_inner_selected": 16,
+  "actual_guests": 6,
+  "guest_all_exit0_empty_stderr": true,
+  "frontends": 1,
+  "publicprobe": 1,
+  "host_sites": 2,
+  "host_fault_retry_cases": 4,
+  "selected_charged": 99,
+  "old_counts_untouched": true,
+  "production_bytes_fixed": true,
+  "C17": [
+    {
+      "variant": "zero",
+      "bytes": 11829,
+      "sha256": "6ce36a91a57dda13f5cb758e7ac57943e6f13c2b3a5a34982fbb760395c2a27a"
+    },
+    {
+      "variant": "nonzero",
+      "bytes": 12067,
+      "sha256": "d97959c8cd2dc2477b4979de6723b0d9f05d78b32f9e9fe6bfa9f46631f1efe6"
+    }
+  ]
+}

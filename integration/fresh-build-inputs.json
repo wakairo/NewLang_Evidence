@@ -1,0 +1,254 @@
+{
+  "head": "9bb09dd172fd3fd9ed0f2958dc2203092181d397",
+  "all35_changed_or_unchanged_CUs_freshly_compiled": [
+    {
+      "path": "src/source.c",
+      "bytes": 4920,
+      "sha256": "4282a8ec2b6896e284ed6424364c3a1bcf0df661f6c614d9bb1b32b0168d3531",
+      "blob": "caa2cbf42106af22ab5f87cd4fddfebb129cd423",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_source.dir/src/source.c.o -MF CMakeFiles/newlang_source.dir/src/source.c.o.d -o CMakeFiles/newlang_source.dir/src/source.c.o -c /workspace/NewLang_P1539_integration/src/source.c"
+    },
+    {
+      "path": "src/diagnostic.c",
+      "bytes": 2315,
+      "sha256": "d7ea292b9b68625259bb8ae2a512e81cb20fce42a360804ea8dbac399447be96",
+      "blob": "d6dfe3ab5871f25d219f33aae81f24b75774ab63",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o -MF CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o.d -o CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o -c /workspace/NewLang_P1539_integration/src/diagnostic.c"
+    },
+    {
+      "path": "src/syntax.c",
+      "bytes": 1504,
+      "sha256": "ea025b43bfcfd549911f97c7438ceb000e7d3cd386d5c7a57d95e3657a3d2e6e",
+      "blob": "95330385b7449f8a6e503209c0b6c2640ed7450d",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_syntax.dir/src/syntax.c.o -MF CMakeFiles/newlang_syntax.dir/src/syntax.c.o.d -o CMakeFiles/newlang_syntax.dir/src/syntax.c.o -c /workspace/NewLang_P1539_integration/src/syntax.c"
+    },
+    {
+      "path": "src/lexer.c",
+      "bytes": 3276,
+      "sha256": "11d5007f66552027f2c0727f256891e98a66431071a67a8e4c084a9ddbbbc2fb",
+      "blob": "b9855f770c2cc0fa343f9b43fbc329db8028a5c5",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_lexer.dir/src/lexer.c.o -MF CMakeFiles/newlang_lexer.dir/src/lexer.c.o.d -o CMakeFiles/newlang_lexer.dir/src/lexer.c.o -c /workspace/NewLang_P1539_integration/src/lexer.c"
+    },
+    {
+      "path": "src/checked.c",
+      "bytes": 7722,
+      "sha256": "a661aae34d7d15cacb593e22f3b73611a6154e0993bb5ed2ce217d90d21440c6",
+      "blob": "b3c1bf60631bb41cffe2380ed4c0da390ad99486",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked.dir/src/checked.c.o -MF CMakeFiles/newlang_checked.dir/src/checked.c.o.d -o CMakeFiles/newlang_checked.dir/src/checked.c.o -c /workspace/NewLang_P1539_integration/src/checked.c"
+    },
+    {
+      "path": "src/parser.c",
+      "bytes": 82149,
+      "sha256": "9caab883f5b4eb2dd1671dda775e5499571ce4f7a9a295ff456b6b77ee3a49f1",
+      "blob": "27f549f05a4e9d1e84d6a98328d15d7bb8c67877",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_parser.dir/src/parser.c.o -MF CMakeFiles/newlang_parser.dir/src/parser.c.o.d -o CMakeFiles/newlang_parser.dir/src/parser.c.o -c /workspace/NewLang_P1539_integration/src/parser.c"
+    },
+    {
+      "path": "src/copy_body.c",
+      "bytes": 100014,
+      "sha256": "9f3d74dda65f892bc80052a17c716b62b5f946f29f210e9658591f8c38f73f9f",
+      "blob": "7905980d15836c141b5c45518c47d975e2be27f7",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/copy_body.c.o -MF CMakeFiles/newlang_semantic.dir/src/copy_body.c.o.d -o CMakeFiles/newlang_semantic.dir/src/copy_body.c.o -c /workspace/NewLang_P1539_integration/src/copy_body.c"
+    },
+    {
+      "path": "src/if_field.c",
+      "bytes": 57812,
+      "sha256": "a5ae2884d3b0f66aa408a7450e64e7b9b8f6674993f29cb1e257e8e60d5d956a",
+      "blob": "734afb6e308abf54219962c13c69466354d8f642",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/if_field.c.o -MF CMakeFiles/newlang_semantic.dir/src/if_field.c.o.d -o CMakeFiles/newlang_semantic.dir/src/if_field.c.o -c /workspace/NewLang_P1539_integration/src/if_field.c"
+    },
+    {
+      "path": "src/array4.c",
+      "bytes": 30219,
+      "sha256": "5840725d707f9e9bd311c43d848ea25f933d0a4a9a53ba7f502456d1db786f9a",
+      "blob": "ee0040a1a44f7c55cf9e985ea31724d762789a60",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/array4.c.o -MF CMakeFiles/newlang_semantic.dir/src/array4.c.o.d -o CMakeFiles/newlang_semantic.dir/src/array4.c.o -c /workspace/NewLang_P1539_integration/src/array4.c"
+    },
+    {
+      "path": "src/usize_addition.c",
+      "bytes": 42418,
+      "sha256": "342674fe4ef3df61c4e7bcc464f662b8d61f1238ea58320cd57fae56248a60c8",
+      "blob": "05baf93fae28a7c68aeb1942877908823a3fa869",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o -MF CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o.d -o CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o -c /workspace/NewLang_P1539_integration/src/usize_addition.c"
+    },
+    {
+      "path": "src/semantic.c",
+      "bytes": 46869,
+      "sha256": "895f1f27f98db07cb5c2ed95ea103233ac78e72fdad8842adbbcb62387923e9b",
+      "blob": "a6d67e7d702f0894a82650b6dfc2faefec074275",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/semantic.c.o -MF CMakeFiles/newlang_semantic.dir/src/semantic.c.o.d -o CMakeFiles/newlang_semantic.dir/src/semantic.c.o -c /workspace/NewLang_P1539_integration/src/semantic.c"
+    },
+    {
+      "path": "src/semantic_check.c",
+      "bytes": 569120,
+      "sha256": "dd59ed21b0410b1e35da1fdac30fd980abf5cfeb74c62ac9b8c3637f9bc14192",
+      "blob": "a0069d0ce687e27276466b83c7221ec16657c9a0",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o -MF CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o.d -o CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o -c /workspace/NewLang_P1539_integration/src/semantic_check.c"
+    },
+    {
+      "path": "src/unchecked_ref_internal.c",
+      "bytes": 2552,
+      "sha256": "b6e580b31e0366d052b7f21b8484d974df9d3ffd4a6fb6334490fa2566a98d33",
+      "blob": "992d599185d2a5b8e96a3f1cfce77828e872a841",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o -MF CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o.d -o CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o -c /workspace/NewLang_P1539_integration/src/unchecked_ref_internal.c"
+    },
+    {
+      "path": "src/h_origin_internal.c",
+      "bytes": 35661,
+      "sha256": "8e345c29624ea24a194132ca661c9f3ce1e7f5cd8dc83e9044706707946eb266",
+      "blob": "ae6d24dc954edde748147155600ed2fbf20a3c27",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o -MF CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o.d -o CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o -c /workspace/NewLang_P1539_integration/src/h_origin_internal.c"
+    },
+    {
+      "path": "src/recursive_type.c",
+      "bytes": 7619,
+      "sha256": "73b4668717ab38884618d0768ab0d7a6c20299541e05881e39422f7ab96daea4",
+      "blob": "e56ae23d29797b8aa83f0d6d1b4709b7aab0b029",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o -MF CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o.d -o CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o -c /workspace/NewLang_P1539_integration/src/recursive_type.c"
+    },
+    {
+      "path": "src/allocated_node.c",
+      "bytes": 10846,
+      "sha256": "b5420bb463c4e77cb895909fa998be10731363c89781f8dc05d18e8c0d43cfd2",
+      "blob": "471f3a3215749ebc40e3de0c2cf1e136a15e7038",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o -MF CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o.d -o CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o -c /workspace/NewLang_P1539_integration/src/allocated_node.c"
+    },
+    {
+      "path": "src/allocated_join.c",
+      "bytes": 1581,
+      "sha256": "c8a4e707904ea013641a6dbc097e5e284099770126a15b6efbdbcb8574dd77e0",
+      "blob": "61f1f02a0b02d7aac1a2c98616ed0a528caa717e",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o -MF CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o.d -o CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o -c /workspace/NewLang_P1539_integration/src/allocated_join.c"
+    },
+    {
+      "path": "src/captured_closure.c",
+      "bytes": 71239,
+      "sha256": "d7a1fc0133ec87d053d904056810161f96142a7d7b78d61bac3d164d53c5509c",
+      "blob": "db0fa938b497364d67f3587f9f275bb222f89cc4",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o -MF CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o.d -o CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o -c /workspace/NewLang_P1539_integration/src/captured_closure.c"
+    },
+    {
+      "path": "src/node_join.c",
+      "bytes": 22189,
+      "sha256": "d36a731c2a45d0860f3058ee5bb370cdab3230d8b40b56b35250bd302b32b608",
+      "blob": "281d177635d275598f278fa937998ffabab42390",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/node_join.c.o -MF CMakeFiles/newlang_semantic.dir/src/node_join.c.o.d -o CMakeFiles/newlang_semantic.dir/src/node_join.c.o -c /workspace/NewLang_P1539_integration/src/node_join.c"
+    },
+    {
+      "path": "src/node_links.c",
+      "bytes": 17580,
+      "sha256": "3265050c1462eb049c407a1ce5dfa5abe7298461e66e4f3f7a5e7fab1b182cdb",
+      "blob": "a131ebb67862945f0f0dcecb3f543827147803f2",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/node_links.c.o -MF CMakeFiles/newlang_semantic.dir/src/node_links.c.o.d -o CMakeFiles/newlang_semantic.dir/src/node_links.c.o -c /workspace/NewLang_P1539_integration/src/node_links.c"
+    },
+    {
+      "path": "src/packet_fork.c",
+      "bytes": 24645,
+      "sha256": "400eb07943d77181448c3aa3419c818c87cccfe255aae698cf2c870d51a68812",
+      "blob": "f99234ad13bcfdef2217d642e5c0e933984f2f0e",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o -MF CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o.d -o CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o -c /workspace/NewLang_P1539_integration/src/packet_fork.c"
+    },
+    {
+      "path": "src/fixed_field.c",
+      "bytes": 15082,
+      "sha256": "959f6b412296ee1f3c28f085ba97347c8ba72435c1bbc22cb149da1bb8e90588",
+      "blob": "66a6a0927aa9a041f0a64ac1db53dd1c1a1f8278",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o -MF CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o.d -o CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o -c /workspace/NewLang_P1539_integration/src/fixed_field.c"
+    },
+    {
+      "path": "src/sum.c",
+      "bytes": 9119,
+      "sha256": "4fbefcf07e3df2d2bc053a1b07b983a800089a2b2dc07f4754732512a84ea154",
+      "blob": "37291948e852d583f315e10eec2221dbb514007a",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/sum.c.o -MF CMakeFiles/newlang_semantic.dir/src/sum.c.o.d -o CMakeFiles/newlang_semantic.dir/src/sum.c.o -c /workspace/NewLang_P1539_integration/src/sum.c"
+    },
+    {
+      "path": "src/raw_storage.c",
+      "bytes": 32068,
+      "sha256": "470b01ffdcebe89b0c5b6d8bb4a3a7e879af19c47fb99ffd879965aabbc03c9f",
+      "blob": "77c1ad6632eb18d0161d04ae6a7b717e3970514f",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o -MF CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o.d -o CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o -c /workspace/NewLang_P1539_integration/src/raw_storage.c"
+    },
+    {
+      "path": "src/function_body.c",
+      "bytes": 5091,
+      "sha256": "cc2925e983ddffb35b0c663fd7a3d969adaa25c98b10de3fdb679c09b1bc8575",
+      "blob": "8be1eb60f5460e9f419e8770922d23830fecdbbf",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/function_body.c.o -MF CMakeFiles/newlang_semantic.dir/src/function_body.c.o.d -o CMakeFiles/newlang_semantic.dir/src/function_body.c.o -c /workspace/NewLang_P1539_integration/src/function_body.c"
+    },
+    {
+      "path": "src/typed_owner.c",
+      "bytes": 55053,
+      "sha256": "0b17d36287de06fce2f454c6efe9c1bc80a2ec5003151a1c954cd1d7f3bb9b87",
+      "blob": "a4c0b70c0fa4d0a059a99885411f6ec14110b53a",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o -MF CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o.d -o CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o -c /workspace/NewLang_P1539_integration/src/typed_owner.c"
+    },
+    {
+      "path": "src/custody.c",
+      "bytes": 7689,
+      "sha256": "4a0a081d78151736cf8140413d985c26d0c1d214b12ecde9e2dde0e18d2e0147",
+      "blob": "9fb7177bf5117946b6cde93ebedb4b2c9dc9ce60",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/custody.c.o -MF CMakeFiles/newlang_semantic.dir/src/custody.c.o.d -o CMakeFiles/newlang_semantic.dir/src/custody.c.o -c /workspace/NewLang_P1539_integration/src/custody.c"
+    },
+    {
+      "path": "src/control.c",
+      "bytes": 36823,
+      "sha256": "ccada0ed0108a7f926a2de479f4f88691c28fe2fec76178e25554b2b79e3d6f7",
+      "blob": "497be1e09539857e57a9250c5cd4f1b3b6a94246",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/control.c.o -MF CMakeFiles/newlang_semantic.dir/src/control.c.o.d -o CMakeFiles/newlang_semantic.dir/src/control.c.o -c /workspace/NewLang_P1539_integration/src/control.c"
+    },
+    {
+      "path": "src/checked_c_five.c",
+      "bytes": 34519,
+      "sha256": "7e8880fdd60b040ab93307198c84e6b47cc0fe397d32a89a836b89d89d221708",
+      "blob": "a76cea39d45e182425bf0f6432cf47f28489e915",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o -c /workspace/NewLang_P1539_integration/src/checked_c_five.c"
+    },
+    {
+      "path": "src/checked_c_node.c",
+      "bytes": 203689,
+      "sha256": "6d936ac6eadcfd9fbfc486da8701408750e2b0359b3725edc73bd9efe4375a10",
+      "blob": "1d17ce025905b18b0b92dbae81ffb8f3d27f947f",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -c /workspace/NewLang_P1539_integration/src/checked_c_node.c"
+    },
+    {
+      "path": "src/readonly_u8_consumer_internal.c",
+      "bytes": 706,
+      "sha256": "213f1d2c23718177401e67c1e630777042a28c44bd00c1a2a10edabc91b01515",
+      "blob": "8baec6068a7e1a55f087edad9d16e9abec362114",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o -c /workspace/NewLang_P1539_integration/src/readonly_u8_consumer_internal.c"
+    },
+    {
+      "path": "src/main.c",
+      "bytes": 226948,
+      "sha256": "ea712db68dc58a68f96deeab767fca9d72127111b183feb4be359291cfb82127",
+      "blob": "0aacff208d5b8f9c2136799ca046c1009c96e838",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlangc.dir/src/main.c.o -MF CMakeFiles/newlangc.dir/src/main.c.o.d -o CMakeFiles/newlangc.dir/src/main.c.o -c /workspace/NewLang_P1539_integration/src/main.c"
+    },
+    {
+      "path": "tests/p1539/public_owned.c",
+      "bytes": 27383,
+      "sha256": "6f5c522716d41a2d625a8641214a87cd72323730c17f0756dadaaa786da9249e",
+      "blob": "40f144ad29629be4a62c2aa4d26c9efaed5b7296",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/p1539_public_owned.dir/tests/p1539/public_owned.c.o -MF CMakeFiles/p1539_public_owned.dir/tests/p1539/public_owned.c.o.d -o CMakeFiles/p1539_public_owned.dir/tests/p1539/public_owned.c.o -c /workspace/NewLang_P1539_integration/tests/p1539/public_owned.c"
+    },
+    {
+      "path": "tests/p1517/safety.c",
+      "bytes": 8734,
+      "sha256": "8861bd8161495b4e9a7c1b19440bd1045f8f0434a6df1524bdc6ba539de1825e",
+      "blob": "0e5fe9fb05c6c632c5cb20b635b4bb5e9dc8399c",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/src -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o -MF CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o.d -o CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o -c /workspace/NewLang_P1539_integration/tests/p1517/safety.c"
+    },
+    {
+      "path": "tests/p1529/consumer.c",
+      "bytes": 3705,
+      "sha256": "6e6b456b852e08f05261a757d6f6794cfffc090b9f3910e5fc13713d64566a21",
+      "blob": "cc6013e6a657d736606fa377d59cc191136f5eb0",
+      "command": "/usr/bin/gcc  -I/workspace/NewLang_P1539_integration/src -I/workspace/NewLang_P1539_integration/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -MF CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o.d -o CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -c /workspace/NewLang_P1539_integration/tests/p1529/consumer.c"
+    }
+  ],
+  "cached_objects_reused": 0,
+  "compiler": "/usr/bin/gcc",
+  "compiler_sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f",
+  "flags": "Release -O3 -DNDEBUG -D_FORTIFY_SOURCE=2 -std=c17 -Wall -Wextra -Wpedantic -Werror"
+}

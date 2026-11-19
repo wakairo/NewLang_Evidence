@@ -1,0 +1,221 @@
+Internal ctest changing into directory: /workspace/p1539-c1243-integration/build-gcc
+UpdateCTestConfiguration  from :/workspace/p1539-c1243-integration/build-gcc/DartConfiguration.tcl
+Parse Config file:/workspace/p1539-c1243-integration/build-gcc/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1539-c1243-integration/build-gcc/DartConfiguration.tcl
+Parse Config file:/workspace/p1539-c1243-integration/build-gcc/DartConfiguration.tcl
+Test project /workspace/p1539-c1243-integration/build-gcc
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 58
+      Start 58: p1539_zero_owned.unit
+
+58: Test command: /workspace/p1539-c1243-integration/build-gcc/p1539_public_owned "/workspace/NewLang_P1539_integration/tests/p1539/P-zero.nl" "0" "91" "23"
+58: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+58: Environment variables: 
+58:  PYTHONDONTWRITEBYTECODE=1
+58:  PYTHONHASHSEED=0
+58:  LC_ALL=C
+58:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+58:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+58: Test timeout computed to be: 90
+58: PARSE status=0 code=none
+58: DEFINITION status=0 code=none
+58: ACTUAL status=0 code=none
+58: PROOF_CLASS value=1 MACHINE=1
+58: COPY call=11 ordinal=1 body=0 parameters=0 event=0
+58: NORMAL H0 receiver=0 second_T_write=0 releases=0
+58: NORMAL H1 receiver=0 second_T_write=0 releases=1
+58: PAYLOAD child=29 original=24 sample=0 ref_scope=4
+58: SCALAR_HELPER actual=41 formal=26 input=42 result=43 binding=27 plain_u8_after_closed_caller_loan=1
+58: OPTIONAL same_original_root=24 same_D=2 closed_before_EndRoot=1
+58: OWNER actual=45 root=24 incarnation=27 region=2 domain=2 independent_other_live=1 definition_steps=5 full_range=24
+58: COPY call=70 ordinal=2 body=0 parameters=0 event=0
+58: HELPER_RESULT_CONSUMED same_original_T=1 child=2 actual_result=43
+58: NORMAL H2 receiver=1 second_T_write=1 sample=0 releases=2
+58: AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=9 root=1 child=2 incarnation=1 sample=0
+ 1/10 Test #58: p1539_zero_owned.unit ....................   Passed    0.02 sec
+test 59
+      Start 59: p1539_nonzero_owned.unit
+
+59: Test command: /workspace/p1539-c1243-integration/build-gcc/p1539_public_owned "/workspace/NewLang_P1539_integration/tests/p1539/P-nonzero.nl" "37" "83" "27"
+59: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+59: Environment variables: 
+59:  PYTHONDONTWRITEBYTECODE=1
+59:  PYTHONHASHSEED=0
+59:  LC_ALL=C
+59:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+59:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+59: Test timeout computed to be: 90
+59: PARSE status=0 code=none
+59: DEFINITION status=0 code=none
+59: ACTUAL status=0 code=none
+59: PROOF_CLASS value=1 MACHINE=1
+59: COPY call=11 ordinal=1 body=0 parameters=0 event=0
+59: NORMAL H0 receiver=0 second_T_write=0 releases=0
+59: NORMAL H1 receiver=0 second_T_write=0 releases=1
+59: PAYLOAD child=31 original=26 sample=37 ref_scope=4
+59: SCALAR_HELPER actual=41 formal=28 input=44 result=45 binding=29 plain_u8_after_closed_caller_loan=1
+59: OPTIONAL same_original_root=26 same_D=2 closed_before_EndRoot=1
+59: OWNER actual=45 root=26 incarnation=29 region=2 domain=2 independent_other_live=1 definition_steps=5 full_range=24
+59: COPY call=70 ordinal=2 body=0 parameters=0 event=0
+59: HELPER_RESULT_CONSUMED same_original_T=1 child=2 actual_result=45
+59: NORMAL H2 receiver=1 second_T_write=1 sample=37 releases=2
+59: AUTHENTICATED copies=2 owner=1 read=1 matches=2 closed_loans=9 root=1 child=2 incarnation=1 sample=37
+ 2/10 Test #59: p1539_nonzero_owned.unit .................   Passed    0.02 sec
+test 60
+      Start 60: p1539_negative_foreign-allocation.unit
+
+60: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "negative" "/workspace/NewLang_P1539_integration/tests/p1539/N-foreign-allocation.nl"
+60: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+60: Environment variables: 
+60:  PYTHONDONTWRITEBYTECODE=1
+60:  PYTHONHASHSEED=0
+60:  LC_ALL=C
+60:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+60:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+60: Test timeout computed to be: 90
+60: P1517 source negative=/workspace/NewLang_P1539_integration/tests/p1539/N-foreign-allocation.nl status=1 code=P193-CALL-BACKING
+ 3/10 Test #60: p1539_negative_foreign-allocation.unit ...   Passed    0.00 sec
+test 61
+      Start 61: p1539_negative_foreign-domain.unit
+
+61: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "negative" "/workspace/NewLang_P1539_integration/tests/p1539/N-foreign-domain.nl"
+61: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+61: Environment variables: 
+61:  PYTHONDONTWRITEBYTECODE=1
+61:  PYTHONHASHSEED=0
+61:  LC_ALL=C
+61:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+61:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+61: Test timeout computed to be: 90
+61: P1517 source negative=/workspace/NewLang_P1539_integration/tests/p1539/N-foreign-domain.nl status=1 code=P193-CALL-DOMAIN
+ 4/10 Test #61: p1539_negative_foreign-domain.unit .......   Passed    0.00 sec
+test 62
+      Start 62: p1539_negative_live-read-at-end.unit
+
+62: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "negative" "/workspace/NewLang_P1539_integration/tests/p1539/N-live-read-at-end.nl"
+62: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+62: Environment variables: 
+62:  PYTHONDONTWRITEBYTECODE=1
+62:  PYTHONHASHSEED=0
+62:  LC_ALL=C
+62:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+62:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+62: Test timeout computed to be: 90
+62: P1517 source negative=/workspace/NewLang_P1539_integration/tests/p1539/N-live-read-at-end.nl status=1 code=P3-REF-CONFLICT
+ 5/10 Test #62: p1539_negative_live-read-at-end.unit .....   Passed    0.00 sec
+test 63
+      Start 63: p1539_negative_post-end-read.unit
+
+63: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "negative" "/workspace/NewLang_P1539_integration/tests/p1539/N-post-end-read.nl"
+63: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+63: Environment variables: 
+63:  PYTHONDONTWRITEBYTECODE=1
+63:  PYTHONHASHSEED=0
+63:  LC_ALL=C
+63:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+63:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+63: Test timeout computed to be: 90
+63: P1517 source negative=/workspace/NewLang_P1539_integration/tests/p1539/N-post-end-read.nl status=1 code=P3-USE-AFTER-CONSUME
+ 6/10 Test #63: p1539_negative_post-end-read.unit ........   Passed    0.00 sec
+test 64
+      Start 64: p1539_artifact_authentication.unit
+
+64: Test command: /workspace/p1539-c1243-integration/build-gcc/p1529_consumer "attack" "/workspace/NewLang_P1539_integration/tests/p1539/P-nonzero.nl"
+64: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+64: Environment variables: 
+64:  PYTHONDONTWRITEBYTECODE=1
+64:  PYTHONHASHSEED=0
+64:  LC_ALL=C
+64:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+64:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+64: Test timeout computed to be: 90
+64: definition status=0 code=none
+64: actual status=0 code=none
+64: definition status=0 code=none
+64: actual status=0 code=none
+64: tamper prefix current fact public-proof=0
+64: emitter status=1 out=NULL length=98765
+64: emitter status=0 out=text length=12067
+64: tamper prefix Copy result public-proof=0
+64: emitter status=1 out=NULL length=98765
+64: emitter status=0 out=text length=12067
+64: tamper foreign authentic origin world public-proof=0
+64: emitter status=1 out=NULL length=98765
+64: emitter status=0 out=text length=12067
+64: tamper terminal original Domain public-proof=0
+64: emitter status=1 out=NULL length=98765
+64: emitter status=0 out=text length=12067
+64: P1529 four isolated artifact negatives / pristine retries PASS
+ 7/10 Test #64: p1539_artifact_authentication.unit .......   Passed    0.03 sec
+test 65
+      Start 65: p1539_rollback_4.unit
+
+65: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "oom" "/workspace/NewLang_P1539_integration/tests/p1539/P-nonzero.nl" "4"
+65: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+65: Environment variables: 
+65:  PYTHONDONTWRITEBYTECODE=1
+65:  PYTHONHASHSEED=0
+65:  LC_ALL=C
+65:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+65:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+65: Test timeout computed to be: 90
+65: definition status=0 code=none
+65: actual status=0 code=none
+65: emitter status=2 out=NULL length=98765
+65: emitter status=0 out=text length=12067
+65: P1517 host OOM site=4 fault+retry=2 hit=1 NULL/length/state rollback PASS
+ 8/10 Test #65: p1539_rollback_4.unit ....................   Passed    0.01 sec
+test 66
+      Start 66: p1539_rollback_5.unit
+
+66: Test command: /workspace/p1539-c1243-integration/build-gcc/p1517_safety "oom" "/workspace/NewLang_P1539_integration/tests/p1539/P-nonzero.nl" "5"
+66: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+66: Environment variables: 
+66:  PYTHONDONTWRITEBYTECODE=1
+66:  PYTHONHASHSEED=0
+66:  LC_ALL=C
+66:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+66:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+66: Test timeout computed to be: 90
+66: definition status=0 code=none
+66: actual status=0 code=none
+66: emitter status=2 out=NULL length=98765
+66: emitter status=0 out=text length=12067
+66: P1517 host OOM site=5 fault+retry=2 hit=1 NULL/length/state rollback PASS
+ 9/10 Test #66: p1539_rollback_5.unit ....................   Passed    0.01 sec
+test 67
+      Start 67: p1539_native.integration
+
+67: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/NewLang_P1539_integration/tests/p1539/native.py" "/workspace/p1539-c1243-integration/build-gcc/newlangc" "/usr/bin/gcc" "/workspace/p1539-c1243-integration/build-gcc/p1529_consumer" "/workspace/NewLang_P1539_integration/tests/p1539" "/workspace/p1539-c1243-integration/build-gcc/p1539-native" "none"
+67: Working Directory: /workspace/p1539-c1243-integration/build-gcc
+67: Environment variables: 
+67:  PYTHONDONTWRITEBYTECODE=1
+67:  PYTHONHASHSEED=0
+67:  LC_ALL=C
+67:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+67:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+67: Test timeout computed to be: 90
+67: P1539 CLI CHECK/API bytes, scalar-return -> original T, strict C17 O2 zero/37 H0/H1/H2 PASS
+67: P1539 cost selected=16 guest=6
+10/10 Test #67: p1539_native.integration .................   Passed    0.84 sec
+
+The following tests passed:
+	p1539_zero_owned.unit
+	p1539_nonzero_owned.unit
+	p1539_negative_foreign-allocation.unit
+	p1539_negative_foreign-domain.unit
+	p1539_negative_live-read-at-end.unit
+	p1539_negative_post-end-read.unit
+	p1539_artifact_authentication.unit
+	p1539_rollback_4.unit
+	p1539_rollback_5.unit
+	p1539_native.integration
+
+100% tests passed, 0 tests failed out of 10
+
+Total Test time (real) =   0.97 sec

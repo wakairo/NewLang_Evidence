@@ -1,0 +1,6 @@
+tree b7a0ab30f9150143df2434e8e478232daf9ca951
+parent 9c9b17f7f0584c88a92ab284f57e4a93b8ab350b
+author J W <a_kg@ninegw.sakura.ne.jp> 1795076156 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795076156 +0900
+
+Integrate direct scalar terminal flow with normal source and native tests

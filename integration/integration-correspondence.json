@@ -1,0 +1,149 @@
+{
+  "head": "9bb09dd172fd3fd9ed0f2958dc2203092181d397",
+  "tree": "b7a0ab30f9150143df2434e8e478232daf9ca951",
+  "parent": "9c9b17f7f0584c88a92ab284f57e4a93b8ab350b",
+  "paths": [
+    {
+      "path": "CMakeLists.txt",
+      "blob": "c81c4b5ba3304707363449cf5baa5b58d8a3da24",
+      "bytes": 156084,
+      "sha256": "a78aed3f2213ca5b179b3a9587441c289bc5516c5ca3bab6d802f35949920da3"
+    },
+    {
+      "path": "src/checked_c_node.c",
+      "blob": "1d17ce025905b18b0b92dbae81ffb8f3d27f947f",
+      "bytes": 203689,
+      "sha256": "6d936ac6eadcfd9fbfc486da8701408750e2b0359b3725edc73bd9efe4375a10"
+    },
+    {
+      "path": "src/checked_c_scalar_control_internal.h",
+      "blob": "10fe0ac4d98a55f261a34c9ad1508a7f5d2e4b8b",
+      "bytes": 16561,
+      "sha256": "f78850250e85d930e8eb65b4a94ae273cc3aeea55cf1d9b9634456ee16d4d30f"
+    },
+    {
+      "path": "tests/p1539/CMakeLists.txt",
+      "blob": "a6f0426aaba42ebeea8515eca05791f28295f780",
+      "bytes": 1435,
+      "sha256": "cc9a83fa3d6fe7f883e7988f1f9f74d30c44fa584c1d489aa87de0fd572fa853"
+    },
+    {
+      "path": "tests/p1539/N-foreign-allocation.nl",
+      "blob": "512ec75f81f55566b99639a50a47ffe0bf35f1cb",
+      "bytes": 3234,
+      "sha256": "f54b6df28940f182b7199233c240549ef4a437920f2f5f34fe8b27ce4371bff8"
+    },
+    {
+      "path": "tests/p1539/N-foreign-domain.nl",
+      "blob": "e4ee4f91ed37668ae619180a299f6cfb01ff50f7",
+      "bytes": 3234,
+      "sha256": "02aee1497425ee3feb8d8df3551a663c9ab6f6e46cf2d5ef3d30046a899867e2"
+    },
+    {
+      "path": "tests/p1539/N-live-read-at-end.nl",
+      "blob": "c97ad956c245721547ed7eb1c694c1b984801344",
+      "bytes": 3238,
+      "sha256": "d5c7289ca3b8ad0fd576a6c300f018e6de6451508377e99a32a020ec4e0e5d6f"
+    },
+    {
+      "path": "tests/p1539/N-post-end-read.nl",
+      "blob": "adcf17d81c4c8e097d8908cbbe30ff24f0435991",
+      "bytes": 3234,
+      "sha256": "3498c75d86337f2b7894b90f54659b5037a9ecb7ad1e2c658bb6256bbe780039"
+    },
+    {
+      "path": "tests/p1539/P-nonzero.nl",
+      "blob": "326c0cf57c865aafaa3d7c60ba37c2eb72ddb226",
+      "bytes": 3251,
+      "sha256": "6f294d2743992bc703785d12c1e2e4d5eb040804fcf61296e202139dce6b5999"
+    },
+    {
+      "path": "tests/p1539/P-zero.nl",
+      "blob": "f119dbcd7e989b4f3c27603d304d458849cc1136",
+      "bytes": 3234,
+      "sha256": "1eb29764b2b098467814d753cdc67dfc69634af32262e13ef3968be72e58647e"
+    },
+    {
+      "path": "tests/p1539/README.md",
+      "blob": "cb003ac9ca93cfe87cbbb39b21b9574a477e562f",
+      "bytes": 2128,
+      "sha256": "1201cda5cd3fc686136ab89218d660580200379db5338eb73020a4f82f5ae432"
+    },
+    {
+      "path": "tests/p1539/native.py",
+      "blob": "a80c80e624f35b0d444595b980d04c2c358e3041",
+      "bytes": 2681,
+      "sha256": "4d1e35e126dbb6735f4ca88661ac5acc6892aec5d04bd250d7670dfc83c1a9e9"
+    },
+    {
+      "path": "tests/p1539/public_owned.c",
+      "blob": "40f144ad29629be4a62c2aa4d26c9efaed5b7296",
+      "bytes": 27383,
+      "sha256": "6f5c522716d41a2d625a8641214a87cd72323730c17f0756dadaaa786da9249e"
+    }
+  ],
+  "production": [
+    {
+      "path": "src/checked_c_node.c",
+      "original_local": "a026544d52ce631e339dbd5ec40c6fc3ebcca734",
+      "original_blob": "1d17ce025905b18b0b92dbae81ffb8f3d27f947f",
+      "integration_blob": "1d17ce025905b18b0b92dbae81ffb8f3d27f947f",
+      "byte_identity": true,
+      "production_formatting": false
+    },
+    {
+      "path": "src/checked_c_scalar_control_internal.h",
+      "original_local": "a026544d52ce631e339dbd5ec40c6fc3ebcca734",
+      "original_blob": "10fe0ac4d98a55f261a34c9ad1508a7f5d2e4b8b",
+      "integration_blob": "10fe0ac4d98a55f261a34c9ad1508a7f5d2e4b8b",
+      "byte_identity": true,
+      "production_formatting": false
+    }
+  ],
+  "source": [
+    {
+      "original": "source/N-foreign-allocation.nl",
+      "integration": "tests/p1539/N-foreign-allocation.nl",
+      "bytes": 3234,
+      "sha256": "f54b6df28940f182b7199233c240549ef4a437920f2f5f34fe8b27ce4371bff8",
+      "unchanged": true
+    },
+    {
+      "original": "source/N-foreign-domain.nl",
+      "integration": "tests/p1539/N-foreign-domain.nl",
+      "bytes": 3234,
+      "sha256": "02aee1497425ee3feb8d8df3551a663c9ab6f6e46cf2d5ef3d30046a899867e2",
+      "unchanged": true
+    },
+    {
+      "original": "source/N-live-read-at-end.nl",
+      "integration": "tests/p1539/N-live-read-at-end.nl",
+      "bytes": 3238,
+      "sha256": "d5c7289ca3b8ad0fd576a6c300f018e6de6451508377e99a32a020ec4e0e5d6f",
+      "unchanged": true
+    },
+    {
+      "original": "source/N-post-end-read.nl",
+      "integration": "tests/p1539/N-post-end-read.nl",
+      "bytes": 3234,
+      "sha256": "3498c75d86337f2b7894b90f54659b5037a9ecb7ad1e2c658bb6256bbe780039",
+      "unchanged": true
+    },
+    {
+      "original": "source/P-nonzero.nl",
+      "integration": "tests/p1539/P-nonzero.nl",
+      "bytes": 3251,
+      "sha256": "6f294d2743992bc703785d12c1e2e4d5eb040804fcf61296e202139dce6b5999",
+      "unchanged": true
+    },
+    {
+      "original": "source/P-zero.nl",
+      "integration": "tests/p1539/P-zero.nl",
+      "bytes": 3234,
+      "sha256": "1eb29764b2b098467814d753cdc67dfc69634af32262e13ef3968be72e58647e",
+      "unchanged": true
+    }
+  ],
+  "scope": "only2 fixed production files plus rootinclude and10 test files",
+  "old_0355_not_rewritten": true
+}

@@ -1,0 +1,70 @@
+{
+  "outcome": "C1243 INTEGRATED / ALL8 ORIGINAL SUCCESS / C-ADOPTED EXACT TREE / PRODUCER STOP C",
+  "head": "9bb09dd172fd3fd9ed0f2958dc2203092181d397",
+  "tree": "b7a0ab30f9150143df2434e8e478232daf9ca951",
+  "parent": "9c9b17f7f0584c88a92ab284f57e4a93b8ab350b",
+  "branch": "p1539-scalar-integration-c1243",
+  "pr": 1542,
+  "adopted_by_C_main": "a9715f4bc788c13e213231c639057c2d718a9200",
+  "adopted_main_tree": "b7a0ab30f9150143df2434e8e478232daf9ca951",
+  "adoption_outside_P": true,
+  "publication_was_DRAFT": true,
+  "READY_merge_by_P": 0,
+  "production_blobs_unchanged": [
+    "1d17ce025905b18b0b92dbae81ffb8f3d27f947f",
+    "10fe0ac4d98a55f261a34c9ad1508a7f5d2e4b8b"
+  ],
+  "changed_paths": 13,
+  "diff": "+1251/-4; production+22/-4 unchanged, root CMake include and10 test files",
+  "source_FIRST_unchanged": 6,
+  "registered_new_tests": 10,
+  "full_actual": [
+    1201,
+    1201,
+    1201,
+    1201,
+    1201
+  ],
+  "partial_actual": 1200,
+  "early_actual": [
+    84,
+    84
+  ],
+  "EARLY_new_test_execution": 0,
+  "same_checkout": "110692e27da7a498e19c97c17f84b8b7e76dce25",
+  "checkout_tree": "b7a0ab30f9150143df2434e8e478232daf9ca951",
+  "required6_actual_new10_and_native": true,
+  "partial_real_CLI_exit0_empty_streams": true,
+  "Clang_format": true,
+  "public_candidate_HEADs": 1,
+  "natural_runs": 3,
+  "natural_jobs": 8,
+  "second_HEAD": 0,
+  "retry": 0,
+  "dispatch": 0,
+  "cancel": 0,
+  "force": 0,
+  "additional_local": {
+    "selected": 99,
+    "frontend": 1,
+    "probe": 1,
+    "native": 6,
+    "host": 4
+  },
+  "host_sites": 2,
+  "fresh_GCC_compiled_CUs": 35,
+  "fresh_GCC_child_build_tools": 55,
+  "old_C1240_costs": "100selected/18guest/2incrementalfrontends/3probe/2sites8 unchanged",
+  "selected_time_seconds": 32.101346880001074,
+  "NOT_RUN": [
+    "local fullCTest",
+    "local LLVM",
+    "new SDK acquisition",
+    "new local Clang integration run (normal fixed-HEAD Clang/ASan/UBSan CI is original successful evidence)",
+    "second public HEAD or natural set",
+    "P READY/merge (C adoption separately recorded)"
+  ],
+  "originals_kept": "a026/FIRST/RED/0355, active original/integration worktrees, all original/new raw/builds and needed SDK",
+  "new_custody": "one bounded integration/CI cohort; do not duplicate old0355 packet",
+  "value_alignment_risk": "Finite ordinary by-value helper and normal delivery are capability evidence; trivial identity helper does not prove protected safe facade/full safe-reachable-state or reduced author+ordinary-safe-caller UB audit closure. ProductGO PAUSED/H1 HOLD/UNMEASURED; no new inert-profile expansion."
+}

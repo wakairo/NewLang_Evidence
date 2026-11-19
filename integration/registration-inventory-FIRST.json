@@ -1,0 +1,278 @@
+{
+  "new_count": 10,
+  "expected_FULL": 1201,
+  "expected_PARTIAL": 1200,
+  "expected_EARLY": 84,
+  "EARLY_new_executed": 0,
+  "source_count_unchanged": 6,
+  "local_selected": [
+    "p1539_zero_owned.unit",
+    "p1539_nonzero_owned.unit",
+    "p1539_negative_foreign-allocation.unit",
+    "p1539_negative_foreign-domain.unit",
+    "p1539_negative_live-read-at-end.unit",
+    "p1539_negative_post-end-read.unit",
+    "p1539_artifact_authentication.unit",
+    "p1539_rollback_4.unit",
+    "p1539_rollback_5.unit",
+    "p1539_native.integration"
+  ],
+  "new_tests": [
+    {
+      "backtrace": 231,
+      "name": "p1539_zero_owned.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 235,
+      "name": "p1539_nonzero_owned.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 239,
+      "name": "p1539_negative_foreign-allocation.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 243,
+      "name": "p1539_negative_foreign-domain.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 247,
+      "name": "p1539_negative_live-read-at-end.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 251,
+      "name": "p1539_negative_post-end-read.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 255,
+      "name": "p1539_artifact_authentication.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 259,
+      "name": "p1539_rollback_4.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 263,
+      "name": "p1539_rollback_5.unit",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    },
+    {
+      "backtrace": 267,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+        "/workspace/NewLang_P1539_integration/tests/p1539/native.py",
+        "/workspace/p1539-c1243-integration/build-gcc/newlangc",
+        "/usr/bin/gcc",
+        "/workspace/p1539-c1243-integration/build-gcc/p1529_consumer",
+        "/workspace/NewLang_P1539_integration/tests/p1539",
+        "/workspace/p1539-c1243-integration/build-gcc/p1539-native",
+        "none"
+      ],
+      "name": "p1539_native.integration",
+      "properties": [
+        {
+          "name": "ENVIRONMENT",
+          "value": [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name": "RUN_SERIAL",
+          "value": true
+        },
+        {
+          "name": "TIMEOUT",
+          "value": 90.0
+        },
+        {
+          "name": "WORKING_DIRECTORY",
+          "value": "/workspace/p1539-c1243-integration/build-gcc"
+        }
+      ]
+    }
+  ],
+  "source": "actual frontend inventory, full adds only llvm.c_api; existing EARLY exact names unchanged",
+  "no_workflow_hook_or_Required_changes": true
+}
