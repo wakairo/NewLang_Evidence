@@ -1,0 +1,19 @@
+65:    size_t direct_payload_reads;
+96:    size_t caller_tail_reads, receiver_tail_reads;
+595:static bool terminal_role_lane(const Emit *e)
+613:    if (!terminal_role_lane(e) || e->producer_issuer != f ||
+617:        e->receiver_tail_reads || e->caller_tail_reads > 1 || !producer ||
+664:               !e->caller_tail_read && !e->receiver_tail_reads &&
+670:    return e->owner_calls == 1 && e->owner_read && !e->receiver_tail_reads &&
+1756:            if (e->direct_h && ++e->direct_payload_reads != 1)
+2401:        const bool role_lane = terminal_role_lane(e) && e->producer_calls;
+2479:                ++e->receiver_tail_reads;
+3078:        direct ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
+3082:               : ((terminal_role_lane(e)
+3284:    if (terminal_role_lane(e)) {
+3318:             (!terminal_role_lane(e) ||
+3319:              e->receiver_tail_reads == (e->owner_read ? 1u : 0u)) &&
+4015:          e.link_updates || e.direct_payload_reads != 1)) ||
+4039:          (terminal_role_lane(&e)
+4042:                  e.receiver_tail_reads != (e.owner_read ? 1u : 0u) ||
+4045:                                   e.caller_tail_reads + e.receiver_tail_reads)

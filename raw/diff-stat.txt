@@ -1,0 +1,16 @@
+ CMakeLists.txt                      |   1 +
+ src/checked_c_node.c                |  57 ++++-
+ tests/p1535/CMakeLists.txt          |  24 ++
+ tests/p1535/N-foreign-allocation.nl |  85 +++++++
+ tests/p1535/N-foreign-domain.nl     |  85 +++++++
+ tests/p1535/N-foreign-pointer.nl    |  85 +++++++
+ tests/p1535/N-live-read-at-end.nl   |  84 +++++++
+ tests/p1535/N-post-end-read.nl      |  85 +++++++
+ tests/p1535/P-composed.nl           |  87 +++++++
+ tests/p1535/P-nonzero.nl            |  85 +++++++
+ tests/p1535/P-zero.nl               |  85 +++++++
+ tests/p1535/README.md               |  29 +++
+ tests/p1535/native.py               |  62 +++++
+ tests/p1535/passive.h               | 259 +++++++++++++++++++++
+ tests/p1535/public_owned.c          | 442 ++++++++++++++++++++++++++++++++++++
+ 15 files changed, 1549 insertions(+), 6 deletions(-)

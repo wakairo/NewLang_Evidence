@@ -1,0 +1,6 @@
+{
+  "first_candidate_RED": "selected23 CLI4; original candidate-FIRST source/manifest retained",
+  "repair": "Static route trace: direct conditional plan sets copy_conditional_match, not copy_after_match. Removed unrelated copy_after_match requirement only from new exact active-direct-body selector. All owner_evidence/body/world/ref checks retained.",
+  "bytes": 203646,
+  "sha256": "6338c7f930cb8b5e8ecd8dce791eb505f42c7ec931477e11d300e5215b4b606f"
+}

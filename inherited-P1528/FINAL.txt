@@ -1,0 +1,79 @@
+P1528 / C1198 FINAL — LOCAL GATE0 COMPLETE; RETURN CONSUMER-ONLY PROPOSAL; STOP
+
+P1525 remains COMPLETE/STOP, not reopened/reset. Same sole P; no second producer or independent F/R original source/oracle/runner read/imported.
+
+**Fixed objects and provenance**
+Adopted main remains c97ce81c48a0c003b072c77c655bdeb10860ebf1 / tree7591cf7c908c9f7258d0d9512fc79d084d73fbaa; CURRENT_SPEC→Draft17.38. Unchanged, unadopted subject7deabd1b1f44bc40862b6a28c89fde502832d8cb / tree20083ff35349efd254e015f90dcac38a8d16852a. Final live main/branch GET and detached Gate0/publication worktree checks match; trees clean, no prior-candidate safety STOP relayed. Compass→actual Value§§1.1/1.3→Process§§4.1.2/4.3.2→canonical18.1a checked, semantics KEEP.
+
+Isolated source input worktree /workspace/NewLang_P1528_gate0, temporary source/probe/raw /workspace/p1528-gate0. Reused authenticated own existing GCC14 fortified Release compiler/libs from P1525; hashes and source/build provenance recorded. No frontend rebuild, SDK acquisition or Production modification.
+
+**FIRST and measured question**
+ACTUAL START POST/GET6977655894. Complete own5 source files + oracle + public-only probe + runner bytes/SHA were FIRST POST/GET6977779356 BEFORE any compiler/probe/source execution:
+https://github.com/wakairo/NewLang_Compiler/issues/1528#issuecomment-6977779356
+
+Both positives preserve caller-side payload read, two original H allocations/H0-H1-H2, second-H callee teardown, first-H caller cleanup, H2-only same-original-T named Copy and common old/current/sibling reads. Added callee operation is exactly:
+loan_read(d) { |inspect| let scoped = ref_from_ptr(read,p,inspect); unit };
+then existing exclusive EndRoot→erase→finalize→deallocate→unit.
+It obtains/discards same-D **root read access**, not a new callee payload projection/use, u8 return or practical consumer contract.
+
+Positive bytes/SHA256:
+- P-zero.nl3126B /449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94.
+- P-nonzero.nl3127B /d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031.
+All original FIRST files still match frozen bytes/SHA; no source/probe/oracle correction.
+
+**Predicted → first actual reached/refused layers**
+| Own frozen case | CHECK | Public owned | Existing C17 | Native |
+| --- | --- | --- | --- | --- |
+| zero |CLI0 |genuine MACHINE1 / PASS |CLI4 V1-BACKEND-UNSUPPORTED |NOT_RUN |
+| nonzero42 |CLI0 |genuine MACHINE1 / PASS |CLI4 V1-BACKEND-UNSUPPORTED |NOT_RUN |
+| foreign D |CLI3 P193-CALL-DOMAIN |NOT_RUN |NOT_RUN |NOT_RUN |
+| live read at EndRoot |CLI3 P193-DEFINITION-ORDER |NOT_RUN |NOT_RUN |NOT_RUN |
+| post-EndRoot read |CLI3 P193-DEFINITION-RELATION |NOT_RUN |NOT_RUN |NOT_RUN |
+
+The positive prediction CHECK/owned success→private C17 refusal was borne out. Both C17 FIRST attempts (ledger15/16) report: “mixed H plus T has no dual-carrier C17 proof”; neither creates the C output. No later execution forced and no replacement runtime/observer engine built. Negative diagnostic details are retained; no prescribed diagnostic was assumed or oracle weakened.
+
+For BOTH positive worlds/samples, the public-only source-owned probe:
+- independently registers/checks the definition under fresh uncorrelated inputs with5 ordered steps (READ_ROOT plus four teardown steps), no bindings/values/places/Domains/R minted by definition registration;
+- destroys the original AST/parser/source before using the owned registered body and genuine actual main call;
+- proves whole-root MACHINE=1, actual entry/post/body/result, exact actual/formal/donor and affine consumption;
+- observes original root24/incarnation27/R2/D2/full range24, one distinct other original still live at receiver entry, original full Storage/release and dead receiver post-state;
+- verifies exactly one new same-original-root/D read reference, closed scope before EndRoot,9 closed loans (old8+new1);
+- retains both public named Copy/body/parameter/event validations0, same-original-T/current/old/sibling, H0 no release, H1 first release only, H2 callee+caller two releases and genuine sample0/42.
+These are source/proof observations, not physical native execution. No forged owner/world/source or inference from just a function name/count.
+
+Foreign D fails actual caller relation (“input LifetimeDomain does not govern the pointer's root”). Live read at EndRoot fails independent definition (“invalid domain loan source”). Post-end read fails independent definition (“read reloan needs input pointer and same-domain loan”). Source refused before backend.
+
+**Existing consumer reuse / one recommendation**
+Measured source/public issuer/whole-root evidence already handles this selected5-step composition; no new source law or public issuer/relation is indicated.
+
+Read-only fixed-subject code shows a sufficient blocking constraint: direct owner_evidence requires step_count4 at checked_c_node.c3078–3081. Shared owner emission already recognizes4/5, sets owner_read and uses the existing original-R/D/actual/formal/full-range checks. However existing terminal_read_role/active-owner read routing and receiver counters are tied to producer/LiveTail; they cannot just be labelled direct. This is static analysis, not an instrumented exact first executed guard or proof that flipping4→5 alone works.
+
+**Recommendation:** return a bounded, consumer-only reuse proposal to C for prioritization. Any separately authorized repair should reuse the genuine borrowed source/body/world/original root/incarnation/R/D and existing read validation, explicitly preserve new-loan closure/counts separately from the retained caller payload read, original teardown/H0-H1 and same-T continuation, then obtain C17/native evidence. Do not add dedicated proof/profile/issuer machinery or start Stage B here. This discarded-root-read probe alone supplies no practical next-implementation completion claim.
+
+No source/probe/oracle correction was required. One read-only search used a nonexistent private-header path; its exit2/stderr (ledger21) is retained, followed by corrected path lookup (22). It was not a source/CHECK/owned/C17 finding and did not change predictions or compiler.
+
+**Costs / zero scopes**
+Final **29/48 metered top-level local invocations**, conservatively including administrative source/hash/read/Git/custody phases; actual selected source/probe/CC subcases are separate in the ledger, no hidden repeated campaign.
+Frontend builds0; public-probe build **1/2**.
+Native compilations **0/2**, actual generated-C native guests **0/6** (earlier C17 refused).
+SDK0, compiler-host fault injection0, full CTest0.
+Production/public-header/checker/validator/CMake/workflow/canonical edits0.
+Compiler remote branch/PR/push/Actions/retry0; no PR1526 update/HEAD, no READY/merge.
+P1525 consumed276/320,57/64,48/48,2/2 public HEADs/16 jobs and its old FIRST/RED/ENV-PARTIAL remain unchanged historical records.
+
+**Durable FIRST/raw custody**
+One new independent Evidence ref, one normal push, no existing archive mutation:
+archive/c1198-terminal-read-gate0-20261118 @75dbea37bbca3a173f4a2bb2a3f759059887ff33
+tree52687741a75d14e5402f0b567ab0279fb38a54f5.
+https://github.com/wakairo/NewLang_Evidence/tree/75dbea37bbca3a173f4a2bb2a3f759059887ff33
+51 files /140,774B, within256/8MiB; manifest SHA25610248dadb1aa68c99f16f58e03c5868e39f5911c34a1b4fc228f02701a48f06a.
+Complete experimental FIRST/source/oracle/probe/raw/provenance and measurement ledger retained; no SDK/ELF/build object/credentials/env dump/independent packet. All51 actual paths,size,SHA,Git mode/blob bytes verified from a separate fresh empty HTTPS clone with no local/shared/reference objects/alternates. Runtime reruns for custody0.
+
+Restore receipt POST/GET exact6978076413:
+https://github.com/wakairo/NewLang_Compiler/issues/1528#issuecomment-6978076413
+Only afterward deleted the two named redundant self-owned staging/restore clones, reclaiming1,163,264B/259 inodes. Original Gate0 files/probe/raw, detached7de input, prior publication/original worktrees/commits/raw and necessary SDK remain retained. No F/R custody touched. Later Git-only custody/final guard costs are included in29, distinguished from the archived completed-measurement snapshot.
+
+**VALUE-ALIGNMENT-RISK (separate)**
+A discarded extra root read is not a practical consumer completion, an ordinary-safe API/all safe-reachable states, or measured library-author + ordinary-safe-caller UB-prevention audit/re-audit closure improvement versus well-factored C. The result narrows a compiler reuse question; it does not justify new fixture-specific trusted machinery or Product GO. Benefit remains UNMEASURED; natural sound Rust safe-facade alternatives and V1519's accepted concern remain. Product GO624 PAUSED/H1#268 HOLD.
+
+**STOP.** LOCAL GATE0 only is complete. Return the measured consumer boundary and proposal to C; implementation/publication Stage B is not authorized. No self-close, next-scope release, READY or merge.

@@ -1,0 +1,178 @@
+{
+  "status": "LOCAL_READY / bounded declared capability / STOP C after custody",
+  "parent": "b1a6f1725abe25981ad29088175de581f956f919",
+  "head": "58245a24e047280304443258b2cfc8a540c9202a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "local_branch": "p1535-scoped-root-read-local",
+  "main": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "canonical": "Draft17.38",
+  "changed_paths": [
+    "CMakeLists.txt",
+    "src/checked_c_node.c",
+    "tests/p1535/CMakeLists.txt",
+    "tests/p1535/N-foreign-allocation.nl",
+    "tests/p1535/N-foreign-domain.nl",
+    "tests/p1535/N-foreign-pointer.nl",
+    "tests/p1535/N-live-read-at-end.nl",
+    "tests/p1535/N-post-end-read.nl",
+    "tests/p1535/P-composed.nl",
+    "tests/p1535/P-nonzero.nl",
+    "tests/p1535/P-zero.nl",
+    "tests/p1535/README.md",
+    "tests/p1535/native.py",
+    "tests/p1535/passive.h",
+    "tests/p1535/public_owned.c"
+  ],
+  "diff": "15files +1549/-6; private consumer57-line diff, focused own tests and CMake only",
+  "counts": {
+    "local": 117,
+    "native": 21,
+    "frontend": 2,
+    "probe": 2,
+    "host": 10
+  },
+  "host_sites": 3,
+  "Compiler_remote": 0,
+  "SDK": 0,
+  "not_run": [
+    "O0 guests",
+    "remaining3 guest reserve",
+    "full CTest sweep",
+    "LLVM backend",
+    "final repaired GCC frontend build (cap2 consumed; final Clang ASan frontend used)",
+    "new CI",
+    "callee payload/u8-return/general owner capability"
+  ],
+  "original_RED": [
+    {
+      "layer": "P1528 old7de source-owned/C17",
+      "immutable": true
+    },
+    {
+      "layer": "new b1 baseline",
+      "ids": [
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "layer": "first private candidate",
+      "id": 23
+    },
+    {
+      "layer": "observer static generation",
+      "file": "apparatus-static-FIRST-RED.txt"
+    },
+    {
+      "layer": "formatter",
+      "id": 101
+    }
+  ],
+  "nonzero": [
+    {
+      "id": 4,
+      "label": "baseline C17 FIRST refusal zero",
+      "exit": 4
+    },
+    {
+      "id": 8,
+      "label": "baseline C17 FIRST refusal nonzero",
+      "exit": 4
+    },
+    {
+      "id": 12,
+      "label": "baseline C17 FIRST refusal composed",
+      "exit": 4
+    },
+    {
+      "id": 23,
+      "label": "final C17 zero",
+      "exit": 4
+    },
+    {
+      "id": 50,
+      "label": "negative CHECK foreign-domain",
+      "exit": 3
+    },
+    {
+      "id": 52,
+      "label": "negative CHECK foreign-allocation",
+      "exit": 3
+    },
+    {
+      "id": 54,
+      "label": "negative CHECK foreign-pointer",
+      "exit": 3
+    },
+    {
+      "id": 56,
+      "label": "negative CHECK live-read-at-end",
+      "exit": 3
+    },
+    {
+      "id": 58,
+      "label": "negative CHECK post-end-read",
+      "exit": 3
+    },
+    {
+      "id": 64,
+      "label": "held LiveTail prefix C17 no clobber",
+      "exit": 4
+    },
+    {
+      "id": 69,
+      "label": "named host text fault 1",
+      "exit": 1
+    },
+    {
+      "id": 71,
+      "label": "named host text fault 2",
+      "exit": 1
+    },
+    {
+      "id": 101,
+      "label": "final pinned formatter dry run",
+      "exit": 1
+    }
+  ],
+  "native": "21 O2 guests; GCCzero/42 6, ClangASanzero/42 6, ClangUBSancomposed3, GCCfourstepzero3, Clangnormalcomposed3. Actual H0/H1/H2, physical original second->first release and same-T continuation. No sanitizer diagnostics.",
+  "negatives": "5 source negatives CHECK3 plus rollback; 35 artifact+foreign origin negatives with pristine retry, composedprefix4; legal heldLiveTailprefix CHECK/MACHINE but backend refusal, no-clobber/rollback.",
+  "host": "main/callee C text staging, trailingCopy replay clone: each fault/retry=6 cases; named main/callee fault/retry4 cases; total3sites10cases with state/out length98765/no-clobber/no temp residue.",
+  "format": "final formatter PASS; post-test changes whitespace only, exact C token identity recorded, no third frontend/probe build",
+  "generated": [
+    {
+      "path": "composed.c",
+      "bytes": 11925,
+      "sha256": "9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a"
+    },
+    {
+      "path": "fournonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "path": "fourzero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    {
+      "path": "livetail.c",
+      "bytes": 16402,
+      "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1"
+    },
+    {
+      "path": "nonzero.c",
+      "bytes": 11688,
+      "sha256": "d91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e"
+    },
+    {
+      "path": "zero.c",
+      "bytes": 11687,
+      "sha256": "e409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4"
+    }
+  ],
+  "value_alignment_risk": "Optional obtained/discarded root ref coverage; fourstep already permits caller payload->teardown->sameT. No useful callee payload/API/all safe-reachable-state or comparative author+caller audit/re-audit closure demonstration. ProductGO624 PAUSED/H1 HOLD, comparative value UNMEASURED; fair sound Rust facade and postpone optional alternative retained.",
+  "priority": "No C correction relayed in1535 latest GET; public main b2f and PR1532 ref b1 unchanged; no independent R/F material read.",
+  "custody": "One new normalGit Evidence ref archive/p1535-c1223-scoped-root-read-20261119; all manifest members and fixed-parent patch replay from fresh HTTPS required before temp deletion."
+}

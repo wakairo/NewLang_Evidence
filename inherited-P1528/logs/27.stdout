@@ -1,0 +1,18 @@
+{
+  "commit": "75dbea37bbca3a173f4a2bb2a3f759059887ff33",
+  "tree": "52687741a75d14e5402f0b567ab0279fb38a54f5",
+  "fresh_empty_HTTPS": true,
+  "no_shared_local_reference_objects_or_alternates": true,
+  "clone_seconds": 0.6502878069986764,
+  "full_member_verification": {
+    "member_count_including_manifest": 51,
+    "payload_count": 50,
+    "total_bytes_including_manifest": 140774,
+    "manifest_sha256": "10248dadb1aa68c99f16f58e03c5868e39f5911c34a1b4fc228f02701a48f06a",
+    "path_set_size_sha256_Git_mode_and_blob_bytes": "ALL_MATCH"
+  },
+  "compiler_native_probe_CI_reruns": 0,
+  "originals_retained": true,
+  "free_bytes": 61685846016,
+  "free_inodes": 4126832
+}

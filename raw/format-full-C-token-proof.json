@@ -1,0 +1,29 @@
+{
+  "method": "C lexical token comparison with line splices, identifiers, pp numbers, strings/chars and longest C17 punctuators; comments/whitespace ignored; exact literals retained. Read-only formatting integrity, no compiler/backend rerun.",
+  "members": [
+    {
+      "path": "src/checked_c_node.c",
+      "token_count": 35701,
+      "equal": true,
+      "token_stream_sha256": "ba806e8a290c2d09bbb2903bf33ec17f1aea0b3b169602bcf4d12a6776593367",
+      "before_sha256": "6338c7f930cb8b5e8ecd8dce791eb505f42c7ec931477e11d300e5215b4b606f",
+      "after_sha256": "bd102f93b67f5ae8e4a8a9d37895ce1af5cc330901d165276a5e18b728ac0391"
+    },
+    {
+      "path": "tests/p1535/passive.h",
+      "token_count": 2097,
+      "equal": true,
+      "token_stream_sha256": "5905fc107dc944baac5a820fce84be741dec8373638171b91615af321ebff936",
+      "before_sha256": "63e69286a179ff4c63b3a28f235ba60fb7ba685cafb667b9957528e8f160253b",
+      "after_sha256": "9d53d56de3615e0dcfa514c14da52a37fb37d07c9b9eda2dc0fa0f4d900ada89"
+    },
+    {
+      "path": "tests/p1535/public_owned.c",
+      "token_count": 3810,
+      "equal": true,
+      "token_stream_sha256": "389a0e8f488c0499c2ec8859dc3ec3bb9e1564874bd47a505e8b96874a5a0353",
+      "before_sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906",
+      "after_sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906"
+    }
+  ]
+}

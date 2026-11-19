@@ -1,0 +1,28 @@
+{
+  "mission": "P1528 C1198 LOCAL GATE0; unchanged compiler; implementation NOT authorized",
+  "main": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "subject": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "subject_tree": "20083ff35349efd254e015f90dcac38a8d16852a",
+  "canonical": "Draft17.38 18.1a,3.2,13.5a/c,18.2-8,26.9,27.3; KEEP",
+  "positive": ["source/P-zero.nl", "source/P-nonzero.nl"],
+  "added_obligation": "one callee same-D loan_read/ref_from_ptr(read,p,inspect), whose ref does not escape, scope closes before original EndRoot; unit return and existing four teardown steps",
+  "read_limit": "callee obtains bounded root read access only, discarded within the loan; no new callee payload projection/result or source category. Existing caller payload read remains.",
+  "predictions": {
+    "positive_CHECK": "ordinary CLI0; valid selected source, independent conditional owner definition with5 ordered steps",
+    "positive_owned": "authentic whole-root MACHINE1; public definition/actual-entry/post prove original root/incarnation/R/A/D and exact formal/donor/result/teardown; optional root read same-D closed before EndRoot; unchanged named Copy/current proofs, H0/H1/H2",
+    "positive_C17": "expected first private-consumer refusal: CLI4 V1-BACKEND-UNSUPPORTED. Read-only prior code inspection shows direct-H owner_evidence requires step_count4 although shared serializer understands4/5. No compiler repair in Gate0.",
+    "negative_foreign_domain": "CHECK semantic refusal at actual call: p1/a1 with d0 does not meet governing Domain equality; no later execution",
+    "negative_live_read_at_end": "CHECK refusal at definition/loan compatibility: exclusive EndRoot while same-D ordinary loan remains live; precise diagnostic not presumed",
+    "negative_post_end_read": "CHECK refusal at definition: root reloan after EndRoot, before Domain finalization; precise diagnostic not presumed"
+  },
+  "worlds_if_native_reached": {
+    "H0": "malloc fail1,0 roots/frees/receiver/second-T writes; T current0",
+    "H1": "malloc fail2,first original caller cleanup once,0 receiver/second-T writes; T current0",
+    "H2": "both allocations real, caller payload read plus optional callee root reloan closed, second original callee free then first caller free, same original T second named Copy old0/current sample0 or42; sibling23, retained startup old91"
+  },
+  "native_gate": "NOT_RUN unless CHECK and genuine owned and actual C17 succeed. If unexpectedly reached, freeze any minimally adapted own passive observer before use; at most2 strict GCC compilations/6 guest runs; no replacement engine.",
+  "protocol": "one metered invocation per CLI/probe/CC; raw exit/stdout/stderr retained; no hidden repeated campaigns; negatives stop at actual first refusal; unsafe acceptance stops affected execution/C",
+  "budgets": {"top_level_local":48,"frontend_or_public_probe_builds":2,"native_compilations":2,"native_runs":6,"SDK_acquisition":0,"host_fault":0,"full_CTest":0,"Production_edits":0,"Compiler_remote_CI":0,"Evidence_refs":1,"Evidence_pushes":1,"Evidence_files":256,"Evidence_bytes":8388608},
+  "provenance": "own P1515/P1517/P1525 baseline and public probe only, new optional-read expectation/source chosen here; no independent F/R original source/oracle/runner read; original snapshots untouched",
+  "value_alignment_risk": "discarded root read is a feasibility probe, not practical consumer completion or reduced author+ordinary-safe-caller UB audit/re-audit closure vs well-factored C. Benefit UNMEASURED; sound Rust safe facade fair alternative; Product GO624 PAUSED/H1 HOLD. Recommend no implementation automatically."
+}

@@ -1,0 +1,22 @@
+{
+  "binaries": [
+    {
+      "path": "/workspace/p1531-evidence/build-gcc/newlangc",
+      "bytes": 1139072,
+      "sha256": "c0b3efb7ad4d8a0d5f961af5114b57a142d279dfaaf29195a45fc7898c77fef9"
+    },
+    {
+      "path": "/workspace/p1531-evidence/build-gcc/p1529_consumer",
+      "bytes": 1063008,
+      "sha256": "537a3919246366397971bf9d582b382ade398eb8d0fead5870874dd39e1e97e4"
+    },
+    {
+      "path": "/workspace/p1528-gate0/public_owned",
+      "bytes": 827848,
+      "sha256": "844f904c2e0938ac5378a00dfa4f13ebf5ab0a1ba817514fab040b422591c541"
+    }
+  ],
+  "public_issuer_source_diff_7de_b1": "src/checked_c_allocated_current_internal.h\n",
+  "cached_frontend": "b1a6 GCC final C1213 build",
+  "new_public_probe": "derived P1528, defaults91/23, composed83/27, no authority construction"
+}

@@ -1,0 +1,49 @@
+{
+  "base": "b1a6f1725abe25981ad29088175de581f956f919",
+  "tree": "1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9",
+  "canonical": "Draft17.38 \u00a718.1a",
+  "inherited": "P1528 FIRST6977779356 RED/FINAL6978142243 original unchanged on7de",
+  "positive": [
+    {
+      "file": "P-zero.nl",
+      "sample": 0,
+      "initial": 91,
+      "sibling": 23,
+      "first": 67,
+      "prefix": 0
+    },
+    {
+      "file": "P-nonzero.nl",
+      "sample": 42,
+      "initial": 91,
+      "sibling": 23,
+      "first": 67,
+      "prefix": 0
+    },
+    {
+      "file": "P-composed.nl",
+      "sample": 37,
+      "initial": 83,
+      "sibling": 27,
+      "first": 83,
+      "prefix": 2
+    }
+  ],
+  "baseline": "CHECK0; genuine MACHINE/public owned5steps/full R/A/D/root/inc/actual/formal/read closed before EndRoot; C17 CLI4 no output; API Unsupported NULL/length/state unchanged; no native until positive backend reached",
+  "after": "same exact public proofs; C17/API bytes identical; strict native H0/1/2, actualzero, callee ends/frees second then caller first then original T Copy/current/old/sibling; scoped root read discard only, no callee field/payload",
+  "negative": "wrong Domain/allocation/pointer; live read across EndRoot; post-EndRoot read must CHECK reject and rollback. Genuine public artifact mutations must refuse unchanged output/state and pristine retry. Legal new LiveTail prefix remains CHECK/MACHINE but C17/API refused. Four-step zero/nonzero and old zero-prefix LiveTail unchanged C17 bytes.",
+  "native_plan": "21 guests: GCC O2 zero/42=6, pinnedClang ASan O2 zero/42=6, pinnedClang UBSan O2 composed=3, GCC O2 unchanged4stepzero=3, pinnedClang O2 composed=3. Reserve3 for scope-safe repair/control; O0 NOT_RUN unless plan updated before use.",
+  "host_plan": "Only materially relevant text staging main/callee, actual-root clone and trailing Copy clone, at most4 sites12cases, existing fault apparatus. No SDK download, no broad CTest.",
+  "implementation": "Reuse existing unit_observation rootref/unit shape and full REF_FROM_PTR checked world validation, authenticate exact direct active owner body, keep real D scope end before EndRoot. No producer/LiveTail relabelling, no public/semantic/issuer/API/ABI change.",
+  "limits": {
+    "local": 128,
+    "native": 24,
+    "frontend": 2,
+    "probe": 2,
+    "host_sites": 4,
+    "host_cases": 12,
+    "SDK": 0,
+    "Compiler_remote": 0
+  },
+  "value": "Optional discard-root coverage only. Payload\u2192four-step\u2192T already works. Product audit-locality and comparative author+caller closure UNMEASURED; postpone optional remains alternative."
+}

@@ -1,0 +1,5 @@
+{
+  "reason": "Static strict-C warning prevention: unsigned prefix_reads<0 for zero-prefix controls. Use != finite prefix count; no oracle change. Prior r2 preserved in candidate-FIRST/passive.h.",
+  "bytes": 15076,
+  "sha256": "63e69286a179ff4c63b3a28f235ba60fb7ba685cafb667b9957528e8f160253b"
+}

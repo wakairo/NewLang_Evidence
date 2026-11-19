@@ -1,0 +1,20 @@
+[
+  {
+    "path": "src/checked_c_node.c",
+    "before_sha256": "6338c7f930cb8b5e8ecd8dce791eb505f42c7ec931477e11d300e5215b4b606f",
+    "after_sha256": "bd102f93b67f5ae8e4a8a9d37895ce1af5cc330901d165276a5e18b728ac0391",
+    "tokens_identical": true
+  },
+  {
+    "path": "tests/p1535/passive.h",
+    "before_sha256": "63e69286a179ff4c63b3a28f235ba60fb7ba685cafb667b9957528e8f160253b",
+    "after_sha256": "9d53d56de3615e0dcfa514c14da52a37fb37d07c9b9eda2dc0fa0f4d900ada89",
+    "tokens_identical": true
+  },
+  {
+    "path": "tests/p1535/public_owned.c",
+    "before_sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906",
+    "after_sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906",
+    "tokens_identical": true
+  }
+]

@@ -1,0 +1,1 @@
+/workspace/NewLang_P1535/tests/p1535/N-post-end-read.nl:15:22-15:51: error(semantic)[P193-DEFINITION-RELATION]: read reloan needs input pointer and same-domain loan

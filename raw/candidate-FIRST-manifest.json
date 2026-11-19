@@ -1,0 +1,82 @@
+[
+  {
+    "path": "src/checked_c_node.c",
+    "bytes": 203669,
+    "sha256": "50ee2c2b171c6ceb61b91c80ce7df0e41262dcbbc91aea7ce4f17420fad6d00b"
+  },
+  {
+    "path": "tests/p1535/CMakeLists.txt",
+    "bytes": 1319,
+    "sha256": "a093408261b358adcc84392b60828ca89e2f91ab45f7441041ad0c5e9d4100fb"
+  },
+  {
+    "path": "tests/p1535/N-foreign-allocation.nl",
+    "bytes": 3126,
+    "sha256": "87af2bb6c65c2c3c75b84df830986e8d0ba843b3479a3d5e9cefae4a39b4c086"
+  },
+  {
+    "path": "tests/p1535/N-foreign-domain.nl",
+    "bytes": 3126,
+    "sha256": "1f79d19e41fe88e2d66da6baa1a221dd25a5796423811551397bcc51c8c94373"
+  },
+  {
+    "path": "tests/p1535/N-foreign-pointer.nl",
+    "bytes": 3126,
+    "sha256": "938b9961af9c1d92a6fe897fa6ce17dc51c6172d80a5d299cb413bff515fe44a"
+  },
+  {
+    "path": "tests/p1535/N-live-read-at-end.nl",
+    "bytes": 3124,
+    "sha256": "4d93c03b500d3c5b1c4df6bc3c832c0c714da339241b8749ef901bdd26a17fe0"
+  },
+  {
+    "path": "tests/p1535/N-post-end-read.nl",
+    "bytes": 3126,
+    "sha256": "2ba24d7169035730486e9c3072bb9794f423e16703f3f188ea02e65167d21806"
+  },
+  {
+    "path": "tests/p1535/P-composed.nl",
+    "bytes": 3154,
+    "sha256": "eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4"
+  },
+  {
+    "path": "tests/p1535/P-nonzero.nl",
+    "bytes": 3127,
+    "sha256": "d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031"
+  },
+  {
+    "path": "tests/p1535/P-zero.nl",
+    "bytes": 3126,
+    "sha256": "449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94"
+  },
+  {
+    "path": "tests/p1535/README.md",
+    "bytes": 1875,
+    "sha256": "9163fe45585237c1a46eca0358063962301aa065f8ba97fdee93bd37549dce09"
+  },
+  {
+    "path": "tests/p1535/native.py",
+    "bytes": 2711,
+    "sha256": "e223000455532744fbf486a662fac7cba68c528aa7954927957c024b226e5dce"
+  },
+  {
+    "path": "tests/p1535/passive.h",
+    "bytes": 15075,
+    "sha256": "c9d6fec01c4ea376b6b62e8292ee498200eee6477836cac5f9a2b968e7626806"
+  },
+  {
+    "path": "tests/p1535/public_owned.c",
+    "bytes": 20953,
+    "sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "bytes": 156044,
+    "sha256": "aa411b56574c920a43000c71ad8425d91afaf41f54949e5de534c33b4e04f28d"
+  },
+  {
+    "path": "meter.py",
+    "bytes": 1523,
+    "sha256": "8292f288039bb124e05cf09f80268972c865ed8eb3b52430e9a2862a5b4fae74"
+  }
+]

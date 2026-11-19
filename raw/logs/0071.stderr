@@ -1,0 +1,3 @@
+P1517 selected compiler-host text-buffer OOM
+error(cli)[NODE-C-RESOURCE]: bounded mixed emission resource failure
+note: /workspace/NewLang_P1535/tests/p1535/P-zero.nl

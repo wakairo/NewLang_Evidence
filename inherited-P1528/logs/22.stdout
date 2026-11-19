@@ -1,0 +1,118 @@
+static bool terminal_role_lane(const Emit *e)
+{
+    return (e->copy_type || e->scalar_issued ||
+            (e->current && e->current->post_count)) &&
+           e->live_tail && e->no_pre_read && !e->custody;
+}
+static size_t expected_owner_calls(const Emit *e)
+{
+ * ref_from_ptr provenance/scope/target/operand check below. */
+static bool terminal_read_role(const Emit *e, const Env *env,
+                               const NLCheckedNodeView *read, const Env *target)
+{
+    const NLCheckedNodeView *origin =
+        e->owner_calls ? e->active_owner_call : get(env, e->producer_node);
+    if (!origin || !target || read->reference_result.writable ||
+        target->region_slot != 1 || e->producer_calls != 1 || e->pending_live ||
+        e->link_updates != 2 || e->projections != 2 + e->no_read_copies ||
+        e->reads != e->no_read_copies || e->caller_tail_reads > 1 ||
+        target->heap_place != read->lifetime_place ||
+        target->heap_incarnation != read->lifetime_incarnation ||
+        target->heap_domain != read->lifetime_domain ||
+        env->stability_domain != target->heap_domain ||
+        e->lifecycle[1].stage != 4)
+        return false;
+    if (!e->owner_calls)
+        return env->artifact == e->producer_issuer && !e->active_owner_body &&
+               !e->active_owner_call && !e->caller_tail_reads &&
+               !e->caller_tail_read && !e->receiver_tail_reads &&
+               origin->producer.root == target->heap_place &&
+               origin->producer.incarnation == target->heap_incarnation &&
+               origin->producer.domain == target->heap_domain &&
+               origin->span.end_byte < read->span.start_byte &&
+               e->reloans == e->projections + e->reads - e->no_read_copies;
+    return e->owner_calls == 1 && e->owner_read && !e->receiver_tail_reads &&
+           env->artifact == e->active_owner_body &&
+           nl_checked_node_view(e->producer_issuer, e->active_owner_id) ==
+               origin &&
+           nl_checked_call_body(e->producer_issuer, e->active_owner_id) ==
+               env->artifact &&
+           origin->owner_call.root == target->heap_place &&
+           origin->owner_call.incarnation == target->heap_incarnation &&
+           origin->owner_call.domain == target->heap_domain &&
+           e->reloans == e->projections + e->reads - e->no_read_copies +
+                             e->caller_tail_reads;
+}
+
+        if (e->qualified_unchecked && env->artifact == e->qualified_owner &&
+            v == get(env, e->qualified_read.operation))
+            return qualified_ref(e, env, v, out);
+        const NLCheckedNodeView *st = get(env, a->next_argument);
+        Value p = {0}, stable = {0};
+        NLSemanticTypeView t;
+        NLSemanticTypeView rt;
+        NLSemanticValueView pv, rv, sv;
+        NLSemanticBackingView backing;
+        const bool write = v->reference_result.writable;
+        const Env *target = heap(env, v);
+        const bool role_lane = terminal_role_lane(e) && e->producer_calls;
+        const bool role_read =
+            role_lane && terminal_read_role(e, env, v, target);
+        const bool observation =
+            (!write && !role_read &&
+             (env->unit_observation == v || env->scalar_observation == v)) ||
+            env->ptr_observation == v;
+        if ((role_lane && !role_read && !observation) ||
+            (observation && (!target || target->region_slot >= 2 ||
+                             e->lifecycle[target->region_slot].stage != 4)))
+            return reject(e);
+        if (!observation && e->reloans == 0)
+            e->heap_link = write;
+        if (write && e->two_heap && e->live_tail && !e->custody &&
+            !e->no_pre_read && !e->producer_calls && e->link_updates == 1 &&
+            e->reloans == 1 + e->reads && !no_read_entry(e, env, v))
+            return reject(e);
+        if ((!e->two_heap && e->destroys != 0) ||
+            (!role_read && !observation &&
+             (e->reloans >= (e->two_heap ? 4u + (e->live_tail != 0 ? 1u : 0u) +
+                                               (e->owner_read ? 1u : 0u) -
+                                               (e->no_pre_read ? 2u : 0u) +
+                                               e->no_read_copies
+                             : e->heap_link ? 3u
+                                            : 1u) ||
+            !pv.reference.readable || (write && !pv.reference.writable) ||
+            pv.reference.place != v->lifetime_place ||
+            pv.reference.incarnation != v->lifetime_incarnation ||
+            rv.reference.place != pv.reference.place ||
+            rv.reference.incarnation != pv.reference.incarnation ||
+            rv.reference.scope != env->stability_scope ||
+            rv.reference.scope != sv.reference.scope ||
+            sv.reference.place != env->stability_place ||
+            rv.reference.scope != v->reference_result.scope ||
+            v->lifetime_domain != env->stability_domain ||
+            !rv.reference.readable || rv.reference.writable != write ||
+            rv.reference.provenance != NL_PROVENANCE_VALID ||
+            !same_reference(v->reference_result, rv.reference) ||
+            !nl_semantic_backing_view(c, target == NULL ? 0 : target->backing,
+                                      &backing) ||
+            !backing.ordinary_read || backing.size != 24 ||
+            v->lifetime_range.region != target->backing ||
+            v->lifetime_range.start != 0 || v->lifetime_range.length != 24 ||
+            (write && (!backing.ordinary_write || backing.alignment < 8 ||
+                       v->lifetime_range.region != target->backing ||
+                       v->lifetime_range.start != 0 ||
+                       v->lifetime_range.length != 24)) ||
+            !expr(e, env, v->first_argument, &p) ||
+            !expr(e, env, a->next_argument, &stable))
+            return reject(e);
+        if (!observation)
+            ++e->reloans;
+        if (role_read) {
+            if (e->owner_calls)
+                ++e->receiver_tail_reads;
+            else {
+                ++e->caller_tail_reads;
+                e->caller_tail_read = v;
+            }
+        }
+        out->temp = ++e->temp;

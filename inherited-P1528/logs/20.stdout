@@ -1,0 +1,155 @@
+62:    bool owner_read;
+65:    size_t direct_payload_reads;
+98:    const NLCheckedFragment *active_owner_body;
+616:        e->active_owner_call || e->active_owner_body ||
+662:        return env->artifact == e->producer_issuer && !e->active_owner_body &&
+670:    return e->owner_calls == 1 && e->owner_read && !e->receiver_tail_reads &&
+671:           env->artifact == e->active_owner_body &&
+1756:            if (e->direct_h && ++e->direct_payload_reads != 1)
+2040:                          e->active_owner_call || e->active_owner_body ||
+2049:             e->active_owner_call || e->active_owner_body))
+2421:                                               (e->owner_read ? 1u : 0u) -
+3078:        direct ? (e->lifecycle[0].stage != 4 || e->direct_payload_reads != 1 ||
+3283:    e->owner_read = v->owner_call.definition.step_count == 5;
+3286:        e->active_owner_body = body;
+3319:              e->receiver_tail_reads == (e->owner_read ? 1u : 0u)) &&
+3322:    e->active_owner_body = NULL;
+4015:          e.link_updates || e.direct_payload_reads != 1)) ||
+4040:               ? (e.active_owner_call || e.active_owner_body ||
+4042:                  e.receiver_tail_reads != (e.owner_read ? 1u : 0u) ||
+4052:                                (e.owner_read ? 1u : 0u) -
+                            : NULL,
+                    .frame = ++e->frames,
+                    .region_slot = 1,
+                    .backing = target->backing,
+                    .heap_place = target->heap_place,
+                    .heap_incarnation = target->heap_incarnation,
+                    .heap_domain = target->heap_domain,
+                    .heap_symbol = v->owner_call.parameters[0]};
+    for (size_t i = 0; i < 3; ++i)
+        if (!add_local(e, &receiver, v->owner_call.parameters[i], args[i].type,
+                       false))
+            return false;
+    if (e->receiver == NULL)
+        e->receiver = malloc(C_BYTES);
+    if (e->receiver == NULL) {
+        e->status = NL_NODE_C_OUT_OF_MEMORY;
+        return false;
+    }
+    char *main_text = e->text;
+    size_t main_used = e->used;
+    e->text = e->receiver;
+    e->used = e->receiver_used;
+    ++e->owner_calls;
+    e->owner_read = v->owner_call.definition.step_count == 5;
+    if (terminal_role_lane(e)) {
+        e->active_owner_call = v;
+        e->active_owner_body = body;
+        e->active_owner_id = id;
+    }
+    bool ok = put(e, "static void nl_owner_%zu", v->function) &&
+              (!e->custody || put(e, "_%zu", receiver.frame)) &&
+              put(e,
+                  "(const nl_node *nl_b_%zu_%zu,nl_allocation "
+                  "nl_b_%zu_%zu,nl_domain nl_b_%zu_%zu) {\n"
+                  "NL_HEAP_RECEIVER_ENTER(nl_b_%zu_%zu,nl_b_%zu_%zu.handle,nl_"
+                  "b_%zu_%zu."
+                  "token,%zu,%zu,%zu,%zu,&nl_b_%zu_%zu,&nl_b_%zu_%zu);\n",
+                  receiver.frame, v->owner_call.parameters[0], receiver.frame,
+                  v->owner_call.parameters[1], receiver.frame,
+                  v->owner_call.parameters[2], receiver.frame,
+                  v->owner_call.parameters[0], receiver.frame,
+                  v->owner_call.parameters[1], receiver.frame,
+                  v->owner_call.parameters[2], receiver.frame,
+                  v->owner_call.parameters[0], v->owner_call.parameters[1],
+                  v->owner_call.parameters[2], receiver.frame,
+                  v->owner_call.parameters[1], receiver.frame,
+                  v->owner_call.parameters[2]);
+    Value result = {0};
+    if (ok)
+    if (ok)
+        ok = block(e, &receiver, nl_checked_root(body), &result) &&
+             result.type == e->unit && e->lifecycle[1].stage == 8 &&
+             e->lifecycle[1].owner_symbol == 0 &&
+             e->lifecycle[1].domain_symbol == 0 &&
+             head.stage == e->lifecycle[0].stage &&
+             head.owner_frame == e->lifecycle[0].owner_frame &&
+             head.owner_symbol == e->lifecycle[0].owner_symbol &&
+             head.domain_frame == e->lifecycle[0].domain_frame &&
+             head.domain_symbol == e->lifecycle[0].domain_symbol &&
+             (!terminal_role_lane(e) ||
+              e->receiver_tail_reads == (e->owner_read ? 1u : 0u)) &&
+             put(e, "NL_HEAP_RECEIVER_EXIT();\n}\n");
+    e->active_owner_call = NULL;
+    e->active_owner_body = NULL;
+    e->active_owner_id = 0;
+    e->receiver_used = e->used;
+    e->text = main_text;
+    e->used = main_used;
+    if (!ok)
+        return reject(e);
+    out->type = e->unit;
+    const bool emitted =
+        put(e,
+            "NL_HEAP_HANDOFF(nl_v_%zu,nl_v_%zu.handle,nl_v_%zu.token,&nl_b_%"
+            "zu_%zu,&nl_b_%zu_%zu);\n"
+            "nl_owner_%zu",
+            args[0].temp, args[1].temp, args[2].temp, donors[1]->frame,
+            donors[1]->symbol, donors[2]->frame, donors[2]->symbol,
+            v->function) &&
+        (!e->custody || put(e, "_%zu", receiver.frame)) &&
+    for (size_t i = 1; i <= nl_checked_node_count(some); ++i) {
+        const NLCheckedNodeView *n = nl_checked_node_view(some, i);
+        if (n->kind == NL_CHECKED_MATCH && n->field.present) {
+            if (inner || !copy_conditional_join(e, some, i) ||
+                !n->captured_frame_closed ||
+                !copy_conditional_field(&outer->field, &n->field) ||
+                nl_checked_match_arm(some, i, 1) != e->copy_conditional_issuer)
+                return reject(e);
+            const NLCheckedFragment *a = nl_checked_match_arm(some, i, 0);
+            const NLCheckedNodeView *r =
+                nl_checked_node_view(a, nl_checked_root(a));
+            if (!r || r->field.present || r->terminates)
+                return reject(e);
+            inner = i;
+        }
+    }
+    if (!inner)
+        return reject(e);
+    if (direct) {
+        /* Keep the exact checked H2 call/owner, never just a call count or
+         * a same-number root in another arm. The existing whole-root seal
+         * authenticates this graph before this serializer borrows it. */
+        const NLCheckedFragment *h2 = e->copy_conditional_issuer;
+        for (size_t id = 1; id <= nl_checked_node_count(h2); ++id) {
+            const NLCheckedNodeView *n = nl_checked_node_view(h2, id);
+            if (!n->owner_call.entry_proved)
+                continue;
+            if (e->direct_receiver_issuer ||
+                n->kind != NL_CHECKED_REGISTERED_CALL || !n->body_backed ||
+                !n->owner_call.post_proved ||
+                n->owner_call.definition.live_return ||
+                n->owner_call.definition.head_link_required ||
+                n->span.end_byte >
+                    nl_checked_node_view(h2, e->copy_conditional_call)
+                        ->span.start_byte)
+                return reject(e);
+            e->direct_receiver_issuer = h2;
+            e->direct_receiver_call = id;
+        }
+    }
+    e->copy_conditional_inner = some;
+    e->copy_conditional_inner_match = inner;
+    e->copy_conditional_match = statement->initializer;
+    e->copy_prefix_call = block->tail;
+    e->copy_expected_roots = 1;
+    e->direct_h = direct;
+    return true;
+}
+static bool copy_conditional_at(const Emit *e, const Env *env,
+                                NLCheckedNodeId id)
+{
+    return e->copy_conditional_call &&
+           ((env->artifact == e->copy_issuer &&
+             id == e->copy_conditional_match) ||
+            (env->artifact == e->copy_conditional_inner &&

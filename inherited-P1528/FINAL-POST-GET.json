@@ -1,0 +1,18 @@
+{
+  "issue": 1528,
+  "comment_id": 6978142243,
+  "POST_GET_exact": true,
+  "subject": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "main": "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+  "local": 29,
+  "probe_builds": 1,
+  "frontend_builds": 0,
+  "native": 0,
+  "SDK": 0,
+  "host_fault": 0,
+  "Production_edits": 0,
+  "Compiler_remote_CI": 0,
+  "archive": "75dbea37bbca3a173f4a2bb2a3f759059887ff33",
+  "Evidence_pushes": 1,
+  "status": "LOCAL GATE0 COMPLETE / C17 refusal / implementation NOT authorized / STOP"
+}

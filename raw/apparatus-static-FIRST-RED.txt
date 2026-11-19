@@ -1,0 +1,1 @@
+Static preflight (no execution): generated observer FIRST contained literal leading + on added macro continuation lines. FIRST preserved in apparatus-FIRST/passive.h; removed only those accidental characters before first native compile. No compiler/probe/native RED hidden; baseline consumer RED remains logs4/8/12. Formatter changes separately recorded.

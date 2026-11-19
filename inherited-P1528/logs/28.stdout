@@ -1,0 +1,18 @@
+{
+  "durable_receipt": 6978076413,
+  "POST_GET_exact": true,
+  "removed_only": [
+    {
+      "path": "/workspace/p1528-evidence-stage",
+      "allocated_bytes": 708608
+    },
+    {
+      "path": "/workspace/p1528-evidence-restore",
+      "allocated_bytes": 454656
+    }
+  ],
+  "reclaimed_bytes": 1163264,
+  "reclaimed_inodes": 259,
+  "free_bytes_after": 61686996992,
+  "originals_and_active_worktrees_SDK_retained": true
+}

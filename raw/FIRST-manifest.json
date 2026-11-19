@@ -1,0 +1,87 @@
+[
+  {
+    "path": "tests/p1535/N-foreign-allocation.nl",
+    "bytes": 3126,
+    "sha256": "87af2bb6c65c2c3c75b84df830986e8d0ba843b3479a3d5e9cefae4a39b4c086"
+  },
+  {
+    "path": "tests/p1535/N-foreign-domain.nl",
+    "bytes": 3126,
+    "sha256": "1f79d19e41fe88e2d66da6baa1a221dd25a5796423811551397bcc51c8c94373"
+  },
+  {
+    "path": "tests/p1535/N-foreign-pointer.nl",
+    "bytes": 3126,
+    "sha256": "938b9961af9c1d92a6fe897fa6ce17dc51c6172d80a5d299cb413bff515fe44a"
+  },
+  {
+    "path": "tests/p1535/N-live-read-at-end.nl",
+    "bytes": 3124,
+    "sha256": "4d93c03b500d3c5b1c4df6bc3c832c0c714da339241b8749ef901bdd26a17fe0"
+  },
+  {
+    "path": "tests/p1535/N-post-end-read.nl",
+    "bytes": 3126,
+    "sha256": "2ba24d7169035730486e9c3072bb9794f423e16703f3f188ea02e65167d21806"
+  },
+  {
+    "path": "tests/p1535/P-composed.nl",
+    "bytes": 3154,
+    "sha256": "eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4"
+  },
+  {
+    "path": "tests/p1535/P-nonzero.nl",
+    "bytes": 3127,
+    "sha256": "d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031"
+  },
+  {
+    "path": "tests/p1535/P-zero.nl",
+    "bytes": 3126,
+    "sha256": "449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94"
+  },
+  {
+    "path": "tests/p1535/passive.h",
+    "bytes": 15019,
+    "sha256": "b7f68906c2807a16997de38d5d40345771c92d15c909318396ced0dbc58adaaa"
+  },
+  {
+    "path": "tests/p1535/public_owned.c",
+    "bytes": 20917,
+    "sha256": "36971b383c61a5f0591f8c321b47dd563b10e9c5d259ab366ee6563fb4e3f252"
+  },
+  {
+    "path": "tests/p1517/guest_wrap.c",
+    "bytes": 707,
+    "sha256": "f511cbd663eef21768a350ef9fde0922e87cbb3931260b2d753949afb215ce98"
+  },
+  {
+    "path": "tests/p1517/safety.c",
+    "bytes": 8734,
+    "sha256": "8861bd8161495b4e9a7c1b19440bd1045f8f0434a6df1524bdc6ba539de1825e"
+  },
+  {
+    "path": "tests/p1529/consumer.c",
+    "bytes": 3705,
+    "sha256": "6e6b456b852e08f05261a757d6f6794cfffc090b9f3910e5fc13713d64566a21"
+  },
+  {
+    "path": "tests/p1531/N-live-prefix.nl",
+    "bytes": 5435,
+    "sha256": "35331fa4fdaec73d48644544e469f87574a315982fa6c5b185f63bb3d82894c7"
+  },
+  {
+    "path": "tests/p1517/P-zero.nl",
+    "bytes": 3022,
+    "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b"
+  },
+  {
+    "path": "tests/p1517/P-nonzero.nl",
+    "bytes": 3023,
+    "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c"
+  },
+  {
+    "path": "tests/p1481/Z-success-zero.nl",
+    "bytes": 5333,
+    "sha256": "849916a28971a5603be09125d8a6a328b9cb88ea21e0c42c61a01037ed7602eb"
+  }
+]

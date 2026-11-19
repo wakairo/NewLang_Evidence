@@ -1,0 +1,11 @@
+{
+  "ref": "archive/c1198-terminal-read-gate0-20261118",
+  "commit": "75dbea37bbca3a173f4a2bb2a3f759059887ff33",
+  "tree": "52687741a75d14e5402f0b567ab0279fb38a54f5",
+  "files": 51,
+  "bytes": 140774,
+  "manifest_sha256": "10248dadb1aa68c99f16f58e03c5868e39f5911c34a1b4fc228f02701a48f06a",
+  "secret_patterns": "no matches",
+  "ELF_objects_SDK_independent_inputs": "excluded",
+  "pushes": 0
+}

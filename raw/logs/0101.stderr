@@ -1,0 +1,15 @@
+/workspace/NewLang_P1535/src/checked_c_node.c:611:58: error: code should be clang-formatted [-Wclang-format-violations]
+    return e->two_heap && e->direct_h && !e->live_tail &&
+                                                         ^
+/workspace/NewLang_P1535/src/checked_c_node.c:612:26: error: code should be clang-formatted [-Wclang-format-violations]
+           !e->custody && !e->current && !e->producer_calls &&
+                         ^
+/workspace/NewLang_P1535/src/checked_c_node.c:612:63: error: code should be clang-formatted [-Wclang-format-violations]
+           !e->custody && !e->current && !e->producer_calls &&
+                                                              ^
+/workspace/NewLang_P1535/src/checked_c_node.c:613:34: error: code should be clang-formatted [-Wclang-format-violations]
+           e->owner_calls == 1 && e->active_owner_call &&
+                                 ^
+/workspace/NewLang_P1535/tests/p1535/passive.h:94:65: error: code should be clang-formatted [-Wclang-format-violations]
+                    REQUIRE(prefix_reads != P1535_PREFIX_READS);                \
+                                                                ^

@@ -1,0 +1,17 @@
+{
+  "member_count_including_manifest": 51,
+  "payload_count": 50,
+  "total_bytes_including_manifest": 140774,
+  "manifest_sha256": "10248dadb1aa68c99f16f58e03c5868e39f5911c34a1b4fc228f02701a48f06a",
+  "path_set_size_sha256_Git_mode_and_blob_bytes": "ALL_MATCH"
+}
+{
+  "pushes": 1,
+  "ref": "refs/heads/archive/c1198-terminal-read-gate0-20261118",
+  "commit": "75dbea37bbca3a173f4a2bb2a3f759059887ff33",
+  "force": false,
+  "state": "FINISHED",
+  "exit": 0,
+  "seconds": 1.3419921480017365,
+  "remote_match": true
+}

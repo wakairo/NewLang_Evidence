@@ -1,0 +1,20 @@
+[
+  {
+    "name": "fournonzero.c",
+    "bytes": 11333,
+    "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b",
+    "identical_to_b1": true
+  },
+  {
+    "name": "fourzero.c",
+    "bytes": 11332,
+    "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248",
+    "identical_to_b1": true
+  },
+  {
+    "name": "livetail.c",
+    "bytes": 16402,
+    "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1",
+    "identical_to_b1": true
+  }
+]

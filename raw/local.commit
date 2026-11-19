@@ -1,0 +1,6 @@
+tree a7e0561c7b57e03330b1d1d91c90300dd093f938
+parent b1a6f1725abe25981ad29088175de581f956f919
+author J W <a_kg@ninegw.sakura.ne.jp> 1795062460 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795062460 +0900
+
+Reuse checked unit root observations in direct terminal receivers

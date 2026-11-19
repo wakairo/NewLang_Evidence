@@ -1,0 +1,47 @@
+{
+  "subject": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+  "tree": "20083ff35349efd254e015f90dcac38a8d16852a",
+  "existing_build": "P1525 C1184 fresh GCC14 fortified Release, built from publication source; same retained source/lib objects; no compiler code changes since",
+  "artifacts": [
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/newlangc",
+      "bytes": 1139248,
+      "sha256": "9bead0f42326935922033e1594a98f5452c47f63e15a2dcea3cafba9f804b781"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_semantic.a",
+      "bytes": 992580,
+      "sha256": "0ef5e49cbca609caec018d30ae9ab7c00ddafbfedb095c40495d8f08817f7a3a"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_parser.a",
+      "bytes": 101030,
+      "sha256": "ed77bf55270810147a03768db026e70a3b5789fd6f2e3f8420a583d83ae8bbfc"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_checked.a",
+      "bytes": 6142,
+      "sha256": "9c4174065c859c4a5ea8d86d7d0d30185f6fa0483f4fd8a6d3ec808508805e61"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_source.a",
+      "bytes": 4410,
+      "sha256": "9ccdc6620f524b87c3db17035f4290bab9eff8b838d0ca13bd290e4a4331dc83"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_syntax.a",
+      "bytes": 2562,
+      "sha256": "454a882931f663d5faa6f69a88eb171b10943e89c50f5c0ca166d9b671e61b79"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_lexer.a",
+      "bytes": 2522,
+      "sha256": "39fa613469d85548aac48df90616981f745981fc12afde18557e19c277ab3283"
+    },
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/build-release/libnewlang_diagnostic.a",
+      "bytes": 3254,
+      "sha256": "34d269517252766ebc278ecabbb8ff0361249bf7627454a36c79281fff5639ee"
+    }
+  ]
+}
