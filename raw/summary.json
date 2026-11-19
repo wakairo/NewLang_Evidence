@@ -1,0 +1,82 @@
+{
+  "status": "GCC_VERIFIED / custody pending / fixed input",
+  "head": "58245a24e047280304443258b2cfc8a540c9202a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "parent": "b1a6f1725abe25981ad29088175de581f956f919",
+  "production_blob": "e18c444ffc667be9022819c9b6151cf10b82d34b",
+  "source_status": "clean and all original input sizes/SHA unchanged",
+  "additional": {
+    "selected": 32,
+    "frontend": 1,
+    "probe": 1,
+    "native": 0,
+    "hostfault": 0,
+    "SDK": 0,
+    "fullCTest": 0,
+    "Compiler_remote": 0,
+    "CI": 0
+  },
+  "cumulative": {
+    "selected": 149,
+    "frontend": 3,
+    "probe": 3,
+    "native": 21,
+    "host_sites": 3,
+    "host_cases": 10
+  },
+  "positive": "all3 CHECK/real public-owned MACHINE5steps/C17/API CLI bytes frozen exact",
+  "controls": "4stepzero/42 and oldzero-prefixLiveTail C17/API frozen exact; zero/LiveTail explicit CHECK",
+  "negatives": "five original source negatives CHECK3 expected P193 codes; existing held source CHECK0 thenCLI4 no-clobber/API unsupported NULL length98765 snapshot/anchor unchanged",
+  "unexpected_failures": 0,
+  "original_FIRST_RED": "C1223 all unchanged; old GCC candidate failure not relabelled; this is a separate exact final formatted GCC execution",
+  "not_run": [
+    "generated native guests",
+    "host fault injections",
+    "SDK acquisition",
+    "full CTest",
+    "new CI",
+    "O0 or sanitizer campaigns in this phase"
+  ],
+  "generated": [
+    {
+      "name": "composed.c",
+      "bytes": 11925,
+      "sha256": "9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a"
+    },
+    {
+      "name": "fournonzero.c",
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    {
+      "name": "fourzero.c",
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    {
+      "name": "held.c",
+      "bytes": 50,
+      "sha256": "5de35a6b5e4cad84bb54e5b542012aa5e84b43fd035c86c31be760aec6f60b72"
+    },
+    {
+      "name": "livetail.c",
+      "bytes": 16402,
+      "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1"
+    },
+    {
+      "name": "nonzero.c",
+      "bytes": 11688,
+      "sha256": "d91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e"
+    },
+    {
+      "name": "zero.c",
+      "bytes": 11687,
+      "sha256": "e409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4"
+    }
+  ],
+  "value_alignment_risk": "GCC build-family limitation closure only; practical callee payload/API and author+ordinary safe caller UB audit/re-audit closure comparison unmeasured; ProductGO624 PAUSED/H1 HOLD.",
+  "resources_after_build": {
+    "available_bytes": 60379246592,
+    "free_inodes": 4067823
+  }
+}

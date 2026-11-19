@@ -1,0 +1,1 @@
+/usr/bin/gcc -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/newlangc.dir/link.d CMakeFiles/newlangc.dir/src/main.c.o -o newlangc  libnewlang_checked_c_node.a libnewlang_semantic.a libnewlang_diagnostic.a libnewlang_checked.a libnewlang_parser.a libnewlang_diagnostic.a libnewlang_syntax.a libnewlang_lexer.a libnewlang_source.a

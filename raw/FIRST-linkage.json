@@ -1,0 +1,144 @@
+{
+  "authority": "Issue1535 C1230 comment7000082606",
+  "head": "58245a24e047280304443258b2cfc8a540c9202a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "parent": "b1a6f1725abe25981ad29088175de581f956f919",
+  "production_blob": "e18c444ffc667be9022819c9b6151cf10b82d34b",
+  "original_C1223_FINAL": 6999845760,
+  "original_Evidence_commit": "94fb7376d4cb7803d7b97672e91f3edc2d23e5c2",
+  "original_Evidence_manifest_sha256": "0a96b1b77fce63b9ad414c7100e39f457622982b34f78ff5ce4cddadb2324eb9",
+  "inputs": [
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/P-zero.nl",
+      "bytes": 3126,
+      "sha256": "449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/P-nonzero.nl",
+      "bytes": 3127,
+      "sha256": "d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/P-composed.nl",
+      "bytes": 3154,
+      "sha256": "eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/N-foreign-domain.nl",
+      "bytes": 3126,
+      "sha256": "1f79d19e41fe88e2d66da6baa1a221dd25a5796423811551397bcc51c8c94373"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/N-foreign-allocation.nl",
+      "bytes": 3126,
+      "sha256": "87af2bb6c65c2c3c75b84df830986e8d0ba843b3479a3d5e9cefae4a39b4c086"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/N-foreign-pointer.nl",
+      "bytes": 3126,
+      "sha256": "938b9961af9c1d92a6fe897fa6ce17dc51c6172d80a5d299cb413bff515fe44a"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/N-live-read-at-end.nl",
+      "bytes": 3124,
+      "sha256": "4d93c03b500d3c5b1c4df6bc3c832c0c714da339241b8749ef901bdd26a17fe0"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/N-post-end-read.nl",
+      "bytes": 3126,
+      "sha256": "2ba24d7169035730486e9c3072bb9794f423e16703f3f188ea02e65167d21806"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1517/P-zero.nl",
+      "bytes": 3022,
+      "sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1517/P-nonzero.nl",
+      "bytes": 3023,
+      "sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1481/Z-success-zero.nl",
+      "bytes": 5333,
+      "sha256": "849916a28971a5603be09125d8a6a328b9cb88ea21e0c42c61a01037ed7602eb"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1531/N-live-prefix.nl",
+      "bytes": 5435,
+      "sha256": "35331fa4fdaec73d48644544e469f87574a315982fa6c5b185f63bb3d82894c7"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1535/public_owned.c",
+      "bytes": 20953,
+      "sha256": "2ca90ba2a8cc0474b3ecc2c430540754b43dc063fe5722cca1baf95823ca7906"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/tests/p1529/consumer.c",
+      "bytes": 3705,
+      "sha256": "6e6b456b852e08f05261a757d6f6794cfffc090b9f3910e5fc13713d64566a21"
+    },
+    {
+      "path": "/workspace/NewLang_P1535/src/checked_c_node.c",
+      "bytes": 203646,
+      "sha256": "bd102f93b67f5ae8e4a8a9d37895ce1af5cc330901d165276a5e18b728ac0391"
+    },
+    {
+      "path": "/workspace/p1535-evidence/oracle-FIRST.json",
+      "bytes": 2611,
+      "sha256": "6117bb008fb37056516e77aa5c1a37252d69cc66074449e514a64c700eb02a45"
+    }
+  ],
+  "expected_frozen_C": {
+    "composed.c": {
+      "bytes": 11925,
+      "sha256": "9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a"
+    },
+    "fournonzero.c": {
+      "bytes": 11333,
+      "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b"
+    },
+    "fourzero.c": {
+      "bytes": 11332,
+      "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248"
+    },
+    "livetail.c": {
+      "bytes": 16402,
+      "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1"
+    },
+    "nonzero.c": {
+      "bytes": 11688,
+      "sha256": "d91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e"
+    },
+    "zero.c": {
+      "bytes": 11687,
+      "sha256": "e409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4"
+    }
+  },
+  "oracle": "Own existing oracle-FIRST.json unchanged; no new source/test/oracle case. GCC CHECK0, authentic owned5steps, C17/API/CLI bytes exactly frozen. 5 original negatives CHECK3; old4step/zero-prefix LiveTail exact bytes; held LiveTailprefix backend\u62d2\u5426/no-clobber/API rollback.",
+  "plan": "32 at most: GCC version1/config1/frontend build1/publicprobe build1,3positives*4=12,4stepzero+oldLiveTail CHECK/C17/API=6,5originalsourceCHECKnegatives=5,heldCHECK/C17/API=3,4stepnonzeroC17/API=2. Stop any unexpected failure. No new native/hostfault/SDK/fullCTest/CI.",
+  "flags": "GCC existing /usr/bin/gcc, C17 Release -O3 -DNDEBUG, _FORTIFY_SOURCE=2, project -Wall -Wextra -Wpedantic -Werror unchanged; frontend only",
+  "build_dir": "/workspace/p1535-c1230-gcc/build-gcc",
+  "resource_before": {
+    "available_bytes": 60407025664,
+    "free_inodes": 4072179,
+    "expected_peak": "<=1GiB frontend/metadata/custody, no SDK/LLVM full build"
+  },
+  "prior_counters": {
+    "selected": 117,
+    "native": 21,
+    "frontend": 2,
+    "probe": 2,
+    "host_sites": 3,
+    "host_cases": 10
+  },
+  "additional_limits": {
+    "selected": 32,
+    "frontend": 1,
+    "probe": 1,
+    "native": 0,
+    "hostfault": 0,
+    "SDK": 0
+  },
+  "Evidence_ref": "archive/p1535-c1230-gcc-closeout-20261119"
+}

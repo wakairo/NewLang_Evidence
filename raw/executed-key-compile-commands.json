@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/workspace/p1535-c1230-gcc/build-gcc",
+    "command": "/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -c /workspace/NewLang_P1535/src/checked_c_node.c",
+    "file": "/workspace/NewLang_P1535/src/checked_c_node.c",
+    "output": "CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o"
+  },
+  {
+    "directory": "/workspace/p1535-c1230-gcc/build-gcc",
+    "command": "/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/newlangc.dir/src/main.c.o -c /workspace/NewLang_P1535/src/main.c",
+    "file": "/workspace/NewLang_P1535/src/main.c",
+    "output": "CMakeFiles/newlangc.dir/src/main.c.o"
+  },
+  {
+    "directory": "/workspace/p1535-c1230-gcc/build-gcc",
+    "command": "/usr/bin/gcc  -I/workspace/NewLang_P1535/src -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -c /workspace/NewLang_P1535/tests/p1529/consumer.c",
+    "file": "/workspace/NewLang_P1535/tests/p1529/consumer.c",
+    "output": "CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o"
+  },
+  {
+    "directory": "/workspace/p1535-c1230-gcc/build-gcc",
+    "command": "/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/p1535_public_owned.dir/tests/p1535/public_owned.c.o -c /workspace/NewLang_P1535/tests/p1535/public_owned.c",
+    "file": "/workspace/NewLang_P1535/tests/p1535/public_owned.c",
+    "output": "CMakeFiles/p1535_public_owned.dir/tests/p1535/public_owned.c.o"
+  }
+]

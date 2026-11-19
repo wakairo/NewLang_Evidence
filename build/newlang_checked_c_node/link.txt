@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnewlang_checked_c_node.a CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o
+/usr/bin/ranlib libnewlang_checked_c_node.a

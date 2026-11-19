@@ -1,0 +1,1 @@
+/workspace/NewLang_P1535/tests/p1535/N-foreign-allocation.nl:65:21-65:39: error(semantic)[P193-CALL-BACKING]: input Allocation does not own the root's BackingRegion

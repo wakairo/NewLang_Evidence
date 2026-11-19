@@ -1,0 +1,326 @@
+Change Dir: '/workspace/p1535-c1230-gcc/build-gcc'
+
+Run Build Command(s): /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j2 newlangc p1529_consumer
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_P1535 -B/workspace/p1535-c1230-gcc/build-gcc --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 newlangc
+gmake[1]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_P1535 -B/workspace/p1535-c1230-gcc/build-gcc --check-build-system CMakeFiles/Makefile.cmake 0
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles 6
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/newlangc.dir/all
+gmake[2]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/depend
+/usr/bin/gmake  -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_diagnostic.dir/DependInfo.cmake "--color="
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_source.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/build
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[  0%] Building C object CMakeFiles/newlang_source.dir/src/source.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_source.dir/src/source.c.o -MF CMakeFiles/newlang_source.dir/src/source.c.o.d -o CMakeFiles/newlang_source.dir/src/source.c.o -c /workspace/NewLang_P1535/src/source.c
+[  0%] Building C object CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o -MF CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o.d -o CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o -c /workspace/NewLang_P1535/src/diagnostic.c
+[  0%] Linking C static library libnewlang_diagnostic.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_diagnostic.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_diagnostic.dir/link.txt --verbose=1
+[  0%] Linking C static library libnewlang_source.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_source.dir/cmake_clean_target.cmake
+/usr/bin/ar qc libnewlang_diagnostic.a CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o
+/usr/bin/ranlib libnewlang_diagnostic.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_source.dir/link.txt --verbose=1
+[  0%] Built target newlang_diagnostic
+/usr/bin/ar qc libnewlang_source.a CMakeFiles/newlang_source.dir/src/source.c.o
+/usr/bin/ranlib libnewlang_source.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[  0%] Built target newlang_source
+/usr/bin/gmake  -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/depend
+/usr/bin/gmake  -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_lexer.dir/DependInfo.cmake "--color="
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_syntax.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/build
+/usr/bin/gmake  -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[  0%] Building C object CMakeFiles/newlang_lexer.dir/src/lexer.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_lexer.dir/src/lexer.c.o -MF CMakeFiles/newlang_lexer.dir/src/lexer.c.o.d -o CMakeFiles/newlang_lexer.dir/src/lexer.c.o -c /workspace/NewLang_P1535/src/lexer.c
+[  0%] Building C object CMakeFiles/newlang_syntax.dir/src/syntax.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_syntax.dir/src/syntax.c.o -MF CMakeFiles/newlang_syntax.dir/src/syntax.c.o.d -o CMakeFiles/newlang_syntax.dir/src/syntax.c.o -c /workspace/NewLang_P1535/src/syntax.c
+[  0%] Linking C static library libnewlang_syntax.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_syntax.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_syntax.dir/link.txt --verbose=1
+[ 16%] Linking C static library libnewlang_lexer.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_lexer.dir/cmake_clean_target.cmake
+/usr/bin/ar qc libnewlang_syntax.a CMakeFiles/newlang_syntax.dir/src/syntax.c.o
+/usr/bin/ranlib libnewlang_syntax.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_lexer.dir/link.txt --verbose=1
+[ 16%] Built target newlang_syntax
+/usr/bin/gmake  -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked.dir/DependInfo.cmake "--color="
+/usr/bin/ar qc libnewlang_lexer.a CMakeFiles/newlang_lexer.dir/src/lexer.c.o
+/usr/bin/ranlib libnewlang_lexer.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_lexer
+/usr/bin/gmake  -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/depend
+[ 16%] Building C object CMakeFiles/newlang_checked.dir/src/checked.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked.dir/src/checked.c.o -MF CMakeFiles/newlang_checked.dir/src/checked.c.o.d -o CMakeFiles/newlang_checked.dir/src/checked.c.o -c /workspace/NewLang_P1535/src/checked.c
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_parser.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Building C object CMakeFiles/newlang_parser.dir/src/parser.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_parser.dir/src/parser.c.o -MF CMakeFiles/newlang_parser.dir/src/parser.c.o.d -o CMakeFiles/newlang_parser.dir/src/parser.c.o -c /workspace/NewLang_P1535/src/parser.c
+[ 16%] Linking C static library libnewlang_checked.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_checked.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_checked.dir/link.txt --verbose=1
+/usr/bin/ar qc libnewlang_checked.a CMakeFiles/newlang_checked.dir/src/checked.c.o
+/usr/bin/ranlib libnewlang_checked.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_checked
+[ 16%] Linking C static library libnewlang_parser.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_parser.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_parser.dir/link.txt --verbose=1
+/usr/bin/ar qc libnewlang_parser.a CMakeFiles/newlang_parser.dir/src/parser.c.o
+/usr/bin/ranlib libnewlang_parser.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_parser
+/usr/bin/gmake  -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Building C object CMakeFiles/newlang_semantic.dir/src/copy_body.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/copy_body.c.o -MF CMakeFiles/newlang_semantic.dir/src/copy_body.c.o.d -o CMakeFiles/newlang_semantic.dir/src/copy_body.c.o -c /workspace/NewLang_P1535/src/copy_body.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/if_field.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/if_field.c.o -MF CMakeFiles/newlang_semantic.dir/src/if_field.c.o.d -o CMakeFiles/newlang_semantic.dir/src/if_field.c.o -c /workspace/NewLang_P1535/src/if_field.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/array4.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/array4.c.o -MF CMakeFiles/newlang_semantic.dir/src/array4.c.o.d -o CMakeFiles/newlang_semantic.dir/src/array4.c.o -c /workspace/NewLang_P1535/src/array4.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o -MF CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o.d -o CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o -c /workspace/NewLang_P1535/src/usize_addition.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/semantic.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/semantic.c.o -MF CMakeFiles/newlang_semantic.dir/src/semantic.c.o.d -o CMakeFiles/newlang_semantic.dir/src/semantic.c.o -c /workspace/NewLang_P1535/src/semantic.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o -MF CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o.d -o CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o -c /workspace/NewLang_P1535/src/semantic_check.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o -MF CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o.d -o CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o -c /workspace/NewLang_P1535/src/unchecked_ref_internal.c
+[ 33%] Building C object CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o -MF CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o.d -o CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o -c /workspace/NewLang_P1535/src/h_origin_internal.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o -MF CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o.d -o CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o -c /workspace/NewLang_P1535/src/recursive_type.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o -MF CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o.d -o CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o -c /workspace/NewLang_P1535/src/allocated_node.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o -MF CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o.d -o CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o -c /workspace/NewLang_P1535/src/allocated_join.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o -MF CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o.d -o CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o -c /workspace/NewLang_P1535/src/captured_closure.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/node_join.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/node_join.c.o -MF CMakeFiles/newlang_semantic.dir/src/node_join.c.o.d -o CMakeFiles/newlang_semantic.dir/src/node_join.c.o -c /workspace/NewLang_P1535/src/node_join.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/node_links.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/node_links.c.o -MF CMakeFiles/newlang_semantic.dir/src/node_links.c.o.d -o CMakeFiles/newlang_semantic.dir/src/node_links.c.o -c /workspace/NewLang_P1535/src/node_links.c
+[ 50%] Building C object CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o -MF CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o.d -o CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o -c /workspace/NewLang_P1535/src/packet_fork.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o -MF CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o.d -o CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o -c /workspace/NewLang_P1535/src/fixed_field.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/sum.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/sum.c.o -MF CMakeFiles/newlang_semantic.dir/src/sum.c.o.d -o CMakeFiles/newlang_semantic.dir/src/sum.c.o -c /workspace/NewLang_P1535/src/sum.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o -MF CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o.d -o CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o -c /workspace/NewLang_P1535/src/raw_storage.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/function_body.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/function_body.c.o -MF CMakeFiles/newlang_semantic.dir/src/function_body.c.o.d -o CMakeFiles/newlang_semantic.dir/src/function_body.c.o -c /workspace/NewLang_P1535/src/function_body.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o -MF CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o.d -o CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o -c /workspace/NewLang_P1535/src/typed_owner.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/custody.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/custody.c.o -MF CMakeFiles/newlang_semantic.dir/src/custody.c.o.d -o CMakeFiles/newlang_semantic.dir/src/custody.c.o -c /workspace/NewLang_P1535/src/custody.c
+[ 66%] Building C object CMakeFiles/newlang_semantic.dir/src/control.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_semantic.dir/src/control.c.o -MF CMakeFiles/newlang_semantic.dir/src/control.c.o.d -o CMakeFiles/newlang_semantic.dir/src/control.c.o -c /workspace/NewLang_P1535/src/control.c
+[ 83%] Linking C static library libnewlang_semantic.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_semantic.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_semantic.dir/link.txt --verbose=1
+/usr/bin/ar qc libnewlang_semantic.a CMakeFiles/newlang_semantic.dir/src/copy_body.c.o CMakeFiles/newlang_semantic.dir/src/if_field.c.o CMakeFiles/newlang_semantic.dir/src/array4.c.o CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o CMakeFiles/newlang_semantic.dir/src/semantic.c.o CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o CMakeFiles/newlang_semantic.dir/src/node_join.c.o CMakeFiles/newlang_semantic.dir/src/node_links.c.o CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o CMakeFiles/newlang_semantic.dir/src/sum.c.o CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o CMakeFiles/newlang_semantic.dir/src/function_body.c.o CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o CMakeFiles/newlang_semantic.dir/src/custody.c.o CMakeFiles/newlang_semantic.dir/src/control.c.o
+/usr/bin/ranlib libnewlang_semantic.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 83%] Built target newlang_semantic
+/usr/bin/gmake  -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o
+[100%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o -c /workspace/NewLang_P1535/src/checked_c_node.c
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o -c /workspace/NewLang_P1535/src/checked_c_five.c
+[100%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o -MF CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o.d -o CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o -c /workspace/NewLang_P1535/src/readonly_u8_consumer_internal.c
+[100%] Linking C static library libnewlang_checked_c_node.a
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -P CMakeFiles/newlang_checked_c_node.dir/cmake_clean_target.cmake
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlang_checked_c_node.dir/link.txt --verbose=1
+/usr/bin/ar qc libnewlang_checked_c_node.a CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o
+/usr/bin/ranlib libnewlang_checked_c_node.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Built target newlang_checked_c_node
+/usr/bin/gmake  -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlangc.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlangc.dir/build.make CMakeFiles/newlangc.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Building C object CMakeFiles/newlangc.dir/src/main.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/newlangc.dir/src/main.c.o -MF CMakeFiles/newlangc.dir/src/main.c.o.d -o CMakeFiles/newlangc.dir/src/main.c.o -c /workspace/NewLang_P1535/src/main.c
+[100%] Linking C executable newlangc
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/newlangc.dir/link.txt --verbose=1
+/usr/bin/gcc -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/newlangc.dir/link.d CMakeFiles/newlangc.dir/src/main.c.o -o newlangc  libnewlang_checked_c_node.a libnewlang_semantic.a libnewlang_diagnostic.a libnewlang_checked.a libnewlang_parser.a libnewlang_diagnostic.a libnewlang_syntax.a libnewlang_lexer.a libnewlang_source.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Built target newlangc
+gmake[2]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles 0
+gmake[1]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/Makefile2 p1529_consumer
+gmake[1]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S/workspace/NewLang_P1535 -B/workspace/p1535-c1230-gcc/build-gcc --check-build-system CMakeFiles/Makefile.cmake 0
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles 6
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/p1529_consumer.dir/all
+gmake[2]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/depend
+/usr/bin/gmake  -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_diagnostic.dir/DependInfo.cmake "--color="
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_source.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_source.dir/src/source.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_source.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_source
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_source.dir/build.make CMakeFiles/newlang_source.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_source.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+Dependencies file "CMakeFiles/newlang_diagnostic.dir/src/diagnostic.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_diagnostic.dir/compiler_depend.internal".
+[  0%] Built target newlang_source
+/usr/bin/gmake  -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/depend
+Consolidate compiler generated dependencies of target newlang_diagnostic
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_diagnostic.dir/build.make CMakeFiles/newlang_diagnostic.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_lexer.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_lexer.dir/src/lexer.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_lexer.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_lexer
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_lexer.dir/build.make CMakeFiles/newlang_lexer.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_lexer.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_diagnostic.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_lexer
+/usr/bin/gmake  -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/depend
+[ 16%] Built target newlang_diagnostic
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_syntax.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_syntax.dir/src/syntax.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_syntax.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_syntax
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_syntax.dir/build.make CMakeFiles/newlang_syntax.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_syntax.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_syntax
+/usr/bin/gmake  -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/depend
+/usr/bin/gmake  -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_parser.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_parser.dir/src/parser.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_parser.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_parser
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_parser.dir/build.make CMakeFiles/newlang_parser.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_parser.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked.dir/DependInfo.cmake "--color="
+[ 16%] Built target newlang_parser
+Dependencies file "CMakeFiles/newlang_checked.dir/src/checked.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_checked
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_checked.dir/build.make CMakeFiles/newlang_checked.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_checked.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 16%] Built target newlang_checked
+/usr/bin/gmake  -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/allocated_join.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/allocated_node.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/array4.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/captured_closure.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/control.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/copy_body.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/custody.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/fixed_field.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/function_body.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/h_origin_internal.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/if_field.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/node_join.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/node_links.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/packet_fork.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/raw_storage.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/recursive_type.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/semantic.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/semantic_check.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/sum.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/typed_owner.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/unchecked_ref_internal.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_semantic.dir/src/usize_addition.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_semantic.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_semantic
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_semantic.dir/build.make CMakeFiles/newlang_semantic.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_semantic.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[ 83%] Built target newlang_semantic
+/usr/bin/gmake  -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o.d" is newer than depends file "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target newlang_checked_c_node
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/newlang_checked_c_node.dir/build.make CMakeFiles/newlang_checked_c_node.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+gmake[3]: Nothing to be done for 'CMakeFiles/newlang_checked_c_node.dir/build'.
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Built target newlang_checked_c_node
+/usr/bin/gmake  -f CMakeFiles/p1529_consumer.dir/build.make CMakeFiles/p1529_consumer.dir/depend
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+cd /workspace/p1535-c1230-gcc/build-gcc && /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/NewLang_P1535 /workspace/NewLang_P1535 /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/p1529_consumer.dir/DependInfo.cmake "--color="
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/usr/bin/gmake  -f CMakeFiles/p1529_consumer.dir/build.make CMakeFiles/p1529_consumer.dir/build
+gmake[3]: Entering directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Building C object CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o
+/usr/bin/gcc  -I/workspace/NewLang_P1535/src -I/workspace/NewLang_P1535/include -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -std=c17 -Wall -Wextra -Wpedantic -Werror -MD -MT CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -MF CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o.d -o CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -c /workspace/NewLang_P1535/tests/p1529/consumer.c
+[100%] Linking C executable p1529_consumer
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/p1529_consumer.dir/link.txt --verbose=1
+/usr/bin/gcc -D_FORTIFY_SOURCE=2 -O3 -DNDEBUG -Wl,--wrap=malloc -Wl,--wrap=realloc -Wl,--wrap=nl_sem_clone -Wl,--dependency-file=CMakeFiles/p1529_consumer.dir/link.d CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o -o p1529_consumer  libnewlang_checked_c_node.a libnewlang_semantic.a libnewlang_parser.a libnewlang_lexer.a libnewlang_checked.a libnewlang_syntax.a libnewlang_source.a libnewlang_diagnostic.a
+gmake[3]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+[100%] Built target p1529_consumer
+gmake[2]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_progress_start /workspace/p1535-c1230-gcc/build-gcc/CMakeFiles 0
+gmake[1]: Leaving directory '/workspace/p1535-c1230-gcc/build-gcc'
+
