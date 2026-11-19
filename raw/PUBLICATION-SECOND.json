@@ -1,0 +1,15 @@
+{
+  "id": 6998535626,
+  "POST_GET": true,
+  "exact": true,
+  "body": "P1531 / C1213 SECOND AND FINAL PUBLIC HEAD — DRAFT/HOLD\n\nPR1532 GET-verified final HEAD `b1a6f1725abe25981ad29088175de581f956f919`, tree `1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9`, sole parent immutable FIRSTc683ca533caaca05e1b546dd45f2a051295da81f. Same branch `p1531-terminal-integration-c1209`, base exactb2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1, DRAFT=true. Final diff43paths/+4248/-26 vs main. FIRST ordered integration/39path identity remains historical; amendment adds exactly7path delta, Production only existing-direct guard+comment, no staging/allocating or source/issuer/API/ABI/CI/T/new-validator change. Old PR1526/7de/738/other STOP inputs unchanged.\n\nSecond natural group:\n- FULL5 [44449523898](https://github.com/wakairo/NewLang_Compiler/actions/runs/44449523898)\n- PARTIAL1 [44449523819](https://github.com/wakairo/NewLang_Compiler/actions/runs/44449523819)\n- EARLY2 [44449523905](https://github.com/wakairo/NewLang_Compiler/actions/runs/44449523905)\nObserved in_progress; GitHub synthetic checkout currently `dcb88ff1d4d073c49b13d6ecedf9d550b104c6c2`, actual tree/parents will be authenticated. Total HEAD2/2, natural groups6runs/expected16jobs/16max. No manualretry/dispatch/thirdHEAD; first groups all8 terminal/raw saved. Finality depends on this subject's all8 actual success, not first green.\n\nPreflight checkpoint6998496181 and own additionalFIRST6998322188 retain baseline scope-acceptance RED and corrected consumer refusal/no-clobber/snapshot plus byte-identical direct/zero-prefix LiveTail positives. Additional6native succeeded, newhostfault0. Final counters frozen cumulative127/129 selected,24/24 native,3/3 builds,host4sites12cases unchanged,SDK0. Existing4096-source-seal bound inspected without new mechanism. First/second raw will go to the same planned dedicated Evidence ref in one still-unused push; active originals/SDK kept. STOP after FINAL POST/GET; C owns independent review/READY/merge. Value audit-locality remains UNMEASURED.",
+  "head": "b1a6f1725abe25981ad29088175de581f956f919",
+  "tree": "1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9",
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "FIRST": "c683ca533caaca05e1b546dd45f2a051295da81f",
+  "runs": {
+    "FULL": 44449523898,
+    "PARTIAL": 44449523819,
+    "EARLY": 44449523905
+  }
+}

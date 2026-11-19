@@ -1,0 +1,9 @@
+{
+  "purpose": "Optional baseline main-ASan timing lookup while required jobs were running",
+  "endpoint": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/jobs/135218551934",
+  "result": "GitHub Fetch INVALID_ARGUMENT: endpoint not in this connector's allowed public endpoint set",
+  "fallback_or_bypass": false,
+  "material_to_required_verification": false,
+  "required_job_status_and_raw_logs": "Supported purpose-built workflow job tools used throughout",
+  "compiler_native_CI_execution_or_budget_change": 0
+}

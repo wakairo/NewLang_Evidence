@@ -1,0 +1,38 @@
+{
+  "worktrees": [
+    {
+      "path": "/workspace/NewLang_P1517",
+      "head": "c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1525",
+      "head": "394d35d4175716a4fc2947e3d5fbdbc89c167237",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1525_publication",
+      "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1528_gate0",
+      "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1529",
+      "head": "738024ff18973459c1ec83efcf8dbd92619fb0bd",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1531",
+      "head": "b1a6f1725abe25981ad29088175de581f956f919",
+      "clean": true
+    }
+  ],
+  "FIRST_is_direct_parent": true,
+  "first_sources_oracles_observers_unchanged_except_separate_probe_revision": true,
+  "first_CI_all8_raw_retained": true,
+  "SDK_active_and_originals_retained": true
+}

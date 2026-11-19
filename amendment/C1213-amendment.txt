@@ -1,0 +1,52 @@
+Track: Coordination → **既存 sole Track P**
+
+## C1213 — shared-selector の scope correction を認可。PR1532 の残り1 HEADを使用可
+
+### 裁定と範囲
+
+C1202/C1209 は direct two-original-H / one-original-T / four-step unit terminal receiver の pure-prefix observations を認可し、producer/LiveTail の受理拡張は認可していません。C が実ファイルを確認したところ、現在の `copy_conditional_plan` は新しい prefix-binding scan を `direct` と既存 `live_tail` の両経路で実行します。具体的な UB/誤権限の反例は得ていませんが、これは公開 scope と一致させる必要があります。**新しい prefix observation の受理を既存 direct predicate の成立時に限定し、prefix observation が無い既存 live-tail 経路は維持してください。** 最小の private consumer guard と直接必要な regression / 記述の訂正を認可します。一般化・新規 issuer・source/API/ABI・新しい owner/profile/5-step receiver は対象外です。
+
+別の論点である走査上限は、既存 `NL_SEMANTIC_MAX_ENTRIES=4096`、fresh-node block construction、source-result seal の全ノード bytes/count/base/root 検証が先行する静的根拠を C helper が確認しました。**新しい上限機構や validator を予防的に追加しないでください。** P は自身でこの経路を確認し、実際の bypass / 無制限走査が見つかれば原証拠を保存して C に戻します。F には同じ公開コード境界を独立に検証してもらいます。R/F 独立 source/oracle/runner/report は引き続き参照禁止。上記 C-relayed abstract finding だけで own FIRST を作成してください。
+
+### 固定入力と実行
+
+- 実 main/base は引き続き **`b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1`** / Draft17.38。
+- 現在の公開 FIRST HEAD **`c683ca533caaca05e1b546dd45f2a051295da81f`**, tree **`d8567d3a12a8c1e35e51f21369c8e495d58a97d9`**, PR **#1532**, branch **`p1531-terminal-integration-c1209`**。
+- この FIRST、既存原 source/oracle、CI/raw、旧7de/738/PR1526を保存。新 commit は c683 の子とし、force-push/rebase/history overwrite はしない。
+- 現 C1209 の実行中 CI / raw 保全は完了させる。**local の範囲訂正・独自 FIRST・focused preflight は今から並走可**。同じ sole P が行い、別 producer を作らない。
+- own source／観測／予測を実行前に POST/GET。今回の direct positive が同じ生成 C と source-owned authority を保つこと、既存 observation 無し live-tail regression が維持されること、今回追加しない non-direct prefix が安全に拒否され出力を汚さないことを、既存機材を使って区別する。新しい test source を既存 FIRST に上書きしない。
+- 検証順・テストの最小構成・guard の実装・routine mechanical repair は P が判断。追加の小変更ごとの C micro-GO は不要。新しい不正受理／UB／ownership／rollback欠陥は candidate を止め原証拠付きで C へ。
+
+### 明示的な追加予算（過去消費をリセットしない）
+
+現在の実消費 local89, native18, host4sites/12cases, builds2 を保持し、**C1213 の差分確認に selected attempts +40、実 guest native +6、frontend/probe build +1**までを追加認可（従って累計上限 local129 / native24 / builds3）。新しい host fault campaign 0、新 SDK0、冗長な全local CTest0。新 guard は非allocatingのため、既存 OOM 証拠に加えて拒否時の no-clobber を targeted check する。実装が allocation/出力 staging を変更する必要が出たら C に戻す。
+
+Compiler remote は C1209 の **計2 HEAD /16 natural jobs /6 runs の総上限を維持**。既存 c683 の自然 FULL5/PARTIAL/EARLY2 の終端と原ログを保存し、scope correction の local preflight が成功したら、**残りの1 HEADを既存PR1532へ1回のまとまった push として公開してよい**。この新 production guard のみ、C1209 の「second HEAD は mechanical only」を明示的に拡張する。初回 CI に実際の安全性異常が出た場合は、見かけの green 化をせず C へ。新HEADでも真正 FULL5+PARTIAL1+EARLY2を自然実行、manual retry/dispatch/3rd HEAD0。最初の8成功だけで修正未了をFINAL PASSにしない。
+
+Evidence は現 C1209 ref に新旧 raw を保持。まだ未pushなら1回にまとめる。既に1回目を公開済みなら、**新HEADの実証追加だけに append-only ordinary push をさらに最大1回（計2まで）**認可し、最後に fresh-empty HTTPS clone の全 member/path/bytes/SHA/mode を照合して receipt POST/GET 後に限り冗長一時物を整理する。既存 original/active worktree/SDK は保持。
+
+### 短い裁量の振り返り
+
+前回は P に忠実な新main統合、検証順、条件成立後の公開を一括委任しました。実際に P は ordered merge／全7435 path-mode-blob確認を選び、Cのpatch SHA誤記も原Git objectで識別し、local89/96で1 HEADを公開しました。判断と保全は適切です。今回判明した共有経路の scope は C が決め、**修正方法と検証はPへまとめて委任**します。C待ちを各guard/formatterの工程に置かず、追加の能力拡張は今回に束ねません。
+
+**Goal / value は技術判定と別**：安全な source composition と実装宣言の整合を回復する小修正。作者＋ordinary-safe caller の UB監査・再監査依存閉包の C対比改善は UNMEASURED。ProductGO624 PAUSED / H1 HOLD。独立 F/R の原証拠は維持。
+
+ACTUAL RESUME / この amendment を読んだ時点を POST/GET。修正後 HEAD/tree/diff、original FIRSTと追加FIRST、実測/NOT_RUN、全budget/CI/rawを FINAL POST/GET → STOP C。READY/merge は C。
+
+## コピー用・既存 P セッションへの継続プロンプト
+
+```text
+既存sole Track Pとして #1531 の C1213 amendmentを実施してください。
+https://github.com/wakairo/NewLang_Compiler/issues/1531
+ACTUAL RESUME POST/GET→Compass→Value§1.1/1.3→Process→CURRENT_SPEC Draft17.38。
+main b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1、
+PR1532のFIRST c683ca533caaca05e1b546dd45f2a051295da81fを保全。
+新しいprefix observationだけをdirect系列に限定し、既存zero-prefix LiveTailを維持。
+C relayed findingからown FIRSTと最小guard/regressionを作る。R/F原資料は読まない。
+走査上限は既存4096-node/source-seal境界を確認し、不要な新機構は追加しない。
+local修正は即時可。追加予算はselected40/native6/build1、SDK/新hostfault0。
+現FIRST CIの終端/raw保存後、同じPRへ残り1 HEADをまとめてpush可。
+総計2HEAD/16自然jobs、manualretry/3rdHEAD0。scope内修復は自律。
+安全性・権限・固定対象・予算逸脱はSTOP C。FINAL POST/GET後STOP、READY/mergeはC。
+```
+

@@ -1,0 +1,14 @@
+{
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "tree": "e2795182a2128d658cde3c2b1d4190aca25c0a41",
+  "ordered_parents": [
+    "c97ce81c48a0c003b072c77c655bdeb10860ebf1",
+    "1a368c740c536a8449880b3821901b3732ecb148"
+  ],
+  "exact_issue_pin": true,
+  "SDK_lock_sha256": "7c9921be7919a10d02877605761032b683c7258a0c09ea6c2d7d26a02dca8009",
+  "regular_completion_marker_exact": true,
+  "SDK_required_static_header_provenance_notices_present": true,
+  "SDK_acquisitions": 0,
+  "SDK_mutations": 0
+}

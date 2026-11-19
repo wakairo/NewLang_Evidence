@@ -1,0 +1,10 @@
+{
+  "merge": "cd466b636d1be482dd7698e228cecc330479235e",
+  "tree": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+  "ordered_parents": [
+    "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+    "c683ca533caaca05e1b546dd45f2a051295da81f"
+  ],
+  "actual_Git_object_verified": true,
+  "all_source_blobs_equal_P_public_HEAD": true
+}

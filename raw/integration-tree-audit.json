@@ -1,0 +1,465 @@
+{
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "old_candidate": "738024ff18973459c1ec83efcf8dbd92619fb0bd",
+  "ordered_parents": [
+    "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+    "738024ff18973459c1ec83efcf8dbd92619fb0bd"
+  ],
+  "tree": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+  "independent_expected_tree": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+  "full_tree_path_mode_blob_check": "ALL_MATCH",
+  "total_paths": 7435,
+  "T_substitutions": [
+    {
+      "path": "README.md",
+      "old": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "aa6525095e33e62ac68f5f209376a66da6d2e96b"
+      },
+      "new": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "c0f2e0d7a91c55951a4fcc402acc7f42be70d12e"
+      },
+      "exact_new_main": true
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "old": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "c430fcfd495a39db226a34751cc591d740e31080"
+      },
+      "new": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "53af6b2e470a4755e51b847440df7aad2ac88fb0"
+      },
+      "exact_new_main": true
+    },
+    {
+      "path": "tests/integration/bootstrap_retry_test.py",
+      "old": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "d5202b2dc434c249986e879d36cf535f03ec9c65"
+      },
+      "new": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "be077a0e6526c3fa58086d5073393258ed77f58d"
+      },
+      "exact_new_main": true
+    }
+  ],
+  "diff_from_main": [
+    {
+      "path": "CMakeLists.txt",
+      "main_before": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "e400826dfe8843fafba03f13c1baf505df2d23cd"
+      },
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "127c093d21bc294bd37b30f85edaa5410ae9ecaa"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "src/checked_c_allocated_current_internal.h",
+      "main_before": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "12f327d349f68789959f9791377757d3202f66e7"
+      },
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "57ef4efbb141bfcfa48b5f55d31566a9dd955830"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "src/checked_c_copy_internal.h",
+      "main_before": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "9ba3f9448019dbee980d095dfa47b4d1f281ce2a"
+      },
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b91302a107c86b5f4980d82fa5b04bb3bc0c5563"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "src/checked_c_node.c",
+      "main_before": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "18b83593efdafb2b92603ff49bf1fbe130283957"
+      },
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "83ecc4c3c57e8f7c1520b7961bb2969397477423"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/CMakeLists.txt",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "4eaadf61efe8ee8f62e2df178634b47278ffe28e"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-H1-leak.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "95159ee12866d274dfc61d3ecb114c3c5d7b0c8e"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-foreign-allocation.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "75c2a1fb007672b86875accc34ffc7f658c3938c"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-foreign-domain.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "31d08e0eea1dfad33ebd0dabd779025dbc11b348"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-foreign-pointer.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b670cc475fbcf78c830df27d4294e7681a4529c7"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-incomplete-callee.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "428f278bf45183c8b8ee84be5f05cb55c4fe0a86"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-owner-reused.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "d9c39993d02cca03506700a3e2287b0047ec8ec9"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/N-stale-read.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "1613ae9c8cfb5e5d413fcce1d055ec46255b71f3"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/P-nonzero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "312ce0eba9c31f690abc0dc1e107188753d5a729"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/P-zero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "8d742adfb18b183f684af4cad545de614270938d"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/README.md",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "bf950fa25a161147c1dba38be1ac6d53082f8f00"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/REVALIDATION-C1177.md",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "cb10d67a85531b26478e5462a8f1acbf024d8292"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/cli_fault.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "7b9888d264dfac80d658fab0e93428d35f48313b"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/guest_wrap.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "d129a3e7e5211faabf15cfb5eb5f85d6fda63508"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/history/passive-v1.h.data",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "53422aad99d05559ac1698e36019a24cba18ce96"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/named.py",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "1abb37d91afa4753137b23c737c014d584940c45"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/native.py",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "4bf56699ecbc624bbc4d9893181b175f6396a765"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/oracle.json",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "f678fdd69db3deb17bbaaa67fc90368d2bf5ce40"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/passive-v2.h",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "713186832edf4d0041b1821a18d3b740ba6b8849"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/public_owned.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "156208db885f1e54d3a23631cdfaa0325c21cd72"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1517/safety.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "0e5fe9fb05c6c632c5cb20b635b4bb5e9dc8399c"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/A-prefix-zero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b6dc0068b76acb319d055d5db14f47ddbfe8fe59"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/B-prefix-nonzero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "d6970fee92ab7bc5de0f9c2cb81497cab0ff2c1b"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/C-oldcopy-zero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "40dc75ef6649fc76128a90a535fc694284928728"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/CMakeLists.txt",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "7a61f3e14afe7b82583032b79566a6e0bf0b13ae"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/D-combined-nonzero.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "9e5144d30d4ba58b5315ccb646a10e7c5092d2a8"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/N-foreign-allocation.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "235583d09e202f5e1c6a8158a2c33c964f9b15b2"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/N-foreign-domain.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "e83538d093cfee863285cd4084aa79094ece59c1"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/N-foreign-pointer.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b2c7f0cfb717a82f801e75af6e42dd57d9501ff8"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/N-live-loan.nl",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "067b6211ab17a10f62720a8110f15f624d207fd4"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/README.md",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "3403f45bcbf21ed615de486e9b314be17af1cfe9"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/consumer.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b0bf830a94f910b3f8217e9600dc9c56a594eb35"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/native.py",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "ec43a3c59cc1d15b1d61b0241894e556ad647385"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/passive.h",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "67044301639a6b7809dcc6185792e89079f02b42"
+      },
+      "equals_original_P738": true
+    },
+    {
+      "path": "tests/p1529/public_owned.c",
+      "main_before": null,
+      "integrated": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "bf4be845bd9c09058417c9db7fbb0550072a901b"
+      },
+      "equals_original_P738": true
+    }
+  ],
+  "new_production_or_test_modifications": 0
+}

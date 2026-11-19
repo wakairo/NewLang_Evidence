@@ -1,0 +1,43 @@
+{
+  "release": "C1213",
+  "FIRST": "c683ca533caaca05e1b546dd45f2a051295da81f",
+  "baseline_held_prefix": "CHECK0/MACHINE owned/CLI0, release-scope RED",
+  "after_guard": "same source CHECK0/MACHINE owned/CLI4/APIUNSUPPORTED NULL length98765/state untouched",
+  "positive_C17_identity": {
+    "live": {
+      "bytes": 16402,
+      "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1",
+      "exact_FIRST_bytes": true
+    },
+    "direct": {
+      "bytes": 11570,
+      "sha256": "22f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b",
+      "exact_FIRST_bytes": true
+    }
+  },
+  "totals": {
+    "local": 38,
+    "native": 6,
+    "build": 1,
+    "host": 0
+  },
+  "cumulative": {
+    "local": 127,
+    "native": 24,
+    "build": 3,
+    "host_sites": 4,
+    "host_cases": 12
+  },
+  "native": {
+    "old_zero_prefix_LiveTail_GCC_O2_H0_H1_H2": 3,
+    "direct_D_ClangASan_O2_H0_H1_H2": 3
+  },
+  "new_host_fault": 0,
+  "SDK": 0,
+  "local_CTest_sweep": 0,
+  "new_scope_CTest_driver": "NOT_RUN locally; same exercise helper executed with13 metered nested compiler/probe calls",
+  "first_source_oracle_observer_unchanged": true,
+  "unexpected_compiler_native_safety_RED": 0,
+  "metadata_count_assertion_RED": "retained separately; no experiment rerun",
+  "bounds": "existing4096/fresh node/source seal static inspected; no new mechanism"
+}

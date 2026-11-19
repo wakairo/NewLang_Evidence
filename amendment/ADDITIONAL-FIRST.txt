@@ -1,0 +1,348 @@
+P1531 / C1213 ADDITIONAL OWN FIRST — before baseline/source/probe execution
+
+C-relayed scope finding only; no R/F original. Baseb2f, immutable FIRSTc683/tree d856, PR1532/branch unchanged. Old local89/native18/host4sites12/build2 and all8 first CI success/raw frozen. New budget selected40/native6/build1, newhostfault0/SDK0. First old source/oracle/observer and results preserved.
+
+Own new N-live-prefix below derives only own existing P1481 Z-success-zero; adds current0/sibling13 bindings immediately after startup Copy. No H topology/owner/Allocation/Domain/loan/old-Copy change. Expected baseline FIRSTc683 CHECK0 + genuine MACHINE/public-owned + API/CLI C17 accepted (release-scope RED; not a known UB/authority counterexample). No native on this held composition. After one nonallocating private guard requiring existing direct predicate for every NEW prefix observation: N remains CHECK/MACHINE/owned valid but C17 API UNSUPPORTED/NULL/length untouched + CLI4 keeps named sentinel/no staging leak; pristine direct retry succeeds. This is consumer scope, not a source semantic prohibition.
+
+Controls: unchanged P1481 Z-success-zero with NO prefix stays CHECK/MACHINE/two genuine calls/joins/11closedloans/C17 identical to its own previous bytes. Its genuine LiveTail provenance/original87→0/startupold87/sibling13 and original two fallible H sites stay unchanged; H2 retains its existing caller-first then receiver-second cleanup order. Unchanged direct D-combined-nonzero stays CHECK/MACHINE/4stepunit terminal/C17 exact FIRST bytes, true original H2 callee-before-first-caller, T old83/old0/current37/sibling27. No new profile/issuer/forwarding/5step.
+
+Native6 max: old zero-prefix LiveTail strict GCC O2×H0/H1/H2=3, own direct D pinClangASan O2×H0/H1/H2=3, original passive observers/wrappers unchanged. Minimal one incremental frontend/probe build. Existing nonallocating guard leaves allocation/output staging code untouched: no new fault injection, preserve old12case OOM proof and targeted refusal/no-clobber/retry.
+
+Own static bound review: existing4096 fresh node source construction, entire source-result node byte/count/base/root seal before selector confirmed; no new cap or validator added, no actual bypass found. BOUNDS-REVIEW.txt retained. Proposed semantic code delta only adds !direct to existing prefix-binding loop rejection, which is not reached by existing zero-prefix LiveTail. Freeze original all8 green as history; only new guard HEAD2 with own finalCI can close C1213. Publish after firstCI terminal/raw save and local focused success; total2HEAD/16naturaljobs, no manualretry/thirdHEAD.
+
+VALUE-ALIGNMENT-RISK separate: align declared finite composition scope, no proof-engine expansion; human UB audit/re-audit locality versus factored C UNMEASURED, sound Rust safe facade fair, ProductGO PAUSED/H1 HOLD.
+
+### tests/p1531/N-live-prefix.nl bytes=5435 SHA256=35331fa4fdaec73d48644544e469f87574a315982fa6c5b185f63bb3d82894c7
+```
+// P1531 C1213 own FIRST: existing LiveTail plus held pure T prefix reads.
+// All failure arms remain normal; no owner or numeric success flag escapes.
+struct Display { reading: u8, channel: u8 }
+struct SampleEvent { next: Option<ptr<SampleEvent>>, sample: u8 }
+
+fn newest_only(has_next: bool, sample: u8) -> u8 {
+    if (has_next) { u8(0) } else { sample }
+}
+
+fn install_reading(out: ref<write, u8>, sample: u8) -> u8 {
+    let previous = replace(out, sample);
+    previous
+}
+
+fn unlink_oldest(
+    next: ref<write, Option<ptr<SampleEvent>>>,
+    tail: ptr<SampleEvent>, memory: Allocation, life: LifetimeDomain
+) -> LiveTail {
+    let removed = replace(next, Option<ptr<SampleEvent>>::None);
+    let retained = LiveTail {
+        owned_ptr: tail, owned_allocation: memory, owned_domain: life
+    };
+    return retained;
+}
+
+fn retire_event(
+    event: ptr<SampleEvent>, memory: Allocation, life: LifetimeDomain
+) -> unit {
+    let vacant = loan_exclusive_read(life) { |ending|
+        destroy(event, ending)
+    };
+    let recovered = erase_slot<SampleEvent>(vacant);
+    finalize_domain(life);
+    deallocate(memory, recovered);
+    unit
+}
+
+fn main() -> unit {
+    let display = Display { reading: u8(87), channel: u8(13) };
+    let previous_at_startup = loan_write(display@reading) { |out|
+        install_reading(out, u8(0))
+    };
+
+    let observed_before_backing = display@reading;
+    let routed_before_backing = display@channel;
+    match try_allocate_one<SampleEvent>() {
+        None => { unit },
+        Some(first_backing) => {
+            let OneBacking { allocation, raw } = first_backing;
+            let first_memory = allocation;
+            let first_slot = into_slot<SampleEvent>(raw);
+            let first_life = lifetime_domain();
+            let first_ptr = loan_read(first_life) { |stable|
+                initialize(first_slot,
+                    SampleEvent {
+                        next: Option<ptr<SampleEvent>>::None,
+                        sample: u8(76)
+                    }, stable)
+            };
+
+            match try_allocate_one<SampleEvent>() {
+                None => {
+                    let vacant_first = loan_exclusive_read(first_life) { |ending|
+                        destroy(first_ptr, ending)
+                    };
+                    let recovered_first = erase_slot<SampleEvent>(vacant_first);
+                    finalize_domain(first_life);
+                    deallocate(first_memory, recovered_first);
+                    unit
+                },
+                Some(last_backing) => {
+                    let OneBacking { allocation, raw } = last_backing;
+                    let last_memory = allocation;
+                    let last_slot = into_slot<SampleEvent>(raw);
+                    let last_life = lifetime_domain();
+                    let last_ptr = loan_read(last_life) { |stable|
+                        initialize(last_slot,
+                            SampleEvent {
+                                next: Option<ptr<SampleEvent>>::None,
+                                sample: u8(0)
+                            }, stable)
+                    };
+
+                    let previous_link = loan_read(first_life) { |stable|
+                        let write_first = ref_from_ptr(write, first_ptr, stable);
+                        replace(write_first@next,
+                            Option<ptr<SampleEvent>>::Some(last_ptr))
+                    };
+                    let sample = loan_read(last_life) { |sample_scope|
+                        let read_last = ref_from_ptr(read, last_ptr, sample_scope);
+                        read(read_last@sample)
+                    };
+                    let following = loan_read(last_life) { |link_scope|
+                        let read_last = ref_from_ptr(read, last_ptr, link_scope);
+                        read(read_last@next)
+                    };
+                    let has_next = match following {
+                        None => { usize(0) < usize(0) },
+                        Some(later) => { usize(0) == usize(0) },
+                    };
+                    let selected = newest_only(has_next, sample);
+
+                    let packet = loan_read(first_life) { |stable|
+                        let write_first = ref_from_ptr(write, first_ptr, stable);
+                        unlink_oldest(write_first@next, last_ptr,
+                                      last_memory, last_life)
+                    };
+                    let LiveTail {
+                        owned_ptr, owned_allocation, owned_domain
+                    } = packet;
+                    let vacant_first = loan_exclusive_read(first_life) { |ending|
+                        destroy(first_ptr, ending)
+                    };
+                    let recovered_first = erase_slot<SampleEvent>(vacant_first);
+                    finalize_domain(first_life);
+                    deallocate(first_memory, recovered_first);
+                    retire_event(owned_ptr, owned_allocation, owned_domain);
+                    let previous_displayed = loan_write(display@reading) { |out|
+                        install_reading(out, selected)
+                    };
+                    let retained_previous = previous_displayed;
+                    unit
+                },
+            }
+        },
+    };
+
+    let retained_startup = previous_at_startup;
+    let delivered_reading = display@reading;
+    let routed_channel = display@channel;
+    unit
+}
+```
+
+### tests/p1531/scope.py bytes=2969 SHA256=ea506879fb01692864cf028c55dc3cb29367b63c01a7a65913ad54810c875ff3
+```
+"""C1213: direct prefix, old zero-prefix LiveTail, held non-direct prefix."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+
+def exercise(compiler, consumer, live_probe, direct_probe, tests, out, run):
+    out.mkdir(parents=True, exist_ok=True)
+    sources = {
+        "live": tests / "p1481/Z-success-zero.nl",
+        "direct": tests / "p1529/D-combined-nonzero.nl",
+        "held": tests / "p1531/N-live-prefix.nl",
+    }
+    generated = {}
+    for name, source in sources.items():
+        run(name + "-CHECK", [compiler, "--check", source])
+        if name == "direct":
+            run(name + "-owned", [direct_probe, source, "37"])
+        else:
+            run(name + "-owned", [live_probe, "owned", source, "0", "0"])
+        target = out / (name + ".c")
+        if name == "held":
+            sentinel = b"P1531 C1213 untouched named output\n"
+            target.write_bytes(sentinel)
+            run(name + "-C17", [compiler, "--emit-c17-to", target, source],
+                expected=4)
+            assert target.read_bytes() == sentinel
+            assert not list(out.glob(target.name + ".tmp.*"))
+            run(name + "-API", [consumer, "refuse", source])
+            run("pristine-named-retry", [compiler, "--emit-c17-to", target,
+                                        sources["direct"]])
+            assert target.read_bytes() == generated["direct"].read_bytes()
+            assert not list(out.glob(target.name + ".tmp.*"))
+        else:
+            run(name + "-C17", [compiler, "--emit-c17-to", target, source])
+            run(name + "-API", [consumer, "agree", source, target])
+            generated[name] = target
+    return generated
+
+
+def main():
+    compiler, consumer, live_probe, direct_probe, tests, output = sys.argv[1:]
+    out = Path(output).resolve()
+    out.mkdir(parents=True, exist_ok=True)
+    rows = []
+
+    def run(label, argv, expected=0):
+        argv = list(map(str, argv))
+        env = dict(os.environ, ASAN_OPTIONS="detect_leaks=1:halt_on_error=1",
+                   UBSAN_OPTIONS="halt_on_error=1:print_stacktrace=1")
+        r = subprocess.run(argv, capture_output=True, env=env)
+        for suffix, data in [("stdout", r.stdout), ("stderr", r.stderr)]:
+            (out / (label + "." + suffix)).write_bytes(data)
+        rows.append(dict(label=label, argv=argv, expected=expected,
+                         exit=r.returncode))
+        (out / "ledger.json").write_text(json.dumps(rows, indent=2) + "\n")
+        assert r.returncode == expected, (label, r.stdout, r.stderr)
+        return r
+
+    generated = exercise(compiler, consumer, live_probe, direct_probe,
+                         Path(tests).resolve(), out, run)
+    print("P1531 direct/zero-prefix LiveTail preserved; held prefix "
+          "refused/no-clobber/retry PASS",
+          {k: hashlib.sha256(v.read_bytes()).hexdigest()
+           for k, v in generated.items()})
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### tests/p1531/CMakeLists.txt bytes=452 SHA256=6ead56deab4314776fc42e0db001e71cafcc210964c1a55befc6628e952ff4b0
+```
+add_test(NAME p1531_direct_prefix_scope.integration COMMAND "${Python3_EXECUTABLE}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1531/scope.py" "$<TARGET_FILE:newlangc>"
+    "$<TARGET_FILE:p1529_consumer>" "$<TARGET_FILE:p1481_probe>"
+    "$<TARGET_FILE:p1529_public_owned>" "${CMAKE_CURRENT_SOURCE_DIR}/tests"
+    "${CMAKE_CURRENT_BINARY_DIR}/p1531-scope")
+set_tests_properties(p1531_direct_prefix_scope.integration PROPERTIES TIMEOUT 180 RUN_SERIAL TRUE)
+```
+
+### tests/p1529/consumer.c bytes=3705 SHA256=6e6b456b852e08f05261a757d6f6794cfffc090b9f3910e5fc13713d64566a21
+```
+/* Reuse P's source loader and host wrappers; no new proof or fault engine. */
+#define main retained_p1463_main
+#include "../p1463/probe.c"
+#undef main
+
+static NLCheckedNodeView *prefix_read, *terminal;
+static void locate(NLCheckedFragment *f)
+{
+    for (size_t i = 1; i <= f->count; ++i) {
+        NLCheckedNodeView *n = &f->nodes[i - 1];
+        if (!prefix_read && n->kind == NL_CHECKED_FIELD_READ)
+            prefix_read = n;
+        if (n->owner_call.entry_proved)
+            terminal = n;
+        NLCheckedFragment *body =
+            (NLCheckedFragment *)nl_checked_call_body(f, i);
+        if (body)
+            locate(body);
+        if (n->kind == NL_CHECKED_MATCH)
+            for (size_t a = 0; a < n->item_count; ++a)
+                locate((NLCheckedFragment *)nl_checked_match_arm(f, i, a));
+    }
+}
+static bool agreement(const char *path, const char *raw)
+{
+    Program p = {0};
+    CHECK(ready(path, &p) && actual(&p));
+    char *text = NULL;
+    size_t length = 0;
+    CHECK(nl_checked_c_node(p.artifact, &text, &length) == NL_NODE_C_OK);
+    NLSource *expected = NULL;
+    CHECK(nl_source_load(raw, &expected) == NL_SOURCE_OK);
+    NLSourceView v;
+    CHECK(nl_source_view(expected,
+                         (NLSourceSpan){0, nl_source_length(expected)}, &v));
+    CHECK(v.length == length && !memcmp(v.bytes, text, length));
+    printf("P1529 genuine public API / CLI bytes agree: %zu\n", length);
+    nl_source_destroy(expected);
+    free(text);
+    destroy(&p);
+    return true;
+}
+static bool attacks(const char *path)
+{
+    Program p = {0}, foreign = {0};
+    CHECK(ready(path, &p) && actual(&p) && ready(path, &foreign) &&
+          actual(&foreign));
+    locate(p.artifact);
+    CHECK(prefix_read && terminal);
+    NLCheckedNodeView saved = *prefix_read;
+    prefix_read->field.child_fact = 0;
+    bool bad = refused(&p, "prefix current fact");
+    *prefix_read = saved;
+    CHECK(bad && emit(&p, NL_NODE_C_OK));
+    prefix_read->results[0].value = 0;
+    bad = refused(&p, "prefix Copy result");
+    *prefix_read = saved;
+    CHECK(bad && emit(&p, NL_NODE_C_OK));
+    struct NLHOriginOwner *origin = p.artifact->h_origin;
+    p.artifact->h_origin = foreign.artifact->h_origin;
+    bad = refused(&p, "foreign authentic origin world");
+    p.artifact->h_origin = origin;
+    CHECK(bad && emit(&p, NL_NODE_C_OK));
+    saved = *terminal;
+    terminal->owner_call.domain = 0;
+    bad = refused(&p, "terminal original Domain");
+    *terminal = saved;
+    CHECK(bad && emit(&p, NL_NODE_C_OK));
+    printf("P1529 four isolated artifact negatives / pristine retries PASS\n");
+    destroy(&foreign);
+    destroy(&p);
+    return true;
+}
+static bool refusal(const char *path)
+{
+    Program p = {0};
+    NLCopyCallAnchor anchor = {0};
+    NLSemanticSnapshot before, after;
+    CHECK(ready(path, &p) && actual(&p));
+    CHECK(nl_copy_state_anchor(p.context, &anchor) == NL_CHECK_OK &&
+          nl_semantic_snapshot(p.context, &before));
+    CHECK(emit(&p, NL_NODE_C_UNSUPPORTED) &&
+          nl_checked_proof_class(p.artifact) == NL_CHECKED_MACHINE_PROVED &&
+          nl_copy_state_matches(p.context, &anchor) &&
+          nl_semantic_snapshot(p.context, &after) &&
+          !memcmp(&before, &after, sizeof before));
+    nl_copy_state_destroy(&anchor);
+    destroy(&p);
+    puts("P1531 source-owned MACHINE preserved on consumer refusal");
+    return true;
+}
+int main(int argc, char **argv)
+{
+    if (argc == 4 && !strcmp(argv[1], "agree"))
+        return agreement(argv[2], argv[3]) ? 0 : 1;
+    if (argc == 3 && !strcmp(argv[1], "attack"))
+        return attacks(argv[2]) ? 0 : 1;
+    if (argc == 3 && !strcmp(argv[1], "refuse"))
+        return refusal(argv[2]) ? 0 : 1;
+    return 2;
+}
+```
+
+### tests/p1481/Z-success-zero.nl bytes=5333 SHA256=849916a28971a5603be09125d8a6a328b9cb88ea21e0c42c61a01037ed7602eb
+
+### tests/p1529/D-combined-nonzero.nl bytes=3044 SHA256=5b4ac8bbd6e67804e5712f55082e21a5513dc542adbb81d6a6622033f1df41e1
+
+Positive expected generated-C live: bytes=16402 SHA256=fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1 (existing own original, not regenerated oracle).
+
+Positive expected generated-C direct: bytes=11570 SHA256=22f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b (existing own original, not regenerated oracle).

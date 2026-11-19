@@ -1,0 +1,19 @@
+{
+  "first": "c683ca533caaca05e1b546dd45f2a051295da81f",
+  "head": "b1a6f1725abe25981ad29088175de581f956f919",
+  "tree": "1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9",
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "first_CI_all8_terminal_raw_saved": true,
+  "delta_paths": [
+    "CMakeLists.txt",
+    "src/checked_c_allocated_current_internal.h",
+    "tests/p1529/consumer.c",
+    "tests/p1531/CMakeLists.txt",
+    "tests/p1531/N-live-prefix.nl",
+    "tests/p1531/README.md",
+    "tests/p1531/scope.py"
+  ],
+  "delta_raw": ":100644 100644 127c093d21bc294bd37b30f85edaa5410ae9ecaa 76be21ea2d9b4093a103f31e2a88acb94a5016f7 M\tCMakeLists.txt\n:100644 100644 57ef4efbb141bfcfa48b5f55d31566a9dd955830 b79a561767deacc98405d81e78d1f0234f80fc49 M\tsrc/checked_c_allocated_current_internal.h\n:100644 100644 b0bf830a94f910b3f8217e9600dc9c56a594eb35 cc6013e6a657d736606fa377d59cc191136f5eb0 M\ttests/p1529/consumer.c\n:000000 100644 0000000000000000000000000000000000000000 ff8405f515361f30609775e89972ac18fdd184e9 A\ttests/p1531/CMakeLists.txt\n:000000 100644 0000000000000000000000000000000000000000 479dde6b758ac6fe893f0b10036928b94362c4b9 A\ttests/p1531/N-live-prefix.nl\n:000000 100644 0000000000000000000000000000000000000000 e411cbfa482a39911dbeb556ce0d5c5437e3aa12 A\ttests/p1531/README.md\n:000000 100644 0000000000000000000000000000000000000000 cefa9816594173e15641c80cfa8d04b662326533 A\ttests/p1531/scope.py",
+  "total_diff": "43 files changed, 4248 insertions(+), 26 deletions(-)",
+  "T_CI_spec_issuer_API_unchanged": true
+}

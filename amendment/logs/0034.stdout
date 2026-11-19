@@ -1,0 +1,87 @@
+{
+  "backtraceGraph" : 
+  {
+    "commands" : 
+    [
+      "add_test",
+      "include"
+    ],
+    "files" : 
+    [
+      "/workspace/NewLang_P1531/tests/p1531/CMakeLists.txt",
+      "/workspace/NewLang_P1531/CMakeLists.txt"
+    ],
+    "nodes" : 
+    [
+      {
+        "file" : 1
+      },
+      {
+        "command" : 1,
+        "file" : 1,
+        "line" : 115,
+        "parent" : 0
+      },
+      {
+        "file" : 0,
+        "parent" : 1
+      },
+      {
+        "command" : 0,
+        "file" : 0,
+        "line" : 1,
+        "parent" : 2
+      }
+    ]
+  },
+  "kind" : "ctestInfo",
+  "tests" : 
+  [
+    {
+      "backtrace" : 3,
+      "command" : 
+      [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+        "/workspace/NewLang_P1531/tests/p1531/scope.py",
+        "/workspace/p1531-evidence/build-gcc/newlangc",
+        "/workspace/p1531-evidence/build-gcc/p1529_consumer",
+        "/workspace/p1531-evidence/build-gcc/p1481_probe",
+        "/workspace/p1531-evidence/build-gcc/p1529_public_owned",
+        "/workspace/NewLang_P1531/tests",
+        "/workspace/p1531-evidence/build-gcc/p1531-scope"
+      ],
+      "name" : "p1531_direct_prefix_scope.integration",
+      "properties" : 
+      [
+        {
+          "name" : "ENVIRONMENT",
+          "value" : 
+          [
+            "PYTHONDONTWRITEBYTECODE=1",
+            "PYTHONHASHSEED=0",
+            "LC_ALL=C",
+            "ASAN_OPTIONS=detect_leaks=1:halt_on_error=1",
+            "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1"
+          ]
+        },
+        {
+          "name" : "RUN_SERIAL",
+          "value" : true
+        },
+        {
+          "name" : "TIMEOUT",
+          "value" : 90.0
+        },
+        {
+          "name" : "WORKING_DIRECTORY",
+          "value" : "/workspace/p1531-evidence/build-gcc"
+        }
+      ]
+    }
+  ],
+  "version" : 
+  {
+    "major" : 1,
+    "minor" : 0
+  }
+}

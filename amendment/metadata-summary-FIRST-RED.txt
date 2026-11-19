@@ -1,0 +1,7 @@
+Post-execution summary bookkeeping initially asserted len(rows)==len(results)==33
+and tried last log0033. Actual executed ledger has34 records: the final
+registration inventory is record34, while guest6 is record33. This assertion
+failed before writing a summary; compiler/native/probe execution was complete
+and all expected exits were already preserved. Corrected the summary reader
+to use actual last ledger ID and equal row/result counts. No experiment rerun,
+source/oracle/probe/result/ledger change or budget reset.

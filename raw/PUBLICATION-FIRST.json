@@ -1,0 +1,15 @@
+{
+  "id": 6997766259,
+  "POST_GET": true,
+  "exact": true,
+  "body": "P1531 / C1209 PUBLICATION FIRST HEAD — DRAFT / HOLD\n\nNew PR **[1532](https://github.com/wakairo/NewLang_Compiler/pull/1532)** opened/GET-verified DRAFT=true, targeting main. Exact first HEAD `c683ca533caaca05e1b546dd45f2a051295da81f`; tree `d8567d3a12a8c1e35e51f21369c8e495d58a97d9`; base actual main `b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1`/tree `e2795182a2128d658cde3c2b1d4190aca25c0a41`; new sole branch `p1531-terminal-integration-c1209`. Ordered commit parents [b2f,original738]; source/test/observer/private production byte identity and three exact T substitutions as FIRST6997675581. PR39paths/+3990/-26. Historical PR1526/ref unchanged, no R ref/action created.\n\nActual natural pull-request CI IDs for this immutable HEAD:\n- FULL5: [44444037306](https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037306)\n- NO-LLVM PARTIAL1: [44444037319](https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037319)\n- existing EARLY2: [44444037298](https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037298)\nInitial states queued/in_progress; jobs not yet terminal. GitHub synthetic merge checkout commit currently `cd466b636d1be482dd7698e228cecc330479235e`, to authenticate actual checkout/tree in logs. New publication HEAD1/2, expected natural8/16 jobs, no manual retry/dispatch; branch1/1, DRAFT PR1/1. Will retain firstHEAD and all raw, STOP at first real all8 success or C1209 failure boundary; any mechanical secondHEAD would be reported before changing it.\n\nAutomatic publication condition was independently satisfied and POST/GET6997744426: specified new-main FULL5/PARTIAL1 all6 actual jobs success, exact b2f/attempt1, local integration checks successful, live main/T blobs unchanged. Counters local89/96,native18/18,host4sites12/12cases,build2/2,SDK0; no more local campaign. F/R/C can use fixed public subject now; old results remain historical and independent review is C's separate decision. Technical results are finite capability; audit locality UNMEASURED/Product GO PAUSED/H1 HOLD.",
+  "head": "c683ca533caaca05e1b546dd45f2a051295da81f",
+  "tree": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "pr": 1532,
+  "runs": {
+    "FULL": 44444037306,
+    "PARTIAL": 44444037319,
+    "EARLY": 44444037298
+  }
+}

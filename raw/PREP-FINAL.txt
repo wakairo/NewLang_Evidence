@@ -1,0 +1,27 @@
+P1531 / C1209+C1213 PREP FINAL — final subject all8 actual success; raw custody next
+
+PR1532 remains DRAFT/HOLD at `b1a6f1725abe25981ad29088175de581f956f919`, tree `1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9`, sole parent FIRST `c683ca533caaca05e1b546dd45f2a051295da81f`; fixed base/mainb2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1/treee2795182a2128d658cde3c2b1d4190aca25c0a41, CURRENT_SPEC Draft17.38. FIRST ordered parents [b2f,original738] and exact all7435 path/mode/blob match to P738+three adopted T substitutions retained. C1213 adds exactly7path/+259/-1 delta, Production semantic change only !direct on NEW prefix bindings; zero-prefix LiveTail unchanged. Final total43paths/+4248/-26; T/workflows/spec/checker/issuer/public API/ABI unchanged. No force/rebase/old PR1526 or stopped sibling update.
+
+Final exactHEAD natural CI terminalSUCCESS / PR event / attempt1:
+| Group | Run | Job | Result |
+| --- | --- | --- | --- |
+| FULL ASan |44449523898|135309760413|1181/1181|
+| FULL UBSan |44449523898|135309760817|1181/1181|
+| FULL GCC |44449523898|135309760828|1181/1181|
+| FULL GCC Release |44449523898|135309760831|1181/1181|
+| FULL Clang |44449523898|135309760853|1181/1181|
+| PARTIAL |44449523819|135309760460|1180/1180|
+| EARLY ASan |44449523905|135309760528|84/84|
+| EARLY UBSan |44449523905|135309760901|84/84|
+
+All Required6 logs contain all18 p1517 +10 p1529 +new p1531 scope case Passed; all5 FULL include LLVM C API passed. EARLY84 contains no P1517/P1529/new-scope execution and is not claimed as their coverage. Decoded original logs saved, complete counts/hashes indexed. Actual synthetic checkout `dcb88ff1d4d073c49b13d6ecedf9d550b104c6c2` was independently fetched as a Git object: ordered parents[b2f,b1a6], exact final tree1fb87662..., present in every log. FIRST's own 3runs/all8 success/1180 FULL1179PARTIAL84EARLY/raw/syntheticcd466/tree d856 remain immutable history; no retroactive scope PASS. Total2HEAD/16naturaljobs/6runs, manualretry/dispatch0/thirdHEAD0, no unexpected CI RED.
+
+Own original/additional FIRST:6997675581/6997717478; C1213 resume6998176802, additional6998322188 and apparatus6998363768. C-relayed scope finding reproduced with own N-live-prefix source: baseline FIRST genuine CHECK/MACHINE/public-owned and C17 accepted excluded producer-prefix composition, no native executed there. Final same source remains CHECK/MACHINE/2joins/2Copy/11closedloans but APIUNSUPPORTED NULL/length98765 and CLI4, semantic anchor/snapshot/MACHINE unchanged; named sentinel/no staging leak and pristine retry successful. Direct D and old zero-prefix LiveTail emit byte-identical positive streams to FIRST (11570B SHA25622f9ebd96e438524fdb2f5a34f36ec26af09ef79d43996395db5e79c19dae49b;16402B SHA256fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1). This is consumer release scope, not an illegal-source or demonstrated UB finding.
+
+C1209 local six-positive CHECK→MACHINE/owned→C17/API, four source/four artifact negatives,18native and4hostsites12cases retained. C1213 adds six actual native PASS: old zero-prefix GCC O2 H0/H1/H2, direct D pinClangASan O2 H0/H1/H2; native truezero, same original T/old/current/sibling, per-original Allocation/Domain/loan/actual-formal and each source's existing physical teardown order preserved. Scope unit's same helper executed locally with all13 nested compiler/probe commands metered; full local CTest sweep not run, final natural required CI runs it. Static existing4096 fresh-node/source-result full byte/count/base/root authentication confirmed; no actual bypass found, no new bound/validator or dynamic stress claim. No new allocation/staging/source-law/issuer/owner/forwarding/5step/profile expansion, hostfault campaign or SDK.
+
+Counters frozen C1209 local89/native18/build2/host4sites12cases; C1213 local38/40/native6/6/build1/1/newhost0. Cumulative127/129 selected,24/24guest,3/3build,host4sites12cases unchanged,SDK0. Metadata-only count assertion33 versus actual34 and an optional unsupported GitHub timing lookup are retained separately; no experiment/ledger/source/oracle regrading or rerun. Original FIRST/RED/custody/P1525/P1528/P1529 STOP untouched, independent F/R originals unread.
+
+VALUE-ALIGNMENT-RISK separate: small declaration/capability scope alignment and reusable consumer correction, not a practical safe-library or general soundness proof. Author+ordinary-safe caller audit/re-audit dependency closure improvement versus factored C remains UNMEASURED; sound Rust safe facades fair; ProductGO624 PAUSED/H1 HOLD. C owns independent F/R review, READY/merge/adoption.
+
+Additional oversized unique raw (1.06MB actual staged inventory plus16 original decoded logs) will be preserved under the one planned ref archive/p1531-c1209-integration-20261119, still0 pushes used. One combined normal Git push, no SDK/binary/independent raw, then fresh-empty-HTTPS all members/path/size/SHA/mode/blob verification and POST/GET before only redundant temporary cleanup. Active original worktrees/commits/raw/SDK retained. FINAL POST/GET after custody then STOP C.

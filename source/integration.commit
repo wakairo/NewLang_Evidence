@@ -1,0 +1,6 @@
+tree 1fb87662e11c8e1ccd4d54a45be0e3d38a8e67b9
+parent c683ca533caaca05e1b546dd45f2a051295da81f
+author J W <a_kg@ninegw.sakura.ne.jp> 1795057734 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795057734 +0900
+
+fix(c17): confine new prefix observations to direct terminal receivers

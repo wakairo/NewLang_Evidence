@@ -1,0 +1,27 @@
+C1213 own static review, actual first c683 sources, no new validator/mechanism.
+
+include/newlang/semantic.h:251 sets NL_SEMANTIC_MAX_ENTRIES=4096 as an
+implementation budget, not a NewLang source-language rule.
+src/checked.c:6 nl_checked_add rejects count>=4096 before append and assigns
+the fresh 1-based ID only after count increments. semantic_check.c:3772–3814
+builds BLOCK and each checked source child, linking previous->next_item to
+the new child only after nonzero success; item_count increments once per
+fresh statement/binding. This issued source chain is finite/acyclic and
+item_count cannot exceed the finite node count.
+
+h_origin_internal.c:212 issued_nodes_valid checks sealed source/world,
+actual node base/count/capacity/root/body owner and complete node bytes.
+sealed_tree_valid/result-valid traverse actual canonical source-owned child
+edges and authenticated worlds. nl_checked_proof_class at849 validates
+custody and the root call's source result; nl_checked_c_node at3736 and3745
+authenticates custody/origin before source walking, sets scalar_issued from
+nl_h_custody_result_valid at3778. copy_prepare at3836 selects the existing
+copy_conditional_plan only after this; that planner requires scalar_issued
+before prefix scan. A challenged next_item/item_count/node count/base/root
+therefore cannot be silently treated as source-issued bytes on this path.
+
+The existing observation-count>root.item_count guard remains unchanged.
+No actual bypass/unlimited source-issued scan was found in this inspection.
+This is static path evidence, not a new theorem or a dynamic 4096-case test.
+No preventive cap/validator/source/issuer/API change is added. Independent
+F/R review remains separate; no independent original was consulted.

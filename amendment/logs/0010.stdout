@@ -1,0 +1,42 @@
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_source
+[ 14%] Built target newlang_lexer
+[ 14%] Built target newlang_syntax
+[ 14%] Built target newlang_parser
+[ 28%] Built target newlang_checked
+[ 85%] Built target newlang_semantic
+[ 85%] Building C object CMakeFiles/newlang_checked_c_node.dir/src/checked_c_node.c.o
+[ 85%] Linking C static library libnewlang_checked_c_node.a
+[ 85%] Built target newlang_checked_c_node
+[100%] Linking C executable newlangc
+[100%] Built target newlangc
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_source
+[  0%] Built target newlang_syntax
+[ 16%] Built target newlang_lexer
+[ 33%] Built target newlang_checked
+[ 33%] Built target newlang_parser
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o
+[100%] Linking C executable p1529_consumer
+[100%] Built target p1529_consumer
+[  0%] Built target newlang_diagnostic
+[  0%] Built target newlang_source
+[  0%] Built target newlang_syntax
+[ 16%] Built target newlang_lexer
+[ 33%] Built target newlang_checked
+[ 33%] Built target newlang_parser
+[100%] Built target newlang_semantic
+[100%] Built target newlang_checked_c_node
+[100%] Building C object CMakeFiles/p1481_probe.dir/tests/p1481/probe.c.o
+[100%] Linking C executable p1481_probe
+[100%] Built target p1481_probe
+[  0%] Built target newlang_source
+[  0%] Built target newlang_diagnostic
+[ 16%] Built target newlang_lexer
+[ 16%] Built target newlang_syntax
+[ 16%] Built target newlang_parser
+[ 33%] Built target newlang_checked
+[100%] Built target newlang_semantic
+[100%] Built target p1529_public_owned

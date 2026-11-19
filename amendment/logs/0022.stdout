@@ -1,0 +1,4 @@
+definition status=0 code=none
+actual status=0 code=none
+emitter status=1 out=NULL length=98765
+P1531 source-owned MACHINE preserved on consumer refusal

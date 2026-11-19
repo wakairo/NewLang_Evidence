@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/workspace/p1531-evidence/amendment/baseline-bin/p1529_consumer",
+    "bytes": 1058880,
+    "sha256": "61142e33c07f4fbecbef876b4f98973953216d89ce296fe9f54487eec6bab797",
+    "built_from": "c683ca533caaca05e1b546dd45f2a051295da81f"
+  },
+  {
+    "path": "/workspace/p1531-evidence/amendment/baseline-bin/newlangc",
+    "bytes": 1139072,
+    "sha256": "34641c268aaed3a0051f85748e37ae5664f25fc1d94be45c39ce6ac8f16e1ce4",
+    "built_from": "c683ca533caaca05e1b546dd45f2a051295da81f"
+  }
+]

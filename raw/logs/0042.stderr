@@ -1,0 +1,1 @@
+/workspace/NewLang_P1531/tests/p1529/N-foreign-domain.nl:63:21-63:43: error(semantic)[P193-CALL-DOMAIN]: input LifetimeDomain does not govern the pointer's root

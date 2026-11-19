@@ -1,0 +1,54 @@
+{
+  "worktrees": [
+    {
+      "path": "/workspace/NewLang_P1517",
+      "head": "c57fed0bad9b0e6c0dea7b1f02f1b5ff3c0cfd5c",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1525",
+      "head": "394d35d4175716a4fc2947e3d5fbdbc89c167237",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1525_publication",
+      "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1528_gate0",
+      "head": "7deabd1b1f44bc40862b6a28c89fde502832d8cb",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1529",
+      "head": "738024ff18973459c1ec83efcf8dbd92619fb0bd",
+      "clean": true
+    },
+    {
+      "path": "/workspace/NewLang_P1531",
+      "head": "c683ca533caaca05e1b546dd45f2a051295da81f",
+      "clean": true
+    }
+  ],
+  "prior_FINAL_receipts": [
+    {
+      "path": "/workspace/p1525-evidence/publication-c1184/PUBLICATION-FINAL-POST-GET.json",
+      "bytes": 770,
+      "sha256": "b6f4269e6250aae3183c582e39b37657b323ddb8c7e83dd6f77a5d52e0306b60"
+    },
+    {
+      "path": "/workspace/p1528-gate0/FINAL-POST-GET.json",
+      "bytes": 513,
+      "sha256": "8dfcef63c7bbd0b96f99e854adff4a7a41f0696a9745f955f949d60df334c1a9"
+    },
+    {
+      "path": "/workspace/p1529-evidence/FINAL-POST-GET.json",
+      "bytes": 352,
+      "sha256": "8ce335f45de15ae64404b6ee1286876e80818efe41d867462af47be503ad18f3"
+    }
+  ],
+  "SDK_retained": true,
+  "previous_Evidence_refs_untouched": true,
+  "only_new_P1531_ledger_written": true
+}

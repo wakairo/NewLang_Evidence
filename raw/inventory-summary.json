@@ -1,0 +1,36 @@
+{
+  "total": 1177,
+  "p1517": [
+    "p1517_zero_owned.unit",
+    "p1517_nonzero_owned.unit",
+    "p1517_owner_authentication.unit",
+    "p1517_oom_0.unit",
+    "p1517_oom_1.unit",
+    "p1517_oom_2.unit",
+    "p1517_oom_3.unit",
+    "p1517_oom_4.unit",
+    "p1517_oom_5.unit",
+    "p1517_negative_H1-leak.unit",
+    "p1517_negative_foreign-allocation.unit",
+    "p1517_negative_foreign-domain.unit",
+    "p1517_negative_foreign-pointer.unit",
+    "p1517_negative_incomplete-callee.unit",
+    "p1517_negative_owner-reused.unit",
+    "p1517_negative_stale-read.unit",
+    "p1517_native.integration",
+    "p1517_named_no_clobber.integration"
+  ],
+  "p1529": [
+    "p1529_A-prefix-zero_owned.unit",
+    "p1529_B-prefix-nonzero_owned.unit",
+    "p1529_C-oldcopy-zero_owned.unit",
+    "p1529_D-combined-nonzero_owned.unit",
+    "p1529_prefix_authentication.unit",
+    "p1529_negative_foreign-allocation.unit",
+    "p1529_negative_foreign-domain.unit",
+    "p1529_negative_foreign-pointer.unit",
+    "p1529_negative_live-loan.unit",
+    "p1529_native.integration"
+  ],
+  "full_CTest_executed": false
+}

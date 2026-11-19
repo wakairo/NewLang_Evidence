@@ -1,0 +1,7 @@
+tree d8567d3a12a8c1e35e51f21369c8e495d58a97d9
+parent b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1
+parent 738024ff18973459c1ec83efcf8dbd92619fb0bd
+author J W <a_kg@ninegw.sakura.ne.jp> 1795054688 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795054688 +0900
+
+Integrate terminal receiver and prefix Copy observations on post-T main

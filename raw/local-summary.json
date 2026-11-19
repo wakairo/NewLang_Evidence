@@ -1,0 +1,38 @@
+{
+  "head": "c683ca533caaca05e1b546dd45f2a051295da81f",
+  "tree": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+  "base": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+  "totals": {
+    "local": 89,
+    "native": 18,
+    "build": 2,
+    "host": 12
+  },
+  "host_sites": 4,
+  "positive_source": 6,
+  "all6_check_owned_C17_API_and_old_bytes": true,
+  "ASan_host_positive": 2,
+  "source_negative": 4,
+  "artifact_negative": 4,
+  "native_matrix": {
+    "GCC_A_D_O2_H0_H1_H2": 6,
+    "Clang_A_D_O2_H0_H1_H2": 6,
+    "Clang_ASan_D": 3,
+    "Clang_UBSan_A": 3
+  },
+  "host_selectors": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "named_no_clobber": true,
+  "named_no_staging_leak": true,
+  "all_expected_exits": true,
+  "unexpected_local_RED": 0,
+  "source_oracle_probe_observer_production_revisions": 0,
+  "SDK_acquisitions": 0,
+  "SDK_prefix_mutations": 0,
+  "full_local_CTest": 0,
+  "historical_results_unchanged": true
+}

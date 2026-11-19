@@ -1,0 +1,1354 @@
+[
+  {
+    "run": {
+      "id": 44444037306,
+      "name": "Compiler validation",
+      "node_id": "WFR_kwLOU7KX288AAAAKWRIwug",
+      "head_branch": "p1531-terminal-integration-c1209",
+      "head_sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+      "path": ".github/workflows/compiler-ci.yml",
+      "display_title": "Support terminal cleanup with pure prefix Copy observations",
+      "run_number": 1013,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "workflow_id": 374571247,
+      "check_suite_id": 120307856359,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcAugz5w",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037306",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1532",
+          "id": 5387636057,
+          "number": 1532,
+          "head": {
+            "ref": "p1531-terminal-integration-c1209",
+            "sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T02:24:06Z",
+      "updated_at": "2026-11-19T02:48:47Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T02:24:06Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120307856359",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037306/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/374571247",
+      "head_commit": {
+        "id": "c683ca533caaca05e1b546dd45f2a051295da81f",
+        "tree_id": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+        "message": "Integrate terminal receiver and prefix Copy observations on post-T main",
+        "timestamp": "2026-11-19T02:18:08Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    },
+    "jobs": [
+      {
+        "id": 135291676843,
+        "name": "GCC",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037306,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Host prerequisites from signed Ubuntu repositories",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Check C formatting and provide exact pinned-formatter correction",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 6
+          },
+          {
+            "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 7
+          },
+          {
+            "name": "Configure, build, and test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save verified original archive only on trusted successful main push",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 135291677195,
+        "name": "ASan",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037306,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Host prerequisites from signed Ubuntu repositories",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Check C formatting and provide exact pinned-formatter correction",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 6
+          },
+          {
+            "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 7
+          },
+          {
+            "name": "Configure, build, and test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save verified original archive only on trusted successful main push",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 135291677289,
+        "name": "Clang",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037306,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Host prerequisites from signed Ubuntu repositories",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Check C formatting and provide exact pinned-formatter correction",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Configure, build, and test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save verified original archive only on trusted successful main push",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 135291677302,
+        "name": "UBSan",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037306,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Host prerequisites from signed Ubuntu repositories",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Check C formatting and provide exact pinned-formatter correction",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 6
+          },
+          {
+            "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 7
+          },
+          {
+            "name": "Configure, build, and test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save verified original archive only on trusted successful main push",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 135291677349,
+        "name": "GCC Release",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037306,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Host prerequisites from signed Ubuntu repositories",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Restore untrusted fixed-SHA curated SDK archive cache",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Bootstrap SHA-verified curated LLVM 23.1.3 (cache or fixed Release)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Check C formatting and provide exact pinned-formatter correction",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 6
+          },
+          {
+            "name": "Upload formatter suggestions (untrusted; inspect before git apply)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 7
+          },
+          {
+            "name": "Configure, build, and test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save verified original archive only on trusted successful main push",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": 44444037319,
+      "name": "Compiler frontend/C17 reference (NO LLVM; PARTIAL)",
+      "node_id": "WFR_kwLOU7KX288AAAAKWRIwxw",
+      "head_branch": "p1531-terminal-integration-c1209",
+      "head_sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+      "path": ".github/workflows/compiler-frontend-ci.yml",
+      "display_title": "Support terminal cleanup with pure prefix Copy observations",
+      "run_number": 652,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "workflow_id": 384152601,
+      "check_suite_id": 120307856378,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcAugz-g",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037319",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1532",
+          "id": 5387636057,
+          "number": 1532,
+          "head": {
+            "ref": "p1531-terminal-integration-c1209",
+            "sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T02:24:06Z",
+      "updated_at": "2026-11-19T02:32:07Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T02:24:06Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120307856378",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037319/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/384152601",
+      "head_commit": {
+        "id": "c683ca533caaca05e1b546dd45f2a051295da81f",
+        "tree_id": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+        "message": "Integrate terminal receiver and prefix Copy observations on post-T main",
+        "timestamp": "2026-11-19T02:18:08Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    },
+    "jobs": [
+      {
+        "id": 135291676942,
+        "name": "Production CHECK + C17/native reference (NO LLVM; PARTIAL)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037319,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Check out source without persisted credentials",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Verify available Ubuntu runner tools (no LLVM install)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Configure and build the actual Production frontend with GCC (no LLVM)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Inventory all CTests and assert Production CHECK, C17/native and public validators",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Execute every registered frontend/C17 CTest (NO LLVM; PARTIAL)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Verify real Production source/checker CLI path (NO LLVM; PARTIAL)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Post Check out source without persisted credentials",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": 44444037298,
+      "name": "Compiler early coding GO (NON-REQUIRED)",
+      "node_id": "WFR_kwLOU7KX288AAAAKWRIwsg",
+      "head_branch": "p1531-terminal-integration-c1209",
+      "head_sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+      "path": ".github/workflows/compiler-early-ci.yml",
+      "display_title": "Support terminal cleanup with pure prefix Copy observations",
+      "run_number": 64,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "workflow_id": 411872696,
+      "check_suite_id": 120307856334,
+      "check_suite_node_id": "CS_kwDOU7KX288AAAAcAugzzg",
+      "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298",
+      "html_url": "https://github.com/wakairo/NewLang_Compiler/actions/runs/44444037298",
+      "pull_requests": [
+        {
+          "url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls/1532",
+          "id": 5387636057,
+          "number": 1532,
+          "head": {
+            "ref": "p1531-terminal-integration-c1209",
+            "sha": "c683ca533caaca05e1b546dd45f2a051295da81f",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "b2f22d39b61c0cf3ea18b7a1529fa8f0bf801be1",
+            "repo": {
+              "id": 1404213211,
+              "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+              "name": "NewLang_Compiler"
+            }
+          }
+        }
+      ],
+      "created_at": "2026-11-19T02:24:06Z",
+      "updated_at": "2026-11-19T02:29:17Z",
+      "actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-19T02:24:06Z",
+      "triggering_actor": {
+        "login": "wakairo",
+        "id": 6393110,
+        "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wakairo",
+        "html_url": "https://github.com/wakairo",
+        "followers_url": "https://api.github.com/users/wakairo/followers",
+        "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+        "organizations_url": "https://api.github.com/users/wakairo/orgs",
+        "repos_url": "https://api.github.com/users/wakairo/repos",
+        "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wakairo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298/jobs",
+      "logs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298/logs",
+      "check_suite_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/check-suites/120307856334",
+      "artifacts_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298/artifacts",
+      "cancel_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298/cancel",
+      "rerun_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/runs/44444037298/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/actions/workflows/411872696",
+      "head_commit": {
+        "id": "c683ca533caaca05e1b546dd45f2a051295da81f",
+        "tree_id": "d8567d3a12a8c1e35e51f21369c8e495d58a97d9",
+        "message": "Integrate terminal receiver and prefix Copy observations on post-T main",
+        "timestamp": "2026-11-19T02:18:08Z",
+        "author": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        },
+        "committer": {
+          "name": "J W",
+          "email": "a_kg@ninegw.sakura.ne.jp"
+        }
+      },
+      "repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      },
+      "head_repository": {
+        "id": 1404213211,
+        "node_id": "R_kgDOU7KX2w",
+        "name": "NewLang_Compiler",
+        "full_name": "wakairo/NewLang_Compiler",
+        "private": false,
+        "owner": {
+          "login": "wakairo",
+          "id": 6393110,
+          "node_id": "MDQ6VXNlcjYzOTMxMTA=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6393110?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/wakairo",
+          "html_url": "https://github.com/wakairo",
+          "followers_url": "https://api.github.com/users/wakairo/followers",
+          "following_url": "https://api.github.com/users/wakairo/following{/other_user}",
+          "gists_url": "https://api.github.com/users/wakairo/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/wakairo/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/wakairo/subscriptions",
+          "organizations_url": "https://api.github.com/users/wakairo/orgs",
+          "repos_url": "https://api.github.com/users/wakairo/repos",
+          "events_url": "https://api.github.com/users/wakairo/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/wakairo/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/wakairo/NewLang_Compiler",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/wakairo/NewLang_Compiler",
+        "forks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/forks",
+        "keys_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/teams",
+        "hooks_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/hooks",
+        "issue_events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/events",
+        "assignees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/tags",
+        "blobs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/languages",
+        "stargazers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/stargazers",
+        "contributors_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contributors",
+        "subscribers_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscribers",
+        "subscription_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/subscription",
+        "commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/merges",
+        "archive_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/downloads",
+        "issues_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/labels{/name}",
+        "releases_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/wakairo/NewLang_Compiler/deployments"
+      }
+    },
+    "jobs": [
+      {
+        "id": 135291676987,
+        "name": "Early coding GO UBSan (NON-REQUIRED)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037298,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Existing signed Ubuntu prerequisites",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run actions/cache/restore@3edfce9056124e459a23f683a21433670d47daca",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run python3 scripts/bootstrap.py",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Configure unchanged sanitizer targets",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Existing 84 CTests (success permits next work, not merge)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Standard CTest logs",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 135291677281,
+        "name": "Early coding GO ASan (NON-REQUIRED)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 44444037298,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Existing signed Ubuntu prerequisites",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run actions/cache/restore@3edfce9056124e459a23f683a21433670d47daca",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run python3 scripts/bootstrap.py",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Configure unchanged sanitizer targets",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Existing 84 CTests (success permits next work, not merge)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Standard CTest logs",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      }
+    ]
+  }
+]
