@@ -1,0 +1,78 @@
+{
+  "base_tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "method": "only changed translation unit checked_c_node.c including private header; all other source/headers identical to exact cached base; GCC flags unchanged; new backend archive and two links, no old outputs overwritten",
+  "compiler": "/usr/bin/gcc",
+  "flags": [
+    "-D_FORTIFY_SOURCE=2",
+    "-O3",
+    "-DNDEBUG",
+    "-std=c17",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror",
+    "-I/workspace/NewLang_P1539/include"
+  ],
+  "unchanged_inputs": [
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o",
+      "bytes": 26088,
+      "sha256": "aed496ec3ddeca95310fa640c342985ad1013f845fbb050013d1b97dd19a9938"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o",
+      "bytes": 21816,
+      "sha256": "8c0a218af89749e7d22aa07b3f086a7953e099c5b09c5cf239338f86701ef8c0"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_semantic.a",
+      "bytes": 992468,
+      "sha256": "e65036aa3c9f86e5ed991909b7869c758fe88e05e0ecdd1edcc50fc091ad48b0"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_diagnostic.a",
+      "bytes": 3254,
+      "sha256": "86aba7525aadbd0e390220ecc6f259fa6adba42f7d439b213626ac0a45123253"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_checked.a",
+      "bytes": 6142,
+      "sha256": "9c4174065c859c4a5ea8d86d7d0d30185f6fa0483f4fd8a6d3ec808508805e61"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_parser.a",
+      "bytes": 101030,
+      "sha256": "ed77bf55270810147a03768db026e70a3b5789fd6f2e3f8420a583d83ae8bbfc"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_diagnostic.a",
+      "bytes": 3254,
+      "sha256": "86aba7525aadbd0e390220ecc6f259fa6adba42f7d439b213626ac0a45123253"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_syntax.a",
+      "bytes": 2562,
+      "sha256": "454a882931f663d5faa6f69a88eb171b10943e89c50f5c0ca166d9b671e61b79"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_lexer.a",
+      "bytes": 2522,
+      "sha256": "39fa613469d85548aac48df90616981f745981fc12afde18557e19c277ab3283"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/libnewlang_source.a",
+      "bytes": 4370,
+      "sha256": "688f455d6d504692a74862f60182821f9890a5f481258109108d9de816bb19d0"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/newlangc.dir/src/main.c.o",
+      "bytes": 172312,
+      "sha256": "175c463ec8dac0310b756c767144c78b7706a08c9185e0bc857ec458d6e7dc27"
+    },
+    {
+      "path": "/workspace/p1535-c1230-gcc/build-gcc/CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o",
+      "bytes": 60840,
+      "sha256": "4e88b328f2d74cb4fc95d78415482795c33c5f139be0f7dc63128acbd224aa69"
+    }
+  ]
+}

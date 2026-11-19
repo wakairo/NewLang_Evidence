@@ -1,0 +1,29 @@
+from pathlib import Path
+import datetime,hashlib,json,subprocess
+E=Path('/workspace/p1539-c1240-local');W=Path('/workspace/NewLang_P1539')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def git(*args):return subprocess.check_output(['git','-C',str(W),*args],text=True).strip()
+a=[json.loads(s) for s in (E/'ledger.jsonl').read_text().splitlines()];b=[json.loads(s) for s in (E/'results.jsonl').read_text().splitlines()]
+assert len(a)==len(b)==83 and [x['id'] for x in a]==[x['id'] for x in b]
+assert not git('status','--porcelain')
+assert git('rev-parse','HEAD')=='a026544d52ce631e339dbd5ec40c6fc3ebcca734'
+assert git('rev-parse','HEAD^')=='7b0b8e0a5348220061abe86921e9d006be5e398a'
+assert git('rev-parse','HEAD^{tree}')=='75697e0bdaec271954d25b4ffa3c2ab3c7390533'
+for x in b:
+ expected=1 if x['id'] in [3,5] else 4 if x['id'] in [9,13,82] else 3 if x['id'] in [15,16,17,18,67,68,69,70] else 0
+ assert x['exit']==expected,x
+ for ext in ['stdout','stderr']:assert (E/'logs'/f'{x["id"]:03d}.{ext}').is_file()
+for x in json.loads((E/'FIRST-files.json').read_text()):
+ p=E/x['path'] if x['path'].startswith('source/') else E/'FIRST-probe/public_owned.c'
+ assert p.stat().st_size==x['bytes'] and sha(p)==x['sha256']
+for v in ['zero','nonzero']:assert (E/(v+'.c')).read_bytes()==(E/(v+'-asan-frontend.c')).read_bytes()
+counts={k:sum(r[k] for r in a) for k in ['selected','native','frontend','probe','host']};counts.update(host_sites=sorted(set(s for r in a for s in r['sites'])),actual_subprocesses=len(a),compiler_remote=0,SDK=0,fullCTest=0,CI=0)
+artifacts=[]
+for p in sorted(E.rglob('*')):
+ if p.is_file() and (p.parent.name in ['build-gcc','build-asan','native'] or p.name=='public_owned'):
+  artifacts.append(dict(path=str(p.relative_to(E)),bytes=p.stat().st_size,sha256=sha(p)))
+(E/'build-artifact-identities.json').write_text(json.dumps(artifacts,indent=2)+'\n')
+summary=dict(outcome='LOCAL_TECH_VERIFIED / STOP C; one narrow private reuse; no Compiler publication authorized',base=git('rev-parse','HEAD^'),base_tree='a7e0561c7b57e03330b1d1d91c90300dd093f938',local_HEAD=git('rev-parse','HEAD'),local_tree=git('rev-parse','HEAD^{tree}'),local_branch='p1539-scalar-helper-local',worktree=str(W),diff='2 private files +22/-4; no source law/issuer/public API/ABI/owner/T/toolchain/workflow changes',counters=counts,selected_accounting='83 logged subprocesses +7 extra artifact-negative/retry cases +6 extra CC translation units +4 OOM retries =100 selected; frontend2 incremental one-changed-TU builds reuse frozen unchanged libraries; public3 GCC probe compilations; no new public target build after3',FIRST=dict(issue_comment=7002056437,oracle_sha256=sha(E/'oracle-FIRST.json'),manifest_sha256=sha(E/'FIRST-files.json'),all_source_and_original_probe_bytes_unchanged=True,apparatus_RED=[3,5],source_C17_RED=[9,13],CLI_exit=4,API_refusal=[10,14],immutable_raw=True),source_chain='both own complete positives CHECK0/actual MACHINE1/owned5step; actual scalar0/37 -> fresh formal -> authentic return -> consumed secondCopy argument binding; same original T root/child/incarnation/current/sibling retained; original H0/H1/H2',C17=[dict(variant=v,bytes=(E/(v+'.c')).stat().st_size,sha256=sha(E/(v+'.c')),GCC_ASan_frontend_API_CLI_bytes_equal=True) for v in ['zero','nonzero']],native='18/18 PASS strictC17 O2; GCC both worlds6 + ClangASan both6 + Clangnormal nonzero3 + ClangUBSan nonzero3; each H0/H1/H2; physical secondH callee free then firstH caller free, actualu8zero/current37/sibling/oldCopy',negatives='four own complete source negatives CHECK3 both baseline/finalASan; 4 existing isolated artifact/current/origin/Domain negatives and pristine retries PASS',host='2 selected after-helper sites(receiver text staging, trailing Copy replay), both sources fault+retry8cases; actual OOM status2 outNULL length98765, snapshot/anchor/MACHINE no-clobber/rollback + successful retry; no new fault engine',controls='six own prior P fixed-source C17 outputs byte-identical to preserved C1230 (3 five-step, 2 four-step, old zero-prefixLiveTail); heldLiveTail prefix remains CHECK0/CLI4 no file clobber/APIUnsupported no state clobber',NOT_RUN=['new full clean all-TU CMake rebuild (incremental cache provenance explicit)','O0 guests','fullCTest/LLVM campaign','new source laws/callee payload or scalar terminal receiver','Compiler remote/PR/CI/READY/merge','new SDK acquisition'],elapsed_selected_subprocess_seconds=sum(x['seconds'] for x in b),environment_resume=json.loads((E/'environment-resume.json').read_text()),value_alignment_risk='Identity u8 helper is trivial but actual runtime actual/return binding is consumed. Technical finite composition only, not useful library abstraction or author+ordinary-safe-caller comparative UB-prevention audit locality; authentic issuers/originalR/A/D/legalwriters/cleanup/all-safe-reachable states remain closure. No new facade/module/FFI or arbitrary payload access. ProductGO624 PAUSED/H1 HOLD/UNMEASURED; direct snapshot->unit close->T/no patch and factoredC/soundRust alternatives.',archive_scope='raw source/oracle/FIRST/apparatusRED/C17RED/current logs/complete public probe/generation+build recipes/patch+rawcommit+tree/provenance; reproducible ELF/objects/SDK not archived, actual current originals retained locally; full bytes restoration is not a new test or semantic proof')
+(E/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+(E/'canonical-identities.json').write_text(json.dumps([dict(path=str(p.relative_to(W)),bytes=p.stat().st_size,sha256=sha(p)) for p in [W/'docs/NewLang_Project_Compass.md',W/'docs/NewLang_Product_Value_Strategy.md',W/'docs/NewLang_Project_Development_Process.md',W/'docs/reference/CURRENT_SPEC.md',W/'docs/NewLang_Evidence_Archive_and_Codex_Cloud_Disk_Policy.md']],indent=2)+'\n')
+print(json.dumps(summary,indent=2))

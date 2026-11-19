@@ -1,0 +1,27 @@
+[
+  {
+    "path": "docs/NewLang_Project_Compass.md",
+    "bytes": 9043,
+    "sha256": "402a124c6fa7b7867891ac8290bc4e358efccfcedd9e1c0df95e2359c76e756c"
+  },
+  {
+    "path": "docs/NewLang_Product_Value_Strategy.md",
+    "bytes": 51375,
+    "sha256": "f1afe4845487654d2e11a9f159bd0128149d93caf5c1cd5f9fad2ed29cc0d7ca"
+  },
+  {
+    "path": "docs/NewLang_Project_Development_Process.md",
+    "bytes": 71610,
+    "sha256": "a92048a35b66673c3f69cf209c16485031f0b8fcb46af9fa7e0a8c68b092f1fd"
+  },
+  {
+    "path": "docs/reference/CURRENT_SPEC.md",
+    "bytes": 17219,
+    "sha256": "6f5391cd9513142b49fb9ad0e317dc3ced425edfc63f771d1bbea153ff6cefaf"
+  },
+  {
+    "path": "docs/NewLang_Evidence_Archive_and_Codex_Cloud_Disk_Policy.md",
+    "bytes": 16384,
+    "sha256": "5d6b847f1ea7de90fc92016594a748c1960e1c3a953da99ddd749a14aa6fb488"
+  }
+]

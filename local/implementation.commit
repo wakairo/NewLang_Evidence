@@ -1,0 +1,6 @@
+tree 75697e0bdaec271954d25b4ffa3c2ab3c7390533
+parent 7b0b8e0a5348220061abe86921e9d006be5e398a
+author J W <a_kg@ninegw.sakura.ne.jp> 1795071902 +0900
+committer J W <a_kg@ninegw.sakura.ne.jp> 1795071902 +0900
+
+Connect direct H scalar helper to existing readonly consumer

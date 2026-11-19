@@ -1,0 +1,5 @@
+PROBE_ASSERT line=303 expression=t->helpers == 1 && t->helper_owner == f && second && second->kind == NL_CHECKED_IDENTIFIER && second->value_use == NL_VALUE_COPIED && second->symbol == t->helper_binding && nl_semantic_binding_view(p.entry, second->symbol, &result) && result.value == t->helper_result && p.field.new_value == second->results[0].value
+PROBE_ASSERT line=358 expression=copy(f, id, t)
+PROBE_ASSERT line=413 expression=walk(arm, t, &branch, depth + 1)
+PROBE_ASSERT line=413 expression=walk(arm, t, &branch, depth + 1)
+PROBE_ASSERT line=504 expression=walk(main_body, &t, &count, 0)

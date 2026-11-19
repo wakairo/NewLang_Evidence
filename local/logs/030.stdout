@@ -1,0 +1,17 @@
+definition status=0 code=none
+actual status=0 code=none
+definition status=0 code=none
+actual status=0 code=none
+tamper prefix current fact public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=12067
+tamper prefix Copy result public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=12067
+tamper foreign authentic origin world public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=12067
+tamper terminal original Domain public-proof=0
+emitter status=1 out=NULL length=98765
+emitter status=0 out=text length=12067
+P1529 four isolated artifact negatives / pristine retries PASS

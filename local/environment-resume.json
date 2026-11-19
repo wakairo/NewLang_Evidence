@@ -1,0 +1,14 @@
+{
+  "environment_reselected": "starting -> same ready; old PTY process unknown",
+  "completed_pairs": 64,
+  "unpaired": 0,
+  "duplicate_reruns": 0,
+  "policy": "retain all64 raw; continue only unexecuted remainder of build_asan.py, no new build",
+  "counters": {
+    "selected": 77,
+    "native": 18,
+    "frontend": 2,
+    "probe": 3,
+    "host": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fixed_base": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "fixed_tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "fixed_parent": "1a32f87f1007db8e8c11dc375a6b7416a35adbc7",
+  "worktree": "/workspace/NewLang_P1539",
+  "local_branch": "p1539-scalar-helper-local",
+  "live_main_SEPARATE": "9c9b17f7f0584c88a92ab284f57e4a93b8ab350b a7e0561c7b57e03330b1d1d91c90300dd093f938 1a32f87f1007db8e8c11dc375a6b7416a35adbc7 7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "no_rebase_or_subject_substitution": true,
+  "prior_C1236_FINAL": 7001473569,
+  "prior_C1236_all8success": true,
+  "prior_custody_POST_GET": 7001439470,
+  "counters": {
+    "selected": 0,
+    "frontend": 0,
+    "probe": 0,
+    "native": 0,
+    "host_sites": 0,
+    "host_cases": 0,
+    "SDK": 0,
+    "Compiler_remote": 0
+  }
+}

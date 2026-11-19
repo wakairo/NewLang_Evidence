@@ -1,0 +1,137 @@
+{
+  "fixed_base": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "canonical": "Draft17.38",
+  "source_eligibility": {
+    "clauses": [
+      "3.2 exact2fallible H allocations",
+      "13.5a hidden dependencies",
+      "13.8 nonescaping loan/result forwarding",
+      "16.3.8 exactly1H+1two-u8T+finite ordinary function set",
+      "17.1 selected exact-H declared-index1 payload read",
+      "18.1 ordinary nongeneric known-direct declarations",
+      "18.1a independent definition/actual unit receiver",
+      "18.2 Copy argument preserves dependencies",
+      "18.5 scalar result forwarding",
+      "18.7 caller original/current state",
+      "18.8 exit compatibility",
+      "26.9/27.3 exhaustive/failure cleanup"
+    ],
+    "nominals": 2,
+    "H": 1,
+    "T": 1,
+    "functions": [
+      "T write_reading/set_count(ref<write,u8>,u8)->u8",
+      "relay_byte(u8)->u8, pure identity, no H/ref/ptr/D/A",
+      "retire/close_cell(ptr<H>,Allocation,LifetimeDomain)->unit optionalone-rootref+4teardown",
+      "main()->unit"
+    ],
+    "source_call_sites": 4,
+    "calls": "startupTwrite + H2u8helper + H2terminal + H2Twrite; actualhost main() wrapper distinct; no recursion/indirect calls",
+    "alloc_sites": 2,
+    "receiver_alloc_sites": 0,
+    "scalar_helper_H_authority_args": 0,
+    "selected_helper_body": "normal tail Copy of one plain u8 formal, no new scalar operations"
+  },
+  "positive": [
+    {
+      "file": "P-zero.nl",
+      "H0": {
+        "allocations": 0,
+        "frees": 0,
+        "helper_calls": 0,
+        "receiver_calls": 0,
+        "T_current": 0,
+        "T_sibling": 23,
+        "retained_old": 91
+      },
+      "H1": {
+        "allocations": 1,
+        "frees": 1,
+        "helper_calls": 0,
+        "receiver_calls": 0,
+        "T_current": 0,
+        "T_sibling": 23,
+        "retained_old": 91
+      },
+      "H2": {
+        "allocations": 2,
+        "helper_calls": 1,
+        "helper_input": 0,
+        "helper_return": 0,
+        "receiver_calls": 1,
+        "frees": 2,
+        "free_order": "second in callee, first in caller",
+        "T_writes": 2,
+        "T_current": 0,
+        "T_sibling": 23,
+        "retained_old": 91,
+        "secondCopy_old": 0
+      },
+      "firstH_payload": 67
+    },
+    {
+      "file": "P-nonzero.nl",
+      "H0": {
+        "allocations": 0,
+        "frees": 0,
+        "helper_calls": 0,
+        "receiver_calls": 0,
+        "T_current": 0,
+        "T_sibling": 27,
+        "retained_old": 83
+      },
+      "H1": {
+        "allocations": 1,
+        "frees": 1,
+        "helper_calls": 0,
+        "receiver_calls": 0,
+        "T_current": 0,
+        "T_sibling": 27,
+        "retained_old": 83
+      },
+      "H2": {
+        "allocations": 2,
+        "helper_calls": 1,
+        "helper_input": 37,
+        "helper_return": 37,
+        "receiver_calls": 1,
+        "frees": 2,
+        "free_order": "second in callee, first in caller",
+        "T_writes": 2,
+        "T_current": 37,
+        "T_sibling": 27,
+        "retained_old": 83,
+        "secondCopy_old": 0
+      },
+      "firstH_payload": "oldstartupCopy83",
+      "prefix_current": 0,
+      "prefix_sibling": 27
+    }
+  ],
+  "negative": {
+    "files": [
+      "N-foreign-domain.nl",
+      "N-foreign-allocation.nl",
+      "N-live-read-at-end.nl",
+      "N-post-end-read.nl"
+    ],
+    "prediction": "all ordinary CHECK reject3; no C/native on them. Any accepted negative STOP C."
+  },
+  "first_unknown": "Predict CHECK0 and real public MACHINE/owner5steps plus actual helper actual/formal/result/consumed binding evidence. Whole-composition C17 support unknown; likely CLI4/APIUnsupported due readonly helper routing gated scalar_control. Prediction is not observed success/refusal.",
+  "native_plan": "Only after C17 success: GCC O2 both H0/H1/H2 + pinnedClangASan both H0/H1/H2 =12 guests; for actual repair may add normalClang nonzero andUBSan nonzero=6, <=18 initially, max24. EveryCC/TU and guest separately charged.",
+  "host_plan": "Only if changed staging introduces concrete new need, at most3sites10cases. Existing inline readonly validator uses borrowed sealed graph/no new allocator; do not duplicate old host campaigns without reason.",
+  "staging": "No Compiler edits before actual eligible private gap. Reuse source/public ABI and existing readonly-u8 consumer validators only. Source law/issuer/new trusted relation required =>STOP C.",
+  "limits": {
+    "selected": 140,
+    "frontend": 3,
+    "probe": 3,
+    "native": 24,
+    "host_sites": 3,
+    "host_cases": 10,
+    "SDK": 0,
+    "fullCTest": 0,
+    "Compiler_remote": 0
+  },
+  "value_alignment_risk": "Identity helper tests selected ordinary value-flow composition, not a useful library/API or audit-closure value proof; actual helper result binding must feed original T namedCopy. ProductGO624 PAUSED/H1 HOLD/comparative UNMEASURED; direct snapshot->unitclose->T already works."
+}

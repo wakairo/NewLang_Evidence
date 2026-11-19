@@ -1,0 +1,82 @@
+[
+  {
+    "path": "build-asan/checked_c_node.c.o",
+    "bytes": 1391944,
+    "sha256": "a66a60a6c3b2d4f3fc858fb44fbab4c9128cab6739aa25bed971b8405742ac65"
+  },
+  {
+    "path": "build-asan/libnewlang_checked_c_node.a",
+    "bytes": 1714508,
+    "sha256": "49242d564055c03e978b120950b7ff5e6f05f98688efa8aeb9279546fd807930"
+  },
+  {
+    "path": "build-asan/newlangc",
+    "bytes": 9642576,
+    "sha256": "de0a7742d23633a6a8d645a73e8a2bf75d01012f1c68d4b4ba342a25523f953a"
+  },
+  {
+    "path": "build-asan/p1517_safety",
+    "bytes": 9200768,
+    "sha256": "47f12ed9d11f4901d6ce7ab73cbe8877f496c277667849efa13eab10ff4be10a"
+  },
+  {
+    "path": "build-asan/p1529_consumer",
+    "bytes": 9188656,
+    "sha256": "6246f9da009d610cb6eaacb0994004da5f36686f4589bf57f16636e6161bbcbb"
+  },
+  {
+    "path": "build-gcc/checked_c_node.c.o",
+    "bytes": 232544,
+    "sha256": "e8150525936f95bf4219c8eb7edb7be43a683c3b52df1760ffea5614807f18f8"
+  },
+  {
+    "path": "build-gcc/libnewlang_checked_c_node.a",
+    "bytes": 280944,
+    "sha256": "162e015c88264dc75b1598f979d59ebc92f82a82103be5ad3b91cab6ff716a62"
+  },
+  {
+    "path": "build-gcc/newlangc",
+    "bytes": 1139248,
+    "sha256": "da917a7ad117ac07391bad704e75994cafddab0b470fe15b5d76318da0616863"
+  },
+  {
+    "path": "build-gcc/p1529_consumer",
+    "bytes": 1063160,
+    "sha256": "ea2c9ce8249db9c97059ecb57d075125644f3268b733fa4fbe0ccf75257c0935"
+  },
+  {
+    "path": "native/clang-address-nonzero",
+    "bytes": 3222912,
+    "sha256": "26095ee03d091c0591f57f67c5f8bc31785457058a85281bf65e77cc9323bf59"
+  },
+  {
+    "path": "native/clang-address-zero",
+    "bytes": 3222616,
+    "sha256": "545dc3d215cb0bd0b1ff673c23eb9dd0a33e84977760c1239a65e28364d37797"
+  },
+  {
+    "path": "native/clang-none-nonzero",
+    "bytes": 29728,
+    "sha256": "a740e8d684650dfe58a943f4ce2118e33a4bead5012ab937e30d706f62e24470"
+  },
+  {
+    "path": "native/clang-undefined-nonzero",
+    "bytes": 810936,
+    "sha256": "d8eb03349b5a2ac8dec80e717496585f9324c636659846a83193f67b86ef1ec8"
+  },
+  {
+    "path": "native/gcc-none-nonzero",
+    "bytes": 33976,
+    "sha256": "6dab1c5ad9fbb545dc62561b676608163085e31f338997d2a438d5f041f83d0c"
+  },
+  {
+    "path": "native/gcc-none-zero",
+    "bytes": 29888,
+    "sha256": "095814ada88ff01d420ab99e1bc9cf93f4e0780699e4718a53bc3b2ab85f4e45"
+  },
+  {
+    "path": "public_owned",
+    "bytes": 827656,
+    "sha256": "7d8867118a7733ed934f23da6fe9e335c2c9c7d2a0e52f14864ef3821b3b4d9b"
+  }
+]

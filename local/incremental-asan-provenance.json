@@ -1,0 +1,85 @@
+{
+  "method": "recompile changed TU/header only; cache source before formatter token-identical for unchanged units, git b1..7b changes no other production TU/headers; no cached outputs overwritten",
+  "compiler": "/workspace/NewLang_P1525_tooling/.deps/toolchains/debian-13-x86_64-7c9921be7919a10d/newlang-llvm-23.1.3-linux-x64/bin/clang-23",
+  "flags": [
+    "-O2",
+    "-g",
+    "-DNDEBUG",
+    "-std=c17",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror",
+    "-fsanitize=address",
+    "-fno-omit-frame-pointer",
+    "-fno-sanitize-recover=all",
+    "-I/workspace/NewLang_P1539/include"
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/p1535-evidence/build-asan/CMakeFiles/newlang_checked_c_node.dir/src/checked_c_five.c.o",
+      "bytes": 171504,
+      "sha256": "8289f6e0371b3fd6b3f29db9bbb959ba2439b4549148fbbeb5e4e681ff569eca"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/CMakeFiles/newlang_checked_c_node.dir/src/readonly_u8_consumer_internal.c.o",
+      "bytes": 150472,
+      "sha256": "b192f7f2d687ccb0091a592b6bedc8692d7d9493356a02315d10639af4c04fa2"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_semantic.a",
+      "bytes": 6489214,
+      "sha256": "6f68c05a74f408d87cc398ef3ae1c624528e723a9b4db6238ea89f1754d1d7a7"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_diagnostic.a",
+      "bytes": 21460,
+      "sha256": "a93b830d098699c4ccf02f5c5653c81d12f0283cb9ac3c11cdca3296aa0e1cc7"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_checked.a",
+      "bytes": 56412,
+      "sha256": "5d33130cf7ab95cbfa15c8f2bb15a8f689fbd27cea11f339890861b60a7be346"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_parser.a",
+      "bytes": 562900,
+      "sha256": "fee37a776a1bb7e997ef28000c95b5cd58d24b7843eac4c2216b4abf204b1021"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_diagnostic.a",
+      "bytes": 21460,
+      "sha256": "a93b830d098699c4ccf02f5c5653c81d12f0283cb9ac3c11cdca3296aa0e1cc7"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_syntax.a",
+      "bytes": 16624,
+      "sha256": "65657d75bd3ace05af2a9a5e7fb5d553414dd04a15fbd7264b3b0728e53bf97b"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_lexer.a",
+      "bytes": 16576,
+      "sha256": "ea92bd62aacb6240ab2b8b858462bddb9063146820f03836b3e540b96591c5f7"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/libnewlang_source.a",
+      "bytes": 21000,
+      "sha256": "8aff037bc210c1cac9a678c489b79a4466956dbec9e9defe91b0d3cfb1060f54"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/CMakeFiles/newlangc.dir/src/main.c.o",
+      "bytes": 897304,
+      "sha256": "e07b7b62e1254e51760f47d35fd86b81136e501c664fcfa64abd5f91c7ffff62"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/CMakeFiles/p1529_consumer.dir/tests/p1529/consumer.c.o",
+      "bytes": 247024,
+      "sha256": "649a8d9a45a532a0cca4bcb40137dcc3f426680fddb4b2331b84daf4a11377b7"
+    },
+    {
+      "path": "/workspace/p1535-evidence/build-asan/CMakeFiles/p1517_safety.dir/tests/p1517/safety.c.o",
+      "bytes": 275208,
+      "sha256": "f09deb4cb8e4549aa951592edce2947f09f94cc2861804713f90326a7e7a2a12"
+    }
+  ]
+}

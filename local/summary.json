@@ -1,0 +1,91 @@
+{
+  "outcome": "LOCAL_TECH_VERIFIED / STOP C; one narrow private reuse; no Compiler publication authorized",
+  "base": "7b0b8e0a5348220061abe86921e9d006be5e398a",
+  "base_tree": "a7e0561c7b57e03330b1d1d91c90300dd093f938",
+  "local_HEAD": "a026544d52ce631e339dbd5ec40c6fc3ebcca734",
+  "local_tree": "75697e0bdaec271954d25b4ffa3c2ab3c7390533",
+  "local_branch": "p1539-scalar-helper-local",
+  "worktree": "/workspace/NewLang_P1539",
+  "diff": "2 private files +22/-4; no source law/issuer/public API/ABI/owner/T/toolchain/workflow changes",
+  "counters": {
+    "selected": 100,
+    "native": 18,
+    "frontend": 2,
+    "probe": 3,
+    "host": 8,
+    "host_sites": [
+      "receiver_text",
+      "trailing_copy_replay"
+    ],
+    "actual_subprocesses": 83,
+    "compiler_remote": 0,
+    "SDK": 0,
+    "fullCTest": 0,
+    "CI": 0
+  },
+  "selected_accounting": "83 logged subprocesses +7 extra artifact-negative/retry cases +6 extra CC translation units +4 OOM retries =100 selected; frontend2 incremental one-changed-TU builds reuse frozen unchanged libraries; public3 GCC probe compilations; no new public target build after3",
+  "FIRST": {
+    "issue_comment": 7002056437,
+    "oracle_sha256": "e7759befbf0982e00e2031daa00883361d960ad3435816a298fc920e6e63a807",
+    "manifest_sha256": "25e07024fa41a624373cbe6ea1d96e15e32cc6f2bdf566e2aa34d6eb25b2312d",
+    "all_source_and_original_probe_bytes_unchanged": true,
+    "apparatus_RED": [
+      3,
+      5
+    ],
+    "source_C17_RED": [
+      9,
+      13
+    ],
+    "CLI_exit": 4,
+    "API_refusal": [
+      10,
+      14
+    ],
+    "immutable_raw": true
+  },
+  "source_chain": "both own complete positives CHECK0/actual MACHINE1/owned5step; actual scalar0/37 -> fresh formal -> authentic return -> consumed secondCopy argument binding; same original T root/child/incarnation/current/sibling retained; original H0/H1/H2",
+  "C17": [
+    {
+      "variant": "zero",
+      "bytes": 11829,
+      "sha256": "6ce36a91a57dda13f5cb758e7ac57943e6f13c2b3a5a34982fbb760395c2a27a",
+      "GCC_ASan_frontend_API_CLI_bytes_equal": true
+    },
+    {
+      "variant": "nonzero",
+      "bytes": 12067,
+      "sha256": "d97959c8cd2dc2477b4979de6723b0d9f05d78b32f9e9fe6bfa9f46631f1efe6",
+      "GCC_ASan_frontend_API_CLI_bytes_equal": true
+    }
+  ],
+  "native": "18/18 PASS strictC17 O2; GCC both worlds6 + ClangASan both6 + Clangnormal nonzero3 + ClangUBSan nonzero3; each H0/H1/H2; physical secondH callee free then firstH caller free, actualu8zero/current37/sibling/oldCopy",
+  "negatives": "four own complete source negatives CHECK3 both baseline/finalASan; 4 existing isolated artifact/current/origin/Domain negatives and pristine retries PASS",
+  "host": "2 selected after-helper sites(receiver text staging, trailing Copy replay), both sources fault+retry8cases; actual OOM status2 outNULL length98765, snapshot/anchor/MACHINE no-clobber/rollback + successful retry; no new fault engine",
+  "controls": "six own prior P fixed-source C17 outputs byte-identical to preserved C1230 (3 five-step, 2 four-step, old zero-prefixLiveTail); heldLiveTail prefix remains CHECK0/CLI4 no file clobber/APIUnsupported no state clobber",
+  "NOT_RUN": [
+    "new full clean all-TU CMake rebuild (incremental cache provenance explicit)",
+    "O0 guests",
+    "fullCTest/LLVM campaign",
+    "new source laws/callee payload or scalar terminal receiver",
+    "Compiler remote/PR/CI/READY/merge",
+    "new SDK acquisition"
+  ],
+  "elapsed_selected_subprocess_seconds": 15.6594211259835,
+  "environment_resume": {
+    "environment_reselected": "starting -> same ready; old PTY process unknown",
+    "completed_pairs": 64,
+    "unpaired": 0,
+    "duplicate_reruns": 0,
+    "policy": "retain all64 raw; continue only unexecuted remainder of build_asan.py, no new build",
+    "counters": {
+      "selected": 77,
+      "native": 18,
+      "frontend": 2,
+      "probe": 3,
+      "host": 0
+    }
+  },
+  "value_alignment_risk": "Identity u8 helper is trivial but actual runtime actual/return binding is consumed. Technical finite composition only, not useful library abstraction or author+ordinary-safe-caller comparative UB-prevention audit locality; authentic issuers/originalR/A/D/legalwriters/cleanup/all-safe-reachable states remain closure. No new facade/module/FFI or arbitrary payload access. ProductGO624 PAUSED/H1 HOLD/UNMEASURED; direct snapshot->unit close->T/no patch and factoredC/soundRust alternatives.",
+  "archive_scope": "raw source/oracle/FIRST/apparatusRED/C17RED/current logs/complete public probe/generation+build recipes/patch+rawcommit+tree/provenance; reproducible ELF/objects/SDK not archived, actual current originals retained locally; full bytes restoration is not a new test or semantic proof"
+}

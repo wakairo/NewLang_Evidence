@@ -1,0 +1,56 @@
+[
+  {
+    "case": "zero",
+    "source": "/workspace/NewLang_P1539/tests/p1535/P-zero.nl",
+    "source_sha256": "449160149b690ac3b20ca9aa3f302646b6edeaf139f9af9e864bd326017b8e94",
+    "bytes": 11687,
+    "sha256": "e409890e97dfb9e3083e3a3189113441cfd19acff8ff1c87d14d4418629931c4",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/zero.c",
+    "all_match": true
+  },
+  {
+    "case": "nonzero",
+    "source": "/workspace/NewLang_P1539/tests/p1535/P-nonzero.nl",
+    "source_sha256": "d9979de10818c74b90f3ada3f3c86eaffc4ebdda7c3fab83a8953e78f9b0d031",
+    "bytes": 11688,
+    "sha256": "d91cebe71fec9363a46ee47350454cc48d1ab49e83ee9824bd1e2e884ff38c9e",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/nonzero.c",
+    "all_match": true
+  },
+  {
+    "case": "composed",
+    "source": "/workspace/NewLang_P1539/tests/p1535/P-composed.nl",
+    "source_sha256": "eb3b8b03d34287baeeaf49c25263de4d32dd5621945706ffdb51ff402d71b0e4",
+    "bytes": 11925,
+    "sha256": "9859120869eac6f628171f9d9e3827eccecd171cf6e3e44371dc62285e7b4f9a",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/composed.c",
+    "all_match": true
+  },
+  {
+    "case": "fourzero",
+    "source": "/workspace/NewLang_P1539/tests/p1517/P-zero.nl",
+    "source_sha256": "c34424400685c37d814d6dcb6a9e63b391c3b596263f55103f6718fa76581a0b",
+    "bytes": 11332,
+    "sha256": "15230624b43c22c7c78d2db2e2cb936bb56b99d8cbb12f334fdbd5cff9ae2248",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/fourzero.c",
+    "all_match": true
+  },
+  {
+    "case": "fournonzero",
+    "source": "/workspace/NewLang_P1539/tests/p1517/P-nonzero.nl",
+    "source_sha256": "3c77aa1bc12f87f6ff98e49fa088736514805377ff0cd7e056f6acdd8258675c",
+    "bytes": 11333,
+    "sha256": "2825979356d8d38471dad7a5e93c8df824f82f8965751fd58bd103298bfeac8b",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/fournonzero.c",
+    "all_match": true
+  },
+  {
+    "case": "livetail",
+    "source": "/workspace/NewLang_P1539/tests/p1481/Z-success-zero.nl",
+    "source_sha256": "849916a28971a5603be09125d8a6a328b9cb88ea21e0c42c61a01037ed7602eb",
+    "bytes": 16402,
+    "sha256": "fd25f88736fc6a08727080ba12db380e8854dd99a8690a0555674a5723eabbf1",
+    "baseline": "/workspace/p1535-c1230-gcc/generated/livetail.c",
+    "all_match": true
+  }
+]
