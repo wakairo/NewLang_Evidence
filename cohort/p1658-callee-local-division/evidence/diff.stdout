@@ -1,0 +1,202 @@
+diff --git a/src/usize_addition.c b/src/usize_addition.c
+index 8609423c20c34261ba683618ebb3b73a45ac97a3..14e9da0dfcf8e32bd2365cb391bb41a550306e05 100644
+--- a/src/usize_addition.c
++++ b/src/usize_addition.c
+@@ -1714,7 +1714,7 @@ typedef struct {
+     const NLSemanticContext *context;
+     const NLFunctionEntry *function;
+     size_t depth, calls, arms, returns, *remaining;
+-    NLSymbolId formal;
++    NLSymbolId formal, local_numerator;
+     unsigned char origins[NL_SEMANTIC_MAX_ENTRIES];
+ } QuantityBody;
+ 
+@@ -1818,10 +1818,21 @@ static QuantityOrigin quantity_arithmetic_at(QuantityBody *b,
+         quantity_atom_at(b, proof->issued.operands[0], src->data.equality.left);
+     if (!left)
+         return QUANTITY_UNSEEN;
+-    if (fixed_divisor(proof->operation))
+-        return !b->function->count || left >= QUANTITY_FROM_FORMAL
++    if (fixed_divisor(proof->operation)) {
++        if (!b->function->count || left >= QUANTITY_FROM_FORMAL)
++            return QUANTITY_FROM_RESULT;
++        /* This symbol names the unary Bool helper's sole literal binding.
++         * The atom and the issued operation above still verify this arm's use.
++         */
++        const NLCheckedNodeView *numerator =
++            nl_checked_node_view(b->body, proof->issued.operands[0]);
++        return b->if_parent && b->local_numerator &&
++                       proof->operation == NL_USIZE_DIVIDE &&
++                       numerator->kind == NL_CHECKED_IDENTIFIER &&
++                       numerator->symbol == b->local_numerator
+                    ? QUANTITY_FROM_RESULT
+                    : QUANTITY_UNSEEN;
++    }
+     const QuantityOrigin right = quantity_atom_at(b, proof->issued.operands[1],
+                                                   src->data.equality.right);
+     if (!right)
+@@ -2214,11 +2225,11 @@ static QuantityOrigin quantity_if_at(QuantityBody *b, NLCheckedNodeId id,
+                                           : QUANTITY_INDEPENDENT;
+ }
+ 
+-/* The sole-bool profile is one normal IF, optionally held in one result
+- * binding. The generic quantity planner still authenticates all its nodes. */
++/* The unary Bool selector has two literal arms, optionally bound before
++ * return, or two divisions after its one literal numerator binding. */
+ static bool quantity_bool_choice(const NLCheckedFragment *f,
+                                  const NLCheckedNodeView *root,
+-                                 NLSymbolId formal)
++                                 NLSymbolId formal, NLSymbolId *local_numerator)
+ {
+     if (!root || root->kind != NL_CHECKED_BLOCK || root->terminates ||
+         f->arm_count != 2 || f->body_count || root->item_count > 1 ||
+@@ -2229,10 +2240,17 @@ static bool quantity_bool_choice(const NLCheckedFragment *f,
+         const NLCheckedNodeView *item =
+             nl_checked_node_view(f, root->first_item);
+         const NLCheckedNodeView *tail = nl_checked_node_view(f, id);
+-        if (!item || item->kind != NL_CHECKED_BINDING || !tail ||
+-            tail->kind != NL_CHECKED_IDENTIFIER || tail->symbol != item->symbol)
++        if (!item || item->kind != NL_CHECKED_BINDING || !tail)
++            return false;
++        const NLCheckedNodeView *init =
++            nl_checked_node_view(f, item->initializer);
++        if (init && init->kind == NL_CHECKED_USIZE_LITERAL)
++            *local_numerator = item->symbol;
++        else if (tail->kind == NL_CHECKED_IDENTIFIER &&
++                 tail->symbol == item->symbol)
++            id = item->initializer;
++        else
+             return false;
+-        id = item->initializer;
+     }
+     const NLCheckedNodeView *choice = nl_checked_node_view(f, id);
+     if (!choice || choice->kind != NL_CHECKED_IF || choice->normal_arms != 2)
+@@ -2251,7 +2269,8 @@ static bool quantity_bool_choice(const NLCheckedFragment *f,
+         const NLCheckedNodeView *tail =
+             block ? nl_checked_node_view(arm, block->tail) : NULL;
+         if (!block || block->item_count || !tail ||
+-            tail->kind != NL_CHECKED_USIZE_LITERAL)
++            tail->kind != (*local_numerator ? NL_CHECKED_USIZE_DIVISION
++                                            : NL_CHECKED_USIZE_LITERAL))
+             return false;
+     }
+     return true;
+@@ -2279,7 +2298,8 @@ static bool composed_quantity_body(const NLCheckedFragment *f,
+     const bool boolean = fn == nl_quantity_bool_function(c, function);
+     if (boolean || fn->count == NL_QUANTITY_MAX_ARGUMENTS) {
+         if (!quantity_copy_formals(f, c, fn, function, formals) ||
+-            (boolean && !quantity_bool_choice(f, root, formals[0])))
++            (boolean &&
++             !quantity_bool_choice(f, root, formals[0], &b.local_numerator)))
+             return false;
+         b.formal = formals[0];
+         for (size_t i = 0; i < fn->count; ++i)
+diff --git a/tests/p1654/CMakeLists.txt b/tests/p1654/CMakeLists.txt
+index 9a2dcae43af123fc08b9680dcc281e954930464f..3ed8e9039be8608199d3a2ae23d1418945ad2851 100644
+--- a/tests/p1654/CMakeLists.txt
++++ b/tests/p1654/CMakeLists.txt
+@@ -8,9 +8,12 @@ set(p1654_source "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/selection.nl")
+ add_test(NAME p1654_custody_rollback.unit COMMAND p1654_probe
+     "${p1654_source}" "UINTMAX_C(19)")
+ set(p1654_discard "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/discard.nl")
++set(p1658_source "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1658/local-let.nl")
+ add_test(NAME p1654_discard_custody_rollback.unit COMMAND p1654_probe
+     "${p1654_discard}" "UINTMAX_C(41)")
++add_test(NAME p1658_local_numerator_rollback.unit COMMAND p1654_probe
++    "${p1658_source}" "UINTMAX_C(8)")
+ add_test(NAME p1654_native_scope.unit COMMAND "${Python3_EXECUTABLE}" -B
+     "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/run.py"
+     "$<TARGET_FILE:newlangc>" "${CMAKE_CURRENT_BINARY_DIR}/p1654-native"
+-    "${p1654_source}" "${p1654_discard}")
++    "${p1654_source}" "${p1654_discard}" "${p1658_source}")
+diff --git a/tests/p1654/run.py b/tests/p1654/run.py
+index bba06a0c8e4a24120c25165f06d721ff0d919083..2ac783659e149ec3b585799688e41ac2df764ab6 100644
+--- a/tests/p1654/run.py
++++ b/tests/p1654/run.py
+@@ -59,17 +59,22 @@ def observe(c, discard):
+     return prefix + observed
+ 
+ 
+-def native(cli, source, raw, *, discard=False):
++def native(cli, source, raw, *, discard=False, local_numerator=False):
+     c = run(raw, "stdout-c17", [cli, source], 0)
+     assert c.stdout and not c.stderr
+     pristine = raw / "pristine.c"
+     named = run(raw, "named-c17", [cli, "--emit-c17-to", pristine, source], 0)
+     assert not named.stdout and not named.stderr and pristine.read_bytes() == c.stdout
++    if local_numerator:
++        numerator = re.search(rb"size_t (nl_local_\d+) = \(\(size_t\)UINTMAX_C\(95\)\);", c.stdout)
++        assert numerator
++        divisors = re.findall(numerator[1] + rb" / \(\(size_t\)UINTMAX_C\((\d+)\)\);", c.stdout)
++        assert divisors == [b"6", b"8"]
+     observed = raw / "observed.c"
+     observed.write_bytes(observe(c.stdout, discard))
+     compilers = (shutil.which("gcc"), shutil.which("clang-23") or shutil.which("clang"))
+     assert all(compilers), compilers
+-    values = b"23\n41\n" if discard else b"11\n19\n"
++    values = b"15\n11\n" if local_numerator else b"23\n41\n" if discard else b"11\n19\n"
+     for compiler in compilers:
+         for opt in ("O0", "O2"):
+             for unit, stdout in ((pristine, b""), (observed, values)):
+@@ -110,7 +115,7 @@ def scope(cli, source, raw):
+     print(f"{raw.name} CHECK=0 C17=4, named output preserved")
+ 
+ 
+-def fixtures(selection, discard):
++def fixtures(selection, discard, local):
+     before, original = selection.split("\n\n", 1)
+     body = before.replace("let amount = if", "if").replace("};\n    amount", "}")
+     yield "let-copy", selection, native
+@@ -137,16 +142,27 @@ def fixtures(selection, discard):
+     yield "called-from-helper", selection.replace(
+         "fn main()", "fn relay(flag: bool) -> usize { choose(flag) }\n\nfn main()"
+     ).replace("choose(select_first)", "relay(select_first)"), scope
++    yield "local-numerator-let", local, partial(native, local_numerator=True)
++    yield "local-numerator-discard", local.replace("let first = ", "").replace(
++        "let second = ", ""
++    ), partial(native, discard=True, local_numerator=True)
++    yield "local-remainder", local.replace(" / ", " % "), scope
++    yield "aliased-numerator", local.replace(
++        "    if (flag)", "    let alias = stock;\n    if (flag)"
++    ).replace("stock /", "alias /"), scope
++    yield "arm-local-numerator", local.replace(
++        "    let stock = usize(95);\n", ""
++    ).replace("        stock /", "        let stock = usize(95);\n        stock /"), scope
+ 
+ 
+ def main():
+-    cli, root, selection, discard = map(Path, sys.argv[1:])
++    cli, root, selection, discard, local = map(Path, sys.argv[1:])
+     root.mkdir(parents=True, exist_ok=True)
+     raw = Path(tempfile.mkdtemp(dir=root))
+     print(f"raw={raw}", flush=True)
+     cases = []
+     for name, text, verify in fixtures(
+-        selection.read_text(encoding="utf-8"), discard.read_text(encoding="utf-8")
++        *(path.read_text(encoding="utf-8") for path in (selection, discard, local))
+     ):
+         work = raw / name
+         work.mkdir()
+diff --git a/tests/p1658/local-let.nl b/tests/p1658/local-let.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..52554503d5b0349a56b5c4d601dfe3a88ef5ace0
+--- /dev/null
++++ b/tests/p1658/local-let.nl
+@@ -0,0 +1,17 @@
++fn choose_quota(flag: bool) -> usize {
++    let stock = usize(95);
++    if (flag) {
++        stock / usize(6)
++    } else {
++        stock / usize(8)
++    }
++}
++
++fn main() -> unit {
++    let limit = usize(103);
++    let above_first = usize(80) < limit;
++    let above_second = usize(120) < limit;
++    let first = choose_quota(above_first);
++    let second = choose_quota(above_second);
++    unit
++}

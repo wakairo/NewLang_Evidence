@@ -1,0 +1,4 @@
+local-let CHECK=0 C17=0
+local-discard CHECK=0 C17=0
+literal CHECK=0 C17=0
+mixed CHECK=0 C17=0

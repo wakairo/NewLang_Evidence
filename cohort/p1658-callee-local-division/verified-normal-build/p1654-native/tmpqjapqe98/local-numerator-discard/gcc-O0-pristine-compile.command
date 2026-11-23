@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O0
+/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/p1654-native/tmpqjapqe98/local-numerator-discard/pristine.c
+-o
+/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/p1654-native/tmpqjapqe98/local-numerator-discard/gcc-O0-pristine

@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1658-callee-local-division
+gcc -std=c17 -pedantic-errors -Wall -Wextra -Werror -I /workspace/p1544-6afecbd5/p1658-callee-local-division/repo/include /workspace/p1544-6afecbd5/p1654-bool-only-quantity-gate0/evidence/observe-owned.c -L /workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build -Wl\,--start-group -lnewlang_semantic -lnewlang_checked -lnewlang_parser -lnewlang_syntax -lnewlang_lexer -lnewlang_diagnostic -lnewlang_source -Wl\,--end-group -o evidence/final/observe 

@@ -1,0 +1,11 @@
+ 344 evidence/source/literal.nl
+ 360 evidence/source/local-discard.nl
+ 385 evidence/source/local-let.nl
+ 413 evidence/source/mixed.nl
+1315 evidence/oracle.md
+2817 total
+2d4ebb76ca127efd0c748d942503f7d1d5a0d8269c87de5049b83526be8f21c7  evidence/source/literal.nl
+7ccef2e170d44626f2f7cb066ff452cea1e9260899e610a944c5cf2842b71c21  evidence/source/local-discard.nl
+c24b6858fc5b9751b760def1ce20b8f7c0edcf815ffcc35eb9cd2a82f69b4cd6  evidence/source/local-let.nl
+c48fae4be7ccf985275dd52b7d60ee9f11792e5e92bbef90e22c67c378701c0f  evidence/source/mixed.nl
+874c396218b15e611ec7c17afe09fde0efd607538000f2b5f231e0c899d1c192  evidence/oracle.md

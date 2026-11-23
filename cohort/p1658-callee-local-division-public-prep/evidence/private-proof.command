@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1658-callee-local-division
+bash -e -c git\ -C\ repo\ log\ -1\ --format=\"%H%n%T%n%P\"\ \&\&\ git\ -C\ repo\ diff\ --name-status\ HEAD\^\ HEAD\ \&\&\ cmp\ \<\(git\ -C\ repo\ diff\ HEAD\^\ HEAD\ --full-index\ --binary\)\ evidence/diff.stdout\ \&\&\ sha256sum\ evidence/\{diff\,raw-manifest\}.stdout\ \&\&\ git\ -C\ repo\ diff\ HEAD\^\ HEAD\ --check\ \&\&\ git\ -C\ repo\ status\ --porcelain=v1 

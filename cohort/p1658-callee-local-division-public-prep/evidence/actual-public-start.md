@@ -1,0 +1,7 @@
+## P1658 ACTUAL PUBLIC START
+
+既存 sole Codex Track P。条件付き PUBLIC DRAFT GO、条件成立の C 確認、元 LOCAL FINAL、先行 #1657 の C PASS を個別GETした。#1657 は指定 HEAD `350d20c7fb781f15d53e599854224aedceba1bc5` で merged=true。採用前 Required6 成功は C の原ログ確認済み。現在の own／先行裁定の確認範囲に重大 STOP なし。採用後 main CI は C が並走監査中。 [条件付き認可](https://github.com/wakairo/NewLang_Compiler/issues/1658#issuecomment-7087316444) · [条件成立の C 確認](https://github.com/wakairo/NewLang_Compiler/issues/1658#issuecomment-7087596479) · [先行 C PASS](https://github.com/wakairo/NewLang_Compiler/pull/1657#pullrequestreview-6015091586)
+
+GitHub の PR／main ref／commit を個別GETし、実 main `b11e8b9a960fc8c5f253c9906ebf5f02c471c022`、tree `8710553227f620ee5fe65423abac0f28f8c9737b`、ordered parents `[19e14c6b90e38c8d3875966a47a0e443649ab800, 350d20c7fb781f15d53e599854224aedceba1bc5]` を照合。Git の実 ref も一致。Draft17.38。指定公開 ref `refs/heads/p1658-callee-local-division-public` は Git／GitHub で未存在。 [実 main](https://github.com/wakairo/NewLang_Compiler/commit/b11e8b9a960fc8c5f253c9906ebf5f02c471c022)
+
+private `ccdd8d16ca65f5593f7c8b955ec85d360828ea3a`、tree `2320df8104003475996e173ccf34ed8e9be5423b`、単親 `350d20c7fb781f15d53e599854224aedceba1bc5` を保全。別 checkout で実 main を単親に exact 差分を載せ、新 tree、4 paths の full-index diff、既存 evidence と選択回帰を照合する。整合後に指定 ref の通常 push と main 向け DRAFT PR を各1件。元 FIRST／RED／raw、先行 #1657、独立 F/R 原資料未参照を維持する。 [元 LOCAL FINAL](https://github.com/wakairo/NewLang_Compiler/issues/1658#issuecomment-7087281069)

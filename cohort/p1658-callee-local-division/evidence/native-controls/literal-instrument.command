@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1658-callee-local-division
+python3 -B -c $'\nimport re, sys\nfrom pathlib import Path\nc = Path(sys.argv[1]).read_bytes()\nc, count = re.subn(rb"^(    return (nl_if_\\d+);)$",\n                  rb"    printf(\\"%zu\\\\n\\", \\2);\\n\\1",\n                  c, flags=re.MULTILINE)\nassert count == 1\nsys.stdout.buffer.write(c.replace(b"#include <stdint.h>\\n",\n                                      b"#include <stdint.h>\\n#include <stdio.h>\\n"))\n' evidence/base/literal.c 

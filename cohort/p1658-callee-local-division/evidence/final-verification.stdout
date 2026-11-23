@@ -1,0 +1,3 @@
+wrong-numerator-type CHECK=3 named=3 USIZE-DIVISION-TYPE no-clobber=PASS
+zero-divisor CHECK=3 named=3 USIZE-DIVISION-ZERO no-clobber=PASS
+old-helper-let CHECK=0 named=4 V1-BACKEND-UNSUPPORTED no-clobber=PASS

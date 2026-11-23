@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1658-callee-local-division/evidence/source/wrong-numerator-type.nl:4:15-4:16: error(semantic)[USIZE-DIVISION-TYPE]: / requires exact core usize operands

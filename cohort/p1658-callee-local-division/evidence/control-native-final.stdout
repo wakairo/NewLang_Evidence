@@ -1,0 +1,2 @@
+literal strict GCC/Clang O0/O2: ordinary stdout empty, observed 15 then 11.
+mixed strict GCC/Clang O0/O2: ordinary stdout empty, observed 15 then 11.

@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake -S /workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/repo -B /workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build -DNEWLANG_FRONTEND_ONLY=ON -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DNEWLANG_SANITIZER=none 

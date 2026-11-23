@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1658-callee-local-division
+bash -e -c for\ origin\ in\ \"\$@\"\;\ do\ \(cd\ \"\$origin\"\ \&\&\ awk\ -F\ \"\\t\"\ \'\{print\ \$1\ \"\ \ \"\ \$3\}\'\ evidence/raw-manifest.stdout\ \|\ sha256sum\ -c\ --quiet\)\;\ done preserve /workspace/p1544-6afecbd5/p1654-bool-only-quantity-gate0 /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation /workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration /workspace/p1544-6afecbd5/p1654-bool-discard-priority 
