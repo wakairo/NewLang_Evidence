@@ -1,0 +1,22 @@
+{
+  "owner": "sole Track P",
+  "issue": 1658,
+  "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+  "ref": "refs/heads/archive/p1658-sole-p-20261123",
+  "archived_commit": "a23eddb40903cfe26a0fdd717fd8b38112c2a151",
+  "archived_tree": "be7042ec66ec00212d5c0ddc1d8b6442c63a3dd2",
+  "members": 4597,
+  "bytes": 118055409,
+  "manifest_sha256": "6649df1147b2bfb016929ae93bc570a63aa0203c48cabccae1364bc761fdac62",
+  "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+  "private_history_restore": "PASS for all included bundles",
+  "eligible_local_cleanup": [
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/CMakeFiles"
+  ]
+}
