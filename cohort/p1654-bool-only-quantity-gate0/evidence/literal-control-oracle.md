@@ -1,0 +1,3 @@
+# P1654 optional isolation control
+
+With the original two sources measured, both have authentic bool Copy and valid arm divisions, while only the mixed form reached whole-program admission and C17. This reduction keeps the same bool-only signature, same caller, same bool choices, both normal arms, and results 11/19. It replaces the arithmetic arms by those values and removes the callee's local stock. Predict SOURCE/CHECK success, genuine Copy/arm ownership and the same whole-program admission rejection. This isolates whether the first rejection depends on the arm arithmetic. The frozen originals and their raw measurements are unchanged.

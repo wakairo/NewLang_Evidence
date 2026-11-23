@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/p1654-native/tmpewkp7sb_/let-copy/observed.c
+-o
+/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/p1654-native/tmpewkp7sb_/let-copy/gcc-O2-observed

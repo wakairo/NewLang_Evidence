@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/p1654-native/tmp7si36gy_/discard/observed.c
+-o
+/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/p1654-native/tmp7si36gy_/discard/gcc-O2-observed

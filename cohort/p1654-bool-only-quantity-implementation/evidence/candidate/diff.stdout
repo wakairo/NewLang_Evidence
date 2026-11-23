@@ -1,0 +1,728 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 743e69dc87fc1699ba0a0ab46054191d2f4fae72..eaf7fa930d3678e81e2dbbb80717aaf328e402cf 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -135,6 +135,7 @@ if(BUILD_TESTING)
+     include(tests/p1638/CMakeLists.txt)
+     include(tests/p1643/CMakeLists.txt)
+     include(tests/p1645/CMakeLists.txt)
++    include(tests/p1654/CMakeLists.txt)
+     include(tests/p1492/CMakeLists.txt)
+     include(tests/p1499/CMakeLists.txt)
+     include(tests/p1208/CMakeLists.txt)
+diff --git a/src/c17_division_usize.c b/src/c17_division_usize.c
+index c38a262e7c02aba6451a3f453af71703339b6a28..ba92ec6f930f58dcba4bd6138b1e4ca04ec22487 100644
+--- a/src/c17_division_usize.c
++++ b/src/c17_division_usize.c
+@@ -225,6 +225,8 @@ static bool division_emit_helper(DivisionText *text,
+     const size_t count = helper->second_formal ? 2 : 1;
+     const NLFunctionEntry *fn =
+         nl_quantity_usize_function(c, helper->function, count);
++    if (!fn && count == 1)
++        fn = nl_quantity_bool_function(c, helper->function);
+     if (!fn)
+         return false;
+     const char *first = division_scalar_type(c, fn->parameters[0]);
+diff --git a/src/division_usize_internal.h b/src/division_usize_internal.h
+index 0f0a4fa01f7090a9d74415cb3ae9ff5c2846756f..1211acee891698a5027da5df0f42b8131728261d 100644
+--- a/src/division_usize_internal.h
++++ b/src/division_usize_internal.h
+@@ -32,6 +32,9 @@ bool nl_remainder_usize_call_valid(const NLCheckedFragment *, NLCheckedNodeId,
+ const NLFunctionEntry *nl_quantity_usize_function(const NLSemanticContext *,
+                                                   size_t function,
+                                                   size_t parameters);
++/* Signature only. Admission still requires the complete composed plan. */
++const NLFunctionEntry *nl_quantity_bool_function(const NLSemanticContext *,
++                                                 size_t function);
+ bool nl_quantity_usize_body_at(const NLCheckedFragment *,
+                                const NLSemanticContext *, size_t, bool entry,
+                                NLDivisionUsizePlan *);
+diff --git a/src/usize_addition.c b/src/usize_addition.c
+index 0f5b89eac4b775d83e611fd3a4a38c29c5c815fa..5f7831fcb096d16ddde4eb710e828290571f2c62 100644
+--- a/src/usize_addition.c
++++ b/src/usize_addition.c
+@@ -707,8 +707,8 @@ static bool quantity(const NLSemanticContext *c, NLValueId id, NLTypeId type)
+            !v.occupancy.start && !v.occupancy.length && !v.aggregate_owner &&
+            !v.field_count && !v.sum_owner && !v.sum_payload && !v.variant;
+ }
+-const NLFunctionEntry *nl_quantity_usize_function(const NLSemanticContext *c,
+-                                                  size_t id, size_t count)
++static const NLFunctionEntry *
++quantity_source_function(const NLSemanticContext *c, size_t id, size_t count)
+ {
+     if (!c || !c->functions || !id || id > c->function_count ||
+         count > NL_QUANTITY_MAX_ARGUMENTS)
+@@ -721,6 +721,16 @@ const NLFunctionEntry *nl_quantity_usize_function(const NLSemanticContext *c,
+         fn->hidden_dependencies || fn->owner_receiver || fn->owner_producer ||
+         fn->custody_recipient)
+         return NULL;
++    return fn;
++}
++
++const NLFunctionEntry *nl_quantity_usize_function(const NLSemanticContext *c,
++                                                  size_t id, size_t count)
++{
++    const NLFunctionEntry *fn = quantity_source_function(c, id, count);
++    if (!fn)
++        return NULL;
++    const NLTypeId type = nl_semantic_core_type(c, NL_TYPE_USIZE);
+     const NLTypeId boolean = nl_semantic_core_type(c, NL_TYPE_BOOL);
+     bool has_boolean = false;
+     for (size_t i = 0; i < count; ++i) {
+@@ -735,6 +745,16 @@ const NLFunctionEntry *nl_quantity_usize_function(const NLSemanticContext *c,
+     }
+     return fn;
+ }
++
++const NLFunctionEntry *nl_quantity_bool_function(const NLSemanticContext *c,
++                                                 size_t id)
++{
++    const NLFunctionEntry *fn = quantity_source_function(c, id, 1);
++    return fn && fn->parameters && fn->body->parameter_names[0] &&
++                   fn->parameters[0] == nl_semantic_core_type(c, NL_TYPE_BOOL)
++               ? fn
++               : NULL;
++}
+ static const NLSyntaxNode *source_node(const NLFunctionBody *body,
+                                        NLSyntaxKind kind, NLSourceSpan span)
+ {
+@@ -1483,31 +1503,52 @@ static bool division_helper(const NLCheckedFragment *f,
+     return true;
+ }
+ 
+-/* run_body binds each already evaluated loose package once, in parameter
+- * order, by creating a fresh lexical place. The historical rows survive
+- * scope exit. Use those rows only in the actual caller's reserved/owned BODY
+- * invocation and original world, with both registered parameter names.
+- * There is no lookup by numeric fact, or borrowing from another invocation. */
+-static bool quantity_pair_formals(const NLCheckedFragment *body,
++static bool quantity_main_body(const NLCheckedFragment *caller,
++                               const NLSemanticContext *c)
++{
++    if (!caller->body_owner || caller->body_owner->count ||
++        caller->source != caller->body_owner->source)
++        return false;
++    for (size_t i = 0; i < c->function_count; ++i) {
++        const NLFunctionEntry *fn = &c->functions[i];
++        if (fn->kind == NL_CHECKED_REGISTERED_CALL && !fn->count &&
++            fn->body == caller->body_owner && !strcmp(fn->name, "main") &&
++            fn->result == nl_semantic_unit_type(c))
++            return true;
++    }
++    return false;
++}
++
++/* A completed lexical parameter has a historical row for its exact slot.
++ * Read it only through the reserved or committed BODY of this invocation. */
++static bool quantity_copy_formals(const NLCheckedFragment *body,
+                                   const NLSemanticContext *c,
+                                   const NLFunctionEntry *fn, size_t function,
+                                   NLSymbolId formals[NL_QUANTITY_MAX_ARGUMENTS])
+ {
++    const size_t count = fn->count;
++    const bool single = count == 1;
++    if (count != NL_QUANTITY_MAX_ARGUMENTS &&
++        !(single &&
++          fn->parameters[0] == nl_semantic_core_type(c, NL_TYPE_BOOL)))
++        return false;
+     NLCheckedNodeId id = 0;
+     const NLCheckedFragment *caller = nl_h_custody_body_caller(body, c, &id);
+     const NLCheckedNodeView *call = nl_checked_node_view(caller, id);
+     if (!call || call->kind != NL_CHECKED_REGISTERED_CALL ||
+         !call->body_backed || call->terminates || call->function != function ||
+-        call->argument_count != NL_QUANTITY_MAX_ARGUMENTS ||
+-        call->first_argument <= id ||
++        call->argument_count != count || call->first_argument <= id ||
++        (single && !quantity_main_body(caller, c)) ||
+         c->binding_count > NL_SEMANTIC_MAX_ENTRIES)
+         return false;
+     NLValueId values[NL_QUANTITY_MAX_ARGUMENTS];
+     NLCheckedNodeId actual = call->first_argument;
+-    for (size_t i = 0; i < NL_QUANTITY_MAX_ARGUMENTS; ++i) {
++    for (size_t i = 0; i < count; ++i) {
+         const NLCheckedNodeView *arg = nl_checked_node_view(caller, actual);
+         const NLTypeId type = fn->parameters[i];
+         if (!arg || (arg->next_argument && arg->next_argument <= actual) ||
++            (single && (arg->kind != NL_CHECKED_IDENTIFIER ||
++                        arg->value_use != NL_VALUE_COPIED)) ||
+             arg->parameter_type != type ||
+             !scalar_node_value(caller, c, actual, type, &values[i]) ||
+             c->values[values[i] - 1].carrier != NL_CARRIER_ENDED ||
+@@ -1515,13 +1556,13 @@ static bool quantity_pair_formals(const NLCheckedFragment *body,
+             return false;
+         actual = arg->next_argument;
+     }
+-    if (actual || values[0] >= values[1])
++    if (actual || (!single && values[0] >= values[1]))
+         return false;
+     NLPlaceId places[NL_QUANTITY_MAX_ARGUMENTS];
+     NLIncarnationId incarnations[NL_QUANTITY_MAX_ARGUMENTS];
+     for (size_t i = 0; i < c->binding_count; ++i) {
+         const NLBindingEntry *binding = &c->bindings[i];
+-        for (size_t j = 0; j < NL_QUANTITY_MAX_ARGUMENTS; ++j) {
++        for (size_t j = 0; j < count; ++j) {
+             if (binding->view.value != values[j])
+                 continue;
+             const NLTypeId type = fn->parameters[j];
+@@ -1540,8 +1581,9 @@ static bool quantity_pair_formals(const NLCheckedFragment *body,
+             incarnations[j] = place.incarnation;
+         }
+     }
+-    return formals[0] && formals[0] + 1 == formals[1] &&
+-           places[0] + 1 == places[1] && incarnations[0] + 1 == incarnations[1];
++    return formals[0] && (single || (formals[0] + 1 == formals[1] &&
++                                     places[0] + 1 == places[1] &&
++                                     incarnations[0] + 1 == incarnations[1]));
+ }
+ 
+ static bool division_call_values(const NLCheckedFragment *f,
+@@ -1553,10 +1595,16 @@ static bool division_call_values(const NLCheckedFragment *f,
+     const size_t count = helper->second_formal ? 2 : 1;
+     const NLFunctionEntry *fn =
+         nl_quantity_usize_function(c, helper->function, count);
++    if (!fn && count == 1)
++        fn = nl_quantity_bool_function(c, helper->function);
++    const bool boolean =
++        fn && count == 1 &&
++        fn->parameters[0] == nl_semantic_core_type(c, NL_TYPE_BOOL);
+     if (!fn || !call || call->kind != NL_CHECKED_REGISTERED_CALL ||
+         !call->body_backed || call->argument_count != count ||
+         call->function != helper->function ||
+-        (helper->second_formal && f->context != helper->body->context))
++        ((helper->second_formal || boolean) &&
++         f->context != helper->body->context))
+         return false;
+     NLCheckedNodeId argument = call->first_argument;
+     for (size_t i = 0; i < count; ++i) {
+@@ -1798,6 +1846,10 @@ static QuantityOrigin quantity_call_chain_at(QuantityBody *b,
+         nesting >= f->body_count ||
+         b->depth + nesting >= NL_SEMANTIC_MAX_DEPTH || !*b->remaining)
+         return QUANTITY_UNSEEN;
++    if ((b->function->count || b->if_parent || nesting) &&
++        call->argument_count == 1 &&
++        nl_quantity_bool_function(c, call->function))
++        return QUANTITY_UNSEEN;
+     const NLSyntaxNode *actual_source = src->data.call.arguments;
+     NLCheckedNodeId argument = call->first_argument, previous = id;
+     const NLTypeId boolean = nl_semantic_core_type(c, NL_TYPE_BOOL);
+@@ -2154,6 +2206,49 @@ static QuantityOrigin quantity_if_at(QuantityBody *b, NLCheckedNodeId id,
+                                           : QUANTITY_INDEPENDENT;
+ }
+ 
++/* The sole-bool profile is one normal IF, optionally held in one result
++ * binding. The generic quantity planner still authenticates all its nodes. */
++static bool quantity_bool_choice(const NLCheckedFragment *f,
++                                 const NLCheckedNodeView *root,
++                                 NLSymbolId formal)
++{
++    if (!root || root->kind != NL_CHECKED_BLOCK || root->terminates ||
++        f->arm_count != 2 || f->body_count || root->item_count > 1 ||
++        nl_control_exits_count(f->exits))
++        return false;
++    NLCheckedNodeId id = root->tail;
++    if (root->first_item) {
++        const NLCheckedNodeView *item =
++            nl_checked_node_view(f, root->first_item);
++        const NLCheckedNodeView *tail = nl_checked_node_view(f, id);
++        if (!item || item->kind != NL_CHECKED_BINDING || !tail ||
++            tail->kind != NL_CHECKED_IDENTIFIER || tail->symbol != item->symbol)
++            return false;
++        id = item->initializer;
++    }
++    const NLCheckedNodeView *choice = nl_checked_node_view(f, id);
++    if (!choice || choice->kind != NL_CHECKED_IF || choice->normal_arms != 2)
++        return false;
++    const NLCheckedNodeView *condition =
++        nl_checked_node_view(f, choice->initializer);
++    if (!condition || condition->kind != NL_CHECKED_IDENTIFIER ||
++        condition->symbol != formal)
++        return false;
++    for (size_t i = 0; i != 2; ++i) {
++        const NLCheckedFragment *arm = nl_checked_if_arm(f, id, i);
++        const NLCheckedNodeView *arm_root =
++            nl_checked_node_view(arm, nl_checked_root(arm));
++        const NLCheckedNodeView *block =
++            arm_root ? nl_checked_node_view(arm, arm_root->initializer) : NULL;
++        const NLCheckedNodeView *tail =
++            block ? nl_checked_node_view(arm, block->tail) : NULL;
++        if (!block || block->item_count || !tail ||
++            tail->kind != NL_CHECKED_USIZE_LITERAL)
++            return false;
++    }
++    return true;
++}
++
+ static bool composed_quantity_body(const NLCheckedFragment *f,
+                                    const NLSemanticContext *c,
+                                    const NLFunctionEntry *fn, size_t function,
+@@ -2173,11 +2268,13 @@ static bool composed_quantity_body(const NLCheckedFragment *f,
+                       .depth = depth,
+                       .remaining = remaining};
+     NLSymbolId formals[NL_QUANTITY_MAX_ARGUMENTS] = {0};
+-    if (fn->count == NL_QUANTITY_MAX_ARGUMENTS) {
+-        if (!quantity_pair_formals(f, c, fn, function, formals))
++    const bool boolean = fn == nl_quantity_bool_function(c, function);
++    if (boolean || fn->count == NL_QUANTITY_MAX_ARGUMENTS) {
++        if (!quantity_copy_formals(f, c, fn, function, formals) ||
++            (boolean && !quantity_bool_choice(f, root, formals[0])))
+             return false;
+         b.formal = formals[0];
+-        for (size_t i = 0; i < NL_QUANTITY_MAX_ARGUMENTS; ++i)
++        for (size_t i = 0; i < fn->count; ++i)
+             b.origins[formals[i] - 1] = QUANTITY_FROM_FORMAL;
+     }
+     QuantityResult result;
+@@ -2225,13 +2322,15 @@ static bool quantity_helper_at(const NLCheckedFragment *f,
+         !function || function > c->function_count)
+         return false;
+     --*remaining;
+-    return division_helper(f, c, function, operation, out) ||
+-           (operation == NL_USIZE_ANY_FIXED_DIVISOR &&
+-            composed_quantity_body(
+-                f, c,
+-                nl_quantity_usize_function(c, function,
+-                                           c->functions[function - 1].count),
+-                function, depth, remaining, out));
++    if (division_helper(f, c, function, operation, out))
++        return true;
++    if (operation != NL_USIZE_ANY_FIXED_DIVISOR)
++        return false;
++    const NLFunctionEntry *fn = nl_quantity_usize_function(
++        c, function, c->functions[function - 1].count);
++    if (!fn)
++        fn = nl_quantity_bool_function(c, function);
++    return composed_quantity_body(f, c, fn, function, depth, remaining, out);
+ }
+ 
+ static bool division_unit_expression(const NLCheckedFragment *f,
+@@ -2278,12 +2377,15 @@ static bool division_unit_return(const NLCheckedFragment *f,
+            !exit->values[0].value;
+ }
+ 
+-static bool has_composed_actual(const NLCheckedFragment *f)
++static bool has_composed_actual(const NLCheckedFragment *f,
++                                const NLSemanticContext *c)
+ {
+     for (size_t i = 0; i < f->body_count; ++i) {
+         const NLCheckedNodeView *call =
+             nl_checked_node_view(f, f->body_calls[i]);
+-        if (call && call->argument_count > 1)
++        if (call && (call->argument_count > 1 ||
++                     (call->argument_count == 1 &&
++                      nl_quantity_bool_function(c, call->function))))
+             return true;
+         const NLCheckedNodeView *arg =
+             call ? nl_checked_node_view(f, call->first_argument) : NULL;
+@@ -2316,7 +2418,7 @@ static bool literal_divisor_body_at(const NLCheckedFragment *f,
+         fn->hidden_dependencies || fn->owner_receiver || fn->owner_producer ||
+         fn->custody_recipient)
+         return false;
+-    if (f->arm_count || has_composed_actual(f))
++    if (f->arm_count || has_composed_actual(f, c))
+         return operation == NL_USIZE_ANY_FIXED_DIVISOR &&
+                !strcmp(fn->name, "main") &&
+                composed_quantity_body(f, c, fn, function, 0, &remaining, out);
+@@ -2473,6 +2575,7 @@ bool nl_quantity_usize_body_at(const NLCheckedFragment *f,
+                                bool entry, NLDivisionUsizePlan *out)
+ {
+     if (entry || nl_quantity_usize_function(c, function, 1) ||
++        nl_quantity_bool_function(c, function) ||
+         nl_quantity_usize_function(c, function, NL_QUANTITY_MAX_ARGUMENTS))
+         return literal_divisor_body_at(f, c, function,
+                                        NL_USIZE_ANY_FIXED_DIVISOR, out);
+diff --git a/tests/p1654/CMakeLists.txt b/tests/p1654/CMakeLists.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..5e49ff56c1f18b95852bab7506a142c534a54806
+--- /dev/null
++++ b/tests/p1654/CMakeLists.txt
+@@ -0,0 +1,11 @@
++add_executable(p1654_probe tests/p1654/probe.c)
++target_include_directories(p1654_probe PRIVATE src)
++target_link_libraries(p1654_probe PRIVATE newlang_checked_c_node newlang_semantic)
++target_link_options(p1654_probe PRIVATE -Wl,--wrap=malloc
++    -Wl,--wrap=nl_h_custody_seal_result)
++
++set(p1654_source "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/selection.nl")
++add_test(NAME p1654_custody_rollback.unit COMMAND p1654_probe "${p1654_source}")
++add_test(NAME p1654_native_scope.unit COMMAND "${Python3_EXECUTABLE}" -B
++    "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/run.py"
++    "$<TARGET_FILE:newlangc>" "${CMAKE_CURRENT_BINARY_DIR}/p1654-native" "${p1654_source}")
+diff --git a/tests/p1654/probe.c b/tests/p1654/probe.c
+new file mode 100644
+index 0000000000000000000000000000000000000000..20af2b2fbbfa6c64aaf00fa64a331c336024d3ae
+--- /dev/null
++++ b/tests/p1654/probe.c
+@@ -0,0 +1,214 @@
++#include "division_usize_internal.h"
++#include "h_origin_internal.h"
++#include "newlang/parser.h"
++
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++
++#define REQUIRE(condition)                                                     \
++    do {                                                                       \
++        if (!(condition)) {                                                    \
++            fprintf(stderr, "p1654:%d: %s\n", __LINE__, #condition);           \
++            return false;                                                      \
++        }                                                                      \
++    } while (0)
++
++typedef enum {
++    NO_FAULT,
++    HELPER_SEAL,
++    ENTRY_WORLD
++} Fault;
++static Fault fault;
++static size_t allocation, visits, hits, failed_bytes;
++
++void *__real_malloc(size_t);
++void *__wrap_malloc(size_t size)
++{
++    if (!allocation || --allocation)
++        return __real_malloc(size);
++    ++hits;
++    failed_bytes = size;
++    return NULL;
++}
++
++NLCheckStatus __real_nl_h_custody_seal_result(NLCheckedFragment *,
++                                              NLCheckedFragment *,
++                                              NLCheckedNodeId,
++                                              const NLSemanticContext *);
++NLCheckStatus __wrap_nl_h_custody_seal_result(NLCheckedFragment *parent,
++                                              NLCheckedFragment *child,
++                                              NLCheckedNodeId id,
++                                              const NLSemanticContext *world)
++{
++    const NLCheckedNodeView *call = nl_checked_node_view(parent, id);
++    const NLCheckedNodeView *actual =
++        call ? nl_checked_node_view(parent, call->first_argument) : NULL;
++    if (fault == HELPER_SEAL && !world && call && call->argument_count == 1 &&
++        actual && actual->kind == NL_CHECKED_IDENTIFIER &&
++        actual->parameter_type ==
++            nl_semantic_core_type(nl_checked_context(parent), NL_TYPE_BOOL)) {
++        ++visits;
++        allocation = 1;
++    } else if (fault == ENTRY_WORLD && world && call && !call->argument_count) {
++        ++visits;
++        /* The entry result stores the node snapshot before the owned world. */
++        allocation = 2;
++    }
++    const NLCheckStatus status =
++        __real_nl_h_custody_seal_result(parent, child, id, world);
++    allocation = 0;
++    return status;
++}
++
++static bool custody(const NLCheckedFragment *entry)
++{
++    REQUIRE(nl_checked_proof_class(entry) == NL_CHECKED_MACHINE_PROVED);
++    NLDivisionUsizePlan main;
++    const NLCheckedNodeId entry_call = nl_checked_root(entry);
++    REQUIRE(nl_quantity_usize_call_valid(entry, entry_call, &main) &&
++            nl_checked_call_body(entry, entry_call) == main.body &&
++            nl_h_custody_result_world_present(entry, entry_call));
++    const NLSemanticContext *world = nl_checked_context(main.body);
++    const NLTypeId boolean = nl_semantic_core_type(world, NL_TYPE_BOOL);
++    const NLCheckedFragment *first = NULL;
++    NLValueId previous_actual = 0, previous_result = 0;
++    size_t seen = 0;
++    for (NLCheckedNodeId id = 1; id <= nl_checked_node_count(main.body); ++id) {
++        const NLCheckedNodeView *call = nl_checked_node_view(main.body, id);
++        if (call->kind != NL_CHECKED_REGISTERED_CALL)
++            continue;
++        NLDivisionUsizePlan plan;
++        REQUIRE(seen < 2 && call->argument_count == 1 &&
++                nl_quantity_usize_call_valid(main.body, id, &plan) &&
++                nl_h_custody_result_valid(main.body, id) &&
++                nl_checked_call_body(main.body, id) == plan.body &&
++                nl_checked_context(plan.body) == world && plan.formal &&
++                !plan.second_formal && !plan.division && first != plan.body);
++        NLCheckedNodeId resolved = 0;
++        REQUIRE(nl_h_custody_body_caller(plan.body, world, &resolved) ==
++                    main.body &&
++                resolved == id);
++        const NLCheckedNodeView *actual =
++            nl_checked_node_view(main.body, call->first_argument);
++        NLSemanticBindingView formal, original;
++        NLSemanticValueView value;
++        REQUIRE(
++            actual && actual->kind == NL_CHECKED_IDENTIFIER &&
++            actual->value_use == NL_VALUE_COPIED && actual->result_count == 1 &&
++            actual->parameter_type == boolean && !actual->next_argument &&
++            nl_semantic_binding_view(world, actual->symbol, &original) &&
++            nl_semantic_binding_view(world, plan.formal, &formal) &&
++            formal.type == boolean &&
++            formal.value == actual->results[0].value &&
++            formal.value > previous_actual && formal.value != original.value &&
++            formal.place != original.place &&
++            nl_semantic_value_view(world, formal.value, &value) &&
++            value.scalar_known && value.scalar_value == (seen == 0));
++        const NLCheckedNodeView *body =
++            nl_checked_node_view(plan.body, nl_checked_root(plan.body));
++        REQUIRE(body && body->result_count == 1 && call->result_count == 1 &&
++                body->results[0].value == call->results[0].value &&
++                call->results[0].value > previous_result);
++        first = plan.body;
++        previous_actual = formal.value;
++        previous_result = call->results[0].value;
++        ++seen;
++    }
++    REQUIRE(seen == 2);
++    puts("CUSTODY two ordered actual Copy slots, distinct fresh formals and "
++         "BODY/results");
++    return true;
++}
++
++static bool rollback(NLSemanticContext *c, const NLSyntaxTree *expression,
++                     NLCheckedFragment **entry)
++{
++    NLSymbolId symbol = 0;
++    const NLScalarValue seed = {nl_semantic_core_type(c, NL_TYPE_USIZE), true,
++                                1654};
++    REQUIRE(nl_semantic_seed_scalar(c, "p1654_anchor", seed, &symbol) ==
++                NL_CHECK_OK &&
++            symbol);
++    const NLSemanticBindingView b = c->bindings[symbol - 1].view;
++    unsigned char context[sizeof(*c)], binding[sizeof(*c->bindings)],
++        place[sizeof(*c->places)], value[sizeof(*c->values)];
++    memcpy(context, c, sizeof(context));
++    memcpy(binding, &c->bindings[symbol - 1], sizeof(binding));
++    memcpy(place, &c->places[b.place - 1], sizeof(place));
++    memcpy(value, &c->values[b.value - 1], sizeof(value));
++    for (Fault site = HELPER_SEAL; site <= ENTRY_WORLD; ++site) {
++        fault = site;
++        visits = hits = failed_bytes = 0;
++        const NLCheckStatus status =
++            nl_semantic_check_expression(c, expression, entry, NULL);
++        fault = NO_FAULT;
++        REQUIRE(status == NL_CHECK_OUT_OF_MEMORY && !*entry && visits == 1 &&
++                hits == 1 && failed_bytes &&
++                !memcmp(context, c, sizeof(context)) &&
++                !memcmp(binding, &c->bindings[symbol - 1], sizeof(binding)) &&
++                !memcmp(place, &c->places[b.place - 1], sizeof(place)) &&
++                !memcmp(value, &c->values[b.value - 1], sizeof(value)) &&
++                nl_sem_validate(c) == NL_CHECK_OK);
++        printf("OOM %s reached=%zu hit=%zu bytes=%zu rollback=PASS\n",
++               site == HELPER_SEAL ? "bool-helper-seal" : "entry-result-world",
++               visits, hits, failed_bytes);
++    }
++    REQUIRE(nl_semantic_check_expression(c, expression, entry, NULL) ==
++                NL_CHECK_OK &&
++            *entry && custody(*entry));
++    char *text = NULL;
++    size_t length = 1654;
++    hits = failed_bytes = 0;
++    allocation = 1;
++    const NLCheckStatus status = nl_quantity_usize_c17(*entry, &text, &length);
++    allocation = 0;
++    const bool preserved = !text && length == 1654 && hits == 1 && failed_bytes;
++    free(text);
++    REQUIRE(status == NL_CHECK_OUT_OF_MEMORY && preserved);
++    printf("OOM C17 staging hit=%zu bytes=%zu output-preserved=PASS\n", hits,
++           failed_bytes);
++    const bool emitted =
++        nl_quantity_usize_c17(*entry, &text, &length) == NL_CHECK_OK && text &&
++        length && strstr(text, "(_Bool nl_local_") &&
++        strstr(text, "UINTMAX_C(19)");
++    free(text);
++    REQUIRE(emitted);
++    puts("CHECK/C17 retry PASS");
++    return true;
++}
++
++int main(int argc, char **argv)
++{
++    if (argc != 2)
++        return 2;
++    NLSource *source = NULL, *entry_source = NULL;
++    NLParser *parser = NULL, *entry_parser = NULL;
++    NLSyntaxTree *unit = NULL, *expression = NULL;
++    NLSemanticContext *context = NULL;
++    NLCheckedFragment *entry = NULL;
++    bool ready =
++        nl_source_load(argv[1], &source) == NL_SOURCE_OK &&
++        nl_parser_create(source, &parser) == NL_PARSE_OK &&
++        nl_parser_parse_function_unit(parser, &unit, NULL) == NL_PARSE_OK &&
++        nl_semantic_create(&context) == NL_CHECK_OK;
++    const NLSyntaxTree *units[] = {unit};
++    ready = ready &&
++            nl_semantic_register_function_unit(context, units, 1, NULL) ==
++                NL_CHECK_OK &&
++            nl_source_create("main()", sizeof("main()") - 1, "<p1654-entry>",
++                             &entry_source) == NL_SOURCE_OK &&
++            nl_parser_create(entry_source, &entry_parser) == NL_PARSE_OK &&
++            nl_parser_parse_expression_fragment(entry_parser, &expression,
++                                                NULL) == NL_PARSE_OK;
++    const bool ok = ready && rollback(context, expression, &entry);
++    nl_checked_destroy(entry);
++    nl_syntax_tree_destroy(expression);
++    nl_parser_destroy(entry_parser);
++    nl_source_destroy(entry_source);
++    nl_semantic_destroy(context);
++    nl_syntax_tree_destroy(unit);
++    nl_parser_destroy(parser);
++    nl_source_destroy(source);
++    return ok ? 0 : 1;
++}
+diff --git a/tests/p1654/run.py b/tests/p1654/run.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..91aa340881e60f72802e4efab519f715977375f5
+--- /dev/null
++++ b/tests/p1654/run.py
+@@ -0,0 +1,130 @@
++"""Check the unary Bool quantity selector and its strict native output."""
++
++from pathlib import Path
++import re
++import shutil
++import subprocess
++import sys
++import tempfile
++
++
++def run(raw, name, command, expected):
++    args = list(map(str, command))
++    result = subprocess.run(args, capture_output=True, check=False)
++    (raw / f"{name}.command").write_text("\n".join(args) + "\n", encoding="utf-8")
++    (raw / f"{name}.status").write_text(f"{result.returncode}\n", encoding="ascii")
++    (raw / f"{name}.stdout").write_bytes(result.stdout)
++    (raw / f"{name}.stderr").write_bytes(result.stderr)
++    assert result.returncode == expected, (name, result.returncode, result.stderr)
++    return result
++
++
++def observe(c):
++    helper = re.search(rb"static size_t (nl_qty_fn_\d+)\(_Bool (nl_local_\d+)\)", c)
++    entry = re.search(rb"^static void nl_qty_fn_\d+\(void\)\n\{\n", c, re.MULTILINE)
++    assert helper and entry and helper.end() < entry.start()
++    assert re.search(rb"_Bool nl_condition_\d+ = " + helper[2] + rb";", c)
++    prefix, main = c[:entry.end()], c[entry.end():]
++    assert main.count(helper[1] + b"(") == 2
++    calls = re.findall(
++        rb"^    size_t (nl_local_\d+) = " + helper[1] + rb"\((nl_local_\d+)\);$",
++        main, re.MULTILINE,
++    )
++    flags = re.findall(rb"^    _Bool (nl_local_\d+) = ", main, re.MULTILINE)
++    assert len(calls) == len(flags) == 2
++    assert [arg for _, arg in calls] == flags
++    marker = b"#include <stdint.h>\n"
++    assert prefix.count(marker) == 1
++    observed, count = re.subn(
++        rb"^(    size_t (nl_local_\d+) = " + helper[1] + rb"\(nl_local_\d+\);)\n",
++        rb'\1\n    printf("%zu\\n", \2);\n', main, flags=re.MULTILINE,
++    )
++    assert count == 2
++    return prefix.replace(marker, marker + b"#include <stdio.h>\n") + observed
++
++
++def native(cli, source, raw):
++    c = run(raw, "stdout-c17", [cli, source], 0)
++    assert c.stdout and not c.stderr
++    pristine = raw / "pristine.c"
++    named = run(raw, "named-c17", [cli, "--emit-c17-to", pristine, source], 0)
++    assert not named.stdout and not named.stderr and pristine.read_bytes() == c.stdout
++    observed = raw / "observed.c"
++    observed.write_bytes(observe(c.stdout))
++    compilers = (shutil.which("gcc"), shutil.which("clang-23") or shutil.which("clang"))
++    assert all(compilers), compilers
++    for compiler in compilers:
++        for opt in ("O0", "O2"):
++            for unit, stdout in ((pristine, b""), (observed, b"11\n19\n")):
++                label = f"{Path(compiler).name}-{opt}-{unit.stem}"
++                binary = raw / label
++                run(raw, label + "-compile", [
++                    compiler, "-std=c17", "-pedantic-errors", "-Wall", "-Wextra",
++                    "-Werror", "-" + opt, unit, "-o", binary,
++                ], 0)
++                result = run(raw, label + "-native", [binary], 0)
++                assert result.stdout == stdout and not result.stderr, label
++    print(f"{raw.name} strict native 11 then 19; named C17 identical")
++
++
++def state(path):
++    stat = path.stat()
++    return (stat.st_dev, stat.st_ino, stat.st_mode, stat.st_size,
++            stat.st_mtime_ns, stat.st_ctime_ns)
++
++
++def scope(cli, source, raw):
++    diagnostic = b"error(cli)[V1-BACKEND-UNSUPPORTED]:"
++    emitted = run(raw, "stdout-c17", [cli, source], 4)
++    assert not emitted.stdout and emitted.stderr.startswith(diagnostic)
++    named_dir = raw / "named"
++    named_dir.mkdir()
++    target = named_dir / "existing.c"
++    sentinel = b"/* Preserved existing C17 output. */\nint original;\n"
++    target.write_bytes(sentinel)
++    before = state(target)
++    named = run(raw, "named-c17", [cli, "--emit-c17-to", target, source], 4)
++    assert not named.stdout and named.stderr.startswith(diagnostic)
++    after = state(target)
++    (raw / "named-stat.txt").write_text(f"{before}\n{after}\n", encoding="ascii")
++    assert target.read_bytes() == sentinel and before == after
++    assert list(named_dir.iterdir()) == [target]
++    print(f"{raw.name} CHECK=0 C17=4, named output preserved")
++
++
++def fixtures(selection):
++    before, original = selection.split("\n\n", 1)
++    body = before.replace("let amount = if", "if").replace("};\n    amount", "}")
++    yield "let-copy", selection, native
++    yield "direct-tail", f"{body}\n\n{original}", native
++    yield "inline-actual", selection.replace(
++        "choose(select_first)", "choose(usize(50) < stock)"
++    ), scope
++    yield "local-numerator", selection.replace(
++        "        usize(11)", "        let numerator = usize(77);\n        numerator / usize(7)"
++    ), scope
++    yield "called-from-helper", selection.replace(
++        "fn main()", "fn relay(flag: bool) -> usize { choose(flag) }\n\nfn main()"
++    ).replace("choose(select_first)", "relay(select_first)"), scope
++
++
++def main():
++    cli, root, selection = map(Path, sys.argv[1:])
++    root.mkdir(parents=True, exist_ok=True)
++    raw = Path(tempfile.mkdtemp(dir=root))
++    print(f"raw={raw}", flush=True)
++    cases = []
++    for name, text, verify in fixtures(selection.read_text(encoding="utf-8")):
++        work = raw / name
++        work.mkdir()
++        source = work / "source.nl"
++        source.write_text(text, encoding="utf-8")
++        cases.append((source, work, verify))
++    for source, work, verify in cases:
++        check = run(work, "check", [cli, "--check", source], 0)
++        assert not check.stdout and not check.stderr
++        verify(cli, source, work)
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/tests/p1654/selection.nl b/tests/p1654/selection.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..713cc5acd51e3b53a8d4c003c9a7bc5017061ab0
+--- /dev/null
++++ b/tests/p1654/selection.nl
+@@ -0,0 +1,17 @@
++fn choose(flag: bool) -> usize {
++    let amount = if (flag) {
++        usize(11)
++    } else {
++        usize(19)
++    };
++    amount
++}
++
++fn main() -> unit {
++    let stock = usize(77);
++    let select_first = usize(50) < stock;
++    let select_second = usize(90) < stock;
++    let first = choose(select_first);
++    let second = choose(select_second);
++    unit
++}

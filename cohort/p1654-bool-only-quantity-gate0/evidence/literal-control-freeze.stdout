@@ -1,0 +1,19 @@
+353 source/bool-only-literals.nl
+645 literal-control-oracle.md
+998 total
+dcbdcd3de823277bb58e725db5f229da43537f7ee3a0733237ce7163bfbcca87  source/bool-only-literals.nl
+e0b625eb7a17d925c1815a5b3173a837301261b3d31a53c73d64fbdb151cfc9f  literal-control-oracle.md
+--- source/bool-only.nl	2026-11-22 21:32:22.695300500 +0900
++++ source/bool-only-literals.nl	2026-11-22 21:36:07.540162027 +0900
+@@ -1,9 +1,8 @@
+ fn choose(flag: bool) -> usize {
+-    let stock = usize(77);
+     let amount = if (flag) {
+-        stock / usize(7)
++        usize(11)
+     } else {
+-        stock / usize(4)
++        usize(19)
+     };
+     amount
+ }

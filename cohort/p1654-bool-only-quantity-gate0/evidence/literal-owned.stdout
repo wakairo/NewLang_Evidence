@@ -1,0 +1,17 @@
+LOAD status=0
+SOURCE parse=0
+UNIT register=0 diagnostic=-
+CHECK status=0 artifact=1 diagnostic=-
+OWNED main_present=1 machine_proved=0
+CALL id=15 arity=1 body_owned=1 same_world=1 bool_actual_copy=1 bool_actual_slot=8 bool_value=1
+IF site=3 normal_arms=2 condition_copy=1 condition=1 formal_binding_slot=8 formal_is_actual=1 join_known=0 body_is_call_result=1 call_known=0
+ARM index=0 normal=1 separate_context=1 known=1 value=11
+LITERAL_ARM arithmetic=none
+ARM index=1 normal=1 separate_context=1 known=1 value=19
+LITERAL_ARM arithmetic=none
+CALL id=19 arity=1 body_owned=1 same_world=1 bool_actual_copy=1 bool_actual_slot=12 bool_value=0
+IF site=3 normal_arms=2 condition_copy=1 condition=0 formal_binding_slot=12 formal_is_actual=1 join_known=0 body_is_call_result=1 call_known=0
+ARM index=0 normal=1 separate_context=1 known=1 value=11
+LITERAL_ARM arithmetic=none
+ARM index=1 normal=1 separate_context=1 known=1 value=19
+LITERAL_ARM arithmetic=none

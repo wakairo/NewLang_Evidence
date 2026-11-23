@@ -1,0 +1,14 @@
+if1=then
+goods=38
+if2=then
+parcel=3
+weigh=3
+if1=else
+goods=53
+if2=then
+parcel=4
+weigh=4
+if1=else
+goods=53
+if2=else
+weigh=17

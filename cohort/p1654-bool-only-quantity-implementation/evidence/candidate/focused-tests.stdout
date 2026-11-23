@@ -1,0 +1,57 @@
+Internal ctest changing into directory: /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/DartConfiguration.tcl
+Test project /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 188
+    Start 188: p1654_custody_rollback.unit
+
+188: Test command: /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/repo/tests/p1654/selection.nl"
+188: Working Directory: /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build
+188: Environment variables: 
+188:  PYTHONDONTWRITEBYTECODE=1
+188:  PYTHONHASHSEED=0
+188:  LC_ALL=C
+188:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+188:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+188: Test timeout computed to be: 90
+test 189
+    Start 189: p1654_native_scope.unit
+
+189: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/repo/tests/p1654/run.py" "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/p1654-native" "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/repo/tests/p1654/selection.nl"
+189: Working Directory: /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build
+189: Environment variables: 
+189:  PYTHONDONTWRITEBYTECODE=1
+189:  PYTHONHASHSEED=0
+189:  LC_ALL=C
+189:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+189:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+189: Test timeout computed to be: 90
+188: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+188: OOM entry-result-world reached=1 hit=1 bytes=38593 rollback=PASS
+188: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+188: OOM C17 staging hit=1 bytes=19968 output-preserved=PASS
+188: CHECK/C17 retry PASS
+1/2 Test #188: p1654_custody_rollback.unit ......   Passed    0.01 sec
+189: raw=/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/p1654-native/tmpcrcc6sk2
+189: let-copy strict native 11 then 19; named C17 identical
+189: direct-tail strict native 11 then 19; named C17 identical
+189: inline-actual CHECK=0 C17=4, named output preserved
+189: local-numerator CHECK=0 C17=4, named output preserved
+189: called-from-helper CHECK=0 C17=4, named output preserved
+2/2 Test #189: p1654_native_scope.unit ..........   Passed    0.71 sec
+
+The following tests passed:
+	p1654_custody_rollback.unit
+	p1654_native_scope.unit
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.75 sec

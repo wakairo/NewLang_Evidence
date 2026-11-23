@@ -1,0 +1,11 @@
+ 400 ../evidence/new-first/called-from-helper.nl
+ 328 ../evidence/new-first/direct-tail.nl
+ 358 ../evidence/new-first/inline-actual.nl
+ 353 ../evidence/new-first/let-copy.nl
+ 399 ../evidence/new-first/local-numerator.nl
+1838 total
+925fa32a7f8dc076323f115cbe419df0860a1328bd13cf9a61cd138c935475b7  ../evidence/new-first/called-from-helper.nl
+bd6b47aaee229362ad14f36fb33a61fd4940a3e7ac5a36db31efd2270d84a4c4  ../evidence/new-first/direct-tail.nl
+841e4779eb40877816dc2a37ac108ae66e1ae94ff86f5b618cd97c500d485a4e  ../evidence/new-first/inline-actual.nl
+dcbdcd3de823277bb58e725db5f229da43537f7ee3a0733237ce7163bfbcca87  ../evidence/new-first/let-copy.nl
+4f997de133e349dc749ccdf57088bfa6b756d01a0e0f146f6c7a196e58c72531  ../evidence/new-first/local-numerator.nl

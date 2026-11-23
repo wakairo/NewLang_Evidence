@@ -1,0 +1,15 @@
+candidate 972a61bc31522cf60d31bb5847e29a3f002e9d9d tree f84987e8d4c063decc27b9547c570d88d22a2b87 parents 0873819cabd3781582384891fc785d01b700056b
+preceding c602dd2668c0ceb429059e1c647ffc4bfd03e360 tree e23eac8e23bdbac15aefccfd02db0225479852db parents 0873819cabd3781582384891fc785d01b700056b
+base 0873819cabd3781582384891fc785d01b700056b tree 85b750f35d257a9f18cde3a38f97e11696b9919f parents f3aaab3d1cb85f752195ace1c277add1dce675ce 49fdb154ac93436df8573d7d50c335fecb7dc710
+M	CMakeLists.txt
+M	src/c17_division_usize.c
+M	src/division_usize_internal.h
+M	src/usize_addition.c
+A	tests/p1654/CMakeLists.txt
+A	tests/p1654/probe.c
+A	tests/p1654/run.py
+A	tests/p1654/selection.nl
+0873819cabd3781582384891fc785d01b700056b	refs/heads/main
+c602dd2668c0ceb429059e1c647ffc4bfd03e360	refs/heads/p1650-arm-tail-remainder-public
+Shared file src/usize_addition.c merges identically in both directions; no Git ref or candidate changed.
+3685d4aefa1961fcd49c4e14c1c94d8800a5e0a321a5db3361ef317f2b44b8c0  /workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/public-evidence/overlap.bGD7UZxY/combined-forward.c

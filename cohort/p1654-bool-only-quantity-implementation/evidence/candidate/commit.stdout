@@ -1,0 +1,6 @@
+[p1654-bool-only-quantity-private 972a61b] Lower ordinary unary Bool literal-arm quantity helpers to C17
+ 8 files changed, 510 insertions(+), 29 deletions(-)
+ create mode 100644 tests/p1654/CMakeLists.txt
+ create mode 100644 tests/p1654/probe.c
+ create mode 100644 tests/p1654/run.py
+ create mode 100644 tests/p1654/selection.nl

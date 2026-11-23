@@ -1,0 +1,69 @@
+{
+  "owner": "sole Track P",
+  "issue": 1654,
+  "episodes": [
+    {
+      "episode": "p1654-bool-discard-priority",
+      "head": "350d20c7fb781f15d53e599854224aedceba1bc5",
+      "tree": "8710553227f620ee5fe65423abac0f28f8c9737b",
+      "parents": [
+        "cff254ac141194318b2b5b5f11ceb3a2a1b91e06"
+      ],
+      "status": "clean",
+      "raw_members": 1819,
+      "raw_manifest_sha256": "e554caecb9843d59423b1541a3acf05db3b001e2859bb1da8707567446e71433",
+      "compiler_public_refs_checked": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0",
+        "f1f394d2e84621f70264965b92b3851c359249a6"
+      ]
+    },
+    {
+      "episode": "p1654-bool-only-quantity-gate0",
+      "head": "0873819cabd3781582384891fc785d01b700056b",
+      "tree": "85b750f35d257a9f18cde3a38f97e11696b9919f",
+      "parents": [
+        "f3aaab3d1cb85f752195ace1c277add1dce675ce",
+        "49fdb154ac93436df8573d7d50c335fecb7dc710"
+      ],
+      "status": "clean",
+      "raw_members": 170,
+      "raw_manifest_sha256": "2b9a72f7a7fc1dbc46bf957016ffed66e86fd97384c49b1ed3bf265987fa13b7",
+      "compiler_public_refs_checked": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0",
+        "f1f394d2e84621f70264965b92b3851c359249a6"
+      ]
+    },
+    {
+      "episode": "p1654-bool-only-quantity-implementation",
+      "head": "972a61bc31522cf60d31bb5847e29a3f002e9d9d",
+      "tree": "f84987e8d4c063decc27b9547c570d88d22a2b87",
+      "parents": [
+        "0873819cabd3781582384891fc785d01b700056b"
+      ],
+      "status": "clean",
+      "raw_members": 1255,
+      "raw_manifest_sha256": "11f7b16dcc3e33815935aeaae83a46a171b50612b4665df4dc2d7de54400b8ca",
+      "compiler_public_refs_checked": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0",
+        "f1f394d2e84621f70264965b92b3851c359249a6"
+      ]
+    },
+    {
+      "episode": "p1654-bool-only-quantity-integration",
+      "head": "cff254ac141194318b2b5b5f11ceb3a2a1b91e06",
+      "tree": "2113961602c5e21c6d13f9ed067db7c80e4925b6",
+      "parents": [
+        "972a61bc31522cf60d31bb5847e29a3f002e9d9d",
+        "19e14c6b90e38c8d3875966a47a0e443649ab800"
+      ],
+      "status": "clean",
+      "raw_members": 1013,
+      "raw_manifest_sha256": "0ff003eb786a2ba620e87067e3371879e2973f2ebc16c970e2ec5af7abbff542",
+      "compiler_public_refs_checked": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0",
+        "f1f394d2e84621f70264965b92b3851c359249a6"
+      ]
+    }
+  ],
+  "compiler_receipt": "https://github.com/wakairo/NewLang_Compiler/issues/1654#issuecomment-7087121053"
+}

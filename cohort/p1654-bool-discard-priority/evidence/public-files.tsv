@@ -1,0 +1,9 @@
+modified	eaf7fa930d3678e81e2dbbb80717aaf328e402cf	CMakeLists.txt
+modified	ba92ec6f930f58dcba4bd6138b1e4ca04ec22487	src/c17_division_usize.c
+modified	1211acee891698a5027da5df0f42b8131728261d	src/division_usize_internal.h
+modified	8609423c20c34261ba683618ebb3b73a45ac97a3	src/usize_addition.c
+added	9a2dcae43af123fc08b9680dcc281e954930464f	tests/p1654/CMakeLists.txt
+added	37f6112c59e3f645e39a81c9c4984f2a6c468ed2	tests/p1654/discard.nl
+added	f34bc8e927bf04826bc687e5f3defa54730ab2bf	tests/p1654/probe.c
+added	bba06a0c8e4a24120c25165f06d721ff0d919083	tests/p1654/run.py
+added	713cc5acd51e3b53a8d4c003c9a7bc5017061ab0	tests/p1654/selection.nl

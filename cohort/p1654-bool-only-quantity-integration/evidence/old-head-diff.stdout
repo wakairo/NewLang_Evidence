@@ -1,0 +1,162 @@
+diff --git a/src/usize_addition.c b/src/usize_addition.c
+index 5f7831fcb096d16ddde4eb710e828290571f2c62..e8848416ec402809d0e43fe37ae875e861351ef2 100644
+--- a/src/usize_addition.c
++++ b/src/usize_addition.c
+@@ -277,13 +277,14 @@ static const NLSyntaxNode *block_expression_source(const NLCheckedFragment *f,
+     return NULL;
+ }
+ 
+-/* The retained tail is one call with this exact division as its sole actual.
++/* The retained tail is one call with this exact fixed-divisor expression as
++ * its sole actual.
+  * Its own callee seal is already committed when the enclosing body is planned.
+  */
+-static bool arm_division_tail_actual(const NLCheckedFragment *arm,
+-                                     NLCheckedNodeId block_id,
+-                                     const NLSyntaxNode *block_source,
+-                                     const NLUsizeAdditionProof *proof)
++static bool arm_fixed_divisor_tail_actual(const NLCheckedFragment *arm,
++                                          NLCheckedNodeId block_id,
++                                          const NLSyntaxNode *block_source,
++                                          const NLUsizeAdditionProof *proof)
+ {
+     const NLCheckedNodeView *block = nl_checked_node_view(arm, block_id);
+     const NLSyntaxView *src = nl_syntax_node_view(block_source);
+@@ -310,8 +311,8 @@ static bool arm_division_tail_actual(const NLCheckedFragment *arm,
+     const NLCheckedNodeView *actual = nl_checked_node_view(arm, id);
+     NLValueId actual_value, call_result, block_result, arm_result;
+     if (!fn || !token(arm->source, call->name, fn->name) || !actual ||
+-        actual->kind != NL_CHECKED_USIZE_DIVISION || actual->next_argument ||
+-        actual->parameter_type != fn->parameters[0] ||
++        actual->kind != arithmetic_operation[proof->operation].checked ||
++        actual->next_argument || actual->parameter_type != fn->parameters[0] ||
+         !node_value(arm, c, id, &actual_value) ||
+         actual_value != proof->issued.result ||
+         !node_value(arm, c, tail, &call_result) ||
+@@ -382,8 +383,8 @@ static const NLFunctionBody *arm_arithmetic_owner(
+         arm, root->initializer, block, proof->issued.node);
+     if (event != proof->syntax &&
+         (event || conditional->normal_arms != 2 ||
+-         proof->operation != NL_USIZE_DIVIDE ||
+-         !arm_division_tail_actual(arm, root->initializer, block, proof)))
++         !fixed_divisor(proof->operation) ||
++         !arm_fixed_divisor_tail_actual(arm, root->initializer, block, proof)))
+         return NULL;
+     return fn->body;
+ }
+diff --git a/tests/p1645/run.py b/tests/p1645/run.py
+index 0aa67f56b79c829ac143cfaeaa54ee70685032f5..85635abe7cac49e0760a20684cd4124727df7850 100644
+--- a/tests/p1645/run.py
++++ b/tests/p1645/run.py
+@@ -24,7 +24,7 @@ def check(cli, source, raw):
+     assert not checked.stdout and not checked.stderr
+ 
+ 
+-def verify_arm_order(c, divisors, direct_actuals):
++def verify_arm_order(c, divisors, direct_actuals, operator=b"/"):
+     branches = re.findall(
+         rb"    _Bool nl_condition_(\d+) = [^\n]+;\n"
+         rb"    if \(nl_condition_\1\) \{\n(.*?)"
+@@ -34,14 +34,15 @@ def verify_arm_order(c, divisors, direct_actuals):
+     )
+     assert len(branches) == 1
+     _, *arms = branches[0]
++    token = b" " + operator + b" "
+     for arm, expected_divisors, direct in zip(arms, divisors, direct_actuals, strict=True):
+-        occurrences = re.findall(rb" / \(\(size_t\)UINTMAX_C\((\d+)\)\)", arm)
++        occurrences = re.findall(re.escape(token) + rb"\(\(size_t\)UINTMAX_C\((\d+)\)\)", arm)
+         assert tuple(map(int, occurrences)) == expected_divisors
+         calls = re.findall(rb"        nl_if_\d+ = nl_qty_fn_\d+\((.+)\);\n", arm)
+-        assert len(calls) == 1 and (b" / " in calls[0]) == direct
++        assert len(calls) == 1 and (token in calls[0]) == direct
+         assert arm.count(b"nl_qty_fn_") == 1
+         if expected_divisors and not direct:
+-            assert arm.find(b" / ") < arm.find(b"nl_qty_fn_")
++            assert arm.find(token) < arm.find(b"nl_qty_fn_")
+ 
+ 
+ def observe_main(c):
+@@ -60,41 +61,45 @@ def observe_main(c):
+     return prefix.replace(marker, marker + b"#include <stdio.h>\n") + observed
+ 
+ 
++def native_case(cli, source, work, divisors, direct, values, operator=b"/"):
++    compilers = (shutil.which("gcc"), shutil.which("clang-23") or shutil.which("clang"))
++    assert all(compilers), compilers
++    check(cli, source, work)
++    emitted = run(work, "stdout-c17", [cli, source], 0)
++    assert emitted.stdout and not emitted.stderr
++    pristine = work / "pristine.c"
++    named = run(work, "named-c17", [cli, "--emit-c17-to", pristine, source], 0)
++    assert not named.stdout and not named.stderr
++    assert pristine.read_bytes() == emitted.stdout
++    verify_arm_order(emitted.stdout, divisors, direct, operator)
++    observed = work / "observed.c"
++    observed.write_bytes(observe_main(emitted.stdout))
++    for cc in compilers:
++        for level in ("-O0", "-O2"):
++            for program, output in ((pristine, b""), (observed, values)):
++                label = f"{program.stem}-{Path(cc).name}-{level[1:]}"
++                binary = work / label
++                built = run(work, f"{label}-compile",
++                            [cc, "-std=c17", "-pedantic-errors", "-Wall",
++                             "-Wextra", "-Werror", level, program, "-o", binary], 0)
++                assert not built.stdout and not built.stderr
++                executed = run(work, f"{label}-native", [binary], 0)
++                assert executed.stdout == output and not executed.stderr
++    first, second = values.decode().splitlines()
++    print(f"{source.stem} strict native true={first} false={second}, order and named=PASS")
++
++
+ def native(cli, source_dir, raw):
+     cases = (
+         ("arm-direct", ((3,), ()), (True, False), b"2\n11\n"),
+         ("arm-named-copy", ((3,), ()), (False, False), b"2\n11\n"),
+         ("arm-both", ((4, 4), (9,)), (True, True), b"11\n12\n"),
+     )
+-    compilers = (shutil.which("gcc"), shutil.which("clang-23") or shutil.which("clang"))
+-    assert all(compilers), compilers
+     for name, divisors, direct, values in cases:
+         source = source_dir / f"{name}.nl"
+         work = raw / name
+         work.mkdir()
+-        check(cli, source, work)
+-        emitted = run(work, "stdout-c17", [cli, source], 0)
+-        assert emitted.stdout and not emitted.stderr
+-        pristine = work / "pristine.c"
+-        named = run(work, "named-c17", [cli, "--emit-c17-to", pristine, source], 0)
+-        assert not named.stdout and not named.stderr
+-        assert pristine.read_bytes() == emitted.stdout
+-        verify_arm_order(emitted.stdout, divisors, direct)
+-        observed = work / "observed.c"
+-        observed.write_bytes(observe_main(emitted.stdout))
+-        for cc in compilers:
+-            for level in ("-O0", "-O2"):
+-                for program, output in ((pristine, b""), (observed, values)):
+-                    label = f"{program.stem}-{Path(cc).name}-{level[1:]}"
+-                    binary = work / label
+-                    built = run(work, f"{label}-compile",
+-                                [cc, "-std=c17", "-pedantic-errors", "-Wall",
+-                                 "-Wextra", "-Werror", level, program, "-o", binary], 0)
+-                    assert not built.stdout and not built.stderr
+-                    executed = run(work, f"{label}-native", [binary], 0)
+-                    assert executed.stdout == output and not executed.stderr
+-        first, second = values.decode().splitlines()
+-        print(f"{name} strict native true={first} false={second}, order and named=PASS")
++        native_case(cli, source, work, divisors, direct, values)
+ 
+ 
+ def replace_once(text, old, new):
+@@ -133,6 +138,12 @@ def scope(cli, source_dir, raw):
+         work.mkdir()
+         source = work / f"{name}.nl"
+         source.write_text(text, encoding="utf-8")
++        # P1650 admits only this previous refusal. The original fixture and
++        # rejection are frozen in the P1645/P1650 evidence.
++        if name == "remainder":
++            native_case(cli, source, work, ((3,), ()), (True, False),
++                        b"2\n11\n", operator=b"%")
++            continue
+         check(cli, source, work)
+         diagnostic = b"error(cli)[V1-BACKEND-UNSUPPORTED]:"
+         emitted = run(work, "stdout-c17", [cli, source], 4)

@@ -1,0 +1,6 @@
+-- Frontend-only: LLVM discovery and llvm.c_api smoke omitted
+P1117 current oracle preserves original p504 6fc73c22f544e4d66d1eaf8d6526868cf7bb15d76ea2ab93f1bae880987e4e79
+P1117 current oracle preserves original p603 dba648f261a0ae2415c0ccb0e0bc0070399b9ee1dcb52fad5c97fe1b7fa0e040
+-- Configuring done (0.4s)
+-- Generating done (0.5s)
+-- Build files have been written to: /workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build

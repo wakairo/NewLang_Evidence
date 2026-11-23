@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1654-bool-discard-priority
+/workspace/p1544-6afecbd5/p1654-bool-discard-priority/evidence/smoke-new/observe-owned /workspace/p1544-6afecbd5/p1654-bool-discard-priority/evidence/source/let.nl 

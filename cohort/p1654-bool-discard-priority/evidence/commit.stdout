@@ -1,0 +1,3 @@
+[p1654-bool-discard-priority 350d20c] Validate discarded unary Bool quantity helper results
+ 5 files changed, 98 insertions(+), 36 deletions(-)
+ create mode 100644 tests/p1654/discard.nl

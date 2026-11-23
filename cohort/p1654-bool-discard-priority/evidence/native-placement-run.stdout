@@ -1,0 +1,3 @@
+fixed-cff/let strict GCC/Clang O0/O2: 23 then 41 exactly once; pristine exit 0.
+final-local/let strict GCC/Clang O0/O2: 23 then 41 exactly once; pristine exit 0.
+final-local/discard strict GCC/Clang O0/O2: 23 then 41 exactly once; pristine exit 0.

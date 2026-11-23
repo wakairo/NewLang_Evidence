@@ -1,0 +1,5 @@
+Auto-merging src/usize_addition.c
+Merge made by the 'ort' strategy.
+ src/usize_addition.c | 19 ++++++++-------
+ tests/p1645/run.py   | 69 ++++++++++++++++++++++++++++++----------------------
+ 2 files changed, 50 insertions(+), 38 deletions(-)

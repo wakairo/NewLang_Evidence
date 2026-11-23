@@ -1,0 +1,295 @@
+diff --git a/src/usize_addition.c b/src/usize_addition.c
+index e8848416ec402809d0e43fe37ae875e861351ef2..8609423c20c34261ba683618ebb3b73a45ac97a3 100644
+--- a/src/usize_addition.c
++++ b/src/usize_addition.c
+@@ -1338,10 +1338,10 @@ static bool division_copy_at(const NLCheckedFragment *f,
+            division_name_copy(f, c, id, syntax, use->symbol);
+ }
+ 
+-static const NLSyntaxNode *
+-discarded_quantity_copy(const NLCheckedFragment *f, const NLSemanticContext *c,
+-                        NLCheckedNodeId id, const NLCheckedNodeView *node,
+-                        const NLSyntaxView *syntax, NLTypeId type)
++static const NLSyntaxNode *discarded_quantity_expression(
++    const NLCheckedFragment *f, const NLSemanticContext *c, NLCheckedNodeId id,
++    const NLCheckedNodeView *node, const NLSyntaxView *syntax, NLTypeId type,
++    NLSyntaxKind kind)
+ {
+     if (node->kind != NL_CHECKED_STATEMENT || node->terminates ||
+         node->type != nl_semantic_unit_type(c) || node->result_count ||
+@@ -1352,16 +1352,15 @@ discarded_quantity_copy(const NLCheckedFragment *f, const NLSemanticContext *c,
+     const NLSyntaxNode *expression = syntax->data.statement.expression;
+     const NLSyntaxView *source = nl_syntax_node_view(expression);
+     NLValueId value;
+-    if (!source || source->kind != NL_SYNTAX_EXPR_NAME ||
++    if (!source || source->kind != kind ||
+         !scalar_node_value(f, c, node->initializer, type, &value))
+         return NULL;
+-    const NLSemanticValueView *copy = &c->values[value - 1];
++    const NLSemanticValueView *result = &c->values[value - 1];
+     const NLSemanticTypeView *properties = &c->types[type - 1].view;
+-    /* The statement owns no result. The original CHECK use is a separate
+-     * package discharged by discard_results. The caller verifies its named
+-     * Copy occurrence and lexical origin before accepting this item. */
++    /* The statement owns no result. CHECK discharged the expression's
++     * package; the caller still authenticates the Copy or call itself. */
+     return properties->is_copy && properties->is_discardable &&
+-                   copy->carrier == NL_CARRIER_ENDED && !copy->owner_place
++                   result->carrier == NL_CARRIER_ENDED && !result->owner_place
+                ? expression
+                : NULL;
+ }
+@@ -2045,14 +2044,22 @@ static bool quantity_items_at(QuantityBody *b, const NLCheckedNodeView *root,
+             const NLTypeId usize = nl_semantic_core_type(c, NL_TYPE_USIZE);
+             if (!use || (use->type != boolean && use->type != usize))
+                 return false;
+-            const NLSyntaxNode *copy =
+-                discarded_quantity_copy(f, c, id, node, src, use->type);
+-            if (!copy)
++            const bool call = use->kind == NL_CHECKED_REGISTERED_CALL;
++            if (call &&
++                (b->function->count || b->if_parent || use->type != usize ||
++                 !nl_quantity_bool_function(c, use->function)))
++                return false;
++            const NLSyntaxNode *expression = discarded_quantity_expression(
++                f, c, id, node, src, use->type,
++                call ? NL_SYNTAX_EXPR_CALL : NL_SYNTAX_EXPR_NAME);
++            if (!expression)
+                 return false;
+             const QuantityOrigin origin =
+-                use->type == boolean
+-                    ? quantity_condition_at(b, node->initializer, copy)
+-                    : quantity_atom_at(b, node->initializer, copy);
++                call ? quantity_call_chain_at(b, node->initializer, expression,
++                                              0)
++                : use->type == boolean
++                    ? quantity_condition_at(b, node->initializer, expression)
++                    : quantity_atom_at(b, node->initializer, expression);
+             if (!origin)
+                 return false;
+             id = node->next_item;
+@@ -2455,8 +2462,9 @@ static bool literal_divisor_body_at(const NLCheckedFragment *f,
+             break;
+         }
+         if (src->kind == NL_SYNTAX_STATEMENT) {
+-            const NLSyntaxNode *copy = discarded_quantity_copy(
+-                f, c, id, n, src, nl_semantic_core_type(c, NL_TYPE_USIZE));
++            const NLSyntaxNode *copy = discarded_quantity_expression(
++                f, c, id, n, src, nl_semantic_core_type(c, NL_TYPE_USIZE),
++                NL_SYNTAX_EXPR_NAME);
+             if (!scalar_entry || !copy ||
+                 !division_copy_at(f, c, n->initializer, copy, 0))
+                 return false;
+diff --git a/tests/p1654/CMakeLists.txt b/tests/p1654/CMakeLists.txt
+index 5e49ff56c1f18b95852bab7506a142c534a54806..9a2dcae43af123fc08b9680dcc281e954930464f 100644
+--- a/tests/p1654/CMakeLists.txt
++++ b/tests/p1654/CMakeLists.txt
+@@ -5,7 +5,12 @@ target_link_options(p1654_probe PRIVATE -Wl,--wrap=malloc
+     -Wl,--wrap=nl_h_custody_seal_result)
+ 
+ set(p1654_source "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/selection.nl")
+-add_test(NAME p1654_custody_rollback.unit COMMAND p1654_probe "${p1654_source}")
++add_test(NAME p1654_custody_rollback.unit COMMAND p1654_probe
++    "${p1654_source}" "UINTMAX_C(19)")
++set(p1654_discard "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/discard.nl")
++add_test(NAME p1654_discard_custody_rollback.unit COMMAND p1654_probe
++    "${p1654_discard}" "UINTMAX_C(41)")
+ add_test(NAME p1654_native_scope.unit COMMAND "${Python3_EXECUTABLE}" -B
+     "${CMAKE_CURRENT_SOURCE_DIR}/tests/p1654/run.py"
+-    "$<TARGET_FILE:newlangc>" "${CMAKE_CURRENT_BINARY_DIR}/p1654-native" "${p1654_source}")
++    "$<TARGET_FILE:newlangc>" "${CMAKE_CURRENT_BINARY_DIR}/p1654-native"
++    "${p1654_source}" "${p1654_discard}")
+diff --git a/tests/p1654/discard.nl b/tests/p1654/discard.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..37f6112c59e3f645e39a81c9c4984f2a6c468ed2
+--- /dev/null
++++ b/tests/p1654/discard.nl
+@@ -0,0 +1,16 @@
++fn select_mark(flag: bool) -> usize {
++    if (flag) {
++        usize(23)
++    } else {
++        usize(41)
++    }
++}
++
++fn main() -> unit {
++    let stock = usize(61);
++    let first_flag = usize(30) < stock;
++    let second_flag = usize(70) < stock;
++    select_mark(first_flag);
++    select_mark(second_flag);
++    unit
++}
+diff --git a/tests/p1654/probe.c b/tests/p1654/probe.c
+index 20af2b2fbbfa6c64aaf00fa64a331c336024d3ae..f34bc8e927bf04826bc687e5f3defa54730ab2bf 100644
+--- a/tests/p1654/probe.c
++++ b/tests/p1654/probe.c
+@@ -122,7 +122,7 @@ static bool custody(const NLCheckedFragment *entry)
+ }
+ 
+ static bool rollback(NLSemanticContext *c, const NLSyntaxTree *expression,
+-                     NLCheckedFragment **entry)
++                     NLCheckedFragment **entry, const char *expected_literal)
+ {
+     NLSymbolId symbol = 0;
+     const NLScalarValue seed = {nl_semantic_core_type(c, NL_TYPE_USIZE), true,
+@@ -171,7 +171,7 @@ static bool rollback(NLSemanticContext *c, const NLSyntaxTree *expression,
+     const bool emitted =
+         nl_quantity_usize_c17(*entry, &text, &length) == NL_CHECK_OK && text &&
+         length && strstr(text, "(_Bool nl_local_") &&
+-        strstr(text, "UINTMAX_C(19)");
++        strstr(text, expected_literal);
+     free(text);
+     REQUIRE(emitted);
+     puts("CHECK/C17 retry PASS");
+@@ -180,7 +180,7 @@ static bool rollback(NLSemanticContext *c, const NLSyntaxTree *expression,
+ 
+ int main(int argc, char **argv)
+ {
+-    if (argc != 2)
++    if (argc != 3)
+         return 2;
+     NLSource *source = NULL, *entry_source = NULL;
+     NLParser *parser = NULL, *entry_parser = NULL;
+@@ -201,7 +201,7 @@ int main(int argc, char **argv)
+             nl_parser_create(entry_source, &entry_parser) == NL_PARSE_OK &&
+             nl_parser_parse_expression_fragment(entry_parser, &expression,
+                                                 NULL) == NL_PARSE_OK;
+-    const bool ok = ready && rollback(context, expression, &entry);
++    const bool ok = ready && rollback(context, expression, &entry, argv[2]);
+     nl_checked_destroy(entry);
+     nl_syntax_tree_destroy(expression);
+     nl_parser_destroy(entry_parser);
+diff --git a/tests/p1654/run.py b/tests/p1654/run.py
+index 91aa340881e60f72802e4efab519f715977375f5..bba06a0c8e4a24120c25165f06d721ff0d919083 100644
+--- a/tests/p1654/run.py
++++ b/tests/p1654/run.py
+@@ -1,5 +1,6 @@
+ """Check the unary Bool quantity selector and its strict native output."""
+ 
++from functools import partial
+ from pathlib import Path
+ import re
+ import shutil
+@@ -19,43 +20,59 @@ def run(raw, name, command, expected):
+     return result
+ 
+ 
+-def observe(c):
++def observe(c, discard):
+     helper = re.search(rb"static size_t (nl_qty_fn_\d+)\(_Bool (nl_local_\d+)\)", c)
+     entry = re.search(rb"^static void nl_qty_fn_\d+\(void\)\n\{\n", c, re.MULTILINE)
+     assert helper and entry and helper.end() < entry.start()
+     assert re.search(rb"_Bool nl_condition_\d+ = " + helper[2] + rb";", c)
+     prefix, main = c[:entry.end()], c[entry.end():]
+     assert main.count(helper[1] + b"(") == 2
++    flags = re.findall(rb"^    _Bool (nl_local_\d+) = ", main, re.MULTILINE)
++    marker = b"#include <stdint.h>\n"
++    assert prefix.count(marker) == 1
++    prefix = prefix.replace(marker, marker + b"#include <stdio.h>\n")
++    if discard:
++        actuals = re.findall(
++            rb"^    \(void\)\(" + helper[1] + rb"\((nl_local_\d+)\)\);$",
++            main, re.MULTILINE,
++        )
++        assert len(actuals) == 2 and actuals == flags
++        # Observe the result held in the existing IF temporary. Leave both
++        # call sites and their discarded results untouched.
++        prefix, count = re.subn(
++            rb"^(    return (nl_if_\d+);)$",
++            rb'    printf("%zu\\n", \2);\n\1', prefix, flags=re.MULTILINE,
++        )
++        assert count == 1
++        return prefix + main
+     calls = re.findall(
+         rb"^    size_t (nl_local_\d+) = " + helper[1] + rb"\((nl_local_\d+)\);$",
+         main, re.MULTILINE,
+     )
+-    flags = re.findall(rb"^    _Bool (nl_local_\d+) = ", main, re.MULTILINE)
+     assert len(calls) == len(flags) == 2
+     assert [arg for _, arg in calls] == flags
+-    marker = b"#include <stdint.h>\n"
+-    assert prefix.count(marker) == 1
+     observed, count = re.subn(
+         rb"^(    size_t (nl_local_\d+) = " + helper[1] + rb"\(nl_local_\d+\);)\n",
+         rb'\1\n    printf("%zu\\n", \2);\n', main, flags=re.MULTILINE,
+     )
+     assert count == 2
+-    return prefix.replace(marker, marker + b"#include <stdio.h>\n") + observed
++    return prefix + observed
+ 
+ 
+-def native(cli, source, raw):
++def native(cli, source, raw, *, discard=False):
+     c = run(raw, "stdout-c17", [cli, source], 0)
+     assert c.stdout and not c.stderr
+     pristine = raw / "pristine.c"
+     named = run(raw, "named-c17", [cli, "--emit-c17-to", pristine, source], 0)
+     assert not named.stdout and not named.stderr and pristine.read_bytes() == c.stdout
+     observed = raw / "observed.c"
+-    observed.write_bytes(observe(c.stdout))
++    observed.write_bytes(observe(c.stdout, discard))
+     compilers = (shutil.which("gcc"), shutil.which("clang-23") or shutil.which("clang"))
+     assert all(compilers), compilers
++    values = b"23\n41\n" if discard else b"11\n19\n"
+     for compiler in compilers:
+         for opt in ("O0", "O2"):
+-            for unit, stdout in ((pristine, b""), (observed, b"11\n19\n")):
++            for unit, stdout in ((pristine, b""), (observed, values)):
+                 label = f"{Path(compiler).name}-{opt}-{unit.stem}"
+                 binary = raw / label
+                 run(raw, label + "-compile", [
+@@ -64,7 +81,8 @@ def native(cli, source, raw):
+                 ], 0)
+                 result = run(raw, label + "-native", [binary], 0)
+                 assert result.stdout == stdout and not result.stderr, label
+-    print(f"{raw.name} strict native 11 then 19; named C17 identical")
++    first, second = values.decode().splitlines()
++    print(f"{raw.name} strict native {first} then {second}; named C17 identical")
+ 
+ 
+ def state(path):
+@@ -92,11 +110,24 @@ def scope(cli, source, raw):
+     print(f"{raw.name} CHECK=0 C17=4, named output preserved")
+ 
+ 
+-def fixtures(selection):
++def fixtures(selection, discard):
+     before, original = selection.split("\n\n", 1)
+     body = before.replace("let amount = if", "if").replace("};\n    amount", "}")
+     yield "let-copy", selection, native
+     yield "direct-tail", f"{body}\n\n{original}", native
++    yield "discard", discard, partial(native, discard=True)
++    yield "inline-discard", discard.replace(
++        "select_mark(first_flag);", "select_mark(usize(30) < stock);"
++    ), scope
++    yield "arm-discard", discard.replace(
++        "    select_mark(first_flag);",
++        "    let guarded = if (first_flag) {\n"
++        "        select_mark(first_flag);\n"
++        "        usize(7)\n"
++        "    } else {\n"
++        "        usize(9)\n"
++        "    };",
++    ), scope
+     yield "inline-actual", selection.replace(
+         "choose(select_first)", "choose(usize(50) < stock)"
+     ), scope
+@@ -109,12 +140,14 @@ def fixtures(selection):
+ 
+ 
+ def main():
+-    cli, root, selection = map(Path, sys.argv[1:])
++    cli, root, selection, discard = map(Path, sys.argv[1:])
+     root.mkdir(parents=True, exist_ok=True)
+     raw = Path(tempfile.mkdtemp(dir=root))
+     print(f"raw={raw}", flush=True)
+     cases = []
+-    for name, text, verify in fixtures(selection.read_text(encoding="utf-8")):
++    for name, text, verify in fixtures(
++        selection.read_text(encoding="utf-8"), discard.read_text(encoding="utf-8")
++    ):
+         work = raw / name
+         work.mkdir()
+         source = work / "source.nl"

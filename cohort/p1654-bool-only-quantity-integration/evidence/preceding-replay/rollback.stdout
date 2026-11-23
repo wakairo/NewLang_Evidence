@@ -1,0 +1,7 @@
+CHECK status=4 diagnostic=P3-OUT-OF-MEMORY
+OOM inner-callee-seal reached=1 hit=1 bytes=6912 rollback=PASS
+CHECK status=4 diagnostic=P3-OUT-OF-MEMORY
+OOM entry-result-world reached=1 hit=1 bytes=39918 rollback=PASS
+CHECK status=0 diagnostic=-
+OOM C17 staging hit=1 bytes=21504 output-preserved=PASS
+PRESEAL inner valid, enclosing seal pending, public unpublished; CHECK/C17 retry PASS

@@ -1,0 +1,6 @@
+actual=77/1
+arm=then
+result=11
+actual=77/0
+arm=else
+result=19

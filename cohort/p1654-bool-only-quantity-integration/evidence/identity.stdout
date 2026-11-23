@@ -1,0 +1,11 @@
+cff254ac141194318b2b5b5f11ceb3a2a1b91e06
+2113961602c5e21c6d13f9ed067db7c80e4925b6
+972a61bc31522cf60d31bb5847e29a3f002e9d9d 19e14c6b90e38c8d3875966a47a0e443649ab800
+M	CMakeLists.txt
+M	src/c17_division_usize.c
+M	src/division_usize_internal.h
+M	src/usize_addition.c
+A	tests/p1654/CMakeLists.txt
+A	tests/p1654/probe.c
+A	tests/p1654/run.py
+A	tests/p1654/selection.nl
