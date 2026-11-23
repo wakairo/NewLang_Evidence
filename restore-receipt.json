@@ -1,0 +1,21 @@
+{
+  "owner": "sole Track P",
+  "issue": 1662,
+  "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+  "ref": "refs/heads/archive/p1662-sole-p-20261123",
+  "archived_commit": "0baa88184dc52986b60e4ef5bbc23519dbed6af5",
+  "archived_tree": "ca55f2e819a7f93e6f24dc43950d3f40c96ccaa6",
+  "members": 6627,
+  "bytes": 117393144,
+  "manifest_sha256": "b128b51ff470749f82ff917d7e5831ce24c92c079ec110eff2b8fe899ae8a01b",
+  "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+  "private_history_restore": "PASS for all included bundles",
+  "eligible_local_cleanup": [
+    "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/CMakeFiles"
+  ]
+}
