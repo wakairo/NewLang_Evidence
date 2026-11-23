@@ -1,0 +1,1305 @@
+{
+  "owner": "sole Track P",
+  "pre_archive": {
+    "available_bytes": 21015932928,
+    "free_inodes": 2557780
+  },
+  "before_cleanup": {
+    "available_bytes": 19201150976,
+    "free_inodes": 2494191
+  },
+  "verified_archives": [
+    {
+      "owner": "sole Track P",
+      "issue": 1654,
+      "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+      "ref": "refs/heads/archive/p1654-sole-p-20261123",
+      "archived_commit": "46eae77900cd159eaae4d001ab586bd70b927204",
+      "archived_tree": "f56c8f08a2330d5568c4ffe4089d688d65f829d1",
+      "members": 4334,
+      "bytes": 186273797,
+      "manifest_sha256": "461ee1139960eae69b775f3c0b6326b9823669f7d4995a25b51c6b0d78068780",
+      "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+      "private_history_restore": "PASS for all included bundles",
+      "eligible_local_cleanup": [
+        "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/CMakeFiles"
+      ],
+      "receipt_commit": "5b5961a660198fe21adf360c6f4a47fd3914a221",
+      "receipt_tree": "9bb2e3142f5cf07b1f2b9574afaf9090de652824"
+    },
+    {
+      "owner": "sole Track P",
+      "issue": 1658,
+      "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+      "ref": "refs/heads/archive/p1658-sole-p-20261123",
+      "archived_commit": "a23eddb40903cfe26a0fdd717fd8b38112c2a151",
+      "archived_tree": "be7042ec66ec00212d5c0ddc1d8b6442c63a3dd2",
+      "members": 4597,
+      "bytes": 118055409,
+      "manifest_sha256": "6649df1147b2bfb016929ae93bc570a63aa0203c48cabccae1364bc761fdac62",
+      "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+      "private_history_restore": "PASS for all included bundles",
+      "eligible_local_cleanup": [
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/CMakeFiles"
+      ],
+      "receipt_commit": "7892bbd32e5cd8de9c57789f4b85f2df521b9ab5",
+      "receipt_tree": "784e77bc3699e23b2a870a8af2ab849ab540f5e8"
+    },
+    {
+      "owner": "sole Track P",
+      "issue": 1662,
+      "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+      "ref": "refs/heads/archive/p1662-sole-p-20261123",
+      "archived_commit": "0baa88184dc52986b60e4ef5bbc23519dbed6af5",
+      "archived_tree": "ca55f2e819a7f93e6f24dc43950d3f40c96ccaa6",
+      "members": 6627,
+      "bytes": 117393144,
+      "manifest_sha256": "b128b51ff470749f82ff917d7e5831ce24c92c079ec110eff2b8fe899ae8a01b",
+      "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+      "private_history_restore": "PASS for all included bundles",
+      "eligible_local_cleanup": [
+        "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/CMakeFiles"
+      ],
+      "receipt_commit": "e62ed379b883ff1182051b09088fca837cad594d",
+      "receipt_tree": "4fdbcbcdc8a99094303b6110959c879c1d882f07"
+    },
+    {
+      "owner": "sole Track P",
+      "issue": 1668,
+      "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+      "ref": "refs/heads/archive/p1668-sole-p-20261123",
+      "archived_commit": "6ee07f1f3f6e52de313a62af1511f2018e5cbd8a",
+      "archived_tree": "ebd3c86d31df7997f56f89df74ed5dde51a3405f",
+      "members": 10595,
+      "bytes": 127261215,
+      "manifest_sha256": "955f6b3f8435bfeb0934192d156f11dda5e0442bd70fac8abe5c7218f2d76ea0",
+      "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+      "private_history_restore": "PASS for all included bundles",
+      "eligible_local_cleanup": [
+        "/workspace/p1544-6afecbd5/p1668-joined-local/verified-normal-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1668-joined-local/verified-ubsan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1668-joined-local/verified-asan-build/CMakeFiles",
+        "/workspace/p1544-6afecbd5/p1668-joined-local/smoke-build/CMakeFiles"
+      ],
+      "receipt_commit": "9a37e5f19e04b505eb9ffcb7a1cef8853047632c",
+      "receipt_tree": "ab75b627f92669084922360be5cbea595d9b689a"
+    }
+  ],
+  "obsolete_build_intermediates": [
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/CMakeFiles",
+      "allocated_bytes": 5459968,
+      "directory_entries": 324
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_semantic.a",
+      "allocated_bytes": 2662400,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34541568,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27475968,
+      "directory_entries": 4564
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2662400,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50335744,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15302656,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/CMakeFiles",
+      "allocated_bytes": 5472256,
+      "directory_entries": 324
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_semantic.a",
+      "allocated_bytes": 2658304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/normal-build/CMakeFiles",
+      "allocated_bytes": 24576,
+      "directory_entries": 6
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/CMakeFiles",
+      "allocated_bytes": 5476352,
+      "directory_entries": 324
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_semantic.a",
+      "allocated_bytes": 2662400,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34582528,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27516928,
+      "directory_entries": 4564
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2666496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50384896,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15298560,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34574336,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27480064,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2666496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50368512,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15302656,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/CMakeFiles",
+      "allocated_bytes": 5459968,
+      "directory_entries": 324
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_semantic.a",
+      "allocated_bytes": 2662400,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/smoke-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34545664,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27475968,
+      "directory_entries": 4564
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2666496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50339840,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15306752,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34586624,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27496448,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2666496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50397184,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15310848,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1658-callee-local-division-public-prep/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34521088,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27451392,
+      "directory_entries": 4564
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2662400,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50290688,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15306752,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/CMakeFiles",
+      "allocated_bytes": 34562048,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_checked.a",
+      "allocated_bytes": 57344,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 1765376,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_lexer.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_parser.a",
+      "allocated_bytes": 360448,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_semantic.a",
+      "allocated_bytes": 5701632,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/CMakeFiles",
+      "allocated_bytes": 27475968,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_checked.a",
+      "allocated_bytes": 49152,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 712704,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_lexer.a",
+      "allocated_bytes": 12288,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_parser.a",
+      "allocated_bytes": 106496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_semantic.a",
+      "allocated_bytes": 2666496,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_source.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build/libnewlang_syntax.a",
+      "allocated_bytes": 16384,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/CMakeFiles",
+      "allocated_bytes": 50376704,
+      "directory_entries": 4563
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_checked.a",
+      "allocated_bytes": 98304,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_checked_c_node.a",
+      "allocated_bytes": 4722688,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_diagnostic.a",
+      "allocated_bytes": 32768,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_lexer.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_parser.a",
+      "allocated_bytes": 471040,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_semantic.a",
+      "allocated_bytes": 15310848,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_source.a",
+      "allocated_bytes": 24576,
+      "directory_entries": 1
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/libnewlang_syntax.a",
+      "allocated_bytes": 20480,
+      "directory_entries": 1
+    }
+  ],
+  "verified_temporary_directories": [
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/restore-pilot",
+      "allocated_bytes": 184320,
+      "directory_entries": 43
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/staging-1654",
+      "allocated_bytes": 265719808,
+      "directory_entries": 6229
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/restore-1654",
+      "allocated_bytes": 224550912,
+      "directory_entries": 4550
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/staging-1658",
+      "allocated_bytes": 174645248,
+      "directory_entries": 6501
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/restore-1658",
+      "allocated_bytes": 147083264,
+      "directory_entries": 4825
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/recovered-1658",
+      "allocated_bytes": 97714176,
+      "directory_entries": 37
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/staging-1662",
+      "allocated_bytes": 179273728,
+      "directory_entries": 9107
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/restore-1662",
+      "allocated_bytes": 151560192,
+      "directory_entries": 6900
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/recovered-1662",
+      "allocated_bytes": 97714176,
+      "directory_entries": 37
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/restore-1668",
+      "allocated_bytes": 171929600,
+      "directory_entries": 10998
+    },
+    {
+      "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/recovered-1668",
+      "allocated_bytes": 97718272,
+      "directory_entries": 37
+    }
+  ],
+  "last_temporary_checkout": {
+    "path": "/workspace/p1544-6afecbd5/p-disk-archive-20261123/staging-1668",
+    "allocated_bytes": 206659584,
+    "directory_entries": 14320
+  }
+}
