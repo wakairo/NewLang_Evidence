@@ -1,0 +1,1 @@
+Synthetic ordinary-Git transport check for sole Track P.
