@@ -1,0 +1,14 @@
+{
+  "cleanup_plan_commit": "0bbecb2be3b6852077e53a4372753fe5416d661e",
+  "deleted_obsolete_build_paths": 226,
+  "deleted_temporary_directories_before_final_receipt": 11,
+  "after_cleanup_before_final_staging_removal": {
+    "available_bytes": 21858029568,
+    "free_inodes": 2640780
+  },
+  "recovered_during_this_step": {
+    "available_bytes": 2656878592,
+    "free_inodes": 146589
+  },
+  "retained": "Compiler worktrees, all original raw/test output, pinned SDK and P1668 builds"
+}
