@@ -1,0 +1,28 @@
+{
+  "owner": "sole Track P",
+  "issue": 1654,
+  "remote": "https://github.com/wakairo/NewLang_Evidence.git",
+  "ref": "refs/heads/archive/p1654-sole-p-20261123",
+  "archived_commit": "46eae77900cd159eaae4d001ab586bd70b927204",
+  "archived_tree": "f56c8f08a2330d5568c4ffe4089d688d65f829d1",
+  "members": 4334,
+  "bytes": 186273797,
+  "manifest_sha256": "461ee1139960eae69b775f3c0b6326b9823669f7d4995a25b51c6b0d78068780",
+  "fresh_https_restore": "PASS: exact member set, sizes and SHA-256",
+  "private_history_restore": "PASS for all included bundles",
+  "eligible_local_cleanup": [
+    "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/verified-asan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-discard-priority/smoke-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/base-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/verified-asan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-implementation/smoke-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-normal-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-ubsan-build/CMakeFiles",
+    "/workspace/p1544-6afecbd5/p1654-bool-only-quantity-integration/verified-asan-build/CMakeFiles"
+  ]
+}
