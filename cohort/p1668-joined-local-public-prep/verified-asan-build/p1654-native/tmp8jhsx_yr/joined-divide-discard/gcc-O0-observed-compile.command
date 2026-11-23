@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O0
+/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-asan-build/p1654-native/tmp8jhsx_yr/joined-divide-discard/observed.c
+-o
+/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-asan-build/p1654-native/tmp8jhsx_yr/joined-divide-discard/gcc-O0-observed

@@ -1,0 +1,9 @@
+# P1668 conditional publication preparation
+
+The original clean private checkout holds HEAD `6ff3eca9d4a9c205a33cd2bf285b514f1a455475`, tree `3ba251a35e9c6c24453252df1f72687ec78dd8ff`, and sole parent `b917e0d5a897ea606002a2813fde42f45b49c859`. All 6,387 entries in the fixed raw manifest were verified. The six-path full-index patch is 22,141 bytes, SHA-256 `3700dc62190e2213b1194edad52604656b491971f2eb9e01a28d9b75a9a52a08`. The private selected cohorts passed 132/132 each.
+
+The authorization is [C CONDITIONAL PUBLIC DRAFT GO](https://github.com/wakairo/NewLang_Compiler/issues/1668#issuecomment-7088707007). The required C issue record must identify #1665 merged at the exact private parent above, actual main with ordered parents `[55b3d960c585745d9b5b481efee6b41b4403f2be, b917e0d5a897ea606002a2813fde42f45b49c859]` and tree `7b73d38b2bbb4274da60dc4726cf8f744150446e`, and no material C/F/R/Required stop. Verify that record, the individual PR, main ref and commit, and the current issue instructions before proceeding.
+
+`prepare-exact.sh` takes the adopted main SHA verified by the sole P, creates the separate checkout, applies the frozen change, and compares parent, tree, paths, patch bytes, patch SHA, formatter and diff-check. `run-cohort.sh` is ready for the selected normal, ASan/LSan and UBSan reruns on that new commit. `draft-prepared.md` describes the measured scope and original results. Append the new candidate identity and observed rerun results before opening the draft.
+
+The public ACTUAL records the adopted base, verified candidate and test checkpoint. The public handoff records remote ref, exact HEAD/tree/sole parent, PR, synthetic merge, blob comparison, diff digest, reruns, and natural run/job identities and their observed status. Individually GET both issue receipts.

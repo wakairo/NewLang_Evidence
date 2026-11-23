@@ -1,0 +1,31 @@
+LOAD status=0
+SOURCE parse=0
+UNIT register=0 diagnostic=-
+CHECK status=0 artifact=1 diagnostic=-
+OWNED main_present=1 machine_proved=1
+CALL id=15 arity=1 body_owned=1 same_world=1 bool_actual_copy=1 bool_actual_slot=8 bool_value=1
+IF site=7 normal_arms=2 condition_copy=1 condition=1 formal_binding_slot=8 formal_is_actual=1 join_known=0 body_is_call_result=1 call_known=0
+PRIOR_JOIN site=3 symbol=5 slot=10 unknown=1
+ARM index=0 normal=1 separate_context=1 known=1 value=97
+LITERAL_ARM arithmetic=none
+ARM index=1 normal=1 separate_context=1 known=1 value=54
+LITERAL_ARM arithmetic=none
+ARM index=0 normal=1 separate_context=1 known=0 value=0
+JOINED_NUMERATOR symbol=5 slot=10 same_fork_place=1 unknown=1
+DIVISION view=1 valid=1 original_arm=1 numerator_known=0 numerator=0 divisor=7 quotient_known=0 quotient=0 input_from_usize_actual=0
+ARM index=1 normal=1 separate_context=1 known=0 value=0
+JOINED_NUMERATOR symbol=5 slot=10 same_fork_place=1 unknown=1
+DIVISION view=1 valid=1 original_arm=1 numerator_known=0 numerator=0 divisor=5 quotient_known=0 quotient=0 input_from_usize_actual=0
+CALL id=18 arity=1 body_owned=1 same_world=1 bool_actual_copy=1 bool_actual_slot=13 bool_value=0
+IF site=7 normal_arms=2 condition_copy=1 condition=0 formal_binding_slot=13 formal_is_actual=1 join_known=0 body_is_call_result=1 call_known=0
+PRIOR_JOIN site=3 symbol=7 slot=15 unknown=1
+ARM index=0 normal=1 separate_context=1 known=1 value=97
+LITERAL_ARM arithmetic=none
+ARM index=1 normal=1 separate_context=1 known=1 value=54
+LITERAL_ARM arithmetic=none
+ARM index=0 normal=1 separate_context=1 known=0 value=0
+JOINED_NUMERATOR symbol=7 slot=15 same_fork_place=1 unknown=1
+DIVISION view=1 valid=1 original_arm=1 numerator_known=0 numerator=0 divisor=7 quotient_known=0 quotient=0 input_from_usize_actual=0
+ARM index=1 normal=1 separate_context=1 known=0 value=0
+JOINED_NUMERATOR symbol=7 slot=15 same_fork_place=1 unknown=1
+DIVISION view=1 valid=1 original_arm=1 numerator_known=0 numerator=0 divisor=5 quotient_known=0 quotient=0 input_from_usize_actual=0

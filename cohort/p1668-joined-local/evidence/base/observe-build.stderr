@@ -1,0 +1,7 @@
+evidence/observe-owned.c: In function ‘inspect_arm’:
+evidence/observe-owned.c:84:30: error: ‘NLUsizeDivisionView’ has no member named ‘source’
+   84 |          v.origin == arm && v.source == nl_checked_source(body) &&
+      |                              ^
+evidence/observe-owned.c:10:11: note: in definition of macro ‘NEED’
+   10 |     if (!(c)) { fprintf(stderr, "observe:%d: %s\n", __LINE__, #c); return false; } \
+      |           ^

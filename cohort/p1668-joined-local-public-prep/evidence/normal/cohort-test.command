@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1668-joined-local-public-prep
+env ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1 /workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/ctest --test-dir /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build --no-tests=error --output-on-failure -V -j 2 -R \^\(p\(1544\|1549\|1554\|1561\|1567\|1572\|1579\|1587\|1592\|1596\|1598\|1605\|1615\|1623\|1628\|1632\|1638\|1643\|1645\|1654\|1658\|1662\|1668\|634\|605\)_\).\* 

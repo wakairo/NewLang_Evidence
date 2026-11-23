@@ -1,0 +1,9 @@
+6ff3eca9d4a9c205a33cd2bf285b514f1a455475
+3ba251a35e9c6c24453252df1f72687ec78dd8ff
+b917e0d5a897ea606002a2813fde42f45b49c859
+M	src/usize_addition.c
+M	tests/p1654/CMakeLists.txt
+M	tests/p1654/probe.c
+M	tests/p1654/run.py
+A	tests/p1668/divide.nl
+A	tests/p1668/remainder.nl

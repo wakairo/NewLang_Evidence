@@ -1,0 +1,4 @@
+[p1668-joined-local-private 6ff3eca] Validate fixed arithmetic on a joined local in unary Bool helpers
+ 6 files changed, 266 insertions(+), 51 deletions(-)
+ create mode 100644 tests/p1668/divide.nl
+ create mode 100644 tests/p1668/remainder.nl

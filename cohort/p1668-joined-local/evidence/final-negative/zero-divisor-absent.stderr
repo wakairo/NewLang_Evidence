@@ -1,0 +1,1 @@
+evidence/negative-source/zero-divisor.nl:10:15-10:16: error(semantic)[USIZE-DIVISION-ZERO]: usize divisor must be nonzero

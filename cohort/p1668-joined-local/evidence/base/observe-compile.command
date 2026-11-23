@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1668-joined-local
+gcc -std=c17 -pedantic-errors -Wall -Wextra -Werror -I repo/include evidence/observe-owned.c -L /workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build -Wl\,--start-group -lnewlang_semantic -lnewlang_checked -lnewlang_parser -lnewlang_syntax -lnewlang_lexer -lnewlang_diagnostic -lnewlang_source -Wl\,--end-group -o evidence/base/observe 

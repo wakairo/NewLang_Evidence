@@ -1,0 +1,3 @@
+literal-divide strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.
+literal-remainder strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.
+caller-joined strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.

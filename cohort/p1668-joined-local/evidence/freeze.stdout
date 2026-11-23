@@ -1,0 +1,17 @@
+ 592 evidence/source/caller-joined.nl
+ 416 evidence/source/joined-divide-discard.nl
+ 441 evidence/source/joined-divide.nl
+ 416 evidence/source/joined-remainder-discard.nl
+ 441 evidence/source/joined-remainder.nl
+ 384 evidence/source/literal-divide.nl
+ 384 evidence/source/literal-remainder.nl
+1510 evidence/oracle.md
+4584 total
+345a1dd67dc0f2f5807920f92bb2e3b3cf89581cf9ccbde50f82ae3c09b83a81  evidence/source/caller-joined.nl
+628e3ebd591aba5e8e74d63fa74d96813b4ec75c8f358ae3b409e8f8f1a308c5  evidence/source/joined-divide-discard.nl
+9c237b3e6909f5c45b8b347194f48e4fa134f6b1595f5bd65f59ed66001b2427  evidence/source/joined-divide.nl
+45e8bb077c0ff4db82b634a1734a1d33780ea8b0aff6c9f1c6630965a355ec7f  evidence/source/joined-remainder-discard.nl
+9917485c13b540b83ae07975ca5a9a40f1b238e41429f07a44e906f7bb215dc4  evidence/source/joined-remainder.nl
+4916e55ac0d37cd72190a7a7e46df2048842a20693661bbaef7467da24df524e  evidence/source/literal-divide.nl
+2484b5473e029885dabdc2e2766ed66e12f136aff0231d09e9efb797b6f09aaa  evidence/source/literal-remainder.nl
+54c68985eead638e02ffdec9d5a21c912b625e24e1ac26aa6e54d7cd70ce83c5  evidence/oracle.md

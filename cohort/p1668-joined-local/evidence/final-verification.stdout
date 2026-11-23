@@ -1,0 +1,5 @@
+missing-prior-arm CHECK=3 P13-IF-ELSE existing/absent output preserved
+wrong-bool-actual CHECK=3 P3-TYPE-MISMATCH existing/absent output preserved
+wrong-joined-arm CHECK=3 P13-IF-RESULT existing/absent output preserved
+zero-divisor CHECK=3 USIZE-DIVISION-ZERO existing/absent output preserved
+zero-remainder-divisor CHECK=3 USIZE-REMAINDER-ZERO existing/absent output preserved

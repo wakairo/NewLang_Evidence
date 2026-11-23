@@ -1,0 +1,7 @@
+joined-divide CHECK=0 C17=0
+joined-divide-discard CHECK=0 C17=0
+joined-remainder CHECK=0 C17=0
+joined-remainder-discard CHECK=0 C17=0
+literal-divide CHECK=0 C17=0
+literal-remainder CHECK=0 C17=0
+caller-joined CHECK=0 C17=0

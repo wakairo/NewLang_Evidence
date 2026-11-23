@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O0
+/workspace/p1544-6afecbd5/p1668-joined-local/verified-asan-build/p1654-native/tmpf8_yfo_j/joined-divide/pristine.c
+-o
+/workspace/p1544-6afecbd5/p1668-joined-local/verified-asan-build/p1654-native/tmpf8_yfo_j/joined-divide/gcc-O0-pristine

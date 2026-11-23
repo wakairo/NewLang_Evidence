@@ -1,0 +1,7 @@
+# P1668 frozen oracle
+
+Named Bool arguments are true (64 < 100) then false (124 < 100). In the joined-local cases the first IF chooses 97 or 54 exactly once and binds its genuine result as stock. The second IF selects the same Bool's arm. Expected division values are floor(97/7)=13 then floor(54/5)=10; expected remainder values are 6 then 4. With a literal stock of 97, the same native branch order gives division 13 then 19, remainder 6 then 2. With a caller-joined mixed signature, division gives 13 then 10.
+
+At fixed b917e0d5a897, predict SOURCE/register/CHECK success on all fixtures and owned IFs with well-typed two normal arms. The joined-local numerator should be statically Unknown, with the same recorded binding symbol/package in both protected later IF arms. Predict valid existing local ARM arithmetic observations, then the full quantity plan refuses the joined-local case, whether the caller binds or discards; stdout/named C17 exit 4. Existing target bytes and metadata stay intact; an absent target stays absent. The literal and caller-joined controls should reach strict native.
+
+Authorized candidate shape: sole helper root item binds a preceding IF on the exact same named Bool formal with two usize literal normal tails, followed by the existing direct IF tail and two matching fixed nonzero division or remainder arms. No new issuer, world or general alias/IF rule. If closed by existing validation, observe the two runtime results once in call order. Pristine native stdout is empty.

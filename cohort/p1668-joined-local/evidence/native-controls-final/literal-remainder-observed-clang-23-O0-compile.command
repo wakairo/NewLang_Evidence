@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1668-joined-local
+/workspace/p1544-6afecbd5/repo/.deps/toolchains/debian-13-x86_64-7c9921be7919a10d/newlang-llvm-23.1.3-linux-x64/bin/clang-23 -std=c17 -pedantic-errors -Wall -Wextra -Werror -O0 evidence/native-controls-final/literal-remainder-observed.c -o evidence/native-controls-final/literal-remainder-observed-clang-23-O0 

@@ -1,0 +1,3560 @@
+Internal ctest changing into directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/DartConfiguration.tcl
+Test project /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 68
+        Start  68: p1544_positive50.unit
+
+68: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "positive50" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-positive50"
+68: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+68: Environment variables: 
+68:  PYTHONDONTWRITEBYTECODE=1
+68:  PYTHONHASHSEED=0
+68:  LC_ALL=C
+68:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+68:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+68: Test timeout computed to be: 90
+68: P1544 positive50 PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-positive50/1795395979168386861
+  1/132 Test  #68: p1544_positive50.unit ....................   Passed    0.04 sec
+test 69
+        Start  69: p1544_positive0.unit
+
+69: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "positive0" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-positive0"
+69: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+69: Environment variables: 
+69:  PYTHONDONTWRITEBYTECODE=1
+69:  PYTHONHASHSEED=0
+69:  LC_ALL=C
+69:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+69:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+69: Test timeout computed to be: 90
+69: P1544 positive0 PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-positive0/1795395979206760772
+  2/132 Test  #69: p1544_positive0.unit .....................   Passed    0.04 sec
+test 70
+        Start  70: p1544_zero.unit
+
+70: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "zero" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-zero"
+70: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+70: Environment variables: 
+70:  PYTHONDONTWRITEBYTECODE=1
+70:  PYTHONHASHSEED=0
+70:  LC_ALL=C
+70:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+70:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+70: Test timeout computed to be: 90
+70: P1544 zero PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-zero/1795395979248229418
+  3/132 Test  #70: p1544_zero.unit ..........................   Passed    0.04 sec
+test 71
+        Start  71: p1544_range.unit
+
+71: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "range" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-range"
+71: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+71: Environment variables: 
+71:  PYTHONDONTWRITEBYTECODE=1
+71:  PYTHONHASHSEED=0
+71:  LC_ALL=C
+71:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+71:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+71: Test timeout computed to be: 90
+71: P1544 range PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-range/1795395979288832009
+  4/132 Test  #71: p1544_range.unit .........................   Passed    0.04 sec
+test 72
+        Start  72: p1544_profile.unit
+
+72: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "profile" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-profile"
+72: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+72: Environment variables: 
+72:  PYTHONDONTWRITEBYTECODE=1
+72:  PYTHONHASHSEED=0
+72:  LC_ALL=C
+72:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+72:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+72: Test timeout computed to be: 90
+72: P1544 profile PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-profile/1795395979321179259
+  5/132 Test  #72: p1544_profile.unit .......................   Passed    0.04 sec
+test 73
+        Start  73: p1544_authenticity.unit
+
+73: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "authenticity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-authenticity"
+73: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+73: Environment variables: 
+73:  PYTHONDONTWRITEBYTECODE=1
+73:  PYTHONHASHSEED=0
+73:  LC_ALL=C
+73:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+73:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+73: Test timeout computed to be: 90
+73: P1544 authenticity PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-authenticity/1795395979366488718
+  6/132 Test  #73: p1544_authenticity.unit ..................   Passed    0.03 sec
+test 74
+        Start  74: p1544_unknown.unit
+
+74: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "unknown" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-unknown"
+74: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+74: Environment variables: 
+74:  PYTHONDONTWRITEBYTECODE=1
+74:  PYTHONHASHSEED=0
+74:  LC_ALL=C
+74:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+74:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+74: Test timeout computed to be: 90
+74: P1544 unknown PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-unknown/1795395979402928412
+  7/132 Test  #74: p1544_unknown.unit .......................   Passed    0.04 sec
+test 75
+        Start  75: p1544_receipt-oom.unit
+
+75: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "receipt-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-receipt-oom"
+75: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+75: Environment variables: 
+75:  PYTHONDONTWRITEBYTECODE=1
+75:  PYTHONHASHSEED=0
+75:  LC_ALL=C
+75:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+75:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+75: Test timeout computed to be: 90
+75: P1544 receipt-oom PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-receipt-oom/1795395979440077600
+  8/132 Test  #75: p1544_receipt-oom.unit ...................   Passed    0.04 sec
+test 76
+        Start  76: p1544_result-oom.unit
+
+76: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "result-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-result-oom"
+76: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+76: Environment variables: 
+76:  PYTHONDONTWRITEBYTECODE=1
+76:  PYTHONHASHSEED=0
+76:  LC_ALL=C
+76:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+76:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+76: Test timeout computed to be: 90
+76: P1544 result-oom PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-result-oom/1795395979481084967
+  9/132 Test  #76: p1544_result-oom.unit ....................   Passed    0.04 sec
+test 77
+        Start  77: p1544_emitter-oom.unit
+
+77: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "emitter-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-emitter-oom"
+77: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+77: Environment variables: 
+77:  PYTHONDONTWRITEBYTECODE=1
+77:  PYTHONHASHSEED=0
+77:  LC_ALL=C
+77:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+77:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+77: Test timeout computed to be: 90
+77: P1544 emitter-oom PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-emitter-oom/1795395979514412961
+ 10/132 Test  #77: p1544_emitter-oom.unit ...................   Passed    0.03 sec
+test 78
+        Start  78: p1544_native.unit
+
+78: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "native" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-native"
+78: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+78: Environment variables: 
+78:  PYTHONDONTWRITEBYTECODE=1
+78:  PYTHONHASHSEED=0
+78:  LC_ALL=C
+78:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+78:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+78: Test timeout computed to be: 90
+78: PHYSICAL P-ordinary-quotient.nl-gcc PASS
+78: PHYSICAL P-ordinary-quotient.nl-clang PASS
+78: PHYSICAL P-ordinary-quotient.nl-asan PASS
+78: PHYSICAL P-ordinary-quotient.nl-ubsan PASS
+78: PHYSICAL P-zero-numerator.nl-gcc PASS
+78: PHYSICAL P-zero-numerator.nl-clang PASS
+78: PHYSICAL P-zero-numerator.nl-asan PASS
+78: PHYSICAL P-zero-numerator.nl-ubsan PASS
+78: PHYSICAL P-max-over7.nl-gcc PASS
+78: PHYSICAL P-max-over7.nl-clang PASS
+78: PHYSICAL P-divisor1.nl-gcc PASS
+78: PHYSICAL P-divisor1.nl-clang PASS
+78: PHYSICAL P-divisor-max.nl-gcc PASS
+78: PHYSICAL P-divisor-max.nl-clang PASS
+78: P1544 native PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-native/1795395979548634149
+ 11/132 Test  #78: p1544_native.unit ........................   Passed    0.71 sec
+test 79
+        Start  79: p1544_controls.unit
+
+79: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1544/run.py" "controls" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-controls"
+79: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+79: Environment variables: 
+79:  PYTHONDONTWRITEBYTECODE=1
+79:  PYTHONHASHSEED=0
+79:  LC_ALL=C
+79:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+79:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+79: Test timeout computed to be: 90
+79: PHYSICAL guarded-gcc PASS
+79: PHYSICAL guarded-clang PASS
+79: P1544 controls PASS /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1544-controls/1795395980260963234
+ 12/132 Test  #79: p1544_controls.unit ......................   Passed    0.10 sec
+test 80
+        Start  80: p1549_positive.unit
+
+80: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-positive"
+80: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+80: Environment variables: 
+80:  PYTHONDONTWRITEBYTECODE=1
+80:  PYTHONHASHSEED=0
+80:  LC_ALL=C
+80:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+80:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+80: Test timeout computed to be: 90
+test 81
+        Start  81: p1549_negative.unit
+
+81: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-negative"
+81: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+81: Environment variables: 
+81:  PYTHONDONTWRITEBYTECODE=1
+81:  PYTHONHASHSEED=0
+81:  LC_ALL=C
+81:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+81:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+81: Test timeout computed to be: 90
+81: zero.nl USIZE-DIVISION-ZERO no-clobber PASS
+81: wrong-type.nl USIZE-DIVISION-TYPE no-clobber PASS
+81: target-range.nl USIZE-LITERAL-RANGE no-clobber PASS
+81: unknown-plus.nl USIZE-ADDITION-PRECISION no-clobber PASS
+ 13/132 Test  #81: p1549_negative.unit ......................   Passed    0.05 sec
+test 82
+        Start  82: p1549_authenticity.unit
+
+82: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "authenticity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-authenticity"
+82: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+82: Environment variables: 
+82:  PYTHONDONTWRITEBYTECODE=1
+82:  PYTHONHASHSEED=0
+82:  LC_ALL=C
+82:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+82:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+82: Test timeout computed to be: 90
+82: SOURCE PASS
+82: SOURCE PASS
+82: CUSTODY foreign receipt and equal-value wrong result rejected
+ 14/132 Test  #82: p1549_authenticity.unit ..................   Passed    0.04 sec
+test 83
+        Start  83: p1549_second-seal.unit
+
+83: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "second-seal" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-second-seal"
+83: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+83: Environment variables: 
+83:  PYTHONDONTWRITEBYTECODE=1
+83:  PYTHONHASHSEED=0
+83:  LC_ALL=C
+83:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+83:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+83: Test timeout computed to be: 90
+80: tail-copy.nl gcc values PASS
+83: SOURCE PASS
+83: DEFINITION unknown=1
+83: CHECK PASS
+83: CALL 137 5 27 tail 1 1 4 7 seal=1
+83: BIND coarse 5 27 7
+83: CALL 27 5 5 tail 8 6 11 14 seal=1
+83: BIND fine 10 5 14
+83: BIND kept_coarse 11 27 15
+83: BIND with_reserve 12 9 18
+83: WORLD seal=1 bytes=1
+83: OOM hit=1 no-clobber=PASS retry=PASS
+ 15/132 Test  #83: p1549_second-seal.unit ...................   Passed    0.04 sec
+test 84
+        Start  84: p1549_world-seal.unit
+
+84: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "world-seal" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-world-seal"
+84: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+84: Environment variables: 
+84:  PYTHONDONTWRITEBYTECODE=1
+84:  PYTHONHASHSEED=0
+84:  LC_ALL=C
+84:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+84:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+84: Test timeout computed to be: 90
+80: tail-copy.nl clang values PASS
+84: SOURCE PASS
+84: DEFINITION unknown=1
+84: CHECK PASS
+84: CALL 137 5 27 tail 1 1 4 7 seal=1
+84: BIND coarse 5 27 7
+84: CALL 27 5 5 tail 8 6 11 14 seal=1
+84: BIND fine 10 5 14
+84: BIND kept_coarse 11 27 15
+84: BIND with_reserve 12 9 18
+84: WORLD seal=1 bytes=1
+84: OOM hit=1 no-clobber=PASS retry=PASS
+ 16/132 Test  #84: p1549_world-seal.unit ....................   Passed    0.04 sec
+test 85
+        Start  85: p1549_staging.unit
+
+85: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1549/run.py" "staging" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1549-staging"
+85: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+85: Environment variables: 
+85:  PYTHONDONTWRITEBYTECODE=1
+85:  PYTHONHASHSEED=0
+85:  LC_ALL=C
+85:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+85:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+85: Test timeout computed to be: 90
+80: tail-copy.nl asan values PASS
+85: SOURCE PASS
+85: OOM hit=1 no-clobber=PASS retry=PASS
+ 17/132 Test  #85: p1549_staging.unit .......................   Passed    0.04 sec
+test 86
+        Start  86: p1554_positive.unit
+
+86: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-positive"
+86: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+86: Environment variables: 
+86:  PYTHONDONTWRITEBYTECODE=1
+86:  PYTHONHASHSEED=0
+86:  LC_ALL=C
+86:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+86:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+86: Test timeout computed to be: 90
+80: tail-copy.nl ubsan values PASS
+86: page-alignment.nl gcc values PASS
+80: call-reuse.nl gcc values PASS
+86: page-alignment.nl clang values PASS
+80: call-reuse.nl clang values PASS
+86: page-alignment.nl asan values PASS
+80: call-reuse.nl asan values PASS
+86: page-alignment.nl ubsan values PASS
+80: call-reuse.nl ubsan values PASS
+86: bucket-phase.nl gcc values PASS
+80: return-copy.nl gcc values PASS
+86: bucket-phase.nl clang values PASS
+80: return-copy.nl clang values PASS
+80: return-copy.nl asan values PASS
+86: bucket-phase.nl asan values PASS
+80: return-copy.nl ubsan values PASS
+ 18/132 Test  #80: p1549_positive.unit ......................   Passed    0.65 sec
+test 87
+        Start  87: p1554_negative.unit
+
+87: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-negative"
+87: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+87: Environment variables: 
+87:  PYTHONDONTWRITEBYTECODE=1
+87:  PYTHONHASHSEED=0
+87:  LC_ALL=C
+87:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+87:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+87: Test timeout computed to be: 90
+86: bucket-phase.nl ubsan values PASS
+87: zero-divisor.nl USIZE-REMAINDER-ZERO no-clobber PASS
+87: wrong-type.nl USIZE-REMAINDER-TYPE no-clobber PASS
+87: wide-divisor.nl USIZE-LITERAL-RANGE no-clobber PASS
+87: unknown-add.nl USIZE-ADDITION-PRECISION no-clobber PASS
+ 19/132 Test  #87: p1554_negative.unit ......................   Passed    0.04 sec
+test 88
+        Start  88: p1554_authenticity.unit
+
+88: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "authenticity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-authenticity"
+88: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+88: Environment variables: 
+88:  PYTHONDONTWRITEBYTECODE=1
+88:  PYTHONHASHSEED=0
+88:  LC_ALL=C
+88:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+88:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+88: Test timeout computed to be: 90
+86: wide-offset.nl gcc values PASS
+88: CUSTODY wrong-source foreign wrong-span wrong-known equal-value-result rejected
+88: OPERATION known-zero division and remainder are disjoint
+88: UNKNOWN retained caller evidence rejects forged Known zero
+86: wide-offset.nl clang values PASS
+ 20/132 Test  #88: p1554_authenticity.unit ..................   Passed    0.04 sec
+test 89
+        Start  89: p1554_receipt-oom.unit
+
+89: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "receipt-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-receipt-oom"
+89: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+89: Environment variables: 
+89:  PYTHONDONTWRITEBYTECODE=1
+89:  PYTHONHASHSEED=0
+89:  LC_ALL=C
+89:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+89:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+89: Test timeout computed to be: 90
+89: FAULT status=4 visits=1 allocations=0 hits=1
+89: SOURCE PASS
+89: CHECK PASS
+89: DEFINITION unknown=1
+89: CALL 152 11 9 return 1 1 4 6 seal=1
+89: BIND first_phase 4 9 6
+89: CALL 9 11 9 return 7 5 10 12 seal=1
+89: BIND reduced_again 8 9 12
+89: BIND translated 9 20 15
+89: CALL 20 11 9 return 16 10 19 21 seal=1
+89: BIND translated_phase 13 9 21
+89: BIND first_again 14 9 22
+89: BIND room 15 2 25
+89: WORLD seal=1 bytes=1
+89: OOM receipt-oom hit=1 no-clobber=PASS retry=PASS
+86: wide-offset.nl asan values PASS
+ 21/132 Test  #89: p1554_receipt-oom.unit ...................   Passed    0.04 sec
+test 90
+        Start  90: p1554_result-oom.unit
+
+90: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "result-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-result-oom"
+90: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+90: Environment variables: 
+90:  PYTHONDONTWRITEBYTECODE=1
+90:  PYTHONHASHSEED=0
+90:  LC_ALL=C
+90:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+90:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+90: Test timeout computed to be: 90
+90: FAULT status=4 visits=2 allocations=1 hits=1
+90: SOURCE PASS
+90: CHECK PASS
+90: DEFINITION unknown=1
+90: CALL 152 11 9 return 1 1 4 6 seal=1
+90: BIND first_phase 4 9 6
+90: CALL 9 11 9 return 7 5 10 12 seal=1
+90: BIND reduced_again 8 9 12
+90: BIND translated 9 20 15
+90: CALL 20 11 9 return 16 10 19 21 seal=1
+90: BIND translated_phase 13 9 21
+90: BIND first_again 14 9 22
+90: BIND room 15 2 25
+90: WORLD seal=1 bytes=1
+90: OOM result-oom hit=1 no-clobber=PASS retry=PASS
+ 22/132 Test  #90: p1554_result-oom.unit ....................   Passed    0.04 sec
+test 91
+        Start  91: p1554_world-oom.unit
+
+91: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-world-oom"
+91: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+91: Environment variables: 
+91:  PYTHONDONTWRITEBYTECODE=1
+91:  PYTHONHASHSEED=0
+91:  LC_ALL=C
+91:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+91:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+91: Test timeout computed to be: 90
+86: wide-offset.nl ubsan values PASS
+ 23/132 Test  #86: p1554_positive.unit ......................   Passed    0.63 sec
+test 92
+        Start  92: p1554_staging-oom.unit
+
+92: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1554/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1554-staging-oom"
+92: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+92: Environment variables: 
+92:  PYTHONDONTWRITEBYTECODE=1
+92:  PYTHONHASHSEED=0
+92:  LC_ALL=C
+92:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+92:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+92: Test timeout computed to be: 90
+91: FAULT status=4 visits=1 allocations=2 hits=1
+91: SOURCE PASS
+91: CHECK PASS
+91: DEFINITION unknown=1
+91: CALL 152 11 9 return 1 1 4 6 seal=1
+91: BIND first_phase 4 9 6
+91: CALL 9 11 9 return 7 5 10 12 seal=1
+91: BIND reduced_again 8 9 12
+91: BIND translated 9 20 15
+91: CALL 20 11 9 return 16 10 19 21 seal=1
+91: BIND translated_phase 13 9 21
+91: BIND first_again 14 9 22
+91: BIND room 15 2 25
+91: WORLD seal=1 bytes=1
+91: OOM world-oom hit=1 no-clobber=PASS retry=PASS
+ 24/132 Test  #91: p1554_world-oom.unit .....................   Passed    0.04 sec
+test 93
+        Start  93: p1561_positive.unit
+
+93: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-positive"
+93: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+93: Environment variables: 
+93:  PYTHONDONTWRITEBYTECODE=1
+93:  PYTHONHASHSEED=0
+93:  LC_ALL=C
+93:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+93:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+93: Test timeout computed to be: 90
+92: FAULT status=4 allocations=1 hits=1
+92: SOURCE PASS
+92: CHECK PASS
+92: DEFINITION unknown=1
+92: CALL 152 11 9 return 1 1 4 6 seal=1
+92: BIND first_phase 4 9 6
+92: CALL 9 11 9 return 7 5 10 12 seal=1
+92: BIND reduced_again 8 9 12
+92: BIND translated 9 20 15
+92: CALL 20 11 9 return 16 10 19 21 seal=1
+92: BIND translated_phase 13 9 21
+92: BIND first_again 14 9 22
+92: BIND room 15 2 25
+92: WORLD seal=1 bytes=1
+92: OOM staging-oom hit=1 no-clobber=PASS retry=PASS
+ 25/132 Test  #92: p1554_staging-oom.unit ...................   Passed    0.04 sec
+test 94
+        Start  94: p1561_negative.unit
+
+94: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-negative"
+94: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+94: Environment variables: 
+94:  PYTHONDONTWRITEBYTECODE=1
+94:  PYTHONHASHSEED=0
+94:  LC_ALL=C
+94:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+94:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+94: Test timeout computed to be: 90
+94: zero-leaf.nl CHECK USIZE-REMAINDER-ZERO named no-clobber PASS
+94: type-leaf.nl CHECK USIZE-DIVISION-TYPE named no-clobber PASS
+94: range-leaf.nl CHECK USIZE-LITERAL-RANGE named no-clobber PASS
+94: nested-helper.nl C1298 lawful helper composition C17 PASS
+ 26/132 Test  #94: p1561_negative.unit ......................   Passed    0.07 sec
+test 95
+        Start  95: p1561_authenticity.unit
+
+95: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "authenticity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-authenticity"
+95: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+95: Environment variables: 
+95:  PYTHONDONTWRITEBYTECODE=1
+95:  PYTHONHASHSEED=0
+95:  LC_ALL=C
+95:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+95:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+95: Test timeout computed to be: 90
+95: IDENTITY callee/operator/result/source rejected with equal values; restoration PASS
+ 27/132 Test  #95: p1561_authenticity.unit ..................   Passed    0.04 sec
+test 96
+        Start  96: p1561_second-leaf-oom.unit
+
+96: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "second-leaf-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-second-leaf-oom"
+96: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+96: Environment variables: 
+96:  PYTHONDONTWRITEBYTECODE=1
+96:  PYTHONHASHSEED=0
+96:  LC_ALL=C
+96:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+96:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+96: Test timeout computed to be: 90
+96: FAULT status=4 allocation=1 visits=2 hits=1
+96: SOURCE PASS
+96: CHECK PASS
+96: DEFINITION unknown=3
+96: OUTER result=1 world=1 division=0 remainder=0
+96: CALL slices slice_count / - 157 8 19 tail 12 2 2 5 5 0 3 seal=1
+96: BIND slices 3 19 5
+96: COPY carried_slices slices 5 6
+96: BIND carried_slices 4 19 6
+96: CALL phase window_phase % carried_slices 19 7 5 return 13 7 5 10 12 6 8 seal=1
+96: BIND phase 8 5 12
+96: BIND available_slices 9 16 15
+96: CALL lanes lane_count / available_slices 16 3 5 tail 10 16 10 19 19 15 17 seal=1
+96: BIND lanes 11 5 19
+96: COPY phase_copy phase 12 20
+96: BIND phase_copy 12 5 20
+96: CALL phase_lanes lane_count / phase_copy 5 3 1 tail 10 21 13 24 24 20 22 seal=1
+96: BIND phase_lanes 14 1 24
+96: CALL next_phase window_phase % - 26 7 5 return 13 25 15 28 30 0 26 seal=1
+96: BIND next_phase 18 5 30
+96: COPY retained_phase phase 12 31
+96: BIND retained_phase 19 5 31
+96: BIND free_slots 20 3 34
+96: OOM second-leaf-oom hit=1 no-clobber=PASS retry=PASS
+ 28/132 Test  #96: p1561_second-leaf-oom.unit ...............   Passed    0.03 sec
+test 97
+        Start  97: p1561_outer-nodes-oom.unit
+
+97: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "outer-nodes-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-outer-nodes-oom"
+97: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+97: Environment variables: 
+97:  PYTHONDONTWRITEBYTECODE=1
+97:  PYTHONHASHSEED=0
+97:  LC_ALL=C
+97:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+97:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+97: Test timeout computed to be: 90
+97: FAULT status=4 allocation=1 visits=1 hits=1
+97: SOURCE PASS
+97: CHECK PASS
+97: DEFINITION unknown=3
+97: OUTER result=1 world=1 division=0 remainder=0
+97: CALL slices slice_count / - 157 8 19 tail 12 2 2 5 5 0 3 seal=1
+97: BIND slices 3 19 5
+97: COPY carried_slices slices 5 6
+97: BIND carried_slices 4 19 6
+97: CALL phase window_phase % carried_slices 19 7 5 return 13 7 5 10 12 6 8 seal=1
+97: BIND phase 8 5 12
+97: BIND available_slices 9 16 15
+97: CALL lanes lane_count / available_slices 16 3 5 tail 10 16 10 19 19 15 17 seal=1
+97: BIND lanes 11 5 19
+97: COPY phase_copy phase 12 20
+97: BIND phase_copy 12 5 20
+97: CALL phase_lanes lane_count / phase_copy 5 3 1 tail 10 21 13 24 24 20 22 seal=1
+97: BIND phase_lanes 14 1 24
+97: CALL next_phase window_phase % - 26 7 5 return 13 25 15 28 30 0 26 seal=1
+97: BIND next_phase 18 5 30
+97: COPY retained_phase phase 12 31
+97: BIND retained_phase 19 5 31
+97: BIND free_slots 20 3 34
+97: OOM outer-nodes-oom hit=1 no-clobber=PASS retry=PASS
+ 29/132 Test  #97: p1561_outer-nodes-oom.unit ...............   Passed    0.04 sec
+test 98
+        Start  98: p1561_outer-world-oom.unit
+
+98: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "outer-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-outer-world-oom"
+98: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+98: Environment variables: 
+98:  PYTHONDONTWRITEBYTECODE=1
+98:  PYTHONHASHSEED=0
+98:  LC_ALL=C
+98:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+98:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+98: Test timeout computed to be: 90
+98: FAULT status=4 allocation=2 visits=1 hits=1
+98: SOURCE PASS
+98: CHECK PASS
+98: DEFINITION unknown=3
+98: OUTER result=1 world=1 division=0 remainder=0
+98: CALL slices slice_count / - 157 8 19 tail 12 2 2 5 5 0 3 seal=1
+98: BIND slices 3 19 5
+98: COPY carried_slices slices 5 6
+98: BIND carried_slices 4 19 6
+98: CALL phase window_phase % carried_slices 19 7 5 return 13 7 5 10 12 6 8 seal=1
+98: BIND phase 8 5 12
+98: BIND available_slices 9 16 15
+98: CALL lanes lane_count / available_slices 16 3 5 tail 10 16 10 19 19 15 17 seal=1
+98: BIND lanes 11 5 19
+98: COPY phase_copy phase 12 20
+98: BIND phase_copy 12 5 20
+98: CALL phase_lanes lane_count / phase_copy 5 3 1 tail 10 21 13 24 24 20 22 seal=1
+98: BIND phase_lanes 14 1 24
+98: CALL next_phase window_phase % - 26 7 5 return 13 25 15 28 30 0 26 seal=1
+98: BIND next_phase 18 5 30
+98: COPY retained_phase phase 12 31
+98: BIND retained_phase 19 5 31
+98: BIND free_slots 20 3 34
+98: OOM outer-world-oom hit=1 no-clobber=PASS retry=PASS
+ 30/132 Test  #98: p1561_outer-world-oom.unit ...............   Passed    0.04 sec
+test 99
+        Start  99: p1561_staging-oom.unit
+
+99: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1561/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1561-staging-oom"
+99: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+99: Environment variables: 
+99:  PYTHONDONTWRITEBYTECODE=1
+99:  PYTHONHASHSEED=0
+99:  LC_ALL=C
+99:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+99:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+99: Test timeout computed to be: 90
+99: FAULT status=4 allocation=1 hits=1
+99: SOURCE PASS
+99: CHECK PASS
+99: DEFINITION unknown=3
+99: OUTER result=1 world=1 division=0 remainder=0
+99: CALL slices slice_count / - 157 8 19 tail 12 1 1 4 4 0 2 seal=1
+99: BIND slices 2 19 4
+99: COPY carried_slices slices 4 5
+99: BIND carried_slices 3 19 5
+99: CALL phase window_phase % carried_slices 19 7 5 return 13 6 4 9 11 5 7 seal=1
+99: BIND phase 7 5 11
+99: BIND available_slices 8 16 14
+99: CALL lanes lane_count / available_slices 16 3 5 tail 10 15 9 18 18 14 16 seal=1
+99: BIND lanes 10 5 18
+99: COPY phase_copy phase 11 19
+99: BIND phase_copy 11 5 19
+99: CALL phase_lanes lane_count / phase_copy 5 3 1 tail 10 20 12 23 23 19 21 seal=1
+99: BIND phase_lanes 13 1 23
+99: CALL next_phase window_phase % - 26 7 5 return 13 24 14 27 29 0 25 seal=1
+99: BIND next_phase 17 5 29
+99: COPY retained_phase phase 11 30
+99: BIND retained_phase 18 5 30
+99: BIND free_slots 19 3 33
+99: OOM staging-oom hit=1 no-clobber=PASS retry=PASS
+ 31/132 Test  #99: p1561_staging-oom.unit ...................   Passed    0.04 sec
+test 100
+        Start 100: p1567_positive.unit
+
+100: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-positive"
+100: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+100: Environment variables: 
+100:  PYTHONDONTWRITEBYTECODE=1
+100:  PYTHONHASHSEED=0
+100:  LC_ALL=C
+100:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+100:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+100: Test timeout computed to be: 90
+93: same-leaf.nl gcc 1 definitions, actual values PASS
+93: same-leaf.nl clang 1 definitions, actual values PASS
+93: same-leaf.nl asan 1 definitions, actual values PASS
+93: same-leaf.nl ubsan 1 definitions, actual values PASS
+93: two-quotients.nl gcc 2 definitions, actual values PASS
+93: two-quotients.nl clang 2 definitions, actual values PASS
+93: two-quotients.nl asan 2 definitions, actual values PASS
+93: two-quotients.nl ubsan 2 definitions, actual values PASS
+93: mixed-window.nl gcc 3 definitions, actual values PASS
+93: mixed-window.nl clang 3 definitions, actual values PASS
+93: mixed-window.nl asan 3 definitions, actual values PASS
+93: mixed-window.nl ubsan 3 definitions, actual values PASS
+ 32/132 Test  #93: p1561_positive.unit ......................   Passed    0.70 sec
+test 101
+        Start 101: p1567_negative.unit
+
+101: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-negative"
+101: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+101: Environment variables: 
+101:  PYTHONDONTWRITEBYTECODE=1
+101:  PYTHONHASHSEED=0
+101:  LC_ALL=C
+101:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+101:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+101: Test timeout computed to be: 90
+100: shelves-direct gcc PASS
+100: shelves-aliases gcc PASS
+100: shelves-aliases clang PASS
+100: mixed-lots gcc PASS
+100: mixed-lots clang PASS
+100: mixed-lots exact-c17 PASS
+100: mixed-lots asan PASS
+100: mixed-lots ubsan PASS
+ 33/132 Test #100: p1567_positive.unit ......................   Passed    0.43 sec
+test 102
+        Start 102: p1567_identity.unit
+
+102: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-identity"
+102: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+102: Environment variables: 
+102:  PYTHONDONTWRITEBYTECODE=1
+102:  PYTHONHASHSEED=0
+102:  LC_ALL=C
+102:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+102:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+102: Test timeout computed to be: 90
+101: equal-literal named no-clobber PASS
+101: return-prefix named no-clobber PASS
+101: zero named no-clobber PASS
+101: wrong-type named no-clobber PASS
+102: IDENTITY equal-valued operand/result and foreign receipt rejected; restoration PASS
+ 34/132 Test #101: p1567_negative.unit ......................   Passed    0.05 sec
+test 103
+        Start 103: p1567_second-leaf-oom.unit
+
+103: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "second-leaf-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-second-leaf-oom"
+103: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+103: Environment variables: 
+103:  PYTHONDONTWRITEBYTECODE=1
+103:  PYTHONHASHSEED=0
+103:  LC_ALL=C
+103:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+103:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+103: Test timeout computed to be: 90
+ 35/132 Test #102: p1567_identity.unit ......................   Passed    0.03 sec
+test 104
+        Start 104: p1567_outer-nodes-oom.unit
+
+104: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "outer-nodes-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-outer-nodes-oom"
+104: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+104: Environment variables: 
+104:  PYTHONDONTWRITEBYTECODE=1
+104:  PYTHONHASHSEED=0
+104:  LC_ALL=C
+104:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+104:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+104: Test timeout computed to be: 90
+103: FAULT status=4 allocation=1 visits=2 hits=1
+103: SOURCE PASS
+103: CHECK PASS
+103: DEFINITION unknown=2
+103: OUTER result=1 world=1 plan=1 machine=1
+103: COPY initial pre measured 2 3 3
+103: CALL initial groups / 99 5 19 1 0 tail 10 2 2 3 4 6 6 0 seal=1 plan=1 event=1
+103: BIND initial 4 19 6
+103: BIND retained_groups 5 19 7
+103: COPY coarse pre saved 6 7 9
+103: COPY coarse pre other 6 8 10
+103: COPY coarse pre dispatch 7 9 11
+103: COPY coarse post published 10 11 15
+103: CALL coarse offset % 19 7 5 3 1 return 12 8 6 9 12 14 16 5 seal=1 plan=1 event=1
+103: BIND coarse 12 5 16
+103: COPY normalized pre measured 13 14 18
+103: CALL normalized groups / 5 5 1 1 0 tail 10 17 13 14 19 21 21 12 seal=1 plan=1 event=1
+103: BIND normalized 15 1 21
+103: COPY repeat pre saved 16 17 23
+103: COPY repeat pre other 16 18 24
+103: COPY repeat pre dispatch 17 19 25
+103: COPY repeat post published 20 21 29
+103: CALL repeat offset % 12 7 5 3 1 return 12 22 16 19 26 28 30 0 seal=1 plan=1 event=1
+103: BIND repeat 22 5 30
+103: BIND retained_coarse 23 5 31
+103: BIND with_pad 24 7 34
+103: BIND allocation 25 18 37
+103: OOM second-leaf-oom hit=1 no-clobber=PASS retry=PASS
+ 36/132 Test #103: p1567_second-leaf-oom.unit ...............   Passed    0.05 sec
+test 105
+        Start 105: p1567_outer-world-oom.unit
+
+105: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "outer-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-outer-world-oom"
+105: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+105: Environment variables: 
+105:  PYTHONDONTWRITEBYTECODE=1
+105:  PYTHONHASHSEED=0
+105:  LC_ALL=C
+105:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+105:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+105: Test timeout computed to be: 90
+104: FAULT status=4 allocation=1 visits=1 hits=1
+104: SOURCE PASS
+104: CHECK PASS
+104: DEFINITION unknown=2
+104: OUTER result=1 world=1 plan=1 machine=1
+104: COPY initial pre measured 2 3 3
+104: CALL initial groups / 99 5 19 1 0 tail 10 2 2 3 4 6 6 0 seal=1 plan=1 event=1
+104: BIND initial 4 19 6
+104: BIND retained_groups 5 19 7
+104: COPY coarse pre saved 6 7 9
+104: COPY coarse pre other 6 8 10
+104: COPY coarse pre dispatch 7 9 11
+104: COPY coarse post published 10 11 15
+104: CALL coarse offset % 19 7 5 3 1 return 12 8 6 9 12 14 16 5 seal=1 plan=1 event=1
+104: BIND coarse 12 5 16
+104: COPY normalized pre measured 13 14 18
+104: CALL normalized groups / 5 5 1 1 0 tail 10 17 13 14 19 21 21 12 seal=1 plan=1 event=1
+104: BIND normalized 15 1 21
+104: COPY repeat pre saved 16 17 23
+104: COPY repeat pre other 16 18 24
+104: COPY repeat pre dispatch 17 19 25
+104: COPY repeat post published 20 21 29
+104: CALL repeat offset % 12 7 5 3 1 return 12 22 16 19 26 28 30 0 seal=1 plan=1 event=1
+104: BIND repeat 22 5 30
+104: BIND retained_coarse 23 5 31
+104: BIND with_pad 24 7 34
+104: BIND allocation 25 18 37
+104: OOM outer-nodes-oom hit=1 no-clobber=PASS retry=PASS
+ 37/132 Test #104: p1567_outer-nodes-oom.unit ...............   Passed    0.06 sec
+test 106
+        Start 106: p1567_staging-oom.unit
+
+106: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1567/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1567-staging-oom"
+106: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+106: Environment variables: 
+106:  PYTHONDONTWRITEBYTECODE=1
+106:  PYTHONHASHSEED=0
+106:  LC_ALL=C
+106:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+106:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+106: Test timeout computed to be: 90
+105: FAULT status=4 allocation=2 visits=1 hits=1
+105: SOURCE PASS
+105: CHECK PASS
+105: DEFINITION unknown=2
+105: OUTER result=1 world=1 plan=1 machine=1
+105: COPY initial pre measured 2 3 3
+105: CALL initial groups / 99 5 19 1 0 tail 10 2 2 3 4 6 6 0 seal=1 plan=1 event=1
+105: BIND initial 4 19 6
+105: BIND retained_groups 5 19 7
+105: COPY coarse pre saved 6 7 9
+105: COPY coarse pre other 6 8 10
+105: COPY coarse pre dispatch 7 9 11
+105: COPY coarse post published 10 11 15
+105: CALL coarse offset % 19 7 5 3 1 return 12 8 6 9 12 14 16 5 seal=1 plan=1 event=1
+105: BIND coarse 12 5 16
+105: COPY normalized pre measured 13 14 18
+105: CALL normalized groups / 5 5 1 1 0 tail 10 17 13 14 19 21 21 12 seal=1 plan=1 event=1
+105: BIND normalized 15 1 21
+105: COPY repeat pre saved 16 17 23
+105: COPY repeat pre other 16 18 24
+105: COPY repeat pre dispatch 17 19 25
+105: COPY repeat post published 20 21 29
+105: CALL repeat offset % 12 7 5 3 1 return 12 22 16 19 26 28 30 0 seal=1 plan=1 event=1
+105: BIND repeat 22 5 30
+105: BIND retained_coarse 23 5 31
+105: BIND with_pad 24 7 34
+105: BIND allocation 25 18 37
+105: OOM outer-world-oom hit=1 no-clobber=PASS retry=PASS
+ 38/132 Test #105: p1567_outer-world-oom.unit ...............   Passed    0.04 sec
+test 107
+        Start 107: p1572_positive.unit
+
+107: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-positive"
+107: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+107: Environment variables: 
+107:  PYTHONDONTWRITEBYTECODE=1
+107:  PYTHONHASHSEED=0
+107:  LC_ALL=C
+107:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+107:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+107: Test timeout computed to be: 90
+106: FAULT status=4 allocation=1 hits=1
+106: SOURCE PASS
+106: CHECK PASS
+106: DEFINITION unknown=2
+106: OUTER result=1 world=1 plan=1 machine=1
+106: COPY initial pre measured 1 2 2
+106: CALL initial groups / 99 5 19 1 0 tail 10 1 1 2 3 5 5 0 seal=1 plan=1 event=1
+106: BIND initial 3 19 5
+106: BIND retained_groups 4 19 6
+106: COPY coarse pre saved 5 6 8
+106: COPY coarse pre other 5 7 9
+106: COPY coarse pre dispatch 6 8 10
+106: COPY coarse post published 9 10 14
+106: CALL coarse offset % 19 7 5 3 1 return 12 7 5 8 11 13 15 4 seal=1 plan=1 event=1
+106: BIND coarse 11 5 15
+106: COPY normalized pre measured 12 13 17
+106: CALL normalized groups / 5 5 1 1 0 tail 10 16 12 13 18 20 20 11 seal=1 plan=1 event=1
+106: BIND normalized 14 1 20
+106: COPY repeat pre saved 15 16 22
+106: COPY repeat pre other 15 17 23
+106: COPY repeat pre dispatch 16 18 24
+106: COPY repeat post published 19 20 28
+106: CALL repeat offset % 12 7 5 3 1 return 12 21 15 18 25 27 29 0 seal=1 plan=1 event=1
+106: BIND repeat 21 5 29
+106: BIND retained_coarse 22 5 30
+106: BIND with_pad 23 7 33
+106: BIND allocation 24 18 36
+106: OOM staging-oom hit=1 no-clobber=PASS retry=PASS
+ 39/132 Test #106: p1567_staging-oom.unit ...................   Passed    0.04 sec
+test 108
+        Start 108: p1572_negative.unit
+
+108: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-negative"
+108: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+108: Environment variables: 
+108:  PYTHONDONTWRITEBYTECODE=1
+108:  PYTHONHASHSEED=0
+108:  LC_ALL=C
+108:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+108:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+108: Test timeout computed to be: 90
+108: equal-helper named no-clobber PASS
+108: divisor-zero named no-clobber PASS
+108: operand-type named no-clobber PASS
+108: dynamic-divisor named no-clobber PASS
+108: invalid-return named no-clobber PASS
+ 40/132 Test #108: p1572_negative.unit ......................   Passed    0.06 sec
+test 109
+        Start 109: p1572_identity.unit
+
+109: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-identity"
+109: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+109: Environment variables: 
+109:  PYTHONDONTWRITEBYTECODE=1
+109:  PYTHONHASHSEED=0
+109:  LC_ALL=C
+109:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+109:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+109: Test timeout computed to be: 90
+109: IDENTITY body-only, foreign receipt/RETURN and equal-valued substitutions rejected; restoration PASS
+ 41/132 Test #109: p1572_identity.unit ......................   Passed    0.04 sec
+test 110
+        Start 110: p1572_second-leaf-oom.unit
+
+110: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "second-leaf-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-second-leaf-oom"
+110: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+110: Environment variables: 
+110:  PYTHONDONTWRITEBYTECODE=1
+110:  PYTHONHASHSEED=0
+110:  LC_ALL=C
+110:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+110:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+110: Test timeout computed to be: 90
+110: FAULT status=4 allocation=1 visits=2 hits=1
+110: SOURCE PASS
+110: CHECK PASS
+110: DEFINITION unknown=2
+110: OUTER result=1 world=1 plan=1 machine=1 calls=3
+110: BIND load 2 205 2
+110: DIRECT full / load 205 6 34 2 2 3 5 event=1
+110: BIND full 3 34 5
+110: BIND prior 4 34 6
+110: COPY remainder pre audit 5 6 8
+110: COPY remainder post retained 7 8 12
+110: CALL remainder offset % 34 11 1 1 1 return 11 7 5 6 9 11 13 4 seal=1 plan=1 event=1
+110: BIND remainder 9 1 13
+110: DIRECT carry % full 34 9 7 3 5 14 16 event=1
+110: BIND carry 10 7 16
+110: COPY bins pre safe 11 12 18
+110: CALL bins portions / 7 4 1 1 0 tail 12 17 11 12 19 21 21 10 seal=1 plan=1 event=1
+110: BIND bins 13 1 21
+110: DIRECT odd % prior 34 7 6 4 6 22 24 event=1
+110: BIND odd 14 6 24
+110: COPY repeats pre audit 15 16 26
+110: COPY repeats post retained 17 18 30
+110: CALL repeats offset % 6 11 6 1 1 return 11 25 15 16 27 29 31 14 seal=1 plan=1 event=1
+110: BIND repeats 19 6 31
+110: DIRECT from_leaf / repeats 6 4 1 19 31 32 34 event=1
+110: BIND from_leaf 20 1 34
+110: BIND combined 21 2 37
+110: BIND kept 22 6 40
+110: EXIT return edges=1 payload=0
+110: OOM second-leaf-oom hit=1 no-clobber=PASS retry=PASS
+ 42/132 Test #110: p1572_second-leaf-oom.unit ...............   Passed    0.05 sec
+test 111
+        Start 111: p1572_outer-nodes-oom.unit
+
+111: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "outer-nodes-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-outer-nodes-oom"
+111: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+111: Environment variables: 
+111:  PYTHONDONTWRITEBYTECODE=1
+111:  PYTHONHASHSEED=0
+111:  LC_ALL=C
+111:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+111:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+111: Test timeout computed to be: 90
+111: FAULT status=4 allocation=1 visits=1 hits=1
+111: SOURCE PASS
+111: CHECK PASS
+111: DEFINITION unknown=0
+111: OUTER result=1 world=1 plan=1 machine=1 calls=0
+111: BIND trips 2 74 2
+111: BIND carried 3 74 3
+111: DIRECT full / carried 74 8 9 3 3 4 6 event=1
+111: BIND full 4 9 6
+111: DIRECT spill % carried 74 8 2 3 3 7 9 event=1
+111: BIND spill 5 2 9
+111: BIND saved 6 9 10
+111: BIND slots 7 11 13
+111: BIND final_count 8 10 16
+111: EXIT tail edges=0 payload=0
+111: OOM outer-nodes-oom hit=1 no-clobber=PASS retry=PASS
+ 43/132 Test #111: p1572_outer-nodes-oom.unit ...............   Passed    0.04 sec
+test 112
+        Start 112: p1572_outer-world-oom.unit
+
+112: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "outer-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-outer-world-oom"
+112: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+112: Environment variables: 
+112:  PYTHONDONTWRITEBYTECODE=1
+112:  PYTHONHASHSEED=0
+112:  LC_ALL=C
+112:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+112:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+112: Test timeout computed to be: 90
+112: FAULT status=4 allocation=2 visits=1 hits=1
+112: SOURCE PASS
+112: CHECK PASS
+112: DEFINITION unknown=0
+112: OUTER result=1 world=1 plan=1 machine=1 calls=0
+112: BIND trips 2 74 2
+112: BIND carried 3 74 3
+112: DIRECT full / carried 74 8 9 3 3 4 6 event=1
+112: BIND full 4 9 6
+112: DIRECT spill % carried 74 8 2 3 3 7 9 event=1
+112: BIND spill 5 2 9
+112: BIND saved 6 9 10
+112: BIND slots 7 11 13
+112: BIND final_count 8 10 16
+112: EXIT return edges=1 payload=0
+112: OOM outer-world-oom hit=1 no-clobber=PASS retry=PASS
+ 44/132 Test #112: p1572_outer-world-oom.unit ...............   Passed    0.05 sec
+test 113
+        Start 113: p1572_staging-oom.unit
+
+113: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1572/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1572-staging-oom"
+113: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+113: Environment variables: 
+113:  PYTHONDONTWRITEBYTECODE=1
+113:  PYTHONHASHSEED=0
+113:  LC_ALL=C
+113:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+113:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+113: Test timeout computed to be: 90
+113: FAULT status=4 allocation=1 hits=1
+113: SOURCE PASS
+113: CHECK PASS
+113: DEFINITION unknown=0
+113: OUTER result=1 world=1 plan=1 machine=1 calls=0
+113: BIND trips 1 74 1
+113: BIND carried 2 74 2
+113: DIRECT full / carried 74 8 9 2 2 3 5 event=1
+113: BIND full 3 9 5
+113: DIRECT spill % carried 74 8 2 2 2 6 8 event=1
+113: BIND spill 4 2 8
+113: BIND saved 5 9 9
+113: BIND slots 6 11 12
+113: BIND final_count 7 10 15
+113: EXIT return edges=1 payload=0
+113: OOM staging-oom hit=1 no-clobber=PASS retry=PASS
+ 45/132 Test #113: p1572_staging-oom.unit ...................   Passed    0.03 sec
+test 114
+        Start 114: p1579_positive.unit
+
+114: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "positive" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-positive"
+114: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+114: Environment variables: 
+114:  PYTHONDONTWRITEBYTECODE=1
+114:  PYTHONHASHSEED=0
+114:  LC_ALL=C
+114:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+114:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+114: Test timeout computed to be: 90
+107: helper-tail gcc PASS
+107: helper-tail clang PASS
+107: turns-tail gcc PASS
+107: turns-tail clang PASS
+107: turns-return gcc PASS
+107: turns-return clang PASS
+107: turns-return exact-c17 PASS
+107: stock-mixed gcc PASS
+107: stock-mixed clang PASS
+107: stock-mixed exact-c17 PASS
+107: stock-mixed asan PASS
+107: stock-mixed ubsan PASS
+ 46/132 Test #107: p1572_positive.unit ......................   Passed    0.68 sec
+test 115
+        Start 115: p1579_negative.unit
+
+115: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-negative"
+115: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+115: Environment variables: 
+115:  PYTHONDONTWRITEBYTECODE=1
+115:  PYTHONHASHSEED=0
+115:  LC_ALL=C
+115:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+115:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+115: Test timeout computed to be: 90
+115: equal-unrelated named no-clobber PASS
+115: unknown-plus named no-clobber PASS
+115: zero-inner named no-clobber PASS
+115: named-divisor named no-clobber PASS
+115: recursive-call named no-clobber PASS
+ 47/132 Test #115: p1579_negative.unit ......................   Passed    0.08 sec
+test 116
+        Start 116: p1579_identity.unit
+
+116: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-identity"
+116: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+116: Environment variables: 
+116:  PYTHONDONTWRITEBYTECODE=1
+116:  PYTHONHASHSEED=0
+116:  LC_ALL=C
+116:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+116:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+116: Test timeout computed to be: 90
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN basket %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN basket %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN basket %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: UNKNOWN basket %
+116: UNKNOWN parts /
+116: UNKNOWN parts %
+116: IDENTITY later repeated nested actual/result, foreign receipt/RETURN rejected; restoration PASS
+ 48/132 Test #116: p1579_identity.unit ......................   Passed    0.08 sec
+test 117
+        Start 117: p1579_nested-result-oom.unit
+
+117: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "nested-result-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-nested-result-oom"
+117: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+117: Environment variables: 
+117:  PYTHONDONTWRITEBYTECODE=1
+117:  PYTHONHASHSEED=0
+117:  LC_ALL=C
+117:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+117:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+117: Test timeout computed to be: 90
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: UNKNOWN basket %
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: UNKNOWN basket %
+117: UNKNOWN parts /
+117: UNKNOWN parts %
+117: FAULT status=4 allocation=1 visits=1 hits=1 nested_calls=2
+117: SOURCE PASS
+117: CHECK PASS
+117: DEFINITION unknown=14
+117: OUTER result=1 world=1 plan=1 machine=1 calls=4
+117: BIND start 2 817 2
+117: VISIT main ledger 817 3 tail 11 3 3 62 depth=1 seal=1 plan=1
+117: VISIT ledger parts 817 78 tail 13 4 4 20 depth=2 seal=1 plan=1
+117: COPY parts 4 5
+117: EVENT parts / 817 3 272 6 7 8 valid=1
+117: EVENT parts % 272 97 78 9 10 11 valid=1
+117: EVENT parts + 19 11 30 13 14 15 valid=1
+117: EVENT parts - 30 4 26 16 17 18 valid=1
+117: COPY parts 11 19
+117: VISIT ledger basket 78 3 return 10 21 13 60 depth=2 seal=1 plan=1
+117: VISIT basket parts 78 26 tail 13 22 14 38 depth=3 seal=1 plan=1
+117: COPY parts 22 23
+117: EVENT parts / 78 3 26 24 25 26 valid=1
+117: EVENT parts % 26 97 26 27 28 29 valid=1
+117: EVENT parts + 19 11 30 31 32 33 valid=1
+117: EVENT parts - 30 4 26 34 35 36 valid=1
+117: COPY parts 29 37
+117: VISIT basket parts 26 8 tail 13 39 23 55 depth=3 seal=1 plan=1
+117: COPY parts 39 40
+117: EVENT parts / 26 3 8 41 42 43 valid=1
+117: EVENT parts % 8 97 8 44 45 46 valid=1
+117: EVENT parts + 19 11 30 48 49 50 valid=1
+117: EVENT parts - 30 4 26 51 52 53 valid=1
+117: COPY parts 46 54
+117: EVENT basket % 8 5 3 56 57 58 valid=1
+117: COPY basket 58 59
+117: COPY ledger 60 61
+117: BIND total 36 3 62
+117: VISIT main ledger 348 2 tail 11 63 37 122 depth=1 seal=1 plan=1
+117: VISIT ledger parts 348 19 tail 13 64 38 80 depth=2 seal=1 plan=1
+117: COPY parts 64 65
+117: EVENT parts / 348 3 116 66 67 68 valid=1
+117: EVENT parts % 116 97 19 69 70 71 valid=1
+117: EVENT parts + 19 11 30 73 74 75 valid=1
+117: EVENT parts - 30 4 26 76 77 78 valid=1
+117: COPY parts 71 79
+117: VISIT ledger basket 19 2 return 10 81 47 120 depth=2 seal=1 plan=1
+117: VISIT basket parts 19 6 tail 13 82 48 98 depth=3 seal=1 plan=1
+117: COPY parts 82 83
+117: EVENT parts / 19 3 6 84 85 86 valid=1
+117: EVENT parts % 6 97 6 87 88 89 valid=1
+117: EVENT parts + 19 11 30 91 92 93 valid=1
+117: EVENT parts - 30 4 26 94 95 96 valid=1
+117: COPY parts 89 97
+117: VISIT basket parts 6 2 tail 13 99 57 115 depth=3 seal=1 plan=1
+117: COPY parts 99 100
+117: EVENT parts / 6 3 2 101 102 103 valid=1
+117: EVENT parts % 2 97 2 104 105 106 valid=1
+117: EVENT parts + 19 11 30 108 109 110 valid=1
+117: EVENT parts - 30 4 26 111 112 113 valid=1
+117: COPY parts 106 114
+117: EVENT basket % 2 5 2 116 117 118 valid=1
+117: COPY basket 118 119
+117: COPY ledger 120 121
+117: BIND repeated 70 2 122
+117: VISIT main basket 164 3 return 10 123 71 162 depth=1 seal=1 plan=1
+117: VISIT basket parts 164 54 tail 13 124 72 140 depth=2 seal=1 plan=1
+117: COPY parts 124 125
+117: EVENT parts / 164 3 54 126 127 128 valid=1
+117: EVENT parts % 54 97 54 129 130 131 valid=1
+117: EVENT parts + 19 11 30 133 134 135 valid=1
+117: EVENT parts - 30 4 26 136 137 138 valid=1
+117: COPY parts 131 139
+117: VISIT basket parts 54 18 tail 13 141 81 157 depth=2 seal=1 plan=1
+117: COPY parts 141 142
+117: EVENT parts / 54 3 18 143 144 145 valid=1
+117: EVENT parts % 18 97 18 146 147 148 valid=1
+117: EVENT parts + 19 11 30 150 151 152 valid=1
+117: EVENT parts - 30 4 26 153 154 155 valid=1
+117: COPY parts 148 156
+117: EVENT basket % 18 5 3 158 159 160 valid=1
+117: COPY basket 160 161
+117: BIND direct 92 3 162
+117: VISIT main parts 734 50 tail 13 163 93 179 depth=1 seal=1 plan=1
+117: COPY parts 163 164
+117: EVENT parts / 734 3 244 165 166 167 valid=1
+117: EVENT parts % 244 97 50 168 169 170 valid=1
+117: EVENT parts + 19 11 30 172 173 174 valid=1
+117: EVENT parts - 30 4 26 175 176 177 valid=1
+117: COPY parts 170 178
+117: BIND balance 101 50 179
+117: EVENT main % 50 6 2 180 181 182 valid=1
+117: BIND observed 102 2 182
+117: EVENT main + 3 2 5 183 184 185 valid=1
+117: BIND sum 103 5 185
+117: EXIT return edges=1 payload=0
+117: OOM nested-result-oom hit=1 no-clobber=PASS retry=PASS
+ 49/132 Test #117: p1579_nested-result-oom.unit .............   Passed    0.09 sec
+test 118
+        Start 118: p1579_outer-nodes-oom.unit
+
+118: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "outer-nodes-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-outer-nodes-oom"
+118: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+118: Environment variables: 
+118:  PYTHONDONTWRITEBYTECODE=1
+118:  PYTHONHASHSEED=0
+118:  LC_ALL=C
+118:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+118:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+118: Test timeout computed to be: 90
+118: UNKNOWN packed /
+118: UNKNOWN packed %
+118: FAULT status=4 allocation=1 visits=1 hits=1 nested_calls=0
+118: SOURCE PASS
+118: CHECK PASS
+118: DEFINITION unknown=2
+118: OUTER result=1 world=1 plan=1 machine=1 calls=1
+118: BIND parcels 2 271 2
+118: VISIT main packed 271 2 tail 11 3 3 13 depth=1 seal=1 plan=1
+118: COPY packed 3 4
+118: EVENT packed / 271 7 38 5 6 7 valid=1
+118: COPY packed 7 8
+118: EVENT packed % 38 9 2 9 10 11 valid=1
+118: COPY packed 11 12
+118: BIND slots 9 2 13
+118: COPY main 13 14
+118: BIND saved 10 2 14
+118: EVENT main + 2 4 6 15 16 17 valid=1
+118: BIND observed 11 6 17
+118: EXIT tail edges=0 payload=0
+118: OOM outer-nodes-oom hit=1 no-clobber=PASS retry=PASS
+ 50/132 Test #118: p1579_outer-nodes-oom.unit ...............   Passed    0.06 sec
+test 119
+        Start 119: p1579_outer-world-oom.unit
+
+119: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "outer-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-outer-world-oom"
+119: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+119: Environment variables: 
+119:  PYTHONDONTWRITEBYTECODE=1
+119:  PYTHONHASHSEED=0
+119:  LC_ALL=C
+119:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+119:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+119: Test timeout computed to be: 90
+114: parcels-flat gcc PASS
+114: parcels-flat clang PASS
+114: parcels-extracted gcc PASS
+114: parcels-extracted clang PASS
+114: ledger-shared gcc PASS
+114: ledger-shared clang PASS
+114: ledger-shared exact-c17 PASS
+114: ledger-shared asan PASS
+114: ledger-shared ubsan PASS
+114: return-call gcc PASS
+114: return-call clang PASS
+114: return-call exact-c17 PASS
+ 51/132 Test #114: p1579_positive.unit ......................   Passed    0.73 sec
+test 120
+        Start 120: p1579_staging-oom.unit
+
+120: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1579/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1579-staging-oom"
+120: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+120: Environment variables: 
+120:  PYTHONDONTWRITEBYTECODE=1
+120:  PYTHONHASHSEED=0
+120:  LC_ALL=C
+120:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+120:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+120: Test timeout computed to be: 90
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: UNKNOWN basket %
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: UNKNOWN basket %
+119: UNKNOWN parts /
+119: UNKNOWN parts %
+119: FAULT status=4 allocation=2 visits=1 hits=1 nested_calls=0
+119: SOURCE PASS
+119: CHECK PASS
+119: DEFINITION unknown=14
+119: OUTER result=1 world=1 plan=1 machine=1 calls=4
+119: BIND start 2 817 2
+119: VISIT main ledger 817 3 tail 11 3 3 62 depth=1 seal=1 plan=1
+119: VISIT ledger parts 817 78 tail 13 4 4 20 depth=2 seal=1 plan=1
+119: COPY parts 4 5
+119: EVENT parts / 817 3 272 6 7 8 valid=1
+119: EVENT parts % 272 97 78 9 10 11 valid=1
+119: EVENT parts + 19 11 30 13 14 15 valid=1
+119: EVENT parts - 30 4 26 16 17 18 valid=1
+119: COPY parts 11 19
+119: VISIT ledger basket 78 3 return 10 21 13 60 depth=2 seal=1 plan=1
+119: VISIT basket parts 78 26 tail 13 22 14 38 depth=3 seal=1 plan=1
+119: COPY parts 22 23
+119: EVENT parts / 78 3 26 24 25 26 valid=1
+119: EVENT parts % 26 97 26 27 28 29 valid=1
+119: EVENT parts + 19 11 30 31 32 33 valid=1
+119: EVENT parts - 30 4 26 34 35 36 valid=1
+119: COPY parts 29 37
+119: VISIT basket parts 26 8 tail 13 39 23 55 depth=3 seal=1 plan=1
+119: COPY parts 39 40
+119: EVENT parts / 26 3 8 41 42 43 valid=1
+119: EVENT parts % 8 97 8 44 45 46 valid=1
+119: EVENT parts + 19 11 30 48 49 50 valid=1
+119: EVENT parts - 30 4 26 51 52 53 valid=1
+119: COPY parts 46 54
+119: EVENT basket % 8 5 3 56 57 58 valid=1
+119: COPY basket 58 59
+119: COPY ledger 60 61
+119: BIND total 36 3 62
+119: VISIT main ledger 348 2 tail 11 63 37 122 depth=1 seal=1 plan=1
+119: VISIT ledger parts 348 19 tail 13 64 38 80 depth=2 seal=1 plan=1
+119: COPY parts 64 65
+119: EVENT parts / 348 3 116 66 67 68 valid=1
+119: EVENT parts % 116 97 19 69 70 71 valid=1
+119: EVENT parts + 19 11 30 73 74 75 valid=1
+119: EVENT parts - 30 4 26 76 77 78 valid=1
+119: COPY parts 71 79
+119: VISIT ledger basket 19 2 return 10 81 47 120 depth=2 seal=1 plan=1
+119: VISIT basket parts 19 6 tail 13 82 48 98 depth=3 seal=1 plan=1
+119: COPY parts 82 83
+119: EVENT parts / 19 3 6 84 85 86 valid=1
+119: EVENT parts % 6 97 6 87 88 89 valid=1
+119: EVENT parts + 19 11 30 91 92 93 valid=1
+119: EVENT parts - 30 4 26 94 95 96 valid=1
+119: COPY parts 89 97
+119: VISIT basket parts 6 2 tail 13 99 57 115 depth=3 seal=1 plan=1
+119: COPY parts 99 100
+119: EVENT parts / 6 3 2 101 102 103 valid=1
+119: EVENT parts % 2 97 2 104 105 106 valid=1
+119: EVENT parts + 19 11 30 108 109 110 valid=1
+119: EVENT parts - 30 4 26 111 112 113 valid=1
+119: COPY parts 106 114
+119: EVENT basket % 2 5 2 116 117 118 valid=1
+119: COPY basket 118 119
+119: COPY ledger 120 121
+119: BIND repeated 70 2 122
+119: VISIT main basket 164 3 return 10 123 71 162 depth=1 seal=1 plan=1
+119: VISIT basket parts 164 54 tail 13 124 72 140 depth=2 seal=1 plan=1
+119: COPY parts 124 125
+119: EVENT parts / 164 3 54 126 127 128 valid=1
+119: EVENT parts % 54 97 54 129 130 131 valid=1
+119: EVENT parts + 19 11 30 133 134 135 valid=1
+119: EVENT parts - 30 4 26 136 137 138 valid=1
+119: COPY parts 131 139
+119: VISIT basket parts 54 18 tail 13 141 81 157 depth=2 seal=1 plan=1
+119: COPY parts 141 142
+119: EVENT parts / 54 3 18 143 144 145 valid=1
+119: EVENT parts % 18 97 18 146 147 148 valid=1
+119: EVENT parts + 19 11 30 150 151 152 valid=1
+119: EVENT parts - 30 4 26 153 154 155 valid=1
+119: COPY parts 148 156
+119: EVENT basket % 18 5 3 158 159 160 valid=1
+119: COPY basket 160 161
+119: BIND direct 92 3 162
+119: VISIT main parts 734 50 tail 13 163 93 179 depth=1 seal=1 plan=1
+119: COPY parts 163 164
+119: EVENT parts / 734 3 244 165 166 167 valid=1
+119: EVENT parts % 244 97 50 168 169 170 valid=1
+119: EVENT parts + 19 11 30 172 173 174 valid=1
+119: EVENT parts - 30 4 26 175 176 177 valid=1
+119: COPY parts 170 178
+119: BIND balance 101 50 179
+119: EVENT main % 50 6 2 180 181 182 valid=1
+119: BIND observed 102 2 182
+119: EVENT main + 3 2 5 183 184 185 valid=1
+119: BIND sum 103 5 185
+119: EXIT return edges=1 payload=0
+119: OOM outer-world-oom hit=1 no-clobber=PASS retry=PASS
+ 52/132 Test #119: p1579_outer-world-oom.unit ...............   Passed    0.10 sec
+test 121
+        Start 121: p1587_native.unit
+
+121: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "native" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-native"
+121: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+121: Environment variables: 
+121:  PYTHONDONTWRITEBYTECODE=1
+121:  PYTHONHASHSEED=0
+121:  LC_ALL=C
+121:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+121:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+121: Test timeout computed to be: 90
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: UNKNOWN basket %
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: UNKNOWN basket %
+120: UNKNOWN parts /
+120: UNKNOWN parts %
+120: FAULT status=4 allocation=1 hits=1
+120: SOURCE PASS
+120: CHECK PASS
+120: DEFINITION unknown=14
+120: OUTER result=1 world=1 plan=1 machine=1 calls=4
+120: BIND start 1 817 1
+120: VISIT main ledger 817 3 tail 11 2 2 61 depth=1 seal=1 plan=1
+120: VISIT ledger parts 817 78 tail 13 3 3 19 depth=2 seal=1 plan=1
+120: COPY parts 3 4
+120: EVENT parts / 817 3 272 5 6 7 valid=1
+120: EVENT parts % 272 97 78 8 9 10 valid=1
+120: EVENT parts + 19 11 30 12 13 14 valid=1
+120: EVENT parts - 30 4 26 15 16 17 valid=1
+120: COPY parts 10 18
+120: VISIT ledger basket 78 3 return 10 20 12 59 depth=2 seal=1 plan=1
+120: VISIT basket parts 78 26 tail 13 21 13 37 depth=3 seal=1 plan=1
+120: COPY parts 21 22
+120: EVENT parts / 78 3 26 23 24 25 valid=1
+120: EVENT parts % 26 97 26 26 27 28 valid=1
+120: EVENT parts + 19 11 30 30 31 32 valid=1
+120: EVENT parts - 30 4 26 33 34 35 valid=1
+120: COPY parts 28 36
+120: VISIT basket parts 26 8 tail 13 38 22 54 depth=3 seal=1 plan=1
+120: COPY parts 38 39
+120: EVENT parts / 26 3 8 40 41 42 valid=1
+120: EVENT parts % 8 97 8 43 44 45 valid=1
+120: EVENT parts + 19 11 30 47 48 49 valid=1
+120: EVENT parts - 30 4 26 50 51 52 valid=1
+120: COPY parts 45 53
+120: EVENT basket % 8 5 3 55 56 57 valid=1
+120: COPY basket 57 58
+120: COPY ledger 59 60
+120: BIND total 35 3 61
+120: VISIT main ledger 348 2 tail 11 62 36 121 depth=1 seal=1 plan=1
+120: VISIT ledger parts 348 19 tail 13 63 37 79 depth=2 seal=1 plan=1
+120: COPY parts 63 64
+120: EVENT parts / 348 3 116 65 66 67 valid=1
+120: EVENT parts % 116 97 19 68 69 70 valid=1
+120: EVENT parts + 19 11 30 72 73 74 valid=1
+120: EVENT parts - 30 4 26 75 76 77 valid=1
+120: COPY parts 70 78
+120: VISIT ledger basket 19 2 return 10 80 46 119 depth=2 seal=1 plan=1
+120: VISIT basket parts 19 6 tail 13 81 47 97 depth=3 seal=1 plan=1
+120: COPY parts 81 82
+120: EVENT parts / 19 3 6 83 84 85 valid=1
+120: EVENT parts % 6 97 6 86 87 88 valid=1
+120: EVENT parts + 19 11 30 90 91 92 valid=1
+120: EVENT parts - 30 4 26 93 94 95 valid=1
+120: COPY parts 88 96
+120: VISIT basket parts 6 2 tail 13 98 56 114 depth=3 seal=1 plan=1
+120: COPY parts 98 99
+120: EVENT parts / 6 3 2 100 101 102 valid=1
+120: EVENT parts % 2 97 2 103 104 105 valid=1
+120: EVENT parts + 19 11 30 107 108 109 valid=1
+120: EVENT parts - 30 4 26 110 111 112 valid=1
+120: COPY parts 105 113
+120: EVENT basket % 2 5 2 115 116 117 valid=1
+120: COPY basket 117 118
+120: COPY ledger 119 120
+120: BIND repeated 69 2 121
+120: VISIT main basket 164 3 return 10 122 70 161 depth=1 seal=1 plan=1
+120: VISIT basket parts 164 54 tail 13 123 71 139 depth=2 seal=1 plan=1
+120: COPY parts 123 124
+120: EVENT parts / 164 3 54 125 126 127 valid=1
+120: EVENT parts % 54 97 54 128 129 130 valid=1
+120: EVENT parts + 19 11 30 132 133 134 valid=1
+120: EVENT parts - 30 4 26 135 136 137 valid=1
+120: COPY parts 130 138
+120: VISIT basket parts 54 18 tail 13 140 80 156 depth=2 seal=1 plan=1
+120: COPY parts 140 141
+120: EVENT parts / 54 3 18 142 143 144 valid=1
+120: EVENT parts % 18 97 18 145 146 147 valid=1
+120: EVENT parts + 19 11 30 149 150 151 valid=1
+120: EVENT parts - 30 4 26 152 153 154 valid=1
+120: COPY parts 147 155
+120: EVENT basket % 18 5 3 157 158 159 valid=1
+120: COPY basket 159 160
+120: BIND direct 91 3 161
+120: VISIT main parts 734 50 tail 13 162 92 178 depth=1 seal=1 plan=1
+120: COPY parts 162 163
+120: EVENT parts / 734 3 244 164 165 166 valid=1
+120: EVENT parts % 244 97 50 167 168 169 valid=1
+120: EVENT parts + 19 11 30 171 172 173 valid=1
+120: EVENT parts - 30 4 26 174 175 176 valid=1
+120: COPY parts 169 177
+120: BIND balance 100 50 178
+120: EVENT main % 50 6 2 179 180 181 valid=1
+120: BIND observed 101 2 181
+120: EVENT main + 3 2 5 182 183 184 valid=1
+120: BIND sum 102 5 184
+120: EXIT return edges=1 payload=0
+120: OOM staging-oom hit=1 no-clobber=PASS retry=PASS
+ 53/132 Test #120: p1579_staging-oom.unit ...................   Passed    0.12 sec
+test 122
+        Start 122: p1587_negative.unit
+
+122: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "negative" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-negative"
+122: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+122: Environment variables: 
+122:  PYTHONDONTWRITEBYTECODE=1
+122:  PYTHONHASHSEED=0
+122:  LC_ALL=C
+122:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+122:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+122: Test timeout computed to be: 90
+122: wrong-arm-type 3 3 error(semantic)[P13-IF-RESULT] no-clobber PASS
+122: zero-arm 3 3 error(semantic)[USIZE-REMAINDER-ZERO] no-clobber PASS
+122: unknown-plus 3 3 error(precision)[USIZE-ADDITION-PRECISION] no-clobber PASS
+ 54/132 Test #122: p1587_negative.unit ......................   Passed    0.05 sec
+test 123
+        Start 123: p1587_identity.unit
+
+123: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-identity"
+123: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+123: Environment variables: 
+123:  PYTHONDONTWRITEBYTECODE=1
+123:  PYTHONHASHSEED=0
+123:  LC_ALL=C
+123:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+123:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+123: Test timeout computed to be: 90
+123: IDENTITY same-valued arm/callee/Copy and foreign Unknown join rejected; restore PASS
+123: IDENTITY foreign actual RETURN rejected; restore PASS
+ 55/132 Test #123: p1587_identity.unit ......................   Passed    0.08 sec
+test 124
+        Start 124: p1587_join-oom.unit
+
+124: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "join-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-join-oom"
+124: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+124: Environment variables: 
+124:  PYTHONDONTWRITEBYTECODE=1
+124:  PYTHONHASHSEED=0
+124:  LC_ALL=C
+124:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+124:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+124: Test timeout computed to be: 90
+124: CHECK status=4 code=P3-OUT-OF-MEMORY
+124: OOM site=join status=4 allocation=1 hits=1 visits=1 arms=0
+124: FUNCTION 11 main
+124: BIND 2 intake
+124: BIND 3 spare
+124: BIND 4 primary
+124: IF 14 1 1
+124: FORK 74 25
+124: FUNCTION 13 tickets
+124: ARITH / 1 74
+124: FUNCTION 12 scraps
+124: ARITH % 1 25
+124: BIND 5 chosen
+124: BIND 6 forwarded
+124: ARITH / 0 0
+124: BIND 7 batches
+124: ARITH % 0 0
+124: BIND 8 residue
+124: FUNCTION 10 leftover
+124: ARITH % 0 0
+124: BIND 11 finish
+124: IF 37 1 0
+124: FORK 97 25
+124: FUNCTION 12 scraps
+124: ARITH % 1 25
+124: BIND 12 reserve
+124: BIND 13 copied
+124: ARITH / 0 0
+124: BIND 14 reserve_batches
+124: FUNCTION 10 leftover
+124: ARITH % 0 0
+124: BIND 17 reserve_finish
+124: OOM prior binding/value/place unchanged; normal retry PASS
+ 56/132 Test #124: p1587_join-oom.unit ......................   Passed    0.05 sec
+test 125
+        Start 125: p1587_result-oom.unit
+
+125: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "result-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-result-oom"
+125: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+125: Environment variables: 
+125:  PYTHONDONTWRITEBYTECODE=1
+125:  PYTHONHASHSEED=0
+125:  LC_ALL=C
+125:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+125:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+125: Test timeout computed to be: 90
+125: CHECK status=4 code=P3-OUT-OF-MEMORY
+125: OOM site=result-world status=4 allocation=2 hits=1 visits=1 arms=4
+125: FUNCTION 11 main
+125: BIND 2 intake
+125: BIND 3 spare
+125: BIND 4 primary
+125: IF 14 1 1
+125: FORK 74 25
+125: FUNCTION 13 tickets
+125: ARITH / 1 74
+125: FUNCTION 12 scraps
+125: ARITH % 1 25
+125: BIND 5 chosen
+125: BIND 6 forwarded
+125: ARITH / 0 0
+125: BIND 7 batches
+125: ARITH % 0 0
+125: BIND 8 residue
+125: FUNCTION 10 leftover
+125: ARITH % 0 0
+125: BIND 11 finish
+125: IF 37 1 0
+125: FORK 97 25
+125: FUNCTION 12 scraps
+125: ARITH % 1 25
+125: BIND 12 reserve
+125: BIND 13 copied
+125: ARITH / 0 0
+125: BIND 14 reserve_batches
+125: FUNCTION 10 leftover
+125: ARITH % 0 0
+125: BIND 17 reserve_finish
+125: OOM prior binding/value/place unchanged; normal retry PASS
+ 57/132 Test #125: p1587_result-oom.unit ....................   Passed    0.05 sec
+test 126
+        Start 126: p1587_staging-oom.unit
+
+126: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1587/run.py" "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1587-staging-oom"
+126: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+126: Environment variables: 
+126:  PYTHONDONTWRITEBYTECODE=1
+126:  PYTHONHASHSEED=0
+126:  LC_ALL=C
+126:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+126:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+126: Test timeout computed to be: 90
+126: OOM site=staging status=4 allocation=1 hits=1 retry=0
+126: OOM staged pointer/length/bytes unchanged; byte-equal retry PASS
+ 58/132 Test #126: p1587_staging-oom.unit ...................   Passed    0.04 sec
+test 127
+        Start 127: p1592_native_and_boundaries.unit
+
+127: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1592/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592-native"
+127: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+127: Environment variables: 
+127:  PYTHONDONTWRITEBYTECODE=1
+127:  PYTHONHASHSEED=0
+127:  LC_ALL=C
+127:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+127:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+127: Test timeout computed to be: 90
+127: named-actuals CHECK/owned/C17/GCC+Clang native PASS
+127: direct-actuals CHECK/owned/C17/GCC+Clang native PASS
+127: branch-and-return CHECK/owned/C17/GCC+Clang native PASS
+127: arithmetic-actual CHECK=3 EMIT=3 no-clobber PASS
+127: nested-zero CHECK=3 EMIT=3 no-clobber PASS
+127: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592-native/1795395983480533875 commands=37
+ 59/132 Test #127: p1592_native_and_boundaries.unit .........   Passed    0.74 sec
+test 128
+        Start 128: p1592_identity.unit
+
+128: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1592/source/identity-actuals.nl"
+128: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+128: Environment variables: 
+128:  PYTHONDONTWRITEBYTECODE=1
+128:  PYTHONHASHSEED=0
+128:  LC_ALL=C
+128:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+128:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+128: Test timeout computed to be: 90
+128: CHECK 0 -
+128: IDENTITY same-valued actual edge, result, formal, body and missing parameter type refused; byte-equal restore PASS
+ 60/132 Test #128: p1592_identity.unit ......................   Passed    0.01 sec
+test 129
+        Start 129: p1592_inner-oom.unit
+
+129: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592_probe "inner-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1592/source/direct-actuals.nl"
+129: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+129: Environment variables: 
+129:  PYTHONDONTWRITEBYTECODE=1
+129:  PYTHONHASHSEED=0
+129:  LC_ALL=C
+129:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+129:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+129: Test timeout computed to be: 90
+129: CHECK 4 P3-OUT-OF-MEMORY
+129: OOM inner-seal visits=1 hits=1 bytes=6912 status=4
+129: CHECK 0 -
+129: FUNCTION 11 main
+129: CUSTODY main ordinal=0 call=1 PASS
+129: ENTRY machine-proved world PASS
+129: FUNCTION 10 batch
+129: CUSTODY batch ordinal=0 call=6 PASS
+129: ACTUAL batch call=6 arg=7 inner=0 actual=3 formal=3 result=6 known=1/1
+129: FUNCTION 12 overflow
+129: CUSTODY overflow ordinal=1 call=5 PASS
+129: ACTUAL overflow call=5 arg=6 inner=1 actual=6 formal=6 result=9 known=1/1
+129: FUNCTION 10 batch
+129: CUSTODY batch ordinal=2 call=12 PASS
+129: ACTUAL batch call=12 arg=13 inner=0 actual=10 formal=10 result=13 known=1/1
+129: FUNCTION 12 overflow
+129: CUSTODY overflow ordinal=3 call=11 PASS
+129: ACTUAL overflow call=11 arg=12 inner=1 actual=13 formal=13 result=16 known=1/1
+129: FUNCTION 13 rack
+129: CUSTODY rack ordinal=4 call=10 PASS
+129: ACTUAL rack call=10 arg=11 inner=1 actual=16 formal=16 result=19 known=1/1
+129: BIND 2 order
+129: BIND 5 left
+129: BIND 9 stock
+129: BIND 10 copied
+129: BIND 11 parity
+129: OOM no artifact and caller context/binding/place/value unchanged; normal retry PASS
+ 61/132 Test #129: p1592_inner-oom.unit .....................   Passed    0.01 sec
+test 130
+        Start 130: p1592_outer-oom.unit
+
+130: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592_probe "outer-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1592/source/direct-actuals.nl"
+130: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+130: Environment variables: 
+130:  PYTHONDONTWRITEBYTECODE=1
+130:  PYTHONHASHSEED=0
+130:  LC_ALL=C
+130:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+130:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+130: Test timeout computed to be: 90
+130: CHECK 4 P3-OUT-OF-MEMORY
+130: OOM outer-seal visits=1 hits=1 bytes=6912 status=4
+130: CHECK 0 -
+130: FUNCTION 11 main
+130: CUSTODY main ordinal=0 call=1 PASS
+130: ENTRY machine-proved world PASS
+130: FUNCTION 10 batch
+130: CUSTODY batch ordinal=0 call=6 PASS
+130: ACTUAL batch call=6 arg=7 inner=0 actual=3 formal=3 result=6 known=1/1
+130: FUNCTION 12 overflow
+130: CUSTODY overflow ordinal=1 call=5 PASS
+130: ACTUAL overflow call=5 arg=6 inner=1 actual=6 formal=6 result=9 known=1/1
+130: FUNCTION 10 batch
+130: CUSTODY batch ordinal=2 call=12 PASS
+130: ACTUAL batch call=12 arg=13 inner=0 actual=10 formal=10 result=13 known=1/1
+130: FUNCTION 12 overflow
+130: CUSTODY overflow ordinal=3 call=11 PASS
+130: ACTUAL overflow call=11 arg=12 inner=1 actual=13 formal=13 result=16 known=1/1
+130: FUNCTION 13 rack
+130: CUSTODY rack ordinal=4 call=10 PASS
+130: ACTUAL rack call=10 arg=11 inner=1 actual=16 formal=16 result=19 known=1/1
+130: BIND 2 order
+130: BIND 5 left
+130: BIND 9 stock
+130: BIND 10 copied
+130: BIND 11 parity
+130: OOM no artifact and caller context/binding/place/value unchanged; normal retry PASS
+ 62/132 Test #130: p1592_outer-oom.unit .....................   Passed    0.01 sec
+test 131
+        Start 131: p1592_staging-oom.unit
+
+131: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1592_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1592/source/direct-actuals.nl"
+131: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+131: Environment variables: 
+131:  PYTHONDONTWRITEBYTECODE=1
+131:  PYTHONHASHSEED=0
+131:  LC_ALL=C
+131:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+131:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+131: Test timeout computed to be: 90
+131: CHECK 0 -
+131: OOM staging hits=1 bytes=20480 status=4
+131: OOM C17 output pointer, length and bytes held; byte-equal retry PASS
+ 63/132 Test #131: p1592_staging-oom.unit ...................   Passed    0.01 sec
+test 132
+        Start 132: p1596_native_and_boundaries.unit
+
+132: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1596/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596-native"
+132: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+132: Environment variables: 
+132:  PYTHONDONTWRITEBYTECODE=1
+132:  PYTHONHASHSEED=0
+132:  LC_ALL=C
+132:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+132:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+132: Test timeout computed to be: 90
+132: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596-native/tmpj7z__n6v
+121: Pristine and add-only C17 on GCC/Clang; both actual choices, call order and results PASS
+ 64/132 Test #121: p1587_native.unit ........................   Passed    1.14 sec
+test 133
+        Start 133: p1596_identity.unit
+
+133: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1596/source/direct-main.nl"
+133: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+133: Environment variables: 
+133:  PYTHONDONTWRITEBYTECODE=1
+133:  PYTHONHASHSEED=0
+133:  LC_ALL=C
+133:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+133:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+133: Test timeout computed to be: 90
+133: CHECK 0 -
+133: IDENTITY other same-valued edge/result/formal/body and missing type refused, output held, byte-equal restore
+ 65/132 Test #133: p1596_identity.unit ......................   Passed    0.00 sec
+test 134
+        Start 134: p1596_actual-oom.unit
+
+134: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe "actual-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1596/source/direct-main.nl"
+134: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+134: Environment variables: 
+134:  PYTHONDONTWRITEBYTECODE=1
+134:  PYTHONHASHSEED=0
+134:  LC_ALL=C
+134:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+134:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+134: Test timeout computed to be: 90
+134: CHECK 4 P3-OUT-OF-MEMORY
+134: OOM actual-seal visits=1 hits=1 bytes=12096 status=4
+134: CHECK 0 -
+134: FUNCTION 10 main
+134: CALL main depth=0 ordinal=0 id=1 seal=1 plan=1 body=1
+134: FUNCTION 11 trays
+134: CALL trays depth=1 ordinal=0 id=8 seal=1 plan=1 body=1
+134: ACTUAL trays op=/ node=11 result=6 formal=6 known=1 number=15 call_result=10
+134: FUNCTION 11 trays
+134: CALL trays depth=1 ordinal=1 id=14 seal=1 plan=1 body=1
+134: ACTUAL trays op=% node=17 result=13 formal=13 known=1 number=15 call_result=17
+134: FUNCTION 11 trays
+134: CALL trays depth=1 ordinal=2 id=20 seal=1 plan=1 body=1
+134: ACTUAL trays op=+ node=23 result=20 formal=20 known=1 number=20 call_result=24
+134: FUNCTION 11 trays
+134: CALL trays depth=1 ordinal=3 id=26 seal=1 plan=1 body=1
+134: ACTUAL trays op=- node=29 result=27 formal=27 known=1 number=23 call_result=31
+134: BIND 2 parcels
+134: BIND 3 stock
+134: BIND 6 quotient
+134: BIND 9 remainder
+134: BIND 12 added
+134: BIND 15 subtracted
+134: OOM rollback context/binding/place/value, no artifact, retry PASS
+ 66/132 Test #134: p1596_actual-oom.unit ....................   Passed    0.02 sec
+test 135
+        Start 135: p1596_entry-oom.unit
+
+135: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe "entry-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1596/source/direct-main.nl"
+135: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+135: Environment variables: 
+135:  PYTHONDONTWRITEBYTECODE=1
+135:  PYTHONHASHSEED=0
+135:  LC_ALL=C
+135:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+135:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+135: Test timeout computed to be: 90
+135: CHECK 4 P3-OUT-OF-MEMORY
+135: OOM entry-world visits=1 hits=1 bytes=55296 status=4
+135: CHECK 0 -
+135: FUNCTION 10 main
+135: CALL main depth=0 ordinal=0 id=1 seal=1 plan=1 body=1
+135: FUNCTION 11 trays
+135: CALL trays depth=1 ordinal=0 id=8 seal=1 plan=1 body=1
+135: ACTUAL trays op=/ node=11 result=6 formal=6 known=1 number=15 call_result=10
+135: FUNCTION 11 trays
+135: CALL trays depth=1 ordinal=1 id=14 seal=1 plan=1 body=1
+135: ACTUAL trays op=% node=17 result=13 formal=13 known=1 number=15 call_result=17
+135: FUNCTION 11 trays
+135: CALL trays depth=1 ordinal=2 id=20 seal=1 plan=1 body=1
+135: ACTUAL trays op=+ node=23 result=20 formal=20 known=1 number=20 call_result=24
+135: FUNCTION 11 trays
+135: CALL trays depth=1 ordinal=3 id=26 seal=1 plan=1 body=1
+135: ACTUAL trays op=- node=29 result=27 formal=27 known=1 number=23 call_result=31
+135: BIND 2 parcels
+135: BIND 3 stock
+135: BIND 6 quotient
+135: BIND 9 remainder
+135: BIND 12 added
+135: BIND 15 subtracted
+135: OOM rollback context/binding/place/value, no artifact, retry PASS
+ 67/132 Test #135: p1596_entry-oom.unit .....................   Passed    0.00 sec
+test 136
+        Start 136: p1596_staging-oom.unit
+
+136: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1596/source/direct-main.nl"
+136: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+136: Environment variables: 
+136:  PYTHONDONTWRITEBYTECODE=1
+136:  PYTHONHASHSEED=0
+136:  LC_ALL=C
+136:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+136:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+136: Test timeout computed to be: 90
+136: CHECK 0 -
+136: OOM staging hits=1 bytes=22016
+136: OOM C17 output pointer/length/bytes held, byte-equal retry PASS
+ 68/132 Test #136: p1596_staging-oom.unit ...................   Passed    0.00 sec
+test 137
+        Start 137: p1598_formal_copy_native.unit
+
+137: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1598/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1596_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598-native"
+137: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+137: Environment variables: 
+137:  PYTHONDONTWRITEBYTECODE=1
+137:  PYTHONHASHSEED=0
+137:  LC_ALL=C
+137:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+137:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+137: Test timeout computed to be: 90
+137: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598-native/tmpvkppsbqt
+137: bare-formal: genuine copy/result and C17 native PASS
+137: caller-copy: genuine copy/result and C17 native PASS
+137: copy-final-return: genuine copy/result and C17 native PASS
+137: join-and-nesting: genuine copy/result and C17 native PASS
+137: constant-only: fail-closed with named output preserved
+137: independent-result: fail-closed with named output preserved
+137: wrong-actual: fail-closed with named output preserved
+ 69/132 Test #137: p1598_formal_copy_native.unit ............   Passed    1.01 sec
+test 138
+        Start 138: p1598_identity.unit
+
+138: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1598/source/copy-final-return.nl" "carry"
+138: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+138: Environment variables: 
+138:  PYTHONDONTWRITEBYTECODE=1
+138:  PYTHONHASHSEED=0
+138:  LC_ALL=C
+138:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+138:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+138: Test timeout computed to be: 90
+138: CHECK 0 -
+138: IDENTITY same-valued other actual/formal/Copy result/body refused, output held, byte-exact restore
+ 70/132 Test #138: p1598_identity.unit ......................   Passed    0.00 sec
+test 139
+        Start 139: p1598_leaf-oom.unit
+
+139: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598_probe "leaf-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1598/source/copy-final-return.nl" "carry"
+139: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+139: Environment variables: 
+139:  PYTHONDONTWRITEBYTECODE=1
+139:  PYTHONHASHSEED=0
+139:  LC_ALL=C
+139:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+139:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+139: Test timeout computed to be: 90
+139: CHECK 4 P3-OUT-OF-MEMORY
+139: OOM leaf-seal visits=1 hits=1 bytes=15552 status=4
+139: CHECK 0 -
+139: CALL main depth=0 ordinal=0 node=1 sealed=1 plan=1
+139: CALL carry depth=1 ordinal=0 node=5 sealed=1 plan=1
+139: COPY carry actual=3 formal=3 result=6 copies=3 known=1 number=211
+139: CALL carry depth=1 ordinal=1 node=9 sealed=1 plan=1
+139: COPY carry actual=7 formal=7 result=10 copies=3 known=1 number=211
+139: OOM no published artifact, caller bytes held, normal retry
+ 71/132 Test #139: p1598_leaf-oom.unit ......................   Passed    0.00 sec
+test 140
+        Start 140: p1598_entry-oom.unit
+
+140: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598_probe "entry-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1598/source/copy-final-return.nl" "carry"
+140: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+140: Environment variables: 
+140:  PYTHONDONTWRITEBYTECODE=1
+140:  PYTHONHASHSEED=0
+140:  LC_ALL=C
+140:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+140:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+140: Test timeout computed to be: 90
+140: CHECK 4 P3-OUT-OF-MEMORY
+140: OOM entry-seal visits=1 hits=1 bytes=24192 status=4
+140: CHECK 0 -
+140: CALL main depth=0 ordinal=0 node=1 sealed=1 plan=1
+140: CALL carry depth=1 ordinal=0 node=5 sealed=1 plan=1
+140: COPY carry actual=3 formal=3 result=6 copies=3 known=1 number=211
+140: CALL carry depth=1 ordinal=1 node=9 sealed=1 plan=1
+140: COPY carry actual=7 formal=7 result=10 copies=3 known=1 number=211
+140: OOM no published artifact, caller bytes held, normal retry
+ 72/132 Test #140: p1598_entry-oom.unit .....................   Passed    0.00 sec
+test 141
+        Start 141: p1598_staging-oom.unit
+
+141: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1598_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1598/source/copy-final-return.nl" "carry"
+141: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+141: Environment variables: 
+141:  PYTHONDONTWRITEBYTECODE=1
+141:  PYTHONHASHSEED=0
+141:  LC_ALL=C
+141:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+141:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+141: Test timeout computed to be: 90
+141: CHECK 0 -
+141: OOM staging hits=1 bytes=13824
+141: OOM pointer, length and bytes held, byte-exact retry
+ 73/132 Test #141: p1598_staging-oom.unit ...................   Passed    0.00 sec
+test 142
+        Start 142: p1605_if_arm_native.unit
+
+142: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605-native"
+142: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+142: Environment variables: 
+142:  PYTHONDONTWRITEBYTECODE=1
+142:  PYTHONHASHSEED=0
+142:  LC_ALL=C
+142:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+142:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+142: Test timeout computed to be: 90
+142: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605-native/tmptn9v4lht
+132: direct-main: owned / C17 / GCC and Clang native PASS
+132: named-main: owned / C17 / GCC and Clang native PASS
+132: direct-helper: owned / C17 / GCC and Clang native PASS
+132: named-helper: owned / C17 / GCC and Clang native PASS
+132: nested-chain: owned / C17 / GCC and Clang native PASS
+132: zero-actual: fail-closed; named output preserved
+132: fresh-numerator: fail-closed; named output preserved
+132: unknown-plus-actual: fail-closed; named output preserved
+132: arm-actual: owned / C17 / GCC and Clang native PASS
+ 74/132 Test #132: p1596_native_and_boundaries.unit .........   Passed    1.34 sec
+test 143
+        Start 143: p1605_if_arm_identity.unit
+
+143: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/source/arm-copy-unknown.nl"
+143: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+143: Environment variables: 
+143:  PYTHONDONTWRITEBYTECODE=1
+143:  PYTHONHASHSEED=0
+143:  LC_ALL=C
+143:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+143:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+143: Test timeout computed to be: 90
+143: CHECK 0 -
+143: CHECK 0 -
+143: IDENTITY source=1 owner=1 sibling_world=1 site=1 index=1 slots=1 observation=1 foreign_body=1 disguise=1 event=1 retry=1
+142: arm-main: PASS
+ 75/132 Test #143: p1605_if_arm_identity.unit ...............   Passed    0.04 sec
+test 144
+        Start 144: p1605_arm-reservation-oom.unit
+
+144: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "arm-reservation-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/source/arm-dispatch.nl"
+144: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+144: Environment variables: 
+144:  PYTHONDONTWRITEBYTECODE=1
+144:  PYTHONHASHSEED=0
+144:  LC_ALL=C
+144:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+144:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+144: Test timeout computed to be: 90
+144: CHECK 4 P3-OUT-OF-MEMORY
+144: OOM allocations=1 hits=1 bytes=48 status=4
+144: CHECK 0 -
+144: FUNCTION 11 main
+144: BIND 6 early
+144: BIND 11 late
+144: FUNCTION 10 dispatch
+144: JOIN 8 Unknown
+144: EVENT / 1 6
+144: EVENT % 1 7
+144: FUNCTION 10 dispatch
+144: JOIN 8 Unknown
+144: EVENT / 1 10
+144: EVENT % 1 8
+144: OOM checked output and caller state preserved; normal CHECK/C17 retry
+ 76/132 Test #144: p1605_arm-reservation-oom.unit ...........   Passed    0.01 sec
+test 145
+        Start 145: p1605_helper-seal-oom.unit
+
+145: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "helper-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/source/arm-dispatch.nl"
+145: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+145: Environment variables: 
+145:  PYTHONDONTWRITEBYTECODE=1
+145:  PYTHONHASHSEED=0
+145:  LC_ALL=C
+145:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+145:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+145: Test timeout computed to be: 90
+145: CHECK 4 P3-OUT-OF-MEMORY
+145: OOM allocations=1 hits=1 bytes=27648 status=4
+145: CHECK 0 -
+145: FUNCTION 11 main
+145: BIND 6 early
+145: BIND 11 late
+145: FUNCTION 10 dispatch
+145: JOIN 8 Unknown
+145: EVENT / 1 6
+145: EVENT % 1 7
+145: FUNCTION 10 dispatch
+145: JOIN 8 Unknown
+145: EVENT / 1 10
+145: EVENT % 1 8
+145: OOM checked output and caller state preserved; normal CHECK/C17 retry
+ 77/132 Test #145: p1605_helper-seal-oom.unit ...............   Passed    0.01 sec
+test 146
+        Start 146: p1605_arm-world-oom.unit
+
+146: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "arm-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/source/arm-main.nl"
+146: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+146: Environment variables: 
+146:  PYTHONDONTWRITEBYTECODE=1
+146:  PYTHONHASHSEED=0
+146:  LC_ALL=C
+146:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+146:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+146: Test timeout computed to be: 90
+146: CHECK 4 P3-OUT-OF-MEMORY
+146: OOM allocations=4 hits=1 bytes=26452 status=4
+146: CHECK 0 -
+146: FUNCTION 10 main
+146: BIND 2 pallets
+146: BIND 3 ready
+146: JOIN 11 Unknown
+146: BIND 4 selected
+146: BIND 5 saved
+146: BIND 6 receipt
+146: EVENT / 1 13
+146: EVENT % 1 13
+146: OOM checked output and caller state preserved; normal CHECK/C17 retry
+ 78/132 Test #146: p1605_arm-world-oom.unit .................   Passed    0.00 sec
+test 147
+        Start 147: p1605_c17-staging-oom.unit
+
+147: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "c17-staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605/source/arm-dispatch.nl"
+147: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+147: Environment variables: 
+147:  PYTHONDONTWRITEBYTECODE=1
+147:  PYTHONHASHSEED=0
+147:  LC_ALL=C
+147:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+147:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+147: Test timeout computed to be: 90
+147: CHECK 0 -
+147: OOM staging allocations=1 hits=1 bytes=23552
+ 79/132 Test #147: p1605_c17-staging-oom.unit ...............   Passed    0.01 sec
+test 148
+        Start 148: p1605_copy_native.unit
+
+148: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605_copy/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605-copy-native"
+148: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+148: Environment variables: 
+148:  PYTHONDONTWRITEBYTECODE=1
+148:  PYTHONHASHSEED=0
+148:  LC_ALL=C
+148:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+148:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+148: Test timeout computed to be: 90
+148: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605-copy-native/tmpi575ubz8
+142: arm-dispatch: PASS
+142: helper-in-arm: PASS
+142: named-main: PASS
+148: arm-statement: owned Copy layout / C17 / GCC and Clang native PASS
+148: flat-statement: owned Copy layout / C17 / GCC and Clang native PASS
+148: source-alternative: owned Copy layout / C17 / GCC and Clang native PASS
+148: non-usize: refused; named output preserved
+148: discard-call: refused; named output preserved
+148: unbound: refused; named output preserved
+148: zero-after-read: refused; named output preserved
+ 80/132 Test #148: p1605_copy_native.unit ...................   Passed    0.67 sec
+test 149
+        Start 149: p1605_copy_identity.unit
+
+149: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "copy-identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605_copy/source/arm-statement.nl"
+149: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+149: Environment variables: 
+149:  PYTHONDONTWRITEBYTECODE=1
+149:  PYTHONHASHSEED=0
+149:  LC_ALL=C
+149:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+149:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+149: Test timeout computed to be: 90
+149: CHECK 0 -
+149: COPY IDENTITY occurrence=1 package=1 order=1 sibling=1 clone=1 byte_retry=1
+ 81/132 Test #149: p1605_copy_identity.unit .................   Passed    0.00 sec
+test 150
+        Start 150: p1605_copy_entry-world-oom.unit
+
+150: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "copy-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605_copy/source/arm-statement.nl"
+150: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+150: Environment variables: 
+150:  PYTHONDONTWRITEBYTECODE=1
+150:  PYTHONHASHSEED=0
+150:  LC_ALL=C
+150:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+150:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+150: Test timeout computed to be: 90
+150: CHECK 4 P3-OUT-OF-MEMORY
+150: OOM allocations=2 hits=1 bytes=56755 status=4
+150: CHECK 0 -
+150: FUNCTION 11 main
+150: BIND 6 low
+150: BIND 11 high
+150: BIND 12 audit
+150: FUNCTION 10 dispatch
+150: JOIN 10 Unknown
+150: EVENT / 1 7
+150: EVENT % 1 1
+150: FUNCTION 10 dispatch
+150: JOIN 10 Unknown
+150: EVENT / 1 14
+150: EVENT % 1 2
+150: OOM checked output and caller state preserved; normal CHECK/C17 retry
+ 82/132 Test #150: p1605_copy_entry-world-oom.unit ..........   Passed    0.01 sec
+test 151
+        Start 151: p1605_copy_helper-seal-oom.unit
+
+151: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "helper-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605_copy/source/arm-statement.nl"
+151: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+151: Environment variables: 
+151:  PYTHONDONTWRITEBYTECODE=1
+151:  PYTHONHASHSEED=0
+151:  LC_ALL=C
+151:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+151:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+151: Test timeout computed to be: 90
+151: CHECK 4 P3-OUT-OF-MEMORY
+151: OOM allocations=1 hits=1 bytes=34560 status=4
+151: CHECK 0 -
+151: FUNCTION 11 main
+151: BIND 6 low
+151: BIND 11 high
+151: BIND 12 audit
+151: FUNCTION 10 dispatch
+151: JOIN 10 Unknown
+151: EVENT / 1 7
+151: EVENT % 1 1
+151: FUNCTION 10 dispatch
+151: JOIN 10 Unknown
+151: EVENT / 1 14
+151: EVENT % 1 2
+151: OOM checked output and caller state preserved; normal CHECK/C17 retry
+ 83/132 Test #151: p1605_copy_helper-seal-oom.unit ..........   Passed    0.00 sec
+test 152
+        Start 152: p1605_copy_c17-staging-oom.unit
+
+152: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1605_probe "c17-staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1605_copy/source/arm-statement.nl"
+152: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+152: Environment variables: 
+152:  PYTHONDONTWRITEBYTECODE=1
+152:  PYTHONHASHSEED=0
+152:  LC_ALL=C
+152:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+152:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+152: Test timeout computed to be: 90
+152: CHECK 0 -
+152: OOM staging allocations=1 hits=1 bytes=33792
+ 84/132 Test #152: p1605_copy_c17-staging-oom.unit ..........   Passed    0.01 sec
+test 153
+        Start 153: p1615_multi_argument_native.unit
+
+153: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615-native"
+153: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+153: Environment variables: 
+153:  PYTHONDONTWRITEBYTECODE=1
+153:  PYTHONHASHSEED=0
+153:  LC_ALL=C
+153:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+153:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+153: Test timeout computed to be: 90
+153: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615-native/tmp7yscb9st
+142: arm-copy-unknown: PASS
+142: zero-arm: PASS
+142: wrong-arm-type: PASS
+142: direct-arm: PASS
+ 85/132 Test #142: p1605_if_arm_native.unit .................   Passed    1.42 sec
+test 154
+        Start 154: p1615_identity.unit
+
+154: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/evaluated-unused.nl"
+154: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+154: Environment variables: 
+154:  PYTHONDONTWRITEBYTECODE=1
+154:  PYTHONHASHSEED=0
+154:  LC_ALL=C
+154:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+154:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+154: Test timeout computed to be: 90
+154: CHECK 0 -
+154: IDENTITY swapped_position=1 duplicate_actual=1 other_actual=1 other_formal=1 other_body=1 other_world=1 other_result=1 byte_retry=1
+ 86/132 Test #154: p1615_identity.unit ......................   Passed    0.01 sec
+test 155
+        Start 155: p1615_second-formal-oom.unit
+
+155: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "second-formal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/evaluated-unused.nl"
+155: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+155: Environment variables: 
+155:  PYTHONDONTWRITEBYTECODE=1
+155:  PYTHONHASHSEED=0
+155:  LC_ALL=C
+155:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+155:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+155: Test timeout computed to be: 90
+155: CHECK 4 P3-OUT-OF-MEMORY
+155: OOM reached=1 allocations=1 hits=1 bytes=7 status=4
+155: CHECK 0 -
+155: FUNCTION 11 main
+155: BIND 2 left
+155: BIND 3 right
+155: BIND 7 primary
+155: BIND 12 equal_values
+155: BIND 14 named_left
+155: BIND 16 named_right
+155: BIND 20 forwarded
+155: FUNCTION 10 keep_second
+155: RESULT keep_second id=11 known=1 number=3
+155: POSITION keep_second 0 node=11 value=6 formal=4 name=ignored place=4 incarnation=4 known=1 number=11
+155: POSITION keep_second 1 node=14 value=9 formal=5 name=chosen place=5 incarnation=5 known=1 number=3
+155: FUNCTION 13 spare
+155: FUNCTION 10 keep_second
+155: RESULT keep_second id=20 known=1 number=11
+155: POSITION keep_second 0 node=20 value=14 formal=9 name=ignored place=9 incarnation=9 known=1 number=11
+155: POSITION keep_second 1 node=21 value=18 formal=10 name=chosen place=10 incarnation=10 known=1 number=11
+155: FUNCTION 12 rows
+155: FUNCTION 13 spare
+155: FUNCTION 10 keep_second
+155: RESULT keep_second id=32 known=1 number=11
+155: POSITION keep_second 0 node=34 value=29 formal=17 name=ignored place=17 incarnation=17 known=1 number=11
+155: POSITION keep_second 1 node=35 value=30 formal=18 name=chosen place=18 incarnation=18 known=1 number=11
+155: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 87/132 Test #155: p1615_second-formal-oom.unit .............   Passed    0.01 sec
+test 156
+        Start 156: p1615_result-seal-oom.unit
+
+156: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "result-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/evaluated-unused.nl"
+156: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+156: Environment variables: 
+156:  PYTHONDONTWRITEBYTECODE=1
+156:  PYTHONHASHSEED=0
+156:  LC_ALL=C
+156:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+156:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+156: Test timeout computed to be: 90
+156: CHECK 4 P3-OUT-OF-MEMORY
+156: OOM reached=1 allocations=1 hits=1 bytes=10368 status=4
+156: CHECK 0 -
+156: FUNCTION 11 main
+156: BIND 2 left
+156: BIND 3 right
+156: BIND 7 primary
+156: BIND 12 equal_values
+156: BIND 14 named_left
+156: BIND 16 named_right
+156: BIND 20 forwarded
+156: FUNCTION 10 keep_second
+156: RESULT keep_second id=11 known=1 number=3
+156: POSITION keep_second 0 node=11 value=6 formal=4 name=ignored place=4 incarnation=4 known=1 number=11
+156: POSITION keep_second 1 node=14 value=9 formal=5 name=chosen place=5 incarnation=5 known=1 number=3
+156: FUNCTION 13 spare
+156: FUNCTION 10 keep_second
+156: RESULT keep_second id=20 known=1 number=11
+156: POSITION keep_second 0 node=20 value=14 formal=9 name=ignored place=9 incarnation=9 known=1 number=11
+156: POSITION keep_second 1 node=21 value=18 formal=10 name=chosen place=10 incarnation=10 known=1 number=11
+156: FUNCTION 12 rows
+156: FUNCTION 13 spare
+156: FUNCTION 10 keep_second
+156: RESULT keep_second id=32 known=1 number=11
+156: POSITION keep_second 0 node=34 value=29 formal=17 name=ignored place=17 incarnation=17 known=1 number=11
+156: POSITION keep_second 1 node=35 value=30 formal=18 name=chosen place=18 incarnation=18 known=1 number=11
+156: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 88/132 Test #156: p1615_result-seal-oom.unit ...............   Passed    0.01 sec
+test 157
+        Start 157: p1615_c17-staging-oom.unit
+
+157: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "c17-staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/evaluated-unused.nl"
+157: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+157: Environment variables: 
+157:  PYTHONDONTWRITEBYTECODE=1
+157:  PYTHONHASHSEED=0
+157:  LC_ALL=C
+157:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+157:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+157: Test timeout computed to be: 90
+157: CHECK 0 -
+157: OOM staging hits=1 bytes=28672 no_clobber=1 byte_retry=1
+ 89/132 Test #157: p1615_c17-staging-oom.unit ...............   Passed    0.03 sec
+test 158
+        Start 158: p1615_nested-identity.unit
+
+158: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "nested-identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/ordered-unused.nl"
+158: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+158: Environment variables: 
+158:  PYTHONDONTWRITEBYTECODE=1
+158:  PYTHONHASHSEED=0
+158:  LC_ALL=C
+158:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+158:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+158: Test timeout computed to be: 90
+158: CHECK 0 -
+158: NESTED IDENTITY remove_sibling=1 equal_foreign_result=1 equal_swap=1 publication_closed=1 byte_retry=1
+ 90/132 Test #158: p1615_nested-identity.unit ...............   Passed    0.01 sec
+test 159
+        Start 159: p1615_later-sibling-seal-oom.unit
+
+159: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "later-sibling-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/ordered-unused.nl"
+159: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+159: Environment variables: 
+159:  PYTHONDONTWRITEBYTECODE=1
+159:  PYTHONHASHSEED=0
+159:  LC_ALL=C
+159:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+159:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+159: Test timeout computed to be: 90
+159: CHECK 4 P3-OUT-OF-MEMORY
+159: OOM reached=1 allocations=1 hits=1 bytes=6912 status=4
+159: CHECK 0 -
+159: FUNCTION 11 main
+159: BIND 7 primary
+159: BIND 13 secondary
+159: BIND 19 equal_values
+159: FUNCTION 12 rows
+159: FUNCTION 13 spare
+159: FUNCTION 10 keep_second
+159: RESULT keep_second id=11 known=1 number=3
+159: POSITION keep_second 0 node=3 value=5 formal=4 name=ignored place=4 incarnation=4 known=1 number=11
+159: NESTED keep_second first=3 sibling=5
+159: POSITION keep_second 1 node=5 value=9 formal=5 name=chosen place=5 incarnation=5 known=1 number=3
+159: FUNCTION 13 spare
+159: FUNCTION 12 rows
+159: FUNCTION 10 keep_second
+159: RESULT keep_second id=21 known=1 number=7
+159: POSITION keep_second 0 node=10 value=15 formal=10 name=ignored place=10 incarnation=10 known=1 number=11
+159: NESTED keep_second first=10 sibling=12
+159: POSITION keep_second 1 node=12 value=19 formal=11 name=chosen place=11 incarnation=11 known=1 number=7
+159: FUNCTION 12 rows
+159: FUNCTION 13 spare
+159: FUNCTION 10 keep_second
+159: RESULT keep_second id=31 known=1 number=11
+159: POSITION keep_second 0 node=17 value=25 formal=16 name=ignored place=16 incarnation=16 known=1 number=11
+159: NESTED keep_second first=17 sibling=19
+159: POSITION keep_second 1 node=19 value=29 formal=17 name=chosen place=17 incarnation=17 known=1 number=11
+159: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 91/132 Test #159: p1615_later-sibling-seal-oom.unit ........   Passed    0.01 sec
+test 160
+        Start 160: p1615_nested-entry-world-oom.unit
+
+160: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "nested-entry-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/ordered-unused.nl"
+160: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+160: Environment variables: 
+160:  PYTHONDONTWRITEBYTECODE=1
+160:  PYTHONHASHSEED=0
+160:  LC_ALL=C
+160:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+160:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+160: Test timeout computed to be: 90
+160: CHECK 4 P3-OUT-OF-MEMORY
+160: OOM reached=1 allocations=2 hits=1 bytes=62041 status=4
+160: CHECK 0 -
+160: FUNCTION 11 main
+160: BIND 7 primary
+160: BIND 13 secondary
+160: BIND 19 equal_values
+160: FUNCTION 12 rows
+160: FUNCTION 13 spare
+160: FUNCTION 10 keep_second
+160: RESULT keep_second id=11 known=1 number=3
+160: POSITION keep_second 0 node=3 value=5 formal=4 name=ignored place=4 incarnation=4 known=1 number=11
+160: NESTED keep_second first=3 sibling=5
+160: POSITION keep_second 1 node=5 value=9 formal=5 name=chosen place=5 incarnation=5 known=1 number=3
+160: FUNCTION 13 spare
+160: FUNCTION 12 rows
+160: FUNCTION 10 keep_second
+160: RESULT keep_second id=21 known=1 number=7
+160: POSITION keep_second 0 node=10 value=15 formal=10 name=ignored place=10 incarnation=10 known=1 number=11
+160: NESTED keep_second first=10 sibling=12
+160: POSITION keep_second 1 node=12 value=19 formal=11 name=chosen place=11 incarnation=11 known=1 number=7
+160: FUNCTION 12 rows
+160: FUNCTION 13 spare
+160: FUNCTION 10 keep_second
+160: RESULT keep_second id=31 known=1 number=11
+160: POSITION keep_second 0 node=17 value=25 formal=16 name=ignored place=16 incarnation=16 known=1 number=11
+160: NESTED keep_second first=17 sibling=19
+160: POSITION keep_second 1 node=19 value=29 formal=17 name=chosen place=17 incarnation=17 known=1 number=11
+160: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 92/132 Test #160: p1615_nested-entry-world-oom.unit ........   Passed    0.01 sec
+test 161
+        Start 161: p1615_nested-c17-staging-oom.unit
+
+161: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1615_probe "c17-staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1615/source/ordered-unused.nl"
+161: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+161: Environment variables: 
+161:  PYTHONDONTWRITEBYTECODE=1
+161:  PYTHONHASHSEED=0
+161:  LC_ALL=C
+161:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+161:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+161: Test timeout computed to be: 90
+161: CHECK 0 -
+161: OOM staging hits=1 bytes=20992 no_clobber=1 byte_retry=1
+ 93/132 Test #161: p1615_nested-c17-staging-oom.unit ........   Passed    0.01 sec
+test 162
+        Start 162: p1623_typed_arguments_native.unit
+
+162: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623-native"
+162: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+162: Environment variables: 
+162:  PYTHONDONTWRITEBYTECODE=1
+162:  PYTHONHASHSEED=0
+162:  LC_ALL=C
+162:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+162:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+162: Test timeout computed to be: 90
+162: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623-native/tmp3nczzpem
+153: route-pair: owned / C17 / GCC and Clang native PASS
+153: joined-actual: owned / C17 / GCC and Clang native PASS
+153: evaluated-unused: owned / C17 / GCC and Clang native PASS
+153: unary-alternative: owned / C17 / GCC and Clang native PASS
+153: ordered-unused: owned / C17 / GCC and Clang native PASS
+153: three-formals: fail-closed; named output preserved
+153: wrong-arity: fail-closed; named output preserved
+153: wrong-type: fail-closed; named output preserved
+153: zero-in-unused: fail-closed; named output preserved
+153: nested-first-unknown: owned / C17 / GCC and Clang native PASS
+153: zero-in-later-sibling: fail-closed; named output preserved
+ 94/132 Test #153: p1615_multi_argument_native.unit .........   Passed    1.33 sec
+test 163
+        Start 163: p1623_identity.unit
+
+163: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/source/equal-typed.nl"
+163: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+163: Environment variables: 
+163:  PYTHONDONTWRITEBYTECODE=1
+163:  PYTHONHASHSEED=0
+163:  LC_ALL=C
+163:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+163:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+163: Test timeout computed to be: 90
+163: CHECK 0 -
+163: IDENTITY swapped_positions=1 foreign_bool=1 integer_alias=1 foreign_formal=1 foreign_body=1 duplicate_world=1 byte_retry=1
+ 95/132 Test #163: p1623_identity.unit ......................   Passed    0.01 sec
+test 164
+        Start 164: p1623_bool-formal-oom.unit
+
+164: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe "bool-formal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/source/equal-typed.nl"
+164: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+164: Environment variables: 
+164:  PYTHONDONTWRITEBYTECODE=1
+164:  PYTHONHASHSEED=0
+164:  LC_ALL=C
+164:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+164:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+164: Test timeout computed to be: 90
+164: CHECK 4 P3-OUT-OF-MEMORY
+164: OOM reached=1 allocations=1 hits=1 bytes=7 status=4
+164: CHECK 0 -
+164: FUNCTION 11 main
+164: BOOL main request 1 1
+164: BOOL main copied 1 1
+164: FUNCTION 10 keep_edge
+164: RESULT keep_edge 0 0
+164: POSITION keep_edge 0 usize 1 1 node=14 formal=5 value=7 place=5 incarnation=5
+164: POSITION keep_edge 1 bool 1 1 node=15 formal=6 value=8 place=6 incarnation=6
+164: JOIN keep_edge Unknown
+164: FUNCTION 10 keep_edge
+164: RESULT keep_edge 0 0
+164: POSITION keep_edge 0 usize 1 1 node=19 formal=10 value=13 place=10 incarnation=10
+164: POSITION keep_edge 1 bool 1 1 node=20 formal=11 value=14 place=11 incarnation=11
+164: JOIN keep_edge Unknown
+164: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 96/132 Test #164: p1623_bool-formal-oom.unit ...............   Passed    0.00 sec
+test 165
+        Start 165: p1623_mixed-seal-oom.unit
+
+165: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe "mixed-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/source/equal-typed.nl"
+165: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+165: Environment variables: 
+165:  PYTHONDONTWRITEBYTECODE=1
+165:  PYTHONHASHSEED=0
+165:  LC_ALL=C
+165:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+165:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+165: Test timeout computed to be: 90
+165: CHECK 4 P3-OUT-OF-MEMORY
+165: OOM reached=1 allocations=1 hits=1 bytes=15552 status=4
+165: CHECK 0 -
+165: FUNCTION 11 main
+165: BOOL main request 1 1
+165: BOOL main copied 1 1
+165: FUNCTION 10 keep_edge
+165: RESULT keep_edge 0 0
+165: POSITION keep_edge 0 usize 1 1 node=14 formal=5 value=7 place=5 incarnation=5
+165: POSITION keep_edge 1 bool 1 1 node=15 formal=6 value=8 place=6 incarnation=6
+165: JOIN keep_edge Unknown
+165: FUNCTION 10 keep_edge
+165: RESULT keep_edge 0 0
+165: POSITION keep_edge 0 usize 1 1 node=19 formal=10 value=13 place=10 incarnation=10
+165: POSITION keep_edge 1 bool 1 1 node=20 formal=11 value=14 place=11 incarnation=11
+165: JOIN keep_edge Unknown
+165: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 97/132 Test #165: p1623_mixed-seal-oom.unit ................   Passed    0.02 sec
+test 166
+        Start 166: p1623_entry-world-oom.unit
+
+166: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe "entry-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/source/equal-typed.nl"
+166: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+166: Environment variables: 
+166:  PYTHONDONTWRITEBYTECODE=1
+166:  PYTHONHASHSEED=0
+166:  LC_ALL=C
+166:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+166:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+166: Test timeout computed to be: 90
+166: CHECK 4 P3-OUT-OF-MEMORY
+166: OOM reached=1 allocations=2 hits=1 bytes=45867 status=4
+166: CHECK 0 -
+166: FUNCTION 11 main
+166: BOOL main request 1 1
+166: BOOL main copied 1 1
+166: FUNCTION 10 keep_edge
+166: RESULT keep_edge 0 0
+166: POSITION keep_edge 0 usize 1 1 node=14 formal=5 value=7 place=5 incarnation=5
+166: POSITION keep_edge 1 bool 1 1 node=15 formal=6 value=8 place=6 incarnation=6
+166: JOIN keep_edge Unknown
+166: FUNCTION 10 keep_edge
+166: RESULT keep_edge 0 0
+166: POSITION keep_edge 0 usize 1 1 node=19 formal=10 value=13 place=10 incarnation=10
+166: POSITION keep_edge 1 bool 1 1 node=20 formal=11 value=14 place=11 incarnation=11
+166: JOIN keep_edge Unknown
+166: ROLLBACK checked output and caller state preserved; CHECK/C17 retry
+ 98/132 Test #166: p1623_entry-world-oom.unit ...............   Passed    0.01 sec
+test 167
+        Start 167: p1623_staging-oom.unit
+
+167: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1623/source/equal-typed.nl"
+167: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+167: Environment variables: 
+167:  PYTHONDONTWRITEBYTECODE=1
+167:  PYTHONHASHSEED=0
+167:  LC_ALL=C
+167:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+167:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+167: Test timeout computed to be: 90
+167: CHECK 0 -
+167: OOM staging hits=1 bytes=26112 no_clobber=1 byte_retry=1
+ 99/132 Test #167: p1623_staging-oom.unit ...................   Passed    0.00 sec
+test 168
+        Start 168: p1628_implicit_unit_native.unit
+
+168: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1628/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1628_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1628-native"
+168: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+168: Environment variables: 
+168:  PYTHONDONTWRITEBYTECODE=1
+168:  PYTHONHASHSEED=0
+168:  LC_ALL=C
+168:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+168:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+168: Test timeout computed to be: 90
+168: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1628-native/tmpdmjjiau4
+162: typed-selection: typed owned arguments / C17 / GCC and Clang native PASS
+162: nested-mixed: typed owned arguments / C17 / GCC and Clang native PASS
+162: caller-policy: typed owned arguments / C17 / GCC and Clang native PASS
+162: equal-typed: typed owned arguments / C17 / GCC and Clang native PASS
+162: swapped-types: refused; named output preserved
+162: integer-as-bool: refused; named output preserved
+162: wrong-arity: refused; named output preserved
+162: invalid-other-arm: refused; named output preserved
+162: two-bools: refused; named output preserved
+100/132 Test #162: p1623_typed_arguments_native.unit ........   Passed    1.08 sec
+test 169
+        Start 169: p1628_entry_identity.unit
+
+169: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1628_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1628/source/homogeneous-implicit.nl"
+169: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+169: Environment variables: 
+169:  PYTHONDONTWRITEBYTECODE=1
+169:  PYTHONHASHSEED=0
+169:  LC_ALL=C
+169:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+169:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+169: Test timeout computed to be: 90
+169: CHECK 0 -
+169: ENTRY implicit function=11 body=1 items=4 calls=2 world=1 result=unit
+169: ENTRY implicit function=11 body=1 items=4 calls=2 world=1 result=unit
+169: IDENTITY fake_tail=1 foreign_source=1 missing_owner=1 foreign_world=1 fake_result=1 byte_retry=1
+101/132 Test #169: p1628_entry_identity.unit ................   Passed    0.00 sec
+test 170
+        Start 170: p1628_staging_oom.unit
+
+170: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1628_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1628/source/mixed-implicit.nl"
+170: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+170: Environment variables: 
+170:  PYTHONDONTWRITEBYTECODE=1
+170:  PYTHONHASHSEED=0
+170:  LC_ALL=C
+170:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+170:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+170: Test timeout computed to be: 90
+170: CHECK 0 -
+170: ENTRY implicit function=10 body=1 items=8 calls=5 world=1 result=unit
+170: OOM staging visits=1 hits=1 bytes=33792 no_clobber=1 byte_retry=1
+102/132 Test #170: p1628_staging_oom.unit ...................   Passed    0.02 sec
+test 171
+        Start 171: p1632_named_bool_discard.unit
+
+171: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1632/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1623_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632_probe" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632-native"
+171: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+171: Environment variables: 
+171:  PYTHONDONTWRITEBYTECODE=1
+171:  PYTHONHASHSEED=0
+171:  LC_ALL=C
+171:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+171:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+171: Test timeout computed to be: 90
+171: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632-native/tmpd5i269we
+171: caller-discard: typed Copy/reuse and strict GCC/Clang native PASS
+171: caller-control: typed Copy/reuse and strict GCC/Clang native PASS
+171: helper-discard: typed Copy/reuse and strict GCC/Clang native PASS
+171: helper-control: typed Copy/reuse and strict GCC/Clang native PASS
+171: comparison-statement: refused with the named output preserved
+171: discard-missing-result: refused with the named output preserved
+171: zero-after-discard: refused with the named output preserved
+103/132 Test #171: p1632_named_bool_discard.unit ............   Passed    0.88 sec
+test 172
+        Start 172: p1632_entry-world-oom.unit
+
+172: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632_probe "entry-world-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1632/source/caller-discard.nl"
+172: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+172: Environment variables: 
+172:  PYTHONDONTWRITEBYTECODE=1
+172:  PYTHONHASHSEED=0
+172:  LC_ALL=C
+172:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+172:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+172: Test timeout computed to be: 90
+172: PARSE 0 -
+172: REGISTER 0 -
+172: CHECK 4 P3-OUT-OF-MEMORY
+172: OOM check reached=1 visits=2 hits=1 bytes=53126 status=4
+172: CHECK 0 -
+172: ROOT custody=1 machine=1
+172: EDGE main 10 body=1 result=0 seal=1 world=1 plan=1
+172: LOCAL main 2 weight
+172: LOCAL main 3 permit
+172: DISCARD main permit 1 1 0 original=5 discard=6 reuse=8 symbol=3 span=73:79 later=119:125
+172: LOCAL main 7 packed_count
+172: LOCAL main 8 rule
+172: LOCAL main 9 hold
+172: DISCARD main hold 0 0 0 original=15 discard=16 reuse=18 symbol=9 span=195:199 later=236:240
+172: LOCAL main 13 leftovers
+172: LOCAL main 14 audit
+172: EDGE packed 11 body=1 result=1 seal=1 world=0 plan=1
+172: LOCAL packed 6 in_bin
+172: EDGE packed 11 body=1 result=1 seal=1 world=0 plan=1
+172: LOCAL packed 12 in_bin
+172: ROLLBACK unpublished CHECK and caller preserved; CHECK/C17 retry
+168: homogeneous-implicit: source-owned unit completion / C17 / native PASS
+168: homogeneous-tail: source-owned unit completion / C17 / native PASS
+168: mixed-implicit: source-owned unit completion / C17 / native PASS
+168: mixed-return: source-owned unit completion / C17 / native PASS
+168: direct-implicit: source-owned unit completion / C17 / native PASS
+168: empty-control: ordinary unit / GCC and Clang native PASS
+168: homogeneous-wrong-tail: fail-closed; named output preserved
+168: wrong-helper: fail-closed; named output preserved
+168: zero-before-completion: fail-closed; named output preserved
+168: bare-return: fail-closed; named output preserved
+104/132 Test #172: p1632_entry-world-oom.unit ...............   Passed    0.01 sec
+test 173
+        Start 173: p1632_helper-seal-oom.unit
+
+173: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632_probe "helper-seal-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1632/source/helper-discard.nl"
+173: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+173: Environment variables: 
+173:  PYTHONDONTWRITEBYTECODE=1
+173:  PYTHONHASHSEED=0
+173:  LC_ALL=C
+173:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+173:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+173: Test timeout computed to be: 90
+105/132 Test #168: p1628_implicit_unit_native.unit ..........   Passed    1.13 sec
+test 174
+        Start 174: p1632_staging-oom.unit
+
+174: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1632_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1632/source/helper-discard.nl"
+174: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+174: Environment variables: 
+174:  PYTHONDONTWRITEBYTECODE=1
+174:  PYTHONHASHSEED=0
+174:  LC_ALL=C
+174:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+174:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+174: Test timeout computed to be: 90
+173: PARSE 0 -
+173: REGISTER 0 -
+173: CHECK 4 P3-OUT-OF-MEMORY
+173: OOM check reached=1 visits=1 hits=1 bytes=20736 status=4
+173: CHECK 0 -
+173: ROOT custody=1 machine=1
+173: EDGE main 12 body=1 result=0 seal=1 world=1 plan=1
+173: LOCAL main 2 count
+173: LOCAL main 8 first
+173: LOCAL main 14 later
+173: EDGE fold_groups 11 body=1 result=1 seal=1 world=0 plan=1
+173: EDGE band 10 body=1 result=1 seal=1 world=0 plan=1
+173: DISCARD band permit 1 1 0 original=5 discard=10 reuse=11 symbol=4 span=6:12 later=31:37
+173: LOCAL band 6 policy
+173: LOCAL band 7 amount
+173: EDGE fold_groups 11 body=1 result=1 seal=1 world=0 plan=1
+173: EDGE band 10 body=1 result=1 seal=1 world=0 plan=1
+173: DISCARD band permit 0 0 0 original=17 discard=22 reuse=23 symbol=10 span=6:12 later=31:37
+173: LOCAL band 12 policy
+173: LOCAL band 13 amount
+173: ROLLBACK unpublished CHECK and caller preserved; CHECK/C17 retry
+106/132 Test #173: p1632_helper-seal-oom.unit ...............   Passed    0.01 sec
+test 175
+        Start 175: p1638_native.unit
+
+175: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638-native" "early-return" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+175: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+175: Environment variables: 
+175:  PYTHONDONTWRITEBYTECODE=1
+175:  PYTHONHASHSEED=0
+175:  LC_ALL=C
+175:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+175:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+175: Test timeout computed to be: 90
+174: PARSE 0 -
+174: REGISTER 0 -
+174: CHECK 0 -
+174: ROOT custody=1 machine=1
+174: EDGE main 12 body=1 result=0 seal=1 world=1 plan=1
+174: LOCAL main 1 count
+174: LOCAL main 7 first
+174: LOCAL main 13 later
+174: EDGE fold_groups 11 body=1 result=1 seal=1 world=0 plan=1
+174: EDGE band 10 body=1 result=1 seal=1 world=0 plan=1
+174: DISCARD band permit 1 1 0 original=4 discard=9 reuse=10 symbol=3 span=6:12 later=31:37
+174: LOCAL band 5 policy
+174: LOCAL band 6 amount
+174: EDGE fold_groups 11 body=1 result=1 seal=1 world=0 plan=1
+174: EDGE band 10 body=1 result=1 seal=1 world=0 plan=1
+174: DISCARD band permit 0 0 0 original=16 discard=21 reuse=22 symbol=9 span=6:12 later=31:37
+174: LOCAL band 11 policy
+174: LOCAL band 12 amount
+174: OOM staging visits=1 hits=1 bytes=31744 no_clobber=1 byte_retry=1
+107/132 Test #174: p1632_staging-oom.unit ...................   Passed    0.01 sec
+test 176
+        Start 176: p1638_scope.unit
+
+176: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638-scope" "scope" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/two-usize-early-return.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/two-usize-normal-if.nl"
+176: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+176: Environment variables: 
+176:  PYTHONDONTWRITEBYTECODE=1
+176:  PYTHONHASHSEED=0
+176:  LC_ALL=C
+176:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+176:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+176: Test timeout computed to be: 90
+176: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638-scope/tmp56f8zlet
+175: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638-native/tmpn1ek0cho
+176: two-usize-early-return.nl CHECK=0 C17=4 stdout=0 named=no-clobber PASS
+176: two-usize-normal-if.nl C17 GCC/Clang O0/O2 true=12 false=5 PASS
+108/132 Test #176: p1638_scope.unit .........................   Passed    0.36 sec
+test 177
+        Start 177: p1638_identity.unit
+
+177: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+177: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+177: Environment variables: 
+177:  PYTHONDONTWRITEBYTECODE=1
+177:  PYTHONHASHSEED=0
+177:  LC_ALL=C
+177:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+177:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+177: Test timeout computed to be: 90
+175: early-return.nl C17 GCC/Clang O0/O2 true=12 false=5 PASS
+109/132 Test #175: p1638_native.unit ........................   Passed    0.38 sec
+test 178
+        Start 178: p1638_result-oom.unit
+
+178: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638_probe "result-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+178: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+178: Environment variables: 
+178:  PYTHONDONTWRITEBYTECODE=1
+178:  PYTHONHASHSEED=0
+178:  LC_ALL=C
+178:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+178:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+178: Test timeout computed to be: 90
+177: CHECK 0 -
+177: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+177: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+177: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+177: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+177: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+177: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+177: NEGATIVE parent=1 arm=1 source=1 world=1 target=1 replay=1 return=1 no-clobber=1 retry=1
+110/132 Test #177: p1638_identity.unit ......................   Passed    0.01 sec
+test 179
+        Start 179: p1638_staging-oom.unit
+
+179: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1638_probe "staging-oom" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+179: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+179: Environment variables: 
+179:  PYTHONDONTWRITEBYTECODE=1
+179:  PYTHONHASHSEED=0
+179:  LC_ALL=C
+179:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+179:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+179: Test timeout computed to be: 90
+178: CHECK 4 P3-OUT-OF-MEMORY
+178: CHECK 0 -
+178: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+178: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+178: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+178: OOM result-seal hit=1 bytes=27648 rollback=1 retry=1
+111/132 Test #178: p1638_result-oom.unit ....................   Passed    0.01 sec
+test 180
+        Start 180: p1643_authenticity.unit
+
+180: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1643_probe "authenticity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+180: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+180: Environment variables: 
+180:  PYTHONDONTWRITEBYTECODE=1
+180:  PYTHONHASHSEED=0
+180:  LC_ALL=C
+180:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+180:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+180: Test timeout computed to be: 90
+179: CHECK 0 -
+179: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+179: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+179: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+179: OOM staging hit=1 bytes=33280 no-clobber=1 retry=1
+112/132 Test #179: p1638_staging-oom.unit ...................   Passed    0.01 sec
+test 181
+        Start 181: p1643_slot-substitution.unit
+
+181: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1643_probe "slot-substitution" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+181: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+181: Environment variables: 
+181:  PYTHONDONTWRITEBYTECODE=1
+181:  PYTHONHASHSEED=0
+181:  LC_ALL=C
+181:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+181:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+181: Test timeout computed to be: 90
+181: CHECK 0 -
+181: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+181: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+181: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+181: CASE same-scalar-different-copy status=2 held=1 emitted=0 same=0 retry=1
+181: CASE ended-return-slot status=2 held=1 emitted=0 same=0 retry=1
+181: SLOTS original=14 alternate=15 scalar=12 different-copy=rejected ended=rejected restoration=PASS
+113/132 Test #181: p1643_slot-substitution.unit .............   Passed    0.01 sec
+test 182
+        Start 182: p1643_receipt-failures.unit
+
+182: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1643_probe "receipt-failures" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1638/source/early-return.nl"
+182: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+182: Environment variables: 
+182:  PYTHONDONTWRITEBYTECODE=1
+182:  PYTHONHASHSEED=0
+182:  LC_ALL=C
+182:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+182:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+182: Test timeout computed to be: 90
+182: CHECK 4 P3-OUT-OF-MEMORY
+182: FAILURE allocation status=4 calls=1 hits=1 bytes=3616 partial=0 rollback=1
+182: CHECK 5 P3-RESOURCE-LIMIT
+182: FAILURE target-retain-overflow status=5 calls=1 hits=1 bytes=0 partial=0 rollback=1
+182: CHECK 5 P3-RESOURCE-LIMIT
+182: FAILURE origin-retain-overflow status=5 calls=1 hits=1 bytes=0 partial=0 rollback=1
+182: CHECK 0 -
+182: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+182: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+182: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+182: FAILURE receipt lifecycle rollback=PASS retry=PASS teardown=PASS
+114/132 Test #182: p1643_receipt-failures.unit ..............   Passed    0.01 sec
+test 183
+        Start 183: p1643_scope.unit
+
+183: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1643/scope.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1643-scope" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1643/source/reversed-early-return.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1643/source/unsupported-one-return.nl"
+183: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+183: Environment variables: 
+183:  PYTHONDONTWRITEBYTECODE=1
+183:  PYTHONHASHSEED=0
+183:  LC_ALL=C
+183:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+183:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+183: Test timeout computed to be: 90
+180: CHECK 0 -
+180: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+180: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+180: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+180: CHECK 0 -
+180: CALL 0 flag=1 return=12 normal=5 joined=Unknown public-arm=withheld
+180: CALL 1 flag=0 return=12 normal=5 joined=Unknown public-arm=withheld
+180: EVIDENCE canonical BODY/ARM/Return target and normal replay PASS
+180: CASE same-issuer-cloned-arm-outer status=0 held=0 emitted=1 same=1 retry=1
+180: CASE same-issuer-outer-as-arm status=0 held=0 emitted=1 same=1 retry=1
+180: CASE foreign-target status=2 held=1 emitted=0 same=0 retry=1
+180: CASE foreign-arm-package status=2 held=1 emitted=0 same=0 retry=1
+180: CASE foreign-outer-package status=2 held=1 emitted=0 same=0 retry=1
+180: CASE foreign-target-arm-outer status=2 held=1 emitted=0 same=0 retry=1
+180: AUTH same-issuer-clone=accepted outer-as-arm=accepted foreign-individual=rejected foreign-complete=rejected restoration=PASS
+115/132 Test #180: p1643_authenticity.unit ..................   Passed    0.03 sec
+test 184
+        Start 184: p1645_identity.unit
+
+184: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645_probe "identity" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/source/arm-both.nl"
+184: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+184: Environment variables: 
+184:  PYTHONDONTWRITEBYTECODE=1
+184:  PYTHONHASHSEED=0
+184:  LC_ALL=C
+184:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+184:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+184: Test timeout computed to be: 90
+184: CHECK status=0 diagnostic=-
+184: CHECK status=0 diagnostic=-
+184: IDENTITY actual-slot sibling-arm later-body independent-source/world rejected; original views valid
+116/132 Test #184: p1645_identity.unit ......................   Passed    0.03 sec
+test 185
+        Start 185: p1645_rollback.unit
+
+185: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645_probe "rollback" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/source/arm-direct.nl"
+185: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+185: Environment variables: 
+185:  PYTHONDONTWRITEBYTECODE=1
+185:  PYTHONHASHSEED=0
+185:  LC_ALL=C
+185:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+185:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+185: Test timeout computed to be: 90
+185: CHECK status=4 diagnostic=P3-OUT-OF-MEMORY
+185: OOM inner-callee-seal reached=1 hit=1 bytes=6912 rollback=PASS
+185: CHECK status=4 diagnostic=P3-OUT-OF-MEMORY
+185: OOM entry-result-world reached=1 hit=1 bytes=39918 rollback=PASS
+185: CHECK status=0 diagnostic=-
+185: OOM C17 staging hit=1 bytes=21504 output-preserved=PASS
+185: PRESEAL inner valid, enclosing seal pending, public unpublished; CHECK/C17 retry PASS
+117/132 Test #185: p1645_rollback.unit ......................   Passed    0.02 sec
+test 186
+        Start 186: p1645_native.unit
+
+186: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/run.py" "native" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645-native" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/source"
+186: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+186: Environment variables: 
+186:  PYTHONDONTWRITEBYTECODE=1
+186:  PYTHONHASHSEED=0
+186:  LC_ALL=C
+186:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+186:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+186: Test timeout computed to be: 90
+183: evidence=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1643-scope/tmprwyr1_qf
+186: raw=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645-native/tmp8sqj396y
+183: reversed-early-return.nl sha256=af72154a34bc05d7704085e85c0b0d2f61212a0577c4b83a198dde4f457a6616 CHECK=0 C17=4 stdout=0 named=no-clobber PASS
+183: unsupported-one-return.nl sha256=159ffca652ad4acce4e3b085de0b04b3015a26493dfb52956c062c1811fc0c10 CHECK=0 C17=4 stdout=0 named=no-clobber PASS
+118/132 Test #183: p1643_scope.unit .........................   Passed    0.12 sec
+test 187
+        Start 187: p1645_scope.unit
+
+187: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/run.py" "scope" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645-scope" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1645/source"
+187: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+187: Environment variables: 
+187:  PYTHONDONTWRITEBYTECODE=1
+187:  PYTHONHASHSEED=0
+187:  LC_ALL=C
+187:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+187:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+187: Test timeout computed to be: 90
+187: raw=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1645-scope/tmpoaz0akts
+187: remainder strict native true=2 false=11, order and named=PASS
+187: nested-call CHECK=0 C17=4 named output preserved
+187: two-actuals CHECK=0 C17=4 named output preserved
+187: binding-call CHECK=0 C17=4 named output preserved
+187: return-arm CHECK=0 C17=4 named output preserved
+187: one-normal-arm CHECK=0 C17=4 named output preserved
+119/132 Test #187: p1645_scope.unit .........................   Passed    0.42 sec
+test 188
+        Start 188: p1654_custody_rollback.unit
+
+188: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1654/selection.nl" "UINTMAX_C(19)"
+188: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+188: Environment variables: 
+188:  PYTHONDONTWRITEBYTECODE=1
+188:  PYTHONHASHSEED=0
+188:  LC_ALL=C
+188:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+188:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+188: Test timeout computed to be: 90
+188: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+188: OOM entry-result-world reached=1 hit=1 bytes=38593 rollback=PASS
+188: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+188: OOM C17 staging hit=1 bytes=19968 output-preserved=PASS
+188: CHECK/C17 retry PASS
+120/132 Test #188: p1654_custody_rollback.unit ..............   Passed    0.00 sec
+test 189
+        Start 189: p1654_discard_custody_rollback.unit
+
+189: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1654/discard.nl" "UINTMAX_C(41)"
+189: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+189: Environment variables: 
+189:  PYTHONDONTWRITEBYTECODE=1
+189:  PYTHONHASHSEED=0
+189:  LC_ALL=C
+189:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+189:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+189: Test timeout computed to be: 90
+189: OOM bool-helper-seal reached=1 hit=1 bytes=5184 rollback=PASS
+189: OOM entry-result-world reached=1 hit=1 bytes=34472 rollback=PASS
+189: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+189: OOM C17 staging hit=1 bytes=17408 output-preserved=PASS
+189: CHECK/C17 retry PASS
+121/132 Test #189: p1654_discard_custody_rollback.unit ......   Passed    0.00 sec
+test 190
+        Start 190: p1658_local_numerator_rollback.unit
+
+190: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1658/local-let.nl" "UINTMAX_C(8)"
+190: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+190: Environment variables: 
+190:  PYTHONDONTWRITEBYTECODE=1
+190:  PYTHONHASHSEED=0
+190:  LC_ALL=C
+190:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+190:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+190: Test timeout computed to be: 90
+190: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+190: OOM entry-result-world reached=1 hit=1 bytes=39239 rollback=PASS
+190: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+190: OOM C17 staging hit=1 bytes=22016 output-preserved=PASS
+190: CHECK/C17 retry PASS
+122/132 Test #190: p1658_local_numerator_rollback.unit ......   Passed    0.01 sec
+test 191
+        Start 191: p1662_local_remainder_rollback.unit
+
+191: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1662/local-let.nl" "UINTMAX_C(5)"
+191: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+191: Environment variables: 
+191:  PYTHONDONTWRITEBYTECODE=1
+191:  PYTHONHASHSEED=0
+191:  LC_ALL=C
+191:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+191:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+191: Test timeout computed to be: 90
+191: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+191: OOM entry-result-world reached=1 hit=1 bytes=39189 rollback=PASS
+191: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+191: OOM C17 staging hit=1 bytes=22016 output-preserved=PASS
+191: CHECK/C17 retry PASS
+123/132 Test #191: p1662_local_remainder_rollback.unit ......   Passed    0.01 sec
+test 192
+        Start 192: p1668_joined_divide_rollback.unit
+
+192: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1668/divide.nl" "UINTMAX_C(5)" "joined"
+192: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+192: Environment variables: 
+192:  PYTHONDONTWRITEBYTECODE=1
+192:  PYTHONHASHSEED=0
+192:  LC_ALL=C
+192:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+192:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+192: Test timeout computed to be: 90
+192: OOM prior-if-world reached=1 hit=1 bytes=168 rollback=PASS
+192: OOM joined-numerator-value reached=1 hit=1 bytes=11264 rollback=PASS
+192: OOM tail-if-world reached=1 hit=1 bytes=168 rollback=PASS
+192: OOM bool-helper-seal reached=1 hit=1 bytes=12096 rollback=PASS
+192: OOM entry-result-world reached=1 hit=1 bytes=42099 rollback=PASS
+192: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+192: OOM C17 staging hit=1 bytes=25600 output-preserved=PASS
+192: CHECK/C17 retry PASS
+124/132 Test #192: p1668_joined_divide_rollback.unit ........   Passed    0.01 sec
+test 193
+        Start 193: p1668_joined_remainder_rollback.unit
+
+193: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1668/remainder.nl" "UINTMAX_C(5)" "joined"
+193: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+193: Environment variables: 
+193:  PYTHONDONTWRITEBYTECODE=1
+193:  PYTHONHASHSEED=0
+193:  LC_ALL=C
+193:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+193:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+193: Test timeout computed to be: 90
+193: OOM prior-if-world reached=1 hit=1 bytes=168 rollback=PASS
+193: OOM joined-numerator-value reached=1 hit=1 bytes=11264 rollback=PASS
+193: OOM tail-if-world reached=1 hit=1 bytes=168 rollback=PASS
+193: OOM bool-helper-seal reached=1 hit=1 bytes=12096 rollback=PASS
+193: OOM entry-result-world reached=1 hit=1 bytes=42099 rollback=PASS
+193: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+193: OOM C17 staging hit=1 bytes=25600 output-preserved=PASS
+193: CHECK/C17 retry PASS
+125/132 Test #193: p1668_joined_remainder_rollback.unit .....   Passed    0.01 sec
+test 194
+        Start 194: p1654_native_scope.unit
+
+194: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1654/run.py" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654-native" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1654/selection.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1654/discard.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1658/local-let.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1662/local-let.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1668/divide.nl" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1668/remainder.nl"
+194: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+194: Environment variables: 
+194:  PYTHONDONTWRITEBYTECODE=1
+194:  PYTHONHASHSEED=0
+194:  LC_ALL=C
+194:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+194:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+194: Test timeout computed to be: 90
+194: raw=/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p1654-native/tmpqa8u7sj7
+186: arm-direct strict native true=2 false=11, order and named=PASS
+186: arm-named-copy strict native true=2 false=11, order and named=PASS
+186: arm-both strict native true=11 false=12, order and named=PASS
+126/132 Test #186: p1645_native.unit ........................   Passed    1.07 sec
+test 478
+        Start 478: p634_historical_hash.unit
+
+478: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1098/historical_forward.py" "p634" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo"
+478: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+478: Environment variables: 
+478:  PYTHONDONTWRITEBYTECODE=1
+478:  PYTHONHASHSEED=0
+478:  LC_ALL=C
+478:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+478:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+478: Test timeout computed to be: 90
+478: P1098 new private attachment counterexample rejected missing
+478: P1098 new private attachment counterexample rejected duplicate
+478: P1098 new private attachment counterexample rejected misplaced
+478: P1098 new private attachment counterexample rejected wrong_type
+478: P1098 new private attachment counterexample rejected wrong_destructor
+478: P1098 new private attachment counterexample rejected missing_read_attachment
+478: P1098 new private attachment counterexample rejected duplicate_read_attachment
+478: P1098 new private attachment counterexample rejected misplaced_read_attachment
+478: P1098 new private attachment counterexample rejected missing_read_declarations
+478: P1098 new private attachment counterexample rejected duplicate_read_declarations
+478: P1098 new private attachment counterexample rejected missing_capture_include
+478: P1098 new private attachment counterexample rejected duplicate_capture_include
+478: P1098 new private attachment counterexample rejected misplaced_capture_include
+478: P1098 new private attachment counterexample rejected missing_capture_storage
+478: P1098 new private attachment counterexample rejected duplicate_capture_storage
+478: P1098 new private attachment counterexample rejected misplaced_capture_storage
+478: P1098 new private attachment counterexample rejected wrong_capture_capacity
+478: P1098 new private attachment counterexample rejected missing_return_receipt
+478: P1098 new private attachment counterexample rejected duplicate_return_receipt
+478: P1098 new private attachment counterexample rejected misplaced_return_receipt
+478: P1098 new private attachment counterexample rejected wrong_return_receipt_spelling
+478: P1098 new private attachment counterexample rejected wrong_return_receipt_type
+478: {"historical_path": "src/usize_addition.c", "base_commit": "f7c277af59a4c4281c07fd6d3cc1d98f8bf88f48", "historical_git_blob": "901f758a9f1b937cdb854c86be42bdaedd32cdad", "historical_sha256": "31e1b76beaae03471fc2243e0a1c8402b95a8ccbd42e2c10a68235f496cfbbc7", "current_git_blob": "7df164f2dad65124def62ab108d1f235497fd01f", "current_sha256": "aacb5ef9499c22d30b78c448782a8e9badd5ecfc8920e022d1456feaf1b9ec21", "current_compiler": "unchanged; original P605 public/native checks run"}
+478: P1098 exact historical Git-blob/header fixture; old scripts/oracle and live compiler unchanged
+478: {"genuine": "PASS", "provenance": {"header": "src/semantic_internal.h", "candidate_sha256": "c25d48d2d39f218338606f079e0e64369cb2cbe23360b352c092d1017dddc5aa", "historical_sha256": "15e89aefc0f1574afdc77e6826e79f51902897b8b7ed57650f7a2b82ead1bed2", "exact_private_block_removed": 1}, "rejected": ["missing_h_block", "duplicate_h_block", "misplaced_h_block", "changed_h_type", "missing_owner_block", "duplicate_owner_block", "misplaced_owner_block", "wrong_owner_type", "missing_if_block", "duplicate_if_block", "misplaced_if_block", "wrong_if_type", "missing_block", "duplicate_block", "misplaced_block", "changed_pointer", "unrelated_header_change", "missing_p701_field", "duplicate_p701_field", "changed_p701_field", "src/usize_addition.c", "include/newlang/usize_addition.h", "include/newlang/usize_subtraction.h"], "historical_manifest": "UNCHANGED"}
+127/132 Test #478: p634_historical_hash.unit ................   Passed    0.06 sec
+test 479
+        Start 479: p634_same_value_ended_root.unit
+
+479: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p634_ended_root_gate "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p631/same_value_local.nl"
+479: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+479: Environment variables: 
+479:  PYTHONDONTWRITEBYTECODE=1
+479:  PYTHONHASHSEED=0
+479:  LC_ALL=C
+479:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+479:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+479: Test timeout computed to be: 90
+479: P634 ended_original_root=3 fact=0 value=0 live=0 rejects=3 genuine=PASS restored=UNCHANGED
+128/132 Test #479: p634_same_value_ended_root.unit ..........   Passed    0.00 sec
+test 480
+        Start 480: p634_unequal_ended_root.unit
+
+480: Test command: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p634_ended_root_gate "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p630/both_false.nl"
+480: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+480: Environment variables: 
+480:  PYTHONDONTWRITEBYTECODE=1
+480:  PYTHONHASHSEED=0
+480:  LC_ALL=C
+480:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+480:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+480: Test timeout computed to be: 90
+480: P634 ended_original_root=3 fact=0 value=0 live=0 rejects=3 genuine=PASS restored=UNCHANGED
+129/132 Test #480: p634_unequal_ended_root.unit .............   Passed    0.00 sec
+test 500
+        Start 500: p605_arithmetic_comparison.integration
+
+500: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p1098/historical_forward.py" "p605" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build/p605_public_probe" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p605" "none"
+500: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+500: Environment variables: 
+500:  PYTHONDONTWRITEBYTECODE=1
+500:  PYTHONHASHSEED=0
+500:  LC_ALL=C
+500:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+500:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+500: Test timeout computed to be: 90
+500: P1098 new private attachment counterexample rejected missing
+500: P1098 new private attachment counterexample rejected duplicate
+500: P1098 new private attachment counterexample rejected misplaced
+500: P1098 new private attachment counterexample rejected wrong_type
+500: P1098 new private attachment counterexample rejected wrong_destructor
+500: P1098 new private attachment counterexample rejected missing_read_attachment
+500: P1098 new private attachment counterexample rejected duplicate_read_attachment
+500: P1098 new private attachment counterexample rejected misplaced_read_attachment
+500: P1098 new private attachment counterexample rejected missing_read_declarations
+500: P1098 new private attachment counterexample rejected duplicate_read_declarations
+500: P1098 new private attachment counterexample rejected missing_capture_include
+500: P1098 new private attachment counterexample rejected duplicate_capture_include
+500: P1098 new private attachment counterexample rejected misplaced_capture_include
+500: P1098 new private attachment counterexample rejected missing_capture_storage
+500: P1098 new private attachment counterexample rejected duplicate_capture_storage
+500: P1098 new private attachment counterexample rejected misplaced_capture_storage
+500: P1098 new private attachment counterexample rejected wrong_capture_capacity
+500: P1098 new private attachment counterexample rejected missing_return_receipt
+500: P1098 new private attachment counterexample rejected duplicate_return_receipt
+500: P1098 new private attachment counterexample rejected misplaced_return_receipt
+500: P1098 new private attachment counterexample rejected wrong_return_receipt_spelling
+500: P1098 new private attachment counterexample rejected wrong_return_receipt_type
+500: {"historical_path": "src/usize_addition.c", "base_commit": "f7c277af59a4c4281c07fd6d3cc1d98f8bf88f48", "historical_git_blob": "901f758a9f1b937cdb854c86be42bdaedd32cdad", "historical_sha256": "31e1b76beaae03471fc2243e0a1c8402b95a8ccbd42e2c10a68235f496cfbbc7", "current_git_blob": "7df164f2dad65124def62ab108d1f235497fd01f", "current_sha256": "aacb5ef9499c22d30b78c448782a8e9badd5ecfc8920e022d1456feaf1b9ec21", "current_compiler": "unchanged; original P605 public/native checks run"}
+500: P1098 exact historical Git-blob/header fixture; old scripts/oracle and live compiler unchanged
+500: {"header": "src/semantic_internal.h", "candidate_sha256": "c25d48d2d39f218338606f079e0e64369cb2cbe23360b352c092d1017dddc5aa", "historical_sha256": "15e89aefc0f1574afdc77e6826e79f51902897b8b7ed57650f7a2b82ead1bed2", "exact_private_block_removed": 1}
+500: {"source": "composed_true.nl", "public": {"left": 0, "right": 7, "bool": 1, "symbols": [1, 2], "bool_symbol": 3, "add": [0, 0, 0], "sub": [9, 2, 7], "authority": 0}, "c_sha256": "c98e43763a8df0c3ed1baf7842bd2b85858b58169855c4ede5a9a57d5e1fb232", "native": {"plain": [0, 0], "observed": [0, 0]}, "sanitizer": "none"}
+500: {"source": "composed_equal.nl", "public": {"left": 0, "right": 0, "bool": 0, "symbols": [1, 2], "bool_symbol": 3, "add": [0, 0, 0], "sub": [7, 7, 0], "authority": 0}, "c_sha256": "dfa7a0d30d9cea304a50fb74eec1b409c85bfa390560d95cf31e8b66dcc009d9", "native": {"plain": [0, 0], "observed": [0, 0]}, "sanitizer": "none"}
+500: {"source": "minus_then_less.nl", "exit": 3, "diagnostic": "/tmp/p1098-historical-rnprm56q/tests/p605/minus_then_less.nl:1:35-1:36: error(unsupported)[USIZE-SUBTRACTION-SOURCE-PRECISION]: only one flat binary operation of names or typed literals is supported", "c_bytes": 0}
+500: {"source": "less_then_minus.nl", "exit": 3, "diagnostic": "/tmp/p1098-historical-rnprm56q/tests/p605/less_then_minus.nl:1:35-1:36: error(unsupported)[USIZE-LESS-THAN-SOURCE-PRECISION]: only one flat binary operation of names or typed literals is supported", "c_bytes": 0}
+500: {"source": "equal_then_less.nl", "exit": 3, "diagnostic": "/tmp/p1098-historical-rnprm56q/tests/p605/equal_then_less.nl:1:35-1:37: error(unsupported)[USIZE-EQUALITY-SOURCE-PRECISION]: only one flat binary operation of names or typed literals is supported", "c_bytes": 0}
+500: {"source": "less_then_equal.nl", "exit": 3, "diagnostic": "/tmp/p1098-historical-rnprm56q/tests/p605/less_then_equal.nl:1:35-1:36: error(unsupported)[USIZE-LESS-THAN-SOURCE-PRECISION]: only one flat binary operation of names or typed literals is supported", "c_bytes": 0}
+500: P605 adopted +/- public revalidation and < Copy composition FINITE; no new public proof or Product GO
+130/132 Test #500: p605_arithmetic_comparison.integration ...   Passed    0.37 sec
+test 501
+        Start 501: p605_mutant_phase.unit
+
+501: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p605/phase_test.py" "/usr/bin/gcc" "/workspace/p1544-6afecbd5/p1668-joined-local-public-prep/repo/tests/p603/integration_test.py"
+501: Working Directory: /workspace/p1544-6afecbd5/p1668-joined-local-public-prep/verified-normal-build
+501: Environment variables: 
+501:  PYTHONDONTWRITEBYTECODE=1
+501:  PYTHONHASHSEED=0
+501:  LC_ALL=C
+501:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+501:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+501: Test timeout computed to be: 90
+501: P608 phase policy: original compile required; either synthetic refusal has native=NULL; wrong runtime and missing family rejected
+131/132 Test #501: p605_mutant_phase.unit ...................   Passed    0.12 sec
+194: let-copy strict native 11 then 19; named C17 identical
+194: direct-tail strict native 11 then 19; named C17 identical
+194: discard strict native 23 then 41; named C17 identical
+194: inline-discard CHECK=0 C17=4, named output preserved
+194: arm-discard CHECK=0 C17=4, named output preserved
+194: inline-actual CHECK=0 C17=4, named output preserved
+194: local-numerator CHECK=0 C17=4, named output preserved
+194: called-from-helper CHECK=0 C17=4, named output preserved
+194: local-numerator-let strict native 15 then 11; named C17 identical
+194: local-numerator-discard strict native 15 then 11; named C17 identical
+194: local-remainder strict native 5 then 7; named C17 identical
+194: local-remainder-let strict native 6 then 3; named C17 identical
+194: local-remainder-discard strict native 6 then 3; named C17 identical
+194: mixed-arm-operators CHECK=0 C17=4, named output preserved
+194: aliased-remainder CHECK=0 C17=4, named output preserved
+194: arm-local-remainder CHECK=0 C17=4, named output preserved
+194: aliased-numerator CHECK=0 C17=4, named output preserved
+194: arm-local-numerator CHECK=0 C17=4, named output preserved
+194: joined-divide strict native 13 then 10; named C17 identical
+194: joined-divide-discard strict native 13 then 10; named C17 identical
+194: joined-remainder strict native 6 then 4; named C17 identical
+194: joined-remainder-discard strict native 6 then 4; named C17 identical
+194: joined-mixed-arms CHECK=0 C17=4, named output preserved
+194: joined-alias CHECK=0 C17=4, named output preserved
+194: joined-different-numerator CHECK=0 C17=4, named output preserved
+194: joined-arm-local CHECK=0 C17=4, named output preserved
+194: joined-extra-root-item CHECK=0 C17=4, named output preserved
+194: joined-terminating-first-arm CHECK=0 C17=4, named output preserved
+194: joined-call-initializer CHECK=0 C17=4, named output preserved
+132/132 Test #194: p1654_native_scope.unit ..................   Passed    3.90 sec
+
+The following tests passed:
+	p1544_positive50.unit
+	p1544_positive0.unit
+	p1544_zero.unit
+	p1544_range.unit
+	p1544_profile.unit
+	p1544_authenticity.unit
+	p1544_unknown.unit
+	p1544_receipt-oom.unit
+	p1544_result-oom.unit
+	p1544_emitter-oom.unit
+	p1544_native.unit
+	p1544_controls.unit
+	p1549_negative.unit
+	p1549_authenticity.unit
+	p1549_second-seal.unit
+	p1549_world-seal.unit
+	p1549_staging.unit
+	p1549_positive.unit
+	p1554_negative.unit
+	p1554_authenticity.unit
+	p1554_receipt-oom.unit
+	p1554_result-oom.unit
+	p1554_positive.unit
+	p1554_world-oom.unit
+	p1554_staging-oom.unit
+	p1561_negative.unit
+	p1561_authenticity.unit
+	p1561_second-leaf-oom.unit
+	p1561_outer-nodes-oom.unit
+	p1561_outer-world-oom.unit
+	p1561_staging-oom.unit
+	p1561_positive.unit
+	p1567_positive.unit
+	p1567_negative.unit
+	p1567_identity.unit
+	p1567_second-leaf-oom.unit
+	p1567_outer-nodes-oom.unit
+	p1567_outer-world-oom.unit
+	p1567_staging-oom.unit
+	p1572_negative.unit
+	p1572_identity.unit
+	p1572_second-leaf-oom.unit
+	p1572_outer-nodes-oom.unit
+	p1572_outer-world-oom.unit
+	p1572_staging-oom.unit
+	p1572_positive.unit
+	p1579_negative.unit
+	p1579_identity.unit
+	p1579_nested-result-oom.unit
+	p1579_outer-nodes-oom.unit
+	p1579_positive.unit
+	p1579_outer-world-oom.unit
+	p1579_staging-oom.unit
+	p1587_negative.unit
+	p1587_identity.unit
+	p1587_join-oom.unit
+	p1587_result-oom.unit
+	p1587_staging-oom.unit
+	p1592_native_and_boundaries.unit
+	p1592_identity.unit
+	p1592_inner-oom.unit
+	p1592_outer-oom.unit
+	p1592_staging-oom.unit
+	p1587_native.unit
+	p1596_identity.unit
+	p1596_actual-oom.unit
+	p1596_entry-oom.unit
+	p1596_staging-oom.unit
+	p1598_formal_copy_native.unit
+	p1598_identity.unit
+	p1598_leaf-oom.unit
+	p1598_entry-oom.unit
+	p1598_staging-oom.unit
+	p1596_native_and_boundaries.unit
+	p1605_if_arm_identity.unit
+	p1605_arm-reservation-oom.unit
+	p1605_helper-seal-oom.unit
+	p1605_arm-world-oom.unit
+	p1605_c17-staging-oom.unit
+	p1605_copy_native.unit
+	p1605_copy_identity.unit
+	p1605_copy_entry-world-oom.unit
+	p1605_copy_helper-seal-oom.unit
+	p1605_copy_c17-staging-oom.unit
+	p1605_if_arm_native.unit
+	p1615_identity.unit
+	p1615_second-formal-oom.unit
+	p1615_result-seal-oom.unit
+	p1615_c17-staging-oom.unit
+	p1615_nested-identity.unit
+	p1615_later-sibling-seal-oom.unit
+	p1615_nested-entry-world-oom.unit
+	p1615_nested-c17-staging-oom.unit
+	p1615_multi_argument_native.unit
+	p1623_identity.unit
+	p1623_bool-formal-oom.unit
+	p1623_mixed-seal-oom.unit
+	p1623_entry-world-oom.unit
+	p1623_staging-oom.unit
+	p1623_typed_arguments_native.unit
+	p1628_entry_identity.unit
+	p1628_staging_oom.unit
+	p1632_named_bool_discard.unit
+	p1632_entry-world-oom.unit
+	p1628_implicit_unit_native.unit
+	p1632_helper-seal-oom.unit
+	p1632_staging-oom.unit
+	p1638_scope.unit
+	p1638_native.unit
+	p1638_identity.unit
+	p1638_result-oom.unit
+	p1638_staging-oom.unit
+	p1643_slot-substitution.unit
+	p1643_receipt-failures.unit
+	p1643_authenticity.unit
+	p1645_identity.unit
+	p1645_rollback.unit
+	p1643_scope.unit
+	p1645_scope.unit
+	p1654_custody_rollback.unit
+	p1654_discard_custody_rollback.unit
+	p1658_local_numerator_rollback.unit
+	p1662_local_remainder_rollback.unit
+	p1668_joined_divide_rollback.unit
+	p1668_joined_remainder_rollback.unit
+	p1645_native.unit
+	p634_historical_hash.unit
+	p634_same_value_ended_root.unit
+	p634_unequal_ended_root.unit
+	p605_arithmetic_comparison.integration
+	p605_mutant_phase.unit
+	p1654_native_scope.unit
+
+100% tests passed, 0 tests failed out of 132
+
+Total Test time (real) =  14.60 sec

@@ -1,0 +1,36 @@
+{
+  "owner": "sole Track P",
+  "issue": 1668,
+  "episodes": [
+    {
+      "episode": "p1668-joined-local",
+      "head": "6ff3eca9d4a9c205a33cd2bf285b514f1a455475",
+      "tree": "3ba251a35e9c6c24453252df1f72687ec78dd8ff",
+      "parents": [
+        "b917e0d5a897ea606002a2813fde42f45b49c859"
+      ],
+      "status": "clean",
+      "raw_members": 6387,
+      "raw_manifest_sha256": "7ba79337c9ced3cca47f2c5914546402056725b4d6b674fa44a93df6fa00609f",
+      "bundle": "p1668-joined-local/private-history.bundle",
+      "bundle_ref": "refs/heads/p1668-joined-local-private",
+      "prerequisite": "b917e0d5a897ea606002a2813fde42f45b49c859"
+    },
+    {
+      "episode": "p1668-joined-local-public-prep",
+      "head": "f1f394d2e84621f70264965b92b3851c359249a6",
+      "tree": "3ba251a35e9c6c24453252df1f72687ec78dd8ff",
+      "parents": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0"
+      ],
+      "status": "clean",
+      "raw_members": 4182,
+      "raw_manifest_sha256": "ff4f97f58b16e777596c730a4b2cf4f625e9536dbab5ae496e0734036701145f",
+      "compiler_public_refs_checked": [
+        "5299ef4da6d45909abef6a0bebaa514d2e4c5ad0",
+        "f1f394d2e84621f70264965b92b3851c359249a6"
+      ]
+    }
+  ],
+  "compiler_receipt": "https://github.com/wakairo/NewLang_Compiler/issues/1668#issuecomment-7088922421"
+}
