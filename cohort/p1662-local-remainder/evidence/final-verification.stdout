@@ -1,0 +1,4 @@
+Old P1658 remainder fixture bytes preserved during refusal-to-success transition.
+wrong-type CHECK=3 named=3 USIZE-REMAINDER-TYPE no-clobber=PASS
+zero-divisor CHECK=3 named=3 USIZE-REMAINDER-ZERO no-clobber=PASS
+helper-let CHECK=0 named=4 V1-BACKEND-UNSUPPORTED no-clobber=PASS

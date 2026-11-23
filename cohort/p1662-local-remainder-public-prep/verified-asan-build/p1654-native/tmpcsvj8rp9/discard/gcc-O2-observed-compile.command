@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/p1654-native/tmpcsvj8rp9/discard/observed.c
+-o
+/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-asan-build/p1654-native/tmpcsvj8rp9/discard/gcc-O2-observed

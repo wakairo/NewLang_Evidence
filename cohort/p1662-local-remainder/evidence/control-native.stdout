@@ -1,0 +1,3 @@
+division strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.
+literals strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.
+mixed strict GCC/Clang O0/O2: ordinary stdout empty, observed predicted order.

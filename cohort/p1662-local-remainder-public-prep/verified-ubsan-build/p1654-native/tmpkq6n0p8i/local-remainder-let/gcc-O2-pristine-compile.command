@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/p1654-native/tmpkq6n0p8i/local-remainder-let/pristine.c
+-o
+/workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-ubsan-build/p1654-native/tmpkq6n0p8i/local-remainder-let/gcc-O2-pristine

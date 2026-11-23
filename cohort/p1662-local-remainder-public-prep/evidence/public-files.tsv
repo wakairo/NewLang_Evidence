@@ -1,0 +1,4 @@
+modified	8b014fdde9f7c68a907c561a165bf3b97eecf593	src/usize_addition.c
+modified	e0a3e48394e55b46b9ef89c7ac38b5b946158004	tests/p1654/CMakeLists.txt
+modified	a188ad9585569cdac739683c4458d7a911a9ea54	tests/p1654/run.py
+added	190c5ab23a8bd23b28f1e6535400c155fb2d168f	tests/p1662/local-let.nl

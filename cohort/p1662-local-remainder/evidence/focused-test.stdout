@@ -1,0 +1,127 @@
+Internal ctest changing into directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/DartConfiguration.tcl
+Test project /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 188
+    Start 188: p1654_custody_rollback.unit
+
+188: Test command: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1654/selection.nl" "UINTMAX_C(19)"
+188: Working Directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+188: Environment variables: 
+188:  PYTHONDONTWRITEBYTECODE=1
+188:  PYTHONHASHSEED=0
+188:  LC_ALL=C
+188:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+188:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+188: Test timeout computed to be: 90
+test 189
+    Start 189: p1654_discard_custody_rollback.unit
+
+189: Test command: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1654/discard.nl" "UINTMAX_C(41)"
+189: Working Directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+189: Environment variables: 
+189:  PYTHONDONTWRITEBYTECODE=1
+189:  PYTHONHASHSEED=0
+189:  LC_ALL=C
+189:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+189:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+189: Test timeout computed to be: 90
+test 190
+    Start 190: p1658_local_numerator_rollback.unit
+
+190: Test command: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1658/local-let.nl" "UINTMAX_C(8)"
+190: Working Directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+190: Environment variables: 
+190:  PYTHONDONTWRITEBYTECODE=1
+190:  PYTHONHASHSEED=0
+190:  LC_ALL=C
+190:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+190:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+190: Test timeout computed to be: 90
+188: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+188: OOM entry-result-world reached=1 hit=1 bytes=38593 rollback=PASS
+188: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+188: OOM C17 staging hit=1 bytes=19968 output-preserved=PASS
+188: CHECK/C17 retry PASS
+1/5 Test #188: p1654_custody_rollback.unit ...........   Passed    0.00 sec
+test 191
+    Start 191: p1662_local_remainder_rollback.unit
+
+191: Test command: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654_probe "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1662/local-let.nl" "UINTMAX_C(5)"
+191: Working Directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+191: Environment variables: 
+191:  PYTHONDONTWRITEBYTECODE=1
+191:  PYTHONHASHSEED=0
+191:  LC_ALL=C
+191:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+191:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+191: Test timeout computed to be: 90
+189: OOM bool-helper-seal reached=1 hit=1 bytes=5184 rollback=PASS
+189: OOM entry-result-world reached=1 hit=1 bytes=34472 rollback=PASS
+189: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+189: OOM C17 staging hit=1 bytes=17408 output-preserved=PASS
+189: CHECK/C17 retry PASS
+2/5 Test #189: p1654_discard_custody_rollback.unit ...   Passed    0.00 sec
+test 192
+    Start 192: p1654_native_scope.unit
+
+192: Test command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 "-B" "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1654/run.py" "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/newlangc" "/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native" "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1654/selection.nl" "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1654/discard.nl" "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1658/local-let.nl" "/workspace/p1544-6afecbd5/p1662-local-remainder/repo/tests/p1662/local-let.nl"
+192: Working Directory: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build
+192: Environment variables: 
+192:  PYTHONDONTWRITEBYTECODE=1
+192:  PYTHONHASHSEED=0
+192:  LC_ALL=C
+192:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+192:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+192: Test timeout computed to be: 90
+190: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+190: OOM entry-result-world reached=1 hit=1 bytes=39239 rollback=PASS
+190: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+190: OOM C17 staging hit=1 bytes=22016 output-preserved=PASS
+190: CHECK/C17 retry PASS
+3/5 Test #190: p1658_local_numerator_rollback.unit ...   Passed    0.01 sec
+191: OOM bool-helper-seal reached=1 hit=1 bytes=10368 rollback=PASS
+191: OOM entry-result-world reached=1 hit=1 bytes=39189 rollback=PASS
+191: CUSTODY two ordered actual Copy slots, distinct fresh formals and BODY/results
+191: OOM C17 staging hit=1 bytes=22016 output-preserved=PASS
+191: CHECK/C17 retry PASS
+4/5 Test #191: p1662_local_remainder_rollback.unit ...   Passed    0.01 sec
+192: raw=/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native/tmpbpeq6m94
+192: let-copy strict native 11 then 19; named C17 identical
+192: direct-tail strict native 11 then 19; named C17 identical
+192: discard strict native 23 then 41; named C17 identical
+192: inline-discard CHECK=0 C17=4, named output preserved
+192: arm-discard CHECK=0 C17=4, named output preserved
+192: inline-actual CHECK=0 C17=4, named output preserved
+192: local-numerator CHECK=0 C17=4, named output preserved
+192: called-from-helper CHECK=0 C17=4, named output preserved
+192: local-numerator-let strict native 15 then 11; named C17 identical
+192: local-numerator-discard strict native 15 then 11; named C17 identical
+192: local-remainder strict native 5 then 7; named C17 identical
+192: local-remainder-let strict native 6 then 3; named C17 identical
+192: local-remainder-discard strict native 6 then 3; named C17 identical
+192: mixed-arm-operators CHECK=0 C17=4, named output preserved
+192: aliased-remainder CHECK=0 C17=4, named output preserved
+192: arm-local-remainder CHECK=0 C17=4, named output preserved
+192: aliased-numerator CHECK=0 C17=4, named output preserved
+192: arm-local-numerator CHECK=0 C17=4, named output preserved
+5/5 Test #192: p1654_native_scope.unit ...............   Passed    2.22 sec
+
+The following tests passed:
+	p1654_custody_rollback.unit
+	p1654_discard_custody_rollback.unit
+	p1658_local_numerator_rollback.unit
+	p1662_local_remainder_rollback.unit
+	p1654_native_scope.unit
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   2.26 sec

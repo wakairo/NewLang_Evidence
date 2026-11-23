@@ -1,0 +1,7 @@
+4b24d2f354de4fa0d0c479825df688e41a30c634
+7b73d38b2bbb4274da60dc4726cf8f744150446e
+1e6ec2206a4ea891f50b903cf728a65789f41310
+M	src/usize_addition.c
+M	tests/p1654/CMakeLists.txt
+M	tests/p1654/run.py
+A	tests/p1662/local-let.nl

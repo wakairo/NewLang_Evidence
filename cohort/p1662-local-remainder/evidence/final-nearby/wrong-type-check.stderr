@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1662-local-remainder/evidence/source/wrong-type.nl:4:15-4:16: error(semantic)[USIZE-REMAINDER-TYPE]: % requires exact core usize operands

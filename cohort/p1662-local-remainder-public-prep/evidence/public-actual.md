@@ -1,0 +1,7 @@
+## P1662 PUBLIC ACTUAL
+
+既存 sole Track P。C PUBLIC DRAFT GO、元 LOCAL FINAL、先行 #1661 と実 main/ref/commit を個別GET。#1661 は `1e6ec2206a4ea891f50b903cf728a65789f41310` で merged=true。実 main `55b3d960c585745d9b5b481efee6b41b4403f2be`、tree `2320df8104003475996e173ccf34ed8e9be5423b`、ordered parents `[b11e8b9a960fc8c5f253c9906ebf5f02c471c022, 1e6ec2206a4ea891f50b903cf728a65789f41310]`、Draft17.38 を Git／GitHub で照合。先行 PR Required 6 成功、採用後 main Required は観測時点で進行中、重大 NONPASS／STOP は未観測。 [C PUBLIC DRAFT GO](https://github.com/wakairo/NewLang_Compiler/issues/1662#issuecomment-7088130610) · [採用 #1661](https://github.com/wakairo/NewLang_Compiler/pull/1661) · [実 main](https://github.com/wakairo/NewLang_Compiler/commit/55b3d960c585745d9b5b481efee6b41b4403f2be)
+
+別 checkout で固定 private `4b24d2f354de4fa0d0c479825df688e41a30c634` の差分を実 main に移した。公開候補 `b917e0d5a897ea606002a2813fde42f45b49c859`、tree `7b73d38b2bbb4274da60dc4726cf8f744150446e`、単親 `55b3d960c585745d9b5b481efee6b41b4403f2be`。4 paths、full-index binary diff 9,271 B／SHA-256 `6a87e299a07e2c4d5b76e485a5c094a6365b36313f938a0f5b63c1bdbfe84b3b` は固定 private 差分とバイト一致。formatter／diff-check／clean を確認し、exact 公開候補で選択 normal／ASan/LSan／UBSan を再実行中。指定 ref `refs/heads/p1662-local-remainder-public` は確認時点で未存在。合格後に同 ref へ通常 push し、main 向け DRAFT 1件と自然CIを照合する。
+
+対象は通常 main 直下の named Bool Copy と、純粋な unary Bool helper の直接 IF tail にある同一局所 `usize` の二つの固定非ゼロ余り。元 FIRST／RED と private raw 3,980件を保全・照合済み。独立 F/R 原資料未参照。 [LOCAL FINAL](https://github.com/wakairo/NewLang_Compiler/issues/1662#issuecomment-7087852397)

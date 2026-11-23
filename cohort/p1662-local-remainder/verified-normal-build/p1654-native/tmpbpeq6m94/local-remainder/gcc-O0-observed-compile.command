@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O0
+/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native/tmpbpeq6m94/local-remainder/observed.c
+-o
+/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native/tmpbpeq6m94/local-remainder/gcc-O0-observed

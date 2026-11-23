@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1662-local-remainder-public-prep
+/workspace/newlang-tools/lib/python3.12/site-packages/cmake/data/bin/cmake --build /workspace/p1544-6afecbd5/p1662-local-remainder-public-prep/verified-normal-build --parallel 2 --target newlangc p1544_probe p1549_probe p1554_probe p1561_probe p1567_probe p1572_probe p1579_probe p1587_probe p1592_probe p1596_probe p1598_probe p1605_probe p1615_probe p1623_probe p1628_probe p1632_probe p1638_probe p1643_probe p1645_probe p1654_probe p634_ended_root_gate p605_public_probe 

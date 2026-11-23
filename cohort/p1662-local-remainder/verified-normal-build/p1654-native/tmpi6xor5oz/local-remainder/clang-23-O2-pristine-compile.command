@@ -1,0 +1,10 @@
+/workspace/p1544-6afecbd5/repo/.deps/toolchains/debian-13-x86_64-7c9921be7919a10d/newlang-llvm-23.1.3-linux-x64/bin/clang-23
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native/tmpi6xor5oz/local-remainder/pristine.c
+-o
+/workspace/p1544-6afecbd5/p1662-local-remainder/verified-normal-build/p1654-native/tmpi6xor5oz/local-remainder/clang-23-O2-pristine

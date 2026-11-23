@@ -1,0 +1,2 @@
+error(cli)[V1-BACKEND-UNSUPPORTED]: accepted program uses a construct outside the V0/V1 Checked-C spine
+note: /workspace/p1544-6afecbd5/p1662-local-remainder/verified-asan-build/p1654-native/tmpdrzpqw7v/aliased-numerator/source.nl
