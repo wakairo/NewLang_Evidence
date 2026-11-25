@@ -1,0 +1,2 @@
+error(cli)[V1-BACKEND-UNSUPPORTED]: accepted program uses a construct outside the V0/V1 Checked-C spine
+note: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/source/independent-old.nl

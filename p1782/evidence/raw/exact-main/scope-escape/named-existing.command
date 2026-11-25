@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1773-sequential-scoped-exchange/evidence/build-adopted-release/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/raw/exact-main/scope-escape/existing.c /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/cases/scope-escape.nl

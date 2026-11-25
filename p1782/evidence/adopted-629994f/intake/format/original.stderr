@@ -1,0 +1,21 @@
+src/usize_addition.c:3602:20: error: code should be clang-formatted [-Wclang-format-violations]
+    if (observed &&
+                   ^
+src/usize_addition.c:3603:61: error: code should be clang-formatted [-Wclang-format-violations]
+        (loans[0]->span.end_byte >= mode->span.start_byte ||
+                                                            ^
+src/usize_addition.c:3604:61: error: code should be clang-formatted [-Wclang-format-violations]
+         mode->span.end_byte >= loans[1]->span.start_byte ||
+                                                            ^
+src/usize_addition.c:3605:58: error: code should be clang-formatted [-Wclang-format-violations]
+         !descriptor_read(f, c, bindings[1]->initializer,
+                                                         ^
+src/usize_addition.c:3606:64: error: code should be clang-formatted [-Wclang-format-violations]
+                          nl_syntax_node_view(initializers[1]), originals[0],
+                                                               ^
+src/usize_addition.c:3606:78: error: code should be clang-formatted [-Wclang-format-violations]
+                          nl_syntax_node_view(initializers[1]), originals[0],
+                                                                             ^
+src/usize_addition.c:3607:41: error: code should be clang-formatted [-Wclang-format-violations]
+                          active, u8) ||
+                                        ^

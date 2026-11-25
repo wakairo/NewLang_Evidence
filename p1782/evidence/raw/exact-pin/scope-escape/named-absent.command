@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1778-independent-descriptor-exchange/evidence/build-adopted-release/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/raw/exact-pin/scope-escape/absent.c /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/cases/scope-escape.nl

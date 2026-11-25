@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/raw/exact-pin/literal-independent/existing.c
+-o
+raw/native-alternatives/literal-independent/gcc-original-O2

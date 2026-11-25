@@ -1,0 +1,10 @@
+gcc-release	p1773_sequential_writer_rollback.unit	9.75625	PASS
+gcc-release	p1778_independent_writer_rollback.unit	10.9707	PASS
+gcc-release	p1782_observed_mode_rollback.unit	10.4766	PASS
+clang-asan-ubsan	p1773_sequential_writer_rollback.unit	95.5267	PASS
+clang-asan-ubsan	p1778_independent_writer_rollback.unit	105.631	PASS
+clang-asan-ubsan	p1782_observed_mode_rollback.unit	101.834	PASS
+p1738	17 positive sources	21 refusals/no-clobber	136 strict native runs
+independent input	mirror-low	4032,35,35,22,35,119,81,35,147	ASan/LSan/UBSan PASS
+independent input	mirror-high	4096,93,93,22,93,119,81,93,147	ASan/LSan/UBSan PASS
+independent input	mirror-tail	4032,35,35,22,35,119,81,35,147	ASan/LSan/UBSan PASS

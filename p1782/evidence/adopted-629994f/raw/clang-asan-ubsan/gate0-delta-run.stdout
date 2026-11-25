@@ -1,0 +1,12 @@
+compiler	/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-clang-asan-ubsan/newlangc	0f032923ee4e9cee2e03c64aa57b6fb8e95c3cd3790f94e560d6b04d42f5edf2
+mirror-low	0	0	0	0	prediction-difference
+mirror-high	0	0	0	0	prediction-difference
+mirror-tail	0	0	0	0	prediction-difference
+literal-independent	0	0	0	0	match
+same-original	0	0	0	0	match
+single-original	0	0	0	0	match
+mirror-sibling	0	4	4	4	match
+mirror-wrong-original	0	4	4	4	match
+mirror-stale	0	4	4	4	match
+mirror-wrong-actual	0	4	4	4	match
+scope-escape	3	3	3	3	match

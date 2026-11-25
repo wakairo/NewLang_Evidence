@@ -1,0 +1,12 @@
+compiler	/workspace/p1544-6afecbd5/p1773-sequential-scoped-exchange/evidence/build-adopted-release/newlangc	c18594c96365370679ad1005dee20b6c27cf6dfeecb8e44c74bb22f6f910bee3
+mirror-low	0	4	4	4	match
+mirror-high	0	4	4	4	match
+mirror-tail	0	4	4	4	match
+literal-independent	0	4	4	4	match
+same-original	0	0	0	0	match
+single-original	0	0	0	0	match
+mirror-sibling	0	4	4	4	match
+mirror-wrong-original	0	4	4	4	match
+mirror-stale	0	4	4	4	match
+mirror-wrong-actual	0	4	4	4	match
+scope-escape	3	3	3	3	match

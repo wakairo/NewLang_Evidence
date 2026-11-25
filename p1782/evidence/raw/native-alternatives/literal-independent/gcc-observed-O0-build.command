@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O0
+raw/native-alternatives/literal-independent/observed.c
+-o
+raw/native-alternatives/literal-independent/gcc-observed-O0

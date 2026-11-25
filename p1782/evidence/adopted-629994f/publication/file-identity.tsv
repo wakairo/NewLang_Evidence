@@ -1,0 +1,12 @@
+M	cf0f13e71cb00b7637f51353137675370b966a4f	CMakeLists.txt
+M	6d7e3eb8b9ba16916bf9185fe46deb0ab58aad78	src/c17_division_usize.c
+M	e24cd04bb26847ff5c7327c9ad174263d7e9103e	src/usize_addition.c
+M	54732c7ba12c6153b6c8de598e7a5ea62cb51672	tests/p1738/CMakeLists.txt
+M	c029db4e7a737c82a48962b1374b3f048bd5b883	tests/p1738/run.py
+A	5db1950c496bbd5daba7345f47bdb48b361f32c8	tests/p1738/source/mirror-high.nl
+A	f77b3c5e670d2a36f2888a479c4823f836011bf8	tests/p1738/source/mirror-low.nl
+A	eafc5a731ee6ffc299907d514340b97d4858bf22	tests/p1738/source/mirror-sibling.nl
+A	358fba872c6428ce6ee96778c0601616c8b263c3	tests/p1738/source/mirror-stale.nl
+A	9fbe4fbff6088f62f766f41d1867a0738acbfcb0	tests/p1738/source/mirror-tail.nl
+A	ffc4230bb3b1fd2d7f41ecef8a6e911bf70a9a2f	tests/p1738/source/mirror-wrong-actual.nl
+A	9a01254c14e5d374a572989380712e34b0ef414f	tests/p1738/source/mirror-wrong-original.nl

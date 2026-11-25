@@ -1,0 +1,6 @@
+case	values
+mirror-low	4032,35,35,22,35,119,81,35,147
+mirror-high	4096,93,93,22,93,119,81,93,147
+literal-independent	4032,35,11,22,35,119,81,11,147
+same-original	4032,35,22,35,11,119
+single-original	4032,35,22,35,119

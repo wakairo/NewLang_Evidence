@@ -1,0 +1,3 @@
+main single-original 4032,35,22,35,119 8 strict runs
+main same-original 4032,35,22,35,11,119 8 strict runs
+pin literal-independent 4032,35,22,35,119,81,11,147 8 strict runs

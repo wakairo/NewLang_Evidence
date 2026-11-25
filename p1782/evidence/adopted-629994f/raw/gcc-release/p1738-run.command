@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1782-observed-mode-handoff
+python3 -B /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/run.py /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/newlangc /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/source /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/gcc-release/p1738-run 

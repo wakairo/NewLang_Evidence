@@ -1,0 +1,10 @@
+repo_path=wakairo/NewLang_Compiler
+base=32b63e7bea3be5fd6fafb9f11f8ea0a7fd2376cc
+base_tree=0c4f7133acfccc3f974d2c8c212bbc916d4de2f9
+pin=d121c79a0f3cb94da1d2d15aaf789cc16a6e94f0
+pin_tree=803e2b2efddbd136004ab84cac52e4d9932181f9
+w=../repo
+main_build=../../p1773-sequential-scoped-exchange/evidence/build-adopted-release
+pin_build=../../p1778-independent-descriptor-exchange/evidence/build-adopted-release
+pin_source=../../p1778-independent-descriptor-exchange/adopted-repo
+export LC_ALL=C

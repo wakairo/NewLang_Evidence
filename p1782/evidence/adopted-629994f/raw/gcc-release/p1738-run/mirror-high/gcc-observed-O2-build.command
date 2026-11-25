@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/gcc-release/p1738-run/mirror-high/observed.c
+-o
+/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/gcc-release/p1738-run/mirror-high/gcc-observed-O2

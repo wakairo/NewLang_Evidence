@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Linux-gcc"
+	tests="3"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="09c9af3984ad"
+	time="20"
+	timestamp="2026-11-25T17:15:53"
+	>
+	<testcase name="p1773_sequential_writer_rollback.unit" classname="p1773_sequential_writer_rollback.unit" time="9.75625" status="run">
+		<properties/>
+		<system-out>CHECK allocation failures=1579 exact state, no artifact, same-context retry
+Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+named C17 allocation failures=2410 each for existing/absent; no-clobber and same-process retry
+</system-out>
+	</testcase>
+	<testcase name="p1778_independent_writer_rollback.unit" classname="p1778_independent_writer_rollback.unit" time="10.9707" status="run">
+		<properties/>
+		<system-out>CHECK allocation failures=1656 exact state, no artifact, same-context retry
+Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+named C17 allocation failures=2493 each for existing/absent; no-clobber and same-process retry
+</system-out>
+	</testcase>
+	<testcase name="p1782_observed_mode_rollback.unit" classname="p1782_observed_mode_rollback.unit" time="10.4766" status="run">
+		<properties/>
+		<system-out>CHECK allocation failures=1656 exact state, no artifact, same-context retry
+Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+named C17 allocation failures=2495 each for existing/absent; no-clobber and same-process retry
+</system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+# Track P #1782 adopted current-field handoff
+
+This is the sole Track P's original FIRST, Gate0, comparison, local result and public handoff evidence for the adopted current-field handoff. Original Gate0 used actual main 32b63e7bea3be5fd6fafb9f11f8ea0a7fd2376cc and comparator d121c79a0f3cb94da1d2d15aaf789cc16a6e94f0. The new sources first reached CHECK and refused at C17. The separate adoption alignment used main 629994f527ded64d755923dcf9a3df2de08eacf5 and measured public candidate c537de350517bcb0b78700deafe22cf5b624f98d, tree 4ae68fe5ef99fee3ab22391c0ae67b13d2200be0. GitHub adopted that tree through #1785 at 637653d917d1bc63acece382f0e014df3ae19e02.
+
+The p1782/evidence directory preserves the selected P-owned sources, oracles, commands, outputs, reports, generated C, test results, checksums and publication records. The original full inventories still describe the local evidence, including the measured executables retained there. This archive's exact contents are covered by MEMBERS.tsv.
+
+[Issue #1782](https://github.com/wakairo/NewLang_Compiler/issues/1782) · [FIRST](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7154617402) · [Gate0](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7154824647) · [LOCAL READY](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7156931173) · [PUBLIC HANDOFF](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7157167165) · [Adopted #1785](https://github.com/wakairo/NewLang_Compiler/pull/1785)

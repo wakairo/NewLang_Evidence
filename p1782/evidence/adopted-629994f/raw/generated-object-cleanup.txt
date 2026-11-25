@@ -1,0 +1,3 @@
+before available bytes/inodes (57856000, 1551914)
+after available bytes/inodes (91873280, 1552120)
+reclaimed only regenerated .o/.o.d files in own three measured CMakeFiles trees: 206, 33603315 logical bytes

@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1782-observed-mode-handoff
+ctest --test-dir /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-clang-asan-ubsan -VV --parallel 2 -R \^p\(1773_sequential_writer\|1778_independent_writer\|1782_observed_mode\)_rollback\[.\]unit\$ --output-junit /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/clang-asan-ubsan/rollback.xml 

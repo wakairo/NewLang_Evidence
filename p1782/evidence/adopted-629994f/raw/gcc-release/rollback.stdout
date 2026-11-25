@@ -1,0 +1,69 @@
+Internal ctest changing into directory: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/DartConfiguration.tcl
+Parse Config file:/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/DartConfiguration.tcl
+Test project /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 240
+    Start 240: p1773_sequential_writer_rollback.unit
+
+240: Test command: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/p1673_probe "guarded-byte-sequential-writer-oom" "/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/source/sequential-named.nl" "unused"
+240: Working Directory: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release
+240: Environment variables: 
+240:  PYTHONDONTWRITEBYTECODE=1
+240:  PYTHONHASHSEED=0
+240:  LC_ALL=C
+240:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+240:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+240: Test timeout computed to be: 180
+test 241
+    Start 241: p1778_independent_writer_rollback.unit
+
+241: Test command: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/p1673_probe "guarded-byte-distinct-writers-oom" "/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/source/dual-named.nl" "unused"
+241: Working Directory: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release
+241: Environment variables: 
+241:  PYTHONDONTWRITEBYTECODE=1
+241:  PYTHONHASHSEED=0
+241:  LC_ALL=C
+241:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+241:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+241: Test timeout computed to be: 180
+240: CHECK allocation failures=1579 exact state, no artifact, same-context retry
+240: Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+240: named C17 allocation failures=2410 each for existing/absent; no-clobber and same-process retry
+1/3 Test #240: p1773_sequential_writer_rollback.unit ....   Passed    9.76 sec
+test 242
+    Start 242: p1782_observed_mode_rollback.unit
+
+242: Test command: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release/p1673_probe "guarded-byte-distinct-writers-oom" "/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/tests/p1738/source/mirror-low.nl" "unused"
+242: Working Directory: /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release
+242: Environment variables: 
+242:  PYTHONDONTWRITEBYTECODE=1
+242:  PYTHONHASHSEED=0
+242:  LC_ALL=C
+242:  ASAN_OPTIONS=detect_leaks=1:halt_on_error=1
+242:  UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1
+242: Test timeout computed to be: 180
+241: CHECK allocation failures=1656 exact state, no artifact, same-context retry
+241: Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+241: named C17 allocation failures=2493 each for existing/absent; no-clobber and same-process retry
+2/3 Test #241: p1778_independent_writer_rollback.unit ...   Passed   10.97 sec
+242: CHECK allocation failures=1656 exact state, no artifact, same-context retry
+242: Whole-entry world seal allocation failures=16, revalidated whole world and both real child results on retry
+242: named C17 allocation failures=2495 each for existing/absent; no-clobber and same-process retry
+3/3 Test #242: p1782_observed_mode_rollback.unit ........   Passed   10.48 sec
+
+The following tests passed:
+	p1773_sequential_writer_rollback.unit
+	p1778_independent_writer_rollback.unit
+	p1782_observed_mode_rollback.unit
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  20.26 sec

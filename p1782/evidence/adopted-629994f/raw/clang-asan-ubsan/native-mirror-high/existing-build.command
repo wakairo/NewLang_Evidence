@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1782-observed-mode-handoff
+clang-23 -std=c17 -pedantic-errors -Wall -Wextra -Werror -Wno-error=gcc-install-dir-libstdcxx -O1 -g0 -fsanitize=address\,undefined -fno-sanitize-recover=all /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/gcc-release/p1738-run/mirror-high/existing.c -o /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/clang-asan-ubsan/native-mirror-high/existing 

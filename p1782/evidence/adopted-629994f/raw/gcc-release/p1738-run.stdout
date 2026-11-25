@@ -1,0 +1,38 @@
+guarded-delegated-1023 field=0 bytes,mode,old,updated,sibling=65472,109,17,109,211
+guarded-delegated-1024 field=0 bytes,mode,old,updated,sibling=0,53,17,53,211
+guarded-delegated-reversed field=1 bytes,mode,old,updated,sibling=65472,109,17,109,211
+writer-tail-queue field=1 bytes,mode,old,updated,sibling=32640,31,11,31,91
+writer-tail-timer field=0 bytes,mode,old,updated,sibling=0,7,73,7,229
+independent-actual CHECK=0 C17=4, outputs preserved
+independent-input CHECK=0 C17=4, outputs preserved
+independent-old CHECK=0 C17=4, outputs preserved
+second-change CHECK=0 C17=4, outputs preserved
+late-descriptor CHECK=0 C17=4, outputs preserved
+split-direct-sibling-first CHECK=0 C17=4, outputs preserved
+split-duplicate-target CHECK=0 C17=4, outputs preserved
+writer-explicit-return CHECK=0 C17=4, outputs preserved
+writer-tail-wrong-actual CHECK=0 C17=4, outputs preserved
+sequential-different-field CHECK=0 C17=4, outputs preserved
+sequential-wrong-old CHECK=0 C17=4, outputs preserved
+sequential-wrong-actual CHECK=0 C17=4, outputs preserved
+scope-exit CHECK=3 C17=3, outputs preserved
+split-queue-sibling-first field=1 bytes,mode,old,updated,sibling=32768,17,23,17,191
+split-port-sibling-first field=0 bytes,mode,old,updated,sibling=0,2,63,2,207
+writer-tail-queue-sibling-first field=1 bytes,mode,old,updated,sibling=32640,31,11,31,91
+sequential-named field=1 bytes,mode,old,updated,sibling=4096,31,9,31,31,5,97
+adjacent-named field=1 bytes,mode,old,updated,sibling=4096,31,9,31,5,97
+sequential-tail field=1 bytes,mode,old,updated,sibling=4096,31,9,31,31,5,97
+dual-named field=1 bytes,mode,old,updated,sibling=4032,31,19,31,83,43,7,127
+dual-direct-tail field=1 bytes,mode,old,updated,sibling=4032,31,19,31,83,43,7,127
+dual-high field=1 bytes,mode,old,updated,sibling=4096,73,19,73,83,43,7,127
+dual-inline CHECK=0 C17=4, outputs preserved
+dual-crossed-read CHECK=0 C17=4, outputs preserved
+dual-wrong-old CHECK=0 C17=4, outputs preserved
+dual-same-root CHECK=0 C17=4, outputs preserved
+mirror-low field=1 bytes,mode,old,updated,sibling=4032,35,35,22,35,119,81,35,147
+mirror-high field=1 bytes,mode,old,updated,sibling=4096,93,93,22,93,119,81,93,147
+mirror-tail field=1 bytes,mode,old,updated,sibling=4032,35,35,22,35,119,81,35,147
+mirror-sibling CHECK=0 C17=4, outputs preserved
+mirror-wrong-original CHECK=0 C17=4, outputs preserved
+mirror-stale CHECK=0 C17=4, outputs preserved
+mirror-wrong-actual CHECK=0 C17=4, outputs preserved

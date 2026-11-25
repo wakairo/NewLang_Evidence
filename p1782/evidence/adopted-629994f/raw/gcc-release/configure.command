@@ -1,0 +1,2 @@
+cd -- /workspace/p1544-6afecbd5/p1782-observed-mode-handoff
+cmake -S /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo -B /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-gcc-release -DBUILD_TESTING=ON -DCMAKE_PROJECT_INCLUDE=/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/adopted-candidate-repo/cmake/independent-r-tests-hook.cmake -DNEWLANG_FRONTEND_ONLY=ON -DNEWLANG_SANITIZER=none -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc 

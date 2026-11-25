@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-clang-asan-ubsan/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/raw/clang-asan-ubsan/gate0-delta/mirror-low/absent.c /workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/cases/mirror-low.nl

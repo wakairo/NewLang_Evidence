@@ -1,0 +1,476 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6eddcf548e110f1124911e4b88417fc56277daa9..cf0f13e71cb00b7637f51353137675370b966a4f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2334,6 +2334,7 @@ include(tests/p1455/CMakeLists.txt)
+     # Give the exhaustive rollback sweeps room for ASan shard scheduling.
+     set_tests_properties(p1773_sequential_writer_rollback.unit PROPERTIES TIMEOUT 180)
+     set_tests_properties(p1778_independent_writer_rollback.unit PROPERTIES TIMEOUT 180)
++    set_tests_properties(p1782_observed_mode_rollback.unit PROPERTIES TIMEOUT 180)
+     set_tests_properties(p1756_delegated_policy_rollback.unit PROPERTIES TIMEOUT 180)
+     # Full registration/invocation/named-output fault enumeration with host
+     # ASan checks thousands of independent retries. Keep every location and
+diff --git a/src/c17_division_usize.c b/src/c17_division_usize.c
+index 9956e7e617ef30f0008ab306e1d33e11485b999a..6d7e3eb8b9ba16916bf9185fe46deb0ab58aad78 100644
+--- a/src/c17_division_usize.c
++++ b/src/c17_division_usize.c
+@@ -381,11 +381,14 @@ static bool division_emit_byte_update(DivisionText *text,
+             init = nl_checked_node_view(f, item->initializer);
+         }
+         second = nl_checked_node_view(f, plan->byte_second_update);
+-        if (!division_text_append(text,
++        /* The field read can itself bind the second writer's actual. */
++        if (item != second &&
++            !division_text_append(text,
+                                   "    const uint8_t nl_local_%zu = "
+                                   "((uint8_t)UINT8_C(%zu));\n",
+-                                  item->symbol, init->scalar_result.value) ||
+-            !division_emit_byte_loan(text, f, second_object, second, true))
++                                  item->symbol, init->scalar_result.value))
++            return false;
++        if (!division_emit_byte_loan(text, f, second_object, second, true))
+             return false;
+         item = nl_checked_node_view(f, second->next_item);
+     }
+diff --git a/src/usize_addition.c b/src/usize_addition.c
+index a959d246d754ca4ac77cd3e9877098cf73e2a97c..e24cd04bb26847ff5c7327c9ad174263d7e9103e 100644
+--- a/src/usize_addition.c
++++ b/src/usize_addition.c
+@@ -3458,7 +3458,8 @@ static bool
+ descriptor_ordered_originals(const NLCheckedFragment *f,
+                              const NLSemanticContext *c,
+                              const NLCheckedNodeView *const loans[2],
+-                             const GuardedByteDescriptor fields[2])
++                             const GuardedByteDescriptor fields[2],
++                             const NLCheckedNodeView *read_binding)
+ {
+     const NLCheckedField *left = &fields[0].change, *right = &fields[1].change;
+     if (left->nominal != right->nominal || left->index != right->index)
+@@ -3489,6 +3490,18 @@ descriptor_ordered_originals(const NLCheckedFragment *f,
+                                  fields[1].constructor, right,
+                                  fields[1].sibling))
+         return false;
++    if (read_binding) {
++        NLSemanticBindingView input;
++        const NLCheckedNodeView *read =
++            nl_checked_node_view(f, read_binding->initializer);
++        /* The second call must still hold the exact checked field Copy. */
++        if (!read ||
++            !nl_semantic_binding_view(second_call.entry, read_binding->symbol,
++                                      &input) ||
++            input.availability != NL_AVAILABLE || input.type != left->type ||
++            input.value != read->results[0].value)
++            return false;
++    }
+     const NLCopyBodyParameters calls[] = {first_call, second_call};
+     for (size_t i = 0; i < 2; ++i) {
+         const NLCheckedField *change = &fields[i].change;
+@@ -3513,9 +3526,9 @@ descriptor_ordered_originals(const NLCheckedFragment *f,
+     return true;
+ }
+ 
+-/* Two early originals, two one-Change writer calls and four post-loan reads.
+- * The matcher reads the existing per-call frames and never joins their worlds.
+- */
++/* Two early originals, two one-Change writer calls and four final reads.
++ * The second mode is a literal or a Copy of the first original's updated
++ * field between the loans. Both calls retain their own replay frames. */
+ static bool guarded_byte_distinct_descriptors(
+     const NLCheckedFragment *f, const NLSemanticContext *c,
+     const NLCheckedNodeView *root, const NLSyntaxView *source,
+@@ -3550,7 +3563,9 @@ static bool guarded_byte_distinct_descriptors(
+     const NLTypeId u8 = nl_semantic_core_type(c, NL_TYPE_U8);
+     const NLCheckedNodeView *mode =
+         nl_checked_node_view(f, bindings[1]->initializer);
+-    if (!mode || mode->type != u8 || !copy_if_literal_at(f, c, mode))
++    const bool observed = mode && mode->kind == NL_CHECKED_FIELD_READ;
++    if (!mode || mode->type != u8 ||
++        (!observed && !copy_if_literal_at(f, c, mode)))
+         return false;
+     const NLSymbolId actuals[] = {selected, bindings[1]->symbol};
+     const NLCheckedNodeView *loans[2];
+@@ -3582,7 +3597,17 @@ static bool guarded_byte_distinct_descriptors(
+             return false;
+         field->constructor = ctor->results[0].value;
+     }
+-    return descriptor_ordered_originals(f, c, loans, fields);
++    /* A read feeding the second writer must observe the first Change. */
++    const NLCheckedField *active = &fields[0].change;
++    if (observed && (loans[0]->span.end_byte >= mode->span.start_byte ||
++                     mode->span.end_byte >= loans[1]->span.start_byte ||
++                     !descriptor_read(f, c, bindings[1]->initializer,
++                                      nl_syntax_node_view(initializers[1]),
++                                      originals[0], active, u8) ||
++                     !descriptor_target_read(&mode->field, active)))
++        return false;
++    return descriptor_ordered_originals(f, c, loans, fields,
++                                        observed ? bindings[1] : NULL);
+ }
+ 
+ /* The unchanged scalar validators identify these three choices. Read the
+diff --git a/tests/p1738/CMakeLists.txt b/tests/p1738/CMakeLists.txt
+index 6d9d6e686bd744922e9f5da39111b4eeff9cd032..54732c7ba12c6153b6c8de598e7a5ea62cb51672 100644
+--- a/tests/p1738/CMakeLists.txt
++++ b/tests/p1738/CMakeLists.txt
+@@ -16,6 +16,8 @@ add_test(NAME p1773_sequential_writer_rollback.unit COMMAND p1673_probe
+     unused)
+ add_test(NAME p1778_independent_writer_rollback.unit COMMAND p1673_probe
+     guarded-byte-distinct-writers-oom "${p1738_sources}/dual-named.nl" unused)
++add_test(NAME p1782_observed_mode_rollback.unit COMMAND p1673_probe
++    guarded-byte-distinct-writers-oom "${p1738_sources}/mirror-low.nl" unused)
+ set_tests_properties(p1738_guarded_scoped_helper_native.integration
+     p1738_guarded_scoped_helper_rollback.unit
+     p1764_caller_selected_writer_rollback.unit
+diff --git a/tests/p1738/run.py b/tests/p1738/run.py
+index 6e15b8677f9c5523f658b7b2c58a594c361ab6fc..c029db4e7a737c82a48962b1374b3f048bd5b883 100644
+--- a/tests/p1738/run.py
++++ b/tests/p1738/run.py
+@@ -200,7 +200,20 @@ independent_refusals = {
+ }
+ 
+ 
+-def observe_independent(code, field):
++# Bytes, selected, observed, active old/final/tag, standby old/final/tag.
++mirrored = {
++    "mirror-low": (b"1", b"4032,35,35,22,35,119,81,35,147\n"),
++    "mirror-high": (b"1", b"4096,93,93,22,93,119,81,93,147\n"),
++    "mirror-tail": (b"1", b"4032,35,35,22,35,119,81,35,147\n"),
++}
++mirror_refusals = {
++    name: (0, 4, b"V1-BACKEND-UNSUPPORTED")
++    for name in ("mirror-sibling", "mirror-wrong-original", "mirror-stale",
++                 "mirror-wrong-actual")
++}
++
++
++def observe_independent(code, field, observed_mode=False):
+     constructors = list(re.finditer(
+         rb"^    struct \{ uint8_t f0; uint8_t f1; \} (nl_local_\d+) = [^\n]+;\n", code, re.M
+     ))
+@@ -224,17 +237,18 @@ def observe_independent(code, field):
+                  rb"\(uint8_t \*(nl_local_\d+), uint8_t (nl_local_\d+)\)\n"
+                  rb"\{\n    const uint8_t nl_previous = \*\1;\n"
+                  rb"    \*\1 = \2;\n    return nl_previous;\n\}\n")
+-    recovery = one(code, rb"^    const uint8_t " + second[4] +
+-                   rb" = \(\(uint8_t\)UINT8_C\(\d+\)\);\n")
+-    reads = [
+-        one(code, rb"^    const uint8_t (nl_local_\d+) = " + field_path + rb";\n")
+-        for field_path in (targets[0], siblings[0], targets[1], siblings[1])
+-    ]
++    source = targets[0] if observed_mode else rb"\(\(uint8_t\)UINT8_C\(\d+\)\)"
++    incoming = one(code, rb"^    const uint8_t " + second[4] + rb" = " + source + rb";\n")
++    reads = []
++    for field_path in (targets[0], siblings[0], targets[1], siblings[1]):
++        pattern = re.compile(rb"^    const uint8_t (nl_local_\d+) = " + field_path + rb";\n", re.M)
++        read, = pattern.finditer(code, second.end())
++        reads.append(read)
+     copied = [
+         one(code, rb"^    const uint8_t (nl_local_\d+) = " + call[1] + rb";\n")
+         for call in calls
+     ]
+-    order = [helper, *constructors, planned, trial, first, recovery, second, *reads, *copied]
++    order = [helper, *constructors, planned, trial, first, incoming, second, *reads, *copied]
+     assert all(left.end() <= right.start() for left, right in zip(order, order[1:]))
+ 
+     first_target, second_target = (p.replace(rb"\.", b".") for p in targets)
+@@ -250,14 +264,20 @@ def observe_independent(code, field):
+                      b" != &" + second_tag + b");\n"
+                      b"        assert(*first_original == " + trial[1] +
+                      b" && *second_original == initial_second && " + second_tag + b" == saved_second_tag);\n")
++    if observed_mode:
++        before_second += b"        assert(" + second[4] + b" == *first_original);\n"
+     final = (b"    assert(" + copied[0][1] + b" == initial_first && " + copied[1][1] +
+              b" == initial_second);\n"
+              b"    assert(" + reads[0][1] + b" == " + trial[1] + b" && *first_original == " + reads[0][1] +
+              b" && " + reads[2][1] + b" == " + second[4] + b" && *second_original == " + reads[2][1] + b");\n"
+              b"    assert(" + reads[1][1] + b" == saved_first_tag && " + reads[3][1] +
+              b" == saved_second_tag);\n")
+-    values = [trial[1], copied[0][1], reads[0][1], reads[1][1], copied[1][1], reads[2][1], reads[3][1]]
+-    final += (b'    printf("%zu,%u,%u,%u,%u,%u,%u,%u\\n", ' + planned[1] + b", " +
++    values = [trial[1]]
++    if observed_mode:
++        values.append(second[4])
++    values.extend((copied[0][1], reads[0][1], reads[1][1],
++                   copied[1][1], reads[2][1], reads[3][1]))
++    final += (b'    printf("%zu' + b",%u" * len(values) + b'\\n", ' + planned[1] + b", " +
+               b", ".join(b"(unsigned)" + item for item in values) + b");\n")
+     edits = [
+         (constructors[1].end(), setup),
+@@ -288,3 +308,5 @@ if __name__ == "__main__":
+         verify(cli, sources, raw, reordered, {}, partial(observe, sibling_first=True))
+         verify(cli, sources, raw, sequential, {}, observe_sequence)
+         verify(cli, sources, raw, independent, independent_refusals, observe_independent)
++        verify(cli, sources, raw, mirrored, mirror_refusals,
++               partial(observe_independent, observed_mode=True))
+diff --git a/tests/p1738/source/mirror-high.nl b/tests/p1738/source/mirror-high.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..5db1950c496bbd5daba7345f47bdb48b361f32c8
+--- /dev/null
++++ b/tests/p1738/source/mirror-high.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(11);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = active@coalescing;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-low.nl b/tests/p1738/source/mirror-low.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..f77b3c5e670d2a36f2888a479c4823f836011bf8
+--- /dev/null
++++ b/tests/p1738/source/mirror-low.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = active@coalescing;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-sibling.nl b/tests/p1738/source/mirror-sibling.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..eafc5a731ee6ffc299907d514340b97d4858bf22
+--- /dev/null
++++ b/tests/p1738/source/mirror-sibling.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = active@class_tag;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-stale.nl b/tests/p1738/source/mirror-stale.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..358fba872c6428ce6ee96778c0601616c8b263c3
+--- /dev/null
++++ b/tests/p1738/source/mirror-stale.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let applied = active@coalescing;
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-tail.nl b/tests/p1738/source/mirror-tail.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..9fbe4fbff6088f62f766f41d1867a0738acbfcb0
+--- /dev/null
++++ b/tests/p1738/source/mirror-tail.nl
+@@ -0,0 +1,32 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    replace(slot, mode)
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = active@coalescing;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-wrong-actual.nl b/tests/p1738/source/mirror-wrong-actual.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..ffc4230bb3b1fd2d7f41ecef8a6e911bf70a9a2f
+--- /dev/null
++++ b/tests/p1738/source/mirror-wrong-actual.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = active@coalescing;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, selected) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}
+diff --git a/tests/p1738/source/mirror-wrong-original.nl b/tests/p1738/source/mirror-wrong-original.nl
+new file mode 100644
+index 0000000000000000000000000000000000000000..9a01254c14e5d374a572989380712e34b0ef414f
+--- /dev/null
++++ b/tests/p1738/source/mirror-wrong-original.nl
+@@ -0,0 +1,33 @@
++struct ReceiveDescriptor { class_tag: u8, coalescing: u8 }
++
++fn bounded_bytes(blocks: usize) -> usize {
++    if (blocks < usize(1024)) { blocks * usize(64) } else { usize(0) }
++}
++
++fn negotiated_mode(bytes: usize) -> u8 {
++    if (bytes < usize(4096)) { u8(35) } else { u8(93) }
++}
++
++fn exchange(slot: ref<write,u8>, mode: u8) -> u8 {
++    let old = replace(slot, mode);
++    old
++}
++
++fn main() -> unit {
++    let active = ReceiveDescriptor{coalescing: u8(22), class_tag: u8(119)};
++    let standby = ReceiveDescriptor{coalescing: u8(81), class_tag: u8(147)};
++    let rank = usize(3);
++    let blocks = if (rank < usize(8)) { usize(63) } else { usize(64) };
++    let planned = bounded_bytes(blocks);
++    let selected = negotiated_mode(planned);
++    let old_active = loan_write(active@coalescing) { |field| exchange(field, selected) };
++    let applied = standby@coalescing;
++    let old_standby = loan_write(standby@coalescing) { |field| exchange(field, applied) };
++    let active_mode = active@coalescing;
++    let active_tag = active@class_tag;
++    let standby_mode = standby@coalescing;
++    let standby_tag = standby@class_tag;
++    let first_previous = old_active;
++    let second_previous = old_standby;
++    return unit;
++}

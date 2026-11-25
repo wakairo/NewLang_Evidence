@@ -1,0 +1,12 @@
+compiler	/workspace/p1544-6afecbd5/p1778-independent-descriptor-exchange/evidence/build-adopted-release/newlangc	cb2e4bf57d25a7967e5ea144bad9a1aa21e7420c3dddd951900fdf27cbe67950
+mirror-low	0	4	4	4	match
+mirror-high	0	4	4	4	match
+mirror-tail	0	4	4	4	match
+literal-independent	0	0	0	0	match
+same-original	0	0	0	0	match
+single-original	0	0	0	0	match
+mirror-sibling	0	4	4	4	match
+mirror-wrong-original	0	4	4	4	match
+mirror-stale	0	4	4	4	match
+mirror-wrong-actual	0	4	4	4	match
+scope-escape	3	3	3	3	match

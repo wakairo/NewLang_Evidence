@@ -1,0 +1,17 @@
+Refs #1782.
+
+## Supported source and scope
+
+Two independent live descriptors of the existing registered shape use the same scoped writer on the same field index. The first loan closes, the caller copies the actual current field byte from that updated descriptor, then the second original receives the byte as the second writer call's actual. The candidate checks the first Change's parent and field facts, the source order and the exact Copy carried in the second replay entry. It uses the existing call replays and whole-entry result seal. Both named Change and direct Change tail have positive fixtures.
+
+The literal second mode, sequential same-original and single-original forms preserve their emitted C17 on the frozen controls. Other-field, wrong-original, stale-read and wrong-actual cases retain C17 status 4. A reference escaping its loan scope retains CHECK status 3. Named outputs preserve bytes and identity, and absent destinations remain absent on these refusals.
+
+## Measurements
+
+- Clean adopted main `629994f527ded64d755923dcf9a3df2de08eacf5` reproduced the 11-case comparison, including the first C17 status 4 on the three new positives. FIRST, original Gate0 and the well-factored C comparison retain their original pins. [FIRST](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7154617402) · [Original Gate0](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7154824647).
+- Candidate GCC Release and Clang ASan/LSan/UBSan agree on all 11 cases. The `p1738` cohort covers 17 positive and 21 refusal sources, with 136 strict GCC/Clang O0/O2 native runs and six additional sanitized native runs for the new positives. The standby uses the observed active mode (35 or 93). Separate displaced values stay 22 and 81, with siblings 119 and 147. The tests check the original addresses and two ordered loans.
+- The sequential, independent-literal and observed-mode rollback cases passed in GCC Release and Clang ASan/UBSan. The new case checks 1,656 CHECK failures, 16 whole-entry seal failures and 2,495 named C17 allocation failures per destination state, with restoration and retry. Root CTest JSON verifies the new individual 180 s timeout and the inherited test properties. [LOCAL READY and raw receipts](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7156931173).
+
+## Fixed candidate
+
+HEAD `c537de350517bcb0b78700deafe22cf5b624f98d`, tree `4ae68fe5ef99fee3ab22391c0ae67b13d2200be0`, sole parent `629994f527ded64d755923dcf9a3df2de08eacf5` (Draft17.38). The 12-path full-index binary diff is 21,832 bytes with SHA-256 `9de924e602c06cfc248cd5e838d9f06576ed3b187edf70c86ebfdd82f68a94a5`. [C PUBLIC DRAFT GO](https://github.com/wakairo/NewLang_Compiler/issues/1782#issuecomment-7156962059).
