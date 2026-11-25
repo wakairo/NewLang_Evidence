@@ -1,0 +1,15 @@
+compiler	/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/integration-637653d/evidence/baseline/build/newlangc	e2d505a7b90a95a25141d37bdd4835ea31d37e1cc28a2d3a6791b4b647fc015e
+case	CHECK	C17	existing	absent	prediction
+mixed-current-low	0	4	4	4	match
+mixed-current-high	0	4	4	4	match
+mixed-literal-low	0	4	4	4	match
+mixed-literal-high	0	4	4	4	match
+same-current	0	0	0	0	match
+same-literal	0	0	0	0	match
+same-old	0	4	4	4	match
+mixed-old	0	4	4	4	match
+mixed-sibling	0	4	4	4	match
+mixed-stale	0	4	4	4	match
+mixed-crossed-read	0	4	4	4	match
+same-root-different-position	0	4	4	4	match
+scope-escape	3	3	3	3	match

@@ -1,0 +1,1 @@
+Setup exit 126 when capture.bash was invoked as an executable. No compiler was invoked. The preserved capture.bash has no executable bit. Invoke it via bash.
