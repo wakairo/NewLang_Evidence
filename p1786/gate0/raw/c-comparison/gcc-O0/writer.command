@@ -1,0 +1,1 @@
+/usr/bin/gcc -std=c17 -pedantic-errors -Wall -Wextra -Werror -O0 -c /workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/comparison-c/exchange.c -o /workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/raw/c-comparison/gcc-O0/exchange.o

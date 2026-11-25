@@ -1,0 +1,7 @@
+items=16 calls=4 quantity_plan=0 entry_world=0
+replay=0 event_count=1 change_result=1 returned=28
+site=35 function=11 scope=1 root=1/1 field=3/3 sibling=2 old=41 pre_fact=3 post_fact=16 replay=0 change=1 closed=1 ended=1
+replay=0 event_count=1 change_result=4 returned=36
+site=45 function=11 scope=2 root=4/4 field=6/6 sibling=5 old=101 pre_fact=6 post_fact=24 replay=0 change=1 closed=1 ended=1
+first_return=28 first_symbol=13 old_byte=41 field_post=26 copy=29 copy_symbol=14 actual=32 formal=17 change_incoming=34 dependency_free=1 active_post_unknown=1
+distinct_originals=1 first_closed_at_second_entry=1 live_first_post_at_second_entry=1 second_unmodified_in_first_entry=1 both_original_frames_in_all_six_arms=1

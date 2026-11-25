@@ -1,0 +1,10 @@
+/usr/bin/gcc
+-std=c17
+-pedantic-errors
+-Wall
+-Wextra
+-Werror
+-O2
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/raw/exact-main/literal-standby/existing.c
+-o
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/alternatives/native/literal-standby/gcc-original-O2

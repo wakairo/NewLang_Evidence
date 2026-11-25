@@ -1,0 +1,84 @@
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c: In function 'transfer':
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:191:12: error: missing terminating " character [-Werror]
+  191 |            "dependency_free=1 active_post_unknown=1
+      |            ^
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:191:12: error: missing terminating " character
+  191 |            "dependency_free=1 active_post_unknown=1
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:192:1: error: missing terminating " character [-Werror]
+  192 | ",
+      | ^
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:192:1: error: missing terminating " character
+  192 | ",
+      | ^~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:81: error: expected ')' before 'returned'
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                                                                                 ^
+      |                                                                                 )
+......
+  193 |            returned, first->symbol, old.scalar_value, left->change.new_value,
+      |            ~~~~~~~~                                                              
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:11: note: to match this '('
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |           ^
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:28: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |                          ~~^
+      |                            |
+      |                            long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:45: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |                                           ~~^
+      |                                             |
+      |                                             long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:58: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |                                                        ~~^
+      |                                                          |
+      |                                                          long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:73: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |                                                                       ~~^
+      |                                                                         |
+      |                                                                         long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:12: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:20: note: format string is defined here
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                  ~~^
+      |                    |
+      |                    long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:12: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:36: note: format string is defined here
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                                  ~~^
+      |                                    |
+      |                                    long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:12: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:47: note: format string is defined here
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                                             ~~^
+      |                                               |
+      |                                               long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:12: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:58: note: format string is defined here
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                                                        ~~^
+      |                                                          |
+      |                                                          long unsigned int
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:189:12: error: format '%zu' expects a matching 'size_t' argument [-Werror=format=]
+  189 |     printf("first_return=%zu first_symbol=%zu old_byte=%zu field_post=%zu "
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/evidence/observe-displaced.c:190:78: note: format string is defined here
+  190 |            "copy=%zu copy_symbol=%zu actual=%zu formal=%zu change_incoming=%zu "
+      |                                                                            ~~^
+      |                                                                              |
+      |                                                                              long unsigned int
+cc1: all warnings being treated as errors

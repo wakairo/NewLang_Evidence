@@ -1,0 +1,4 @@
+literal-standby	main	PASS	4032,35,41,35,117,101,19,149
+same-original	main	PASS	4032,35,41,35,35,19,117
+single-original	main	PASS	4032,35,41,35,117
+current-standby	compare	PASS	4032,35,35,41,35,117,101,35,149

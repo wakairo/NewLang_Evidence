@@ -1,0 +1,12 @@
+compiler	/workspace/p1544-6afecbd5/p1782-observed-mode-handoff/evidence/adopted-629994f/build-baseline/newlangc	cb2e4bf57d25a7967e5ea144bad9a1aa21e7420c3dddd951900fdf27cbe67950
+fallback-low	0	4	4	4	match
+fallback-high	0	4	4	4	match
+fallback-tail	0	4	4	4	match
+literal-standby	0	0	0	0	match
+current-standby	0	4	4	4	match
+same-original	0	0	0	0	match
+single-original	0	0	0	0	match
+other-copy	0	4	4	4	match
+fallback-wrong-actual	0	4	4	4	match
+pre-change-read	0	4	4	4	match
+scope-escape	3	3	3	3	match
