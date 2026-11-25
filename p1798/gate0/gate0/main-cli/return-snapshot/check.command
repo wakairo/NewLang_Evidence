@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1790-mixed-field-writer/integration-048a9d3/evidence/candidate/gcc-release/build/newlangc --check /workspace/p1544-6afecbd5/p1798-normal-writer-completion/evidence/source/return-snapshot.nl

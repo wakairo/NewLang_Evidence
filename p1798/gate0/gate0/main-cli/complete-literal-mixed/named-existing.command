@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1790-mixed-field-writer/integration-048a9d3/evidence/candidate/gcc-release/build/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1798-normal-writer-completion/evidence/gate0/main-cli/complete-literal-mixed/existing.c /workspace/p1544-6afecbd5/p1798-normal-writer-completion/evidence/source/complete-literal-mixed.nl

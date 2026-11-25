@@ -1,0 +1,13 @@
+compiler	/workspace/p1544-6afecbd5/p1794-early-field-copy/evidence/candidate/gcc-release/build/newlangc	082afcbf6e219264845334aa14f6050f32cd7157a968d22405cf81f99beb31b9
+case	CHECK	C17	existing	absent	prediction
+complete-current	0	4	4	4	match
+return-current	0	0	0	0	match
+complete-literal-mixed	0	4	4	4	match
+return-literal-mixed	0	0	0	0	match
+complete-displaced-unit	0	4	4	4	match
+return-displaced	0	0	0	0	match
+complete-mixed-displaced	0	4	4	4	match
+complete-stale-current	0	4	4	4	match
+return-snapshot	0	0	0	0	match
+complete-snapshot	0	4	4	4	match
+scope-escape	3	3	3	3	match

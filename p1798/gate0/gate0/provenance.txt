@@ -1,0 +1,2 @@
+Actual main 94b35584081a80ab5e302fd9e237a95beb95ba66 is tree-identical to exact adopted #1793 head 6b9940bb3685570ea5b39e1d8b810980e7cb94f1, the original preserved compiler build identity.
+The compare-only #1797 executable was built from exact cc4ec8e207b27f6eceb9a8bf1786cb4fadb62f4c. Both source pins and each preserved executable SHA were checked before the frozen inputs ran.
