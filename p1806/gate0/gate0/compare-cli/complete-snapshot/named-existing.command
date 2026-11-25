@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1802-mixed-snapshot/integration-1c99d8d/evidence/gcc-release/build/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1806-snapshot-unit-completion/evidence/gate0/compare-cli/complete-snapshot/existing.c /workspace/p1544-6afecbd5/p1806-snapshot-unit-completion/evidence/source/complete-snapshot.nl

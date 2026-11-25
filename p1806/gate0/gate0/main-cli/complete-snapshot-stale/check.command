@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1798-normal-writer-completion/integration-94eb75c/evidence/gcc-release/build/newlangc --check /workspace/p1544-6afecbd5/p1806-snapshot-unit-completion/evidence/source/complete-snapshot-stale.nl

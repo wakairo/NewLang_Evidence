@@ -1,0 +1,2 @@
+Main reference compiler built on exact #1801 head 74ff94c7d24f702823f0885f8525c7472b2c9cf6, tree-identical to actual main 1c99d8dfc536160dfd1b26016cd4414dc1af9b75.
+Compare-only #1805 compiler built on exact 0610baef571243ee5dc326b2a7a908c0b66c2263.

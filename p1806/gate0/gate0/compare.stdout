@@ -1,0 +1,17 @@
+compiler	/workspace/p1544-6afecbd5/p1802-mixed-snapshot/integration-1c99d8d/evidence/gcc-release/build/newlangc	f962a5b4a1ce7837e7310c3d71a7c2d102d33477e38809285a8c847547ebf44c
+case	CHECK	C17	existing	absent	prediction
+complete-snapshot	0	4	4	4	match
+complete-snapshot-low-unit	0	4	4	4	match
+complete-snapshot-high	0	4	4	4	match
+complete-snapshot-high-unit	0	4	4	4	match
+snapshot-low	0	0	0	0	match
+snapshot-high	0	0	0	0	match
+snapshot-mixed	0	0	0	0	match
+snapshot-mixed-reverse	0	0	0	0	match
+complete-snapshot-mixed	0	4	4	4	match
+complete-snapshot-mixed-reverse	0	4	4	4	match
+complete-snapshot-stale	0	4	4	4	match
+complete-snapshot-sibling	0	4	4	4	match
+complete-snapshot-other	0	4	4	4	match
+mixed-old	0	4	4	4	match
+scope-escape	3	3	3	3	match
