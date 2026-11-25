@@ -1,0 +1,13 @@
+compiler	/workspace/p1544-6afecbd5/p1790-mixed-field-writer/integration-048a9d3/evidence/candidate/gcc-release/build/newlangc	ca1dc0c5d32381f79a1ae8a7c404537bf5515b05394b18e664bc92cb6876996d
+case	CHECK	C17	existing	absent	prediction
+snapshot-low	0	4	4	4	match
+snapshot-high	0	4	4	4	match
+repeat-low	0	0	0	0	match
+repeat-high	0	0	0	0	match
+repeat-mixed	0	0	0	0	match
+displaced-control	0	0	0	0	match
+snapshot-stale	0	4	4	4	match
+snapshot-sibling-actual	0	4	4	4	match
+snapshot-wrong-original	0	4	4	4	match
+snapshot-mixed	0	4	4	4	match
+scope-escape	3	3	3	3	match

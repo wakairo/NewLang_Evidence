@@ -1,0 +1,3 @@
+Original start attempt preserved in exact FIRST 7160855233:
+exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 45s\")" }
+Retry before this turn: No usable execution environment is available. Wait for an environment to become available before using this tool.

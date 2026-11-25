@@ -1,0 +1,2 @@
+Original main comparison 048a9d3d5d65f45b11e3983567f9783b19611ff5 is tree-identical to bcc0592fe95f4518c608f8e9dc54ca0090ee70ad, the origin of the preserved unchanged compiler binary.
+Original #1793 comparison compiler was built from exact 6b9940bb3685570ea5b39e1d8b810980e7cb94f1, tree-identical to actual adopted main 94b35584081a80ab5e302fd9e237a95beb95ba66. Its fresh replay separately identifies the adopted role without rebuilding the same source tree.

@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1786-displaced-mode-handoff/integration-637653d/evidence/gcc-release/build/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1794-early-field-copy/evidence/gate0/main-cli/snapshot-high/existing.c /workspace/p1544-6afecbd5/p1794-early-field-copy/evidence/source/snapshot-high.nl
