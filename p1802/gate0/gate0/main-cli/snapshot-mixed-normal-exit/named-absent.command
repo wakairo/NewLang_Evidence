@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1794-early-field-copy/evidence/candidate/gcc-release/build/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1802-mixed-snapshot/evidence/gate0/main-cli/snapshot-mixed-normal-exit/absent.c /workspace/p1544-6afecbd5/p1802-mixed-snapshot/evidence/source/snapshot-mixed-normal-exit.nl

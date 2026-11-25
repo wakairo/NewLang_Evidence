@@ -1,0 +1,2 @@
+Main binary built on exact compare-tree ancestor cc4ec8e207b27f6eceb9a8bf1786cb4fadb62f4c, tree 5284d393392023e03bb0266dc6de2e872f45c8e1, equal to adopted main 94eb75c3efa91a3feb2a14319d840bc00677bed9.
+Draft binary built on exact 74ff94c7d24f702823f0885f8525c7472b2c9cf6, tree 4e3a7c5dfb3612ecb8de9ddefcfcfbd8e432eed0.

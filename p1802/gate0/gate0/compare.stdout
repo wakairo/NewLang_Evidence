@@ -1,0 +1,14 @@
+compiler	/workspace/p1544-6afecbd5/p1798-normal-writer-completion/integration-94eb75c/evidence/gcc-release/build/newlangc	d61cd72b14be081aea2925ca6e51a82823a093dc1acf0f9a24cf7c0a8c232cca
+case	CHECK	C17	existing	absent	prediction
+snapshot-mixed	0	4	4	4	match
+snapshot-mixed-reverse	0	4	4	4	match
+reread-mixed	0	0	0	0	match
+reread-mixed-reverse	0	0	0	0	match
+snapshot-low	0	0	0	0	match
+snapshot-high	0	0	0	0	match
+snapshot-mixed-sibling	0	4	4	4	match
+snapshot-mixed-other	0	4	4	4	match
+snapshot-mixed-before-change	0	4	4	4	match
+snapshot-mixed-normal-exit	0	4	4	4	match
+mixed-old	0	4	4	4	match
+scope-escape	3	3	3	3	match

@@ -1,0 +1,1 @@
+/workspace/p1544-6afecbd5/p1798-normal-writer-completion/integration-94eb75c/evidence/gcc-release/build/newlangc --emit-c17-to /workspace/p1544-6afecbd5/p1802-mixed-snapshot/evidence/gate0/compare-cli/snapshot-mixed-normal-exit/existing.c /workspace/p1544-6afecbd5/p1802-mixed-snapshot/evidence/source/snapshot-mixed-normal-exit.nl
